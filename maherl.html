@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Breaker's Wiki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color" content="#155b99">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-spinner"></div>
+  </div>
+  
+  <section class="page-header">
+    <a href="index.html">
+      <center><img width="250px" style="opacity: .6;" src="img/assets/logo.png"></center>
+    </a>
+    <a href="gameplay.html" class="btn">Gameplay</a>
+    <a href="characters.html" class="btn">Characters</a>
+    <a href="about.html" class="btn">About</a>
+  </section>
+
+
+
+  <section class="main-content">
+
+    <a class="back" href="characters.html">
+      < Back</a>
+        <h1><span style="border: 1px solid gray;" class="flag-icon flag-icon-sa"></span> Sheik Maherl</h1>
+
+        <img class="charbg" src="img/assets/maherl_bg.png">
+
+        <div class="nav-guide">
+          <button onclick="showContent('infos')">Infos</button>
+          <button onclick="showContent('movelist')">Move list</button>
+          <button onclick="showContent('strategy')">Strategy</button>
+          <button onclick="showContent('combos')">Combos</button>
+          <button onclick="showContent('matchups')">Matchups</button>
+        </div>
+
+
+        <div id="infos">
+          <h4>Backstory</h4>
+          <p>Sheik Maherl discovered a magical lamp containing a genie. He was given 3 wishes and he used them very
+            wisely. For his first wish, he wished to be able to turn into a giant balloon.
+            For his second wish, he wished to be able to spit fire. For his third wish, he wished that the genie would
+            be enslaved for eternity to Maherl to fight for him. <br><br>
+            Now Maherl travels the globe with only his lamp and sword to battle the world's strongest challengers.</p>
+
+          <h4>Overview</h4>
+          <p>Maherl is a slow, poking character. His sword provides strong damage and harassment that is usually safe on
+            block. Has some tricky command throw setups. Maherl has no special or super confirm from low attacks.
+          </p>
+        </div>
+
+        <div id="movelist">
+          <div class="container">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tyHzHKJJicQ?si=WWihNJKXxKJAUiDa"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+
+
+          <table class="movelist">
+            <thead>
+              <tr>
+                <th colspan="2" class="commands">Commands</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Abdomen Step</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Button-APunch.png">+<img
+                      src="img/inputs/Arcade-Button-CPunch.png"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Abdomen Press</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Control-Modifier-Air.png"><img src="img/inputs/Arcade-Stick-Down.png">+<img
+                      src="img/inputs/Arcade-Button-CPunch.png"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Hip Attack</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Control-Modifier-Air.png"><img src="img/inputs/Arcade-Stick-Down.png">+<img
+                    src="img/inputs/Arcade-Button-BKick.png"></div>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colspan="2" class="specials">Specials</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Slash Sword</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcb.png">+<img
+                      src="img/inputs/Arcade-Button-Punch.png"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Punish Sword</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcb.png">+<img
+                    src="img/inputs/Arcade-Button-Kick.png"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Fire Breath</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Hcf.png">+<img
+                    src="img/inputs/Arcade-Button-Punch.png"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Balloon Bomb</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Button-APunch.png">+<img
+                    src="img/inputs/Arcade-Button-BKick.png">+<img src="img/inputs/Arcade-Button-CPunch.png"></div>
+                  <tr><td></td>
+                  <td>
+                    <div class="inputs"><img src="img/inputs/Arcade-Button-BKick.png">+<img
+                      src="img/inputs/Arcade-Button-CPunch.png">+<img src="img/inputs/Arcade-Button-DKick.png"></div>
+                  </td>
+                  </tr>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colspan="2" class="supers">Supers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cadabra Bomber</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcf.png"><img
+                      src="img/inputs/Arcade-Stick-Qcf.png">+<img src="img/inputs/Arcade-Button-Punch.png"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Shiva Dance</td>
+                <td>
+                  <div class="inputs"><img
+                      src="img/inputs/Arcade-Stick-Qcb.png"><img src="img/inputs/Arcade-Stick-Qcb.png">+<img
+                      src="img/inputs/Arcade-Button-Punch.png"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Rolling Press</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-360.png">+<img
+                      src="img/inputs/Arcade-Button-Punch.png"></div>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colspan="2" class="throws">Throws</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rush Palm</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Left.png">/<img
+                      src="img/inputs/Arcade-Stick-Right.png">+<img src="img/inputs/Arcade-Button-DKick.png"></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="strategy">
+
+
+          <h2>Basic knowledge</h2>
+
+
+          <h3>Anti-air</h3>
+          <ul>
+            <li>far st.LK</li>
+            <li>close st.HP (anti cross-up)</li>
+            <li>Super génie (214214P)</li>
+          </ul>
+
+          <h3>Swords</h3>
+        <p>
+          <u>214HP:</u><br>
+          hit confirm from cr.HP
+        </p>
+        <p>
+          <u>214HK:</u><br>
+          anti-air and juggle confirm at close range after st.HK or st.HP
+        </p>  
+         
+          <h3>Supers</h3>
+          <p>
+            <u>Genie Super</u><br>
+            Startup invincibility and safe on block</li>
+          </p>
+          <p>⚠️ There's a gap right before the genie throws his punch. On block, some characters can use their invincible backdash to dodge the punch and punish.</p>
+          
+          <p>
+          <u>Sword Super</u><br>
+          Not much invincibility for the whole body, but a bunch against projectiles
+          </p>
+
+          <h2>Fuzzy / Instant overhead</h2>
+          <img class="GIF" src="img/GIF/Maherl/fuzzy-overhead.gif"></img>
+          <p><u>instant overhead:</u><br>forward or back j.LK</p>
+          <p><u>fuzy:</u><br>j.HK > j.LK</p>
+
+
+
+          <h2>Step/Sword glitch</h2>
+          <img class="GIF" src="img/GIF/Maherl/sword glitch.gif">
+          <figcaption>LP+HP > Kara 214K</figcaption>
+
+          <p>LP+HP > Kara 214P or 214K</p>
+          <u>1 frame cancel window to get the glitch :</u><br><br>
+          <ul>
+            <li>✅ Frame 3 of LP+HP = sword glitch</li>
+            <li>❌ Frame 2 or sooner = sword</li>
+            <li>❌ Frame 4 or later = LP+HP</li>
+          </ul>
+
+          <b>Sword glitch variations</b>
+          
+          <p><u>HP/HK swords:</u><br>Maherl travels to the opposite side of the opponent.</p>
+          <p><u>LP/LK swords:</u><br>Result in a shorter distance, Maherl stays on the same side.</p>
+          <p><u>Body splash:</u><br>During the peak of flight, Maherl can perform a cr.HP (body splash) that stays active throughout the entire descent.</p>
+          
+          <p>Note: If you don't do anything during the glitch, Maherl teleports back to the ground.
+            Seize the opportunity to surprise your opponent with a throw or 360 super.</p>
+
+
+        </div>
+
+
+        <div id="combos">
+
+          <h3>Basic combos (not breakable)</h3>
+
+          <h4>Meterless combos</h4>
+          <img class="GIF" src="img/GIF/Maherl/Meterless_combo.gif">
+          <figcaption> cr.HP > LP+HP > st.LK > 214LK</figcaption>
+          
+
+          <table class="movelist">
+            <tbody>
+              <thead>
+
+              </thead>
+              <tr>
+                <td>st.LK > 214LK</td>
+              </tr>
+              <tr>
+                <td>st.LK > 214LP</td>
+              </tr>
+              <tr>
+                <td>cr.HP > LP+HP</td>
+              </tr>
+              <tr>
+                <td>cr.HP > LP+HP > st.LK > 214LP</td>
+              </tr>
+              <tr>
+                <td>cr.HP > LP+HP > st.LK > 214LK</td>
+              </tr>
+              <tr>
+                <td>close st.HK > LP+HP</td>
+              </tr>
+              <tr>
+                <td>cr.HP or close st.HK > 1236LP (unsafe on block/hit)</td>
+              </tr>
+              <tr>
+                <td>j.HP > cr.HP > 214HK</td>
+              </tr>
+              <tr>
+                <td>j.HK > close st.HK > 214HK</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+
+          <h4>Metered combos</h4>
+          <img class="GIF" src="img/GIF/Maherl/Meter_combo.gif">
+          <figcaption>J.HP > cr.HP > Super  (214214P)</figcaption>
+
+          <table class="movelist">
+            <tbody>
+              <thead>
+
+              </thead>
+              <tr>
+                <td>j.HP > cr.HP > Super (214214P)</td>
+              </tr>
+              <tr>
+                <td>j.HP > close st.HK > Super (214214P)</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3>Anti-air</h3>
+          <img class="GIF" src="img/GIF/Maherl/anti-air-juggle.gif">
+          <figcaption>close st.HK > 214HK (1hit) > cr.LK > Genie Super (corner)</figcaption>
+          <table class="movelist">
+            <tbody>
+              <thead>
+              </thead>
+              <tr>
+                <td><u>easy:</u></td>
+              </tr>
+              <tr>
+                <td>far st.LK > Sword Super</td>
+              </tr>
+              <tr>
+                <td>close st.HK > Sword Super</td>
+              </tr>
+              <tr>
+                <td>close st.HP > 214LK or HK</td>
+              </tr>
+              <tr>
+                <td>close st.HP > Sword Super</td>
+              </tr>
+              <tr>
+                <td><u>hard:</u></td>
+              </tr>
+              <tr>
+                <td>close st.HK > 214HK (1hit) > cr.LK > Sword Super</td>
+              </tr>
+              <tr>
+                <td>close st.HK > 214HK (1hit) > cr.LK > Genie Super (corner)</td>
+              </tr>
+              <tr>
+                <td>214HK (1hit) > cr.LK > Sword Super</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Air-to-air</h3>
+          <img class="GIF" src="img/GIF/Maherl/air-juggle.gif">
+          <figcaption> Divekick > j.LP x 4 > Super</figcaption>
+          <table class="movelist">
+            <tbody>
+              <thead>
+              </thead>
+              <tr>
+                <td>j.LP > Sword Super</td>
+              </tr>
+              <tr>
+                <td>j.HP > Sword Super</td>
+              </tr>
+              <tr>
+                <td>neutral j.HP > Sword Super</td>
+              </tr>
+            </tbody>
+          </table>
+
+        
+
+
+
+        </div>
+
+
+        <div id="matchups">
+
+
+          <table class="charselect">
+            <tbody>
+              <tr>
+                <td><a onclick="toggleContent('sho')"><img src="img/assets/Portrait_BR_Sho.png"></a></td>
+                <td><a onclick="toggleContent('pielle')"><img src="img/assets/Portrait_BR_Pielle.png"></a></td>
+                <td><a onclick="toggleContent('condor')"><img src="img/assets/Portrait_BR_Condor.png"></a></td>
+                <td><a onclick="toggleContent('rila')"><img src="img/assets/Portrait_BR_Rila.png"></a></td>
+                <td><a onclick="toggleContent('tia')"><img src="img/assets/Portrait_BR_Tia.png"></a></td>
+                <td><a onclick="toggleContent('alsion')"><img src="img/assets/Portrait_BR_Alsion_III.png"></a></td>
+                <td><a onclick="toggleContent('maherl')"><img src="img/assets/Portrait_BR_Maherl.png"></a></td>
+                <td><a onclick="toggleContent('dao-long')"><img src="img/assets/Portrait_BR_Dao-Long.png"></a></td>
+                <td><a onclick="toggleContent('saizo')"><img src="img/assets/Portrait_BR_Saizo.png"></a></td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+
+          <div id="saizo">
+            <h2>Saizo</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="pielle">
+            <h2>Pielle</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="rila">
+            <h2>Rila</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="dao-long">
+            <h2>Dao-long</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="condor">
+            <h2>Condor</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="sho">
+            <h2>Sho</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="maherl">
+            <h2>Maherl</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="tia">
+            <h2>Tia</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="alsion">
+            <h2>Alsion III</h2>
+            <p>TO DO</p>
+          </div>
+
+        </div>
+
+
+
+
+  </section>
+
+  <!-- footer  -->
+  <div id="includedContent">
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('includedContent').innerHTML = html;
+        })
+        .catch(error => console.error('Error fetching content: ', error));
+    </script>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Breaker's Wiki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#155b99">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+
+  <section class="page-header">
+    <a href="index.html">
+      <center><img width="250px" style="opacity: .6;" src="img/assets/logo.png"></center>
+    </a>
+    <a href="gameplay.html" class="btn">Gameplay</a>
+    <a href="characters.html" class="btn">Characters</a>
+    <a href="about.html" class="btn">About</a>
+  </section>
+
+
+
+  <section class="main-content">
+    <a class="back" onclick="goBack()">
+      < Back</a>
+
+        <h1>Contributions</h1>
+        <ul>
+          <li>N/A</li>
+        </ul>
+
+        <h1>Resources</h1>
+
+        <ul>
+          <li><a href="https://discord.gg/3JRjKkqA">Breakers Revenge Discord</a></li>
+          <li><a href="https://wiki.supercombo.gg/w/Breakers_Revenge">SuperCombo Wiki</a></li>
+          <li><a href="https://strategywiki.org/wiki/Breakers_Revenge">Strategy Wiki</a></li>
+          <li><a href="https://breakersdojo.fr/">Breakersdojo</a></li>
+          <li><a href="https://www.fightersgeneration.com/games/breakers-revenge.html">The Fighters Generation</a></li>
+          <li><a href="https://www.youtube.com/@fightinggamemovelists">Fighting Game Move Lists</a></li>
+          <li><a href="https://www.youtube.com/@sasizm7079">Sas Izm</a></li>
+          <li><a href="https://www.neogeospirit.com/tests/breakersrevenge_test.htm">NeoGeo Spirit</a></li>
+        </ul>
+
+        <h1>Crafting GIFs</h1>
+
+        <ul>
+          <li>OS: Win 11</li>
+          <li>Recording</li>
+          <li>Emulator: fcadefbneo.exe (Fightcade)</li>
+          <li>Settings : Video > Window size > 2x size</li>
+        </ul>
+        <ul>
+          <li>Screen Recorder : ScreenToGif</li>
+          <li>Window settings: 590 * 440 px, 30FPS</li>
+          <li>Encoding: KGy SOFT - Balanced</li>
+        </ul>
+
+  </section>
+
+
+
+  <!-- footer  -->
+  <div id="includedContent">
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('includedContent').innerHTML = html;
+        })
+        .catch(error => console.error('Error fetching content: ', error));
+    </script>
+  </div>
+
+
+
+</body>
+
+</html>
