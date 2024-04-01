@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Breaker's Wiki</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="theme-color" content="#155b99">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loading-spinner"></div>
+  </div>
+  
+  <section class="page-header">
+    <a href="index.html">
+      <center><img width="250px" style="opacity: .6;" src="img/assets/logo.png"></center>
+    </a>
+    <a href="gameplay.html" class="btn">Gameplay</a>
+    <a href="characters.html" class="btn">Characters</a>
+    <a href="about.html" class="btn">About</a>
+  </section>
+
+
+
+  <section class="main-content">
+
+    <a class="back" href="characters.html">
+      < Back</a>
+        <h1><span style="border: 1px solid gray;" class="flag-icon flag-icon-us"></span> Condor Heads</h1>
+
+        <img class="charbg" src="img/assets/condor_bg.png">
+
+        <div class="nav-guide">
+          <button onclick="showContent('infos')">Infos</button>
+          <button onclick="showContent('movelist')">Move list</button>
+          <button onclick="showContent('strategy')">Strategy</button>
+          <button onclick="showContent('combos')">Combos</button>
+          <button onclick="showContent('matchups')">Matchups</button>
+        </div>
+
+
+        <div id="infos">
+          <h4>Backstory</h4>
+          <p>
+            Condor Heads is a Native American who wears chaps. Typically peaceful, he has been riled up recently and
+            only fights to save his homeland from the evil Bai-Hu.
+          </p>
+
+          <h4>Overview</h4>
+          <p>
+            Winning with Condor against higher level opponents will require a lot of patience and a healthy
+            understanding of the game and matchups.
+          </p>
+        </div>
+
+        <div id="movelist">
+          <div class="container">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/lRrYtfuUnnU?si=uI6ONRJpmzz-99hZ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+
+
+          <table class="movelist">
+            <thead>
+              <tr>
+                <th colspan="2" class="commands">Commands</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Fumikomi Straight</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Right.png">+<img
+                      src="img/inputs/Arcade-Button-CPunch.png"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Body Press</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Control-Modifier-Air.png"><img
+                      src="img/inputs/Arcade-Stick-Down.png">+<img src="img/inputs/Arcade-Button-CPunch.png"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Heel Stomp</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Control-Modifier-Air.png"><img
+                      src="img/inputs/Arcade-Stick-Down.png">+<img src="img/inputs/Arcade-Button-DKick.png"></div>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colspan="2" class="specials">Specials</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tomahawk Jack</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Button-APunch.png">+<img
+                      src="img/inputs/Arcade-Button-BKick.png">+<img src="img/inputs/Arcade-Button-CPunch.png"></div>
+                </td>
+              <tr>
+                <td></td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Button-BKick.png">+<img
+                      src="img/inputs/Arcade-Button-CPunch.png">+<img src="img/inputs/Arcade-Button-DKick.png"></div>
+                </td>
+              </tr>
+              </tr>
+              <tr>
+                <td>Grand Buffalo Horn</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Right.png"><img
+                      src="img/inputs/Arcade-Stick-Right.png">+<img src="img/inputs/Arcade-Button-Kick.png"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Sky Bridge</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcf.png">+<img
+                      src="img/inputs/Arcade-Button-Kick.png"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Moonlight Slam</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-360.png">+<img
+                      src="img/inputs/Arcade-Button-Punch.png"></div>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colspan="2" class="supers">Supers</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Atlas Rock Buster</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcf.png"><img
+                      src="img/inputs/Arcade-Stick-Qcf.png">+<img src="img/inputs/Arcade-Button-Punch.png"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Moonlight Shake</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-360.png"><img
+                      src="img/inputs/Arcade-Stick-360.png">+<img src="img/inputs/Arcade-Button-Punch.png"></div>
+                </td>
+              </tr>
+            </tbody>
+            <thead>
+              <tr>
+                <th colspan="2" class="throws">Throws</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Body Slam</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Left.png">/<img
+                      src="img/inputs/Arcade-Stick-Right.png">+<img src="img/inputs/Arcade-Button-APunch.png">or<img
+                      src="img/inputs/Arcade-Button-BKick.png"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Piledriver</td>
+                <td>
+                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Left.png">/<img
+                      src="img/inputs/Arcade-Stick-Right.png">+<img src="img/inputs/Arcade-Button-CPunch.png"></div>
+                </td>
+              </tr>
+              <td>Back Drop</td>
+              <td>
+                <div class="inputs"><img src="img/inputs/Arcade-Stick-Left.png">/<img
+                    src="img/inputs/Arcade-Stick-Right.png">+<img src="img/inputs/Arcade-Button-DKick.png"></div>
+              </td>
+              </tr>
+              <td>Neck Hanging Tree</td>
+              <td>
+                <div class="inputs"><img src="img/inputs/Arcade-Stick-DR.png">+<img
+                    src="img/inputs/Arcade-Button-APunch.png">or<img src="img/inputs/Arcade-Button-BKick.png"></div>
+              </td>
+              </tr>
+              <td>Head Crash</td>
+              <td>
+                <div class="inputs"><img src="img/inputs/Arcade-Stick-DR.png">+<img
+                    src="img/inputs/Arcade-Button-CPunch.png"></div>
+              </td>
+              </tr>
+              <td>Bear Hug</td>
+              <td>
+                <div class="inputs"><img src="img/inputs/Arcade-Stick-DR.png">+<img
+                    src="img/inputs/Arcade-Button-DKick.png"></div>
+              </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div id="strategy">
+
+
+          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/YB7U2nSfiaU?si=bTK9t_1ZTHxgY8cU"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+
+          <h2>Basic knowledge</h2>
+
+
+          <h4>Tomahawk</h4>
+          <p>
+          <ul>
+            <li>build your super meter</li>
+            <li>Stop projectiles (except Saizo's kunai)</li>
+            <li>cancelable from most normals</li>
+          </ul>
+          ⚠️ Do not overuse it, This move can be easily punished by Saizo, Dao-Long, Tia, and Sho.
+          </p>
+          <h4>Defense</h4>
+          <p>Condor has very few tools to defend himself. If you're patient and have a solid defense, thanks to your
+            game knowledge and matchups, you'll cash in on the risk system, dealing massive damage with command grabs.
+          </p>
+          <h4>Anti-air</h4>
+          <ul>
+            <li>tomahawk > Super</li>
+            <li>st.LP > tomahawk > Super</li>
+            <li>close st.HP > tomahawk > Super</li>
+          </ul>
+          <h4>Learn how to close the distance.</h4>
+          <p>His slide can be used to pass through projectiles. You can also use it to get closer to your opponent when
+            they're on the ground. <br><br>
+
+            ⚠️ In most matchups Condor's slide is easily punishable on whiff and block.
+
+          </p>
+
+          <h4>Neck Hanging Tree</h4>
+          <p>The "Neck Hanging Tree" command grab (3LP or 3LK) hits multiple times and launches the opponent into the
+            air at the end. You can follow up with a super to continue the combo.</p>
+          <h4>Break</h4>
+          <p>360 grab special and Super (Atlas Rock Buster) are his best breaker moves</p>
+
+          <h2>Kara cancels</h2>
+          <img class="GIF" src="img/GIF/Condor/karaspecial.gif">
+          kara tomahawk
+          <ul>
+            <li>cr.LP ~ LP+LK+HP</li>
+            <li>cr.LK ~ LP+LK+HP</li>
+            <li>forward+HP ~ LP+LK+HP</li>
+            <li>st.HK ~ LP+LK+HP</li>
+          </ul>
+          kara 360
+          <ul>
+            <li>41236+HP ~ 8P</li>
+            <li>426+HP ~ 8P</li>
+          </ul>
+        </div>
+
+
+        <div id="combos">
+
+          <h3>Basic combos (not breakable)</h3>
+
+          <h4>Meterless combos</h4>
+          <img class="GIF" src="img/GIF/Condor/meterless combo.gif">
+          <figcaption>j.HK > cr.LP x 3 > 236 LK</figcaption>
+
+          <table class="movelist">
+            <tbody>
+              <thead>
+
+              </thead>
+              <tr>
+                <td>cr.LK > 236 LK</td>
+              </tr>
+              <tr>
+                <td>cr.LP x 3 > 236 LK</td>
+              </tr>
+              <tr>
+                <td>j.LK > st.HK > 236 HK</td>
+              </tr>
+              <tr>
+                <td>j.HK > close st.LK > cr.HK</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h4>Metered combos</h4>
+          <img class="GIF" src="img/GIF/Condor/meter_combo.gif">
+          <figcaption>cr.LP x 2 > cr.LK > Super</figcaption>
+          <table class="movelist">
+            <tbody>
+              <thead>
+              </thead>
+              <tr>
+                <td>cr.LP x 2 > cr.LK > Super</td>
+              </tr>
+              <tr>
+                <td>cr.LP x 3 > st.LK > Super</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4>Throw confirms</h4>
+          <img class="GIF" src="img/GIF/Condor/throwconfirm.gif">
+          <figcaption>(close) 3LP > Super</figcaption>
+          <table class="movelist">
+            <tbody>
+              <thead>
+              </thead>
+              <tr>
+                <td>(close) 3LP > Super</td>
+              </tr>
+              <tr>
+                <td>(close) 3LK > Super</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Breakable combos</h3>
+          <img class="GIF" src="img/GIF/Condor/breakable_combo.gif">
+          <figcaption>cr.LP x 2 > st.LK ❌ 236 HK</figcaption>
+
+          <table class="movelist">
+            <tbody>
+              <thead>
+
+              </thead>
+              <tr>
+                <td>cr.LP x 2 > st.LK ❌ slide LK</td>
+              </tr>
+              <tr>
+                <td>cr.LK ❌ cr.LK ❌ 236 HK</td>
+              </tr>
+              <tr>
+                <td>cr.LK ❌ cr.LK ❌ Super</td>
+              </tr>
+              <tr>
+                <td>cr.LK ❌ cr.HK</td>
+              </tr>
+              <tr>
+                <td>cr.LP x 2 > cr.LK ❌ cr.HK</td>
+              </tr>
+              <tr>
+                <td>cr.LK ❌ 236 HK</td>
+              </tr>
+              <tr>
+                <td>cr.LP x 2 > st.LK ❌ 236 HK</td>
+              </tr>
+              <tr>
+                <td>j.LK > st.LK ❌ far st.HK > 236 HK</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Anti-air</h3>
+          <img class="GIF" src="img/GIF/Condor/antiair_juggle.gif">
+          <figcaption>close st.HP > tomahawk > Super</figcaption>
+          <table class="movelist">
+            <tbody>
+              <thead>
+              </thead>
+              <tr>
+                <td>tomahawk > Super</td>
+              </tr>
+              <tr>
+                <td>st.LP > tomahawk > Super</td>
+              </tr>
+              <tr>
+                <td>close st.HP > tomahawk > Super</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h3>Air-to-air</h3>
+          <img class="GIF" src="img/GIF/Condor/airtoair.gif">
+          <figcaption> neutral j.HK > Super</figcaption>
+          <table class="movelist">
+            <tbody>
+              <thead>
+              </thead>
+              <tr>
+                <td>j.LP/LK/HK/LK > Super</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Standing 720 Super</h3>
+          <img class="GIF" src="img/GIF/Condor/standing_720.gif">
+          <figcaption>412369 x2 + P</figcaption>
+
+        </div>
+
+
+        <div id="matchups">
+
+
+          <table class="charselect">
+            <tbody>
+              <tr>
+                <td><a onclick="toggleContent('sho')"><img src="img/assets/Portrait_BR_Sho.png"></a></td>
+                <td><a onclick="toggleContent('pielle')"><img src="img/assets/Portrait_BR_Pielle.png"></a></td>
+                <td><a onclick="toggleContent('condor')"><img src="img/assets/Portrait_BR_Condor.png"></a></td>
+                <td><a onclick="toggleContent('rila')"><img src="img/assets/Portrait_BR_Rila.png"></a></td>
+                <td><a onclick="toggleContent('tia')"><img src="img/assets/Portrait_BR_Tia.png"></a></td>
+                <td><a onclick="toggleContent('alsion')"><img src="img/assets/Portrait_BR_Alsion_III.png"></a></td>
+                <td><a onclick="toggleContent('maherl')"><img src="img/assets/Portrait_BR_Maherl.png"></a></td>
+                <td><a onclick="toggleContent('dao-long')"><img src="img/assets/Portrait_BR_Dao-Long.png"></a></td>
+                <td><a onclick="toggleContent('saizo')"><img src="img/assets/Portrait_BR_Saizo.png"></a></td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+
+          <div id="saizo">
+            <h2>Saizo</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="pielle">
+            <h2>Pielle</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="rila">
+            <h2>Rila</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="dao-long">
+            <h2>Dao-long</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="condor">
+            <h2>Condor</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="sho">
+            <h2>Sho</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="maherl">
+            <h2>Maherl</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="tia">
+            <h2>Tia</h2>
+            <p>TO DO</p>
+          </div>
+
+          <div id="alsion">
+            <h2>Alsion III</h2>
+            <p>TO DO</p>
+          </div>
+
+        </div>
+
+
+
+
+  </section>
+
+  <!-- footer  -->
+  <div id="includedContent">
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(html => {
+          document.getElementById('includedContent').innerHTML = html;
+        })
+        .catch(error => console.error('Error fetching content: ', error));
+    </script>
+  </div>
+
+
+
+</body>
+
+</html>
