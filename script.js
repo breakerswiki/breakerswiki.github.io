@@ -46,7 +46,7 @@ function toggleImage(imageId) {
 // Auto Scroll
 window.addEventListener('load', function() {
   // Check if the current page is index.html
-  if (window.location.pathname !== '/index.html') {
+  if (window.location.pathname !== '/') {
       // Scroll to 370px
       setTimeout(function () {
         window.scrollTo(0, 370);
