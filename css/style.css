@@ -335,11 +335,9 @@ figcaption {
 }
 @media screen and (min-width: 600px) {
   .main-content table.charselect {
-    display: inline-table;
     text-align: left;
     margin: 0px;
     padding: 0px;  
-    width: 550px;
   }
 
 }
@@ -460,13 +458,24 @@ color: #ffffff;
 
 #matchups table.charselect img {
   filter: sepia(100%) hue-rotate(190deg) saturate(150%);
+  cursor: pointer;
+  padding: 0;
 }
+
 #matchups table.charselect img:hover {
-  filter:none;
+  filter: none;
 }
-#matchups table.charselect img:focus {
-  filter:none;
+
+
+button:focus, button:focus-within, button:active {
+  background-color: #416b9a;
+  color: white;
+  /* Add any other styles you want for the active state */
 }
+
+
+
+
 
 @keyframes fadeOutWhite {
   from {
@@ -582,7 +591,7 @@ img.wip {
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 .table-container {
-  display: table-row;
+  display: inline-grid;
   border-collapse: collapse;
   table-layout: auto;
   text-align: left;
@@ -665,7 +674,8 @@ th {
 .safe-on-block::before,
 .breakable::before,
 .punish-on-block::before,
-.whiff-punish::before {
+.whiff-punish::before,
+.punish-on-hit::before {
   color: white;
   padding: 4px;
   line-height: 2;
@@ -734,6 +744,12 @@ th {
   margin-left: 2px;
   margin-right: 2px;
 }
+.punish-on-hit::before {
+  content: "Punish on Hit";
+  background-color: #de468d;
+  margin-left: 2px;
+  margin-right: 2px;
+}
 .whiff-punish::before {
   content: "Whiff punish";
   background-color: #006391;
@@ -746,6 +762,5 @@ th {
 
 a:focus {
   outline: 0;
-  -moz-outline-style: none;
 }
 
