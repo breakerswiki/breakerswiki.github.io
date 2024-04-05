@@ -23,15 +23,7 @@ function toggleContent(contentId) {
   content.style.display = "block";
 }
 
-// Back (history)
-function goBack() {
-  if (document.referrer.startsWith(window.location.origin)) {
-    window.history.back();
-  } else {
-    // Redirect to the home page
-    window.location.href = '/index.html';
-  }
-}
+
 
 // Show / Hide image
 function toggleImage(imageId) {
@@ -44,15 +36,16 @@ function toggleImage(imageId) {
 }
 
 // Auto Scroll
-window.addEventListener('load', function() {
-  // Check if the current page is index.html
-  if (window.location.href.indexOf('index.html') === -1 && window.location.pathname !== "/") {
-      // Scroll to 370px
-      setTimeout(function () {
-        window.scrollTo(0, 370);
-    },2);
+window.onload = function() {
+  if(window.location.pathname !== "/" && window.location.pathname !== "/index.html") {
+      var titleElement = document.getElementById('title');
+      if(titleElement) {
+          titleElement.scrollIntoView({ behavior: 'smooth' });
+          // Remove the '#title' fragment from the URL
+          history.replaceState(null, null, window.location.pathname);
+      }
   }
-});
+};
 
 // Loading Overlay
 window.addEventListener('load', function() {
