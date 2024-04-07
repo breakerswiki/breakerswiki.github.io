@@ -54,4 +54,25 @@ window.addEventListener('load', function() {
   loadingOverlay.style.display = 'none';
 });
 
+// Random background for page header.
+document.addEventListener("DOMContentLoaded", function() {
+  var images = [
+      "img/assets/maherl_stage_bg.webp",
+      "img/assets/sho_stage_bg.webp",
+      "img/assets/pielle_stage_bg.webp",
+      "img/assets/tia_stage_bg.webp",
+      "img/assets/saizo_stage_bg.webp",
+      "img/assets/condor_stage_bg.webp",
+      "img/assets/dao-long_stage_bg.webp",
+      "img/assets/rila_stage_bg.webp",
+      "img/assets/alsion_stage_bg.webp",
+      "img/assets/bai-hu_stage_bg.webp"
+      // Add more image URLs as needed
+  ];
 
+  var randomIndex = Math.floor(Math.random() * images.length);
+  var selectedImage = images[randomIndex];
+  
+  var backgroundDiv = document.querySelector(".page-header");
+  backgroundDiv.style.backgroundImage = "linear-gradient(120deg, #158399e9, #154e99ea), url('" + selectedImage + "')";
+});

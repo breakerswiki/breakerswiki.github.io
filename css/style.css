@@ -52,8 +52,9 @@ a {
 .page-header {
   color: #fff;
   text-align: center;
-  background-image: linear-gradient(120deg, #158399e9, #154e99ea), url(../img/assets/bg2.gif);
-  background-size: cover; 
+  background-size:     cover;                      
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
   @media screen and (min-width: 64em) {
     .page-header {
@@ -467,6 +468,7 @@ color: #ffffff;
 }
 
 
+
 button:focus, button:focus-within, button:active {
   background-color: #416b9a;
   color: white;
@@ -729,32 +731,37 @@ th {
 .safe-on-block::before {
   content: "Safe on block";
   background-color: #4ba034;
-  margin-left: 2px;
+  margin-left: 0;
   margin-right: 2px;
+  margin-bottom: 5px;
 }
 .breakable::before {
   content: "Breakable";
   background-color: #e74c0a;
-  margin-left: 2px;
+  margin-left: 0;
   margin-right: 2px;
+  margin-bottom: 5px;
 }
 .punish-on-block::before {
   content: "Punish on block";
   background-color: #de4646;
-  margin-left: 2px;
+  margin-left: 0;
   margin-right: 2px;
+  margin-bottom: 5px;
 }
 .punish-on-hit::before {
   content: "Punish on Hit";
-  background-color: #de468d;
-  margin-left: 2px;
+  background-color: #ab46de;
+  margin-left: 0;
   margin-right: 2px;
+  margin-bottom: 5px;
 }
 .whiff-punish::before {
   content: "Whiff punish";
   background-color: #006391;
-  margin-left: 2px;
+  margin-left: 0;
   margin-right: 2px;
+  margin-bottom: 5px;
 }
 .main-content video {
   width: 100%;
