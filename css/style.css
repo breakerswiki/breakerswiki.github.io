@@ -20,18 +20,45 @@ a {
   a:hover {
     text-decoration: underline; }
 
+
+
+    .button-a {
+
+    }
+    .button-a:hover {
+      
+    }
+    .button-a:active {
+      box-shadow: none;
+      top: 5px;
+    }
+
 .btn {
   display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  border-style: solid;
-  border-width: 1px;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+  border: none;
+  background-color: rgba(255, 255, 255, 0.127);
+  color: #ffff;
+  padding: 10px;
+  font-size: normal;
+  border-radius: 10px;
+  margin: auto;
+  border: 1px solid rgba(245, 245, 245, 0.352);
+  position: relative;
+  transition: all 0.3s ease;
+}
   .btn:hover {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3); }
+    border-color: rgba(255, 255, 255, 0.3); 
+    box-shadow: 2px 2px 2px 2px rgba(7, 44, 86, 0.497)
+  }
+  .btn:active {
+    box-shadow: none;
+    background-color: rgba(255, 255, 255, 0.32);
+    top: 5px;
+  }
+
   .btn + .btn {
     margin-left: 1rem; }
   @media screen and (min-width: 64em) {
@@ -363,7 +390,16 @@ img.charbg {
     width: 100%;
 }
 
-
+ul.combos {
+  margin-top: 10px;
+  font-size: small;
+  padding-left: 5px;
+}
+ul.combos li {
+  border-bottom: 1px solid rgb(209, 209, 209);
+  list-style-type: none;
+  margin-bottom: 10px;
+}
 
 
 .main-content table.movelist th.commands {
@@ -443,7 +479,7 @@ background: #416b9a;
 color: #ffffff;
 }
 
-#movelist, #strategy, #combos, #matchups, #saizo, #rila, #dao-long, #condor, #maherl, #tia, #pielle, #alsion {
+#movelist, #strategy, #combos, #matchups, #sho, #saizo, #rila, #dao-long, #condor, #maherl, #tia, #pielle, #alsion {
   display: none;
   opacity: 1;
   background-color: white;
@@ -701,17 +737,17 @@ th {
 
 .kara-cancel::before {
   content: "Kara Cancel";
-  background-color: #9d2a93;
+  background-color: #748863;
 }
 
 .hard-knockdown::before {
   content: "Hard Knockdown";
-  background-color: #a0884c;
+  background-color: #68448a;
 }
 
 .knockdown::before {
   content: "Knockdown";
-  background-color: #c8a95b;
+  background-color: #ad5bc8;
 }
 
 .overhead::before {
