@@ -48,10 +48,22 @@ window.onload = function() {
 };
 
 // Loading Overlay
-window.addEventListener('load', function() {
-  // Hide the loading animation when the page is fully loaded
-  var loadingOverlay = document.getElementById('loadingOverlay');
-  loadingOverlay.style.display = 'none';
+document.addEventListener("DOMContentLoaded", function() {
+  var overlay = document.getElementById('loading-overlay');
+  var progressBar = document.getElementById('progress-bar');
+  var progressText = document.getElementById('progress-text');
+
+  // Simulate page loading
+  var progress = 0;
+  var interval = setInterval(function() {
+    progress += Math.random() * 10;
+    progressBar.style.width = progress + '%';
+    progressText.textContent = Math.round(progress) + '%';
+    if (progress >= 100) {
+      clearInterval(interval);
+      overlay.style.display = 'none'; // Hide loading overlay when done
+    }
+  }, 50); // Adjust interval as needed
 });
 
 // Random background for page header.

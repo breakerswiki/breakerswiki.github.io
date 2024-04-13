@@ -16,8 +16,11 @@
 
 <body>
 
-  <div class="loading-overlay" id="loadingOverlay">
-    <div class="loading-spinner"></div>
+  <div id="loading-overlay">
+    <div id="loading-progress">
+      <div id="progress-bar"></div>
+      <div id="progress-text">0%</div>
+    </div>
   </div>
   
   <section class="page-header">
@@ -41,6 +44,7 @@
         <div class="nav-guide">
           <button onclick="showContent('infos')">Infos</button>
           <button onclick="showContent('movelist')">Move list</button>
+          <button onclick="showContent('combos')">Combos</button>
         </div>
 
 
@@ -53,9 +57,9 @@
 
           <h2>Gameplay</h2>
           <p>
-            Bai-Hu is a secret character. To select Bai-Hu, 
-            simultaneously press up on both player 1 and player 2 controls at the character select screen.
-            His moves require button combinations and he has high defense, stun resistance, and an invincible dash.
+            Bai-Hu is a secret character. 
+            To unlock Bai-Hu, rotate Player 1 joystick counterclockwise 
+            and Player 2 joystick clockwise at character select. Bai-Hu appears beside Saizo if done correctly.
           </p>
           <p>
             In tournaments, Bai-Hu's overpowered moveset makes matches unfair and less competitive, 
@@ -155,7 +159,7 @@
                     src="img/inputs/Arcade-Stick-Right.png">+<img src="img/inputs/Arcade-Button-CPunch.png"></div>
               </td>
               </tr>
-              <td>Dust Throw/td>
+              <td>Dust Throw</td>
               <td>
                 <div class="inputs"><img src="img/inputs/Control-Modifier-Air.png"><img src="img/inputs/Arcade-Stick-Left.png">or<img
                   src="img/inputs/Arcade-Stick-Right.png">+<img src="img/inputs/Arcade-Button-CPunch.png"></div>
@@ -166,7 +170,55 @@
 
         </div>
 
+        <div id="combos">
+          <h2>Table of contents</h2>
+          <ol style="columns: 2;">
+            <li><a href="#meterless_combos">Meterless combos</a></li>
+            <li><a href="#metered_combos">Metered combos</a></li>
+            <li><a href="#anti-air">Anti-air</a></li>
+            <li><a href="#air-to-air">Air-to-air</a></li>
+          </ol>
+
+          <h2 id="meterless_combos">Meterless combos</h2>
+          <img src="img/GIF/Bai-Hu/bai-hu_meterless_combo.gif">
+          <ul class="combos">
+            <li>cr.LK x2 >  cr.HP (1hit) > LK+HK</li>
+            <li>cr.LK x2 > st.HP > LP+LK (fireball loop)</li>
+            <li>6HK > 6HK > st.HP > LP+LK (fireball loop)</li>
+            <li>6HK > j.HP > LP+LK (fireball loop)</li>
+            <li>cr.LK x2 > LK+HP > LP+HP</li>
+            <li>6LK > st.LK x2 > LK+HP > LP+HP</li>
+          </ul>
+
+
+          <h2 id="metered_combos">Metered combos</h2>
+          <img src="img/GIF/Bai-Hu/bai-hu_metered_combo.gif">
+          <ul class="combos">
+            <li>cr.LK x2 > st.HP > LP+LK > Super </li>
+            <li>cr.LK x2 >  cr.HP (1hit) > LK+HK > Super</li>
+          </ul>
+          
+
+          <h2 id="anti-air">Anti-air</h3>
+            <img src="img/GIF/Bai-Hu/bai-hu_anti-air_combo.gif">
+            <ul class="combos">
+              <li>st.HK > LP+HP > Super</li>
+              <li>6HK > st.HK > Super</li>
+              <li>st.HP > LP+LK (fireball loop)</li>
+            </ul>
+          
+  
+  
+            <h2 id="air-to-air">Air-to-air</h2>
+            <img src="img/GIF/Bai-Hu/bai-hu_air-to-air_combo.gif">
+            <ul class="combos">
+              <li>j.HK > j.HP > LP+LK > Super </li>
+              <li>j.HP >  LP+LK (fireball loop)</li>
+            </ul>
+
         </div>
+
+
 
 
 
