@@ -48,12 +48,7 @@ window.onload = function() {
 };
 
 
-// Loading Overlay
-window.addEventListener('load', function() {
-  // Hide the loading animation when the page is fully loaded
-  var loadingOverlay = document.getElementById('loadingOverlay');
-  loadingOverlay.style.display = 'none';
-});
+
 
 // Random background for page header.
 document.addEventListener("DOMContentLoaded", function() {
