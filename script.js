@@ -36,7 +36,7 @@ function toggleImage(imageId) {
 }
 
 // Auto Scroll
-window.onload = function() {
+/* window.onload = function() {
   if(window.location.pathname !== "/" && window.location.pathname !== "/index.html") {
       var titleElement = document.getElementById('title');
       if(titleElement) {
@@ -45,7 +45,7 @@ window.onload = function() {
           history.replaceState(null, null, window.location.pathname);
       }
   }
-};
+}; */
 
 
 
@@ -71,4 +71,23 @@ document.addEventListener("DOMContentLoaded", function() {
   
   var backgroundDiv = document.querySelector(".page-header");
   backgroundDiv.style.backgroundImage = "linear-gradient(120deg, #158399e9, #154e99ea), url('" + selectedImage + "')";
+});
+
+
+// Loading GIFs
+window.addEventListener('DOMContentLoaded', function() {
+  const gifImages = document.querySelectorAll('img[src*=".gif"]');
+
+  gifImages.forEach(function(image) {
+    // Create loading text element
+    const loadingText = document.createElement('span');
+    loadingText.classList.add('loading-text');  
+    image.parentNode.insertBefore(loadingText, image); 
+
+    image.style.opacity = 0;  // Hide GIF image initially
+    image.addEventListener('load', function() {
+      loadingText.remove();  // Remove loading text on image load
+      image.style.opacity = 1;  // Show loaded GIF image
+    });
+  });
 });
