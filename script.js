@@ -49,7 +49,6 @@ function toggleImage(imageId) {
 
 
 
-
 // Random background for page header.
 document.addEventListener("DOMContentLoaded", function() {
   var images = [
@@ -74,20 +73,14 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Loading GIFs
-window.addEventListener('DOMContentLoaded', function() {
-  const gifImages = document.querySelectorAll('img[src*=".gif"]');
-
-  gifImages.forEach(function(image) {
-    // Create loading text element
-    const loadingText = document.createElement('span');
-    loadingText.classList.add('loading-text');  
-    image.parentNode.insertBefore(loadingText, image); 
-
-    image.style.opacity = 0;  // Hide GIF image initially
-    image.addEventListener('load', function() {
-      loadingText.remove();  // Remove loading text on image load
-      image.style.opacity = 1;  // Show loaded GIF image
-    });
-  });
-});
+// Function to remove everything after #
+function removeHash() {
+  if (window.location.hash) {
+      var newURL = window.location.href.replace(window.location.hash, "");
+      window.history.replaceState({}, document.title, newURL);
+  }
+}
+// Run the function when the page loads
+window.addEventListener("load", removeHash);
+// Run the function when the hash changes
+window.addEventListener("hashchange", removeHash);
