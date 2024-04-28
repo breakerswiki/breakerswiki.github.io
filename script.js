@@ -1,4 +1,3 @@
-
 // Toggle Content on all charaters pages
 function showContent(contentId) {
   // Hide all content sections first
@@ -6,7 +5,6 @@ function showContent(contentId) {
   for (var i = 0; i < contents.length; i++) {
     contents[i].style.display = "none";
   }
-
   // Then show the clicked content section
   var content = document.getElementById(contentId);
   content.style.display = "block";
@@ -23,32 +21,6 @@ function toggleContent(contentId) {
   content.style.display = "block";
 }
 
-
-
-// Show / Hide image
-function toggleImage(imageId) {
-  var img = document.getElementById(imageId);
-  if (img.style.display === 'none') {
-      img.style.display = 'block'; // Show the image
-  } else {
-      img.style.display = 'none'; // Hide the image
-  }
-}
-
-// Auto Scroll
-/* window.onload = function() {
-  if(window.location.pathname !== "/" && window.location.pathname !== "/index.html") {
-      var titleElement = document.getElementById('title');
-      if(titleElement) {
-          titleElement.scrollIntoView({ behavior: 'smooth' });
-          // Remove the '#title' fragment from the URL
-          history.replaceState(null, null, window.location.pathname);
-      }
-  }
-}; */
-
-
-
 // Random background for page header.
 document.addEventListener("DOMContentLoaded", function() {
   var images = [
@@ -62,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
       "img/assets/rila_stage_bg.webp",
       "img/assets/alsion_stage_bg.webp",
       "img/assets/bai-hu_stage_bg.webp"
-      // Add more image URLs as needed
   ];
 
   var randomIndex = Math.floor(Math.random() * images.length);
@@ -73,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Function to remove everything after #
+// Remove everything after # in URL
 function removeHash() {
   if (window.location.hash) {
       var newURL = window.location.href.replace(window.location.hash, "");
