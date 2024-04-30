@@ -55,3 +55,7 @@ function removeHash() {
 window.addEventListener("load", removeHash);
 // Run the function when the hash changes
 window.addEventListener("hashchange", removeHash);
+
+
+
+
