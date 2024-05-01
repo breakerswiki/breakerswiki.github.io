@@ -787,3 +787,25 @@ a:focus {
   grid-gap: 4px;
   width: auto;
 }
+
+
+ol {
+  list-style-type: none; /* Remove default list style */
+  counter-reset: my-counter; /* Reset counter */
+  padding: 10px;
+  
+}
+ol li > a {
+  margin-bottom: 10px; /* Just for spacing */
+  color: #155b99;
+}
+
+
+ol li::before {
+  content: "●"; color: #155b99;
+  margin-right: 4px;
+  display: inline-block;
+  width: 15px; /* Adjust the width to change the size */
+  height: 15px; /* Adjust the height to change the size */
+  text-decoration: none;
+}
