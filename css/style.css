@@ -809,3 +809,30 @@ ol li::before {
   height: 15px; /* Adjust the height to change the size */
   text-decoration: none;
 }
+
+
+#navbar {
+  background-color: #006391;
+  position: fixed;
+  z-index: 1;
+  top: -50px;
+  width: 100%;
+  text-align: center;
+  display:flex;
+  justify-content:center;
+  transition: top 0.3s;
+}
+
+#navbar a {
+  color: #f2f2f2;
+  padding: 15px;
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+#navbar a:hover {
+  background-color: #0186c3;
+  color: #f2f2f2;
+}
