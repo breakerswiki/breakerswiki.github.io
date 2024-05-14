@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var selectedImage = images[randomIndex];
   
   var backgroundDiv = document.querySelector(".page-header");
-  backgroundDiv.style.backgroundImage = "linear-gradient(120deg, #158399e9, #154e99ea), url('" + selectedImage + "')";
+  backgroundDiv.style.backgroundImage = "linear-gradient(120deg, rgba(21, 131, 153, 0.79), rgb(21 78 153 / 91%)), url('" + selectedImage + "')";
 });
 
 
