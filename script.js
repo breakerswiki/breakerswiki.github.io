@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var randomIndex = Math.floor(Math.random() * images.length);
   var selectedImage = images[randomIndex];
   
-  var backgroundDiv = document.querySelector(".page-header");
+  var backgroundDiv = document.querySelector(".navbar");
   backgroundDiv.style.backgroundImage = "linear-gradient(120deg, rgba(21, 131, 153, 0.79), rgb(21 78 153 / 91%)), url('" + selectedImage + "')";
 });
 
@@ -55,16 +55,3 @@ function removeHash() {
 window.addEventListener("load", removeHash);
 // Run the function when the hash changes
 window.addEventListener("hashchange", removeHash);
-
-
-
-// When the user scrolls down 300px from the top of the document, slide down the navbar
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-}
