@@ -56,12 +56,12 @@ window.addEventListener("load", removeHash);
 // Run the function when the hash changes
 window.addEventListener("hashchange", removeHash);
 
-// Remove ".html" from URL
+// Remove ".html" and "/index" from URL
 // Note: Refreshing a page locally without the .html may cause an error. 
 // This function is specifically used because the code is meant to be published 
 // on GitHub Pages, which handles this exception.
 function removeHtmlExtension() {
-  var newURL = window.location.href.replace(/\.html$/, "");
+  var newURL = window.location.href.replace(/\.html$/, "").replace(/\/index(\/)?$/, "");
   if (newURL !== window.location.href) {
       window.history.replaceState({}, document.title, newURL);
   }
