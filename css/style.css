@@ -45,7 +45,7 @@ header {
 }
 .nav-links {
   list-style: none;
-  opacity: .7;
+  opacity: .8;
   padding: 0;
   display: flex;
   font-family: 'Thirsty Caps';
@@ -126,6 +126,7 @@ header {
       font-size: 1rem; } }
 
 .main-content {
+  flex: 1;
   word-wrap: break-word;
   opacity: 1;
   background-color: white;
@@ -156,6 +157,14 @@ header {
     .main-content img.GIF {
       width: 100%;
      }
+
+     .main-content h1.title { 
+      font-family: 'Thirsty Caps';
+      letter-spacing: 3px;
+      font-size: 4rem;
+      text-align: center;
+    }
+
 
   .main-content h1,
   .main-content h2,
@@ -309,6 +318,7 @@ figcaption {
   text-align: center;
   padding: 3px;
 }
+
 
 .main-content table.combos {
   display: inline-table;
@@ -809,16 +819,20 @@ ol {
   list-style-type: none; /* Remove default list style */
   counter-reset: my-counter; /* Reset counter */
   padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  font-size: small;
+
   
 }
 ol li > a {
   margin-bottom: 10px; /* Just for spacing */
-  color: #155b99;
+  color: #262626;
 }
 
 
 ol li::before {
-  content: "●"; color: #155b99;
+  content: "●"; color: #6d6d6d;
   margin-right: 4px;
   display: inline-block;
   width: 15px; /* Adjust the width to change the size */

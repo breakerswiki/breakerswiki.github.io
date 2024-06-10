@@ -66,6 +66,5 @@ function removeHtmlExtension() {
       window.history.replaceState({}, document.title, newURL);
   }
 }
-
 // Run the function when the page loads
 window.addEventListener("load", removeHtmlExtension);
