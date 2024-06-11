@@ -596,20 +596,13 @@ p.notes {
   top: 5px
 }
 
-img.active {
-  border-bottom: 5px solid rgb(56, 224, 65);
-}
-img.wip {
-  border-bottom: 5px solid rgb(255, 149, 0);
-}
-
 div.infos {
   display:inline-block;
   position:relative;
   max-width:160px;
 }
 
-div.infos span {display: none; position: absolute; bottom: 5px; left: 0; right: 0; background: #333333a8; color: #fff; font-size: small; }
+div.infos span {position: absolute; bottom: 5px; left: 0; right: 0; background: #333333a8; color: #fff; font-size: small; }
 div.infos:hover span {display: block; }
 
 
