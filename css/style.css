@@ -602,7 +602,13 @@ div.infos {
   max-width:160px;
 }
 
-div.infos span {position: absolute; bottom: 5px; left: 0; right: 0; background: #333333a8; color: #fff; font-size: small; }
+div.infos span {
+  position: absolute; bottom: 5px; left: 0; right: 0; 
+  background: #333333a8; color: #fff; font-size: medium; 
+  font-family: 'Thirsty Caps';
+
+  letter-spacing: 3px;
+}
 div.infos:hover span {display: block; }
 
 
