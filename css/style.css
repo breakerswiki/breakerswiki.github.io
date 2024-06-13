@@ -436,6 +436,10 @@ ul.combos li {
   
 }
 
+table.properties td:not(:first-child):not(:last-child),
+table.properties th:not(:first-child):not(:last-child) {
+    text-align: center;
+}
 
 
 .main-content table.movelist td {
@@ -646,33 +650,39 @@ div.infos:hover span {display: block; }
   width: 100%;
 }
 
-table.movelist {
+table.movelist, table.properties{
   border-collapse: collapse;
 }
 
+table.properties span {
+  font-size: xx-small;
+}
 
+table.properties th, table.properties td {
+  font-size: x-small;
+}
 
-table th.normals {
+th.normals {
   background: #608e76;
 }
 
-table.movelist th.commands {
+th.commands {
   background: #a03e3d;
 }
 
-table.movelist th.specials {
+th.specials {
   background: #3d6a9d;
 }
 
-table.movelist th.supers {
+th.supers {
   background: #a07c00;
 }
 
-table.movelist th.throws {
+th.throws {
   background: #3e3c3b;
 }
 
-table.movelist th.data {
+th.data {
   background: #5b5b5b;
   font-size: x-small;
   text-align: center;
@@ -708,6 +718,11 @@ th {
   font-weight: 400;
 }
 
+.split-cell div {
+  display: block;
+  padding: 2px 0;
+}
+
 .special-cancel::before,
 .super-cancel::before,
 .kara-cancel::before,
@@ -715,7 +730,18 @@ th {
 .hard-knockdown::before,
 .overhead::before,
 .inv-startup::before,
-.launcher::before,
+.launcher::before {
+  color: white;
+  white-space: pre;
+  padding: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin: 1px;
+  border-radius: 4px;
+}
+
+
+
 .safe-on-block::before,
 .breakable::before,
 .punish-on-block::before,
@@ -723,22 +749,18 @@ th {
 .punish-on-hit::before {
   color: white;
   padding: 4px;
-  line-height: 2;
-  font-size: x-small;
+  font-size: 9px;
   border-radius: 4px;
-  margin-left: 3px;
-  margin-right: 3px;
-  white-space: nowrap;
+  margin: 2px;
 }
 
 .special-cancel::before {
-  content: "Special Cancel";
+  content: "Special cancel";
   background-color: #264653;
-
 }
 
 .super-cancel::before {
-  content: "Super Cancel";
+  content: "Super cancel";
   background-color: #2a9d8f;
 }
 
@@ -748,7 +770,7 @@ th {
 }
 
 .hard-knockdown::before {
-  content: "Hard Knockdown";
+  content: "H.Knockdown";
   background-color: #68448a;
 }
 
