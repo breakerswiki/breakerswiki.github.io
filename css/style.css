@@ -32,6 +32,16 @@ header {
   width: 100%;
 }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.image-container img {
+  max-width: 100px;
+}
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -259,7 +269,7 @@ header {
     }
 
 .site-footer {
-  background-color: #171918;
+  background-color: black;
   width: 100%;
   color: #dce6f0;
   text-align: center;

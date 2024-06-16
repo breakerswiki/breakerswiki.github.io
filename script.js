@@ -44,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
 // Remove everything after # in URL
 function removeHash() {
   if (window.location.hash) {

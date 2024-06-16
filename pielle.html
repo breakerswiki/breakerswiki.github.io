@@ -42,6 +42,7 @@
           <button onclick="showContent('movelist')">Move list</button>
           <button onclick="showContent('strategy')">Strategy</button>
           <button onclick="showContent('combos')">Combos</button>
+          <button onclick="showContent('matchups')">Matchups</button>
         </div>
 
 
@@ -288,7 +289,10 @@
                   <tr>
                     <td>close C</td>
                     <td>Mid</td>
-                    <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
+                    <td class="split-cell">
+                      <div><span class="special-cancel"></span><span class="super-cancel"></div>
+                      <div><span class="launcher"></span></div>
+                    </td>
                 </tr>
                   <tr>
                       <td>down C</td>
@@ -320,7 +324,7 @@
                   <tr>
                       <td>down D</td>
                       <td>Low</td>
-                      <td></td>
+                      <td><span class="knockdown"></span></td>
                   </tr>
                   <tr>
                       <td>up D</td>
@@ -378,22 +382,22 @@
                     <tr>
                       <td>Robin Liner</td>
                       <td>Mid</td>
-                      <td></td>
+                      <td><span class="knockdown"> C. version only</span></td>
                   </tr>
                   <tr>
                     <td>Monsieur Crash</td>
                     <td>Mid</td>
-                    <td></td>
+                    <td><span class="knockdown"> After 3rd hit</span></td>
                 </tr>
                 <tr>
                   <td>Rose Train</td>
                   <td>Mid</td>
-                  <td></td>
+                  <td><span class="knockdown"></span></td>
               </tr>
               <tr>
                 <td>Merci Un Deux Trois</td>
                 <td>High</td>
-                <td></td>
+                <td><span class="knockdown"></span></td>
             </tr>
                 </tbody>
                 <thead>
@@ -433,6 +437,7 @@
           <ol style="columns: 2;">
             <li><a href="#neutral">Neutral</a></li>
             <li><a href="#antiair">Anti-air</a></li>
+            <li><a href="#supers">Super usage</a></li>
             <li><a href="#overhead">Overhead LK+HK</a></li>
             <li><a href="#side-switch">Side switch</a></li>
             <li><a href="#fuzzy">Fuzzy</a></li>
@@ -441,54 +446,96 @@
 
           <h2 id="neutral">Neutral</h2>
           <p>
-            Pielle isn't great at zoning with projectiles. They don't work well against someone who knows the matchup.
-            His Fireball have a lot of recovery, the opponent easily has time to jump and punish you.<br><br>
-            It's also unsafe on guard: Most of his pressure with fireball (e.g., cr.LP > 236LP) are not safe on block.
-            There's also a gap before the fireball hits the opponent.
+            Pierre struggles with zoning. 
+            His fireballs have high recovery and are unsafe on block even with the correct spacing, 
+            which makes his pressure (e.g., cr.LPx2 > 236LP) unreliable.
           </p>
+          <p>He lacks strong pokes for controlling space, 
+            testing an opponent's defenses, or initiating an offensive sequence.
+            His options for pokes are at close range with st.LP or cr.LP, which he can convert into 214P or super (236236P)</p>
+          <ul class="combos">
+            <li>cr.LPx2 > 214P</li>
+            <li>st.LPx2 > 214P</li>
+            <li>st.LPx2 > 236236P</li>
+            <li>cr.LPx2 > 236236P</li>
+          </ul>
 
           <h2 id="antiair">Anti-air</h2>
-          
+          <p>Except for his super (214214P), which has invulnerable startup and good range, 
+            his anti-air options don't prioritize well against certain normals. 
+            You'll often find yourself needing to react with a jump attack or rely on your close st.HP or far st.HK.</p>
           <ul class="combos">
             <li>623LP/HP</li>
             <li>Thunder Super (214214P)</li>
             <li>close st.HP (effective to counter crossups)</li>
             <li>slide (cr.HK) useful in against backjumps on landing</li>
+            <li>214214K can punish jumps from long range</li>
           </ul>
 
-          <p>His slide allows for OTG (Off The Ground) setups into Super Swords/Thunder.</p>
           <p>
-          ⚠️ Avoid using 623LP in combos; it results in a quick recovery and no knockdown for the opponent, making you
-          susceptible to easy punishment. Try to only Use 623LP as an anti-air.
+            ⚠️ Grounded 623LP has long recovery and no knockdown, so only use it for anti-airing.
+            </p>
+
+          <p>Using his slide as an anti-air allows for OTG setups into Super 2362369 or 214214P (corner).</p>
+          <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
+            <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/pielle_slide_otg.mp4">
+          </video>
+
+          <h2 id="supers">Super usage</h2>
+          <p>
+            Robin Super (236236P) goes through projectiles, 
+            in some matchups you can punish your opponent projectiles from far away
           </p>
+          <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
+            <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/matchups/pielle_vs_dao-long_kouryuu_ga.mp4">
+          </video>
+
+          <p>
+            His thunder super (214214P) is an effective anti-air and his rose super (214214K) can whiff punish or anti-air from max range
+          </p>
+
+
 
           <h2 id="overhead">Overhead LK+HK</h2>
-          <p>you can combo overhead with LK, LP, close st.HP or cr.HK.<br>
-            midscreen: If you perform an overhead while close to a crouching opponent, it will whiff, and you will pass
-            behind them.
-
-            ⚠️ On guard, every normal canceled into an overhead leaves a gap.
-          </p>
+          <p>You can cancel any normal into an overhead except for cr.HK.<br>
+            On hit, confirm with LP or st.LK<p>
+            
+            <p> ⚠️ Be careful when using it ! Cancelling any normal into an overhead does not combo, instead, it creates a gap and leaves you vulnerable.
+              Overhead confirms are also breakable.
+            </p>
+  
+            <ul class="combos">
+              <li>LK+HK ❌ st.LK > 623HP </li>
+              <li>LK+HK ❌ st.LK > 214P.P.P </li>
+              <li>LK+HK ❌ cr.LK > 214HP.HP.HP</li>
+              <li>LK+HK ❌ cr.LK > 623HP</li>
+              <li>LK+HK ❌ st.LPx2 > 214LK (Only on standing opponents)</li>
+              <li>LK+HK ❌ st.LPx2 > 214LP.LP.LP</li>
+            </ul>
+            
+            <p>
+            if you perform an overhead while close to a crouching opponent, it will whiff, and you will pass
+            behind them.</p>
 
 
 
           <h2 id="side-switch">Side switch</h2>
-          <p>
-          <ul>
+          <ul class="combos">
             <li>close st.HK > 214HK</li>
-            <li>j.HK > cr.HP > 214HK</li>
+            <li>cr.HP > 214HK</li>
+            <li>cr.LP > 214P.P.P </li>
           </ul>
-          </p>
 
           <h2 id="fuzzy">Fuzzy & instant overhead</h2>
           <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
             <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/fuzzyguard.mp4">
           </video>
-          <p>instant overhead with neutral j.LK<br>
+          <p>instant overhead with neutral j.LK<br><br>
             fuzzy:
-          <ul>
+          <ul class="combos">
             <li>j.HP > j.LK</li>
             <li>j.HP > j.HP</li>
+            <li>j.HP > j.HK <br> note: j.HK can be canceled into "Merci un deux trois" </li>
           </ul>
 
           </p>
@@ -504,6 +551,7 @@
             <li><a href="#anti-air">Anti-air</a></li>
             <li><a href="#air-to-air">Air-to-air</a></li>
             <li><a href="#rose-train">Rose train</a></li>
+            <li><a href="#breakable_combos">Breakable combos</a></li>
           </ol>
       
 
@@ -513,10 +561,6 @@
           </video>
           <ul class="combos">
             <li>cr.LK > 214HP.HP.HP</li>
-            <li>LK+HK > cr.LK > 214HP.HP.HP</li>
-            <li>LK+HK > cr.LK > 623HP</li>
-            <li>LK+HK > st.LPx2 > 214LK (Standing hit only)</li>
-            <li>LK+HK > st.LPx2 > 214LP.LP.LP</li>
             <li>cr.LPx3 > 214HP.HP.HP</li>
             <li>j.HK > cr.HP > 214HK</li>
             <li>j.HK > cr.HP > 214HP.HP.HP</li>
@@ -567,7 +611,7 @@
           </video>
           <ul class="combos">
             <p><u>Only works on standing opponents</u></p>
-            <li>LK+HK > st.LP x2 > 214LK</li>
+            <li>LK+HK ❌ st.LP x2 > 214LK</li>
             <li>cr.LP > close st.LP > 214LK</li>
             <li>st.LK > 214LK</li>
             <li>cr.LK > 214LK</li>
@@ -577,9 +621,447 @@
             <li>close st.HP > 214LK or 214HK</li>
           </ul>
 
+          <h2 id="breakable_combos">Breakable combos</h2>
+          <ul class="combos">
+            <li>LK+HK ❌ st.LK > 623HP </li>
+            <li>LK+HK ❌ st.LK > 214P.P.P </li>
+            <li>LK+HK ❌ cr.LK > 214HP.HP.HP</li>
+            <li>LK+HK ❌ cr.LK > 623HP</li>
+            <li>LK+HK ❌ st.LPx2 > 214LK (Only when the opponent is standing)</li>
+            <li>LK+HK ❌ st.LPx2 > 214LP.LP.LP</li>
+          </ul>
         </div>
 
+        <div id="matchups">
 
+
+          <table class="charselect">
+            <tbody>
+              <tr>
+                <td><a onclick="toggleContent('sho')"><img src="img/assets/Portrait_BR_Sho.png"></a></td>
+                <td><a onclick="toggleContent('pielle')"><img src="img/assets/Portrait_BR_Pielle.png"></a></td>
+                <td><a onclick="toggleContent('condor')"><img src="img/assets/Portrait_BR_Condor.png"></a></td>
+                <td><a onclick="toggleContent('rila')"><img src="img/assets/Portrait_BR_Rila.png"></a></td>
+                <td><a onclick="toggleContent('tia')"><img src="img/assets/Portrait_BR_Tia.png"></a></td>
+                <td><a onclick="toggleContent('alsion')"><img src="img/assets/Portrait_BR_Alsion_III.png"></a></td>
+                <td><a onclick="toggleContent('maherl')"><img src="img/assets/Portrait_BR_Maherl.png"></a></td>
+                <td><a onclick="toggleContent('dao-long')"><img src="img/assets/Portrait_BR_Dao-Long.png"></a></td>
+                <td><a onclick="toggleContent('saizo')"><img src="img/assets/Portrait_BR_Saizo.png"></a></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div id="saizo">
+            <h1>Saizo</h1>
+    
+    
+            <p><b>Rasen Kyaku</b> <br><span class="punish-on-block"></span><span class="breakable"><span class="punish-on-hit"></span>
+                Overhead, negative on hit and block with a long recovery. 
+                Leaves ample time for punishment.
+                Saizo rarely resorts to this move unless finishing off his opponent
+            </p>
+    
+            <p><b>Ryuuei Kyaku</b> <br><span class="punish-on-block"></span>
+              A slide that must be canceled to be safe.
+              Slide into bomb is safe midscreen against a pielle without meter.
+              At close range, punish slide > bomb with your reversal super 236236P
+            </p>
+    
+            <p><b>Yashagami</b> <br><span class="punish-on-block"></span><span class="breakable"></span><span
+              class="punish-on-hit">
+              Yashagami HP knocks down opponents, while Yashagami LP serves as a reversal and anti-air.
+              This move must be canceled into a super due to its negative frames on hit and block.<br>
+              Be cautious on block, Saizo still has a few frames to execute a super, 
+              causing hesitation in your usual punishment. 
+              In such instances, Pielle's Super (236236P) ensures a guaranteed punish
+          </p>
+          <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
+            <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/matchups/pielle_vs_saizo_yashagami.mp4">
+          </video>
+    
+            <p><b>st.HP</b> <br><span class="punish-on-block"></span>
+              Close st.HP hits low, while the far version has significant recovery,
+               making it punishable even on hit.<br>
+            </p>
+    
+    
+            <p><b>Hengetsuzan</b> <br><span class="punish-on-block"></span>
+              punish with cr.HK or Super (236236P)
+            </p>
+            
+    
+    
+          </div>
+    
+          <div id="pielle">
+            <h1>Pielle</h1>
+    
+    
+            <p><b>Saber Bash</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
+            Despite its animation, this move isn't an overhead. 
+            Punish with cr.LP 
+            </p>
+            <p><b>Flying Peach Bomber</b> <br><span class="safe-on-block"></span><span class="whiff-punish"></span>
+              This one is an overhead, but if done close to you, it will whiff, and he'll pass behind you.
+              When used in a blockstring, there's always a gap, no matter which normal move it was canceled from.
+              Punish on whiff with st.LP or st.LK
+            </p>
+            <p><b>Bonjour Shot</b> <br><span class="punish-on-block"></span><span class="whiff-punish"><span class="punish-on-hit"></span>
+              A projectile with a very slow recovery.
+              You can punish it with your Super (236236P).
+              At close range, punish on block or hit with cr.HP > LP+HP
+            </p>
+            <p><b>Robin Liner</b> <br><span class="punish-on-block"></span><span class="whiff-punish"><span class="punish-on-hit"></span>
+              An anti-air special with slow recovery and no reversal properties...
+              On hit, LP version keeps you standing for a punish, while HP version knocks you down.
+            </p>
+            <p><b>Monsieur Crash</b> <br><span class="punish-on-block"></span>
+             A three-hit move, easily punishable. However, Pielle can delay each hit to counter your punish attempt.
+            </p>
+    
+            <p><b>Merci Un Deux Trois </b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
+              An aerial dive that can deceive your anti-air or jump. 
+              When you block all 3 hits, Pielle passes behind you. Punish with st.HP
+            </p>
+    
+            <p><b>Super Rose</b> <br><span class="safe-on-block"><span class="whiff-punish"></span>
+              A super that crosses the entire screen with a wide hitbox, useful for countering jump attempts.
+              Whiff punish at super flash with cr.HK.
+            </p>
+    
+            <p><b>Thunder Croiser</b> <br><span class="safe-on-block"></span>
+              On block, at close range punish with super (236236P)
+            </p>
+    
+    
+    
+            
+    
+          </div>
+    
+          <div id="rila">
+            <h1>Rila</h1>
+    
+            <p><b>Dynamite Kick</b> <br><span class="safe-on-block"></span>
+            </p>
+    
+            <p><b>Killer Snake</b> <br><span class="punish-on-block"></span>
+              Killer snake isn't overhead you can block low. HK version passes through projectiles
+              and setup her super on hit. Minus on block, punish her with cr.LP but she still has frames to input her invul. startup Super.
+              If you have meter, counter both of her super attempts with this OS : cr.LP ~ 214214P
+            </p>
+            <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
+              <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/matchups/pielle_vs_rila_killer_snake.mp4">
+            </video>
+    
+            <p><b>Spinning Claw</b><br><span class="safe-on-block">
+              Safe on block due to pushback. It remains active for a while and has priority over normals
+              and some supers.
+            </p>
+    
+            <p><b>Quick Scratch LP</b> <br><span class="safe-on-block"><span class="whiff-punish">
+              Very fast, can catch you off guard at mid and close range. You can whiff punish with any normal
+            </p>
+    
+            <p><b>Quick Scratch HP</b> <br><span class="punish-on-block"><span class="whiff-punish">
+              Same as LP version unless it is minus on block, punish with st.HP.
+            </p>
+    
+            <p><b>Wild Saver</b> <br><span class="punish-on-block"></span></span>
+            Her reversal and break special. Punish LK ver. with st.HP. HK ver. has more recovery,
+              if you're close enough, you'll have time to punish her with a neutral jump<br>
+            </p>
+    
+            <p><b>Shine Beast</b> <br><span class="punish-on-block"><span class="whiff-punish">
+              On block, she ends up on the other side (at mid and close range).
+              punish with super 214214K
+            </p>
+            <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
+              <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/matchups/pielle_vs_rila_killer_shine_beast.mp4">
+            </video>
+    
+            <p><b>Bloody Fang</b> <br><span class="punish-on-block"><span class="whiff-punish">
+              This super is not overhead despite the jump animation. punish on block with st.HP
+            </p>
+    
+            <p><b>cr.HP</b> <br><span class="safe-on-block">
+            </p>
+    
+    
+    
+    
+          </div>
+    
+          <div id="dao-long">
+            <h1>Dao-long</h1>
+    
+           
+            <p><b>Kouryuu Ga</b> <br><span class="punish-on-block"><span class="whiff-punish"><span class="breakable">
+              dao-long's fireball, punsish at point blank  with cr.LP.
+              use your super 236236P  to pass through fireball.
+            </p>
+            <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
+              <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/matchups/pielle_vs_dao-long_kouryuu_ga.mp4">
+            </video>
+    
+            <p><b>Senkyuu Tai</b> <br><span class="punish-on-block">
+              his invul. reversal anti-air, punish on block with cr.HP
+            </p>
+    
+            <p><b>Riyuu Seishou</b> <br><span class="safe-on-block"></span>
+              A combo ender and pressing tool that he usually follow with Super or projectile, 
+              the move allows him to chip and build meter in a safest way.
+            </p>
+    
+            <p><b>Senpuure Kyaku</b> <br><span class="punish-on-block"><span class="breakable">
+              slow anti-air command. If you're close enough, you can punish him on block with cr.LK
+            </p>
+    
+            <p><b>Shoutenchuu</b> <br><span class="safe-on-block"><span class="whiff-punish"></span>
+              Safe short jump Overhead, whiff punish with cr.HP
+            </p>
+    
+            <p><b>Houshin Renpa</b> <br><span class="safe-on-block"></span>
+              Fireball super, can be used at mid range to punish your own projectiles
+            </p>
+    
+            <p><b>Shin Kyoku Ranbu</b> <br><span class="punish-on-block"></span>
+            not overhead despide to jump animation. punish on block with dash st.HP
+            </p>
+    
+    
+          </div>
+    
+          <div id="condor">
+            <h1>Condor</h1>
+    
+            <p><b>Anti-air </b><br>
+              Heel Stomp, Condor's j.2HK, can be hard to anti-air from mid-range due to its long active frames. 
+              It can beat your ground normals and 623P startup.
+            </p>
+              <p><u>midrange</u>: anti-air with 214214P or react with neutral j.8HP, or a jump back normal</p>
+              <p><u>close-range</u>: Anti-air with close st.HP; it's also useful for countering cross-up attempts and gives you a juggle opportunity.</p>
+            
+
+            <p><b>Tomahawk Jack </b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
+              Tomahawk is used as an anti-air or to defend against projectiles and build meter.
+              This move is easily punishable on block. You can also whiff punish from max range with 214214K.
+            </p>
+            <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
+              <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/matchups/pielle_vs_condor_tomahawk.mp4">
+            </video>
+    
+            <p><b>Gran Buffalo Horn</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
+              Passes through projectiles and helps close the distance against grounded opponents.
+              Punishable on hit and whiff
+            </p>
+            <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
+              <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/matchups/pielle_vs_condor_slide.mp4">
+            </video>
+    
+            <p><b>Sky Bridge</b> <br><span class="punish-on-block"></span></span>
+              Punish with st.HP at close range.
+            </p>
+    
+            <p><b>Atlas Rock Buster</b> <br><span class="punish-on-block"></span></span>
+              It can be tricky to punish on block if you're not close enough due to its pushback and quick recovery.
+              Punish with 214P. You can also interrupt his Super on block after the 1st hit with a light normal, throw, 214214P, or 236236P.
+            </p>
+            <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
+              <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/matchups/pielle_vs_condor_atlas_rock_buster.mp4">
+            </video>
+    
+    
+            <p><b>cr.HK</b> <br><span class="punish-on-block"></span></span>
+              punish with cr.LK
+            </p>
+    
+            <p><b>cr.HP</b> <br><span class="safe-on-block"></span>
+            </p>
+    
+    
+          </div>
+    
+          <div id="sho">
+            <h1>Sho</h1>
+
+            <p><b>Onigawara</b> <br><span class="safe-on-block"></span><span class="breakable"></span><span class="whiff-punish"></span>
+              An overhead, safe on block, and cancelable from all of his close normals, making it a strong move.
+              However, it's punishable during its startup frames. It's also breakable when canceled into 236HK.
+            </p>
+    
+    
+            <p><b>Tobihizageri</b> <br><span class="safe-on-block"></span><span class="whiff-punish"></span>
+              A pressing tool, safe on block, but depending on the range,
+              Sho might end up within your throw range, creating an even situation where both players engage in a throw/reversal mind game.
+            </p>
+    
+    
+            <p><b>Sashikomi Kick</b> <br><span class="safe-on-block"></span><span class="breakable"></span><span class="whiff-punish"></span>
+              This divekick is tricky, it can cancel into a super on hit, 
+              block, or whiff. You can counter it with a super (214214P), backdash, 
+              or throw (but watch out for his 214HK counter).    
+            </p>
+
+            <p><b>Rekkou Ha</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
+              A basic fireball that can be punished when blocked at point-blank range.
+              whiff punish at midrange with super (236236P).
+            </p>
+    
+            <p><b>Ranki Ryuu Geri</b> <br><span class="punish-on-block"></span>
+            Be careful, on block it can be followed by air super (Geki Rekkou Ha).
+            However, it's still minus on block. if you're close to corner react with your own super (214214K).
+            </p>
+            <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
+              <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/matchups/pielle_vs_sho_ranki_ryuu_geri.mp4">
+            </video>
+
+    
+            <p><b>Geki Rekkou Ha</b> <br><span class="safe-on-block"></span><span class="breakable"></span></span>
+            Break with a backdash if used at a high height. For example: divekick x super or fuzzy j.HK x super.
+            </p>
+    
+          </div>
+    
+          <div id="maherl">
+            <h1>Maherl</h1>
+    
+          
+            <p><b>Abdomen Step</b> <br><span class="punish-on-block"></span><span class="whiff-punish"><span class="breakable"></span>
+              This short step is punishable with cr.LK if he is very close to you.
+              It's safe if it was canceled by st.LK (st.LK creates a slight pushback). 
+              However, you can always break or whiff punish with st.LP
+            </p>
+    
+            <p><b>Slash Sword</b> <br><span class="punish-on-block"></span>
+              This attack can reach you from very far away. 
+              Safe at maximum range. At mid and close range, punish with st.LP
+            </p>
+            <p><b>Punish Sword</b> <br><span class="punish-on-block"></span>
+              Travels a shorter distance than Slash Words. It is also Safe at maximum range. 
+              At close range, punish with st.LP
+            </p>
+            <p><b>Fire Breath</b> <br><span class="punish-on-block"></span>
+              Punish LP version on block with j.HP
+              For HP version, you can interrupt with any normals immediately after blocking the first or second hit.
+            </p>
+            <p><b>Balloon Bomb</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
+              Overhead, whiff punish with st.HP/cr.HP. on block, punish with cr.HK
+            </p>
+            <p><b>Cadabra Bomber</b> <br><span class="punish-on-block"></span>
+              A Super that can go through projectiles up close. Punish with cr.HP
+            </p>
+            <p><b>Shiva Dance</b> <br><span class="punish-on-block"></span>
+              Punish before the end of the animation, with super (214214K)
+            </p>
+            <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
+              <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/matchups/pielle_vs_maherl_shiva_dance.mp4">
+            </video>
+
+
+            
+            
+          </div>
+    
+          <div id="tia">
+            <h1>Tia</h1> 
+  
+    
+            <p><b>Soul Spike</b> <br><span class="punish-on-block"></span><span class="breakable"></span>
+              Ground Soul Spike LK/HK are not overhead, block low.<br>
+              Soul Spike LK has pushback and minimal recovery.<br>
+              Soul Spike HK has no pushback, making it easier to punish. 
+              Punish with st.HP or a Throw.<br>
+              On hit, you can break both versions with a throw, backdash, or Super.<br>
+              On block, punish with super 236236P.<br>
+              Before attempting a block punish, check her super meter first.
+              Tia can counter with Burning Revolver. A throw is a guaranteed punish if she uses Soul Spike HK.
+            </p>
+            <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
+              <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/matchups/pielle_vs_tia_soul_spike.mp4">
+            </video>
+    
+            <p><b>Mirage Spear Kick</b> <br><span class="safe-on-block"></span>
+            </p>
+    
+            <p><b>Rising upper</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
+              Rising Upper LP is an anti-air reversal with quick recovery, making it difficult to punish on whiff.
+              It's invulnerability on startup allows her to pass through projectiles.
+              When blocked at close range, punish with st.HP.
+            </p>
+    
+            <p><b>Rapid Gale</b> <br><span class="punish-on-block"><span class="breakable"><span class="whiff-punish">
+            Her Fireball isn't ideal for zoning and has a slightly slow recovery. She mostly uses it for okizeme or
+            pressure.
+            at mid range, while dashing, you can react and jump to punish her. You can also whiff punish with super (236236P)
+            </p>
+    
+            <p><b>Heel Break</b> <br><span class="punish-on-block"><span class="breakable">
+              After the first hit of the 2-hit sequence,
+              punish or break with a throw since the last hit is an overhead.
+            </p>
+    
+    
+            <p><b>Rapid Charge</b> <br><span class="punish-on-block">
+              Her strong super punishes projectiles.
+              When she switches sides mid-air on block, quickly turn your character to punish.
+            </p>
+    
+            <p><b>Burning Revolver</b> <br><span class="punish-on-block">
+              Punsih with dash cr.HP
+            </p>
+    
+            <p><b>Cutlass Flasher</b> <br><span class="punish-on-block">
+              Overhead super, switches sides on block.
+            </p>
+    
+          </div>
+    
+          <div id="alsion">
+            <h1>Alsion III</h1>
+    
+       
+            <p><b>Horus Shade</b> <br><span class="safe-on-block"></span><span class="whiff-punish"></span>
+              An overhead that is safe but has a slow startup, making it easily reactable. 
+              Punish on whiff with st.LP
+            </p>
+            <p><b>Death Shred</b> <br><span class="safe-on-block"></span><span class="punish-on-hit"></span>
+              This one is also an overhead with a slow startup but has a larger pushback.
+              It's a two-hitter when the opponent is standing. 
+              Second hit is overhead.
+              If crouched, whiff punish with cr.LK; standing, interrupt before 2nd hit with st.LP.
+            </p>
+            <p><b>Poison Fog</b> <br><span class="safe-on-block"></span>
+              Close-range projectile for chip damage or pressure on your wakeup.
+            </p>
+            <p><b>Deadly Claw</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
+              A teleport ending with an aerial strike, usable on the ground and in the air to counter your anti-air attempts. 
+              When executed close to you, the LK version lands in the same spot, while the HK version lands behind you.
+              Punish at close range with super (236236P)
+              Whiff punish with cr.HP
+            </p>
+            <video poster="img/assets/loading.gif" controls loop muted autoplay playsinline>
+              <source src="https://github.com/breakerswiki/assets/raw/main/videos/Pielle/matchups/pielle_vs_alsion_deadly_claw.mp4">
+            </video>
+
+
+
+            <p><b>Dash Knee</b> <br><span class="punish-on-block"></span><span class="punish-on-hit"></span>
+              A special dash attack that must be executed at the right spacing to be safe.
+              Punish on block or hit with cr.LK 
+            </p>
+            <p><b>Anubis Hug</b> <br><span class="punish-on-block"></span>
+              Super projectile with invul. startup. Punish at close range with cr.LK 
+            </p>
+            <p><b>Pharaoh Dance</b> <br><span class="punish-on-block"></span></span>
+              Super projectile with invul. startup. on block, he retreats very far. 
+              Punish with Super (214214K)
+            </p>
+    
+          </div>
+    
+
+        </div>
 
   </section>
 
