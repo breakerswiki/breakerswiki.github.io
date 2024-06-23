@@ -38,11 +38,11 @@
         <img class="charbg" src="img/assets/rila_bg.png">
 
         <div class="nav-guide">
-          <button onclick="showContent('infos')">Infos</button>
-          <button onclick="showContent('movelist')">Move list</button>
-          <button onclick="showContent('strategy')">Strategy</button>
-          <button onclick="showContent('combos')">Combos</button>
-          <button onclick="showContent('matchups')">Matchups</button>
+          <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
+          <button class="color-button" id="button2" onclick="showContent('movelist')">Move list</button>
+          <button class="color-button" id="button3" onclick="showContent('strategy')">Strategy</button>
+          <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
+          <button class="color-button" id="button5" onclick="showContent('matchups')">Matchups</button>
         </div>
 
 
@@ -503,15 +503,15 @@
           <table class="charselect">
             <tbody>
               <tr>
-                <td><a onclick="toggleContent('sho')"><img src="img/assets/Portrait_BR_Sho.png"></a></td>
-                <td><a onclick="toggleContent('pielle')"><img src="img/assets/Portrait_BR_Pielle.png"></a></td>
-                <td><a onclick="toggleContent('condor')"><img src="img/assets/Portrait_BR_Condor.png"></a></td>
-                <td><a onclick="toggleContent('rila')"><img src="img/assets/Portrait_BR_Rila.png"></a></td>
-                <td><a onclick="toggleContent('tia')"><img src="img/assets/Portrait_BR_Tia.png"></a></td>
-                <td><a onclick="toggleContent('alsion')"><img src="img/assets/Portrait_BR_Alsion_III.png"></a></td>
-                <td><a onclick="toggleContent('maherl')"><img src="img/assets/Portrait_BR_Maherl.png"></a></td>
-                <td><a onclick="toggleContent('dao-long')"><img src="img/assets/Portrait_BR_Dao-Long.png"></a></td>
-                <td><a onclick="toggleContent('saizo')"><img src="img/assets/Portrait_BR_Saizo.png"></a></td>
+                <td><a onclick="toggleFilter(this); toggleContent('sho');"><img  src="img/assets/Portrait_BR_Sho.png" class="filtered"></a></td>
+                <td><a onclick="toggleFilter(this); toggleContent('pielle');"><img  src="img/assets/Portrait_BR_Pielle.png" class="filtered"></a></td>
+                <td><a onclick="toggleFilter(this); toggleContent('condor');"><img  src="img/assets/Portrait_BR_Condor.png" class="filtered"></a></td>
+                <td><a onclick="toggleFilter(this); toggleContent('rila');"><img  src="img/assets/Portrait_BR_Rila.png" class="filtered"></a></td>
+                <td><a onclick="toggleFilter(this); toggleContent('tia');"><img  src="img/assets/Portrait_BR_Tia.png" class="filtered"></a></td>
+                <td><a onclick="toggleFilter(this); toggleContent('alsion');"><img  src="img/assets/Portrait_BR_Alsion_III.png" class="filtered"></a></td>
+                <td><a onclick="toggleFilter(this); toggleContent('maherl');"><img  src="img/assets/Portrait_BR_Maherl.png" class="filtered"></a></td>
+                <td><a onclick="toggleFilter(this); toggleContent('dao-long');"><img  src="img/assets/Portrait_BR_Dao-Long.png" class="filtered"></a></td>
+                <td><a onclick="toggleFilter(this); toggleContent('saizo');"><img  src="img/assets/Portrait_BR_Saizo.png" class="filtered"></a></td>
               </tr>
             </tbody>
           </table>

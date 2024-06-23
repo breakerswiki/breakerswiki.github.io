@@ -69,3 +69,41 @@ function removeHtmlExtension() {
 }
 // Run the function when the page loads
 window.addEventListener("load", removeHtmlExtension);
+
+
+// menu button color
+document.addEventListener("DOMContentLoaded", function() {
+  const buttons = document.querySelectorAll(".color-button");
+
+  buttons.forEach(button => {
+      button.addEventListener("click", function() {
+          buttons.forEach(btn => btn.classList.remove("active"));
+          this.classList.add("active");
+      });
+  });
+});
+
+
+
+// matchups charselect color
+var lastClickedImg = null; // Variable to store the last clicked <img> element
+
+function toggleFilter(anchor) {
+    var img = anchor.querySelector('img'); // Find the <img> tag inside the <a> tag
+    
+    if (img !== lastClickedImg && lastClickedImg !== null) {
+        // If a different image is clicked and there's a previously clicked image
+        lastClickedImg.style.filter = '';  // Remove filter from the previously clicked image
+        lastClickedImg.classList.add('filtered');  // Add 'filtered' class back if necessary
+    }
+
+    if (img.classList.contains('filtered')) {
+        img.style.filter = 'none';  // Apply filter: none;
+        img.classList.remove('filtered');  // Remove the 'filtered' class
+    } else {
+        img.style.filter = '';  // Remove the inline filter style
+        img.classList.add('filtered');  // Add the 'filtered' class back
+    }
+
+    lastClickedImg = img; // Update the last clicked <img> element
+}

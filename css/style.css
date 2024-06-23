@@ -301,6 +301,12 @@ header {
   margin: 0 auto;
 }
 
+.site-footer img {
+  height: 60px;
+  margin-left: 5px;
+  padding: 0;
+}
+
 
 .inputs img {
   margin-left: 3px;
@@ -522,17 +528,16 @@ color: #ffffff;
 
 
 
-#matchups table.charselect img {
-  filter: sepia(100%) hue-rotate(190deg) saturate(150%);
-  cursor: pointer;
-  padding: 0;
-}
 
 #matchups table.charselect img:hover {
   filter: none;
 }
 
-
+.filtered {
+  filter: sepia(100%) hue-rotate(190deg) saturate(150%);
+  cursor: pointer;
+  padding: 0;
+}
 
 button:focus, button:focus-within, button:active {
   background-color: #416b9a;
@@ -879,4 +884,18 @@ ol li::before {
   width: 15px; /* Adjust the width to change the size */
   height: 15px; /* Adjust the height to change the size */
   text-decoration: none;
+}
+
+
+.color-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.color-button.active {
+  background-color: #416b9a;
+  color: white;
 }
