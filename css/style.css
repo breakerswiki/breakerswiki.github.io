@@ -169,9 +169,9 @@ header {
      }
 
      .main-content h1.title { 
-      font-family: 'Thirsty Caps';
+      /* font-family: 'Thirsty Caps'; */
       letter-spacing: 3px;
-      font-size: 4rem;
+      font-size: 2rem;
       text-align: center;
     }
 
@@ -610,6 +610,38 @@ p.notes {
   width: 90px;
   height: 90px;
 }
+.characters-guide-main {
+  max-width: 512px;
+}
+.characters-guide-main img {
+  object-fit: cover;
+  position: relative;
+  width: 34px;
+  height: 90px;
+  margin: 2px;
+  filter: sepia(100%) hue-rotate(190deg) saturate(150%);
+  opacity: 0.5;
+}
+.characters-guide-main img:hover {
+  filter: none;
+  opacity: initial;
+}
+.characters-guide-main img.active {
+  filter: none;
+  opacity: initial;
+}
+
+.characters-guide-main {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (min-width: 40em) {
+  .characters-guide-main img {
+    width: 45px;
+    height: 92px;
+  } }
 
 .characters-guide img:active {
   top: 5px
