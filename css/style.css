@@ -169,10 +169,12 @@ header {
      }
 
      .main-content h1.title { 
-      /* font-family: 'Thirsty Caps'; */
-      letter-spacing: 3px;
+      font-family: monospace;
+      letter-spacing: 5px;
       font-size: 2rem;
       text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
     }
 
 
@@ -910,8 +912,8 @@ ol li > a {
 
 
 ol li::before {
-  content: "●"; color: #6d6d6d;
-  margin-right: 4px;
+  content: "x"; color: #006391;
+  margin-right: 0px;
   display: inline-block;
   width: 15px; /* Adjust the width to change the size */
   height: 15px; /* Adjust the height to change the size */
@@ -930,4 +932,15 @@ ol li::before {
 .color-button.active {
   background-color: #416b9a;
   color: white;
+}
+
+
+.blink {
+  animation: blink-animation 0.5s steps(3, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+      visibility: hidden;
+  }
 }
