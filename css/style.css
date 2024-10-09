@@ -183,7 +183,7 @@ img.logo:active {
     .main-content {
       margin: 0 auto;
       padding: 2rem 1rem;
-      font-size: 1rem; } }
+      font-size: 1.1rem; } }
   .main-content img {
     max-width: 100%; }
     .main-content img.GIF {
@@ -422,7 +422,14 @@ figcaption {
     margin: 0px;
     padding: 0px;  
   }
-
+  .main-content table.charselect td img {
+    max-width: 55px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .nav-guide button {
+    font-size: 18px !important;
+  } 
 }
 
 
@@ -447,7 +454,6 @@ img.charbg {
 
 ul.combos {
   margin-top: 10px;
-  font-size: small;
   padding-left: 5px;
 }
 ul.combos li {
@@ -458,13 +464,13 @@ ul.combos li {
 
 
 .main-content table.movelist th.commands {
-  background: #a03e3d;
+  background: #6198d5;
 }
 .main-content table.movelist th.specials {
-  background: #3d6a9d;
+  background: #8a7fbe;
 }
 .main-content table.movelist th.supers {
-  background: #a07c00;
+  background: #cd7aac;
 }
 .main-content table.movelist th.throws {
   background: #3e3c3b;
@@ -479,6 +485,7 @@ ul.combos li {
 table.properties td:not(:first-child):not(:last-child),
 table.properties th:not(:first-child):not(:last-child) {
     text-align: center;
+    font-size: small;
 }
 
 
@@ -551,11 +558,34 @@ color: #ffffff;
 }
 
 
-
-
 #matchups table.charselect img:hover {
   filter: none;
 }
+
+#matchups li {
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+#matchups p {
+  margin-top: 5px;
+  font-size: 1.1rem;
+}
+
+#matchups th {
+  font-size: medium;
+  vertical-align: middle;
+}
+#matchups img {
+  vertical-align: middle;
+}
+
+#matchups h1 {
+  border-bottom: 2px solid #416b9a;
+  padding-bottom: 10px;
+  text-align: center; 
+}
+
 
 .filtered {
   filter: sepia(100%) hue-rotate(190deg) saturate(150%);
@@ -733,11 +763,11 @@ table.movelist, table.properties{
 }
 
 table.properties span {
-  font-size: xx-small;
+  font-size: x-small;
 }
 
-table.properties th, table.properties td {
-  font-size: x-small;
+table.properties th, table.properties td  {
+  font-size: small;
 }
 
 th.normals {
@@ -745,15 +775,15 @@ th.normals {
 }
 
 th.commands {
-  background: #a03e3d;
+  background: #6198d5;
 }
 
 th.specials {
-  background: #3d6a9d;
+  background: #8a7fbe;
 }
 
 th.supers {
-  background: #a07c00;
+  background: #cd7aac;
 }
 
 th.throws {
@@ -762,11 +792,14 @@ th.throws {
 
 th.data {
   background: #5b5b5b;
-  font-size: x-small;
   text-align: center;
 }
 
 /* Collonnes data */
+table.movelist {
+  margin-bottom: 30px;
+}
+
 table.movelist th:nth-child(n+3):nth-child(-n+7) {
   text-align: center;
 }
@@ -775,7 +808,6 @@ table.movelist th:nth-child(n+3):nth-child(-n+7) {
 td {
   border: 1px solid #ccc;
   padding: 6px;
-  font-size: small;
   background: #f7f7f7;
 }
 
@@ -791,8 +823,7 @@ td img {
 th {
   text-align: left;
   color: #f1f1f1;
-  padding: 4px;
-  font-size: small;
+  padding: 2px;
   font-weight: 400;
 }
 
@@ -827,8 +858,9 @@ th {
 .punish-on-hit::before {
   color: white;
   padding: 4px;
-  font-size: 9px;
+  font-size: 13px;
   border-radius: 4px;
+  padding-top: 5px;
   margin: 2px;
 }
 
@@ -872,35 +904,35 @@ th {
   background-color: #51b0e7;
 }
 .safe-on-block::before {
-  content: "Safe on block";
+  content: "Safe";
   background-color: #4ba034;
   margin-left: 0;
   margin-right: 2px;
   margin-bottom: 5px;
 }
 .breakable::before {
-  content: "Breakable";
+  content: "Break";
   background-color: #e74c0a;
   margin-left: 0;
   margin-right: 2px;
   margin-bottom: 5px;
 }
 .punish-on-block::before {
-  content: "Punish on block";
+  content: "Unsafe";
   background-color: #de4646;
   margin-left: 0;
   margin-right: 2px;
   margin-bottom: 5px;
 }
 .punish-on-hit::before {
-  content: "Punish on Hit";
+  content: "Unsafe-on-hit";
   background-color: #ab46de;
   margin-left: 0;
   margin-right: 2px;
   margin-bottom: 5px;
 }
 .whiff-punish::before {
-  content: "Whiff punish";
+  content: "Whiff";
   background-color: #006391;
   margin-left: 0;
   margin-right: 2px;
@@ -930,19 +962,16 @@ ol {
   padding: 10px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
-  font-size: small;
-
-  
 }
 ol li > a {
   margin-bottom: 10px; /* Just for spacing */
-  color: #262626;
+  color: #006391;
 }
 
 
 ol li::before {
-  content: "x"; color: #006391;
-  margin-right: 0px;
+  content: "➩"; color: #006391;
+  margin-right: 3px;
   display: inline-block;
   width: 15px; /* Adjust the width to change the size */
   height: 15px; /* Adjust the height to change the size */
@@ -973,3 +1002,26 @@ ol li::before {
       visibility: hidden;
   }
 }
+
+
+.hidden {
+  display: none;
+}
+
+/* Utiliser :target pour afficher le texte supplémentaire */
+[id^="more"]:target {
+  display: block;
+}
+
+/* Style du lien pour indiquer qu'il est cliquable */
+.toggle-link {
+  color: #416b9a;
+  margin-bottom: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+
+
+
