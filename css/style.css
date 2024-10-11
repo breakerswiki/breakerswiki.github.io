@@ -661,9 +661,40 @@ p.notes {
 .characters-guide img {
   object-fit: cover;
   position: relative;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 140px;
 }
+
+.characters-guide img:active {
+  top: 5px
+}
+
+div.infos {
+  display:inline-block;
+  position:relative;
+  /* max-width:200px; */
+}
+
+div.infos span {
+  position: absolute; bottom: 5px; left: 0; right: 0; 
+  background: #333333a8; color: #fff; font-size: x-large; 
+  font-family: 'Thirsty Caps';
+  letter-spacing: 3px;
+}
+div.infos:hover span {display: block; }
+
+div.infos img {
+  transition: transform 0.3s ease;
+}
+
+div.infos img:hover {
+  transform: scale(105%);
+}
+
+
+
+
+
 .characters-guide-main {
   max-width: 512px;
 }
@@ -697,37 +728,8 @@ p.notes {
     height: 92px;
   } }
 
-.characters-guide img:active {
-  top: 5px
-}
-
-div.infos {
-  display:inline-block;
-  position:relative;
-  max-width:160px;
-}
-
-div.infos span {
-  position: absolute; bottom: 5px; left: 0; right: 0; 
-  background: #333333a8; color: #fff; font-size: medium; 
-  font-family: 'Thirsty Caps';
-
-  letter-spacing: 3px;
-}
-div.infos:hover span {display: block; }
 
 
-.characters-guide {
-  margin-top: 30px;
-}
-
-div.infos img {
-  transition: transform 0.3s ease;
-}
-
-div.infos img:hover {
-  transform: scale(1.1);
-}
 
 
 .main-wrapper{
