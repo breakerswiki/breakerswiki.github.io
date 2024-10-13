@@ -701,11 +701,12 @@ div.infos img:hover {
 .characters-guide-main img {
   object-fit: cover;
   position: relative;
-  width: 34px;
   height: 90px;
-  margin: 2px;
-  filter: sepia(100%) hue-rotate(190deg) saturate(150%);
-  opacity: 0.5;
+  /* margin: 2px; */
+  /* filter: sepia(100%) hue-rotate(190deg) saturate(150%); */
+  opacity: 0.4;
+  border: 1px solid black;
+  background-color: black;
 }
 .characters-guide-main img:hover {
   filter: none;
