@@ -726,7 +726,6 @@ div.infos img:hover {
 
 @media screen and (min-width: 40em) {
   .characters-guide-main img {
-    width: 45px;
     height: 92px;
   } }
 
