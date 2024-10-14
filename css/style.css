@@ -581,8 +581,9 @@ color: #ffffff;
 }
 
 #matchups h1 {
-  border-bottom: 2px solid #416b9a;
-  padding-bottom: 10px;
+  /* border-bottom: 2px solid #779dc8;
+  border-image: linear-gradient(to right, white, #155b99, white) 1; */
+  /* padding-bottom: 10px; */
   text-align: center; 
 }
 
