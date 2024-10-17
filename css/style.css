@@ -341,7 +341,6 @@ img.logo:active {
 }
 
 .inputs {
-  font-weight: bolder;
   vertical-align: middle;
   font-size: 14px;
 }
@@ -798,6 +797,17 @@ th.data {
   text-align: center;
 }
 
+
+/* Collonnes data */
+table.colors {
+  border-collapse: collapse;
+}
+table.colors td {
+  background-color: white;
+  border: 1px solid white
+}
+
+
 /* Collonnes data */
 table.movelist {
   margin-bottom: 30px;
@@ -869,12 +879,12 @@ th {
 
 .special-cancel::before {
   content: "Special cancel";
-  background-color: #264653;
+  background-color: #8a7fbe;
 }
 
 .super-cancel::before {
   content: "Super cancel";
-  background-color: #2a9d8f;
+  background-color: #cd7aac;
 }
 
 .kara-cancel::before {
@@ -884,12 +894,12 @@ th {
 
 .hard-knockdown::before {
   content: "H.Knockdown";
-  background-color: #68448a;
+  background-color: #910000;
 }
 
 .knockdown::before {
   content: "Knockdown";
-  background-color: #ad5bc8;
+  background-color: #380000;
 }
 
 .overhead::before {
@@ -981,6 +991,13 @@ ol li::before {
   text-decoration: none;
 }
 
+ol.arcadestick li::before {
+  content: none;
+}
+ol.arcadestick  {
+  padding-left: 30px;
+}
+
 
 .color-button {
   padding: 10px 20px;
@@ -1023,8 +1040,5 @@ ol li::before {
   cursor: pointer;
   text-decoration: underline;
 }
-
-
-
 
 
