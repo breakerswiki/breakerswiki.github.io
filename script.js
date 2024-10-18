@@ -171,3 +171,4 @@ function toggleFilter(anchor) {
     lastClickedImg = img; // Update the last clicked <img> element
 }
 
+
