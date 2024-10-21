@@ -51,7 +51,7 @@
         <div class="nav-guide">
           <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
           <button class="color-button" id="button2" onclick="showContent('movelist')">Move list</button>
-          <button class="color-button" id="button3" onclick="showContent('strategy')">Strategy</button>
+          <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
           <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
           <button class="color-button" id="button5" onclick="showContent('matchups')">Matchups</button>
         </div>
@@ -61,7 +61,7 @@
           <h2>History</h2>
           <p>
             Lee Dao-Long is Sho's rival and senior. A young Korean who practices a Chinese martial art called the "Empty
-            Fist." He likes to eat spicy food and enjoys a long ride in the desert on camel's back.
+            Fi5" He likes to eat spicy food and enjoys a long ride in the desert on camel's back.
           </p>
 
           <h2>Gameplay</h2>
@@ -74,10 +74,10 @@
           <table class="colors" style="text-align: center;">
             <tbody>
               <tr>
-                <td><img src="img/inputs/Arcade-Button-APunch.png"></td>
-                <td><img src="img/inputs/Arcade-Button-BKick.png"></td>
-                <td><img src="img/inputs/Arcade-Button-CPunch.png"></td>
-                <td><img src="img/inputs/Arcade-Button-DKick.png"></td>
+                <td><img class="A"></td>
+                <td><img class="B"></td>
+                <td><img class="C"></td>
+                <td><img class="D"></td>
               </tr>
               <tr>
                 <td><img src="img/assets/Dao_A.png"></td>
@@ -96,7 +96,6 @@
             <ol style="columns: 2;">
               <li><a href="#move-list">Move list</a></li>
               <li><a href="#properties">Move properties</a></li>
-              <li><a href="#framedata">Frame Data</a></li>
             </ol>
 
           <h1 id="move-list">Move list</h1> 
@@ -113,22 +112,22 @@
               <tr>
                 <td>Riyuu Seishou</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Button-APunch.png">+<img
-                      src="img/inputs/Arcade-Button-CPunch.png"></div>
+                  <div class="inputs"><img class="A">+<img
+                      class="C"></div>
                 </td>
               </tr>
               <tr>
                 <td>Senpuure Kyaku</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Button-BKick.png">+<img
-                      src="img/inputs/Arcade-Button-DKick.png"></div>
+                  <div class="inputs"><img class="B">+<img
+                      class="D"></div>
                 </td>
               </tr>
               <tr>
                 <td>Shoutenchuu</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Button-CPunch.png">+<img
-                      src="img/inputs/Arcade-Button-DKick.png"></div>
+                  <div class="inputs"><img class="C">+<img
+                      class="D"></div>
                 </td>
               </tr>
             </tbody>
@@ -141,15 +140,15 @@
               <tr>
                 <td>Kouryuu Ga</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Stick-CBF.png">+<img
-                      src="img/inputs/Arcade-Button-Punch.png"></div>
+                  <div class="inputs"><img class="ChargeBack_Forward">+<img
+                      class="Punch"></div>
                 </td>
               </tr>
               <tr>
                 <td>Senkyuu Tai</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Stick-CDU.png">+<img
-                      src="img/inputs/Arcade-Button-Kick.png"></div>
+                  <div class="inputs"><img class="ChargeDown_Up">+<img
+                      class="Kick"></div>
                 </td>
               </tr>
             </tbody>
@@ -162,32 +161,32 @@
               <tr>
                 <td>Houshin Renpa</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Stick-CBF.png"><img
-                      src="img/inputs/Arcade-Stick-LR.png">+<img src="img/inputs/Arcade-Button-Punch.png"></div>
+                  <div class="inputs"><img class="ChargeBack_Forward"><img
+                      class="Left_Right">+<img class="Punch"></div>
                 </td>
               </tr>
               <tr>
                 <td>Shin Kyoku Ranbu</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Stick-CBF.png"><img
-                    src="img/inputs/Arcade-Stick-LR.png">+<img src="img/inputs/Arcade-Button-Kick.png"></div>
+                  <div class="inputs"><img class="ChargeBack_Forward"><img
+                    class="Left_Right">+<img class="Kick"></div>
                 </td>
               </tr>
               <tr>
                 <td>Renkyuu Tai</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Stick-CDb.png"><img
-                      src="img/inputs/Arcade-Stick-Delta.png">+<img src="img/inputs/Arcade-Button-Kick.png">.<img
-                      src="img/inputs/Control-Modifier-Tap.png"><img src="img/inputs/Arcade-Button-Kick.png"></div>
+                  <div class="inputs"><img class="ChargeDownBack"><img
+                      class="Delta">+<img class="Kick">.<img
+                      class="Tap"><img class="Kick"></div>
                 </td>
               </tr>
             </tbody>
           </table>
 
-          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/1QLj-x-yy7Y"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
+          <img src="img/assets/YouTube_Logo.svg" alt="YouTube Logo" width="60">
+          <a href="https://www.youtube.com/watch?v=1QLj-x-yy7Y" target="_blank">
+            <img style="width:100%;" src="https://img.youtube.com/vi/1QLj-x-yy7Y/hqdefault.jpg" alt="Watch video">
+          </a>
 
 
 
@@ -203,102 +202,102 @@
                 </thead>
                 <tbody>
                   <tr>
-                      <td>far A</td>
+                      <td>far <img class="A"></td>
                       <td>Mid</td>
                       <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                   </tr>
                   <tr>
-                    <td>close A</td>
+                    <td>close <img class="A"></td>
                     <td>Mid</td>
                     <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                 </tr>
                   <tr>
-                      <td>down A</td>
+                      <td>down <img class="A"></td>
                       <td>Mid</td>
                       <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                   </tr>
                   <tr>
-                      <td>up A</td>
+                      <td>up <img class="A"></td>
                       <td>High</td>
                       <td></td>
                   </tr>
                   <tr>
-                      <td>ub/uf A</td>
+                      <td>ub/uf <img class="A"></td>
                       <td>High</td>
                       <td></td>
                   </tr>
               </tbody>
               <tbody>
                   <tr>
-                      <td>far B</td>
+                      <td>far <img class="B"></td>
                       <td>Mid</td>
                       <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                   </tr>
                   <tr>
-                    <td>close B</td>
+                    <td>close <img class="B"></td>
                     <td>Mid</td>
                     
                     
                     <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                 </tr>
                   <tr>
-                      <td>down B</td>
+                      <td>down <img class="B"></td>
                       <td>Low</td>
                       
                       
                       <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                   </tr>
                   <tr>
-                      <td>up B</td>
+                      <td>up <img class="B"></td>
                       <td>High</td>
                       <td></td>
                   </tr>
                   <tr>
-                      <td>ub/uf B</td>
+                      <td>ub/uf <img class="B"></td>
                       <td>High</td>
                       <td></td>
                   </tr>
               </tbody>
               <tbody>
                   <tr>
-                      <td>far C</td>
+                      <td>far <img class="C"></td>
                       <td>Mid</td>
                       <td></td>
                   </tr>
                   <tr>
-                    <td>close C</td>
+                    <td>close <img class="C"></td>
                     <td>Mid</td>
                     <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                 </tr>
                   <tr>
-                      <td>down C</td>
+                      <td>down <img class="C"></td>
                       <td>Mid</td>
                       <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                   </tr>
                   <tr>
-                      <td>up C</td>
+                      <td>up <img class="C"></td>
                       <td>High</td>
                       <td></td>
                   </tr>
                   <tr>
-                      <td>ub/uf C</td>
+                      <td>ub/uf <img class="C"></td>
                       <td>High</td>
                       <td></td>
                   </tr>
               </tbody>
               <tbody>
                   <tr>
-                      <td>far D</td>
+                      <td>far <img class="D"></td>
                       <td>Mid</td>
                       <td></td>
                   </tr>
                   <tr>
-                    <td>close D</td>
+                    <td>close <img class="D"></td>
                     <td>Mid</td>
                     <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                 </tr>
                   <tr>
-                      <td>down D</td>
+                      <td>down <img class="D"></td>
                       <td>Low</td>
                       <td class="split-cell">
                         <div><span class="special-cancel"></span><span class="super-cancel"></div>
@@ -306,12 +305,12 @@
                       </td>
                   </tr>
                   <tr>
-                      <td>up D</td>
+                      <td>up <img class="D"></td>
                       <td>High</td>
                       <td></td>
                   </tr>
                   <tr>
-                      <td>ub/uf D</td>
+                      <td>ub/uf <img class="D"></td>
                       <td>High</td>
                       <td></td>
                   </tr>
@@ -325,17 +324,17 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Riyuu Seishou</td>
+                        <td><img class="A">+<img class="C"></td>
                         <td>Mid</td>
                         <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                     </tr>
                     <tr>
-                      <td>Senpuure Kyaku</td>
+                      <td><img class="B">+<img class="D"></td>
                       <td>Mid</td>
                       <td></td>
                   </tr>
                   <tr>
-                    <td>Shoutenchuu</td>
+                    <td><img class="C">+<img class="D"></td>
                     <td>High</td>
                     <td></td>
                 </tr>
@@ -349,12 +348,12 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Kouryuu Ga</td>
+                        <td><img class="ChargeBack_Forward">+<img class="Punch"></td>
                         <td>Mid</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>Senkyuu Tai</td>
+                        <td><img class="ChargeDown_Up">+<img class="Kick"></td>
                         <td>Mid</td>
                         <td><span class="knockdown"></span><span class="inv-startup"></span></td>
                     </tr>
@@ -368,77 +367,95 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Houshin Renpa</td>
+                        <td><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Punch"></td>
                         <td>Mid</td>
                         <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
                     </tr>
                     <tr>
-                        <td>Shin Kyoku Ranbu</td>
+                        <td><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Kick"></td>
                         <td>Mid</td>
                         <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
                     </tr>
                     <tr>
-                      <td>Renkyuu Tai</td>
+                      <td><img class="ChargeDownBack"><img class="Delta">+<img class="Kick">.<img class="Tap"><img class="Kick"></td>
                       <td>Mid</td>
                       <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
                   </tr>
                 </tbody>
             </table>
 
-          <h1 id="framedata">Frame Data</h1>
-          <p>N/A</p>
-
           </div>
 
-        <div id="strategy">
+        <div id="guide">
 
-
-
-
-      
             <ol style="columns: 2;">
               <li><a href="#hitconfirm">Hit confirm</a></li>
               <li><a href="#antiair">Anti-air</a></li>
+              <li><a href="#supers">Supers</a></li>
               <li><a href="#break">Break</a></li>
               <li><a href="#dash">Dash</a></li>
               <li><a href="#fuzzy">Fuzzy</a></li>
               <li><a href="#optionselect">Throw OS</a></li>
             </ol>
-            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/7FabcsIg2a8"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+
+            <img src="img/assets/YouTube_Logo.svg" alt="YouTube Logo" width="60">
+            <a href="https://www.youtube.com/watch?v=7FabcsIg2a8" target="_blank">
+              <img style="width:100%;" src="https://img.youtube.com/vi/7FabcsIg2a8/hqdefault.jpg" alt="Watch video">
+            </a>
 
           <h2 id="hitconfirm">Hit confirm</h2>
-            <p><b><u>LP+HP (palm)</u></b><br>
+            <p><b><u>A+C (palm)</u></b><br>
               His palm is a reliable move to confirm specials and supers. 
-              For example: cr.LK > cr.LPx2 > LP+HP > super. Check the combos section for more info.
+              For example: 2B > 2Ax2 > A+C > super. Check the combos section for more info.
             </p>
 
-            <img src="https://github.com/breakerswiki/assets/blob/main/videos/Dao-long/dao_long_palm.png?raw=true">
+            <img src="videos/Dao-long/dao_long_palm.png">
 
           <h2 id="antiair">Anti-air</h2>
           <p>
-            <b><u>Flashkick LK</u></b><br>
+            <b><u>Flashkick B</u></b><br>
             Quickly appears, excels at dealing with crossups. Super can be juggled if the opponent is hit at the highest point of his jump.
           </p>
           <p>
-            <b><u>close st.HP and st.HK</u></b><br>
+            <b><u>close 5C and 5HK</u></b><br>
             Special/Super cancelable and Can be juggled into Super
           </p>
 
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Dao-long/anti-air-juggle.mp4" type="video/mp4">
           </video>
           
 
-          <p style="padding: 10px; text-align: left; color:#606c71; background-color: rgb(228, 241, 249)">
-            st.HP can also be used as a <a href="#optionselect">anti-air ~ throw OS</a>
+          <p>
+            close 5C can also be used as a <a href="#optionselect">anti-air ~ throw OS</a>
           </p>
+
+          <h2 id="supers">Supers</h2>
+
+          <p><b>Houshin Renpa <img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Punch"></b></p>
+          <p>
+            <img src="videos/Dao-long/dao_HoushinRenpa.png">
+            Goes through projectiles, functions as a reliable super confirm combo from A+C
+          </p>
+
+          
+          <p><b>Shin Kyoku Ranbu <img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Kick"></b></p>
+          <p>
+            <img src="videos/Dao-long/dao_ShinKyokuRanbu.png">
+            Acts as an anti-air and is used for air juggles. Also functions as a reliable super confirm combo from A+C
+          </p>
+
+          <p><b>Renkyuu Tai <img class="ChargeDownBack"><img class="Delta">+<img class="Kick">.<img class="Tap"><img class="Kick"></b></p>
+          <p>
+            <img src="videos/Dao-long/dao_RenkyuuTai.png">
+            A vertical anti-air with invulnerable startup; mash the kick buttons for additional hits. 
+            Has limited applications for use in combo confirms. it's the least used super.
+          </p>
+
 
           <h2 id="break">Break</h2>
           <p>
-            <b><u>Flashkick LK/HK</u></b><br>
+            <b><u>Flashkick B/HK</u></b><br>
             Commonly used for invincible reversals and high-damage combos. it also serves as your go-to break move.
           </p> 
 
@@ -462,23 +479,21 @@
 
           <h2 id="fuzzy">Fuzzy / Instant overhead</h2>
           <p>
-            j.HP > neutral j.LK<br>
-            instant neutral j.LK overhead (does not work on all characters)
+            j.C > neutral j.B<br>
+            instant neutral j.B overhead (does not work on all characters)
           </p>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Dao-long/fuzzy.mp4" type="video/mp4">
           </video>
 
 
           <h2 id="optionselect">Throw Option select</h2>
-          <p>Coupling Dash Guard with Back Throw (close back HP) makes for an aggressive throw/anti-air option select.</p>
+          <p>Coupling Dash Guard with Back Throw (close back C) makes for an aggressive throw/anti-air option select.</p>
           <p>useful for dealing with opponents who are trying to escape your pressure by jumping</p>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Dao-long/throwOS.mp4" type="video/mp4">
           </video>
 
-
-          
 
         </div>
 
@@ -496,41 +511,41 @@
 
 
           <h2 id="meterless_combos">Meterless combos</h2>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Dao-long/meterless.mp4" type="video/mp4">
           </video>
           <ul class="combos">
-            <li>cr.LK > cr.LP x 2 > LP+HP > Fireball</li>
-            <li>cr.LP x 3 > LP+HP > Flashkick HK</li>
+            <li>2B, 2A, 2A > A+C > Fireball</li>
+            <li>2A, 2A, 2A > A+C > FlasDick HK</li>
           </ul>
 
 
           <h2 id="metered_combos">Metered combos</h2>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Dao-long/meter.mp4" type="video/mp4">
           </video>
           <ul class="combos">
-            <li>cr.LK > cr.LP x 2 > LP+HP > Super</li>
-            <li>cr.LP x 3 > LP+HP > Super</li>
-            <li>cr.HK > Super</li>
-            <li>HP+HK > st.LK > Super</li>
+            <li>2B, 2A, 2A > A+C > Super</li>
+            <li>2A, 2A, 2A > A+C > Super</li>
+            <li>2D > Super</li>
+            <li>C+D > 5B > Super</li>
           </ul>
 
           <h2 id="Anti-air">Anti-air</h2>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Dao-long/anti-air-juggle.mp4" type="video/mp4">
           </video>
           <ul class="combos">
-            <li>HP+HK > Super</li>
-            <li>LK+HK > Super</li>
-            <li>st.HP/LP > Super</li>
-            <li>Flashkick LK > Super (when the opponent is hit at the highest point of their jump)</li>
+            <li>C+D > Super</li>
+            <li>B+D > Super</li>
+            <li>5C > Super</li>
+            <li>Flashkick B > Super (when the opponent is hit at the highest point of their jump)</li>
           </ul>
 
 
 
           <h2 id="air-to-air">Air-to-air</h2>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Dao-long/airtoair.mp4" type="video/mp4">
           </video>
           <ul class="combos">
@@ -566,32 +581,32 @@
     
     
             <p><b>Rasen Kyaku</b> <br><span class="punish-on-block"></span><span class="breakable"><span class="punish-on-hit"></span>
-                Overhead, negative on hit and o, block with a long recovery. 
+                Overhead, negative on hit and block with a long recovery. 
                 Leaves ample time for punishment.
                 Saizo rarely resorts to this move unless finishing off his opponent
             </p>
     
             <p><b>Ryuuei Kyaku</b> <br><span class="punish-on-block"></span>
             A slide requiring cancellation for safety.
-            In the corner, punish Saizo's slide > bomb with cr.LK.
+            In the corner, punish Saizo's slide > bomb with 2B.
             Mid-screen, slide > bomb is punishable, though challenging. 
-            If Saizo is close, punish with cr.LK > Super ([4]646K).
+            If Saizo is close, punish with 2B > Super ([4]646K).
             </p>
     
             <p><b>Yashagami</b> <br><span class="punish-on-block"></span><span class="breakable"></span><span
                 class="punish-on-hit">
-                Yashagami HP knocks down opponents, while Yashagami LP serves as a reversal and anti-air.
+                Yashagami C knocks down opponents, while Yashagami A serves as a reversal and anti-air.
                 This move must be canceled into a super due to its negative frames on hit and block.
                 Be cautious on block; Saizo still has a few frames to execute a super, 
                 causing hesitation in your usual punishment. 
                 In such instances, dao-long's Flashkick ensures a guaranteed punish.
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Dao-long/matchups/dao-long_vs_saizo_Yashagami.mp4" type="video/mp4">
             </video>
     
-            <p><b>st.HP</b> <br><span class="punish-on-block"></span>
-              Close st.HP hits low, while the far version has significant recovery, making it punishable even on hit.<br>
+            <p><b>5C</b> <br><span class="punish-on-block"></span>
+              Close 5C hits low, while the far version has significant recovery, making it punishable even on hit.<br>
             </p>
     
     
@@ -613,15 +628,15 @@
             <p><b>Flying Peach Bomber</b> <br><span class="safe-on-block"></span><span class="whiff-punish"></span>
               This one is an overhead, but if done close to you, it will whiff, and he'll pass behind you.
               When used in a blockstring, there's always a gap, no matter which normal move it was canceled from.
-              Punish on whiff with [2]8LK
+              Punish on whiff with [2]8B
             </p>
             <p><b>Bonjour Shot</b> <br><span class="punish-on-block"></span><span class="whiff-punish"><span class="punish-on-hit"></span>
               A projectile with a very slow recovery.
-              At close range, punish on block or hit with cr.LK or Super ([4]646K)
+              At close range, punish on block or hit with 2B or Super ([4]646K)
             </p>
             <p><b>Robin Liner</b> <br><span class="punish-on-block"></span><span class="whiff-punish"><span class="punish-on-hit"></span>
               An anti-air special with slow recovery and no reversal properties...
-              On hit, LP version keeps you standing for a punish, while HP version knocks you down.
+              On hit, A version keeps you standing for a punish, while C version knocks you down.
             </p>
             <p><b>Monsieur Crash</b> <br><span class="punish-on-block"></span>
              A three-hit move, easily punishable. However, Pielle can delay each hit to counter your punish attempt.
@@ -629,12 +644,12 @@
     
             <p><b>Merci Un Deux Trois </b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
               An aerial dive that can deceive your anti-air or jump. 
-              When you block all 3 hits, Pielle passes behind you. Punish with cr.LK
+              When you block all 3 hits, Pielle passes behind you. Punish with 2B
             </p>
     
             <p><b>Super Rose</b> <br><span class="safe-on-block"><span class="whiff-punish"></span>
               A super that crosses the entire screen with a wide hitbox, useful for countering jump attempts.
-              Whiff punish at super flash with [2]8LK
+              Whiff punish at super flash with [2]8B
             </p>
     
             <p><b>Thunder Croiser</b> <br><span class="safe-on-block"></span>
@@ -655,10 +670,10 @@
     
             <p><b>Killer Snake</b> <br><span class="punish-on-block"></span>
               Killer snake isn't an overhead, so block low. 
-              The HK version passes through projectiles and sets up her super. 
+              The Dversion passes through projectiles and sets up her super. 
               It's negative on block, but she still has frames to input her invulnerable startup Super. 
-              On block, always react with cr.LP, it will punish if she does nothing. 
-              In case she use Shine Beast Super, just block. if it's Bloody Fang, [2]8LK will hit her startup frames.
+              On block, always react with 2A, it will punish if she does nothing. 
+              In case she use Shine Beast Super, just block. if it's Bloody Fang, [2]8B will hit her startup frames.
             </p>
     
             <p><b>Spinning Claw</b><br><span class="whiff-punish"></span>
@@ -666,16 +681,16 @@
               and some supers
             </p>
     
-            <p><b>Quick Scratch LP</b> <br><span class="safe-on-block"><span class="whiff-punish">
+            <p><b>Quick Scratch A</b> <br><span class="safe-on-block"><span class="whiff-punish">
               Very fast, can catch you off guard at mid and close range. You can punish it on whiff with any normal
             </p>
     
-            <p><b>Quick Scratch HP</b> <br><span class="punish-on-block"><span class="whiff-punish">
-              Same as LP version unless it is minus on block, punish with cr.HP.
+            <p><b>Quick Scratch C</b> <br><span class="punish-on-block"><span class="whiff-punish">
+              Same as A version unless it is minus on block, punish with 2C.
             </p>
     
             <p><b>Wild Saver</b> <br><span class="punish-on-block"></span></span>
-            Her reversal and break special. Punish LK ver. with st.HP. HK ver. has more recovery,
+            Her reversal and break special. Punish B ver. with 5C. Dver. has more recovery,
               if you're close enough, you'll have time to punish her with a neutral jump
             </p>
     
@@ -688,7 +703,7 @@
               This super is not overhead despite the jump animation. punish with Super ([4]646K)
             </p>
     
-            <p><b>cr.HP</b> <br><span class="safe-on-block">
+            <p><b>2C</b> <br><span class="safe-on-block">
             </p>
     
     
@@ -701,14 +716,14 @@
     
            
             <p><b>Kouryuu Ga</b> <br><span class="punish-on-block"><span class="whiff-punish"><span class="breakable">
-              dao-long's fireball, punsish at point blank  with cr.LK.
+              dao-long's fireball, punsish at point blank  with 2B.
               use your super ([4]646P) to pass through his fireball.
             </p>
     
             <p><b>Senkyuu Tai</b> <br><span class="punish-on-block"><span class="whiff-punish">
-              his invul. reversal anti-air, punish on block with st.HP
+              his invul. reversal anti-air, punish on block with 5C
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Dao-long/matchups/dao-long_vs_dao-long_Senkyuutai.mp4" type="video/mp4">
             </video>
             
@@ -744,17 +759,17 @@
     
             <p><b>Tomahawk Jack </b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
               Tomahawk is used as an anti-air or to defend against projectiles and build meter.
-              This move is easily punishable on block: up close, use LP+HP and
+              This move is easily punishable on block: up close, use A+C and
               from any range, punish with super ([4]646K), which also punishes on whiff.
             </p>
     
             <p><b>Gran Buffalo Horn</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
-              Passes through projectiles and helps close the distance against grounded opponents.
-              Punishable on hit and whiff with cr.HK
+              Passes through projectiles and heAs close the distance against grounded opponents.
+              Punishable on hit and whiff with 2HK
             </p>
     
             <p><b>Sky Bridge</b> <br><span class="punish-on-block"></span></span>
-              Punish with cr.LK at close range.
+              Punish with 2B at close range.
             </p>
     
             <p><b>Atlas Rock Buster</b> <br><span class="punish-on-block"></span></span>
@@ -764,11 +779,11 @@
             </p>
     
     
-            <p><b>cr.HK</b> <br><span class="punish-on-block"></span></span>
-              punish with cr.LK
+            <p><b>2HK</b> <br><span class="punish-on-block"></span></span>
+              punish with 2B
             </p>
     
-            <p><b>cr.HP</b> <br><span class="safe-on-block"></span>
+            <p><b>2C</b> <br><span class="safe-on-block"></span>
             </p>
     
     
@@ -790,7 +805,7 @@
               Sho might end up within your throw range or leave an opening in the knee animation where you can react with
               [2]8K.
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Dao-long/matchups/dao-long_vs_sho_tobihizageri.mp4" type="video/mp4">
             </video>
     
@@ -798,7 +813,7 @@
             <p><b>Sashikomi Kick</b> <br><span class="safe-on-block"></span><span class="breakable"></span><span class="whiff-punish"></span>
             This divekick is challenging to handle because it can be executed from any jump height.
             Additionally, it is super-cancelable on hit, block, or whiff.<br>
-            At high height and when Sho has no meter, you can reliably counter it with your anti-air (st.LP or [2]8K).
+            At high height and when Sho has no meter, you can reliably counter it with your anti-air (5A or [2]8K).
             It is also breakable with [2]8K or throw (though throw can be countered by sho's 214HK)
             </p>
     
@@ -810,21 +825,21 @@
     
             <p><b>Ranki Ryuu Geri</b> <br><span class="punish-on-block"></span>
             Ranki Ryuu Geri is tricky as it can be followed by air super (Geki Rekkou Ha).
-              However, it's still minus on block. at Super flash, you can react with [2]8LK
+              However, it's still minus on block. at Super flash, you can react with [2]8B
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Dao-long/matchups/dao-long_vs_sho_rankiryuugeri.mp4" type="video/mp4">
             </video>
     
             <p><b>Geki Rekkou Ha</b> <br><span class="safe-on-block"></span><span class="breakable"></span></span>
-            Break with a backdash if used at a high height. For example: divekick x super or fuzzy j.HK x super.
+            Break with a backdash if used at a high height. For example: divekick x super or fuzzy j.Dx super.
             </p>
 
-            <p><b>cr.HK</b> <br><span class="punish-on-block"></span>
+            <p><b>2HK</b> <br><span class="punish-on-block"></span>
               Punish on block with super ([4]646K)
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-              <source src="videos/Dao-long/matchups/dao-long_vs_sho_cr.HK.mp4" type="video/mp4">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
+              <source src="videos/Dao-long/matchups/dao-long_vs_sho_2HK.mp4" type="video/mp4">
             </video>
     
           </div>
@@ -833,28 +848,28 @@
             <h1>Maherl</h1>
     
             <p><b>Abdomen Step</b> <br><span class="punish-on-block"></span><span class="whiff-punish"><span class="breakable"></span>
-              This short step is punishable with cr.LK if he is very close to you.
-              It's safe if it was canceled by st.LK (st.LK creates a slight pushback). 
+              This short step is punishable with 2B if he is very close to you.
+              It's safe if it was canceled by 5B (5B creates a slight pushback). 
               However, you can always break or whiff punish with [2]8K
             </p>
     
             <p><b>Slash Sword</b> <br><span class="punish-on-block"></span>
               This attack can reach you from very far away. 
-              Safe at maximum range. At mid and close range, punish with st.HP.
+              Safe at maximum range. At mid and close range, punish with 5C.
             </p>
             <p><b>Punish Sword</b> <br><span class="punish-on-block"></span>
               Travels a shorter distance than Slash Words. It is also Safe at maximum range. 
-              At close range, punish with st.HP.
+              At close range, punish with 5C.
             </p>
             <p><b>Fire Breath</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
-              Punish LP version on block with j.HK and on whiff with super (236236P).
-              For HP version, you can interrupt with any normals immediately after blocking the first or second hit.
+              Punish A version on block with j.Dand on whiff with super (236236P).
+              For C version, you can interrupt with any normals immediately after blocking the first or second hit.
             </p>
             <p><b>Balloon Bomb</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
-              Overhead, whiff punish with st.HP/cr.HP or [2]8K. on block, punish with run > st.HP 
+              Overhead, whiff punish with 5C/2C or [2]8K. on block, punish with run > 5C 
             </p>
             <p><b>Cadabra Bomber</b> <br><span class="punish-on-block"></span>
-              A Super that can go through projectiles up close. Punish with any Super or run > st.HP
+              A Super that can go through projectiles up close. Punish with any Super or run > 5C
             </p>
             <p><b>Shiva Dance</b> <br><span class="safe-on-block"></span><span class="whiff-punish"></span>
               A Super with invincible startup that is safe on block. Punishable up close with a backdash after blocking first hit.
@@ -868,23 +883,23 @@
            
     
             <p><b>Normals</b> <br><span class="safe-on-block"></span>
-              All her normals, even cr.HK, are safe on block, boosting her offense.
-              Tia pressures Sho well with her dash attack, especially dash > st.HK,
+              All her normals, even 2HK, are safe on block, boosting her offense.
+              Tia pressures Sho well with her dash attack, especially dash > 5HK,
               doubling as a powerful anti-air and setup for a super juggle.
-              To stop her dash attacks, Sho needs to quickly and preemptively input multiple cr.LK.
+              To stop her dash attacks, Sho needs to quickly and preemptively input multiple 2B.
             </p>
     
             <p><b>Soul Spike</b> <br><span class="punish-on-block"></span><span class="breakable"></span>
             <p>
-              Ground Soul Spike LK/HK are not overhead, block low.<br>
-              Soul Spike LK has pushback and minimal recovery.
-              Dao=long can only perform a light punish with cr.LK on midscreen, or attempt cr.LK > LP+HP when he's in the
-              corner. Soul Spike HK has no pushback, making it easier to punish. Punish with st.HP or a Throw.<br>
+              Ground Soul Spike B/Dare not overhead, block low.<br>
+              Soul Spike B has pushback and minimal recovery.
+              Dao=long can only perform a light punish with 2B on midscreen, or attempt 2B > A+C when he's in the
+              corner. Soul Spike Dhas no pushback, making it easier to punish. Punish with 5C or a Throw.<br>
               On hit, you can break both versions with a throw, backdash, or Super.<br>
-              Before attempting a block punish, check her super meter first.
+              Before attempting a block punish, check her super meter fir5
               Tia can counter with Burning Revolver. A throw is a guaranteed punish if she uses Soul Spike HK.
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Dao-long/matchups/dao-long_vs_tia_Soulspike.mp4" type="video/mp4">
             </video>
     
@@ -892,9 +907,9 @@
             </p>
     
             <p><b>Rising upper</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
-              Rising Upper LP is an anti-air reversal with quick recovery, making it difficult to punish on whiff.
+              Rising Upper A is an anti-air reversal with quick recovery, making it difficult to punish on whiff.
               It's invulnerability on startup allows her to pass through projectiles.
-              When blocked at close range, punish with st.HP.
+              When blocked at close range, punish with 5C.
             </p>
     
             <p><b>Rapid Gale</b> <br><span class="punish-on-block"><span class="breakable"><span class="whiff-punish">
@@ -915,7 +930,7 @@
             </p>
     
             <p><b>Burning Revolver</b> <br><span class="punish-on-block">
-              dash > st.HP to punish.
+              dash > 5C to punish.
             </p>
     
             <p><b>Cutlass Flasher</b> <br><span class="punish-on-block">
@@ -930,28 +945,28 @@
        
             <p><b>Horus Shade</b> <br><span class="safe-on-block"></span><span class="whiff-punish"></span>
               An overhead that is safe but has a slow startup, making it easily reactable. 
-              Punish on whiff with [2]8K or cr.HP
+              Punish on whiff with [2]8K or 2C
             </p>
             <p><b>Death Shred</b> <br><span class="safe-on-block"></span><span class="punish-on-hit"></span>
               This one is also an overhead with a slow startup but has a larger pushback.
               It's a two-hitter when the opponent is standing. 
               Second hit is overhead.
-              If crouched, whiff punish with cr.LK; standing, interrupt before 2nd hit with cr.LK.
+              If crouched, whiff punish with 2B; standing, interrupt before 2nd hit with 2B.
             </p>
             <p><b>Poison Fog</b> <br><span class="safe-on-block"></span>
               Close-range projectile for chip damage or pressure on your wakeup.
             </p>
             <p><b>Deadly Claw</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
               A teleport ending with an aerial strike, usable on the ground and in the air to counter your anti-air attempts. 
-              When executed close to you, the LK version lands in the same spot, while the HK version lands behind you.
+              When executed close to you, the B version lands in the same spot, while the Dversion lands behind you.
               Punish at close range with Super (236236P) and on whiff with [2]8K.
             </p>
             <p><b>Dash Knee</b> <br><span class="punish-on-block"></span><span class="punish-on-hit"></span>
               A special dash attack that must be executed at the right spacing to be safe.
-              Punish on block or hit with cr.LK 
+              Punish on block or hit with 2B 
             </p>
             <p><b>Anubis Hug</b> <br><span class="punish-on-block"></span>
-              Super projectile with invul. startup. Punish at close range with cr.LK 
+              Super projectile with invul. startup. Punish at close range with 2B 
             </p>
             <p><b>Pharaoh Dance</b> <br><span class="punish-on-block"></span></span>
               Super projectile with invul. startup. If you block it, he retreats very far. 

@@ -49,7 +49,7 @@
     <div class="nav-guide">
       <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
       <button class="color-button" id="button2" onclick="showContent('movelist')">Move list</button>
-      <button class="color-button" id="button3" onclick="showContent('strategy')">Strategy</button>
+      <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
       <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
       <button class="color-button" id="button5" onclick="showContent('matchups')">Matchups</button>
     </div>
@@ -64,19 +64,19 @@
 
       <h2>Gameplay</h2>
       <p>
-        Tia is the <b>fastest character</b>, with <b>strong pressure</b>, <b>mobility</b> and <b>punish options</b>.
+        Tia is the fastest character, with strong pressure, mobility and punish options.
         Mastering her allows you to dictate the game's pace in most matchups.
       </p>
 
       <h2>Colors</h2>
-      
+
       <table class="colors" style="text-align: center;">
         <tbody>
           <tr>
-            <td><img src="img/inputs/Arcade-Button-APunch.png"></td>
-            <td><img src="img/inputs/Arcade-Button-BKick.png"></td>
-            <td><img src="img/inputs/Arcade-Button-CPunch.png"></td>
-            <td><img src="img/inputs/Arcade-Button-DKick.png"></td>
+            <td><img class="A"></td>
+            <td><img class="B"></td>
+            <td><img class="C"></td>
+            <td><img class="D"></td>
           </tr>
           <tr>
             <td><img src="img/assets/Tia_A.png"></td>
@@ -96,7 +96,6 @@
         <ol style="columns: 2;">
           <li><a href="#move-list">Move list</a></li>
           <li><a href="#properties">Move properties</a></li>
-          <li><a href="#framedata">Frame Data</a></li>
         </ol>
 
         <h1 id="move-list">Move list</h1>
@@ -115,22 +114,19 @@
           <tr>
             <td>Rush Blow</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Button-APunch.png">+<img
-                  src="img/inputs/Arcade-Button-CPunch.png"></div>
+              <div class="inputs"><img class="A">+<img class="C"></div>
             </td>
           </tr>
           <tr>
             <td>Heel Break</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Button-BKick.png">+<img
-                  src="img/inputs/Arcade-Button-DKick.png"></div>
+              <div class="inputs"><img class="B">+<img class="D"></div>
             </td>
           </tr>
           <tr>
             <td>Upper</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Control-Modifier-Air.png"><img
-                  src="img/inputs/Arcade-Stick-Up.png">+<img src="img/inputs/Arcade-Button-CPunch.png"> </div>
+              <div class="inputs"><img class="Air"><img class="Up">+<img class="C"> </div>
             </td>
           </tr>
         </tbody>
@@ -143,29 +139,25 @@
           <tr>
             <td>Soul Spike</td>
             <td>
-              <div class="inputs">(<img src="img/inputs/Control-Modifier-Air.png">)<img
-                  src="img/inputs/Arcade-Stick-Qcb.png">+<img src="img/inputs/Arcade-Button-Kick.png"></div>
+              <div class="inputs">(<img class="Air">)<img class="QCB">+<img class="Kick"></div>
             </td>
           </tr>
           <tr>
             <td>Mirage Spear Kick</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Control-Modifier-Tap.png"><img
-                  src="img/inputs/Arcade-Button-Kick.png"></div>
+              <div class="inputs"><img class="Tap"><img class="Kick"></div>
             </td>
           </tr>
           <tr>
             <td>Rising Upper</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Stick-Dp.png">+<img
-                  src="img/inputs/Arcade-Button-Punch.png"></div>
+              <div class="inputs"><img class="DP">+<img class="Punch"></div>
             </td>
           </tr>
           <tr>
             <td>Rapid Gale</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcf.png">+<img
-                  src="img/inputs/Arcade-Button-Punch.png"></div>
+              <div class="inputs"><img class="QCF">+<img class="Punch"></div>
             </td>
           </tr>
         </tbody>
@@ -178,33 +170,29 @@
           <tr>
             <td>Rapid Charge</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcf.png"><img
-                  src="img/inputs/Arcade-Stick-Qcf.png">+<img src="img/inputs/Arcade-Button-Punch.png"></div>
+              <div class="inputs"><img class="QCF"><img class="QCF">+<img class="Punch"></div>
             </td>
           </tr>
           <tr>
             <td>Burning Revolver</td>
             <td>
-              <div class="inputs">(<img src="img/inputs/Control-Modifier-Air.png">)<img
-                  src="img/inputs/Arcade-Stick-Qcb.png"><img src="img/inputs/Arcade-Stick-Qcb.png">+<img
-                  src="img/inputs/Arcade-Button-Punch.png"></div>
+              <div class="inputs">(<img class="Air">)<img class="QCB"><img class="QCB">+<img class="Punch"></div>
             </td>
           </tr>
           <tr>
             <td>Cutlass Flasher</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcf.png"><img
-                  src="img/inputs/Arcade-Stick-Qcf.png">+<img src="img/inputs/Arcade-Button-Kick.png"></div>
+              <div class="inputs"><img class="QCF"><img class="QCF">+<img class="Kick"></div>
             </td>
           </tr>
         </tbody>
       </table>
 
-      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/pzMWWayvfMs" 
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      allowfullscreen></iframe>
 
+      <img src="img/assets/YouTube_Logo.svg" alt="YouTube Logo" width="60">
+      <a href="https://www.youtube.com/watch?v=pzMWWayvfMs" target="_blank">
+        <img style="width:100%;" src="https://img.youtube.com/vi/pzMWWayvfMs/hqdefault.jpg" alt="Watch video">
+      </a>
 
 
 
@@ -221,28 +209,28 @@
         </thead>
         <tbody>
           <tr>
-            <td>far/close A</td>
+            <td>far/close <img class="A"></td>
             <td>Mid</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>down A</td>
+            <td>down <img class="A"></td>
             <td>Mid</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>up A</td>
+            <td>up <img class="A"></td>
             <td>High</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></td>
           </tr>
           <tr>
-            <td>ub/uf A</td>
+            <td>ub/uf <img class="A"></td>
             <td>High</td>
 
 
@@ -251,35 +239,35 @@
         </tbody>
         <tbody>
           <tr>
-            <td>far B</td>
+            <td>far <img class="B"></td>
             <td>Mid</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>close B</td>
+            <td>close <img class="B"></td>
             <td>Mid</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>down B</td>
+            <td>down <img class="B"></td>
             <td>Low</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></td>
           </tr>
           <tr>
-            <td>up B</td>
+            <td>up <img class="B"></td>
             <td>High</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></td>
           </tr>
           <tr>
-            <td>ub/uf B</td>
+            <td>ub/uf <img class="B"></td>
             <td>High</td>
 
 
@@ -288,35 +276,35 @@
         </tbody>
         <tbody>
           <tr>
-            <td>far C</td>
+            <td>far <img class="C"></td>
             <td>Mid</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>close C</td>
+            <td>close <img class="C"></td>
             <td>Mid</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>down C</td>
+            <td>down <img class="C"></td>
             <td>Mid</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>up C</td>
+            <td>up <img class="C"></td>
             <td>High</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>ub/uf C</td>
+            <td>ub/uf <img class="C"></td>
             <td>High</td>
 
 
@@ -325,29 +313,29 @@
         </tbody>
         <tbody>
           <tr>
-            <td>far D</td>
+            <td>far <img class="D"></td>
             <td>Mid</td>
             <td></td>
           </tr>
           <tr>
-            <td>close D</td>
+            <td>close <img class="D"></td>
             <td>Mid</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>down D</td>
+            <td>down <img class="D"></td>
             <td>Low</td>
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>up D</td>
+            <td>up <img class="D"></td>
             <td>High</td>
             <td></td>
           </tr>
           <tr>
-            <td>ub/uf D</td>
+            <td>ub/uf <img class="D"></td>
             <td>High</td>
             <td></td>
           </tr>
@@ -361,7 +349,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>Rush Blow</td>
+            <td><img class="A">+<img class="C"></td>
             <td>Mid</td>
             <td class="split-cell">
               <div><span class="special-cancel"></span><span class="super-cancel"></div>
@@ -369,7 +357,7 @@
             </td>
           </tr>
           <tr>
-            <td>Heel Break</td>
+            <td><img class="B">+<img class="D"></td>
             <td>High</td>
             <td class="split-cell">
               <div><span class="special-cancel"></span><span class="super-cancel"></div>
@@ -378,7 +366,7 @@
             </td>
           </tr>
           <tr>
-            <td>Upper</td>
+            <td><img class="Air"><img class="Up">+<img class="C"></td>
             <td>High</td>
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
 
@@ -394,7 +382,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>Soul Spike</td>
+            <td>(<img class="Air">)<img class="QCB">+<img class="Kick"></td>
             <td>Mid</td>
             <td class="split-cell">
               <div><span class="launcher"></span><span class="knockdown"></div>
@@ -402,17 +390,17 @@
             </td>
           </tr>
           <tr>
-            <td>Mirage Spear Kick</td>
+            <td><img class="Tap"><img class="Kick"></td>
             <td>Mid</td>
             <td></td>
           </tr>
           <tr>
-            <td>Rising Upper</td>
+            <td><img class="DP">+<img class="Punch"></td>
             <td>Mid</td>
             <td><span class="inv-startup"></span></td>
           </tr>
           <tr>
-            <td>Rapid Gale</td>
+            <td><img class="QCF">+<img class="Punch"></td>
             <td>Mid</td>
             <td></td>
           </tr>
@@ -429,21 +417,21 @@
         </thead>
         <tbody>
           <tr>
-            <td>Rapid Charge</td>
+            <td><img class="QCF"><img class="QCF">+<img class="Punch"></td>
             <td>Mid</td>
 
 
             <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
           </tr>
           <tr>
-            <td>Burning Revolver</td>
+            <td>(<img class="Air">)<img class="QCB"><img class="QCB">+<img class="Punch"></td>
             <td>Mid</td>
 
 
             <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
           </tr>
           <tr>
-            <td>Cutlass Flasher</td>
+            <td><img class="QCF"><img class="QCF">+<img class="Kick"></td>
             <td>Mid</td>
 
 
@@ -452,81 +440,114 @@
         </tbody>
       </table>
 
-      <h1 id="framedata">Frame Data</h1>
-      <p>N/A</p>
-
 
     </div>
 
 
 
-    <div id="strategy">
+    <div id="guide">
 
 
       <ol style="columns: 2;">
-        <li><a href="#dash">Dash pressure</a></li>
+        <li><a href="#dash">Attack</a></li>
         <li><a href="#antiair">Anti-air</a></li>
         <li><a href="#super">Super usage</a></li>
         <li><a href="#mixups">High/low mixup</a></li>
         <li><a href="#fuzzy">Fuzzy</a></li>
       </ol>
 
+      <img src="img/assets/YouTube_Logo.svg" alt="YouTube Logo" width="60">
+      <a href="https://www.youtube.com/watch?v=KzufkMx_XRs" target="_blank">
+        <img style="width:100%;" src="https://img.youtube.com/vi/KzufkMx_XRs/hqdefault.jpg" alt="Watch video">
+      </a>
 
-      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/KzufkMx_XRs" 
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-      allowfullscreen></iframe>
+      <h2 id="dash">Attack</h2>
 
 
-      <h2 id="dash">Dash pressure</h2>
 
       <p style="padding: 10px; text-align: left; color:#606c71; background-color: rgb(228, 241, 249)">
-        Tia's dash pressure is key to her gameplay, boosting mobility to create openings, charge your super bar, and
-        stay safe all at once.
+        Tia's dash pressure is key to her gameplay, boosting mobility to create openings and build meter.
       </p>
 
-      <p><b><u>short dash jab</u></b><br>
-        If executed correctly, this pressure allows you to maintain the advantage while also
-        charging your super bar.</p>
-
-      <p><b><u>dash far 5D</u></b><br>
-        far 5D is safe on block and doubles as an anti-air. Hit airborne opponents for a super juggle.</p>
-
-      <p><b><u>dash 5C</u></b><br>
-        far 5C is safe on block. Hit airborne opponents and confirm it with Soul Spike (214K) for a super juggle
+      <h4>short dash A</h4>
+      <p>
+        <img src="videos/Tia/tia_dash2A.png">
+        Though not easy to execute, if done correctly, this pressure keeps the opponent blocking, builds your meter, and pushes them toward the corner.
       </p>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-        <source src="videos/Tia/antiair_combos.mp4" type="video/mp4">
-      </video>
+
+      <h4>short dash 5C and 5D</h4>
+      <p>
+        <img src="videos/Tia/tia_dash5C.png">
+        Dash far 5D and 5C are safe on block and serve as anti-air. They’re hard to react to, so opponents must use preemptive crouching light attacks to counter.        
+      </p>
+
+
+      <h4>Rapid charge</h4>
+      <p>
+        <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+          <source src="videos/Tia/matchups/tia_vs_condor_tomahawk.mp4" type="video/mp4">
+        </video>
+        Her fastest super, it comes out quickly and punishes projectiles and most unsafe moves. 
+        Easily connects after anti-air normals.
+      </p>
+      
 
       <h2 id="antiair">Anti-air</h2>
-      <p>anti-air with <b>623P</b> or <b>5D</b> both of which can be followed by super (Rapid charge)
+
+      <h4>623P</h4>
+      <p>
+        <img src="videos/Tia/tia_623A.png">
+        623A comes fast, letting her pass through projectiles. 
+        If it hits as an anti-air you can follow up with Super. 
+        623C hits higher and has more recovery; both have startup invulnerability.
       </p>
 
-      <p><b>Burning Revolver</b> is also an effective way to punish jumps and cross-up attempts.</p>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-        <source
-          src="https://github.com/breakerswiki/assets/raw/refs/heads/main/videos/Tia/tia_wakeup_burning_revolver.mp4" type="video/mp4">
-      </video>
+      <h4>far 5C and 5D</h4>
+      <p>
+        <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+          <source src="videos/Tia/antiair_combos.mp4" type="video/mp4">
+        </video>
+        Dash far 5D and 5C are safe on block and serve as anti-air. 
+        Confirm 5D with super 236236P and 5C with Soul Spike (214K) for a super juggle.
+      </p>
+
+      <h4>5A</h4>
+      <p>
+        <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+          <source src="videos/Tia/matchups/tia_vs_tia_RapidCharge.mp4" type="video/mp4">
+        </video>
+        Super/Special cancelable. Use it to hit opponents jumping close to you and counter ambiguous jump-ins and cross-ups. 5A anti-air can lead to a juggle combo.
+      </p>
+
+      <h4>Burning Revolver</h4>
+      <p>
+        an effective way to punish jumps and cross-up attempts
+        <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+          <source src="videos/Tia/tia_wakeup_burning_revolver.mp4" type="video/mp4">
+        </video>
+      </p>
 
 
       <h2 id="super">Super usage</h2>
       <p>
-        <b><u>Rapid charge</u></b><br>
+        Rapid Charge <img class="QCF"><img class="QCF">+<img class="Punch"><br>
+      <p><img src="videos/Tia/tia_RapidCharge.png">
         Rapid charge super is used as a combo ender and to punish opponent's unsafe moves and projectiles effectively
       </p>
 
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-        <source src="videos/Tia/matchups/tia_vs_condor_tomahawk.mp4" type="video/mp4">
-      </video>
 
+      <p>
+        Cutlass Flasher <img class="QCF"><img class="QCF">+<img class="Kick"><br>
+      <p><img src="videos/Tia/tia_CutlassFlasher.png">
+        hit overhead. useful for converting air juggles combos
+      </p>
 
 
       <p>
-        <b><u>Burning Revolver</u></b><br>
-        Burning Revolver works as a versatile combo finisher, usable in both air and ground situations. With
-        invulnerability on startup,
-        it serves as a bait for reversals or frametraps, and on hit, it pushes opponents toward the corner.
+        Burning Revolver (<img class="Air">)<img class="QCB"><img class="QCB">+<img class="Punch"><br>
+      <p><img src="videos/tia/tia_BurningRevolver.png">
+        Usable in both air and ground, it has a large hitbox, can serve as an anti-air,
+        and has startup invulnerability, allowing it to bait reversals and push opponents toward the corner on hit.
       </p>
 
       <h2 id="mixups">High/low mixup</h2>
@@ -536,7 +557,7 @@
       </ol>
 
       <h2 id="fuzzy">Fuzzy</h2>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
         <source src="videos/Tia/fuzzy.mp4" type="video/mp4">
       </video>
       <ul class="combos">
@@ -561,7 +582,7 @@
 
 
       <h2 id="meterless_combos">Meterless combos</h2>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
         <source src="videos/Tia/meterlesscombo.mp4" type="video/mp4">
       </video>
       <ul class="combos">
@@ -574,7 +595,7 @@
 
 
       <h2 id="metered_combos">Metered combos</h2>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
         <source src="videos/Tia/metercombo.mp4" type="video/mp4">
       </video>
       <ul class="combos">
@@ -585,7 +606,7 @@
       </ul>
 
       <h2 id="Anti-air">Anti-air</h2>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
         <source src="videos/Tia/antiair_combos.mp4" type="video/mp4">
       </video>
       <ul class="combos">
@@ -597,7 +618,7 @@
       </ul>
 
       <h2 id="air-to-air">Air-to-air</h2>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
         <source src="videos/Tia/airtoair.mp4" type="video/mp4">
       </video>
       <ul class="combos">
@@ -606,7 +627,7 @@
       </ul>
 
       <h2 id="breakcombo">Breakable combos</h2>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
         <source src="videos/Tia/breakable_combo.mp4" type="video/mp4">
       </video>
       <ul class="combos">
@@ -649,354 +670,353 @@
 
       <div id="saizo">
         <h1>Saizo</h1>
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="normals">Standing <img class="C"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="width: 50%;">
-                  <span class="punish-on-block"></span><span class="breakable"></span>
-                  <p>
-                    Close 5C hits low, while the far 5C has more recovery, making it punishable on hit.<br>
-                  </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_saizo_StandC.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="commands">Rasen Kyaku <img class="B">+<img class="D"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="width: 50%;">
-                  <span class="punish-on-block"></span><span class="breakable"></span>
-                  <p>
-                    Overhead, unsafe on hit and block. Saizo rarely resorts to this move unless finishing off his opponent
-                  </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_saizo_RasenKyaku.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
 
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="specials">Hiryuu <img class="QCF">+<img class="C"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="width: 50%;">
-                  <span class="punish-on-block"></span>
-                  <p>
-                    Often used to cancel unsafe moves. At close range punish with cr.LP         
-                  </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_saizo_bomb.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="specials">Yashagami <img class="QCB">+<img class="Punch"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="width: 50%;">
-                  <span class="punish-on-block"></span><span class="breakable"></span>
-                  <p>
-                    Unsafe on hit and block unless cancelled.
-                    On block, Saizo can still super cancel, disrupting your punish.
-                    In this case, 236236P ensures a guaranteed punish
-                  </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_saizo_Yashagami.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="specials">Engetsuzan <img class="DP">+<img class="Punch"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="width: 50%;">
-                  <span class="punish-on-block"></span>
-                  <p>
-                    Punish with Super (236236P)<br>
-                    Punish with dash > st.HP > Super (236236P)
-                  </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_saizo_Engetsuzan.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="normals">Standing <img class="C"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 50%;">
+                <span class="punish-on-block"></span><span class="breakable"></span>
+                <p>
+                  Close 5C hits low, while the far 5C has more recovery, making it punishable on hit.<br>
+                </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_saizo_StandC.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="commands">Rasen Kyaku <img class="B">+<img class="D"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 50%;">
+                <span class="punish-on-block"></span><span class="breakable"></span>
+                <p>
+                  Overhead, unsafe on hit and block. Saizo rarely resorts to this move unless finishing off his opponent
+                </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_saizo_RasenKyaku.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="specials">Hiryuu <img class="QCF">+<img class="C"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 50%;">
+                <span class="punish-on-block"></span>
+                <p>
+                  Often used to cancel unsafe moves. At close range punish with cr.LP
+                </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_saizo_bomb.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="specials">Yashagami <img class="QCB">+<img class="Punch"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 50%;">
+                <span class="punish-on-block"></span><span class="breakable"></span>
+                <p>
+                  Unsafe on hit and block unless cancelled.
+                  On block, Saizo can still super cancel, disrupting your punish.
+                  In this case, 236236P ensures a guaranteed punish
+                </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_saizo_Yashagami.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="specials">Engetsuzan <img class="DP">+<img class="Punch"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 50%;">
+                <span class="punish-on-block"></span>
+                <p>
+                  Punish with Super (236236P)<br>
+                  Punish with dash > st.HP > Super (236236P)
+                </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_saizo_Engetsuzan.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
 
 
       </div>
 
       <div id="pielle">
 
-          <h1>Pielle</h1>
+        <h1>Pielle</h1>
 
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="commands">Saber Bash <img class="A">+<img class="C"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="punish-on-block"></span><span class="whiff-punish"></span>
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="commands">Saber Bash <img class="A">+<img class="C"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="punish-on-block"></span><span class="whiff-punish"></span>
+                <p>
+                  Despite its animation, this move isn't an overhead.
+                  Punish with 2B or 236236P and on whiff with 623P
+                </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_pielle_SaberBash.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="commands">Flying Peach Bomber <img class="B">+<img class="D"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="safe-on-block"></span><span class="whiff-punish"></span>
+                <p>
+                  This one is an overhead, but if done close to you, it will whiff, and he'll pass behind you.
+                  When used in a blockstring, there's always a gap, no matter which normal move it was canceled from.
+                  Punish on whiff with 623LP
+                </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_pielle_FlyingPeachBomber.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="specials">Bonjour Shot <img class="QCF">+<img class="Punch"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="punish-on-block"></span><span class="whiff-punish"><span class="punish-on-hit"></span>
                   <p>
-                    Despite its animation, this move isn't an overhead.
-                    Punish with 2B or 236236P and on whiff with 623P
+                    A projectile with a very slow recovery.
+                    You can punish it from the other side of the screen with 236236P.
+                    At close range, punish on block or hit with 2B or 5C.
                   </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_pielle_SaberBash.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="commands">Flying Peach Bomber <img class="B">+<img class="D"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="safe-on-block"></span><span class="whiff-punish"></span>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_pielle_BonjourShot.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="specials">Robin Liner <img class="DP">+<img class="Punch"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="punish-on-block"></span><span class="whiff-punish"><span class="punish-on-hit"></span>
                   <p>
-                    This one is an overhead, but if done close to you, it will whiff, and he'll pass behind you.
-          When used in a blockstring, there's always a gap, no matter which normal move it was canceled from.
-          Punish on whiff with 623LP
+                    An anti-air special with slow recovery and no reversal properties...
+                    On hit, 623A keeps you standing for a punish, while 623C knocks you down.
                   </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_pielle_FlyingPeachBomber.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="specials">Bonjour Shot <img class="QCF">+<img class="Punch"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="punish-on-block"></span><span class="whiff-punish"><span class="punish-on-hit"></span>
-                    <p>
-                      A projectile with a very slow recovery.
-            You can punish it from the other side of the screen with 236236P.
-            At close range, punish on block or hit with 2B or 5C.
-                    </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_pielle_BonjourShot.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="specials">Robin Liner <img class="DP">+<img class="Punch"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="punish-on-block"></span><span class="whiff-punish"><span class="punish-on-hit"></span>
-                    <p>
-                      An anti-air special with slow recovery and no reversal properties...
-                      On hit, 623A keeps you standing for a punish, while 623C knocks you down.          
-                    </p>
-                </td>
-                <td style="width: 50%;">
-                  <img
-                    src="videos/Pielle/pielle_RobinLiner.png?raw=true">
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="specials">Monsieur Crash <img class="QCB">+<img class="Punch">.<img class="Punch">
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="punish-on-block"></span>
+              </td>
+              <td style="width: 50%;">
+                <img src="videos/Pielle/pielle_RobinLiner.png?raw=true">
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="specials">Monsieur Crash <img class="QCB">+<img class="Punch">.<img class="Punch">
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="punish-on-block"></span>
+                <p>
+                  A three-hit move, easily punishable.
+                  Be careful, Pielle can delay each hit to counter your punish attempt.
+                </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_pielle_MonsieurCrash.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="commands">Merci Un Deux Trois <img class="Air"><img class="Down">+<img
+                  class="A">+<img class="B">+<img class="C"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="punish-on-block"></span><span class="whiff-punish">
                   <p>
-                    A three-hit move, easily punishable.
-                    Be careful, Pielle can delay each hit to counter your punish attempt.
-                  </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_pielle_MonsieurCrash.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="commands">Merci Un Deux Trois <img class="Air"><img class="Down">+<img
-                    class="A">+<img class="B">+<img class="C"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="punish-on-block"></span><span class="whiff-punish">
-                    <p>
-                      An aerial dive that can deceive your anti-air or jump.
-                      When you block all 3 hits, Pielle passes behind you. Punish with 2B</p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_pielle_Merci123.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="supers">Super Rose <img class="QCB"><img class="QCB">+<img class="Kick"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="safe-on-block"><span class="whiff-punish"></span>
-                    <p>
-                      A super that crosses the entire screen with a wide hitbox, useful for countering jump attempts.
-                      Whiff punish at super flash with 2D.
-                    </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_pielle_SuperRose.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="supers">Thunder Croiser <img class="QCB"><img class="QCB">+<img class="Punch">
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="punish-on-block"></span>
+                    An aerial dive that can deceive your anti-air or jump.
+                    When you block all 3 hits, Pielle passes behind you. Punish with 2B</p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_pielle_Merci123.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="supers">Super Rose <img class="QCB"><img class="QCB">+<img class="Kick"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="safe-on-block"><span class="whiff-punish"></span>
                   <p>
                     A super that crosses the entire screen with a wide hitbox, useful for countering jump attempts.
-                    Punish with Dash > 5C > 236236P <br>
+                    Whiff punish at super flash with 2D.
                   </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_pielle_ThunderCroiser.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_pielle_SuperRose.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="supers">Thunder Croiser <img class="QCB"><img class="QCB">+<img class="Punch">
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="punish-on-block"></span>
+                <p>
+                  A super that crosses the entire screen with a wide hitbox, useful for countering jump attempts.
+                  Punish with Dash > 5C > 236236P <br>
+                </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_pielle_ThunderCroiser.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
 
 
 
@@ -1005,238 +1025,238 @@
 
       <div id="rila">
         <h1>Rila</h1>
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="commands">Dynamite Kick <img class="Right">+<img class="D"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="safe-on-block"></span>
-                </td>
-                <td style="width: 50%;">
-                  <img src="videos/Rila/rila_DynamiteKick.png?raw=true">
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="normals">Crouching <img class="C"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="safe-on-block"></span>
-                  <p>Her main poke that is annoying to deal with; it's safe on block, has good range, and can also
-                    anti-air.</p>
-                </td>
-                <td style="width: 50%;">
-                  <img src="videos/Rila/rila_crouch_C.png?raw=true">
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="specials">Killer Snake <img class="ChargeBack"><img class="DownRight">+<img
-                    class="B"> </th>
-              </tr>
-            </thead>
+
+
+        <table class="movelist">
+          <thead>
             <tr>
-              <td colspan="2">
-                <span class="punish-on-block"></span><span class="whiff-punish"></span>
-                <p>
-                  has a lot of recovery on block and hit, giving you time to punish
-                </p>
+              <th colspan="2" class="commands">Dynamite Kick <img class="Right">+<img class="D"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="safe-on-block"></span>
+              </td>
+              <td style="width: 50%;">
+                <img src="videos/Rila/rila_DynamiteKick.png?raw=true">
               </td>
             </tr>
+          </tbody>
+          <thead>
+        </table>
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="normals">Crouching <img class="C"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="safe-on-block"></span>
+                <p>Her main poke that is annoying to deal with; it's safe on block, has good range, and can also
+                  anti-air.</p>
+              </td>
+              <td style="width: 50%;">
+                <img src="videos/Rila/rila_crouch_C.png?raw=true">
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+        <table class="movelist">
+          <thead>
             <tr>
               <th colspan="2" class="specials">Killer Snake <img class="ChargeBack"><img class="DownRight">+<img
-                  class="D"> </th>
+                  class="B"> </th>
             </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="punish-on-block"></span><span class="whiff-punish"></span>
-                  <p>
-                    Not an overhead, it goes through projectiles and is unsafe on block, but she can recover and use her
-                    Supers.
-                    Input 2A, 2A to punish or block in time.
-                  </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source
-                      src="videos/Tia/matchups/tia_vs_rila_killer_snake.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="commands">Spinning Claw <img class="Tap"><img class="Punch"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="whiff-punish"></span>
-                  <p>
-                    It's hard to punish due to pushback. It stays active for a while and has priority over normals and
-                    some Supers.
-                  </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_rila_SpinningClaw.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="specials">Quick Scratch <img class="ChargeBack_Forward">+<img class="A"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="punish-on-block"><span class="whiff-punish">
-                      <p>
-                        Very fast, can catch you off guard at mid and close range. You can punish it on whiff with any normal.
-              On block punish with super (236236P).
-                      </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_rila_QuickScratchA.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-              <thead>
-                <tr>
-                  <th colspan="2" class="specials">Quick Scratch <img class="ChargeBack_Forward">+<img class="C"> </th>
-                </tr>
-              </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="punish-on-block"><span class="whiff-punish">
-                      <p>
-                        Slower than LP version, punish with 5C
-                      </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_rila_QuickScratchC.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="specials">Wild Saver <img class="ChargeDown_Up">+<img class="Kick"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="punish-on-block"></span>
-                  <p>
-                    It's a fast anti-air. The Heavy version has more recovery</p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_rila_WildSaver.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-  
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="supers">Shine Beast <img class="ChargeBack_Forward"><img class="Left_Right">+<img
-                    class="Punch"> </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td style="width: 50%;">
-                  <span class="punish-on-block">
+          </thead>
+          <tr>
+            <td colspan="2">
+              <span class="punish-on-block"></span><span class="whiff-punish"></span>
+              <p>
+                has a lot of recovery on block and hit, giving you time to punish
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2" class="specials">Killer Snake <img class="ChargeBack"><img class="DownRight">+<img
+                class="D"> </th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="punish-on-block"></span><span class="whiff-punish"></span>
+                <p>
+                  Not an overhead, it goes through projectiles and is unsafe on block, but she can recover and use her
+                  Supers.
+                  Input 2A, 2A to punish or block in time.
+                </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_rila_killer_snake.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="commands">Spinning Claw <img class="Tap"><img class="Punch"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="whiff-punish"></span>
+                <p>
+                  It's hard to punish due to pushback. It stays active for a while and has priority over normals and
+                  some Supers.
+                </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_rila_SpinningClaw.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="specials">Quick Scratch <img class="ChargeBack_Forward">+<img class="A"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="punish-on-block"><span class="whiff-punish">
                     <p>
-                      On block, she ends up on the other side (at mid and close range).
-                      With practice, you can time your jump correctly to punish her
+                      Very fast, can catch you off guard at mid and close range. You can punish it on whiff with any
+                      normal.
+                      On block punish with super (236236P).
                     </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_rila_ShineBeast.mp4" type="video/mp4">
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-          </table>
-  
-          <table class="movelist">
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_rila_QuickScratchA.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
             <thead>
               <tr>
-                <th colspan="2" class="supers">Bloody Fang <img class="ChargeDownBack"><img class="Delta">+<img
-                    class="Kick"> </th>
+                <th colspan="2" class="specials">Quick Scratch <img class="ChargeBack_Forward">+<img class="C"> </th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="punish-on-block"><span class="whiff-punish">
-                      <p>
-                        This super is not overhead despite the jump animation. punish with dash > 5C
-                      </p>
-                </td>
-                <td style="width: 50%;">
-                  <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                    <source src="videos/Tia/matchups/tia_vs_rila_BloodyFang.mp4" type="video/mp4">
-                  </video>
-                </td>
-  
-              </tr>
-            </tbody>
-            <thead>
-          </table>
+          <tbody>
+            <tr>
+              <td>
+                <span class="punish-on-block"><span class="whiff-punish">
+                    <p>
+                      Slower than LP version, punish with 5C
+                    </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_rila_QuickScratchC.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="specials">Wild Saver <img class="ChargeDown_Up">+<img class="Kick"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="punish-on-block"></span>
+                <p>
+                  It's a fast anti-air. The Heavy version has more recovery</p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_rila_WildSaver.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="supers">Shine Beast <img class="ChargeBack_Forward"><img class="Left_Right">+<img
+                  class="Punch"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="width: 50%;">
+                <span class="punish-on-block">
+                  <p>
+                    On block, she ends up on the other side (at mid and close range).
+                    With practice, you can time your jump correctly to punish her
+                  </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_rila_ShineBeast.mp4" type="video/mp4">
+                </video>
+              </td>
+            </tr>
+          </tbody>
+          <thead>
+        </table>
+
+        <table class="movelist">
+          <thead>
+            <tr>
+              <th colspan="2" class="supers">Bloody Fang <img class="ChargeDownBack"><img class="Delta">+<img
+                  class="Kick"> </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="punish-on-block"><span class="whiff-punish">
+                    <p>
+                      This super is not overhead despite the jump animation. punish with dash > 5C
+                    </p>
+              </td>
+              <td style="width: 50%;">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_rila_BloodyFang.mp4" type="video/mp4">
+                </video>
+              </td>
+
+            </tr>
+          </tbody>
+          <thead>
+        </table>
 
       </div>
 
@@ -1255,12 +1275,12 @@
                 <span class="punish-on-block"></span><span class="whiff-punish"></span><span class="breakable"></span>
                 <p>
                   dao-long's fireball, punsish at point blank with 2A
-                use your super (236236P) to pass through fireball.
+                  use your super (236236P) to pass through fireball.
                   break with super: 2A, 2A, 2B ❌ Kouryuu Ga
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_dao_KouryuuGa.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1286,7 +1306,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_dao_SenkyuuTai.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1311,7 +1331,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_dao_RiyuuSeishou.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1335,7 +1355,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_dao_SenpuureKyaku.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1360,7 +1380,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_dao_Shoutenchuu.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1386,7 +1406,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_dao_HoushinRenpa.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1412,7 +1432,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_dao_ShinKyokuRanbu.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1442,9 +1462,9 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_condor_tomahawk.mp4" type="video/mp4">
-                </video>        
+                </video>
               </td>
             </tr>
           </tbody>
@@ -1469,7 +1489,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_condor_GrandBuffaloHorn.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1494,7 +1514,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_condor_SkyBridge.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1520,7 +1540,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_condor_AtlasRockBuster.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1545,7 +1565,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_condor_2D.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1578,9 +1598,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
-                  <source
-                    src="videos/Tia/matchups/tia_vs_sho_ranki_ryuu_geri.mp4" type="video/mp4">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
+                  <source src="videos/Tia/matchups/tia_vs_sho_ranki_ryuu_geri.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1605,7 +1624,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_sho_onigawara.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1632,7 +1651,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_sho_Tobihizageri.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1658,7 +1677,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_sho_SashikomoKick.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1681,12 +1700,13 @@
                 <span class="punish-on-block"></span><span class="whiff-punish"></span>
                 <p>
                   can be punished when blocked at point-blank range.
-                  Tia's Super 236236P goes through fireballs and can punish blockstrings with small or no pushback. (example: on
+                  Tia's Super 236236P goes through fireballs and can punish blockstrings with small or no pushback.
+                  (example: on
                   corner 2B, 2B, 2D > 236P)
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_sho_fireball.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1698,13 +1718,13 @@
 
 
 
- 
 
 
 
 
 
-   
+
+
 
 
 
@@ -1730,7 +1750,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_maherl_super.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1757,7 +1777,7 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_maherl_AbdomenStep.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1783,7 +1803,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_maherl_SlashSword.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1805,7 +1825,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_maherl_PunishSword.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1830,7 +1850,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_maherl_BalloonBomb.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1854,7 +1874,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_maherl_CadabraBomber.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1885,7 +1905,7 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_tia_SoulSpike.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1908,7 +1928,7 @@
                 <p>punish with 236236P</p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_tia_MirageSpearKick.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1956,7 +1976,7 @@
                       </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_tia_RapidGale.mp4" type="video/mp4">
                 </video>
               </td>
@@ -1980,7 +2000,7 @@
                     </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_tia_HeelBreak.mp4" type="video/mp4">
                 </video>
               </td>
@@ -2004,7 +2024,7 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_tia_RapidCharge.mp4" type="video/mp4">
                 </video>
               </td>
@@ -2028,7 +2048,7 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_tia_BurningRevolver.mp4" type="video/mp4">
                 </video>
               </td>
@@ -2057,7 +2077,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_alsion_HorusShade.mp4" type="video/mp4">
                 </video>
               </td>
@@ -2080,7 +2100,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_alsion_DeathShred.mp4" type="video/mp4">
                 </video>
               </td>
@@ -2129,7 +2149,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_alsion_DeadlyClaw.mp4" type="video/mp4">
                 </video>
               </td>
@@ -2154,7 +2174,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_alsion_DashKnee.mp4" type="video/mp4">
                 </video>
               </td>
@@ -2167,7 +2187,8 @@
         <table class="movelist">
           <thead>
             <tr>
-              <th colspan="2" class="specials"> Pharaoh Dance <img class="QCB">+<img class="QCB">+<img class="Punch"> </th>
+              <th colspan="2" class="specials"> Pharaoh Dance <img class="QCB">+<img class="QCB">+<img class="Punch">
+              </th>
             </tr>
           </thead>
           <tbody>
@@ -2180,7 +2201,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+                <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
                   <source src="videos/Tia/matchups/tia_vs_alsion_PharaohDance.mp4" type="video/mp4">
                 </video>
               </td>

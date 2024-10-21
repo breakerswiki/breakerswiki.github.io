@@ -115,7 +115,7 @@ img.logo:active {
   }
 
   .nav-links a {
-      font-size: 22px;
+      font-size: 24px;
   }
 }
 
@@ -202,7 +202,6 @@ img.logo:active {
   .main-content h1,
   .main-content h2,
   .main-content h3,
-  .main-content h4,
   .main-content h5,
   .main-content h6 {
     margin-top: 2rem;
@@ -210,6 +209,13 @@ img.logo:active {
     font-weight: normal;
     color: #155b99; 
   }
+  .main-content h4 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #606c71; 
+  }
+
   .main-content p {
     margin-bottom: 1em; }
   .main-content code {
@@ -331,6 +337,9 @@ img.logo:active {
   padding: 0;
 }
 
+.flag-icon {
+  background-color: black;
+}
 
 .inputs img {
   margin-left: 3px;
@@ -461,6 +470,15 @@ ul.combos li {
   margin-bottom: 10px;
 }
 
+.main-content table.strategy {
+  border-collapse: collapse;
+}
+
+.main-content table.strategy td:first-child {
+    color: white;
+    background-color: #85a6cc;
+    text-align: center;
+}
 
 .main-content table.movelist th.commands {
   background: #6198d5;
@@ -480,6 +498,8 @@ ul.combos li {
   font-weight: 500;
   
 }
+
+
 
 table.properties td:not(:first-child):not(:last-child),
 table.properties th:not(:first-child):not(:last-child) {
@@ -894,12 +914,12 @@ th {
 
 .hard-knockdown::before {
   content: "H.Knockdown";
-  background-color: #910000;
+  background-color: #606c71;
 }
 
 .knockdown::before {
   content: "Knockdown";
-  background-color: #380000;
+  background-color: #9c9c9c;
 }
 
 .overhead::before {

@@ -51,7 +51,7 @@
         <div class="nav-guide">
           <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
           <button class="color-button" id="button2" onclick="showContent('movelist')">Move list</button>
-          <button class="color-button" id="button3" onclick="showContent('strategy')">Strategy</button>
+          <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
           <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
           <button class="color-button" id="button5" onclick="showContent('matchups')">Matchups</button>
         </div>
@@ -73,10 +73,10 @@
           <table class="colors" style="text-align: center;">
             <tbody>
               <tr>
-                <td><img src="img/inputs/Arcade-Button-APunch.png"></td>
-                <td><img src="img/inputs/Arcade-Button-BKick.png"></td>
-                <td><img src="img/inputs/Arcade-Button-CPunch.png"></td>
-                <td><img src="img/inputs/Arcade-Button-DKick.png"></td>
+                <td><img class="A"></td>
+                <td><img class="B"></td>
+                <td><img class="C"></td>
+                <td><img class="D"></td>
               </tr>
               <tr>
                 <td><img src="img/assets/Condor_A.png"></td>
@@ -116,22 +116,22 @@
               <tr>
                 <td>Fumikomi Straight</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Right.png">+<img
-                      src="img/inputs/Arcade-Button-CPunch.png"></div>
+                  <div class="inputs"><img class="Right">+<img
+                      class="C"></div>
                 </td>
               </tr>
               <tr>
                 <td>Body Press</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Control-Modifier-Air.png"><img
-                      src="img/inputs/Arcade-Stick-Down.png">+<img src="img/inputs/Arcade-Button-CPunch.png"></div>
+                  <div class="inputs"><img class="Air"><img
+                      class="Down">+<img class="C"></div>
                 </td>
               </tr>
               <tr>
                 <td>Heel Stomp</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Control-Modifier-Air.png"><img
-                      src="img/inputs/Arcade-Stick-Down.png">+<img src="img/inputs/Arcade-Button-DKick.png"></div>
+                  <div class="inputs"><img class="Air"><img
+                      class="Down">+<img class="D"></div>
                 </td>
               </tr>
             </tbody>
@@ -144,36 +144,36 @@
               <tr>
                 <td>Tomahawk Jack</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Button-APunch.png">+<img
-                      src="img/inputs/Arcade-Button-BKick.png">+<img src="img/inputs/Arcade-Button-CPunch.png"></div>
+                  <div class="inputs"><img class="A">+<img
+                      class="B">+<img class="C"></div>
                 </td>
               <tr>
                 <td></td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Button-BKick.png">+<img
-                      src="img/inputs/Arcade-Button-CPunch.png">+<img src="img/inputs/Arcade-Button-DKick.png"></div>
+                  <div class="inputs"><img class="B">+<img
+                      class="C">+<img class="D"></div>
                 </td>
               </tr>
               </tr>
               <tr>
                 <td>Grand Buffalo Horn</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Right.png"><img
-                      src="img/inputs/Arcade-Stick-Right.png">+<img src="img/inputs/Arcade-Button-Kick.png"></div>
+                  <div class="inputs"><img class="Right"><img
+                      class="Right">+<img class="Kick"></div>
                 </td>
               </tr>
               <tr>
                 <td>Sky Bridge</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcf.png">+<img
-                      src="img/inputs/Arcade-Button-Kick.png"></div>
+                  <div class="inputs"><img class="QCF">+<img
+                      class="Kick"></div>
                 </td>
               </tr>
               <tr>
                 <td>Moonlight Slam</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Stick-360.png">+<img
-                      src="img/inputs/Arcade-Button-Punch.png"></div>
+                  <div class="inputs"><img class="360">+<img
+                      class="Punch"></div>
                 </td>
               </tr>
             </tbody>
@@ -186,15 +186,15 @@
               <tr>
                 <td>Atlas Rock Buster</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcf.png"><img
-                      src="img/inputs/Arcade-Stick-Qcf.png">+<img src="img/inputs/Arcade-Button-Punch.png"></div>
+                  <div class="inputs"><img class="QCF"><img
+                      class="QCF">+<img class="Punch"></div>
                 </td>
               </tr>
               <tr>
                 <td>Moonlight Shake</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Stick-360.png"><img
-                      src="img/inputs/Arcade-Stick-360.png">+<img src="img/inputs/Arcade-Button-Punch.png"></div>
+                  <div class="inputs"><img class="360"><img
+                      class="360">+<img class="Punch"></div>
                 </td>
               </tr>
             </tbody>
@@ -207,50 +207,49 @@
               <tr>
                 <td>Body Slam</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Left.png">/<img
-                      src="img/inputs/Arcade-Stick-Right.png">+<img src="img/inputs/Arcade-Button-APunch.png">or<img
-                      src="img/inputs/Arcade-Button-BKick.png"></div>
+                  <div class="inputs"><img class="Left">/<img
+                      class="Right">+<img class="A">or<img
+                      class="B"></div>
                 </td>
               </tr>
               <tr>
                 <td>Piledriver</td>
                 <td>
-                  <div class="inputs"><img src="img/inputs/Arcade-Stick-Left.png">/<img
-                      src="img/inputs/Arcade-Stick-Right.png">+<img src="img/inputs/Arcade-Button-CPunch.png"></div>
+                  <div class="inputs"><img class="Left">/<img
+                      class="Right">+<img class="C"></div>
                 </td>
               </tr>
               <td>Back Drop</td>
               <td>
-                <div class="inputs"><img src="img/inputs/Arcade-Stick-Left.png">/<img
-                    src="img/inputs/Arcade-Stick-Right.png">+<img src="img/inputs/Arcade-Button-DKick.png"></div>
+                <div class="inputs"><img class="Left">/<img
+                    class="Right">+<img class="D"></div>
               </td>
               </tr>
               <td>Neck Hanging Tree</td>
               <td>
-                <div class="inputs"><img src="img/inputs/Arcade-Stick-DR.png">+<img
-                    src="img/inputs/Arcade-Button-APunch.png">or<img src="img/inputs/Arcade-Button-BKick.png"></div>
+                <div class="inputs"><img class="DownRight">+<img
+                    class="A">or<img class="B"></div>
               </td>
               </tr>
               <td>Head Crash</td>
               <td>
-                <div class="inputs"><img src="img/inputs/Arcade-Stick-DR.png">+<img
-                    src="img/inputs/Arcade-Button-CPunch.png"></div>
+                <div class="inputs"><img class="DownRight">+<img
+                    class="C"></div>
               </td>
               </tr>
               <td>Bear Hug</td>
               <td>
-                <div class="inputs"><img src="img/inputs/Arcade-Stick-DR.png">+<img
-                    src="img/inputs/Arcade-Button-DKick.png"></div>
+                <div class="inputs"><img class="DownRight">+<img
+                    class="D"></div>
               </td>
               </tr>
             </tbody>
           </table>
 
-          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/lRrYtfuUnnU"
-          title="YouTube video player" frameborder="0"
-          allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen></iframe>
-
+          <img src="img/assets/YouTube_Logo.svg" alt="YouTube Logo" width="60">
+          <a href="https://www.youtube.com/watch?v=lRrYtfuUnnU" target="_blank">
+            <img style="width:100%;" src="https://img.youtube.com/vi/lRrYtfuUnnU/hqdefault.jpg" alt="Watch video">
+          </a>
 
 
 
@@ -267,35 +266,35 @@
                 </thead>
                 <tbody>
                   <tr>
-                      <td>far A</td>
+                      <td>far <img class="A"></td>
                       <td>Mid</td>
                       
                       
                       <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                   </tr>
                   <tr>
-                    <td>close A</td>
+                    <td>close <img class="A"></td>
                     <td>Mid</td>
                     
                     
                     <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                 </tr>
                   <tr>
-                      <td>down A</td>
+                      <td>down <img class="A"></td>
                       <td>Mid</td>
                       
                       
                       <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                   </tr>
                   <tr>
-                      <td>up A</td>
+                      <td>up <img class="A"></td>
                       <td>High</td>
                       
                       
                       <td></td>
                   </tr>
                   <tr>
-                      <td>ub/uf A</td>
+                      <td>ub/uf <img class="A"></td>
                       <td>High</td>
                       
                       
@@ -304,35 +303,35 @@
               </tbody>
               <tbody>
                   <tr>
-                      <td>far B</td>
+                      <td>far <img class="B"></td>
                       <td>Mid</td>
                       
                       
                       <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                   </tr>
                   <tr>
-                    <td>close B</td>
+                    <td>close <img class="B"></td>
                     <td>Mid</td>
                     
                     
                     <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                 </tr>
                   <tr>
-                      <td>down B</td>
+                      <td>down <img class="B"></td>
                       <td>Low</td>
                       
                       
                       <td><span class="special-cancel"></span><span class="super-cancel"></td>
                   </tr>
                   <tr>
-                      <td>up B</td>
+                      <td>up <img class="B"></td>
                       <td>High</td>
                       
                       
                       <td></td>
                   </tr>
                   <tr>
-                      <td>ub/uf B</td>
+                      <td>ub/uf <img class="B"></td>
                       <td>High</td>
                       
                       
@@ -341,75 +340,59 @@
               </tbody>
               <tbody>
                   <tr>
-                      <td>far C</td>
+                      <td>far <img class="C"></td>
                       <td>Mid</td>
                       
                       
                       <td></td>
                   </tr>
                   <tr>
-                    <td>close C</td>
+                    <td>close <img class="C"></td>
                     <td>Mid</td>
                     
                     
                     <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                 </tr>
                   <tr>
-                      <td>down C</td>
+                      <td>down <img class="C"></td>
                       <td>Mid</td>
-                      
-                      
                       <td></td>
                   </tr>
                   <tr>
-                      <td>up C</td>
+                      <td>up <img class="C"></td>
                       <td>High</td>
-                      
-                      
                       <td></td>
                   </tr>
                   <tr>
-                      <td>ub/uf C</td>
+                      <td>ub/uf <img class="C"></td>
                       <td>High</td>
-                      
-                      
                       <td></td>
                   </tr>
               </tbody>
               <tbody>
                   <tr>
-                      <td>far D</td>
+                      <td>far <img class="D"></td>
                       <td>Mid</td>
-                      
-                      
                       <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                   </tr>
                   <tr>
-                    <td>close D</td>
+                    <td>close <img class="D"></td>
                     <td>Mid</td>
-                    
-                    
                     <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
                 </tr>
                   <tr>
-                      <td>down D</td>
+                      <td>down <img class="D"></td>
                       <td>Low</td>
-                      
-                      
                       <td></td>
                   </tr>
                   <tr>
-                      <td>up D</td>
+                      <td>up <img class="D"></td>
                       <td>High</td>
-                      
-                      
                       <td></td>
                   </tr>
                   <tr>
-                      <td>ub/uf D</td>
+                      <td>ub/uf <img class="D"></td>
                       <td>High</td>
-                      
-                      
                       <td></td>
                   </tr>
                 </tbody>
@@ -417,26 +400,22 @@
                     <tr>
                         <th class="commands">Commands</th>
                         <th class="data">Guard</th>
-                        
-                        
                         <th class="data">Properties</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Fumikomi Straight</td>
+                        <td><img class="Right">+<img class="C"></td>
                         <td>Mid</td>
-                        
-                        
                         <td></td>
                     </tr>
                     <tr>
-                        <td>Body Press</td>
+                        <td><img class="Air"><img class="Down">+<img class="C"></td>
                         <td>High</td>
                         <td></td>
                     </tr>
                     <tr>
-                        <td>Heel Stomp</td>
+                        <td><img class="Air"><img class="Down">+<img class="D"></td>
                         <td>High</td>
                         <td></td>
                     </tr>
@@ -445,29 +424,27 @@
                     <tr>
                         <th class="specials">Specials</th>
                         <th class="data">Guard</th>
-                        
-                        
                         <th class="data">Properties</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Tomahawk Jack	</td>
+                        <td><img class="A">+<img class="B">+<img class="C"></td>
                         <td>Mid</td>
                         <td></span></td>
                     </tr>
                     <tr>
-                        <td>Grand Buffalo Horn</td>
+                        <td><img class="Right"><img class="Right">+<img class="Kick"></td>
                         <td>Low</td>
                         <td><span class="knockdown"></span></td>
                     </tr>
                     <tr>
-                        <td>Sky Bridge</td>
+                        <td><img class="QCF">+<img class="Kick"></td>
                         <td>Mid</td>
                         <td><span class="knockdown"></span></td>
                     </tr>
                     <tr>
-                      <td>Moonlight Slam</td>
+                      <td><img class="360">+<img class="Punch"></td>
                       <td>-</td>
                       <td><span class="knockdown"></span></td>
                   </tr>
@@ -482,12 +459,12 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Atlas Rock Buster</td>
+                        <td><img class="QCF"><img class="QCF">+<img class="Punch"></td>
                         <td>Mid</td>
                         <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
                     </tr>
                     <tr>
-                        <td>Moonlight Shake</td>
+                        <td><img class="360"><img class="360">+<img class="Punch"></td>
                         <td>-</td>
                         <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
                     </tr>
@@ -497,7 +474,7 @@
 
         </div>
 
-        <div id="strategy">
+        <div id="guide">
 
 
 
@@ -514,10 +491,11 @@
               <li><a href="#karacancel">Kara cancel</a></li>
             </ol>
          
-            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/YB7U2nSfiaU"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+
+            <img src="img/assets/YouTube_Logo.svg" alt="YouTube Logo" width="60">
+            <a href="https://www.youtube.com/watch?v=YB7U2nSfiaU" target="_blank">
+              <img style="width:100%;" src="https://img.youtube.com/vi/YB7U2nSfiaU/hqdefault.jpg" alt="Watch video">
+            </a>
 
           <h2 id="tomahawk">Tomahawk</h2>
           <p>Great for <b>building super meter</b>, <b>anti-air</b> and <b>stopping projectiles</b> (except Saizo's kunai), cancelable from most normals. 
@@ -528,20 +506,20 @@
             ⚠️  Use it cautiously, as Saizo, Dao-Long, Tia, and Sho can punish it easily on whiff or block.
           </p>
     
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Sho/matchups/sho_vs_condor_Tomahawk.mp4" type="video/mp4">
           </video>
 
           <h2 id="antiair">Anti-air</h2>
           <ul class="combos">
-            <li>st.HP</li>
+            <li>5C</li>
             <li>6HP</li>
-            <li>st.LP</li>
+            <li>5A</li>
             <li>tomahawk > Super</li>
-            <li>st.LP > tomahawk > Super</li>
-            <li>close st.HP > tomahawk > Super</li>
+            <li>5A > tomahawk > Super</li>
+            <li>close 5C > tomahawk > Super</li>
           </ul>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Condor/antiair_juggle.mp4" type="video/mp4">
           </video>
           
@@ -554,14 +532,14 @@
           </p>
 
           <h2 id="throw">Neck Hanging Tree</h2>
-          <p>The "Neck Hanging Tree" <b>command grab</b> (3LP or 3LK) hits several times and launches your opponent. You can <b>follow up with a super</b> to keep the combo going.</p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <p>The "Neck Hanging Tree" <b>command grab</b> (3A or 3B) hits several times and launches your opponent. You can <b>follow up with a super</b> to keep the combo going.</p>
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/throwconfirm.mp4" type="video/mp4">
             </video>
          
             <h2 id="super">Super</h2>
             <p>Atlas Rock Buster is his best super, with <b>invincibility frames</b>. You can use it as a <b>combo ender</b>, <b>reversal</b> or up close to <b>counter projectile startups</b></p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_tia_Rapidgale.mp4" type="video/mp4">
             </video>
 
@@ -569,20 +547,20 @@
           <p>360 grab special and Super (Atlas Rock Buster) are his best breaker options</p>
 
           <h2 id="karacancel">Kara cancels</h2>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Condor/karaspecial.mp4" type="video/mp4">
           </video>
-          kara tomahawk
+          <b>kara tomahawk</b>
           <ul class="combos">
-            <li>cr.LP ~ LP+LK+HP</li>
-            <li>cr.LK ~ LP+LK+HP</li>
-            <li>forward+HP ~ LP+LK+HP</li>
-            <li>st.HK ~ LP+LK+HP</li>
+            <li>2A ~ A+B+C</li>
+            <li>2B ~ A+B+C</li>
+            <li>6C ~ A+B+C</li>
+            <li>5D ~ A+B+C</li>
           </ul>
-          kara 360
+          <b>kara 360</b>
           <ul class="combos">
-            <li>41236+HP ~ 8P</li>
-            <li>426+HP ~ 8P</li>
+            <li>41236+C ~ 8P</li>
+            <li>426+C ~ 8P</li>
           </ul>
         </div>
 
@@ -602,64 +580,64 @@
       
 
           <h2 id="meterless_combos">Meterless combos</h2>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Condor/meterless combo.mp4" type="video/mp4">
           </video>
           <ul class="combos">
-            <li>cr.LK > 236 LK</li>
-            <li>cr.LP x 3 > 236 LK</li>
-            <li>j.LK > st.HK > 236 HK</li>
-            <li>j.HK > close st.LK > cr.HK</li>
+            <li>2B > 236B</li>
+            <li>2A x 3 > 236B</li>
+            <li>jB > 5D > 236D</li>
+            <li>jD > close 5B > 2D</li>
           </ul>
 
 
           <h2 id="metered_combos">Metered combos</h2>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Condor/meter_combo.mp4" type="video/mp4">
           </video>
           <ul class="combos">
-            <li>cr.LP x 2 > cr.LK > Super</li>
-            <li>cr.LP x 3 > st.LK > Super</li>
+            <li>2A x 2 > 2B > Super</li>
+            <li>2A x 3 > 5B > Super</li>
           </ul>
 
           <h2 id="throw">Throw confirms</h2>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Condor/throwconfirm.mp4" type="video/mp4">
           </video>
           <ul class="combos">
-            <li>(close) 3LP > Super</li>
-            <li>(close) 3LK > Super</li>
+            <li>(close) 3A > Super</li>
+            <li>(close) 3B > Super</li>
           </ul>
 
           <h2 id="breakcombos">Breakable combos</h2>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Condor/breakable_combo.mp4" type="video/mp4">
           </video>
           <ul class="combos">
-            <li>cr.LP x 2 > st.LK ❌ slide LK</li>
-            <li>cr.LK ❌ cr.LK ❌ 236 HK</li>
-            <li>cr.LK ❌ cr.LK ❌ Super</li>
-            <li>cr.LK ❌ cr.HK</li>
-            <li>cr.LP x 2 > cr.LK ❌ cr.HK</li>
-            <li>cr.LK ❌ 236 HK</li>
-            <li>cr.LP x 2 > st.LK ❌ 236 HK</li>
-            <li>j.LK > st.LK ❌ far st.HK > 236 HK</li>
+            <li>2A x 2 > 5B ❌ 66B</li>
+            <li>2B ❌ 2B ❌ 236D</li>
+            <li>2B ❌ 2B ❌ Super</li>
+            <li>2B ❌ 2D</li>
+            <li>2A x 2 > 2B ❌ 2D</li>
+            <li>2B ❌ 236D</li>
+            <li>2A x 2 > 5B ❌ 236D</li>
+            <li>jB > 5B ❌ far 5D > 236D</li>
           </ul>
 
           <h2 id="anti-air">Anti-air</h3>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Condor/antiair_juggle.mp4" type="video/mp4">
           </video>
           <ul class="combos">
             <li>tomahawk > Super</li>
-            <li>st.LP > tomahawk > Super</li>
-            <li>close st.HP > tomahawk > Super</li>
+            <li>5A > tomahawk > Super</li>
+            <li>close 5C > tomahawk > Super</li>
           </ul>
         
 
 
           <h2 id="air-to-air">Air-to-air</h2>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Condor/airtoair.mp4" type="video/mp4">
           </video>
           <ul class="combos">
@@ -667,7 +645,7 @@
           </ul>
           
           <h2 id="super720">Standing 720 Super</h2>
-          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+          <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
             <source src="videos/Condor/standing_720.mp4" type="video/mp4">
           </video>
           <ul class="combos">
@@ -720,19 +698,19 @@
                 causing hesitation in your usual punishment. 
                 In such instances, your Super (236236P) ensures a guaranteed punish
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_saizo_yashagami.mp4" type="video/mp4">
             </video>
     
-            <p><b>st.HP</b> <br><span class="punish-on-block"></span>
-              Close st.HP hits low, while the far version has significant recovery, making it punishable even on hit.<br>
+            <p><b>5C</b> <br><span class="punish-on-block"></span>
+              Close 5C hits low, while the far version has significant recovery, making it punishable even on hit.<br>
             </p>
     
     
             <p><b>Engetsuzan</b> <br><span class="punish-on-block"></span>
               punish wih super (236236P)
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_saizo_engetsuzan.mp4" type="video/mp4">
             </video>
     
@@ -744,7 +722,7 @@
     
             <p><b>Saber Bash</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
             Despite its animation, this move isn't an overhead. 
-            Punish with cr.LK or Super (236236P) 
+            Punish with 2B or Super (236236P) 
             </p>
             <p><b>Flying Peach Bomber</b> <br><span class="safe-on-block"></span><span class="whiff-punish"></span>
               This one is an overhead, but if done close to you, it will whiff, and he'll pass behind you.
@@ -754,7 +732,7 @@
             <p><b>Bonjour Shot</b> <br><span class="punish-on-block"></span><span class="whiff-punish"><span class="punish-on-hit"></span>
               A projectile with a very slow recovery.
               You can punish it from the other side of the screen with your Super (236236P).
-              At close range, punish on block or hit with cr.LK or cr.HP.
+              At close range, punish on block or hit with 2B or cr.HP.
             </p>
             <p><b>Robin Liner</b> <br><span class="punish-on-block"></span><span class="whiff-punish"><span class="punish-on-hit"></span>
               An anti-air special with slow recovery and no reversal properties...
@@ -766,7 +744,7 @@
     
             <p><b>Merci Un Deux Trois </b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
               An aerial dive that can deceive your anti-air or jump. 
-              When you block all 3 hits, Pielle passes behind you. Punish with cr.LK
+              When you block all 3 hits, Pielle passes behind you. Punish with 2B
             </p>
     
             <p><b>Super Rose</b> <br><span class="safe-on-block"></span>
@@ -793,10 +771,10 @@
               Killer snake isn't an overhead, so block low. 
               The HK version passes through projectiles and sets up her super. 
               It's negative on block, but she still has frames to input her invulnerable startup Super. 
-              On block, always react with cr.LP, it will punish if she does nothing. 
+              On block, always react with 2A, it will punish if she does nothing. 
               In case she use Shine Beast Super, just block. if it's Bloody Fang, tomahawk will hit her startup frames.
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_rila_killersnake.mp4" type="video/mp4">
             </video>
     
@@ -812,13 +790,13 @@
             <p><b>Quick Scratch HP</b> <br><span class="punish-on-block"><span class="whiff-punish">
               Same as LP version unless it is minus on block, punish with 360 grab.
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_rila_quickscratch.mp4" type="video/mp4">
             </video>
 
     
             <p><b>Wild Saver</b> <br><span class="punish-on-block"></span></span>
-            Her reversal and break special. Punish LK ver. with st.HP. HK ver. has more recovery,
+            Her reversal and break special. Punish LK ver. with 5C. HK ver. has more recovery,
               if you're close enough, you'll have time to punish her with a neutral jump
             </p>
     
@@ -830,7 +808,7 @@
             <p><b>Bloody Fang</b> <br><span class="punish-on-block"><span class="whiff-punish">
               This super is not overhead despite the jump animation. punish with jump > body splash > Super (236236P)
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_rila_bloody%20fang.mp4" type="video/mp4">
             </video>
     
@@ -847,19 +825,19 @@
     
            
             <p><b>Kouryuu Ga</b> <br><span class="punish-on-block"><span class="whiff-punish"><span class="breakable">
-              dao-long's fireball, punsish at point blank  with cr.LK.
+              dao-long's fireball, punsish at point blank  with 2B.
               On corner punish with super (236236P)
-              break with super: cr.LP x 2 > cr.LK x Kouryuu Ga
+              break with super: 2A x 2 > 2B x Kouryuu Ga
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_dao-long_kouryuuga.mp4" type="video/mp4">
             </video>
 
     
             <p><b>Senkyuu Tai</b> <br><span class="punish-on-block"><span class="whiff-punish">
-              his invul. reversal anti-air, punish on block with a juggle combo. ex: st.HP > Tomahawk > Super (236236P)
+              his invul. reversal anti-air, punish on block with a juggle combo. ex: 5C > Tomahawk > Super (236236P)
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_dao-long_Senkyutai.mp4" type="video/mp4">
             </video>
     
@@ -881,7 +859,7 @@
             </p>
     
             <p><b>Shin Kyoku Ranbu</b> <br><span class="punish-on-block"></span>
-            not overhead despide to jump animation. punish on block with dash > st.HP
+            not overhead despide to jump animation. punish on block with dash > 5C
             </p>
     
     
@@ -894,17 +872,17 @@
               Tomahawk is used as an anti-air or to defend against projectiles and build meter.
               This move is easily punishable on block with super (236236P), which also punishes on whiff.
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_condor_tomawhak.mp4" type="video/mp4">
             </video>
     
             <p><b>Gran Buffalo Horn</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
               Passes through projectiles and helps close the distance against grounded opponents.
-              Punishable on hit and whiff with cr.HK
+              Punishable on hit and whiff with 2D
             </p>
     
             <p><b>Sky Bridge</b> <br><span class="punish-on-block"></span></span>
-              Punish with st.LP at close range.
+              Punish with 5A at close range.
             </p>
     
             <p><b>Atlas Rock Buster</b> <br><span class="punish-on-block"></span></span>
@@ -912,13 +890,13 @@
               Can be tricky to punish on block if not close enough due to pushback and quick recovery.
               The key is to react after the first blocked hit; you can throw.
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_condor_atlasrockbuster.mp4" type="video/mp4">
             </video>
     
     
-            <p><b>cr.HK</b> <br><span class="punish-on-block"></span></span>
-              punish with cr.LK
+            <p><b>2D</b> <br><span class="punish-on-block"></span></span>
+              punish with 2B
             </p>
     
             <p><b>cr.HP</b> <br><span class="safe-on-block"></span>
@@ -948,7 +926,7 @@
             <p><b>Sashikomi Kick</b> <br><span class="safe-on-block"></span><span class="breakable"></span><span class="whiff-punish"></span>
             This divekick is challenging to handle because it can be executed from any jump height.
             Additionally, it is super-cancelable on hit, block, or whiff.<br>
-            At high height and when Sho has no meter, you can reliably counter it with your anti-air (cr.HP or st.LP).
+            At high height and when Sho has no meter, you can reliably counter it with your anti-air (cr.HP or 5A).
             It is also breakable with throw (though throw can be countered by sho's reversal 214HK)
             </p>
     
@@ -961,7 +939,7 @@
             Ranki Ryuu Geri is tricky as it can be followed by air super (Geki Rekkou Ha).
               However, it's still minus on block. If you have meter punish at super flash with Atlas Rock Buster (236236P)
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_sho_rankiryuugeri.mp4" type="video/mp4">
             </video>
     
@@ -975,25 +953,25 @@
     
           
             <p><b>Abdomen Step</b> <br><span class="punish-on-block"></span><span class="whiff-punish"><span class="breakable"></span>
-              This short step is punishable with cr.LK if he is very close to you.
-              It's safe if it was canceled by st.LK (st.LK creates a slight pushback). 
+              This short step is punishable with 2B if he is very close to you.
+              It's safe if it was canceled by 5B (5B creates a slight pushback). 
               However, you can always break or whiff punish with Super (236236P)
             </p>
     
             <p><b>Slash Sword</b> <br><span class="punish-on-block"></span>
               This attack can reach you from very far away. 
-              Safe at maximum range. At mid and close range, punish with cr.HK.
+              Safe at maximum range. At mid and close range, punish with 2D.
             </p>
             <p><b>Punish Sword</b> <br><span class="punish-on-block"></span>
               Travels a shorter distance than Slash Words. It is also Safe at maximum range. 
-              At close range, punish with cr.HK.
+              At close range, punish with 2D.
             </p>
             <p><b>Fire Breath</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
-              Punish LP version on block with j.HK and on whiff with super (236236P).
+              Punish LP version on block with jD and on whiff with super (236236P).
               For HP version, you can interrupt with any normals immediately after blocking the first or second hit.
             </p>
             <p><b>Balloon Bomb</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
-              Overhead, whiff punish with st.HP or Tomahawk. on block, punish with Super (236236P)
+              Overhead, whiff punish with 5C or Tomahawk. on block, punish with Super (236236P)
             </p>
             <p><b>Cadabra Bomber</b> <br><span class="punish-on-block"></span>
               A Super that can go through projectiles up close. Punish with Super (236236P)
@@ -1009,22 +987,22 @@
     
            
             <p><b>Normals</b> <br><span class="safe-on-block"></span>
-              All her normals, even cr.HK, are safe on block, boosting her offense.
-              Tia pressures Sho well with her dash attack, especially dash > st.HK,
+              All her normals, even 2D, are safe on block, boosting her offense.
+              Tia pressures Sho well with her dash attack, especially dash > 5D,
               doubling as a powerful anti-air and setup for a super juggle.
-              To stop her dash attacks, Sho needs to quickly and preemptively input multiple cr.LK.
+              To stop her dash attacks, Sho needs to quickly and preemptively input multiple 2B.
             </p>
     
             <p><b>Soul Spike</b> <br><span class="punish-on-block"></span><span class="breakable"></span>
             <p>
               Ground Soul Spike LK/HK are not overhead, block low.<br>
               Soul Spike LK has pushback and minimal recovery.
-              Condor cr.LK > Super (236236P).
-              Soul Spike HK has no pushback, making it easier to punish. Punish with st.HP or a Throw.
+              Condor 2B > Super (236236P).
+              Soul Spike HK has no pushback, making it easier to punish. Punish with 5C or a Throw.
               Before attempting a block punish, check her super meter first.
               Tia can counter with Burning Revolver. A throw is a guaranteed punish if she uses Soul Spike HK.
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_tia_Soul_spike.mp4" type="video/mp4">
             </video>
     
@@ -1034,7 +1012,7 @@
             <p><b>Rising upper</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
               Rising Upper LP is an anti-air reversal with quick recovery, making it difficult to punish on whiff.
               It's invulnerability on startup allows her to pass through projectiles.
-              When blocked at close range, punish with st.HP.
+              When blocked at close range, punish with 5C.
             </p>
     
             <p><b>Rapid Gale</b> <br><span class="punish-on-block"><span class="breakable"><span class="whiff-punish">
@@ -1043,7 +1021,7 @@
             at mid range, while dashing, you can react and jump to punish her. You can also use your Super (236236P) at
             backdash range.
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_tia_Rapidgale.mp4" type="video/mp4">
             </video>
     
@@ -1051,7 +1029,7 @@
               After the first hit of the 2-hit sequence,
               punish or break with a throw, 214HK, or super, especially since the last hit is an overhead.
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_tia_Heelbreak.mp4" type="video/mp4">
             </video>
     
@@ -1065,14 +1043,14 @@
             <p><b>Burning Revolver</b> <br><span class="punish-on-block">
               slide to punish on block.
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_tia_Burningrevolver.mp4" type="video/mp4">
             </video>
     
             <p><b>Cutlass Flasher</b> <br><span class="punish-on-block">
               Overhead super, switches sides on block.
             </p>
-            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+            <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
               <source src="videos/Condor/matchups/condor_vs_tia_cutlassflasher.mp4" type="video/mp4">
             </video>
     
@@ -1090,7 +1068,7 @@
               This one is also an overhead with a slow startup but has a larger pushback.
               It's a two-hitter when the opponent is standing. 
               Second hit is overhead.
-              If crouched, whiff punish with cr.LK; standing, interrupt before 2nd hit with cr.LK.
+              If crouched, whiff punish with 2B; standing, interrupt before 2nd hit with 2B.
             </p>
             <p><b>Poison Fog</b> <br><span class="safe-on-block"></span>
               Close-range projectile for chip damage or pressure on your wakeup.
@@ -1102,10 +1080,10 @@
             </p>
             <p><b>Dash Knee</b> <br><span class="punish-on-block"></span><span class="punish-on-hit"></span>
               A special dash attack that must be executed at the right spacing to be safe.
-              Punish on block or hit with cr.LK 
+              Punish on block or hit with 2B 
             </p>
             <p><b>Anubis Hug</b> <br><span class="punish-on-block"></span>
-              Super projectile with invul. startup. Punish at close range with cr.LK 
+              Super projectile with invul. startup. Punish at close range with 2B 
             </p>
             <p><b>Pharaoh Dance</b> <br><span class="punish-on-block"></span></span>
               Super projectile with invul. startup. If you block it, he retreats very far. 

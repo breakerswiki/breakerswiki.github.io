@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Toggle Content on all charaters pages
 function showContent(contentId) {
   // Hide all content sections first
-  var contents = document.querySelectorAll("#infos, #movelist, #strategy, #combos, #matchups");
+  var contents = document.querySelectorAll("#infos, #movelist, #guide, #combos, #matchups");
   for (var i = 0; i < contents.length; i++) {
     contents[i].style.display = "none";
   }
@@ -138,12 +138,18 @@ window.addEventListener("load", removeHtmlExtension);
 document.addEventListener("DOMContentLoaded", function() {
   const buttons = document.querySelectorAll(".color-button");
 
+  // Set the initial active state for "Infos"
+  document.getElementById('button1').classList.add('active');
+  
   buttons.forEach(button => {
       button.addEventListener("click", function() {
           buttons.forEach(btn => btn.classList.remove("active"));
           this.classList.add("active");
       });
   });
+
+  // Ensure the correct content is shown when the page loads
+  showContent('infos');
 });
 
 

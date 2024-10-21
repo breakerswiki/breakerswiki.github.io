@@ -50,7 +50,7 @@
     <div class="nav-guide">
       <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
       <button class="color-button" id="button2" onclick="showContent('movelist')">Move list</button>
-      <button class="color-button" id="button3" onclick="showContent('strategy')">Strategy</button>
+      <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
       <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
     </div>
 
@@ -74,10 +74,10 @@
       <table class="colors" style="text-align: center;">
         <tbody>
           <tr>
-            <td><img src="img/inputs/Arcade-Button-APunch.png"></td>
-            <td><img src="img/inputs/Arcade-Button-BKick.png"></td>
-            <td><img src="img/inputs/Arcade-Button-CPunch.png"></td>
-            <td><img src="img/inputs/Arcade-Button-DKick.png"></td>
+            <td><img class="A"></td>
+            <td><img class="B"></td>
+            <td><img class="C"></td>
+            <td><img class="D"></td>
           </tr>
           <tr>
             <td><img src="img/assets/Maherl_A.png"></td>
@@ -97,7 +97,6 @@
         <ol style="columns: 2;">
           <li><a href="#move-list">Move list</a></li>
           <li><a href="#properties">Move properties</a></li>
-          <li><a href="#framedata">Frame Data</a></li>
         </ol>
 
         <h1 id="move-list">Move list</h1>
@@ -116,22 +115,20 @@
           <tr>
             <td>Abdomen Step</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Button-APunch.png">+<img
-                  src="img/inputs/Arcade-Button-CPunch.png"></div>
+              <div class="inputs"><img class="A">+<img
+                  class="C"></div>
             </td>
           </tr>
           <tr>
             <td>Abdomen Press</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Control-Modifier-Air.png"><img
-                  src="img/inputs/Arcade-Stick-Down.png">+<img src="img/inputs/Arcade-Button-CPunch.png"></div>
+              <div class="inputs"><img class="Air"><img class="Down">+<img class="C"></div>
             </td>
           </tr>
           <tr>
             <td>Hip Attack</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Control-Modifier-Air.png"><img
-                  src="img/inputs/Arcade-Stick-Down.png">+<img src="img/inputs/Arcade-Button-BKick.png"></div>
+              <div class="inputs"><img class="Air"><img class="Down">+<img class="B"></div>
             </td>
           </tr>
         </tbody>
@@ -144,34 +141,29 @@
           <tr>
             <td>Slash Sword</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcb.png">+<img
-                  src="img/inputs/Arcade-Button-Punch.png"></div>
+              <div class="inputs"><img class="QCB">+<img class="Punch"></div>
             </td>
           </tr>
           <tr>
             <td>Punish Sword</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcb.png">+<img
-                  src="img/inputs/Arcade-Button-Kick.png"></div>
+              <div class="inputs"><img class="QCB">+<img class="Kick"></div>
             </td>
           </tr>
           <tr>
             <td>Fire Breath</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Stick-Hcf.png">+<img
-                  src="img/inputs/Arcade-Button-Punch.png"></div>
+              <div class="inputs"><img class="HCF">+<img class="Punch"></div>
             </td>
           </tr>
           <tr>
             <td>Balloon Bomb</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Button-APunch.png">+<img
-                  src="img/inputs/Arcade-Button-BKick.png">+<img src="img/inputs/Arcade-Button-CPunch.png"></div>
+              <div class="inputs"><img class="A">+<img class="B">+<img class="C"></div>
           <tr>
             <td></td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Button-BKick.png">+<img
-                  src="img/inputs/Arcade-Button-CPunch.png">+<img src="img/inputs/Arcade-Button-DKick.png"></div>
+              <div class="inputs"><img class="B">+<img class="C">+<img class="D"></div>
             </td>
           </tr>
           </td>
@@ -186,22 +178,22 @@
           <tr>
             <td>Cadabra Bomber</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcf.png"><img
-                  src="img/inputs/Arcade-Stick-Qcf.png">+<img src="img/inputs/Arcade-Button-Punch.png"></div>
+              <div class="inputs"><img class="QCF"><img
+                  class="QCF">+<img class="Punch"></div>
             </td>
           </tr>
           <tr>
             <td>Shiva Dance</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Stick-Qcb.png"><img
-                  src="img/inputs/Arcade-Stick-Qcb.png">+<img src="img/inputs/Arcade-Button-Punch.png"></div>
+              <div class="inputs"><img class="QCB"><img
+                  class="QCB">+<img class="Punch"></div>
             </td>
           </tr>
           <tr>
             <td>Rolling Press</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Stick-360.png">+<img
-                  src="img/inputs/Arcade-Button-Punch.png"></div>
+              <div class="inputs"><img class="360">+<img
+                  class="Punch"></div>
             </td>
           </tr>
         </tbody>
@@ -214,18 +206,18 @@
           <tr>
             <td>Rush Palm</td>
             <td>
-              <div class="inputs"><img src="img/inputs/Arcade-Stick-Left.png">/<img
-                  src="img/inputs/Arcade-Stick-Right.png">+<img src="img/inputs/Arcade-Button-DKick.png"></div>
+              <div class="inputs"><img class="Left">/<img
+                  class="Right">+<img class="D"></div>
             </td>
           </tr>
         </tbody>
       </table>
 
-      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tyHzHKJJicQ"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen></iframe>
 
+      <img src="img/assets/YouTube_Logo.svg" alt="YouTube Logo" width="60">
+      <a href="https://www.youtube.com/watch?v=tyHzHKJJicQ" target="_blank">
+        <img style="width:100%;" src="https://img.youtube.com/vi/tyHzHKJJicQ/hqdefault.jpg" alt="Watch video">
+      </a>
 
  
 
@@ -240,112 +232,112 @@
         </thead>
         <tbody>
           <tr>
-            <td>far A</td>
+            <td>far <img class="A"></td>
             <td>Mid</td>
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>close A</td>
+            <td>close <img class="A"></td>
             <td>Mid</td>
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>down A</td>
+            <td>down <img class="A"></td>
             <td>Mid</td>
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>up A</td>
+            <td>up <img class="A"></td>
             <td>High</td>
             <td></td>
           </tr>
           <tr>
-            <td>ub/uf A</td>
+            <td>ub/uf <img class="A"></td>
             <td>High</td>
             <td></td>
           </tr>
         </tbody>
         <tbody>
           <tr>
-            <td>far B</td>
+            <td>far <img class="B"></td>
             <td>Mid</td>
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>close B</td>
+            <td>close <img class="B"></td>
             <td>Mid</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>down B</td>
+            <td>down <img class="B"></td>
             <td>Low</td>
 
 
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>up B</td>
+            <td>up <img class="B"></td>
             <td>High</td>
             <td></td>
           </tr>
           <tr>
-            <td>ub/uf B</td>
-            <td>High</td>
-            <td></td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>far C</td>
-            <td>Mid</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>close C</td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>down C</td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>up C</td>
-            <td>High</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ub/uf C</td>
+            <td>ub/uf <img class="B"></td>
             <td>High</td>
             <td></td>
           </tr>
         </tbody>
         <tbody>
           <tr>
-            <td>far D</td>
+            <td>far <img class="C"></td>
             <td>Mid</td>
             <td></td>
           </tr>
           <tr>
-            <td>close D</td>
+            <td>close <img class="C"></td>
             <td>Mid</td>
             <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
           </tr>
           <tr>
-            <td>down D</td>
+            <td>down <img class="C"></td>
+            <td>Mid</td>
+            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
+          </tr>
+          <tr>
+            <td>up <img class="C"></td>
+            <td>High</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ub/uf <img class="C"></td>
+            <td>High</td>
+            <td></td>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr>
+            <td>far <img class="D"></td>
+            <td>Mid</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>close <img class="D"></td>
+            <td>Mid</td>
+            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
+          </tr>
+          <tr>
+            <td>down <img class="D"></td>
             <td>Low</td>
             <td><span class="knockdown"></span></td>
           </tr>
           <tr>
-            <td>up D</td>
+            <td>up <img class="D"></td>
             <td>High</td>
             <td></td>
           </tr>
           <tr>
-            <td>ub/uf D</td>
+            <td>ub/uf <img class="D"></td>
             <td>High</td>
             <td></td>
           </tr>
@@ -359,17 +351,17 @@
         </thead>
         <tbody>
           <tr>
-            <td>Abdomen Step</td>
+            <td><img class="A">+<img class="C"></td>
             <td>Mid</td>
             <td></td>
           </tr>
           <tr>
-            <td>Abdomen Press</td>
+            <td><img class="Air"><img class="Down">+<img class="C"></td>
             <td>High</td>
             <td></td>
           </tr>
           <tr>
-            <td>Hip Attack</td>
+            <td><img class="Air"><img class="Down">+<img class="B"></td>
             <td>High</td>
             <td></td>
           </tr>
@@ -383,22 +375,22 @@
         </thead>
         <tbody>
           <tr>
-            <td>Slash Sword</td>
+            <td><img class="QCB">+<img class="Punch"></td>
             <td>Mid</td>
             <td></td>
           </tr>
           <tr>
-            <td>Punish Sword</td>
+            <td><img class="QCB">+<img class="Kick"></td>
             <td>Mid</td>
             <td></td>
           </tr>
           <tr>
-            <td>Fire Breath</td>
+            <td><img class="HCF">+<img class="Punch"></td>
             <td>Mid</td>
             <td></td>
           </tr>
           <tr>
-            <td>Balloon Bomb</td>
+            <td><img class="A">+<img class="B">+<img class="C"></td>
             <td>High</td>
             <td></td>
           </tr>
@@ -412,31 +404,29 @@
         </thead>
         <tbody>
           <tr>
-            <td>Cadabra Bomber</td>
+            <td><img class="QCF"><img class="QCF">+<img class="Punch"></td>
             <td>Mid</td>
             <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
           </tr>
           <tr>
-            <td>Shiva Dance</td>
+            <td><img class="QCB"><img class="QCB">+<img class="Punch"></td>
             <td>Mid</td>
             <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
           </tr>
           <tr>
-            <td>Rolling Press</td>
+            <td><img class="360">+<img class="Punch"></td>
             <td>Mid</td>
             <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
           </tr>
         </tbody>
       </table>
 
-      <h1 id="framedata">Frame Data</h1>
-      <p>N/A</p>
 
 
 
     </div>
 
-    <div id="strategy">
+    <div id="guide">
 
       <ol style="columns: 2;">
         <li><a href="#overview">Overview</a></li>
@@ -459,25 +449,25 @@
       <h2 id="swords">Swords</h2>
       <p>
         <b><u>214P</u></b><br>
-        214P can be hit confirmed from st.HP, cr.HP, st.HK, and st.LK.
+        214P can be hit confirmed from 5C, 2C, 5D, and 5B.
       </p>
       <p>
         <b><u>214K</u></b><br>
-        214K works great as an anti-air and juggle confirm up close after st.HK or st.HP.
+        214K works great as an anti-air and juggle confirm up close after 5D or 5C.
       </p>
 
       <h2 id="antiair">Anti-air</h2>
       <ul>
-        <li>far st.LK</li>
+        <li>far 5B</li>
         <li>214K</li>
-        <li>close st.HP (anti cross-up)</li>
+        <li>close 5C (anti cross-up)</li>
         <li>Super genie (214214P)</li>
       </ul>
       <p>
-        After using st.LK as an anti-air, you can juggle into a super (214214P).
+        After using 5B as an anti-air, you can juggle into a super (214214P).
       </p>
 
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
         <source src="https://github.com/breakerswiki/assets/raw/refs/heads/main/videos/Maherl/maherl_stLK_antiair.mp4" type="video/mp4">
       </video>
 
@@ -490,7 +480,7 @@
         ⚠️ There's a gap right before the genie throws his punch. On block,
         some characters can use their invincible moves to dodge the punch and punish.
       </p>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
         <source
           src="videos/Pielle/matchups/pielle_vs_maherl_shiva_dance.mp4" type="video/mp4">
       </video>
@@ -501,28 +491,28 @@
       </p>
 
       <h2 id="fuzzy">Fuzzy / Instant overhead</h2>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
         <source src="videos/Maherl/fuzzy-overhead.mp4" type="video/mp4">
       </video>
-      <p><u>instant overhead:</u><br>forward or back j.LK</p>
-      <p><u>fuzy:</u><br>j.HK > j.LK</p>
+      <p><u>instant overhead:</u><br>forward or back jB</p>
+      <p><u>fuzy:</u><br>jD > jB</p>
 
 
 
       <h2 id="sword-glitch">Step/Sword glitch</h2>
 
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
         <source src="videos/Maherl/sword%20glitch.mp4" type="video/mp4">
       </video>
 
-      <p>LP+HP > Kara 214P or 214K</p>
+      <p>A+C > Kara 214P or 214K</p>
 
       <u>1 frame cancel window to get the glitch :</u><br>
-      <p>To trigger the glitch, you need to cancel LP+HP with a sword special at the 3rd frame.</p>
+      <p>To trigger the glitch, you need to cancel A+C with a sword special at the 3rd frame.</p>
       <ul>
-        <li>✅ Frame 3 of LP+HP = sword glitch</li>
+        <li>✅ Frame 3 of A+C = sword glitch</li>
         <li>❌ Frame 2 or sooner = sword</li>
-        <li>❌ Frame 4 or later = LP+HP</li>
+        <li>❌ Frame 4 or later = A+C</li>
       </ul>
 
       <b>Sword glitch variations</b>
@@ -531,7 +521,7 @@
 
       <p><u>HP/HK swords:</u><br>Maherl travels to the opposite side of the opponent.</p>
       <p><u>LP/LK swords:</u><br>Result in a shorter distance, Maherl stays on the same side.</p>
-      <p><u>Body splash:</u><br>During the peak of flight, Maherl can perform a cr.HP (body splash) that stays active
+      <p><u>Body splash:</u><br>During the peak of flight, Maherl can perform a 2C (body splash) that stays active
         throughout the entire descent.</p>
 
       <p style="padding: 10px; text-align: left; color:#606c71; background-color: rgb(228, 241, 249)">
@@ -554,56 +544,56 @@
 
 
       <h2 id="meterless_combos">Meterless combos</h2>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
         <source src="videos/Maherl/Meterless_combo.mp4" type="video/mp4">
       </video>
       <ul class="combos">
-        <li>st.LK > 214LK</li>
-        <li>st.LK > 214LP</li>
-        <li>cr.HP > LP+HP</li>
-        <li>cr.HP > LP+HP > st.LK > 214LP</li>
-        <li>cr.HP > LP+HP > st.LK > 214LK</li>
-        <li>close st.HK > LP+HP</li>
-        <li>cr.HP or close st.HK > 1236LP (unsafe on block/hit)</li>
-        <li>j.HP > cr.HP > 214HK</li>
-        <li>j.HK > close st.HK > 214HK</li>
+        <li>5B > 214B</li>
+        <li>5B > 214A</li>
+        <li>2C > A+C</li>
+        <li>2C > A+C > 5B > 214A</li>
+        <li>2C > A+C > 5B > 214B</li>
+        <li>close 5D > A+C</li>
+        <li>2C or close 5D > 1236A (unsafe on block/hit)</li>
+        <li>jC > 2C > 214D</li>
+        <li>jD > close 5D > 214D</li>
       </ul>
 
 
       <h2 id="metered_combos">Metered combos</h2>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
         <source src="videos/Maherl/Meter_combo.mp4" type="video/mp4">
       </video>
       <ul class="combos">
-        <li>j.HP > cr.HP > Super (214214P)</li>
-        <li>j.HP > close st.HK > Super (214214P)</li>
+        <li>jC > 2C > Super (214214P)</li>
+        <li>jC > close 5D > Super (214214P)</li>
       </ul>
 
 
       <h2 id="anti-air">Anti-air</h2>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
         <source src="videos/Maherl/anti-air-juggle.mp4" type="video/mp4">
       </video>
 
       <ul class="combos">
-        <li>far st.LK > Sword Super</li>
-        <li>close st.HK > Sword Super</li>
-        <li>close st.HP > 214LK or HK</li>
-        <li>close st.HP > Sword Super</li>
-        <li>close st.HK > 214HK (1hit) > cr.LK > Sword Super</li>
-        <li>close st.HK > 214HK (1hit) > cr.LK > Genie Super (corner)</li>
-        <li>214HK (1hit) > cr.LK > Sword Super</li>
+        <li>far 5B > Sword Super</li>
+        <li>close 5D > Sword Super</li>
+        <li>close 5C > 214B or 214D</li>
+        <li>close 5C > Sword Super</li>
+        <li>close 5D > 214D (1hit) > 2B > Sword Super</li>
+        <li>close 5D > 214D (1hit) > 2B > Genie Super (corner)</li>
+        <li>214D (1hit) > 2B > Sword Super</li>
       </ul>
 
       <h2 id="air-to-air">Air-to-air</h2>
-      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="metadata">
+      <video poster="img/assets/play.gif" controls loop muted  playsinline preload="none">
         <source src="videos/Maherl/air-juggle.mp4" type="video/mp4">
       </video>
 
       <ul class="combos">
-        <li>j.LP > Sword Super</li>
-        <li>j.HP > Sword Super</li>
-        <li>neutral j.HP > Sword Super</li>
+        <li>jA > Sword Super</li>
+        <li>jC > Sword Super</li>
+        <li>neutral jC > Sword Super</li>
       </ul>
 
 
