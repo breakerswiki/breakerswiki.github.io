@@ -999,6 +999,7 @@ ol {
 ol li > a {
   margin-bottom: 10px; /* Just for spacing */
   color: #006391;
+  margin-left: 5px;
 }
 
 
