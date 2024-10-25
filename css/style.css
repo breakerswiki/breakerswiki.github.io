@@ -162,9 +162,19 @@
   word-wrap: break-word;
   opacity: 1;
   background-color: #FFFFFF;
-  animation: fadeOutWhite 0.5s ease-in
- 
+  /* animation: fadeOutWhite 0.5s ease-in */
+  animation: blurryOut 0.2s ease-in-out backwards;
   }
+  @keyframes blurryOut {
+    0% {
+        filter: blur(10px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
   .main-content :first-child {
   margin-top: 0 }
   @media screen and (min-width: 64em) {
@@ -563,7 +573,7 @@
  color: #ffffff
  }
  
- #movelist, #strategy, #combos, #matchups, #sho, #saizo, #rila, #dao-long, #condor, #maherl, #tia, #pielle, #alsion {
+ #movelist, #guide, #combos, #matchups, #sho, #saizo, #rila, #dao-long, #condor, #maherl, #tia, #pielle, #alsion {
   display: none;
   opacity: 1;
   background-color: #FFFFFF;

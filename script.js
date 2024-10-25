@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var randomIndex = Math.floor(Math.random() * images.length);
   var selectedImage = images[randomIndex];
   var backgroundDiv = document.querySelector(".navbar");
-  backgroundDiv.style.backgroundImage = "linear-gradient(120deg, rgba(21, 131, 153, 0.79), rgb(21 78 153 / 91%)), url('" + selectedImage + "')";
+  backgroundDiv.style.backgroundImage = "linear-gradient(120deg, rgba(21, 131, 153, 0.79), rgb(21 78 153 / 75%)), url('" + selectedImage + "')";
 });
 
 
