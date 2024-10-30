@@ -68,18 +68,18 @@
   color: #FFFFFF;
   text-decoration: none;
   font-size: 1.8rem;
-  transition: transform 0.3s ease
+  transition: transform 0.3s ease;
  }
  
  .nav-links a:hover{
   text-underline-offset: 5px;
   text-shadow: 1px 10px 1px rgb(0, 0, 0);
-  animation: blink-animation 0.4s steps(5, start) infinite
+  /* animation: blink-animation 0.4s steps(5, start) infinite */
  }
  .nav-links a:active{
   animation: none;
   top: 3px;
-  position: relative
+  position: relative;
  }
  
  img.logo {
@@ -162,8 +162,8 @@
   word-wrap: break-word;
   opacity: 1;
   background-color: #FFFFFF;
-  /* animation: fadeOutWhite 0.5s ease-in */
-  animation: blurryOut 0.2s ease-in-out backwards;
+  animation: fadeOutWhite 0.2s ease-in
+  /* animation: blurryOut 0.2s ease-in-out backwards; */
   }
   @keyframes blurryOut {
     0% {
@@ -766,6 +766,18 @@
   filter: none;
   opacity: initial
  }
+
+ .characters-guide-main img:active {
+  filter: none;
+  opacity: initial;
+  top: 3px;
+  position: relative;
+ }
+
+ .characters-guide-main a.active-link::before {
+  opacity: 1;
+  animation: rotate3DTriangle 1s infinite linear;
+}
  
  .characters-guide-main {
   display: flex;
@@ -1064,15 +1076,15 @@
  }
  
  
- .blink {
+ /* .blink {
   animation: blink-animation 0.5s steps(3, start) infinite
- }
+ } */
  
- @keyframes blink-animation {
+ /* @keyframes blink-animation {
   to {
   visibility: hidden
   }
- }
+ } */
  
  
  .hidden {
@@ -1092,5 +1104,41 @@
   text-decoration: underline
  }
  
- 
- 
+
+ .characters-guide-main a {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
+.characters-guide-main a::before {
+  content: "";
+  position: absolute;
+  top: -90px; /* Positionnement à 30px */
+  left: 50%;
+  transform: translateX(-50%) rotateY(0deg);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #416b9a; /* Triangle en bleu avec la couleur demandée */
+  opacity: 0;
+  z-index: 10;
+  transition: opacity 0.3s;
+  transform-origin: center;
+}
+
+.characters-guide-main a:hover::before {
+  opacity: 1;
+  animation: rotate3DTriangle 1s infinite linear;
+}
+
+@keyframes rotate3DTriangle {
+  from {
+    transform: translateX(-50%) rotateY(0deg);
+  }
+  to {
+    transform: translateX(-50%) rotateY(360deg);
+  }
+}
+
