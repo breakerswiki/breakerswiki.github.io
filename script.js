@@ -103,7 +103,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var randomIndex = Math.floor(Math.random() * images.length);
   var selectedImage = images[randomIndex];
   var backgroundDiv = document.querySelector(".navbar");
-  backgroundDiv.style.backgroundImage = "linear-gradient(120deg, rgba(21, 131, 153, 0.79), rgb(21 78 153 / 75%)), url('" + selectedImage + "')";
+  // backgroundDiv.style.backgroundImage =  "linear-gradient(120deg, rgba(21, 131, 153, 0.79), rgb(21 78 153 / 45%)), url('" + selectedImage + "')";
+  backgroundDiv.style.backgroundImage =  "linear-gradient(120deg, rgba(21, 131, 153, 0.6), rgb(21 78 153 / 75%)), url('" + selectedImage + "')";
+
 });
 
 
@@ -199,6 +201,38 @@ function setRandomBackground() {
   const selectedImage = imagesFooter[randomIndex]; // Select random image
   document.querySelector('.footer-background').style.backgroundImage = `url('${selectedImage}')`; // Set background
 }
-
 // Call the function to set background on page load
 window.onload = setRandomBackground;
+
+
+
+
+// Dark mode
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleSwitch = document.querySelector('#modeSwitch');
+  
+  // Check for saved theme in localStorage
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+    if (currentTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+      toggleSwitch.checked = true; // Set the toggle to match the saved theme
+    }
+  }
+
+  // Toggle theme and save preference to localStorage
+  function switchTheme(e) {
+    if (e.target.checked) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      document.body.classList.add('dark-mode');
+      localStorage.setItem('theme', 'dark'); // Save theme as dark
+    } else {
+      document.documentElement.setAttribute('data-theme', 'light');
+      document.body.classList.remove('dark-mode');
+      localStorage.setItem('theme', 'light'); // Save theme as light
+    }
+  }
+
+  toggleSwitch.addEventListener('change', switchTheme, false);
+});
