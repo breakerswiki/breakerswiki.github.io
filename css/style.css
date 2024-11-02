@@ -1162,6 +1162,31 @@ a:focus {
 }
 
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  grid-template-rows: 1fr; /* 1 single row */
+  align-items: start; /* Aligns images to the top */
+  gap: 4px;
+}
+
+.image-left {
+  width: 100%; /* Takes the full width available */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+.image-right {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* 2 rows for the right images */
+  gap: 10px; /* Spacing between the right images */
+}
+
+.image-top, .image-bottom {
+  width: 100%; /* Takes the full width available */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+
 ol {
   list-style-type: none;
   counter-reset: my-counter;
@@ -1262,16 +1287,48 @@ table.arcadestick, table.arcadestick td {
   }
 }
 
+/* Slideshow container */
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 600px;  /* Adjust as needed */
+  height: 400px;     /* Adjust as needed */
+  overflow: hidden;
+}
+
+/* Each slide */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: slideAnimation 12s infinite;
+}
+
+/* Slide animation */
+@keyframes slideAnimation {
+  0%, 33% { opacity: 1; }
+  40%, 100% { opacity: 0; }
+}
+
+/* Target specific slides */
+.slide:nth-child(1) { animation-delay: 0s; }
+.slide:nth-child(2) { animation-delay: 4s; }
+.slide:nth-child(3) { animation-delay: 8s; }
+
+
 
 
 /* Dark mode styles */
 body.dark-mode {
-  background-color: #1c1c1c;
+  background-color: #111111;
   color: rgb(223, 223, 223);
 }
 
 body.dark-mode .main-content {
-  background-color: #1c1c1c;
+  background-color: #111111;
   color: #e0e0e0;
 }
 
@@ -1306,7 +1363,7 @@ body.dark-mode .main-content li::before {
 
 
 body.dark-mode .main-content .combos {
-  background-color: #1c1c1c;
+  background-color: #111111;
   border: none;
 }
 
