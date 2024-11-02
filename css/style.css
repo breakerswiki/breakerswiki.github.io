@@ -90,6 +90,7 @@ header {
 img.logo {
   transition: transform 0.3s ease;
   margin-right: 20px;
+  filter: drop-shadow(3px 7px 7px black);
 }
 
 img.logo:hover {
