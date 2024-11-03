@@ -701,7 +701,7 @@ a.back:hover {
   font-family: sans-serif;
   cursor: pointer;
   padding: 5px;
-  border: 1px solid #4b4b4b;
+  border: 1px solid #919191;
   -webkit-transition: background-color 100ms linear;
   -ms-transition: background-color 100ms linear;
   flex: 1;
