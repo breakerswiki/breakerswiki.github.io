@@ -596,7 +596,7 @@ figcaption {
 
 
 .main-content table.charselect td:hover img {
-  filter: brightness(60%)
+  filter: none;
 }
 
 
@@ -687,7 +687,7 @@ a.back:hover {
 
 .nav-guide {
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
   gap: 5px;
   margin-bottom: 20px
 }
@@ -737,7 +737,7 @@ a.back:hover {
 
 
 #matchups table.charselect img:hover {
-  filter: none
+  opacity: initial;
 }
 
 #matchups li {
@@ -765,8 +765,10 @@ a.back:hover {
 
 
 .filtered {
-  filter: sepia(100%) hue-rotate(190deg) saturate(150%);
+  /* filter: sepia(100%) hue-rotate(190deg) saturate(150%); */
   cursor: pointer;
+  filter: none;
+  opacity: 0.5;
   padding: 0
 }
 
@@ -1206,7 +1208,8 @@ ol {
   counter-reset: my-counter;
   padding: 10px;
   background-color: #f9f9f9;
-  border: 1px solid #ddd
+  border: 1px solid #ddd;
+  border-radius: 10px;
 }
 
 ol li>a {
@@ -1423,7 +1426,7 @@ body.dark-mode ul.combos li {
 }
 
 body.dark-mode .filtered {
-  filter: sepia(100%) hue-rotate(190deg) saturate(60%);
+  filter: none;
 }
 
 body.dark-mode .inputs {
