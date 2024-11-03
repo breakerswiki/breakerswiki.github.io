@@ -16,7 +16,7 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #606c71
+  color: #232a31;
 }
 
 a {
@@ -112,6 +112,7 @@ img.logo:active {
   cursor: pointer;
   font-size: 26px;
   color: white;
+  text-shadow: 1px 7px 1px rgb(0, 0, 0);
 }
 
 #modeSwitch {
@@ -150,11 +151,13 @@ img.logo:active {
   .nav-links {
     flex-direction: row;
     align-items: center;
-    gap: 15px
+    gap: 15px;
+    
   }
 
   .nav-links a {
     font-size: 21px;
+    
   }
 
   #matchups p {
@@ -224,7 +227,7 @@ img.logo:active {
 
 @media screen and (min-width: 64em) {
   .main-content {
-    width: 44rem;
+    width: 50rem;
     padding: 2rem 6rem;
     margin: 0 auto;
     font-size: 1.1rem
@@ -561,7 +564,7 @@ figcaption {
   text-align: left;
   margin: 0px;
   padding: 0px;
-  width: 350px
+  /* width: 350px */
 }
 
 @media screen and (min-width: 600px) {
@@ -599,8 +602,9 @@ figcaption {
 
 
 img.charbg {
-  max-width: 512px;
-  width: 100%
+  /* max-width: 512px; */
+  width: 100%;
+  border-radius: 15px;
 }
 
 ul.combos {
@@ -658,11 +662,7 @@ table.properties th:not(:first-child):not(:last-child) {
   background-color: #fbfbfb
 }
 
-.nav-guide {
 
-  margin-top: 20px;
-  margin-bottom: 20px
-}
 
 
 .back {
@@ -685,29 +685,40 @@ a.back:hover {
   text-decoration: none
 }
 
+.nav-guide {
+  display: flex;
+  margin-top: 20px;
+  gap: 5px;
+  margin-bottom: 20px
+}
+
 .nav-guide button {
   background: #f3f7fb;
   font-size: 15px;
-  color: #416b9a;
+  color: #4b4b4b;
   appearance: none;
   -webkit-appearance: none;
   font-family: sans-serif;
   cursor: pointer;
   padding: 5px;
-  border: 1px solid #416b9a;
+  border: 1px solid #4b4b4b;
   -webkit-transition: background-color 100ms linear;
   -ms-transition: background-color 100ms linear;
+  flex: 1;
+  border-radius: 5px;
+  text-align: center; /* Centre le texte dans chaque bouton */
   transition: background-color 100ms linear
 }
 
 .nav-guide button:hover {
-  background: #416b9a;
+  background: #155b99;
   color: #ffffff
 }
 
 .nav-guide button:active {
   background: #416b9a;
-  color: #ffffff
+  color: #ffffff;
+  border: none;
 }
 
 #movelist, #guide, #combos, #matchups, #sho, #saizo, #rila, #dao-long, #condor, #maherl, #tia, #pielle, #alsion {
@@ -716,9 +727,12 @@ a.back:hover {
   animation: fadeOutWhite 0.5s ease-in
 }
 
+
+
+
 #matchups table.charselect {
   min-width: 350px;
-  max-width: 500px
+  /* max-width: 500px */
 }
 
 
@@ -866,9 +880,9 @@ div.infos img:hover {
 
 
 
-.characters-guide-main {
+/* .characters-guide-main {
   max-width: 512px
-}
+} */
 
 .characters-guide-main img {
   object-fit: cover;
@@ -1155,7 +1169,7 @@ a:focus {
 
 .gallery {
   --items: 2;
-  display: grid;
+  display: inline-grid;
   grid-template-columns: repeat(var(--items), 1fr);
   grid-gap: 4px;
   width: auto
@@ -1228,7 +1242,7 @@ table.arcadestick, table.arcadestick td {
 }
 
 .color-button.active {
-  background-color: #416b9a;
+  background-color: #155b99;
   color: #FFFFFF
 }
 
@@ -1370,7 +1384,7 @@ body.dark-mode .main-content .combos {
 
 body.dark-mode table.properties td,
 body.dark-mode table.movelist td {
-  background-color: #4d4d4d;
+  background-color: #282828;
   border: 1px solid #1a1a1a;
 }
 
@@ -1414,4 +1428,7 @@ body.dark-mode .filtered {
 
 body.dark-mode .inputs {
 color: #909090;
+}
+body.dark-mode td img {
+filter: drop-shadow(0px 0px 2px white);
 }
