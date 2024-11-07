@@ -86,27 +86,27 @@ function toggleContent(contentId) {
   content.style.display = "block";
 }
 
-// Random background for page header.
-document.addEventListener("DOMContentLoaded", function () {
-  var images = [
-    "img/assets/maherl_stage_bg.webp",
-    "img/assets/sho_stage_bg.webp",
-    "img/assets/pielle_stage_bg.webp",
-    "img/assets/tia_stage_bg.webp",
-    "img/assets/saizo_stage_bg.webp",
-    "img/assets/condor_stage_bg.webp",
-    "img/assets/dao-long_stage_bg.webp",
-    "img/assets/rila_stage_bg.webp",
-    "img/assets/alsion_stage_bg.webp",
-    "img/assets/bai-hu_stage_bg.webp"
-  ];
-  var randomIndex = Math.floor(Math.random() * images.length);
-  var selectedImage = images[randomIndex];
-  var backgroundDiv = document.querySelector(".navbar");
-  // backgroundDiv.style.backgroundImage =  "linear-gradient(120deg, rgba(21, 131, 153, 0.79), rgb(21 78 153 / 45%)), url('" + selectedImage + "')";
-  backgroundDiv.style.backgroundImage =  "linear-gradient(120deg, rgba(21, 131, 153, 0.6), rgb(21 78 153 / 75%)), url('" + selectedImage + "')";
+// // Random background for page header.
+// document.addEventListener("DOMContentLoaded", function () {
+//   var images = [
+//     "img/assets/maherl_stage_bg.webp",
+//     "img/assets/sho_stage_bg.webp",
+//     "img/assets/pielle_stage_bg.webp",
+//     "img/assets/tia_stage_bg.webp",
+//     "img/assets/saizo_stage_bg.webp",
+//     "img/assets/condor_stage_bg.webp",
+//     "img/assets/dao-long_stage_bg.webp",
+//     "img/assets/rila_stage_bg.webp",
+//     "img/assets/alsion_stage_bg.webp",
+//     "img/assets/bai-hu_stage_bg.webp"
+//   ];
+//   var randomIndex = Math.floor(Math.random() * images.length);
+//   var selectedImage = images[randomIndex];
+//   var backgroundDiv = document.querySelector(".navbar");
+//   // backgroundDiv.style.backgroundImage =  "linear-gradient(120deg, rgba(21, 131, 153, 0.79), rgb(21 78 153 / 45%)), url('" + selectedImage + "')";
+//   backgroundDiv.style.backgroundImage =  "linear-gradient(120deg, rgba(21, 131, 153, 0.6), rgb(21 78 153 / 75%)), url('" + selectedImage + "')";
 
-});
+// });
 
 
 
