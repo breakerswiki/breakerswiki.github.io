@@ -147,6 +147,10 @@ img.logo:active {
     padding: 10px 20px;
   }
 
+  .main, .content {
+    padding: 0px !important;
+  }
+
   .logo {
     margin: 0
   }
@@ -155,12 +159,12 @@ img.logo:active {
     flex-direction: row;
     align-items: center;
     gap: 15px;
-    
+
   }
 
   .nav-links a {
     font-size: 21px;
-    
+
   }
 
   #matchups p {
@@ -228,30 +232,6 @@ img.logo:active {
   margin-top: 0
 }
 
-@media screen and (min-width: 64em) {
-  .main-content {
-    width: 50rem;
-    padding: 2rem 6rem;
-    margin: 0 auto;
-    font-size: 1.1rem
-  }
-}
-
-@media screen and (min-width: 42em) and (max-width: 64em) {
-  .main-content {
-    width: 42rem;
-    margin: 0 auto;
-    padding: 2rem 5rem;
-    font-size: 1.1rem
-  }
-}
-
-@media screen and (max-width: 42em) {
-  .main-content {
-    margin: 0 auto;
-    padding: 2rem 1rem;
-  }
-}
 
 .main-content img {
   max-width: 100%
@@ -714,7 +694,8 @@ a.back:hover {
   -ms-transition: background-color 100ms linear;
   flex: 1;
   border-radius: 5px;
-  text-align: center; /* Centre le texte dans chaque bouton */
+  text-align: center;
+  /* Centre le texte dans chaque bouton */
   transition: background-color 100ms linear
 }
 
@@ -1190,26 +1171,35 @@ a:focus {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columns */
-  grid-template-rows: 1fr; /* 1 single row */
-  align-items: start; /* Aligns images to the top */
+  grid-template-columns: 1fr 1fr;
+  /* 2 columns */
+  grid-template-rows: 1fr;
+  /* 1 single row */
+  align-items: start;
+  /* Aligns images to the top */
   gap: 4px;
 }
 
 .image-left {
-  width: 100%; /* Takes the full width available */
-  height: auto; /* Maintains the aspect ratio */
+  width: 100%;
+  /* Takes the full width available */
+  height: auto;
+  /* Maintains the aspect ratio */
 }
 
 .image-right {
   display: grid;
-  grid-template-rows: 1fr 1fr; /* 2 rows for the right images */
-  gap: 10px; /* Spacing between the right images */
+  grid-template-rows: 1fr 1fr;
+  /* 2 rows for the right images */
+  gap: 10px;
+  /* Spacing between the right images */
 }
 
 .image-top, .image-bottom {
-  width: 100%; /* Takes the full width available */
-  height: auto; /* Maintains the aspect ratio */
+  width: 100%;
+  /* Takes the full width available */
+  height: auto;
+  /* Maintains the aspect ratio */
 }
 
 
@@ -1318,8 +1308,10 @@ table.arcadestick, table.arcadestick td {
 .slideshow {
   position: relative;
   width: 100%;
-  max-width: 600px;  /* Adjust as needed */
-  height: 400px;     /* Adjust as needed */
+  max-width: 600px;
+  /* Adjust as needed */
+  height: 400px;
+  /* Adjust as needed */
   overflow: hidden;
 }
 
@@ -1336,27 +1328,45 @@ table.arcadestick, table.arcadestick td {
 
 /* Slide animation */
 @keyframes slideAnimation {
-  0%, 33% { opacity: 1; }
-  40%, 100% { opacity: 0; }
+  0%, 33% {
+    opacity: 1;
+  }
+
+  40%, 100% {
+    opacity: 0;
+  }
 }
 
 /* Target specific slides */
-.slide:nth-child(1) { animation-delay: 0s; }
-.slide:nth-child(2) { animation-delay: 4s; }
-.slide:nth-child(3) { animation-delay: 8s; }
+.slide:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.slide:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.slide:nth-child(3) {
+  animation-delay: 8s;
+}
 
 .exponent-square {
   /* display: inline-block; */
   margin-right: 10px;
   float: left;
   text-align: center;
-  line-height: 1; /* Adjust line height to avoid gaps */
+  line-height: 1;
+  /* Adjust line height to avoid gaps */
 }
+
 .top {
-  font-size: 20px; /* Adjust size as needed */
+  font-size: 20px;
+  /* Adjust size as needed */
 }
+
 .bottom {
-  font-size: 20px; /* Adjust size as needed */
+  font-size: 20px;
+  /* Adjust size as needed */
 }
 
 
@@ -1413,7 +1423,7 @@ body.dark-mode table.movelist td {
   border: 1px solid #1a1a1a;
 }
 
-body.dark-mode table.properties th, 
+body.dark-mode table.properties th,
 body.dark-mode table.movelist th {
   border: 1px solid #1a1a1a;
 }
@@ -1452,8 +1462,96 @@ body.dark-mode .filtered {
 }
 
 body.dark-mode .inputs {
-color: #909090;
+  color: #909090;
 }
+
 body.dark-mode td img {
-filter: drop-shadow(0px 0px 2px white);
+  filter: drop-shadow(0px 0px 2px white);
 }
+
+
+
+body.dark-mode  .content::-webkit-scrollbar-thumb,
+body.dark-mode  .content-gameplay::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px; /* Rounded scrollbar thumb */
+}
+
+
+
+
+/* Container for responsive layout */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 50px;
+}
+
+/* Styling for each section */
+.main, .content {
+  padding: 20px;
+}
+
+/* Mobile first styles */
+.main-content {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Tablet layout */
+@media (min-width: 52em) and (max-width: 60em) {
+  .main-content {
+    width: 42rem;
+    padding: 2rem 5rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Larger screens */
+@media (min-width: 60em) {
+  .main-content {
+    max-width: 100rem;
+    padding: 2rem 6rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop layout */
+@media (min-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main {
+    width: 50%;
+  }
+
+  .content {
+    width: 50%;
+    margin-top: 20px;
+    max-height: 750px;
+    overflow-y: auto;
+  }
+
+  .main-about, .main-char-content {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .main-gameplay {
+    max-width: 400px;
+    float: right;
+  }
+  .content-gameplay {
+    width: 30%;
+    min-width: 400px;
+    float: left;
+    overflow-y: auto;
+    max-height: 750px;
+    padding-right: 20px;
+  }
+}
+
+
