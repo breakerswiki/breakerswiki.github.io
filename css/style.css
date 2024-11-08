@@ -1525,7 +1525,7 @@ body.dark-mode .nav-links a.current {
 /* Larger screens */
 @media (min-width: 60em) {
   .main-content {
-    max-width: 100rem;
+    max-width: 75rem;
     padding: 2rem 6rem;
     font-size: 1.1rem;
   }
