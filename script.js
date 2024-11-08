@@ -211,10 +211,23 @@ window.onload = setRandomBackground;
 document.addEventListener('DOMContentLoaded', () => {
   const toggleSwitch = document.querySelector('#modeSwitch');
   
+  // Set initial theme color based on current theme
+  function setThemeColor(theme) {
+    const themeColor = document.querySelector('meta[name="theme-color"]');
+    if (!themeColor) {
+      // Create meta tag if it doesn't exist
+      const meta = document.createElement('meta');
+      meta.name = "theme-color";
+      document.head.appendChild(meta);
+    }
+    themeColor.setAttribute("content", theme === 'dark' ? "#111111" : "#ffffff");
+  }
+
   // Check for saved theme in localStorage
   const currentTheme = localStorage.getItem('theme');
   if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);
+    setThemeColor(currentTheme); // Set initial theme color
     if (currentTheme === 'dark') {
       document.body.classList.add('dark-mode');
       toggleSwitch.checked = true; // Set the toggle to match the saved theme
@@ -227,10 +240,12 @@ document.addEventListener('DOMContentLoaded', () => {
       document.documentElement.setAttribute('data-theme', 'dark');
       document.body.classList.add('dark-mode');
       localStorage.setItem('theme', 'dark'); // Save theme as dark
+      setThemeColor('dark'); // Update theme color for dark mode
     } else {
       document.documentElement.setAttribute('data-theme', 'light');
       document.body.classList.remove('dark-mode');
       localStorage.setItem('theme', 'light'); // Save theme as light
+      setThemeColor('light'); // Update theme color for light mode
     }
   }
 
