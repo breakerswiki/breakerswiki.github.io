@@ -1478,11 +1478,16 @@ body.dark-mode td img {
 
 
 
-body.dark-mode  .content::-webkit-scrollbar-thumb,
-body.dark-mode  .content-gameplay::-webkit-scrollbar-thumb {
-  background-color: #888;
-  border-radius: 10px; /* Rounded scrollbar thumb */
+body.dark-mode .content,
+body.dark-mode .content-gameplay {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #222; 
 }
+body.dark-mode .content::-webkit-scrollbar,
+body.dark-mode .content-gameplay::-webkit-scrollbar {
+  width: 8px; 
+}
+
 
 body.dark-mode .nav-links a,
 body.dark-mode .switch-button {
@@ -1547,6 +1552,7 @@ body.dark-mode .nav-links a.current {
     /* margin-top: 20px; */
     max-height: 750px;
     overflow-y: auto;
+    scrollbar-width: thin;
   }
 
   .main-char-content {
