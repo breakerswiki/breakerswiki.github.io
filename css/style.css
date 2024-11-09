@@ -132,6 +132,10 @@ img.logo:active {
   font-size: 20px;
   color: #155b99
 }
+.switch-button::before {
+  content: "⏻";
+}
+
 
 #modeSwitch, #modeSwitch:checked+label.switch-button .moon, .hidden, .sun {
   display: none
