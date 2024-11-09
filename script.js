@@ -188,24 +188,6 @@ function toggleFilter(anchor) {
 }
 
 
-// Random Image for Footer
-const imagesFooter = [
-  'img/assets/condor_SD.gif',
-  'img/assets/sho_SD.gif',
-  'img/assets/tia_SD.gif',
-  'img/assets/pielle_SD.gif'
-];
-
-function setRandomBackground() {
-  const randomIndex = Math.floor(Math.random() * imagesFooter.length); // Generate random index
-  const selectedImage = imagesFooter[randomIndex]; // Select random image
-  document.querySelector('.footer-background').style.backgroundImage = `url('${selectedImage}')`; // Set background
-}
-// Call the function to set background on page load
-window.onload = setRandomBackground;
-
-
-
 
 // Dark mode
 document.addEventListener('DOMContentLoaded', () => {
