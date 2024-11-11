@@ -1100,7 +1100,7 @@ body.dark-mode .nav-links a {
 }
 
 body.dark-mode .nav-links a.current {
-  border-color: #dfdfdf
+  border-color: #888;
 }
 
 .container {
