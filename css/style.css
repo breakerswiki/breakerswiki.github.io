@@ -110,7 +110,7 @@ a {
 
 img.logo {
   transition: transform .3s;
-  margin-right: 20px;
+  margin-right: 5px;
   filter: drop-shadow(0 4px 5px black)
 }
 
@@ -123,27 +123,7 @@ img.logo:active {
   position: relative
 }
 
-.switch-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 15px;
-  cursor: pointer;
-  font-size: 20px;
-  color: #155b99
-}
-.switch-button::before {
-  content: "⏻";
-}
 
-
-#modeSwitch, #modeSwitch:checked+label.switch-button .moon, .hidden, .sun {
-  display: none
-}
-
-#modeSwitch:checked+label.switch-button .sun, .moon {
-  display: inline-block
-}
 
 @media (max-width:768px) {
   .navbar {
@@ -539,11 +519,12 @@ a.back:hover {
 
 .nav-guide button:hover {
   background: #155b99;
-  color: #fff
+  color: #fff;
 }
 
 .nav-guide button:active {
   background: #416b9a;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .4);
   color: #fff;
   border: none
 }
@@ -1114,7 +1095,7 @@ body.dark-mode .content-gameplay::-webkit-scrollbar, body.dark-mode .content::-w
   width: 8px
 }
 
-body.dark-mode .nav-links a, body.dark-mode .switch-button {
+body.dark-mode .nav-links a {
   color: #dfdfdf
 }
 
@@ -1196,4 +1177,81 @@ body.dark-mode .nav-links a.current {
     float: left;
     padding-right: 20px
   }
+}
+
+
+/* switch button */
+
+
+.tg-list {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.tgl {
+  display: none;
+}
+.tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
+  box-sizing: border-box;
+}
+.tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
+  background: none;
+}
+.tgl + .tgl-btn {
+  outline: 0;
+  display: block;
+  width: 2em;
+  height: 1.2em;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tgl-skewed + .tgl-btn {
+  overflow: hidden;
+  transform: skew(-10deg);
+  backface-visibility: hidden;
+  transition: all 0.2s ease;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #888;
+}
+.tgl-skewed + .tgl-btn:after, .tgl-skewed + .tgl-btn:before {
+  transform: skew(10deg);
+  display: inline-block;
+  transition: all 0.2s ease;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  line-height: 1.5em;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .4);
+}
+.tgl-skewed + .tgl-btn:after {
+  left: 100%;
+  content: attr(data-tg-on);
+}
+.tgl-skewed + .tgl-btn:before {
+  left: 0;
+  content: attr(data-tg-off);
+}
+.tgl-skewed + .tgl-btn:active {
+  background: #888;
+}
+.tgl-skewed + .tgl-btn:active:before {
+  left: -10%;
+}
+.tgl-skewed:checked + .tgl-btn {
+  background: #63a16c;
+}
+.tgl-skewed:checked + .tgl-btn:before {
+  left: -100%;
+}
+.tgl-skewed:checked + .tgl-btn:after {
+  left: 0;
+}
+.tgl-skewed:checked + .tgl-btn:active:after {
+  left: 10%;
 }
