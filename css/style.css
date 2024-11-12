@@ -1,12 +1,14 @@
 .nav-links li, body {
-  margin: 0
+  margin: 0;
+  opacity: 0;
+  animation: fadeIn .2s ease-in forwards;
 }
 
 .nav-guide button, .nav-links, body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif
 }
 
-.filtered, .main-content table.charselect td:hover img, body.dark-mode .filtered {
+.filtered, .main-content table.charselect td:hover img {
   filter: none
 }
 
@@ -194,18 +196,16 @@ img.logo:active {
   word-wrap: break-word;
   opacity: 1;
   background-color: #fff;
-  animation-name:fadeIn;
-  animation-duration:0.5s;
-  animation-timing-function: ease-in;
-  animation-fill-mode: forwards;
+  animation: fadeIn .5s ease-in forwards;
 }
 
 @keyframes fadeIn {
-  from{
-      opacity: 0;
+  from {
+    opacity: 0;
   }
-  to{
-      opacity: 1;
+
+  to {
+    opacity: 1;
   }
 }
 
@@ -329,11 +329,25 @@ img.logo:active {
 }
 
 @keyframes cycleImages {
-  0% { background-image: url('../img/assets/condor_SD.gif'); }
-  25% { background-image: url('../img/assets/sho_SD.gif'); }
-  50% { background-image: url('../img/assets/tia_SD.gif'); }
-  75% { background-image: url('../img/assets/pielle_SD.gif'); }
-  100% { background-image: url('../img/assets/condor_SD.gif'); }
+  0% {
+    background-image: url('../img/assets/condor_SD.gif');
+  }
+
+  25% {
+    background-image: url('../img/assets/sho_SD.gif');
+  }
+
+  50% {
+    background-image: url('../img/assets/tia_SD.gif');
+  }
+
+  75% {
+    background-image: url('../img/assets/pielle_SD.gif');
+  }
+
+  100% {
+    background-image: url('../img/assets/condor_SD.gif');
+  }
 }
 
 .inputs img {
@@ -662,7 +676,7 @@ div.infos img:hover {
   object-fit: cover;
   position: relative;
   height: 90px;
-  opacity: .4;
+  opacity: .3;
   border: 1px solid #000;
   background-color: #000
 }
@@ -679,11 +693,6 @@ div.infos img:hover {
   position: relative
 }
 
-.characters-guide-main a.active-link::before, .characters-guide-main a:hover::before {
-  opacity: 1;
-  animation: 1s linear infinite rotate3DTriangle
-}
-
 .characters-guide-main {
   display: flex;
   justify-content: center
@@ -693,14 +702,6 @@ div.infos img:hover {
   .characters-guide-main img {
     height: 92px
   }
-}
-
-.main-wrapper {
-  width: 100%;
-  overflow-x: scroll;
-  overflow: -moz-scrollbars-vertical;
-  border: 1px solid #b6b6b6;
-  padding: 5px
 }
 
 ::-webkit-scrollbar {
@@ -713,13 +714,7 @@ div.infos img:hover {
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5)
 }
 
-.table-container {
-  display: inline-grid;
-  table-layout: auto;
-  text-align: left
-}
-
-.exponent-square, table.movelist th:nth-child(n+3):nth-child(-n+7), td img, th.data {
+table.movelist th:nth-child(n+3):nth-child(-n+7), td img, th.data {
   text-align: center
 }
 
@@ -873,17 +868,6 @@ a:focus {
   gap: 4px
 }
 
-.image-bottom, .image-left, .image-top {
-  width: 100%;
-  height: auto
-}
-
-.image-right {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px
-}
-
 ol {
   counter-reset: my-counter;
   background-color: #f9f9f9;
@@ -904,12 +888,6 @@ ol li::before {
   display: inline-block;
   width: 15px;
   height: 15px
-}
-
-table.arcadestick, table.arcadestick td {
-  background-color: transparent;
-  border: none;
-  text-align: center
 }
 
 .color-button {
@@ -947,12 +925,23 @@ table.arcadestick, table.arcadestick td {
   height: 0;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #416b9a;
+  border-top: 10px solid #155b99;
   opacity: 0;
   z-index: 10;
-  transition: opacity .3s;
   transform-origin: center
 }
+
+.characters-guide-main a.active-link::before {
+  opacity: 1;
+  animation: 1s linear infinite rotate3DTriangle
+}
+
+.characters-guide-main a:hover::before {
+  opacity: 1;
+  animation: 1s linear infinite rotate3DTriangle;
+  border-top: 10px solid #0597eb64;
+}
+
 
 @keyframes rotate3DTriangle {
   from {
@@ -962,51 +951,6 @@ table.arcadestick, table.arcadestick td {
   to {
     transform: translateX(-50%) rotateY(360deg)
   }
-}
-
-.slideshow {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  height: 400px;
-  overflow: hidden
-}
-
-.slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  opacity: 0;
-  animation: 12s infinite slideAnimation
-}
-
-@keyframes slideAnimation {
-  0%, 33% {
-    opacity: 1
-  }
-
-  100%, 40% {
-    opacity: 0
-  }
-}
-
-.slide:nth-child(2) {
-  animation-delay: 4s
-}
-
-.slide:nth-child(3) {
-  animation-delay: 8s
-}
-
-.exponent-square {
-  margin-right: 10px;
-  float: left;
-  line-height: 1
-}
-
-.bottom, .top {
-  font-size: 20px
 }
 
 body.dark-mode {
@@ -1063,6 +1007,11 @@ body.dark-mode .characters-guide-main a::before {
   border-top: 10px solid #fff
 }
 
+body.dark-mode .characters-guide-main a:hover::before {
+  border-top: 10px solid #ffffff6a;
+  animation: 1s linear infinite rotate3DTriangle
+}
+
 body.dark-mode .nav-guide button {
   background: #292929;
   border-color: #484545;
@@ -1098,10 +1047,14 @@ body.dark-mode .content-gameplay::-webkit-scrollbar, body.dark-mode .content::-w
 body.dark-mode .nav-links a {
   color: #dfdfdf
 }
-
-body.dark-mode .nav-links a.current {
-  border-color: #888;
+body.dark-mode .filtered {
+  filter: none
 }
+body.dark-mode .nav-links a.current {
+  border-color: #888
+}
+
+
 
 .container {
   display: flex;
@@ -1181,77 +1134,4 @@ body.dark-mode .nav-links a.current {
 
 
 /* switch button */
-
-
-.tg-list {
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-.tgl {
-  display: none;
-}
-.tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {
-  box-sizing: border-box;
-}
-.tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {
-  background: none;
-}
-.tgl + .tgl-btn {
-  outline: 0;
-  display: block;
-  width: 2em;
-  height: 1.2em;
-  position: relative;
-  cursor: pointer;
-  user-select: none;
-}
-
-.tgl-skewed + .tgl-btn {
-  overflow: hidden;
-  transform: skew(-10deg);
-  backface-visibility: hidden;
-  transition: all 0.2s ease;
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #888;
-}
-.tgl-skewed + .tgl-btn:after, .tgl-skewed + .tgl-btn:before {
-  transform: skew(10deg);
-  display: inline-block;
-  transition: all 0.2s ease;
-  width: 100%;
-  text-align: center;
-  position: absolute;
-  line-height: 1.5em;
-  font-size: 0.8rem;
-  font-weight: bold;
-  color: #fff;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, .4);
-}
-.tgl-skewed + .tgl-btn:after {
-  left: 100%;
-  content: attr(data-tg-on);
-}
-.tgl-skewed + .tgl-btn:before {
-  left: 0;
-  content: attr(data-tg-off);
-}
-.tgl-skewed + .tgl-btn:active {
-  background: #888;
-}
-.tgl-skewed + .tgl-btn:active:before {
-  left: -10%;
-}
-.tgl-skewed:checked + .tgl-btn {
-  background: #63a16c;
-}
-.tgl-skewed:checked + .tgl-btn:before {
-  left: -100%;
-}
-.tgl-skewed:checked + .tgl-btn:after {
-  left: 0;
-}
-.tgl-skewed:checked + .tgl-btn:active:after {
-  left: 10%;
-}
+.tg-list{text-align:center;display:flex;align-items:center}.tgl{display:none}.tgl,.tgl *,.tgl :after,.tgl :before,.tgl+.tgl-btn,.tgl:after,.tgl:before{box-sizing:border-box}.tgl ::selection,.tgl :after::selection,.tgl :before::selection,.tgl+.tgl-btn::selection,.tgl::selection,.tgl:after::selection,.tgl:before::selection{background:0 0}.tgl+.tgl-btn{outline:0;display:block;width:2em;height:1.2em;position:relative;cursor:pointer;user-select:none}.tgl-skewed+.tgl-btn{overflow:hidden;transform:skew(-10deg);backface-visibility:hidden;transition:.2s;font-family:"Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;background:#888}.tgl-skewed+.tgl-btn:after,.tgl-skewed+.tgl-btn:before{transform:skew(10deg);display:inline-block;transition:.2s;width:100%;text-align:center;position:absolute;line-height:1.5em;font-size:.8rem;font-weight:700;color:#fff;text-shadow:0 1px 0 rgba(0,0,0,.4)}.tgl-skewed+.tgl-btn:after{left:100%;content:attr(data-tg-on)}.tgl-skewed+.tgl-btn:before{left:0;content:attr(data-tg-off)}.tgl-skewed+.tgl-btn:active{background:#888}.tgl-skewed+.tgl-btn:active:before{left:-10%}.tgl-skewed:checked+.tgl-btn{background:#63a16c}.tgl-skewed:checked+.tgl-btn:before{left:-100%}.tgl-skewed:checked+.tgl-btn:after{left:0}.tgl-skewed:checked+.tgl-btn:active:after{left:10%}

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="img/assets/apple-touch-icon.png">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="img/manifest.json">
   <script src="script.js"></script>
 </head>
 
@@ -75,16 +75,7 @@
   </section>
 
   <!-- footer  -->
-  <div id="includedContent">
-    <script>
-      fetch('footer.html')
-        .then(response => response.text())
-        .then(html => {
-          document.getElementById('includedContent').innerHTML = html;
-        })
-        .catch(error => console.error('Error fetching content: ', error));
-    </script>
-  </div>
+  <div id="footer-container"></div>
 
 
 
