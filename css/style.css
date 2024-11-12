@@ -1,7 +1,11 @@
-.nav-links li, body {
+body {
   margin: 0;
-  opacity: 0;
-  animation: fadeIn .2s ease-in forwards;
+}
+
+
+  
+.nav-links li {
+  margin: 0;
 }
 
 .nav-guide button, .nav-links, body {
@@ -196,18 +200,9 @@ img.logo:active {
   word-wrap: break-word;
   opacity: 1;
   background-color: #fff;
-  animation: fadeIn .5s ease-in forwards;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
 
-  to {
-    opacity: 1;
-  }
-}
 
 .flag-icon, .site-footer {
   background-color: #000
@@ -546,7 +541,6 @@ a.back:hover {
 #alsion, #combos, #condor, #dao-long, #guide, #maherl, #matchups, #movelist, #pielle, #rila, #saizo, #sho, #tia {
   display: none;
   opacity: 1;
-  animation: .5s ease-in fadeOutWhite
 }
 
 #matchups table.charselect {
@@ -590,16 +584,6 @@ a.back:hover {
 button:active, button:focus, button:focus-within {
   background-color: #416b9a;
   color: #fff
-}
-
-@keyframes fadeOutWhite {
-  from {
-    opacity: 0
-  }
-
-  to {
-    opacity: 1
-  }
 }
 
 .main-content table.tierlist {
@@ -657,6 +641,7 @@ p.notes, table.properties td, table.properties th {
 
 div.infos {
   display: inline-block;
+  display: inline-flex;
   position: relative
 }
 
@@ -918,7 +903,7 @@ ol li::before {
 .characters-guide-main a::before {
   content: "";
   position: absolute;
-  top: -90px;
+  top: -20px;
   left: 50%;
   transform: translateX(-50%) rotateY(0);
   width: 0;
