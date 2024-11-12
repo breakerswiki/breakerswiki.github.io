@@ -980,7 +980,7 @@ body.dark-mode .main-content .combos {
 }
 
 body.dark-mode table.movelist td, body.dark-mode table.properties td {
-  background-color: #282828;
+  background-color: #525556;
   border: 1px solid #1a1a1a
 }
 
@@ -1016,9 +1016,9 @@ body.dark-mode .inputs {
   color: #909090
 }
 
-body.dark-mode td img {
+/* body.dark-mode td img {
   filter: drop-shadow(0 0 2px white)
-}
+} */
 
 body.dark-mode .content, body.dark-mode .content-gameplay {
   scrollbar-width: thin;
