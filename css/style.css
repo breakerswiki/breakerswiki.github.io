@@ -431,7 +431,7 @@ img.logo:active {
   }
 
   .main-content table.charselect td img {
-    max-width: 55px;
+    max-width: 52px;
     margin-left: 0;
     margin-right: 0
   }
@@ -1102,6 +1102,7 @@ body.dark-mode .nav-links a.current {
 
   .container {
     display: flex;
+    gap: 30px;
     flex-direction: row
   }
 
