@@ -600,45 +600,21 @@
 
     <div id="matchups">
 
-
-      <table class="charselect">
-        <tbody>
-          <tr>
-            <td><a onclick="toggleFilter(this); toggleContent('sho');"><img src="img/assets/Portrait_BR_Sho.png"
-                  class="filtered"></a></td>
-            <td><a onclick="toggleFilter(this); toggleContent('pielle');"><img src="img/assets/Portrait_BR_Pielle.png"
-                  class="filtered"></a></td>
-            <td><a onclick="toggleFilter(this); toggleContent('condor');"><img src="img/assets/Portrait_BR_Condor.png"
-                  class="filtered"></a></td>
-            <td><a onclick="toggleFilter(this); toggleContent('rila');"><img src="img/assets/Portrait_BR_Rila.png"
-                  class="filtered"></a></td>
-            <td><a onclick="toggleFilter(this); toggleContent('tia');"><img src="img/assets/Portrait_BR_Tia.png"
-                  class="filtered"></a></td>
-            <td><a onclick="toggleFilter(this); toggleContent('alsion');"><img
-                  src="img/assets/Portrait_BR_Alsion_III.png" class="filtered"></a></td>
-            <td><a onclick="toggleFilter(this); toggleContent('maherl');"><img src="img/assets/Portrait_BR_Maherl.png"
-                  class="filtered"></a></td>
-            <td><a onclick="toggleFilter(this); toggleContent('dao-long');"><img
-                  src="img/assets/Portrait_BR_Dao-Long.png" class="filtered"></a></td>
-            <td><a onclick="toggleFilter(this); toggleContent('saizo');"><img src="img/assets/Portrait_BR_Saizo.png"
-                  class="filtered"></a></td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="charselect">
+        <a onclick="toggleContent('sho', this);"><img src="img/assets/Portrait_BR_Sho.png"></a>
+        <a onclick="toggleContent('pielle', this);"><img src="img/assets/Portrait_BR_Pielle.png"></a>
+        <a onclick="toggleContent('condor', this);"><img src="img/assets/Portrait_BR_Condor.png"></a>
+        <a onclick="toggleContent('rila', this);"><img src="img/assets/Portrait_BR_Rila.png"></a>
+        <a onclick="toggleContent('tia', this);"><img src="img/assets/Portrait_BR_Tia.png"></a>
+        <a onclick="toggleContent('alsion', this);"><img src="img/assets/Portrait_BR_Alsion_III.png"></a>
+        <a onclick="toggleContent('maherl', this);"><img src="img/assets/Portrait_BR_Maherl.png"></a>
+        <a onclick="toggleContent('dao-long', this);"><img src="img/assets/Portrait_BR_Dao-Long.png"></a>
+        <a onclick="toggleContent('saizo', this);"><img src="img/assets/Portrait_BR_Saizo.png"></a>
+      </div>
 
 
       <div id="saizo">
-        <h1>Saizo</h1>
-
-        <!-- <ul style="padding: 10px; text-align: left; color:#606c71; background-color: rgb(228, 241, 249)">
-          <li>
-            Saizo's JC is tough to counter, beating anti-air normals and the startup of your sword special. If you have meter, use 214A as an anti-air and confirm into super.
-          </li>
-          <li>
-            Watch out for his "hair" special; it functions as an anti-air with invincibility frames but is unsafe on its own, so it must be super canceled to stay safe.
-          </li>
-        </ul> -->
-
+        <!-- <h1>Saizo</h1> -->
 
         <table class="movelist">
           <thead>
@@ -702,10 +678,8 @@
               <td style="width: 50%;">
                 <span class="punish-on-block"></span><span class="breakable"></span>
                 <p>
-                  Unsafe on hit, this move must be super-canceled.
-                  214C knocks down opponents, while 214A is fast and serves as an anti-air.
-                  Be cautious even on block; Saizo has time to cancel into a super, which may disrupt your usual
-                  punishment.
+                  Unless canceled, it's unsafe on hit and block, but can be followed by a super, interrupting your
+                  punish.
                 </p>
               </td>
               <td style="width: 50%;">
@@ -770,16 +744,8 @@
       </div>
 
       <div id="pielle">
-        <h1>Pielle</h1>
+        <!-- <h1>Pielle</h1> -->
 
-        <!-- <ul style="padding: 10px; text-align: left; color:#606c71; background-color: rgb(228, 241, 249)">
-          <li>
-            Pielle's fireball has slow recovery, making it difficult to zone and easy to punish, allowing opponents to close the distance quickly.
-          </li>
-          <li>
-            At close range, punish his overhead during its startup frames, or break it with 214A.
-          </li>
-        </ul> -->
 
 
         <table class="movelist">
@@ -846,7 +812,7 @@
           <tbody>
             <tr>
               <td>
-                <span class="punish-on-block"></span><span class="whiff-punish"><span class="punish-on-hit"></span>
+                <span class="punish-on-block"></span><span class="whiff-punish">
                   <p>
                     A projectile with a very slow recovery.
                     You can whiff punish with 236A
@@ -875,7 +841,7 @@
           <tbody>
             <tr>
               <td>
-                <span class="punish-on-block"></span><span class="whiff-punish"><span class="punish-on-hit"></span>
+                <span class="punish-on-block"></span><span class="whiff-punish">
                   <p>
                     An anti-air special with slow recovery and no reversal properties.
                     On hit, 623A keeps you standing for a punish, while 623C knocks you down.
@@ -1002,21 +968,9 @@
       </div>
 
       <div id="rila">
-        <h1>Rila</h1>
+        <!-- <h1>Rila</h1> -->
 
-        <!-- <ul style="padding: 10px; text-align: left; color:#606c71; background-color: rgb(228, 241, 249)">
-          <li>
-            Avoid excessive bomb pressure at mid/close range, as Rila can use Killer Snake and Bloody Fang to go
-            through them.
-          </li>
-          <li>
-            Be cautious when punishing Killer Snake on block, as she can recover and use her Super. The best approach is
-            to input two crouching jabs, then confirm or block.
-          </li>
-          <li>
-            Watch out for heavy Quick scratch, which can catch backdashes or backjumps at close range
-          </li>
-        </ul> -->
+   
 
 
         <table class="movelist">
@@ -1029,7 +983,9 @@
             <tr>
               <td>
                 <span class="punish-on-block"></span>
-                Unsafe on block, punish with 236236K.
+                <p>It makes her hop forward. She usually uses it to close distance mid-range and on your wake-up from
+                  afar. Unsafe on block, punish with 236236K.
+                </p>
               </td>
               <td style="width: 50%;">
                 <video poster="img/assets/play.gif" controls loop muted playsinline preload="none">
@@ -1139,7 +1095,7 @@
           <tbody>
             <tr>
               <td>
-                <span class="punish-on-block"><span class="punish-on-hit"></span><span class="whiff-punish">
+                <span class="punish-on-block"><span class="whiff-punish">
                     <p>
                       Very fast, can catch you off guard at mid and close range.
                       You can punish it on whiff, block and hit with super (236236K)
@@ -1259,15 +1215,9 @@
       </div>
 
       <div id="dao-long">
-        <h1>Dao-long</h1>
+        <!-- <h1>Dao-long</h1> -->
 
-        <!-- <ul style="padding: 10px; text-align: left; color:#606c71; background-color: rgb(228, 241, 249)">
-          <li>Dao's forward dash can quickly shift him to offense. Stay patient under pressure and use cr.B to counter.
-          </li>
-          <li>Avoid overusing jump and divekicks midrange since Dao-Long’s anti-air is fast and can punish them easily.
-          </li>
-          <li>Mastering the ranges is key to punishing Dao-Long's fireball with jumps/divekick, 236D or 214214K</li>
-        </ul> -->
+   
 
 
 
@@ -1452,20 +1402,9 @@
       </div>
 
       <div id="condor">
-        <h1>Condor</h1>
+        <!-- <h1>Condor</h1> -->
 
 
-        <!-- <ul style="padding: 10px; text-align: left; color:#606c71; background-color: rgb(228, 241, 249)">
-          <li>
-            Zone him from long range with 236A or 236C, then use short dashes to find openings. you can punish his slides and
-            tomahawks on block or whiff.</li>
-          <li>
-            After landing a jump attack, bait his break attempts by jumping back. Just be careful when he has meter; his super can catch you in the air
-          </li>
-          <li>
-            On your wakeup, use backroll or backdash if he’s not close to avoid him gaining a threatening position.
-          </li>
-        </ul> -->
 
 
         <table class="movelist">
@@ -1610,21 +1549,9 @@
       </div>
 
       <div id="sho">
-        <h1>Sho</h1>
+        <!-- <h1>Sho</h1> -->
 
-        <!-- <ul style="padding: 10px; text-align: left; color:#606c71; background-color: rgb(228, 241, 249)">
-          <li>
-            Use jC for offense or defense; it remains active for a long time and has high priority over normals.
-          </li>
-          <li>
-            Break jumps/divekick hitting the upper body with 214A > 236236K or throw
-            Howerver, he can counter your throw break attempt, as divekick > 214K combos and counters throws.
-          </li>
-          <li>
-            When he has meter, 236K on block followed by his air super can bait your punish attempt. Don’t risk it; just block since the super does minimal chip damage.
-          </li>
-        </ul> -->
-
+        
 
 
         <table class="movelist">
@@ -1794,16 +1721,9 @@
       </div>
 
       <div id="maherl">
-        <h1>Maherl</h1>
+        <!-- <h1>Maherl</h1> -->
 
-        <!-- <ul style="padding: 10px; text-align: left; color:#606c71; background-color: rgb(228, 241, 249)">
-          <li>His genie super comes fast and is safe on block if you let the animation finish but punishable if
-            you backdash after the first hit.</li>
-          <li>All his sword specials are punishable at close range.</li>
-          <li>Watch out for his balloon special; it punishes projectiles and can hit crossup. It is unsafe on block.
-          </li>
-          <li>There's a gap at the start of his abdomen step, allowing you to whiff punish with 214A</li>
-        </ul> -->
+     
 
 
         <table class="movelist">
@@ -1960,23 +1880,9 @@
       </div>
 
       <div id="tia">
-        <h1>Tia</h1>
+        <!-- <h1>Tia</h1> -->
 
 
-
-        <!-- <ul style="padding: 10px; text-align: left; color:#606c71; background-color: rgb(228, 241, 249)">
-          <li>
-            Be cautious of her quick dashes into 5D or 5C; they serve as anti-air and are safe.
-            Use 2B preemptively at close range to interrupt her; otherwise, it's too fast to react.
-          </li>
-          <li>
-            When she has meter, play cautiously; her Super, Rapid Charge, has a quick startup and can go through projectiles.
-          </li>
-          <li>
-            Her projectile is mainly used to bait jump mistakes or during okizeme. Punish it from a distance with 236A.
-          </li>
-
-        </ul> -->
 
 
 
@@ -2016,7 +1922,7 @@
           <tbody>
             <tr>
               <td>
-                <span class="punish-on-block"></span> <span class="punish-on-hit"></span>
+                <span class="punish-on-block"></span> 
                 <p>
                   Punish on block or hit with super (236236K)
                 </p>
@@ -2186,14 +2092,9 @@
       </div>
 
       <div id="alsion">
-        <h1>Alsion III</h1>
+        <!-- <h1>Alsion III</h1> -->
 
-        <!-- <ul style="padding: 10px; text-align: left; color:#606c71; background-color: rgb(228, 241, 249)">
-          <li>He has two overhead moves. Players often use them up close by canceling normals; they're safe on
-            block but always whiff punishable during startup.</li>
-          <li>His deadly claw is a tricky air teleport that can land on either side. Stay patient and do nothing; whiff
-            punish with 2C, or block and punish with 236236P.</li>
-        </ul> -->
+
 
 
 

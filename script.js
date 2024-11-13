@@ -46,7 +46,6 @@ const inputImages = {
   "DownLeft": "/img/inputs/Arcade-Stick-DL.png",
   "DownRight": "/img/inputs/Arcade-Stick-DR.png"
 };
-
 function setImageSrc() {
   for (let className in inputImages) {
     const imgElements = document.getElementsByClassName(className);
@@ -84,26 +83,25 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Toggle Content on matchup section
-function toggleContent(contentId) {
-  var contents = document.querySelectorAll("#saizo, #pielle, #rila, #dao-long, #condor, #sho, #maherl, #tia, #alsion");
-  contents.forEach(content => content.style.display = "none");
-  var content = document.getElementById(contentId);
-  content.style.display = "block";
-}
 
-// Set color filter for selected character in Matchup Section
-let lastClickedImg = null;
-function toggleFilter(anchor) {
-  const img = anchor.querySelector('img');
-  if (lastClickedImg && lastClickedImg !== img) {
-    lastClickedImg.style.filter = '';
-    lastClickedImg.classList.add('filtered');
-  }
-  img.style.filter = img.classList.contains('filtered') ? '' : 'none';
-  img.classList.toggle('filtered');
-  lastClickedImg = img;
+
+// Toggle Content on matchup section
+function toggleContent(contentId, clickedLink) {
+  // Hide content of all sections
+  document.querySelectorAll("#saizo, #pielle, #rila, #dao-long, #condor, #sho, #maherl, #tia, #alsion").forEach(content => {
+    content.style.display = "none";
+  });
+  document.getElementById(contentId).style.display = "block";
+  document.querySelectorAll('#charselect img').forEach(img => {
+    img.classList.remove('clicked');
+  });
+  clickedLink.querySelector('img').classList.add('clicked');
 }
+// Simulate click on #sho when the page loads
+document.addEventListener("DOMContentLoaded", () => {
+  toggleContent('sho', document.querySelector("a[onclick*='sho']"));
+});
+
 
 // Light/Dark Mode Theme Switch
 document.addEventListener('DOMContentLoaded', () => {

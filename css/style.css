@@ -553,17 +553,27 @@ a.back:hover {
   border: none
 }
 
-#alsion, #combos, #condor, #dao-long, #guide, #maherl, #matchups, #movelist, #pielle, #rila, #saizo, #sho, #tia {
-  display: none;
+#charselect a {
+  cursor:pointer;
+}
+
+#charselect a img {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+#charselect a img.clicked {
+  opacity: 1 !important;  /* Ensure the clicked image stays fully visible */
+}
+
+#charselect a:hover img {
   opacity: 1;
 }
 
-#matchups table.charselect {
-  min-width: 350px
-}
-
-#matchups table.charselect img:hover {
-  opacity: initial
+#charselect {
+  min-width: 350px;
+  margin-bottom: 20px;
+  display: flex;
 }
 
 #matchups li {
@@ -590,11 +600,6 @@ a.back:hover {
   font-size: 24px
 }
 
-.filtered {
-  cursor: pointer;
-  opacity: .5;
-  padding: 0
-}
 
 button:active, button:focus, button:focus-within {
   background-color: #416b9a;
@@ -996,7 +1001,7 @@ body.dark-mode .main-content .combos {
 
 body.dark-mode table.movelist td, body.dark-mode table.properties td {
   background-color: #525556;
-  border: 1px solid #1a1a1a
+  border: 1px solid #767676;
 }
 
 body.dark-mode th.data {
