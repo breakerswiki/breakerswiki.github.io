@@ -84,23 +84,33 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
 // Toggle Content on matchup section
 function toggleContent(contentId, clickedLink) {
   // Hide content of all sections
   document.querySelectorAll("#saizo, #pielle, #rila, #dao-long, #condor, #sho, #maherl, #tia, #alsion").forEach(content => {
     content.style.display = "none";
   });
-  document.getElementById(contentId).style.display = "block";
+  // Show the specified content if it exists
+  const contentElement = document.getElementById(contentId);
+  if (contentElement) {
+    contentElement.style.display = "block";
+  }
+  // Update the clicked link's image to show it is selected
   document.querySelectorAll('#charselect img').forEach(img => {
     img.classList.remove('clicked');
   });
-  clickedLink.querySelector('img').classList.add('clicked');
+  if (clickedLink && clickedLink.querySelector('img')) {
+    clickedLink.querySelector('img').classList.add('clicked');
+  }
 }
-// Simulate click on #sho when the page loads
+// Simulate click on #sho when the page loads, if it exists
 document.addEventListener("DOMContentLoaded", () => {
-  toggleContent('sho', document.querySelector("a[onclick*='sho']"));
+  const shoLink = document.querySelector("a[onclick*='sho']");
+  if (document.getElementById('sho') && shoLink) {
+    toggleContent('sho', shoLink);
+  }
 });
+
 
 
 // Light/Dark Mode Theme Switch

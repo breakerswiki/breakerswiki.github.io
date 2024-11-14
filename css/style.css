@@ -528,6 +528,7 @@ a.back:hover {
   background: #f8f8f8;
   font-size: 15px;
   color: #919191;
+  /* font-weight: bold; */
   appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
@@ -588,6 +589,7 @@ a.back:hover {
 
 #matchups th {
   font-size: medium;
+  font-weight:bold;
   vertical-align: middle
 }
 
@@ -987,7 +989,7 @@ body.dark-mode .main-content ol {
 }
 
 body.dark-mode table.movelist th, body.dark-mode table.properties th, body.dark-mode th.data {
-  border: 1px solid #1a1a1a
+  border: 1px solid #767676;
 }
 
 body.dark-mode .main-content li::before, body.dark-mode .main-content li>a {
@@ -1225,4 +1227,67 @@ body.dark-mode .nav-links a.current {
 
 .tgl-skewed:checked+.tgl-btn:active:after {
   left: 10%
+}
+
+.invite-container {
+  display: flex;
+  align-items: center;
+  background-color: #2C2F33;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 100%;
+}
+
+.server-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  background-color: #5865F2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.server-info {
+  flex-grow: 1;
+}
+
+.invite-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 !important;
+  color: #fff !important;
+}
+
+.invite-description {
+  font-size: 14px;
+  color: #b9bbbe;
+  margin: 0 !important;
+}
+
+.invite-button {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: #5865F2;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+body.dark-mode .invite-button {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.invite-button:hover {
+  background-color: #4752c4;
+  text-decoration: none;
 }
