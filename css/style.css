@@ -220,11 +220,13 @@ img.logo:active {
 
 
 .flag-icon, .site-footer {
-  background-color: #000
+  background-color: #000;
+  background-size: cover;
+  border: 2px solid black !important;
 }
 
 .main-content :first-child, .main-content ol, .main-content ul {
-  margin-top: 0
+  margin-top: 0;
 }
 
 .main-content img {
@@ -876,25 +878,41 @@ a:focus {
 }
 
 ol {
-  counter-reset: my-counter;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px
+  list-style: none; /* Remove default numbering */
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
 }
 
-ol li>a {
-  margin-bottom: 10px;
-  color: #006391;
-  margin-left: 5px
+ol li > a {
+  color: #507097;
+}
+ol li > a:hover {
+  text-decoration: none;
+}
+ol > li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Spacing between items */
 }
 
 ol li::before {
-  content: "➩";
-  color: #006391;
-  margin-right: 3px;
-  display: inline-block;
-  width: 15px;
-  height: 15px
+  content: counter(item) " ";
+  counter-increment: item;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #507097; /* Change to your desired background color */
+  color: white; /* Text color */
+  font-weight: bold;
+  width: 30px;
+  height: 30px;
+  border-radius: 4px; /* Rounded corners */
+  margin-right: 10px; /* Space between box and text */
+}
+
+ol {
+  counter-reset: item; 
 }
 
 .color-button {
@@ -983,17 +1001,27 @@ body.dark-mode .main-content p {
 }
 
 body.dark-mode .main-content ol {
-  background-color: #242424;
   color: #fff;
   border: none
 }
+
+body.dark-mode .main-content ol li::before {
+  background-color: #353535; /* Change to your desired background color */
+  color: white; /* Text color */
+}
+
 
 body.dark-mode table.movelist th, body.dark-mode table.properties th, body.dark-mode th.data {
   border: 1px solid #767676;
 }
 
 body.dark-mode .main-content li::before, body.dark-mode .main-content li>a {
-  color: #d3d3d3
+  color: #d3d3d3;
+}
+
+body.dark-mode .main-content li::before {
+  color: #d3d3d3;
+  border: 1px solid rgb(95, 95, 95);
 }
 
 body.dark-mode .main-content .combos {
