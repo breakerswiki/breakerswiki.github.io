@@ -882,21 +882,22 @@ ol {
   padding: 0;
   margin: 0;
   font-weight: bold;
+  display: inline-block;
 }
 
-ol li > a {
+ol > a {
   color: #507097;
 }
-ol li > a:hover {
-  text-decoration: none;
+ol a:hover {
+  text-decoration: underline;
 }
-ol > li {
+ol > a {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Spacing between items */
+  margin-bottom: 5px; /* Spacing between items */
 }
 
-ol li::before {
+ol a::before {
   content: counter(item) " ";
   counter-increment: item;
   display: flex;
@@ -1005,22 +1006,28 @@ body.dark-mode .main-content ol {
   border: none
 }
 
-body.dark-mode .main-content ol li::before {
+body.dark-mode .main-content ol a::before {
   background-color: #353535; /* Change to your desired background color */
   color: white; /* Text color */
 }
+
+body.dark-mode .main-content ol a:hover {
+  text-decoration: underline;  
+  color: white; /* Text color */
+}
+
 
 
 body.dark-mode table.movelist th, body.dark-mode table.properties th, body.dark-mode th.data {
   border: 1px solid #767676;
 }
 
-body.dark-mode .main-content li::before, body.dark-mode .main-content li>a {
-  color: #d3d3d3;
+body.dark-mode .main-content li::before, body.dark-mode .main-content li {
+  color: #c3c3c3;
 }
 
 body.dark-mode .main-content li::before {
-  color: #d3d3d3;
+  color: #c3c3c3;
   border: 1px solid rgb(95, 95, 95);
 }
 
