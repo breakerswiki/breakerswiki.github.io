@@ -115,7 +115,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Light/Dark Mode Theme Switch
 document.addEventListener('DOMContentLoaded', () => {
-  const toggleSwitch = document.querySelector('#modeSwitch');
   const themeColor = document.querySelector('meta[name="theme-color"]') || document.createElement('meta');
   // Ensure meta tag is in the head
   if (!themeColor.parentElement) document.head.appendChild(themeColor);
@@ -126,16 +125,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const currentTheme = localStorage.getItem('theme') || 'light';
   document.documentElement.setAttribute('data-theme', currentTheme);
   document.body.classList.toggle('dark-mode', currentTheme === 'dark');
-  toggleSwitch.checked = currentTheme === 'dark';
   setThemeColor(currentTheme);
-  // Switch theme and save to localStorage
-  toggleSwitch.addEventListener('change', (e) => {
-    const theme = e.target.checked ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', theme);
-    document.body.classList.toggle('dark-mode', theme === 'dark');
-    localStorage.setItem('theme', theme);
-    setThemeColor(theme);
-  });
+  // If the page has a theme switcher, set up its functionality
+  const toggleSwitch = document.querySelector('#modeSwitch');
+  if (toggleSwitch) {
+    toggleSwitch.checked = currentTheme === 'dark';
+    // Switch theme and save to localStorage
+    toggleSwitch.addEventListener('change', (e) => {
+      const theme = e.target.checked ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', theme);
+      document.body.classList.toggle('dark-mode', theme === 'dark');
+      localStorage.setItem('theme', theme);
+      setThemeColor(theme);
+    });
+  }
 });
 
 // Clean URL by removing the hash, ".html", and "/index" (GitHub Pages only).
