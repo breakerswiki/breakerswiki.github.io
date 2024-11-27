@@ -1,3 +1,74 @@
+// Carousel arrow navigation (gameplay)
+document.addEventListener("DOMContentLoaded", () => {
+  const prevButton = document.querySelector('.prev');
+  const nextButton = document.querySelector('.next');
+  const items = document.querySelectorAll('.carousel-item');
+  let currentIndex = 0;
+
+  const scrollToItem = (index) => {
+    if (!items.length) return;
+
+    items.forEach(item => item.classList.remove('highlighted'));
+    items[index].classList.add('highlighted');
+    items[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  };
+
+  const changeIndex = (increment) => {
+    if (!items.length) return;
+    currentIndex = (currentIndex + increment + items.length) % items.length;
+    scrollToItem(currentIndex);
+  };
+
+  prevButton?.addEventListener('click', () => changeIndex(-1));
+  nextButton?.addEventListener('click', () => changeIndex(1));
+
+  scrollToItem(currentIndex);
+});
+
+
+
+// Wiki - Function to toggle the visibility of the text and change the active year
+function toggleText(index) {
+  const texts = document.querySelectorAll('.text');
+  const years = document.querySelectorAll('.year');
+
+  if (texts.length === 0 || years.length === 0) return;
+
+  texts.forEach(text => {
+    text.classList.remove('visible');
+  });
+
+  years.forEach(year => {
+    year.classList.remove('active');
+  });
+
+  const text = document.getElementById(`text-${index}`);
+  if (text) {
+    text.classList.add('visible');
+  }
+
+  const year = years[index];
+  if (year) {
+    year.classList.add('active');
+  }
+}
+
+// By default, show the first text and mark the first year as active
+document.addEventListener('DOMContentLoaded', function () {
+  const texts = document.querySelectorAll('.text');
+  const years = document.querySelectorAll('.year');
+
+  // Ensure there are both texts and years before modifying
+  if (texts.length > 0 && years.length > 0) {
+    texts[0].classList.add('visible');
+    years[0].classList.add('active');
+  }
+});
+
+
+
+
+
 // Load the footer dynamically and update the year.
 function loadFooter() {
   fetch('footer.html')
@@ -15,7 +86,7 @@ function loadFooter() {
 document.addEventListener("DOMContentLoaded", loadFooter);
 
 
-// Set <img> sources using html classes
+// Set <img> sources for stick/button inputs using html classes
 const inputImages = {
   "A": "/img/inputs/Arcade-Button-APunch.png",
   "B": "/img/inputs/Arcade-Button-BKick.png",
