@@ -226,3 +226,13 @@ function cleanUrl() {
 }
 window.addEventListener("load", cleanUrl);
 window.addEventListener("hashchange", cleanUrl);
+
+
+// index.html - display wiki part by scrolling down
+window.addEventListener('scroll', () => {
+  const bottomDiv = document.querySelector('.bottom-div');
+  const scrollPercent = Math.min(1, (window.scrollY + window.innerHeight - document.body.offsetHeight * 0.35) / (document.body.offsetHeight * 0.25));
+
+  bottomDiv.style.opacity = scrollPercent;
+  bottomDiv.style.transform = `translateY(${(1 - scrollPercent) * 100}%)`;
+});

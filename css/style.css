@@ -1636,3 +1636,13 @@ body.dark-mode hr {
   user-select: none;
   width: 300px;
 }
+
+
+
+/* The bottom-div hidden by default */
+.bottom-div {
+  position: relative;
+  opacity: 0; /* Initially hidden */
+  transform: translateY(100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
