@@ -229,10 +229,19 @@ window.addEventListener("hashchange", cleanUrl);
 
 
 // index.html - display wiki part by scrolling down
-window.addEventListener('scroll', () => {
-  const bottomDiv = document.querySelector('.bottom-div');
-  const scrollPercent = Math.min(1, (window.scrollY + window.innerHeight - document.body.offsetHeight * 0.35) / (document.body.offsetHeight * 0.25));
-
-  bottomDiv.style.opacity = scrollPercent;
-  bottomDiv.style.transform = `translateY(${(1 - scrollPercent) * 100}%)`;
+window.addEventListener("scroll", () => {
+  const topDiv = document.querySelector(".top-div");
+  const bottomDiv = document.querySelector(".bottom-div");
+  const scrollY = window.scrollY;
+  // Height of .top-div
+  const topDivHeight = topDiv.offsetHeight;
+  // Fade out .top-div
+  const topOpacity = Math.max(1 - scrollY / topDivHeight, 0);
+  topDiv.style.opacity = topOpacity;
+  // Adjust fade-in start and range for .bottom-div
+  const fadeStart = topDivHeight * 0.5;   // Start fade-in earlier
+  const fadeRange = topDivHeight * 0.5;   // Shorter fade-in range
+  // Calculate opacity and transform for .bottom-div
+  const bottomOpacity = Math.min((scrollY - fadeStart) / fadeRange, 1);
+  bottomDiv.style.cssText = `opacity: ${bottomOpacity}; transform: translateY(${(1 - bottomOpacity) * 100}%);`;
 });
