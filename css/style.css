@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css');
+
 body {
   margin: 0;
   animation: blurryReveal .3s ease-in-out forwards;
@@ -468,7 +471,8 @@ img.logo:active {
 
 img.charbg {
   width: 100%;
-  border-radius: 15px
+  border-radius: 5px;
+  border: 2px solid #222222;
 }
 
 ul.combos {
@@ -543,9 +547,7 @@ a.back:hover {
 
 .nav-guide button {
   background: #f8f8f8;
-  font-size: 15px;
   color: #919191;
-  /* font-weight: bold; */
   appearance: none;
   -webkit-appearance: none;
   cursor: pointer;
@@ -1404,7 +1406,7 @@ main {
 
 .card {
   padding: 1rem;
-  background-color: #efeded66;
+  background-color: transparent;
 }
 
 
@@ -1433,7 +1435,7 @@ li.carousel-item {
   scroll-snap-align: start;
   border: 1px solid #bac6d3;
   border-radius: 8px;
-  background-color: #efeded66;
+  background-color: transparent;
 }
 
 body.dark-mode .card, body.dark-mode .carousel-item {
@@ -1521,7 +1523,7 @@ section.carousel {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  color: black;
+  color: #949494;
   padding: 10px;
   cursor: pointer;
   pointer-events: all;

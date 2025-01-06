@@ -10,7 +10,7 @@ Explore the full wiki at [Breakers Wiki](https://breakerswiki.github.io), where 
 ## Project Structure
 
 - **`index.html`**: Main page
-- **`"character_name".html`**: Contains character guide and info in Breakers Revenge.
+- **`/characters`**: Characters guide and info.
 - **`gameplay.html`**: Guide and tips for gameplay mechanics.
 - **`/img`**: Images and media assets.
 - **`/videos`**: Videos assets.
