@@ -1,5 +1,32 @@
+// Remove trailing slash from the current URL if it exists
+if (window.location.pathname.endsWith('/')) {
+  const newUrl = window.location.pathname.slice(0, -1);
+  window.history.replaceState(null, null, newUrl); // Update the URL without reloading the page
+}
+
+
+// top menu - Function to add "current" class to the clicked link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function() {
+      // Remove "current" class from all links
+      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('current'));
+      // Add "current" class to the clicked link
+      this.classList.add('current');
+  });
+});
+// On page load, highlight the current link based on the URL
+window.addEventListener('load', function() {
+  const path = window.location.pathname;
+  const links = document.querySelectorAll('.nav-links a');
+  links.forEach(link => {
+      if (path.includes(link.getAttribute('href'))) {
+          link.classList.add('current');
+      }
+  });
+});
+
+
 // Header - Footer
-// Reusable function to load a file into a specified container
 function loadContent(file, containerId, callback) {
   fetch(file)
     .then(response => response.text())
@@ -9,7 +36,7 @@ function loadContent(file, containerId, callback) {
     })
     .catch(error => console.error(`Error loading ${file}:`, error));
 }
-// Function to handle additional logic for the footer (e.g., updating the year)
+// updating the year
 function updateFooterYear() {
   const currentYear = new Date().getFullYear();
   const footerYearElement = document.getElementById("footer-year");
@@ -21,30 +48,6 @@ function updateFooterYear() {
 document.addEventListener("DOMContentLoaded", () => {
   loadContent('header.html', 'header-container');
   loadContent('footer.html', 'footer-container', updateFooterYear);
-});
-
-
-
-
-// Function to add "current" class to the clicked link
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', function() {
-      // Remove "current" class from all links
-      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('current'));
-      // Add "current" class to the clicked link
-      this.classList.add('current');
-  });
-});
-
-// On page load, highlight the current link based on the URL
-window.addEventListener('load', function() {
-  const path = window.location.pathname;
-  const links = document.querySelectorAll('.nav-links a');
-  links.forEach(link => {
-      if (path.includes(link.getAttribute('href'))) {
-          link.classList.add('current');
-      }
-  });
 });
 
 
@@ -218,17 +221,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// Clean URL by removing the hash, ".html", and "/index" (GitHub Pages only).
-function cleanUrl() {
-  let newURL = window.location.href;
-  // Remove hash, .html, and /index
-  newURL = newURL.replace(window.location.hash, "")
-    .replace(/\.html$/, "")
-    .replace(/\/index(\/)?$/, "");
-  // Update URL if it has changed
-  if (newURL !== window.location.href) {
-    window.history.replaceState({}, document.title, newURL);
-  }
-}
-window.addEventListener("load", cleanUrl);
-window.addEventListener("hashchange", cleanUrl);
+
