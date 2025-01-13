@@ -18,16 +18,7 @@
 <body>
 
 
-  <header>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <div class="logo"><a href="index.html"><img class="logo" src="img/assets/logo.png"></a></div>
-        <li><a href="gameplay.html">Gameplay</a></li>
-        <li><a class="current" href="sho.html">Characters</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div id="header-container"></div>
 
 
 
@@ -36,16 +27,16 @@
       <div class="main-char-content">
         <div class="characters-guide-main">
           <div class="infos">
-            <a href="/characters/sho.html"><img src="img/assets/sho_bg.png"></a>
-            <a href="/characters/pielle.html"><img src="img/assets/pielle_bg.png"></a>
-            <a href="/characters/condor.html"><img src="img/assets/condor_bg.png"></a>
-            <a href="/characters/rila.html"><img src="img/assets/rila_bg.png"></a>
-            <a href="/characters/tia.html"><img src="img/assets/tia_bg.png"></a>
-            <a href="/characters/alsion.html"><img src="img/assets/alsion_bg.png"></a>
-            <a href="/characters/maherl.html"><img src="img/assets/maherl_bg.png"></a>
-            <a href="/characters/dao-long.html" class="active-link"><img class="active" src="img/assets/dao-long_bg.png"></a>
-            <a href="/characters/saizo.html"><img src="img/assets/saizo_bg.png"></a>
-            <a href="/characters/bai-hu.html"><img src="img/assets/bai-hu_bg.png"></a>
+            <a href="/characters/sho"><img src="img/assets/sho_bg.png"></a>
+            <a href="/characters/pielle"><img src="img/assets/pielle_bg.png"></a>
+            <a href="/characters/condor"><img src="img/assets/condor_bg.png"></a>
+            <a href="/characters/rila"><img src="img/assets/rila_bg.png"></a>
+            <a href="/characters/tia"><img src="img/assets/tia_bg.png"></a>
+            <a href="/characters/alsion"><img src="img/assets/alsion_bg.png"></a>
+            <a href="/characters/maherl"><img src="img/assets/maherl_bg.png"></a>
+            <a href="/characters/dao-long" class="active-link"><img class="active" src="img/assets/dao-long_bg.png"></a>
+            <a href="/characters/saizo"><img src="img/assets/saizo_bg.png"></a>
+            <a href="/characters/bai-hu"><img src="img/assets/bai-hu_bg.png"></a>
           </div>
         </div>
 
@@ -80,10 +71,10 @@
                 <td><img class="D"></td>
               </tr>
               <tr>
-                <td><img src="img/assets/Dao_A.png"></td>
-                <td><img src="img/assets/Dao_B.png"></td>
-                <td><img src="img/assets/Dao_C.png"></td>
-                <td><img src="img/assets/Dao_D.png"></td>
+                <td><img src="/characters/dao-long/img/Dao_A.png"></td>
+                <td><img src="/characters/dao-long/img/Dao_B.png"></td>
+                <td><img src="/characters/dao-long/img/Dao_C.png"></td>
+                <td><img src="/characters/dao-long/img/Dao_D.png"></td>
               </tr>
             </tbody>
           </table>
@@ -92,298 +83,183 @@
 
         <div id="movelist">
 
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="commands">Commands</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Riyuu Seishou</td>
-                <td>
-                  <div class="inputs"><img class="A">+<img
-                      class="C"></div>
-                </td>
-              </tr>
-              <tr>
-                <td>Senpuure Kyaku</td>
-                <td>
-                  <div class="inputs"><img class="B">+<img
-                      class="D"></div>
-                </td>
-              </tr>
-              <tr>
-                <td>Shoutenchuu</td>
-                <td>
-                  <div class="inputs"><img class="C">+<img
-                      class="D"></div>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th colspan="2" class="specials">Specials</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Kouryuu Ga</td>
-                <td>
-                  <div class="inputs"><img class="ChargeBack_Forward">+<img
-                      class="Punch"></div>
-                </td>
-              </tr>
-              <tr>
-                <td>Senkyuu Tai</td>
-                <td>
-                  <div class="inputs"><img class="ChargeDown_Up">+<img
-                      class="Kick"></div>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th colspan="2" class="supers">Supers</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Houshin Renpa</td>
-                <td>
-                  <div class="inputs"><img class="ChargeBack_Forward"><img
-                      class="Left_Right">+<img class="Punch"></div>
-                </td>
-              </tr>
-              <tr>
-                <td>Shin Kyoku Ranbu</td>
-                <td>
-                  <div class="inputs"><img class="ChargeBack_Forward"><img
-                    class="Left_Right">+<img class="Kick"></div>
-                </td>
-              </tr>
-              <tr>
-                <td>Renkyuu Tai</td>
-                <td>
-                  <div class="inputs"><img class="ChargeDownBack"><img
-                      class="Delta">+<img class="Kick">.<img
-                      class="Tap"><img class="Kick"></div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div id="movelist">
+
+            <div class="command-list">
+              <h2 class="commands">Commands</h2>
+              <div class="move">
+                <span>Riyuu Seishou</span>
+                <span><img class="A">+<img class="C"></span>
+              </div>
+              <div class="move">
+                <span>Senpuure Kyaku</span>
+                <span><img class="B">+<img class="D"></span>
+              </div>
+              <div class="move">
+                <span>Shoutenchuu</span>
+                <span><img class="C">+<img class="D"></span>
+              </div>
+              <h2 class="specials">Specials</h2>
+              <div class="move">
+                <span>Kouryuu Ga</span>
+                <span><img class="ChargeBack_Forward">+<img class="Punch"></span>
+              </div>
+              <div class="move">
+                <span>Senkyuu Tai</span>
+                <span><img class="ChargeDown_Up">+<img class="Kick"></span>
+              </div>
+              <h2 class="supers">Supers</h2>
+              <div class="move">
+                <span>Houshin Renpa</span>
+                <span><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Punch"></span>
+              </div>
+              <div class="move">
+                <span>Shin Kyoku Ranbu</span>
+                <span><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Kick"></span>
+              </div>
+              <div class="move">
+                <span>Renkyuu Tai</span>
+                <span><img class="ChargeDownBack"><img
+                  class="Delta">+<img class="Kick">.<img
+                  class="Tap"><img class="Kick">
+                </span>
+              </div>
+      
+            </div>
+      
+            <input type="checkbox" id="toggle"><br>
+            <label class="properties" for="toggle">More infos</label>
+      
+            <div class="moveproperties">  
+            <div class="command-list">
+              <h2 class="normals">Normals</h2>
+              <div class="move">
+                <span>far <img class="A"></span>
+                <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+              </div>
+              <div class="move">
+                <span>close <img class="A"></span>
+                <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+              </div>
+              <div class="move">
+                <span>down <img class="A"></span>
+                <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+              </div>
+              <div class="move">
+                <span>up <img class="A"></span>
+                <span><inline class="high"></span>
+              </div>
+              <div class="move">
+                <span>ub/uf <img class="A"></span>
+                <span><inline class="high"></span>
+              </div>
+              <div class="move">
+                <span>far/close <img class="B"></span>
+                <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+              </div>
+              <div class="move">
+                <span>down <img class="B"></span>
+                <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
+              </div>
+              <div class="move">
+                <span>up <img class="B"></span>
+                <span><inline class="high"></span>
+              </div>
+              <div class="move">
+                <span>ub/uf <img class="B"></span>
+                <span><inline class="high"></span>
+              </div>
+              <div class="move">
+                <span>far <img class="C"></span>
+                <span><inline class="mid"></span>
+              </div>
+              <div class="move">
+                <span>close <img class="C"></span>
+                <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+              </div>
+              <div class="move">
+                <span>down <img class="C"></span>
+                <span><inline class="mid"><inline class="special-cancel"></span>
+              </div>
+              <div class="move">
+                <span>up <img class="C"></span>
+                <span><inline class="high"></span>
+              </div>
+              <div class="move">
+                <span>ub/uf <img class="C"></span>
+                <span><inline class="high"></span>
+              </div>
+              <div class="move">
+                <span>far <img class="D"></span>
+                <span><inline class="mid"></span>
+              </div>
+              <div class="move">
+                <span>close <img class="D"></span>
+                <span><inline class="mid"><inline class="special-cancel"></span>
+              </div>
+              <div class="move">
+                <span>down <img class="D"></span>
+                <span><inline class="low"><inline class="knockdown"><inline class="super-cancel"></span>
+              </div>
+              <div class="move">
+                <span>up <img class="D"></span>
+                <span><inline class="high"></span>
+              </div>
+              <div class="move">
+                <span>ub/uf <img class="D"></span>
+                <span><inline class="high"></span>
+              </div>
+              <h2 class="commands">Commands</h2>
+              <div class="move">
+                <span><img class="A">+<img class="C"></span>
+                <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+              </div>
+              <div class="move">
+                <span><img class="B">+<img class="D"></span>
+                <span><inline class="mid"></span>
+              </div>
+              <div class="move">
+                <span><img class="C">+<img class="D"></span>
+                <span><inline class="high"></span>
+              </div>
+              <h2 class="specials">Specials</h2>
+              <div class="move">
+                <span><img class="ChargeBack_Forward">+<img class="Punch"></span>
+                <span><inline class="mid"></span>
+              </div>
+              <div class="move">
+                <span><img class="ChargeDown_Up">+<img class="Kick"></span>
+                <span><inline class="mid"><inline class="inv-startup"><inline class="knockdown"></span>
+              </div>
+              <h2 class="supers">Supers</h2>
+              <div class="move">
+                <span><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Punch"></span>
+                <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
+              </div>
+              <div class="move">
+                <span><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Kick"></span>
+                <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
+              </div>
+              <div class="move">
+                <span><img class="ChargeDownBack"><img
+                  class="Delta">+<img class="Kick">.<img
+                  class="Tap"><img class="Kick">
+                </span>
+                <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
+              </div>
+      
+              
+            </div>
+            </div>
+      
+          </div>
 
 
-
-
-
-
-          <h1 id="properties">Move Properties</h1>
-            <table class="properties">
-                <thead>
-                    <tr>
-                        <th class="normals">Normals</th>
-                        <th class="data">Guard</th>
-                        <th class="data">Properties</th>
-                    </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                      <td>far <img class="A"></td>
-                      <td>Mid</td>
-                      <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-                  </tr>
-                  <tr>
-                    <td>close <img class="A"></td>
-                    <td>Mid</td>
-                    <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-                </tr>
-                  <tr>
-                      <td>down <img class="A"></td>
-                      <td>Mid</td>
-                      <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-                  </tr>
-                  <tr>
-                      <td>up <img class="A"></td>
-                      <td>High</td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td>ub/uf <img class="A"></td>
-                      <td>High</td>
-                      <td></td>
-                  </tr>
-              </tbody>
-              <tbody>
-                  <tr>
-                      <td>far <img class="B"></td>
-                      <td>Mid</td>
-                      <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-                  </tr>
-                  <tr>
-                    <td>close <img class="B"></td>
-                    <td>Mid</td>
-                    
-                    
-                    <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-                </tr>
-                  <tr>
-                      <td>down <img class="B"></td>
-                      <td>Low</td>
-                      
-                      
-                      <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-                  </tr>
-                  <tr>
-                      <td>up <img class="B"></td>
-                      <td>High</td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td>ub/uf <img class="B"></td>
-                      <td>High</td>
-                      <td></td>
-                  </tr>
-              </tbody>
-              <tbody>
-                  <tr>
-                      <td>far <img class="C"></td>
-                      <td>Mid</td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                    <td>close <img class="C"></td>
-                    <td>Mid</td>
-                    <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-                </tr>
-                  <tr>
-                      <td>down <img class="C"></td>
-                      <td>Mid</td>
-                      <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-                  </tr>
-                  <tr>
-                      <td>up <img class="C"></td>
-                      <td>High</td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td>ub/uf <img class="C"></td>
-                      <td>High</td>
-                      <td></td>
-                  </tr>
-              </tbody>
-              <tbody>
-                  <tr>
-                      <td>far <img class="D"></td>
-                      <td>Mid</td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                    <td>close <img class="D"></td>
-                    <td>Mid</td>
-                    <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-                </tr>
-                  <tr>
-                      <td>down <img class="D"></td>
-                      <td>Low</td>
-                      <td class="split-cell">
-                        <div><span class="special-cancel"></span><span class="super-cancel"></div>
-                        <div><span class="knockdown"></span></div>
-                      </td>
-                  </tr>
-                  <tr>
-                      <td>up <img class="D"></td>
-                      <td>High</td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                      <td>ub/uf <img class="D"></td>
-                      <td>High</td>
-                      <td></td>
-                  </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th class="commands">Commands</th>
-                        <th class="data">Guard</th>
-                        <th class="data">Properties</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img class="A">+<img class="C"></td>
-                        <td>Mid</td>
-                        <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-                    </tr>
-                    <tr>
-                      <td><img class="B">+<img class="D"></td>
-                      <td>Mid</td>
-                      <td></td>
-                  </tr>
-                  <tr>
-                    <td><img class="C">+<img class="D"></td>
-                    <td>High</td>
-                    <td></td>
-                </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th class="specials">Specials</th>
-                        <th class="data">Guard</th>
-                        <th class="data">Properties</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img class="ChargeBack_Forward">+<img class="Punch"></td>
-                        <td>Mid</td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td><img class="ChargeDown_Up">+<img class="Kick"></td>
-                        <td>Mid</td>
-                        <td><span class="knockdown"></span><span class="inv-startup"></span></td>
-                    </tr>
-                </tbody>
-                <thead>
-                    <tr>
-                        <th class="supers">Supers</th>
-                        <th class="data">Guard</th>
-                        <th class="data">Properties</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Punch"></td>
-                        <td>Mid</td>
-                        <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
-                    </tr>
-                    <tr>
-                        <td><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Kick"></td>
-                        <td>Mid</td>
-                        <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
-                    </tr>
-                    <tr>
-                      <td><img class="ChargeDownBack"><img class="Delta">+<img class="Kick">.<img class="Tap"><img class="Kick"></td>
-                      <td>Mid</td>
-                      <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
-                  </tr>
-                </tbody>
-            </table>
 
           </div>
 
         <div id="guide">
 
-            <ol>
-              <a href="#hitconfirm"><li>Hit confirm</li></a>
-              <a href="#antiair"><li>Anti-air</li></a>
-              <a href="#supers"><li>Supers</li></a>
-              <a href="#break"><li>Break</li></a>
-              <a href="#dash"><li>Dash</li></a>
-              <a href="#fuzzy"><li>Fuzzy</li></a>
-              <a href="#optionselect"><li>Throw OS</li></a>
-            </ol>
 
             <h2>Overview</h2>
 
@@ -402,7 +278,7 @@
               For example: 2B > 2Ax2 > A+C > super. Check the combos section for more info.
             </p>
 
-            <img src="videos/Dao-long/dao_long_palm.png">
+            <img src="characters/dao-long/videos/dao_long_palm.png">
 
           <h2 id="antiair">Anti-air</h2>
           <p>
@@ -414,8 +290,8 @@
             Special/Super cancelable and Can be juggled into Super
           </p>
 
-          <video poster="videos/Dao-long/anti-air-juggle.jpg" controls loop muted  playsinline preload="none">
-            <source src="videos/Dao-long/anti-air-juggle.mp4" type="video/mp4">
+          <video poster="characters/dao-long/videos/anti-air-juggle.jpg" controls loop muted  playsinline preload="none">
+            <source src="characters/dao-long/videos/anti-air-juggle.mp4" type="video/mp4">
           </video>
           
 
@@ -427,20 +303,20 @@
 
           <h4>Houshin Renpa</h4>
           <p>
-            <img src="videos/Dao-long/dao_HoushinRenpa.png">
+            <img src="characters/dao-long/videos/dao_HoushinRenpa.png">
             Goes through projectiles, functions as a reliable super confirm combo from A+C
           </p>
 
           
           <h4>Shin Kyoku Ranbu</h4>
           <p>
-            <img src="videos/Dao-long/dao_ShinKyokuRanbu.png">
+            <img src="characters/dao-long/videos/dao_ShinKyokuRanbu.png">
             Acts as an anti-air and is used for air juggles. Also functions as a reliable super confirm combo from A+C
           </p>
 
           <h4>Renkyuu Tai</h4>
           <p>
-            <img src="videos/Dao-long/dao_RenkyuuTai.png">
+            <img src="characters/dao-long/videos/dao_RenkyuuTai.png">
             A vertical anti-air with invulnerable startup; mash the kick buttons for additional hits. 
             Has limited applications for use in combo confirms. it's the least used super.
           </p>
@@ -475,16 +351,16 @@
             j.C > neutral j.B<br>
             instant neutral j.B overhead (does not work on all characters)
           </p>
-          <video poster="videos/Dao-long/fuzzy.jpg" controls loop muted  playsinline preload="none">
-            <source src="videos/Dao-long/fuzzy.mp4" type="video/mp4">
+          <video poster="characters/dao-long/videos/fuzzy.jpg" controls loop muted  playsinline preload="none">
+            <source src="characters/dao-long/videos/fuzzy.mp4" type="video/mp4">
           </video>
 
 
           <h2 id="optionselect">Throw Option select</h2>
           <p>Coupling Dash Guard with Back Throw (close back C) makes for an aggressive throw/anti-air option select.</p>
           <p>useful for dealing with opponents who are trying to escape your pressure by jumping</p>
-          <video poster="videos/Dao-long/throwOS.jpg" controls loop muted  playsinline preload="none">
-            <source src="videos/Dao-long/throwOS.mp4" type="video/mp4">
+          <video poster="characters/dao-long/videos/throwOS.jpg" controls loop muted  playsinline preload="none">
+            <source src="characters/dao-long/videos/throwOS.mp4" type="video/mp4">
           </video>
 
 
@@ -493,19 +369,12 @@
 
         <div id="combos">
 
-       
-          <ol>
-            <a href="#meterless_combos"><li>Meterless</li></a>
-            <a href="#metered_combos"><li>Metered</li></a>
-            <a href="#anti-air"><li>Anti-air</li></a>
-            <a href="#air-to-air"><li>Air-to-air</li></a>
-          </ol>
       
 
 
           <h2 id="meterless_combos">Meterless combos</h2>
-          <video poster="videos/Dao-long/meterless.jpg" controls loop muted  playsinline preload="none">
-            <source src="videos/Dao-long/meterless.mp4" type="video/mp4">
+          <video poster="characters/dao-long/videos/meterless.jpg" controls loop muted  playsinline preload="none">
+            <source src="characters/dao-long/videos/meterless.mp4" type="video/mp4">
           </video>
           <ul class="combos">
             <li>2B, 2A, 2A > A+C > [4]6C</li>
@@ -514,8 +383,8 @@
 
 
           <h2 id="metered_combos">Metered combos</h2>
-          <video poster="videos/Dao-long/meter.jpg" controls loop muted  playsinline preload="none">
-            <source src="videos/Dao-long/meter.mp4" type="video/mp4">
+          <video poster="characters/dao-long/videos/meter.jpg" controls loop muted  playsinline preload="none">
+            <source src="characters/dao-long/videos/meter.mp4" type="video/mp4">
           </video>
           <ul class="combos">
             <li>2B, 2A, 2A > A+C > Super</li>
@@ -525,8 +394,8 @@
           </ul>
 
           <h2 id="Anti-air">Anti-air</h2>
-          <video poster="videos/Dao-long/anti-air-juggle.jpg" controls loop muted  playsinline preload="none">
-            <source src="videos/Dao-long/anti-air-juggle.mp4" type="video/mp4">
+          <video poster="characters/dao-long/videos/anti-air-juggle.jpg" controls loop muted  playsinline preload="none">
+            <source src="characters/dao-long/videos/anti-air-juggle.mp4" type="video/mp4">
           </video>
           <ul class="combos">
             <li>C+D > Super</li>
@@ -538,8 +407,8 @@
 
 
           <h2 id="air-to-air">Air-to-air</h2>
-          <video poster="videos/Dao-long/airtoair.jpg" controls loop muted  playsinline preload="none">
-            <source src="videos/Dao-long/airtoair.mp4" type="video/mp4">
+          <video poster="characters/dao-long/videos/airtoair.jpg" controls loop muted  playsinline preload="none">
+            <source src="characters/dao-long/videos/airtoair.mp4" type="video/mp4">
           </video>
           <ul class="combos">
             <li>All jump normals into Super</li>
@@ -594,8 +463,8 @@
                 causing hesitation in your usual punishment. 
                 In such instances, dao-long's Flashkick ensures a guaranteed punish.
             </p>
-            <video poster="videos/Dao-long/matchups/dao-long_vs_saizo_Yashagami.jpg" controls loop muted  playsinline preload="none">
-              <source src="videos/Dao-long/matchups/dao-long_vs_saizo_Yashagami.mp4" type="video/mp4">
+            <video poster="characters/dao-long/videos/matchups/dao-long_vs_saizo_Yashagami.jpg" controls loop muted  playsinline preload="none">
+              <source src="characters/dao-long/videos/matchups/dao-long_vs_saizo_Yashagami.mp4" type="video/mp4">
             </video>
     
             <p><b>5C</b> <br><span class="punish-on-block"></span>
@@ -716,8 +585,8 @@
             <p><b>Senkyuu Tai</b> <br><span class="punish-on-block"><span class="whiff-punish">
               his invul. reversal anti-air, punish on block with 5C
             </p>
-            <video poster="videos/Dao-long/matchups/dao-long_vs_dao-long_Senkyuutai.jpg" controls loop muted  playsinline preload="none">
-              <source src="videos/Dao-long/matchups/dao-long_vs_dao-long_Senkyuutai.mp4" type="video/mp4">
+            <video poster="characters/dao-long/videos/matchups/dao-long_vs_dao-long_Senkyuutai.jpg" controls loop muted  playsinline preload="none">
+              <source src="characters/dao-long/videos/matchups/dao-long_vs_dao-long_Senkyuutai.mp4" type="video/mp4">
             </video>
             
     
@@ -798,8 +667,8 @@
               Sho might end up within your throw range or leave an opening in the knee animation where you can react with
               [2]8K.
             </p>
-            <video poster="videos/Dao-long/matchups/dao-long_vs_sho_tobihizageri.jpg" controls loop muted  playsinline preload="none">
-              <source src="videos/Dao-long/matchups/dao-long_vs_sho_tobihizageri.mp4" type="video/mp4">
+            <video poster="characters/dao-long/videos/matchups/dao-long_vs_sho_tobihizageri.jpg" controls loop muted  playsinline preload="none">
+              <source src="characters/dao-long/videos/matchups/dao-long_vs_sho_tobihizageri.mp4" type="video/mp4">
             </video>
     
     
@@ -820,8 +689,8 @@
             Ranki Ryuu Geri is tricky as it can be followed by air super (Geki Rekkou Ha).
               However, it's still minus on block. at Super flash, you can react with [2]8B
             </p>
-            <video poster="videos/Dao-long/matchups/dao-long_vs_sho_rankiryuugeri.jpg" controls loop muted  playsinline preload="none">
-              <source src="videos/Dao-long/matchups/dao-long_vs_sho_rankiryuugeri.mp4" type="video/mp4">
+            <video poster="characters/dao-long/videos/matchups/dao-long_vs_sho_rankiryuugeri.jpg" controls loop muted  playsinline preload="none">
+              <source src="characters/dao-long/videos/matchups/dao-long_vs_sho_rankiryuugeri.mp4" type="video/mp4">
             </video>
     
             <p><b>Geki Rekkou Ha</b> <br><span class="safe-on-block"></span><span class="breakable"></span></span>
@@ -831,8 +700,8 @@
             <p><b>2HK</b> <br><span class="punish-on-block"></span>
               Punish on block with super ([4]646K)
             </p>
-            <video poster="videos/Dao-long/matchups/dao-long_vs_sho_2HK.jpg" controls loop muted  playsinline preload="none">
-              <source src="videos/Dao-long/matchups/dao-long_vs_sho_2HK.mp4" type="video/mp4">
+            <video poster="characters/dao-long/videos/matchups/dao-long_vs_sho_2HK.jpg" controls loop muted  playsinline preload="none">
+              <source src="characters/dao-long/videos/matchups/dao-long_vs_sho_2HK.mp4" type="video/mp4">
             </video>
     
           </div>
@@ -892,8 +761,8 @@
               Before attempting a block punish, check her super meter fir5
               Tia can counter with Burning Revolver. A throw is a guaranteed punish if she uses Soul Spike HK.
             </p>
-            <video poster="videos/Dao-long/matchups/dao-long_vs_tia_Soulspike.jpg" controls loop muted  playsinline preload="none">
-              <source src="videos/Dao-long/matchups/dao-long_vs_tia_Soulspike.mp4" type="video/mp4">
+            <video poster="characters/dao-long/videos/matchups/dao-long_vs_tia_Soulspike.jpg" controls loop muted  playsinline preload="none">
+              <source src="characters/dao-long/videos/matchups/dao-long_vs_tia_Soulspike.mp4" type="video/mp4">
             </video>
     
             <p><b>Mirage Spear Kick</b> <br><span class="safe-on-block"></span>

@@ -14,40 +14,25 @@
   <script src="script.js"></script>
 </head>
 
-
 <body>
+
+  <div id="header-container"></div>
   
-
-
-
-  <header>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <div class="logo"><a href="index.html"><img class="logo" src="img/assets/logo.png"></a></div>
-        <li><a href="gameplay.html">Gameplay</a></li>
-        <li><a class="current" href="sho.html">Characters</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
-
-
-
   <section class="main-content">
     <div class="container">
       <div class="main-char-content">
         <div class="characters-guide-main">
           <div class="infos">
-            <a href="/characters/sho.html"><img src="img/assets/sho_bg.png"></a>
-            <a href="/characters/pielle.html"><img src="img/assets/pielle_bg.png"></a>
-            <a href="/characters/condor.html"><img src="img/assets/condor_bg.png"></a>
-            <a href="/characters/rila.html" class="active-link"><img class="active" src="img/assets/rila_bg.png"></a>
-            <a href="/characters/tia.html"><img src="img/assets/tia_bg.png"></a>
-            <a href="/characters/alsion.html"><img src="img/assets/alsion_bg.png"></a>
-            <a href="/characters/maherl.html"><img src="img/assets/maherl_bg.png"></a>
-            <a href="/characters/dao-long.html"><img src="img/assets/dao-long_bg.png"></a>
-            <a href="/characters/saizo.html"><img src="img/assets/saizo_bg.png"></a>
-            <a href="/characters/bai-hu.html"><img src="img/assets/bai-hu_bg.png"></a>
+            <a href="/characters/sho"><img src="img/assets/sho_bg.png"></a>
+            <a href="/characters/pielle"><img src="img/assets/pielle_bg.png"></a>
+            <a href="/characters/condor"><img src="img/assets/condor_bg.png"></a>
+            <a href="/characters/rila" class="active-link"><img class="active" src="img/assets/rila_bg.png"></a>
+            <a href="/characters/tia"><img src="img/assets/tia_bg.png"></a>
+            <a href="/characters/alsion"><img src="img/assets/alsion_bg.png"></a>
+            <a href="/characters/maherl"><img src="img/assets/maherl_bg.png"></a>
+            <a href="/characters/dao-long"><img src="img/assets/dao-long_bg.png"></a>
+            <a href="/characters/saizo"><img src="img/assets/saizo_bg.png"></a>
+            <a href="/characters/bai-hu"><img src="img/assets/bai-hu_bg.png"></a>
           </div>
         </div>
 
@@ -65,13 +50,11 @@
 
 
     <div id="infos">
-      <!-- <h2>History</h2> -->
       <p>
         Rila is a free-spirited Brazilian from the Amazon who enters the Tournament to fight an evil
         spirit endangering her people. Her alter-ego, Virgo Sandra, was raised by a giant snake after being orphaned.
       </p>
 
-      <!-- <h2>Colors</h2> -->
       <table class="colors" style="text-align: center;">
         <tbody>
           <tr>
@@ -81,10 +64,10 @@
             <td><img src="img/inputs/Arcade-Button-DKick.png"></td>
           </tr>
           <tr>
-            <td><img src="img/assets/Rila_A.png"></td>
-            <td><img src="img/assets/Rila_B.png"></td>
-            <td><img src="img/assets/Rila_C.png"></td>
-            <td><img src="img/assets/Rila_D.png"></td>
+            <td><img src="/characters/rila/img/Rila_A.png"></td>
+            <td><img src="/characters/rila/img/Rila_B.png"></td>
+            <td><img src="/characters/rila/img/Rila_C.png"></td>
+            <td><img src="/characters/rila/img/Rila_D.png"></td>
           </tr>
         </tbody>
       </table>
@@ -93,279 +76,168 @@
 
     <div id="movelist">
 
-      <table class="movelist">
-        <thead>
-          <tr>
-            <th colspan="2" class="commands">Commands</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Dynamite Kick</td>
-            <td>
-              <div class="inputs"><img class="Right">+<img class="D"></div>
-            </td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th colspan="2" class="specials">Specials</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Killer Snake</td>
-            <td>
-              <div class="inputs"><img class="ChargeBack"><img class="DownRight">+<img class="Kick"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Spinning Claw</td>
-            <td>
-              <div class="inputs"><img class="Tap"><img class="Punch"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Quick Scratch</td>
-            <td>
-              <div class="inputs"><img class="ChargeBack_Forward">+<img class="Punch"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Wild Saver</td>
-            <td>
-              <div class="inputs"><img class="ChargeDown_Up">+<img class="Kick"></div>
-            </td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th colspan="2" class="supers">Supers</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Shine Beast</td>
-            <td>
-              <div class="inputs"><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Punch"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Bloody Fang</td>
-            <td>
-              <div class="inputs"><img class="ChargeDownBack"><img class="Delta">+<img class="Kick"></div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="command-list">
+        <h2 class="commands">Commands</h2>
+        <div class="move">
+          <span>Dynamite Kick</span>
+          <span><img class="Right">+<img class="D"></span>
+        </div>
+        <h2 class="specials">Specials</h2>
+        <div class="move">
+          <span>Killer Snake</span>
+          <span><img class="ChargeBack"><img class="DownRight">+<img class="Kick"></span>
+        </div>
+        <div class="move">
+          <span>Spinning Claw</span>
+          <span><img class="Tap"><img class="Punch"></span>
+        </div>
+        <div class="move">
+          <span>Quick Scratch</span>
+          <span><img class="ChargeBack_Forward">+<img class="Punch"></span>
+        </div>
+        <div class="move">
+          <span>Wild Saver</span>
+          <span><img class="ChargeDown_Up">+<img class="Kick"></span>
+        </div>
 
+        <h2 class="supers">Supers</h2>
+        <div class="move">
+          <span>Shine Beast</span>
+          <span><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Punch"></span>
+        </div>
+        <div class="move">
+          <span>Bloody Fang</span>
+          <span><img class="ChargeDownBack"><img class="Delta">+<img class="Kick"></span>
+        </div>
 
+      </div>
 
+      <input type="checkbox" id="toggle"><br>
+      <label class="properties" for="toggle">More infos</label>
 
+      <div class="moveproperties">  
+      <div class="command-list">
+        <h2 class="normals">Normals</h2>
+        <div class="move">
+          <span>far <img class="A"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>close <img class="A"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>down <img class="A"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>up <img class="A"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>ub/uf <img class="A"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>far <img class="B"></span>
+          <span><inline class="mid"><inline class="special-cancel"></span>
+        </div>
+        <div class="move">
+          <span>close <img class="B"></span>
+          <span><inline class="mid"><inline class="special-cancel"></span>
+        </div>
+        <div class="move">
+          <span>down <img class="B"></span>
+          <span><inline class="low"><inline class="special-cancel"></span>
+        </div>
+        <div class="move">
+          <span>up <img class="B"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>ub/uf <img class="B"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>far <img class="C"></span>
+          <span><inline class="mid"></span>
+        </div>
+        <div class="move">
+          <span>close <img class="C"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>down <img class="C"></span>
+          <span><inline class="mid"></span>
+        </div>
+        <div class="move">
+          <span>up <img class="C"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>ub/uf <img class="C"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>far <img class="D"></span>
+          <span><inline class="mid"></span>
+        </div>
+        <div class="move">
+          <span>close <img class="D"></span>
+          <span><inline class="mid"></span>
+        </div>
+        <div class="move">
+          <span>down <img class="D"></span>
+          <span><inline class="low"><inline class="knockdown"></span>
+        </div>
+        <div class="move">
+          <span>up <img class="D"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>ub/uf <img class="D"></span>
+          <span><inline class="high"></span>
+        </div>
+        <h2 class="commands">Commands</h2>
+        <div class="move">
+          <span><img class="Right">+<img class="D"></span>
+          <span><inline class="mid"></span>
+        </div>
+        <h2 class="specials">Specials</h2>
+        <div class="move">
+          <span><img class="ChargeBack"><img class="DownRight">+<img class="Kick"></span>
+          <span><inline class="mid"><inline class="launcher"><small>(<img class="D"> only)</small></span>
+        </div>
+        <div class="move">
+          <span><img class="Tap"><img class="Punch"></span>
+          <span><inline class="mid"><inline class="knockdown"></span>
+        </div>
+        <div class="move">
+          <span><img class="ChargeBack_Forward">+<img class="Punch"></span>
+          <span><inline class="mid"><inline class="knockdown"><small>(<img class="C"> only)</small></span>
+        </div>
+        <div class="move">
+          <span><img class="ChargeDown_Up">+<img class="Kick"></span>
+          <span><inline class="mid"><inline class="knockdown"></span>
+        </div>
+        <h2 class="supers">Supers</h2>
+        <div class="move">
+          <span><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Punch"></span>
+          <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
+        </div>
+        <div class="move">
+          <span><img class="ChargeDownBack"><img class="Delta">+<img class="Kick"></span>
+          <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
+        </div>
 
-      <h1 id="properties">Move Properties</h1>
-      <table class="properties">
-        <thead>
-          <tr>
-            <th class="normals">Normals</th>
-            <th class="data">Guard</th>
-            <th class="data">Properties</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>far <img class="A"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>close <img class="A"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>down <img class="A"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>up <img class="A"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ub/uf <img class="A"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>far <img class="B"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>close <img class="B"></td>
-            <td>Mid</td>
-
-
-            <td><span class="special-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>down <img class="B"></td>
-            <td>Low</td>
-
-
-            <td><span class="special-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>up <img class="B"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ub/uf <img class="B"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>far <img class="C"></td>
-            <td>Mid</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>close <img class="C"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>down <img class="C"></td>
-            <td>Mid</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>up <img class="C"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ub/uf <img class="C"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>far <img class="D"></td>
-            <td>Mid</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>close <img class="D"></td>
-            <td>Mid</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>down <img class="D"></td>
-            <td>Low</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>up <img class="D"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ub/uf <img class="D"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th class="commands">Commands</th>
-            <th class="data">Guard</th>
-            <th class="data">Properties</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img class="Right">+<img class="D"></td>
-            <td>Mid</td>
-            <td><span class="launcher"> Corner only</span></td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th class="specials">Specials</th>
-            <th class="data">Guard</th>
-            <th class="data">Properties</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img class="ChargeBack"><img class="DownRight">+<img class="Kick"></td>
-            <td>Mid</td>
-            <td class="split-cell">
-              <div><span class="knockdown"></span><span class="launcher"></div>
-              <div><span>Launcher for Super Bloody fang</span></div>
-              <div><span>D. version only</span></div>
-            </td>
-          </tr>
-          <tr>
-            <td><img class="Tap"><img class="Punch"></td>
-            <td>Mid</td>
-            <td class="split-cell">
-              <div><span class="knockdown"></span><span class="launcher"></div>
-              <div><span>Launcher for Super Bloody fang</span></div>
-            </td>
-          </tr>
-          <tr>
-            <td><img class="ChargeBack_Forward">+<img class="Punch"></td>
-            <td>Mid</td>
-            <td><span class="knockdown"> C. version only</span></td>
-          </tr>
-          <tr>
-            <td><img class="ChargeDown_Up">+<img class="Kick"></td>
-            <td>Mid</td>
-            <td><span class="knockdown"></span><span class="inv-startup"></span></td>
-          </tr>
-
-        </tbody>
-        <thead>
-          <tr>
-            <th class="supers">Supers</th>
-            <th class="data">Guard</th>
-            <th class="data">Properties</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Punch"></td>
-            <td>Mid</td>
-            <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
-          </tr>
-          <tr>
-            <td><img class="ChargeDownBack"><img class="Delta">+<img class="Kick"></td>
-            <td>Mid</td>
-            <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
-          </tr>
-        </tbody>
-      </table>
+        
+      </div>
+      </div>
 
     </div>
 
     <div id="guide">
 
-      <ol>
-        <a href="#neutral"><li>Neutral</li></a>
-        <a href="#anti-air"><li>Anti-air</li></a>
-        <a href="#supers"><li>Super usage</li></a>
-        <a href="#chip"><li>Chip damage</li></a>
-      </ol>
 
       <h2>Overview</h2>
 
@@ -384,7 +256,7 @@
 
       <h4>2C</h4>
       <p>
-        <img src="videos/Rila/rila_crHP.png">
+        <img src="characters/rila/videos/rila_crHP.png">
         This move is really frustrating for opponents. It’s hard to punish and safe on block, making it great for
         shutting down approaches.
         Use it smartly, as it has few recovery frames, works best from a distance, and is effective as anti-air.
@@ -393,14 +265,14 @@
 
       <h4>Neutral jC</h4>
       <p>
-        <img src="videos/Rila/rila_jHP.png">
+        <img src="characters/rila/videos/rila_jHP.png">
         This can beat most normals and some anti-air specials
         when they're out of their invincibility frames.
       </p>
 
       <h4>Quick scratch <img class="ChargeBack_Forward">+<img class="A"></h4>
       <p>
-        <img src="https://github.com/breakerswiki/assets/blob/main/videos/Rila/rila_quickscratch_LP.png?raw=true">
+        <img src="/characters/rila/videos/rila_quickscratch_LP.png">
         Its speed can easily catch your opponent off guard, making it an unexpected and effective move
       </p>
       <p>
@@ -409,18 +281,18 @@
 
       <h4>Quick scratch <img class="ChargeBack_Forward">+<img class="C"></h4>
       <p>
-        <video poster="videos/Rila/anti-air.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Rila/anti-air.mp4" type="video/mp4">
+        <video poster="/characters/rila/videos/anti-air.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/rila/videos/anti-air.mp4" type="video/mp4">
         </video>
         It can be used as an anti-air and combo into super Bloody Fang, dealing much more damage than the LP version but
-        is always unsafe.
+        is unsafe.
       </p>
 
 
       <h4>Killer Snake <img class="ChargeBack"><img class="DownRight">+<img class="D"></h4>
       <p>
-        <video poster="videos/Rila/matchups/rila_vs_sho_rekkouha.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Rila/matchups/rila_vs_sho_rekkouha.mp4" type="video/mp4">
+        <video poster="characters/rila/videos/matchups/rila_vs_sho_rekkouha.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/rila/videos/matchups/rila_vs_sho_rekkouha.mp4" type="video/mp4">
         </video>
         Can be followed by Bloody Fang Super and is used to punish projectiles at mid and close range
       </p>
@@ -433,7 +305,7 @@
       <h2 id="anti-air">Anti-air</h2>
       <h4>Wild Saver <img class="ChargeDown_Up">+<img class="Kick"></h4>
       <p>
-        <img src="videos/Rila/rila_WildSaver.png">
+        <img src="characters/rila/videos/rila_WildSaver.png">
         Quick anti-air move; the Heavy version has longer recovery.
         This move launches diagonally upward but can be ineffective if used too early at close range,
         as cross-up jumps may make it whiff. In that case, use 5D.
@@ -441,21 +313,21 @@
 
       <h4>Close 5C</h4>
       <p>
-        <img src="videos/Rila/rila_close5C.png">
+        <img src="characters/rila/videos/rila_close5C.png">
         Close range anti-air.
       </p>
 
       <h4>Close 5D</h4>
       <p>
-        <img src="videos/Rila/rila_close5D.png">
+        <img src="characters/rila/videos/rila_close5D.png">
         Close 5D covers more range than close 5C.
         Use it at close range to counter ambiguous jump-in/cross-ups
       </p>
 
       <h4>5A</h4>
       <p>
-        <video poster="videos/Rila/anti-air.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Rila/anti-air.mp4" type="video/mp4">
+        <video poster="characters/rila/videos/anti-air.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/rila/videos/anti-air.mp4" type="video/mp4">
         </video>
         Convert 5A using Quick Charge C, and then you can follow up with the Bloody Fang Super if you have meter.
       </p>
@@ -463,13 +335,13 @@
       <h2 id="supers">Super usage</h2>
       <h4>Bloody Fang</h4>
       <p>
-        <img src="videos/Rila/rila_BloodyFang.png">
+        <img src="characters/rila/videos/rila_BloodyFang.png">
         Use it to punish projectiles and extend combos.
       </p>
 
       <h4>Shine beast</h4>
       <p>
-        <img src="videos/Rila/rila_ShineBeast.png">
+        <img src="characters/rila/videos/rila_ShineBeast.png">
         has few practical applications, but it can still be used as a
         reversal due to its invincible startup.
       </p>
@@ -480,8 +352,8 @@
         Spinning Claw deals the most chip damage, but it's difficult to land safely.
         Opt for Killer Snake D or 2A > Quick Scratch C instead.
       </p>
-      <video poster="videos/Rila/chipkill.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Rila/chipkill.mp4" type="video/mp4">
+      <video poster="characters/rila/videos/chipkill.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/rila/videos/chipkill.mp4" type="video/mp4">
       </video>
 
 
@@ -491,16 +363,12 @@
 
     <div id="combos">
 
-      <ol>
-        <a href="#meterless_combos"><li>Meterless</li></a>
-        <a href="#metered_combos"><li>Metered</li></a>
-        <a href="#antiair"><li>Anti-air</li></a>
-      </ol>
+
 
 
       <h2 id="meterless_combos">Meterless combos</h2>
-      <video poster="videos/Rila/meterless.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Rila/meterless.mp4" type="video/mp4">
+      <video poster="characters/rila/videos/meterless.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/rila/videos/meterless.mp4" type="video/mp4">
       </video>
       <ul class="combos">
         <li>2B > 5A > [4].6C</li>
@@ -516,8 +384,8 @@
       </ul>
 
       <h2 id="metered_combos">Metered combos</h2>
-      <video poster="videos/Rila/metercombo.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Rila/metercombo.mp4" type="video/mp4">
+      <video poster="characters/rila/videos/metercombo.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/rila/videos/metercombo.mp4" type="video/mp4">
       </video>
       <ul class="combos">
         <li>[4].3HK > Super Bloody Fang</li>
@@ -527,8 +395,8 @@
       </ul>
 
       <h2 id="antiair">Anti-air</h2>
-      <video poster="videos/Rila/anti-air.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Rila/anti-air.mp4" type="video/mp4">
+      <video poster="characters/rila/videos/anti-air.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/rila/videos/anti-air.mp4" type="video/mp4">
       </video>
       <ul class="combos">
         <li>5A > [4].6C > Super Bloody Fang</li>
@@ -804,8 +672,8 @@
           Rila's Super Bloody Fang ([1]319K) goes through fireballs at all ranges.
           whiif punish at midrange with Killer Snake HK. you can also punsih false blockstrings like cr.HK > fireball.
         </p>
-        <video poster="videos/Rila/matchups/rila_vs_sho_rekkouha.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Rila/matchups/rila_vs_sho_rekkouha.mp4" type="video/mp4">
+        <video poster="characters/rila/videos/matchups/rila_vs_sho_rekkouha.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/rila/videos/matchups/rila_vs_sho_rekkouha.mp4" type="video/mp4">
         </video>
 
         <p>Ranki Ryuu Geri <br><span class="punish-on-block"></span>

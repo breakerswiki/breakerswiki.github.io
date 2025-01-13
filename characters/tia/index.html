@@ -18,16 +18,7 @@
 <body>
 
 
-  <header>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <div class="logo"><a href="index.html"><img class="logo" src="img/assets/logo.png"></a></div>
-        <li><a href="gameplay.html">Gameplay</a></li>
-        <li><a class="current" href="sho.html">Characters</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div id="header-container"></div>
 
 
   <section class="main-content">
@@ -36,16 +27,16 @@
         
         <div class="characters-guide-main">
           <div class="infos">
-            <a href="/characters/sho.html"><img src="img/assets/sho_bg.png"></a>
-            <a href="/characters/pielle.html"><img src="img/assets/pielle_bg.png"></a>
-            <a href="/characters/condor.html"><img src="img/assets/condor_bg.png"></a>
-            <a href="/characters/rila.html"><img src="img/assets/rila_bg.png"></a>
-            <a href="/characters/tia.html" class="active-link"><img class="active" src="img/assets/tia_bg.png"></a>
-            <a href="/characters/alsion.html"><img src="img/assets/alsion_bg.png"></a>
-            <a href="/characters/maherl.html"><img src="img/assets/maherl_bg.png"></a>
-            <a href="/characters/dao-long.html"><img src="img/assets/dao-long_bg.png"></a>
-            <a href="/characters/saizo.html"><img src="img/assets/saizo_bg.png"></a>
-            <a href="/characters/bai-hu.html"><img src="img/assets/bai-hu_bg.png"></a>
+            <a href="/characters/sho"><img src="img/assets/sho_bg.png"></a>
+            <a href="/characters/pielle"><img src="img/assets/pielle_bg.png"></a>
+            <a href="/characters/condor"><img src="img/assets/condor_bg.png"></a>
+            <a href="/characters/rila"><img src="img/assets/rila_bg.png"></a>
+            <a href="/characters/tia" class="active-link"><img class="active" src="img/assets/tia_bg.png"></a>
+            <a href="/characters/alsion"><img src="img/assets/alsion_bg.png"></a>
+            <a href="/characters/maherl"><img src="img/assets/maherl_bg.png"></a>
+            <a href="/characters/dao-long"><img src="img/assets/dao-long_bg.png"></a>
+            <a href="/characters/saizo"><img src="img/assets/saizo_bg.png"></a>
+            <a href="/characters/bai-hu"><img src="img/assets/bai-hu_bg.png"></a>
           </div>
         </div>
 
@@ -80,10 +71,10 @@
                 <td><img class="D"></td>
               </tr>
               <tr>
-                <td><img src="img/assets/Tia_A.png"></td>
-                <td><img src="img/assets/Tia_B.png"></td>
-                <td><img src="img/assets/Tia_C.png"></td>
-                <td><img src="img/assets/Tia_D.png"></td>
+                <td><img src="/characters/tia/img/Tia_A.png"></td>
+                <td><img src="/characters/tia/img/Tia_B.png"></td>
+                <td><img src="/characters/tia/img/Tia_C.png"></td>
+                <td><img src="/characters/tia/img/Tia_D.png"></td>
               </tr>
             </tbody>
           </table>
@@ -95,337 +86,189 @@
           </div>
 
 
-          <table class="movelist">
-            <thead>
-              <tr>
-                <th colspan="2" class="commands">Commands</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Rush Blow</td>
-                <td>
-                  <div class="inputs"><img class="A">+<img class="C"></div>
-                </td>
-              </tr>
-              <tr>
-                <td>Heel Break</td>
-                <td>
-                  <div class="inputs"><img class="B">+<img class="D"></div>
-                </td>
-              </tr>
-              <tr>
-                <td>Upper</td>
-                <td>
-                  <div class="inputs"><img class="Air"><img class="Up">+<img class="C"> </div>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th colspan="2" class="specials">Specials</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Soul Spike</td>
-                <td>
-                  <div class="inputs">(<img class="Air">)<img class="QCB">+<img class="Kick"></div>
-                </td>
-              </tr>
-              <tr>
-                <td>Mirage Spear Kick</td>
-                <td>
-                  <div class="inputs"><img class="Tap"><img class="Kick"></div>
-                </td>
-              </tr>
-              <tr>
-                <td>Rising Upper</td>
-                <td>
-                  <div class="inputs"><img class="DP">+<img class="Punch"></div>
-                </td>
-              </tr>
-              <tr>
-                <td>Rapid Gale</td>
-                <td>
-                  <div class="inputs"><img class="QCF">+<img class="Punch"></div>
-                </td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th colspan="2" class="supers">Supers</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Rapid Charge</td>
-                <td>
-                  <div class="inputs"><img class="QCF"><img class="QCF">+<img class="Punch"></div>
-                </td>
-              </tr>
-              <tr>
-                <td>Burning Revolver</td>
-                <td>
-                  <div class="inputs">(<img class="Air">)<img class="QCB"><img class="QCB">+<img class="Punch"></div>
-                </td>
-              </tr>
-              <tr>
-                <td>Cutlass Flasher</td>
-                <td>
-                  <div class="inputs"><img class="QCF"><img class="QCF">+<img class="Kick"></div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+
+          <div class="command-list">
+            <h2 class="commands">Commands</h2>
+            <div class="move">
+              <span>Rush Blow</span>
+              <span><img class="A">+<img class="C"></span>
+            </div>
+            <div class="move">
+              <span>Heel Break</span>
+              <span><img class="B">+<img class="D"></span>
+            </div>
+            <div class="move">
+              <span>Upper</span>
+              <span><img class="Air"><img class="Up">+<img class="C"></span>
+            </div>
+    
+            <h2 class="specials">Specials</h2>
+            <div class="move">
+              <span>Soul Spike</span>
+              <span>(<img class="Air">)<img class="QCB">+<img class="Kick"></span>
+            </div>
+            <div class="move">
+              <span>Mirage Spear Kick</span>
+              <span><img class="Tap"><img class="Kick"></span>
+            </div>
+            <div class="move">
+              <span>Rising Upper</span>
+              <span><img class="DP">+<img class="Punch"></span>
+            </div>
+            <div class="move">
+              <span>Rapid Gale</span>
+              <span><img class="QCF">+<img class="Punch"></span>
+            </div>
+    
+            <h2 class="supers">Supers</h2>
+            <div class="move">
+              <span>Rapid Charge</span>
+              <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+            </div>
+            <div class="move">
+              <span>Burning Revolver</span>
+              <span>(<img class="Air">)<img class="QCB"><img class="QCB">+<img class="Punch"></span>
+              </div>
+            <div class="move">
+              <span>Cutlass Flasher</span>
+              <span><img class="QCF"><img class="QCF">+<img class="Kick"></span>
+            </div>
+          </div>
 
 
 
+          <input type="checkbox" id="toggle"><br>
+          <label class="properties" for="toggle">More infos</label>
+    
+          <div class="moveproperties">  
+          <div class="command-list">
+            <h2 class="normals">Normals</h2>
+            <div class="move">
+              <span>far/close <img class="A"></span>
+              <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>down <img class="A"></span>
+              <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>up <img class="A"></span>
+              <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>ub/uf <img class="A"></span>
+              <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>far <img class="B"></span>
+              <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>close <img class="B"></span>
+              <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>down <img class="B"></span>
+              <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>up <img class="B"></span>
+              <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>ub/uf <img class="B"></span>
+              <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>far <img class="C"></span>
+              <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>close <img class="C"></span>
+              <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>down <img class="C"></span>
+              <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>up <img class="C"></span>
+              <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>ub/uf <img class="C"></span>
+              <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>far <img class="D"></span>
+              <span><inline class="mid"></span>
+            </div>
+            <div class="move">
+              <span>close <img class="D"></span>
+              <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>down <img class="D"></span>
+              <span><inline class="low"><inline class="knockdown"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span>up <img class="D"></span>
+              <span><inline class="high"></span>
+            </div>
+            <div class="move">
+              <span>ub/uf <img class="D"></span>
+              <span><inline class="high"></span>
+            </div>
+            <h2 class="commands">Commands</h2>
+            <div class="move">
+              <span><img class="A">+<img class="C"></span>
+              <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"><br>1st hit cancelable</span>
+            </div>
+            <div class="move">
+              <span><img class="B">+<img class="D"></span>
+              <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"><br><inline class="overhead"><br>1st hit cancelable, 2nd overhead</span>
+            </div>
+            <div class="move">
+              <span><img class="Air"><img class="Up">+<img class="C"></span>
+              <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <h2 class="specials">Specials</h2>
+            <div class="move">
+              <span>(<img class="Air">)+<img class="QCB">+<img class="Kick"></span>
+              <span><inline class="mid"><inline class="knockdown"><br><inline class="launcher">(<img class="D"> only)</span>
+            </div>
+            <div class="move">
+              <span><img class="Tap"><img class="Kick"></span>
+              <span><inline class="mid"></span>
+            </div>
+            <div class="move">
+              <span><img class="DP">+<img class="Punch"></span>
+              <span><inline class="mid"><inline class="inv-startup"></span>
+            </div>
+            <div class="move">
+              <span><img class="QCF">+<img class="Punch"></span>
+              <span><inline class="mid"></span>
+            </div>
+            <h2 class="supers">Supers</h2>
+            <div class="move">
+              <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+              <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
+            </div>
+            <div class="move">
+              <span>(<img class="Air">)<img class="QCB"><img class="QCB">+<img class="Punch"></span>
+              <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
+            </div>
+            <div class="move">
+              <span><img class="QCF"><img class="QCF">+<img class="Kick"></span>
+              <span><inline class="mid"><inline class="hard-knockdown"></span>
+            </div>
+
+    
+            
+          </div>
+          </div>
 
 
-          <h1 id="properties">Move Properties</h1>
-          <table class="properties">
-            <thead>
-              <tr>
-                <th class="normals">Normals</th>
-                <th class="data">Guard</th>
-
-
-                <th class="data">Properties</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>far/close <img class="A"></td>
-                <td>Mid</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-              </tr>
-              <tr>
-                <td>down <img class="A"></td>
-                <td>Mid</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-              </tr>
-              <tr>
-                <td>up <img class="A"></td>
-                <td>High</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></td>
-              </tr>
-              <tr>
-                <td>ub/uf <img class="A"></td>
-                <td>High</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>far <img class="B"></td>
-                <td>Mid</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-              </tr>
-              <tr>
-                <td>close <img class="B"></td>
-                <td>Mid</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-              </tr>
-              <tr>
-                <td>down <img class="B"></td>
-                <td>Low</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></td>
-              </tr>
-              <tr>
-                <td>up <img class="B"></td>
-                <td>High</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></td>
-              </tr>
-              <tr>
-                <td>ub/uf <img class="B"></td>
-                <td>High</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>far <img class="C"></td>
-                <td>Mid</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-              </tr>
-              <tr>
-                <td>close <img class="C"></td>
-                <td>Mid</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-              </tr>
-              <tr>
-                <td>down <img class="C"></td>
-                <td>Mid</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-              </tr>
-              <tr>
-                <td>up <img class="C"></td>
-                <td>High</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-              </tr>
-              <tr>
-                <td>ub/uf <img class="C"></td>
-                <td>High</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>far <img class="D"></td>
-                <td>Mid</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>close <img class="D"></td>
-                <td>Mid</td>
-
-
-                <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-              </tr>
-              <tr>
-                <td>down <img class="D"></td>
-                <td>Low</td>
-                <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-              </tr>
-              <tr>
-                <td>up <img class="D"></td>
-                <td>High</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>ub/uf <img class="D"></td>
-                <td>High</td>
-                <td></td>
-              </tr>
-            </tbody>
-            <thead>
-              <tr>
-                <th class="commands">Commands</th>
-                <th class="data">Guard</th>
-                <th class="data">Properties</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><img class="A">+<img class="C"></td>
-                <td>Mid</td>
-                <td class="split-cell">
-                  <div><span class="special-cancel"></span><span class="super-cancel"></div>
-                  <div><span>1st hit is cancelable</span></div>
-                </td>
-              </tr>
-              <tr>
-                <td><img class="B">+<img class="D"></td>
-                <td>High</td>
-                <td class="split-cell">
-                  <div><span class="special-cancel"></span><span class="super-cancel"></div>
-                  <div><span class="overhead"></span></div>
-                  <div><span>1st hit is cancelable, 2nd is overhead</span></div>
-                </td>
-              </tr>
-              <tr>
-                <td><img class="Air"><img class="Up">+<img class="C"></td>
-                <td>High</td>
-                <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-
-              </tr>
-
-            </tbody>
-            <thead>
-              <tr>
-                <th class="specials">Specials</th>
-                <th class="data">Guard</th>
-                <th class="data">Properties</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>(<img class="Air">)<img class="QCB">+<img class="Kick"></td>
-                <td>Mid</td>
-                <td class="split-cell">
-                  <div><span class="launcher"></span><span class="knockdown"></div>
-                  <div>D. version only</span></div>
-                </td>
-              </tr>
-              <tr>
-                <td><img class="Tap"><img class="Kick"></td>
-                <td>Mid</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td><img class="DP">+<img class="Punch"></td>
-                <td>Mid</td>
-                <td><span class="inv-startup"></span></td>
-              </tr>
-              <tr>
-                <td><img class="QCF">+<img class="Punch"></td>
-                <td>Mid</td>
-                <td></td>
-              </tr>
-
-            </tbody>
-            <thead>
-              <tr>
-                <th class="supers">Supers</th>
-                <th class="data">Guard</th>
-
-
-                <th class="data">Properties</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><img class="QCF"><img class="QCF">+<img class="Punch"></td>
-                <td>Mid</td>
-
-
-                <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
-              </tr>
-              <tr>
-                <td>(<img class="Air">)<img class="QCB"><img class="QCB">+<img class="Punch"></td>
-                <td>Mid</td>
-
-
-                <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
-              </tr>
-              <tr>
-                <td><img class="QCF"><img class="QCF">+<img class="Kick"></td>
-                <td>Mid</td>
-
-
-                <td><span class="hard-knockdown"></span></td>
-              </tr>
-            </tbody>
-          </table>
 
 
         </div>
@@ -434,14 +277,6 @@
 
         <div id="guide">
 
-
-          <ol>
-              <a href="#dash"><li>Attack</li></a>
-              <a href="#antiair"><li>Anti-air</li></a>
-              <a href="#super"><li>Super usage</li></a>
-              <a href="#mixups"><li>High/low mixup</li></a>
-              <a href="#fuzzy"><li>Fuzzy</li></a>
-          </ol>
 
           <h2>Overview</h2>
 
@@ -466,7 +301,7 @@
 
           <h4>short dash A</h4>
           <p>
-            <img src="videos/Tia/tia_dash2A.png">
+            <img src="characters/tia/videos/tia_dash2A.png">
             Though not easy to execute, if done correctly, this pressure keeps the opponent blocking, builds your meter,
             and
             pushes them toward the corner.
@@ -474,7 +309,7 @@
 
           <h4>short dash 5C and 5D</h4>
           <p>
-            <img src="videos/Tia/tia_dash5C.png">
+            <img src="characters/tia/videos/tia_dash5C.png">
             Dash far 5D and 5C are safe on block and serve as anti-air. They’re hard to react to, so opponents must use
             preemptive crouching light attacks to counter.
           </p>
@@ -482,8 +317,8 @@
 
           <h4>Rapid charge</h4>
           <p>
-            <video poster="videos/Tia/matchups/tia_vs_condor_tomahawk.jpg" controls loop muted playsinline preload="none">
-              <source src="videos/Tia/matchups/tia_vs_condor_tomahawk.mp4" type="video/mp4">
+            <video poster="characters/tia/videos/matchups/tia_vs_condor_tomahawk.jpg" controls loop muted playsinline preload="none">
+              <source src="characters/tia/videos/matchups/tia_vs_condor_tomahawk.mp4" type="video/mp4">
             </video>
             Her fastest super, it comes out quickly and punishes projectiles and most unsafe moves.
             Easily connects after anti-air normals.
@@ -494,7 +329,7 @@
 
           <h4>623P</h4>
           <p>
-            <img src="videos/Tia/tia_623A.png">
+            <img src="characters/tia/videos/tia_623A.png">
             623A comes fast, letting her pass through projectiles.
             If it hits as an anti-air you can follow up with Super.
             623C hits higher and has more recovery; both have startup invulnerability.
@@ -502,8 +337,8 @@
 
           <h4>far 5C and 5D</h4>
           <p>
-            <video poster="videos/Tia/antiair_combos.jpg" controls loop muted playsinline preload="none">
-              <source src="videos/Tia/antiair_combos.mp4" type="video/mp4">
+            <video poster="characters/tia/videos/antiair_combos.jpg" controls loop muted playsinline preload="none">
+              <source src="characters/tia/videos/antiair_combos.mp4" type="video/mp4">
             </video>
             Dash far 5D and 5C are safe on block and serve as anti-air.
             Confirm 5D with super 236236P and 5C with Soul Spike (214K) for a super juggle.
@@ -511,8 +346,8 @@
 
           <h4>5A</h4>
           <p>
-            <video poster="videos/Tia/matchups/tia_vs_tia_RapidCharge.jpg" controls loop muted playsinline preload="none">
-              <source src="videos/Tia/matchups/tia_vs_tia_RapidCharge.mp4" type="video/mp4">
+            <video poster="characters/tia/videos/matchups/tia_vs_tia_RapidCharge.jpg" controls loop muted playsinline preload="none">
+              <source src="characters/tia/videos/matchups/tia_vs_tia_RapidCharge.mp4" type="video/mp4">
             </video>
             Super/Special cancelable. Use it to hit opponents jumping close to you and counter ambiguous jump-ins and
             cross-ups. 5A anti-air can lead to a juggle combo.
@@ -521,8 +356,8 @@
           <h4>Burning Revolver</h4>
           <p>
             an effective way to punish jumps and cross-up attempts
-            <video poster="videos/Tia/tia_wakeup_burning_revolver.jpg" controls loop muted playsinline preload="none">
-              <source src="videos/Tia/tia_wakeup_burning_revolver.mp4" type="video/mp4">
+            <video poster="characters/tia/videos/tia_wakeup_burning_revolver.jpg" controls loop muted playsinline preload="none">
+              <source src="characters/tia/videos/tia_wakeup_burning_revolver.mp4" type="video/mp4">
             </video>
           </p>
 
@@ -530,7 +365,7 @@
           <h2 id="super">Super usage</h2>
           <h4>Rapid Charge</h4>
           <p>
-            <img src="videos/Tia/tia_RapidCharge.png">
+            <img src="characters/tia/videos/tia_RapidCharge.png">
             Rapid charge super is used as a combo ender and to punish opponent's unsafe moves and projectiles
             effectively
           </p>
@@ -538,14 +373,14 @@
 
           <h4>Cutlass Flasher</h4>
           <p>
-            <img src="videos/Tia/tia_CutlassFlasher.png">
+            <img src="characters/tia/videos/tia_CutlassFlasher.png">
             hit overhead. useful for converting air juggles combos
           </p>
 
 
           <h4>Burning Revolver</h4>
           <p>
-            <img src="videos/Tia/tia_BurningRevolver.png">
+            <img src="characters/tia/videos/tia_BurningRevolver.png">
             Usable in both air and ground, it has a large hitbox, can serve as an anti-air,
             and has startup invulnerability, allowing it to bait reversals and push opponents toward the corner on hit.
           </p>
@@ -557,8 +392,8 @@
           </ul>
 
           <h2 id="fuzzy">Fuzzy</h2>
-          <video poster="videos/Tia/fuzzy.jpg" controls loop muted playsinline preload="none">
-            <source src="videos/Tia/fuzzy.mp4" type="video/mp4">
+          <video poster="characters/tia/videos/fuzzy.jpg" controls loop muted playsinline preload="none">
+            <source src="characters/tia/videos/fuzzy.mp4" type="video/mp4">
           </video>
           <ul class="combos">
             <li>jB > 8C > 214214P</li>
@@ -572,18 +407,11 @@
 
         <div id="combos">
 
-          <ol>
-            <a href="#meterless_combos"><li>Meterless</li></a>
-            <a href="#metered_combos"><li>Metered</li></a>
-            <a href="#anti-air"><li>Anti-air</li></a>
-            <a href="#air-to-air"><li>Air-to-air</li></a>
-            <a href="#breakcombo"><li>Breakable</li></a>
-          </ol>
 
 
           <h2 id="meterless_combos">Meterless combos</h2>
-          <video poster="videos/Tia/meterlesscombo.jpg" controls loop muted playsinline preload="none">
-            <source src="videos/Tia/meterlesscombo.mp4" type="video/mp4">
+          <video poster="characters/tia/videos/meterlesscombo.jpg" controls loop muted playsinline preload="none">
+            <source src="characters/tia/videos/meterlesscombo.mp4" type="video/mp4">
           </video>
           <ul class="combos">
             <li>2B, 2B > A+C > 623C</li>
@@ -595,8 +423,8 @@
 
 
           <h2 id="metered_combos">Metered combos</h2>
-          <video poster="videos/Tia/metercombo.jpg" controls loop muted playsinline preload="none">
-            <source src="videos/Tia/metercombo.mp4" type="video/mp4">
+          <video poster="characters/tia/videos/metercombo.jpg" controls loop muted playsinline preload="none">
+            <source src="characters/tia/videos/metercombo.mp4" type="video/mp4">
           </video>
           <ul class="combos">
             <li>5C > 214D > 214214P</li>
@@ -606,8 +434,8 @@
           </ul>
 
           <h2 id="Anti-air">Anti-air</h2>
-          <video poster="videos/Tia/antiair_combos.jpg" controls loop muted playsinline preload="none">
-            <source src="videos/Tia/antiair_combos.mp4" type="video/mp4">
+          <video poster="characters/tia/videos/antiair_combos.jpg" controls loop muted playsinline preload="none">
+            <source src="characters/tia/videos/antiair_combos.mp4" type="video/mp4">
           </video>
           <ul class="combos">
             <li>5D > 236236P</li>
@@ -618,8 +446,8 @@
           </ul>
 
           <h2 id="air-to-air">Air-to-air</h2>
-          <video poster="videos/Tia/airtoair.jpg" controls loop muted playsinline preload="none">
-            <source src="videos/Tia/airtoair.mp4" type="video/mp4">
+          <video poster="characters/tia/videos/airtoair.jpg" controls loop muted playsinline preload="none">
+            <source src="characters/tia/videos/airtoair.mp4" type="video/mp4">
           </video>
           <ul class="combos">
             <li>jC > air 214D > 236236P</li>
@@ -627,8 +455,8 @@
           </ul>
 
           <h2 id="breakcombo">Breakable combos</h2>
-          <video poster="videos/Tia/breakable_combo.jpg" controls loop muted playsinline preload="none">
-            <source src="videos/Tia/breakable_combo.mp4" type="video/mp4">
+          <video poster="characters/tia/videos/breakable_combo.jpg" controls loop muted playsinline preload="none">
+            <source src="characters/tia/videos/breakable_combo.mp4" type="video/mp4">
           </video>
           <ul class="combos">
             <li>5C ❌ 214D</li>
@@ -673,8 +501,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_saizo_StandC.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_saizo_StandC.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_saizo_StandC.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_saizo_StandC.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -698,8 +526,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_saizo_RasenKyaku.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_saizo_RasenKyaku.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_saizo_RasenKyaku.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_saizo_RasenKyaku.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -723,8 +551,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_saizo_bomb.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_saizo_bomb.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_saizo_bomb.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_saizo_bomb.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -750,8 +578,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_saizo_Yashagami.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_saizo_Yashagami.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_saizo_Yashagami.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_saizo_Yashagami.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -775,8 +603,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_saizo_Engetsuzan.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_saizo_Engetsuzan.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_saizo_Engetsuzan.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_saizo_Engetsuzan.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -809,8 +637,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_pielle_SaberBash.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_pielle_SaberBash.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_pielle_SaberBash.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_pielle_SaberBash.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -837,8 +665,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_pielle_FlyingPeachBomber.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_pielle_FlyingPeachBomber.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_pielle_FlyingPeachBomber.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_pielle_FlyingPeachBomber.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -865,8 +693,8 @@
                       </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_pielle_BonjourShot.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_pielle_BonjourShot.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_pielle_BonjourShot.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_pielle_BonjourShot.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -891,7 +719,7 @@
                       </p>
                   </td>
                   <td style="width: 50%;">
-                    <img src="videos/Pielle/pielle_RobinLiner.png?raw=true">
+                    <img src="/characters/pielle/videos/pielle_RobinLiner.png?raw=true">
                   </td>
                 </tr>
               </tbody>
@@ -918,8 +746,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_pielle_MonsieurCrash.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_pielle_MonsieurCrash.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_pielle_MonsieurCrash.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_pielle_MonsieurCrash.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -945,8 +773,8 @@
                         When you block all 3 hits, Pielle passes behind you. Punish with 2B</p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_pielle_Merci123.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_pielle_Merci123.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_pielle_Merci123.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_pielle_Merci123.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -972,8 +800,8 @@
                       </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_pielle_SuperRose.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_pielle_SuperRose.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_pielle_SuperRose.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_pielle_SuperRose.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -999,8 +827,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_pielle_ThunderCroiser.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_pielle_ThunderCroiser.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_pielle_ThunderCroiser.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_pielle_ThunderCroiser.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1030,7 +858,7 @@
                     <p>It makes her hop forward. She usually uses it to close distance mid-range and on your wake-up from afar.</p>
                   </td>
                   <td style="width: 50%;">
-                    <img src="videos/Rila/rila_DynamiteKick.png?raw=true">
+                    <img src="/characters/rila/videos/rila_DynamiteKick.png?raw=true">
                   </td>
                 </tr>
               </tbody>
@@ -1051,7 +879,7 @@
                       anti-air.</p>
                   </td>
                   <td style="width: 50%;">
-                    <img src="videos/Rila/rila_crouch_C.png?raw=true">
+                    <img src="/characters/rila/videos/rila_crouch_C.png?raw=true">
                   </td>
                 </tr>
               </tbody>
@@ -1090,8 +918,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_rila_killer_snake.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_rila_killer_snake.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_rila_killer_snake.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_rila_killer_snake.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1115,8 +943,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_rila_SpinningClaw.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_rila_SpinningClaw.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_rila_SpinningClaw.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_rila_SpinningClaw.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1142,8 +970,8 @@
                         </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_rila_QuickScratchA.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_rila_QuickScratchA.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_rila_QuickScratchA.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_rila_QuickScratchA.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1164,8 +992,8 @@
                         </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_rila_QuickScratchC.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_rila_QuickScratchC.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_rila_QuickScratchC.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_rila_QuickScratchC.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1189,8 +1017,8 @@
                       It's a fast anti-air. The Heavy version has more recovery</p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_rila_WildSaver.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_rila_WildSaver.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_rila_WildSaver.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_rila_WildSaver.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1216,8 +1044,8 @@
                       </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_rila_ShineBeast.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_rila_ShineBeast.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_rila_ShineBeast.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_rila_ShineBeast.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1241,8 +1069,8 @@
                         </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_rila_BloodyFang.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_rila_BloodyFang.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_rila_BloodyFang.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_rila_BloodyFang.mp4" type="video/mp4">
                     </video>
                   </td>
 
@@ -1274,8 +1102,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_dao_KouryuuGa.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_dao_KouryuuGa.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_dao_KouryuuGa.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_dao_KouryuuGa.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1301,8 +1129,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_dao_SenkyuuTai.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_dao_SenkyuuTai.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_dao_SenkyuuTai.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_dao_SenkyuuTai.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1326,8 +1154,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_dao_RiyuuSeishou.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_dao_RiyuuSeishou.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_dao_RiyuuSeishou.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_dao_RiyuuSeishou.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1350,8 +1178,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_dao_SenpuureKyaku.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_dao_SenpuureKyaku.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_dao_SenpuureKyaku.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_dao_SenpuureKyaku.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1375,8 +1203,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_dao_Shoutenchuu.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_dao_Shoutenchuu.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_dao_Shoutenchuu.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_dao_Shoutenchuu.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1401,8 +1229,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_dao_HoushinRenpa.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_dao_HoushinRenpa.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_dao_HoushinRenpa.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_dao_HoushinRenpa.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1427,8 +1255,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_dao_ShinKyokuRanbu.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_dao_ShinKyokuRanbu.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_dao_ShinKyokuRanbu.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_dao_ShinKyokuRanbu.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1457,8 +1285,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_condor_tomahawk.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_condor_tomahawk.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_condor_tomahawk.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_condor_tomahawk.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1484,8 +1312,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_condor_GrandBuffaloHorn.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_condor_GrandBuffaloHorn.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_condor_GrandBuffaloHorn.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_condor_GrandBuffaloHorn.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1509,8 +1337,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_condor_SkyBridge.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_condor_SkyBridge.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_condor_SkyBridge.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_condor_SkyBridge.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1536,8 +1364,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_condor_AtlasRockBuster.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_condor_AtlasRockBuster.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_condor_AtlasRockBuster.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_condor_AtlasRockBuster.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1561,8 +1389,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_condor_2D.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_condor_2D.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_condor_2D.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_condor_2D.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1594,8 +1422,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_sho_ranki_ryuu_geri.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_sho_ranki_ryuu_geri.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_sho_ranki_ryuu_geri.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_sho_ranki_ryuu_geri.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1620,8 +1448,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_sho_onigawara.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_sho_onigawara.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_sho_onigawara.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_sho_onigawara.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1648,8 +1476,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_sho_Tobihizageri.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_sho_Tobihizageri.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_sho_Tobihizageri.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_sho_Tobihizageri.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1674,8 +1502,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_sho_SashikomoKick.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_sho_SashikomoKick.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_sho_SashikomoKick.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_sho_SashikomoKick.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1703,8 +1531,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_sho_fireball.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_sho_fireball.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_sho_fireball.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_sho_fireball.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1749,8 +1577,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_maherl_super.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_maherl_super.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_maherl_super.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_maherl_super.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1776,8 +1604,8 @@
                       </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_maherl_AbdomenStep.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_maherl_AbdomenStep.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_maherl_AbdomenStep.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_maherl_AbdomenStep.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1802,8 +1630,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_maherl_SlashSword.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_maherl_SlashSword.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_maherl_SlashSword.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_maherl_SlashSword.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1824,8 +1652,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_maherl_PunishSword.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_maherl_PunishSword.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_maherl_PunishSword.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_maherl_PunishSword.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1849,8 +1677,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_maherl_BalloonBomb.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_maherl_BalloonBomb.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_maherl_BalloonBomb.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_maherl_BalloonBomb.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1874,8 +1702,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_maherl_CadabraBomber.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_maherl_CadabraBomber.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_maherl_CadabraBomber.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_maherl_CadabraBomber.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1906,8 +1734,8 @@
                       </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_tia_SoulSpike.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_tia_SoulSpike.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_tia_SoulSpike.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_tia_SoulSpike.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1929,8 +1757,8 @@
                     <p>punish with 236236P</p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_tia_MirageSpearKick.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_tia_MirageSpearKick.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_tia_MirageSpearKick.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_tia_MirageSpearKick.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -1954,7 +1782,7 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <img src="videos/Tia/tia_RisingUpper.png?raw=true">
+                    <img src="characters/tia/videos/tia_RisingUpper.png?raw=true">
                   </td>
                 </tr>
               </tbody>
@@ -1977,8 +1805,8 @@
                           </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_tia_RapidGale.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_tia_RapidGale.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_tia_RapidGale.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_tia_RapidGale.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -2001,8 +1829,8 @@
                         </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_tia_HeelBreak.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_tia_HeelBreak.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_tia_HeelBreak.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_tia_HeelBreak.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -2026,8 +1854,8 @@
                       </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_tia_RapidCharge.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_tia_RapidCharge.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_tia_RapidCharge.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_tia_RapidCharge.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -2050,8 +1878,8 @@
                       </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_tia_BurningRevolver.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_tia_BurningRevolver.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_tia_BurningRevolver.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_tia_BurningRevolver.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -2079,8 +1907,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_alsion_HorusShade.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_alsion_HorusShade.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_alsion_HorusShade.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_alsion_HorusShade.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -2102,8 +1930,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_alsion_DeathShred.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_alsion_DeathShred.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_alsion_DeathShred.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_alsion_DeathShred.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -2127,7 +1955,7 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <img src="videos/Alsion/alsion_PoisonFog.png?raw=true">
+                    <img src="/characters/alsion/videos/alsion_PoisonFog.png?raw=true">
                   </td>
                 </tr>
               </tbody>
@@ -2152,8 +1980,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_alsion_DeadlyClaw.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_alsion_DeadlyClaw.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_alsion_DeadlyClaw.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_alsion_DeadlyClaw.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -2178,8 +2006,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_alsion_DashKnee.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_alsion_DashKnee.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_alsion_DashKnee.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_alsion_DashKnee.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>
@@ -2206,8 +2034,8 @@
                     </p>
                   </td>
                   <td style="width: 50%;">
-                    <video poster="videos/Tia/matchups/tia_vs_alsion_PharaohDance.jpg" controls loop muted playsinline preload="none">
-                      <source src="videos/Tia/matchups/tia_vs_alsion_PharaohDance.mp4" type="video/mp4">
+                    <video poster="characters/tia/videos/matchups/tia_vs_alsion_PharaohDance.jpg" controls loop muted playsinline preload="none">
+                      <source src="characters/tia/videos/matchups/tia_vs_alsion_PharaohDance.mp4" type="video/mp4">
                     </video>
                   </td>
                 </tr>

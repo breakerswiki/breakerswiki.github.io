@@ -1,89 +1,52 @@
-// Carousel arrow navigation (gameplay)
-document.addEventListener("DOMContentLoaded", () => {
-  const prevButton = document.querySelector('.prev');
-  const nextButton = document.querySelector('.next');
-  const items = document.querySelectorAll('.carousel-item');
-  let currentIndex = 0;
-
-  const scrollToItem = (index) => {
-    if (!items.length) return;
-
-    items.forEach(item => item.classList.remove('highlighted'));
-    items[index].classList.add('highlighted');
-    items[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-  };
-
-  const changeIndex = (increment) => {
-    if (!items.length) return;
-    currentIndex = (currentIndex + increment + items.length) % items.length;
-    scrollToItem(currentIndex);
-  };
-
-  prevButton?.addEventListener('click', () => changeIndex(-1));
-  nextButton?.addEventListener('click', () => changeIndex(1));
-
-  scrollToItem(currentIndex);
-});
-
-
-
-// Wiki - Function to toggle the visibility of the text and change the active year
-function toggleText(index) {
-  const texts = document.querySelectorAll('.text');
-  const years = document.querySelectorAll('.year');
-
-  if (texts.length === 0 || years.length === 0) return;
-
-  texts.forEach(text => {
-    text.classList.remove('visible');
-  });
-
-  years.forEach(year => {
-    year.classList.remove('active');
-  });
-
-  const text = document.getElementById(`text-${index}`);
-  if (text) {
-    text.classList.add('visible');
-  }
-
-  const year = years[index];
-  if (year) {
-    year.classList.add('active');
-  }
-}
-
-// By default, show the first text and mark the first year as active
-document.addEventListener('DOMContentLoaded', function () {
-  const texts = document.querySelectorAll('.text');
-  const years = document.querySelectorAll('.year');
-
-  // Ensure there are both texts and years before modifying
-  if (texts.length > 0 && years.length > 0) {
-    texts[0].classList.add('visible');
-    years[0].classList.add('active');
-  }
-});
-
-
-
-
-
-// Load the footer dynamically and update the year.
-function loadFooter() {
-  fetch('footer.html')
+// Header - Footer
+// Reusable function to load a file into a specified container
+function loadContent(file, containerId, callback) {
+  fetch(file)
     .then(response => response.text())
     .then(data => {
-      document.getElementById('footer-container').innerHTML = data;
-      const currentYear = new Date().getFullYear();
-      const footerYearElement = document.getElementById("footer-year");
-      if (footerYearElement) {
-        footerYearElement.textContent = currentYear;
-      }
+      document.getElementById(containerId).innerHTML = data;
+      if (callback) callback(); // Optional callback for additional operations
     })
-    .catch(error => console.error('Error loading footer:', error));
+    .catch(error => console.error(`Error loading ${file}:`, error));
 }
-document.addEventListener("DOMContentLoaded", loadFooter);
+// Function to handle additional logic for the footer (e.g., updating the year)
+function updateFooterYear() {
+  const currentYear = new Date().getFullYear();
+  const footerYearElement = document.getElementById("footer-year");
+  if (footerYearElement) {
+    footerYearElement.textContent = currentYear;
+  }
+}
+// Load header and footer dynamically when DOM is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  loadContent('header.html', 'header-container');
+  loadContent('footer.html', 'footer-container', updateFooterYear);
+});
+
+
+
+
+// Function to add "current" class to the clicked link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function() {
+      // Remove "current" class from all links
+      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('current'));
+      // Add "current" class to the clicked link
+      this.classList.add('current');
+  });
+});
+
+// On page load, highlight the current link based on the URL
+window.addEventListener('load', function() {
+  const path = window.location.pathname;
+  const links = document.querySelectorAll('.nav-links a');
+  links.forEach(link => {
+      if (path.includes(link.getAttribute('href'))) {
+          link.classList.add('current');
+      }
+  });
+});
+
 
 
 // Set <img> sources for stick/button inputs using html classes
@@ -128,24 +91,66 @@ function setImageSrc() {
 document.addEventListener("DOMContentLoaded", setImageSrc);
 
 
-// Toggle content visibility on character pages.
-function showContent(contentId) {
-  const contentSections = document.querySelectorAll("#infos, #movelist, #guide, #combos, #matchups");
-  contentSections.forEach(section => {
-    section.style.display = "none";
-  });
-  const selectedContent = document.getElementById(contentId);
-  if (selectedContent) {
-    selectedContent.style.display = "block";
+// Gameplay - Carousel arrow navigation
+document.addEventListener("DOMContentLoaded", () => {
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+  const items = [...document.querySelectorAll('.carousel-item')];
+  
+  // Only initialize the carousel if the necessary elements exist
+  if (prev && next && items.length > 0) {
+    let currentIndex = 0;
+
+    const updateCarousel = (index) => {
+      items.forEach(item => item.classList.toggle('highlighted', item === items[index]));
+      items[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    };
+
+    const changeIndex = (step) => {
+      currentIndex = (currentIndex + step + items.length) % items.length;
+      updateCarousel(currentIndex);
+    };
+
+    prev.addEventListener('click', () => changeIndex(-1));
+    next.addEventListener('click', () => changeIndex(1));
+    updateCarousel(currentIndex);
+  }
+});
+
+// Wiki - Toggle the visibility of text and set the active year
+function toggleText(index) {
+  const texts = document.querySelectorAll('.text');
+  const years = document.querySelectorAll('.year');
+
+  if (texts.length && years.length) {
+    texts.forEach(text => text.classList.remove('visible'));
+    years.forEach(year => year.classList.remove('active'));
+
+    texts[index]?.classList.add('visible');
+    years[index]?.classList.add('active');
   }
 }
 
-// Display "Infos" by default and maintain active button color when clicked away.
+// Initialize the default state on page load
+document.addEventListener('DOMContentLoaded', () => toggleText(0));
+
+
+// Toggle content menu visibility on character pages.
+function showContent(contentId) {
+  document.querySelectorAll("#infos, #movelist, #guide, #combos, #matchups").forEach(section => {
+    section.style.display = section.id === contentId ? "block" : "none";
+  });
+}
+
+// Display "Infos" by default and maintain active button color when clicked.
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".color-button");
-  document.getElementById('button1')?.classList.add('active');
-  showContent('infos');
-  // Toggle active state on button click
+  const defaultButton = document.getElementById('button1');
+  if (defaultButton) {
+    defaultButton.classList.add('active');
+    showContent('infos');
+  }
+  
   buttons.forEach(button => {
     button.addEventListener("click", () => {
       document.querySelector(".color-button.active")?.classList.remove("active");
@@ -153,6 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
 // Toggle Content on matchup section
@@ -226,22 +232,3 @@ function cleanUrl() {
 }
 window.addEventListener("load", cleanUrl);
 window.addEventListener("hashchange", cleanUrl);
-
-
-// index.html - display wiki part by scrolling down
-window.addEventListener("scroll", () => {
-  const topDiv = document.querySelector(".top-div");
-  const bottomDiv = document.querySelector(".bottom-div");
-  const scrollY = window.scrollY;
-  // Height of .top-div
-  const topDivHeight = topDiv.offsetHeight;
-  // Fade out .top-div
-  const topOpacity = Math.max(1 - scrollY / topDivHeight, 0);
-  topDiv.style.opacity = topOpacity;
-  // Adjust fade-in start and range for .bottom-div
-  const fadeStart = topDivHeight * 0.5;   // Start fade-in earlier
-  const fadeRange = topDivHeight * 0.5;   // Shorter fade-in range
-  // Calculate opacity and transform for .bottom-div
-  const bottomOpacity = Math.min((scrollY - fadeStart) / fadeRange, 1);
-  bottomDiv.style.cssText = `opacity: ${bottomOpacity}; transform: translateY(${(1 - bottomOpacity) * 100}%);`;
-});

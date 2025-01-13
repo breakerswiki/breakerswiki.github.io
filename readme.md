@@ -11,10 +11,8 @@ Explore the full wiki at [Breakers Wiki](https://breakerswiki.github.io), where 
 
 - **`index.html`**: Main page
 - **`/characters`**: Characters guide and info.
-- **`gameplay.html`**: Guide and tips for gameplay mechanics.
+- **`/gameplay`**: Guide and tips for gameplay mechanics.
 - **`/img`**: Images and media assets.
-- **`/videos`**: Videos assets.
-
 
 ## Contributing
 

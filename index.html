@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <base href="/" />
   <title>Breakers Wiki</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Breakers revenge, core mechanics, character playstyles, and matchup tips" />
@@ -19,22 +20,13 @@
 <body>
 
 
-  <header>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <div class="logo"><a href="index.html"><img class="logo" src="img/assets/logo.png"></a></div>
-        <li><a href="gameplay.html">Gameplay</a></li>
-        <li><a href="/characters/sho.html">Characters</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div id="header-container"></div>
 
 
   <section class="main-content">
 
   <div class="top-div">  
-    <div class="container" style="gap: 0px; margin-bottom: 100px;">
+    <div class="container" style="gap: 0px; margin-bottom: 30px;">
 
       <div class="main" style="display: grid; align-items: center; align-content: center;">
         <div class="title">Welcome to Breakers wiki !</div>
@@ -61,23 +53,22 @@
           <img src="img/assets/egertcab.png" alt="Arcade Cabinet">
           <!-- Video -->
           <video style="border-radius: 10px;" loop muted autoplay playsinline preload="metadata">
-            <source src="videos/breakrev_intro.mp4" type="video/mp4">
+            <source src="media/breakrev_intro.mp4" type="video/mp4">
           </video>
         </div>
 
 
-
-
       </div>
-
-
-
-
-
     </div>
+
   </div>
 
-    <div class="bottom-div">
+
+  </div>
+
+  
+  
+    <div class="bottom-div" id="bottom-div">
       <center>
       <div class="title">Retrospective</div>
       <p style="margin-top: 0;">Breakers series history</p>
@@ -201,6 +192,7 @@
         </div>
       </div>
     </div>
+
 
 
 

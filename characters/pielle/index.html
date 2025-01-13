@@ -18,16 +18,7 @@
 
 
 
-  <header>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <div class="logo"><a href="index.html"><img class="logo" src="img/assets/logo.png"></a></div>
-        <li><a href="gameplay.html">Gameplay</a></li>
-        <li><a class="current" href="sho.html">Characters</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
+  <div id="header-container"></div>
 
 
 
@@ -37,16 +28,16 @@
 
         <div class="characters-guide-main">
           <div class="infos">
-            <a href="/characters/sho.html"><img src="img/assets/sho_bg.png"></a>
-            <a href="/characters/pielle.html" class="active-link"><img class="active" src="img/assets/pielle_bg.png"></a>
-            <a href="/characters/condor.html"><img src="img/assets/condor_bg.png"></a>
-            <a href="/characters/rila.html"><img src="img/assets/rila_bg.png"></a>
-            <a href="/characters/tia.html"><img src="img/assets/tia_bg.png"></a>
-            <a href="/characters/alsion.html"><img src="img/assets/alsion_bg.png"></a>
-            <a href="/characters/maherl.html"><img src="img/assets/maherl_bg.png"></a>
-            <a href="/characters/dao-long.html"><img src="img/assets/dao-long_bg.png"></a>
-            <a href="/characters/saizo.html"><img src="img/assets/saizo_bg.png"></a>
-            <a href="/characters/bai-hu.html"><img src="img/assets/bai-hu_bg.png"></a>
+            <a href="/characters/sho"><img src="img/assets/sho_bg.png"></a>
+            <a href="/characters/pielle" class="active-link"><img class="active" src="img/assets/pielle_bg.png"></a>
+            <a href="/characters/condor"><img src="img/assets/condor_bg.png"></a>
+            <a href="/characters/rila"><img src="img/assets/rila_bg.png"></a>
+            <a href="/characters/tia"><img src="img/assets/tia_bg.png"></a>
+            <a href="/characters/alsion"><img src="img/assets/alsion_bg.png"></a>
+            <a href="/characters/maherl"><img src="img/assets/maherl_bg.png"></a>
+            <a href="/characters/dao-long"><img src="img/assets/dao-long_bg.png"></a>
+            <a href="/characters/saizo"><img src="img/assets/saizo_bg.png"></a>
+            <a href="/characters/bai-hu"><img src="img/assets/bai-hu_bg.png"></a>
           </div>
         </div>
 
@@ -84,10 +75,10 @@
             <td><img class="D"></td>
           </tr>
           <tr>
-            <td><img src="img/assets/Pielle_A.png"></td>
-            <td><img src="img/assets/Pielle_B.png"></td>
-            <td><img src="img/assets/Pielle_C.png"></td>
-            <td><img src="img/assets/Pielle_D.png"></td>
+            <td><img src="/characters/pielle/img/Pielle_A.png"></td>
+            <td><img src="/characters/pielle/img/Pielle_B.png"></td>
+            <td><img src="/characters/pielle/img/Pielle_C.png"></td>
+            <td><img src="/characters/pielle/img/Pielle_D.png"></td>
           </tr>
         </tbody>
       </table>
@@ -96,363 +87,236 @@
     <div id="movelist">
 
 
+      <div class="command-list">
+        <h2 class="commands">Commands</h2>
+        <div class="move">
+          <span>Saber Bash</span>
+          <span><img class="A">+<img class="C"></span>
+        </div>
+        <div class="move">
+          <span>Flying Peach Bomber</span>
+          <span><img class="B">+<img class="D"></span>
+        </div>
+        <div class="move">
+          <span>Hopping Saber</span>
+          <span><img class="Air"><img class="Down">+<img class="A"></span>
+        </div>
+        <div class="move">
+          <span>Opened Arc Liner</span>
+          <span><img class="Air"><img class="Up">+<img class="C"></span>
+        </div>
 
-      <table class="movelist">
-        <thead>
-          <tr>
-            <th colspan="2" class="commands">Commands</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Saber Bash</td>
-            <td>
-              <div class="inputs"><img class="A">+<img class="C"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Flying Peach Bomber</td>
-            <td>
-              <div class="inputs"><img class="B">+<img class="D"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Hopping Saber</td>
-            <td>
-              <div class="inputs"><img class="Air"><img class="Down">+<img class="A"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Opened Arc Liner</td>
-            <td>
-              <div class="inputs"><img class="Air"><img class="Up">+<img class="C"></div>
-            </td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th colspan="2" class="specials">Specials</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Bonjour Shot</td>
-            <td>
-              <div class="inputs"><img class="QCF">+<img class="Punch"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Robin Liner</td>
-            <td>
-              <div class="inputs"><img class="DP">+<img class="Punch"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Monsieur Crash</td>
-            <td>
-              <div class="inputs"><img class="QCB">+<img class="Punch">.<img class="Punch">.<img class="Punch"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Rose Train</td>
-            <td>
-              <div class="inputs"><img class="QCB">+<img class="Kick"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Merci Un Deux Trois</td>
-            <td>
-              <div class="inputs"><img class="Air"><img class="Down">+<img class="A">+<img class="B">+<img class="C">
-              </div>
-            </td>
-          <tr>
-            <td></td>
-            <td>
-              <div class="inputs"><img class="Air"><img class="Down">+<img class="B">+<img class="C">+<img class="D">
-              </div>
-            </td>
-          </tr>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th colspan="2" class="supers">Supers</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Un Deux Robin</td>
-            <td>
-              <div class="inputs"><img class="QCF"><img class="QCF">+<img class="Punch"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Thunder Croiser</td>
-            <td>
-              <div class="inputs"><img class="QCB"><img class="QCB">+<img class="Punch"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Super Rose</td>
-            <td>
-              <div class="inputs"><img class="QCB"><img class="QCB">+<img class="Kick"></div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+        <h2 class="specials">Specials</h2>
+        <div class="move">
+          <span>Bonjour Shot</span>
+          <span><img class="QCF">+<img class="Punch"></span>
+        </div>
+        <div class="move">
+          <span>Robin Liner</span>
+          <span><img class="DP">+<img class="Punch"></span>
+        </div>
+        <div class="move">
+          <span>Monsieur Crash</span>
+          <span><img class="QCB">+<img class="Punch">.<img class="Punch">.<img class="Punch"></span>
+        </div>
+        <div class="move">
+          <span>Rose Train</span>
+          <span><img class="QCB">+<img class="Kick"></span>
+        </div>
+        <div class="move">
+          <span>Merci Un Deux Trois</span>
+          <span>
+            <img class="Air"><img class="Down">+<img class="A">+<img class="B">+<img class="C"><br>
+            <img class="Air"><img class="Down">+<img class="B">+<img class="C">+<img class="D">
+          </span>
+        </div>
 
+        <h2 class="supers">Supers</h2>
+        <div class="move">
+          <span>Un Deux Robin</span>
+          <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+        </div>
+        <div class="move">
+          <span>Thunder Croiser</span>
+          <span><img class="QCB"><img class="QCB">+<img class="Punch"></span>
+        </div>
+        <div class="move">
+          <span>Super Rose</span>
+          <span><img class="QCB"><img class="QCB">+<img class="Kick"></span>
+        </div>
+      </div>
 
+      <input type="checkbox" id="toggle"><br>
+      <label class="properties" for="toggle">More infos</label>
 
-
-
-
-      <h1 id="properties">Move Properties</h1>
-      <table class="properties">
-        <thead>
-          <tr>
-            <th class="normals">Normals</th>
-            <th class="data">Guard</th>
-            <th class="data">Properties</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>far <img class="A"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>close <img class="A"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>down <img class="A"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>up <img class="A"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ub/uf <img class="A"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>far <img class="B"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>close <img class="B"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>down <img class="B"></td>
-            <td>Low</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>up <img class="B"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ub/uf <img class="B"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>far <img class="C"></td>
-            <td>Mid</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>close <img class="C"></td>
-            <td>Mid</td>
-            <td class="split-cell">
-              <div><span class="special-cancel"></span><span class="super-cancel"></div>
-              <div><span class="launcher"></span></div>
-            </td>
-          </tr>
-          <tr>
-            <td>down <img class="C"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>up <img class="C"></td>
-            <td>High</td>
-            <td>Cancelable to Merci un deux trois</td>
-          </tr>
-          <tr>
-            <td>ub/uf <img class="C"></td>
-            <td>High</td>
-            <td>Cancelable to Merci un deux trois</td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>far <img class="D"></td>
-            <td>Mid</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>close <img class="D"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>down <img class="D"></td>
-            <td>Low</td>
-            <td><span class="knockdown"></span></td>
-          </tr>
-          <tr>
-            <td>up <img class="D"></td>
-            <td>High</td>
-            <td>Cancelable to Merci un deux trois</td>
-          </tr>
-          <tr>
-            <td>ub/uf <img class="D"></td>
-            <td>High</td>
-            <td>Cancelable to Merci un deux trois</td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th class="commands">Commands</th>
-            <th class="data">Guard</th>
-            <th class="data">Properties</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img class="A">+<img class="C"></td>
-            <td>Mid</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><img class="B">+<img class="D"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><img class="Air"><img class="Down">+<img class="A"></td>
-            <td>Mid</td>
-            <td>Cancelable to Merci un deux trois</td>
-          </tr>
-          <tr>
-            <td><img class="Air"><img class="Up">+<img class="C"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th class="specials">Specials</th>
-            <th class="data">Guard</th>
-            <th class="data">Properties</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img class="QCF">+<img class="Punch"></td>
-            <td>Mid</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><img class="DP">+<img class="Punch"></td>
-            <td>Mid</td>
-            <td><span class="knockdown"> C. version only</span></td>
-          </tr>
-          <tr>
-            <td><img class="QCB">+<img class="Punch">.<img class="Punch">.<img class="Punch"></td>
-            <td>Mid</td>
-            <td><span class="knockdown"> After 3rd hit</span></td>
-          </tr>
-          <tr>
-            <td><img class="QCB">+<img class="Kick"></td>
-            <td>Mid</td>
-            <td><span class="knockdown"></span></td>
-          </tr>
-          <tr>
-            <td><img class="Air"><img class="Down">+<img class="A">+<img class="B">+<img class="C"></td>
-            <td>High</td>
-            <td><span class="knockdown"></span></td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th class="supers">Supers</th>
-            <th class="data">Guard</th>
-            <th class="data">Properties</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img class="QCF"><img class="QCF">+<img class="Punch"></td>
-            <td>Mid</td>
-            <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
-          </tr>
-          <tr>
-            <td><img class="QCB"><img class="QCB">+<img class="Punch"></td>
-            <td>Mid</td>
-            <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
-          </tr>
-          <tr>
-            <td><img class="QCB"><img class="QCB">+<img class="Kick"></td>
-            <td>Mid</td>
-            <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
-          </tr>
-        </tbody>
-      </table>
-
+      <div class="moveproperties">  
+      <div class="command-list">
+        <h2 class="normals">Normals</h2>
+        <div class="move">
+          <span>far <img class="A"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>close <img class="A"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>down <img class="A"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>up <img class="A"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>ub/uf <img class="A"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>far <img class="B"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>close <img class="B"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>down <img class="B"></span>
+          <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>up <img class="B"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>ub/uf <img class="B"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>far <img class="C"></span>
+          <span><inline class="mid"></span>
+        </div>
+        <div class="move">
+          <span>close <img class="C"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>down <img class="C"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"><inline class="launcher"></span>
+        </div>
+        <div class="move">
+          <span>up <img class="C"></span>
+          <span><inline class="high"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>ub/uf <img class="C"></span>
+          <span><inline class="high"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>far <img class="D"></span>
+          <span><inline class="mid"></span>
+        </div>
+        <div class="move">
+          <span>close <img class="D"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>down <img class="D"></span>
+          <span><inline class="low"><inline class="knockdown"></span>
+        </div>
+        <div class="move">
+          <span>up <img class="D"></span>
+          <span><inline class="high"><inline class="special-cancel"></span>
+        </div>
+        <div class="move">
+          <span>ub/uf <img class="D"></span>
+          <span><inline class="high"><inline class="special-cancel"></span>
+        </div>
+        <h2 class="commands">Commands</h2>
+        <div class="move">
+          <span><img class="A">+<img class="C"></span>
+          <span><inline class="mid"></span>
+        </div>
+        <div class="move">
+          <span><img class="B">+<img class="D"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span><img class="Air"><img class="Down">+<img class="A"></span>
+          <span><inline class="mid"><inline class="special-cancel"></span>
+        </div>
+        <div class="move">
+          <span><img class="Air"><img class="Up">+<img class="C"></span>
+          <span><inline class="high"></span>
+        </div>
+        <h2 class="specials">Specials</h2>
+        <div class="move">
+          <span><img class="QCF">+<img class="Punch"></span>
+          <span><inline class="mid"></span>
+        </div>
+        <div class="move">
+          <span><img class="DP">+<img class="Punch"></span>
+          <span><inline class="mid"><inline class="knockdown">(<img class="C"> only)</span>
+        </div>
+        <div class="move">
+          <span><img class="QCB">+<img class="Punch">.<img class="Punch">.<img class="Punch"></span>
+          <span><inline class="mid"><inline class="knockdown">(3rd hit)</span>
+        </div>
+        <div class="move">
+          <span><img class="QCB">+<img class="Kick"></span>
+          <span><inline class="mid"><inline class="knockdown"></span>
+        </div>
+        <div class="move">
+          <span>
+            <img class="Air"><img class="Down">+<img class="A">+<img class="B">+<img class="C"><br>
+            <img class="Air"><img class="Down">+<img class="B">+<img class="C">+<img class="D">
+          </span>
+          <span><inline class="high"><inline class="knockdown"></span>
+        </div>
+        <h2 class="supers">Supers</h2>
+        <div class="move">
+          <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+          <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
+        </div>
+        <div class="move">
+          <span><img class="QCB"><img class="QCB">+<img class="Punch"></span>
+          <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
+        </div>
+        <div class="move">
+          <span><img class="QCB"><img class="QCB">+<img class="Kick"></span>
+          <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
+        </div>
+        
+      </div>
+      </div>
 
 
     </div>
 
     <div id="guide">
 
-
-      <ol>
-        <a href="#neutral"><li>Neutral</li></a>
-        <a href="#antiair"><li>Anti-air</li></a>
-        <a href="#supers"><li>Super usage</li></a>
-        <a href="#overhead"><li>Overhead</li></a>
-        <a href="#side-switch"><li>Side switch</li></a>
-        <a href="#fuzzy"><li>Fuzzy</li></a>
-      </ol>
-
       <h2>Overview</h2>
 
       <p>
-        Pielle demands solid fundamentals, opponent reads, and risk-taking. He's challenging due to his slow recovery
-        and lack of invincible reversals without supers.
+        Pielle relies on strong fundamentals, smart reads, and calculated risks. His slow recovery and lack of invincible
+        reversals make him tough to play effectively.
       </p>
 
 
       <h2 id="neutral">Neutral</h2>
       <p>
         Pielle struggles with zoning.
-        His fireballs have high recovery and are unsafe on block
-        which makes his pressure (e.g., 2Ax2 > 236A) unreliable.
+        His fireballs have high recovery and can be unsafe on block.
+        For example, his pressure (e.g., 2A x2 > 236A) is unreliable.
       </p>
 
-      <video poster="videos/Saizo/matchups/saizo_vs_pielle_fireball.jpg" controls="" loop="" muted=""="" playsinline="">
-        <source src="videos/Saizo/matchups/saizo_vs_pielle_fireball.mp4" type="video/mp4">
+      <video poster="/characters/saizo/videos/matchups/saizo_vs_pielle_fireball.jpg" controls="" loop="" muted=""="" playsinline="">
+        <source src="/characters/saizo/videos/matchups/saizo_vs_pielle_fireball.mp4" type="video/mp4">
       </video>
 
       <p>
         His best options are at close range, where he can poke with 5A or 2A,
-        both of which can be converted into 214P, <a href="#overhead">overhead B+D</a>, or super (236236P).
+        both of which can be converted into 214P, overhead B+D, or super (236236P).
       </p>
 
       <h2 id="antiair">Anti-air</h2>
@@ -479,8 +343,8 @@
       </p>
 
       <p>Using <b>his slide as an anti-air allows for OTG setups</b> into Super 236236P or 214214P (corner).</p>
-      <video poster="videos/Pielle/pielle_slide_otg.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Pielle/pielle_slide_otg.mp4" type="video/mp4">
+      <video poster="/characters/pielle/videos/pielle_slide_otg.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/pielle/videos/pielle_slide_otg.mp4" type="video/mp4">
       </video>
 
       <h2 id="supers">Super usage</h2>
@@ -488,8 +352,8 @@
         <b>Robin Super (236236P) goes through projectiles</b>,
         in some matchups you can punish your opponent projectiles from far away
       </p>
-      <video poster="videos/Pielle/matchups/pielle_vs_dao-long_kouryuu_ga.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Pielle/matchups/pielle_vs_dao-long_kouryuu_ga.mp4" type="video/mp4">
+      <video poster="characters/pielle/videos/matchups/pielle_vs_dao-long_kouryuu_ga.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/pielle/videos/pielle_vs_dao-long_kouryuu_ga.mp4" type="video/mp4">
       </video>
 
       <p>
@@ -504,8 +368,8 @@
         On hit, confirm with A or 5B, and if the opponent is standing, follow up with Rose Train.
       <p>
 
-        <video poster="videos/Pielle/rose_train.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Pielle/rose_train.mp4" type="video/mp4">
+        <video poster="characters/pielle/videos/rose_train.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/pielle/videos/rose_train.mp4" type="video/mp4">
         </video>
 
 
@@ -538,17 +402,11 @@
       </ul>
 
       <h2 id="fuzzy">Fuzzy & instant overhead</h2>
-      <video poster="videos/Pielle/fuzzyguard.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Pielle/fuzzyguard.mp4" type="video/mp4">
+      <video poster="characters/pielle/videos/fuzzyguard.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/pielle/videos/fuzzyguard.mp4" type="video/mp4">
       </video>
-      <p>instant overhead with neutral jB<br><br>
-        fuzzy:
-      <ul class="combos">
-        <li>jC > jB</li>
-        <li>jC > jC</li>
-        <li>jC > jD <br> note: jD can be canceled into "Merci un deux trois" </li>
-      </ul>
-
+      <p>Instant overhead with neutral jB or fuzzy. 
+        You can perform a fuzzy by with jC > jB, jC > jC, or jC > jD, with jD being cancelable into "Merci un deux trois."
       </p>
 
     </div>
@@ -556,19 +414,11 @@
 
     <div id="combos">
 
-      <ol>
-        <a href="#meterless_combos"><li>Meterless</li></a>
-        <a href="#metered_combos"><li>Metered</li></a>
-        <a href="#anti-air"><li>Anti-air</li></a>
-        <a href="#air-to-air"><li>Air-to-air</li></a>
-        <a href="#rose-train"><li>Rose train</li></a>
-        <a href="#breakable_combos"><li>Breakable</li></a>
-      </ol>
 
 
       <h2 id="meterless_combos">Meterless combos</h2>
-      <video poster="videos/Pielle/meterless_combo.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Pielle/meterless_combo.mp4" type="video/mp4">
+      <video poster="characters/pielle/videos/meterless_combo.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/pielle/videos/meterless_combo.mp4" type="video/mp4">
       </video>
       <ul class="combos">
         <li>2B > 214C.C.C</li>
@@ -579,8 +429,8 @@
 
 
       <h2 id="metered_combos">Metered combos</h2>
-      <video poster="videos/Pielle/metercombo.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Pielle/metercombo.mp4" type="video/mp4">
+      <video poster="characters/pielle/videos/metercombo.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/pielle/videos/metercombo.mp4" type="video/mp4">
       </video>
       <ul class="combos">
         <li>2A x 2 > Super Swords (strict timing)</li>
@@ -592,8 +442,8 @@
 
 
       <h2 id="anti-air">Anti-air</h2>
-      <video poster="videos/Pielle/antiair_combo.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Pielle/antiair_combo.mp4" type="video/mp4">
+      <video poster="characters/pielle/videos/antiair_combo.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/pielle/videos/antiair_combo.mp4" type="video/mp4">
       </video>
       <ul class="combos">
         <li>close 5D > Super Swords / Thunder</li>
@@ -607,8 +457,8 @@
       </ul>
 
       <h2 id="air-to-air">Air-to-air</h2>
-      <video poster="videos/Pielle/airtoair.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Pielle/airtoair.mp4" type="video/mp4">
+      <video poster="characters/pielle/videos/airtoair.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/pielle/videos/airtoair.mp4" type="video/mp4">
       </video>
       <ul class="combos">
         <li>jB/HK/HP/A > Super</li>
@@ -617,8 +467,8 @@
 
 
       <h2 id="rose-train">Rose train</h2>
-      <video poster="videos/Pielle/rose_train.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Pielle/rose_train.mp4" type="video/mp4">
+      <video poster="characters/pielle/videos/rose_train.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/pielle/videos/rose_train.mp4" type="video/mp4">
       </video>
       <ul class="combos">
         <p><u>Only works on standing opponents</u></p>
@@ -693,8 +543,8 @@
             causing hesitation in your usual punishment.
             In such instances, Pielle's Super (236236P) ensures a guaranteed punish
         </p>
-        <video poster="videos/Pielle/matchups/pielle_vs_saizo_yashagami.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Pielle/matchups/pielle_vs_saizo_yashagami.mp4" type="video/mp4">
+        <video poster="characters/pielle/videos/matchups/pielle_vs_saizo_yashagami.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/pielle/videos/matchups/pielle_vs_saizo_yashagami.mp4" type="video/mp4">
         </video>
 
         <p><b>5C</b> <br><span class="punish-on-block"></span>
@@ -771,8 +621,8 @@
           startup Super.
           If you have meter, counter both of her super attempts with this OS : 2A ~ 214214P
         </p>
-        <video poster="videos/Pielle/matchups/pielle_vs_rila_killer_snake.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Pielle/matchups/pielle_vs_rila_killer_snake.mp4" type="video/mp4">
+        <video poster="characters/pielle/videos/matchups/pielle_vs_rila_killer_snake.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/pielle/videos/matchups/pielle_vs_rila_killer_snake.mp4" type="video/mp4">
         </video>
 
         <p><b>Spinning Claw</b><br><span class="safe-on-block">
@@ -797,8 +647,8 @@
               On block, she ends up on the other side (at mid and close range).
               punish with super 214214K
         </p>
-        <video poster="videos/Pielle/matchups/pielle_vs_rila_killer_shine_beast.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Pielle/matchups/pielle_vs_rila_killer_shine_beast.mp4" type="video/mp4">
+        <video poster="characters/pielle/videos/matchups/pielle_vs_rila_killer_shine_beast.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/pielle/videos/matchups/pielle_vs_rila_killer_shine_beast.mp4" type="video/mp4">
         </video>
 
         <p><b>Bloody Fang</b> <br><span class="punish-on-block"><span class="whiff-punish">
@@ -821,8 +671,8 @@
                 dao-long's fireball, punsish at point blank with 2A.
                 use your super 236236P to pass through fireball.
         </p>
-        <video poster="videos/Pielle/matchups/pielle_vs_dao-long_kouryuu_ga.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Pielle/matchups/pielle_vs_dao-long_kouryuu_ga.mp4" type="video/mp4">
+        <video poster="characters/pielle/videos/matchups/pielle_vs_dao-long_kouryuu_ga.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/pielle/videos/matchups/pielle_vs_dao-long_kouryuu_ga.mp4" type="video/mp4">
         </video>
 
         <p><b>Senkyuu Tai</b> <br><span class="punish-on-block">
@@ -869,16 +719,16 @@
           Tomahawk is used as an anti-air or to defend against projectiles and build meter.
           This move is easily punishable on block. You can also whiff punish from max range with 214214K.
         </p>
-        <video poster="videos/Pielle/matchups/pielle_vs_condor_tomahawk.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Pielle/matchups/pielle_vs_condor_tomahawk.mp4" type="video/mp4">
+        <video poster="characters/pielle/videos/matchups/pielle_vs_condor_tomahawk.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/pielle/videos/matchups/pielle_vs_condor_tomahawk.mp4" type="video/mp4">
         </video>
 
         <p><b>Gran Buffalo Horn</b> <br><span class="punish-on-block"></span><span class="whiff-punish"></span>
           Passes through projectiles and helps close the distance against grounded opponents.
           Punishable on hit and whiff
         </p>
-        <video poster="videos/Pielle/matchups/pielle_vs_condor_slide.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Pielle/matchups/pielle_vs_condor_slide.mp4" type="video/mp4">
+        <video poster="characters/pielle/videos/matchups/pielle_vs_condor_slide.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/pielle/videos/matchups/pielle_vs_condor_slide.mp4" type="video/mp4">
         </video>
 
         <p><b>Sky Bridge</b> <br><span class="punish-on-block"></span></span>
@@ -890,8 +740,8 @@
           Punish with 214P. You can also interrupt his Super on block after the 1st hit with a light normal, throw,
           214214P, or 236236P.
         </p>
-        <video poster="videos/Pielle/matchups/pielle_vs_condor_atlas_rock_buster.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Pielle/matchups/pielle_vs_condor_atlas_rock_buster.mp4" type="video/mp4">
+        <video poster="characters/pielle/videos/matchups/pielle_vs_condor_atlas_rock_buster.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/pielle/videos/matchups/pielle_vs_condor_atlas_rock_buster.mp4" type="video/mp4">
         </video>
 
 
@@ -938,8 +788,8 @@
           Be careful, on block it can be followed by air super (Geki Rekkou Ha).
           However, it's still minus on block. if you're close to corner react with your own super (214214K).
         </p>
-        <video poster="videos/Pielle/matchups/pielle_vs_sho_ranki_ryuu_geri.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Pielle/matchups/pielle_vs_sho_ranki_ryuu_geri.mp4" type="video/mp4">
+        <video poster="characters/pielle/videos/matchups/pielle_vs_sho_ranki_ryuu_geri.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/pielle/videos/matchups/pielle_vs_sho_ranki_ryuu_geri.mp4" type="video/mp4">
         </video>
 
 
@@ -981,8 +831,8 @@
         <p><b>Shiva Dance</b> <br><span class="punish-on-block"></span>
           Punish before the end of the animation, with super (214214K)
         </p>
-        <video poster="videos/Pielle/matchups/pielle_vs_maherl_shiva_dance.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Pielle/matchups/pielle_vs_maherl_shiva_dance.mp4" type="video/mp4">
+        <video poster="characters/pielle/videos/matchups/pielle_vs_maherl_shiva_dance.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/pielle/videos/matchups/pielle_vs_maherl_shiva_dance.mp4" type="video/mp4">
         </video>
 
 
@@ -1004,8 +854,8 @@
           Before attempting a block punish, check her super meter first.
           Tia can counter with Burning Revolver. A throw is a guaranteed punish if she uses Soul Spike HK.
         </p>
-        <video poster="videos/Pielle/matchups/pielle_vs_tia_soul_spike.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Pielle/matchups/pielle_vs_tia_soul_spike.mp4" type="video/mp4">
+        <video poster="characters/pielle/videos/matchups/pielle_vs_tia_soul_spike.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/pielle/videos/matchups/pielle_vs_tia_soul_spike.mp4" type="video/mp4">
         </video>
 
         <p><b>Mirage Spear Kick</b> <br><span class="safe-on-block"></span>
@@ -1069,8 +919,8 @@
           Punish at close range with super (236236P)
           Whiff punish with 2C
         </p>
-        <video poster="videos/Pielle/matchups/pielle_vs_alsion_deadly_claw.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Pielle/matchups/pielle_vs_alsion_deadly_claw.mp4" type="video/mp4">
+        <video poster="characters/pielle/videos/matchups/pielle_vs_alsion_deadly_claw.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/pielle/videos/matchups/pielle_vs_alsion_deadly_claw.mp4" type="video/mp4">
         </video>
 
 

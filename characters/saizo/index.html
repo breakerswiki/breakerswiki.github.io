@@ -19,17 +19,7 @@
 
 
 
-  <header>
-    <nav class="navbar">
-      <ul class="nav-links">
-        <div class="logo"><a href="index.html"><img class="logo" src="img/assets/logo.png"></a></div>
-        <li><a href="gameplay.html">Gameplay</a></li>
-        <li><a class="current" href="sho.html">Characters</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-    </nav>
-  </header>
-
+  <div id="header-container"></div>
 
   <section class="main-content">
     <div class="container">
@@ -37,16 +27,16 @@
 
         <div class="characters-guide-main">
           <div class="infos">
-            <a href="/characters/sho.html"><img src="img/assets/sho_bg.png"></a>
-            <a href="/characters/pielle.html"><img src="img/assets/pielle_bg.png"></a>
-            <a href="/characters/condor.html"><img src="img/assets/condor_bg.png"></a>
-            <a href="/characters/rila.html"><img src="img/assets/rila_bg.png"></a>
-            <a href="/characters/tia.html"><img src="img/assets/tia_bg.png"></a>
-            <a href="/characters/alsion.html"><img src="img/assets/alsion_bg.png"></a>
-            <a href="/characters/maherl.html"><img src="img/assets/maherl_bg.png"></a>
-            <a href="/characters/dao-long.html"><img src="img/assets/dao-long_bg.png"></a>
-            <a href="/characters/saizo.html" class="active-link"><img class="active" src="img/assets/saizo_bg.png"></a>
-            <a href="/characters/bai-hu.html"><img src="img/assets/bai-hu_bg.png"></a>
+            <a href="/characters/sho"><img src="img/assets/sho_bg.png"></a>
+            <a href="/characters/pielle"><img src="img/assets/pielle_bg.png"></a>
+            <a href="/characters/condor"><img src="img/assets/condor_bg.png"></a>
+            <a href="/characters/rila"><img src="img/assets/rila_bg.png"></a>
+            <a href="/characters/tia"><img src="img/assets/tia_bg.png"></a>
+            <a href="/characters/alsion"><img src="img/assets/alsion_bg.png"></a>
+            <a href="/characters/maherl"><img src="img/assets/maherl_bg.png"></a>
+            <a href="/characters/dao-long"><img src="img/assets/dao-long_bg.png"></a>
+            <a href="/characters/saizo" class="active-link"><img class="active" src="img/assets/saizo_bg.png"></a>
+            <a href="/characters/bai-hu"><img src="img/assets/bai-hu_bg.png"></a>
           </div>
         </div>
 
@@ -80,10 +70,10 @@
             <td><img class="D"></td>
           </tr>
           <tr>
-            <td><img src="img/assets/Saizo_A.png"></td>
-            <td><img src="img/assets/Saizo_B.png"></td>
-            <td><img src="img/assets/Saizo_C.png"></td>
-            <td><img src="img/assets/Saizo_D.png"></td>
+            <td><img src="/characters/saizo/img/Saizo_A.png"></td>
+            <td><img src="/characters/saizo/img/Saizo_B.png"></td>
+            <td><img src="/characters/saizo/img/Saizo_C.png"></td>
+            <td><img src="/characters/saizo/img/Saizo_D.png"></td>
           </tr>
         </tbody>
       </table>
@@ -92,286 +82,165 @@
 
     <div id="movelist">
 
+      <div class="command-list">
+        <h2 class="commands">Commands</h2>
+        <div class="move">
+          <span>Rasen Kyaku</span>
+          <span><img class="B">+<img class="D"></span>
+        </div>
+        <div class="move">
+          <span>Ryuuei Kyaku</span>
+          <span><img class="Down">+<img class="B">+<img class="D"></span>
+        </div>
+        <h2 class="specials">Specials</h2>
+        <div class="move">
+          <span>Hiryuu</span>
+          <span><img class="QCF">+<img class="Punch"></span>
+        </div>
+        <div class="move">
+          <span>Yashagami</span>
+          <span><img class="QCB">+<img class="Punch"></span>
+        </div>
+        <div class="move">
+          <span>Engetsuzan</span>
+          <span><img class="DP">+<img class="Punch"></span>
+        </div>
+        <h2 class="supers">Supers</h2>
+        <div class="move">
+          <span>Musou Shinra</span>
+          <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+        </div>
+        <div class="move">
+          <span>Musou Tenha</span>
+          <span><img class="QCB"><img class="QCB">+<img class="Punch"></span>
+          </div>
+        <div class="move">
+          <span>Senku Ensatsujin</span>
+          <span><img class="QCF"><img class="QCF">+<img class="Kick"></span>
+        </div>
+      </div>
 
+      <input type="checkbox" id="toggle"><br>
+      <label class="properties" for="toggle">More infos</label>
 
-      <table class="movelist">
-        <thead>
-          <tr>
-            <th colspan="2" class="commands">Commands</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Rasen Kyaku</td>
-            <td>
-              <div class="inputs"><img class="B">+<img class="D"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Ryuuei Kyaku</td>
-            <td>
-              <div class="inputs"><img class="Down">+<img class="B">+<img class="D"></div>
-            </td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th colspan="2" class="specials">Specials</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Hiryuu</td>
-            <td>
-              <div class="inputs"><img class="QCF">+<img class="Punch"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Yashagami</td>
-            <td>
-              <div class="inputs"><img class="QCB">+<img class="Punch"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Engetsuzan</td>
-            <td>
-              <div class="inputs"><img class="DP">+<img class="Punch"></div>
-            </td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th colspan="2" class="supers">Supers</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Musou Shinra</td>
-            <td>
-              <div class="inputs"><img class="QCF"><img class="QCF">+<img class="Punch"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Musou Tenha</td>
-            <td>
-              <div class="inputs"><img class="QCB"><img class="QCB">+<img class="Punch"></div>
-            </td>
-          </tr>
-          <tr>
-            <td>Senku Ensatsujin</td>
-            <td>
-              <div class="inputs"><img class="QCF"><img class="QCF">+<img class="Kick"></div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="moveproperties">  
+      <div class="command-list">
+        <h2 class="normals">Normals</h2>
+        <div class="move">
+          <span>far/close <img class="A"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>down <img class="A"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>up <img class="A"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>ub/uf <img class="A"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>far/close <img class="B"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>down <img class="B"></span>
+          <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>up <img class="B"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>ub/uf <img class="B"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>far <img class="C"></span>
+          <span><inline class="mid"></span>
+        </div>
+        <div class="move">
+          <span>close <img class="C"></span>
+          <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>down <img class="C"></span>
+          <span><inline class="mid"><inline class="knockdown"></span>
+        </div>
+        <div class="move">
+          <span>up <img class="C"></span>
+          <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>ub/uf <img class="C"></span>
+          <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>far <img class="D"></span>
+          <span><inline class="mid"></span>
+        </div>
+        <div class="move">
+          <span>close <img class="D"></span>
+          <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <div class="move">
+          <span>down <img class="D"></span>
+          <span><inline class="low"><inline class="knockdown"></span>
+        </div>
+        <div class="move">
+          <span>up <img class="D"></span>
+          <span><inline class="high"></span>
+        </div>
+        <div class="move">
+          <span>ub/uf <img class="D"></span>
+          <span><inline class="high"></span>
+        </div>
+        <h2 class="commands">Commands</h2>
+        <div class="move">
+          <span><img class="B">+<img class="D"></span>
+          <span><inline class="high"><inline class="overhead"></span>
+        </div>
+        <div class="move">
+          <span><img class="Down">+<img class="B">+<img class="D"></span>
+          <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
+        </div>
+        <h2 class="specials">Specials</h2>
+        <div class="move">
+          <span><img class="QCF">+<img class="Punch"></span>
+          <span><inline class="mid"><inline class="knockdown">(<img class="C"> only)</span>
+        </div>
+        <div class="move">
+          <span><img class="QCB">+<img class="Punch"></span>
+          <span><inline class="mid"><inline class="inv-startup"><inline class="super-cancel"><br><inline class="knockdown">(<img class="C"> only)</span>
+        </div>
+        <div class="move">
+          <span><img class="DP">+<img class="Punch"></span>
+          <span><inline class="mid"><inline class="knockdown"></span>
+        </div>
+        <h2 class="supers">Supers</h2>
+        <div class="move">
+          <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+          <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
+        </div>
+        <div class="move">
+          <span><img class="QCB"><img class="QCB">+<img class="Punch"></span>
+          <span><inline class="mid"><inline class="hard-knockdown"></span>
+        </div>
+        <div class="move">
+          <span><img class="QCF"><img class="QCF">+<img class="Kick"></span>
+          <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
+        </div>
 
-
-
-      <h1 id="properties">Move Properties</h1>
-      <table class="properties">
-        <thead>
-          <tr>
-            <th class="normals">Normals</th>
-            <th class="data">Guard</th>
-
-
-            <th class="data">Properties</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>far/close <img class="A"></td>
-            <td>Mid</td>
-
-
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>down <img class="A"></td>
-            <td>Mid</td>
-
-
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>up <img class="A"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ub/uf <img class="A"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>far/close <img class="B"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>down <img class="B"></td>
-            <td>Low</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></td>
-          </tr>
-          <tr>
-            <td>up <img class="B"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ub/uf <img class="B"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>far <img class="C"></td>
-            <td>Mid</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>close <img class="C"></td>
-            <td>Low</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>down <img class="C"></td>
-            <td>Mid</td>
-            <td><span class="knockdown"></span></td>
-          </tr>
-          <tr>
-            <td>up <img class="C"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ub/uf <img class="C"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-        </tbody>
-        <tbody>
-          <tr>
-            <td>far <img class="D"></td>
-            <td>Mid</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>close <img class="D"></td>
-            <td>Mid</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></span></td>
-          </tr>
-          <tr>
-            <td>down <img class="D"></td>
-            <td>Low</td>
-            <td><span class="knockdown"></span></td>
-          </tr>
-          <tr>
-            <td>up <img class="D"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>ub/uf <img class="D"></td>
-            <td>High</td>
-            <td></td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th class="commands">Commands</th>
-            <th class="data">Guard</th>
-            <th class="data">Properties</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img class="B">+<img class="D"></td>
-            <td>High</td>
-            <td><span class="overhead"></span></td>
-          </tr>
-          <tr>
-            <td><img class="Down">+<img class="B">+<img class="D"></td>
-            <td>Low</td>
-            <td><span class="special-cancel"></span><span class="super-cancel"></td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th class="specials">Specials</th>
-            <th class="data">Guard</th>
-            <th class="data">Properties</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img class="QCF">+<img class="Punch"></td>
-            <td>Mid</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td><img class="QCB">+<img class="A"></td>
-            <td>Mid</td>
-            <td class="split-cell">
-              <div><span class="inv-startup"></span><span class="super-cancel"></div>
-            </td>
-          </tr>
-          <tr>
-            <td><img class="QCB">+<img class="C"></td>
-            <td>Mid</td>
-            <td class="split-cell">
-              <div><span class="inv-startup"></span><span class="super-cancel"></div>
-              <div><span class="knockdown"></span></div>
-            </td>
-          </tr>
-          <tr>
-            <td><img class="DP">+<img class="Punch"></td>
-            <td>Mid</td>
-            <td><span class="knockdown"></span></td>
-          </tr>
-        </tbody>
-        <thead>
-          <tr>
-            <th class="supers">Supers</th>
-            <th class="data">Guard</th>
-            <th class="data">Properties</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><img class="QCF"><img class="QCF">+<img class="Punch"></td>
-            <td>Mid</td>
-            <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
-          </tr>
-          <tr>
-            <td><img class="QCB"><img class="QCB">+<img class="Punch"></td>
-            <td>Mid</td>
-            <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
-          </tr>
-          <tr>
-            <td><img class="QCF"><img class="QCF">+<img class="Kick"></td>
-            <td>Mid</td>
-            <td><span class="hard-knockdown"></span><span class="inv-startup"></span></td>
-          </tr>
-        </tbody>
-      </table>
-
+        
+      </div>
+      </div>
     </div>
 
     <div id="guide">
 
-      <ol>
-        <a href="#offense"><li>Offense</li></a>
-        <a href="#anti-air"><li>Anti-air</li></a>
-        <a href="#super"><li>Super usage</li></a>
-        <a href="#chip_damage"><li>Chip damage</li></a>
-        <a href="#throw_os"><li>Throw OS</li></a>
-        <a href="#fuzzy"><li>Fuzzy</li></a>
-      </ol>
 
       <h2>Overview</h2>
 
@@ -390,7 +259,7 @@
 
       <h4>j.C</h4>
       <p>
-        <img src="videos/Saizo/saizo_fwd_jHP.png">
+        <img src="characters/saizo/videos/saizo_fwd_jHP.png">
         His forward and back j.C has great priority over most normals and some specials. A lot of the cast will have a
         hard time anti-airing this move
       </p>
@@ -404,8 +273,8 @@
 
       <h4>5C</h4>
       <p>
-        <video poster="videos/Sho/matchups/sho_vs_saizo_stand_C.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Sho/matchups/sho_vs_saizo_stand_C.mp4" type="video/mp4">
+        <video poster="/characters/sho/videos/matchups/sho_vs_saizo_stand_C.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/sho/videos/matchups/sho_vs_saizo_stand_C.mp4" type="video/mp4">
         </video>
         ⚠️ Knowing the range of far and close 5C is key, as the far version leaves you vulnerable on block or hit.
       <p>
@@ -416,7 +285,7 @@
 
       <h4>5D</h4>
       <p>
-        <img src="videos/Saizo/saizo_stHK.png">
+        <img src="characters/saizo/videos/saizo_stHK.png">
         ⚠️ Knowing the range of far and close 5D is key, as the far version leaves you vulnerable on block or hit.
       </p>
       </p>
@@ -432,7 +301,7 @@
 
       <h4>236P</h4>
       <p>
-        <img src="videos/Saizo/saizo_236A.png">
+        <img src="characters/saizo/videos/saizo_236A.png">
         Use 236A (kunai) for quick, strong chip damage and zoning. It cuts through opponent projectiles, except
         his own.
         236 C (Bombs) are slower than kunai but they recover much faster.
@@ -444,15 +313,15 @@
 
       <h4>623P</h4>
       <p>
-        <img src="videos/Saizo/saizo_623A.png">
+        <img src="characters/saizo/videos/saizo_623A.png">
         623A version is faster, making it better for midrange, while the C version is suited for long-range.
         when it hits airborne opponent, you can juggle with flames super for more damage.
       </p>
 
       <h4>5D</h4>
       <p>
-        <video poster="videos/Saizo/antiairjuggle.jpg" controls loop muted playsinline preload="none">
-          <source src="videos/Saizo/antiairjuggle.mp4" type="video/mp4">
+        <video poster="characters/saizo/videos/antiairjuggle.jpg" controls loop muted playsinline preload="none">
+          <source src="characters/saizo/videos/antiairjuggle.mp4" type="video/mp4">
         </video>
         ⚠️ Knowing the range of far and close 5D is key, as the far version leaves you vulnerable on block or hit.
       </p>
@@ -464,7 +333,7 @@
 
       <h4>214A</h4>
       <p>
-        <img src="videos/Saizo/saizo_214LP.png">
+        <img src="characters/saizo/videos/saizo_214LP.png">
         His best anti-air due to its long invincibility frames.
         Use it only when you have meter, so you can cancel it into hair super; otherwise, you'll be left at a
         disadvantage.
@@ -474,13 +343,13 @@
 
       <h2 id="super">Super usage</h2>
       <h4>Musou Shinra</h4>
-      <p><img src="videos/Saizo/Musou_Shinra.png">
+      <p><img src="characters/saizo/videos/Musou_Shinra.png">
         Long-range anti-air super, and extends juggle combos seamlessly from 623P or close 5D
       </p>
 
 
       <h4>Musou Tenha</h4>
-      <p><img src="videos/Saizo/Musou_Tenha.png">
+      <p><img src="characters/saizo/videos/Musou_Tenha.png">
         Summons a pillar of flames. Can serve as an anti-air, but it's slower than Hair special (214P), which is super
         cancelable.
         The A version is fixed directly in front of Saizo, while the C version tracks the opponent.
@@ -488,7 +357,7 @@
 
 
       <h4>Senku Ensatsujin</h4>
-      <p><img src="videos/Saizo/Senku_Ensatsujin.png">
+      <p><img src="characters/saizo/videos/Senku_Ensatsujin.png">
         Saizo executes an auto combo with extremely fast startup—possibly the fastest in the game, allowing you to
         punish many moves. Confirm with Hair (214 A) on hit.
       </p>
@@ -501,8 +370,8 @@
         Chip with 236A, chip kill with 623C or 214B.
         Heavy Hair (214C) and Sword C (623C) deal the most chip damage among all of Saizo's specials and supers.
       </p>
-      <video poster="videos/Saizo/chipkill.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Saizo/chipkill.mp4" type="video/mp4">
+      <video poster="characters/saizo/videos/chipkill.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/saizo/videos/chipkill.mp4" type="video/mp4">
       </video>
 
 
@@ -516,8 +385,8 @@
         <li>if your opponent stays at throw-range : back+C (throw)</li>
       </ul>
       </p>
-      <video poster="videos/Saizo/throw_OS.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Saizo/throw_OS.mp4" type="video/mp4">
+      <video poster="characters/saizo/videos/throw_OS.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/saizo/videos/throw_OS.mp4" type="video/mp4">
       </video>
 
 
@@ -538,16 +407,9 @@
 
     <div id="combos">
 
-      <ol>
-        <a href="#meterless_combos"><li>Meterless</li></a>
-        <a href="#metered_combos"><li>Metered</li></a>
-        <a href="#antiair"><li>Anti-air</li></a>
-        <a href="#air-to-air"><li>Air-to-air</li></a>
-      </ol>
-
       <h2 id="meterless_combos">Meterless combos</h2>
-      <video poster="videos/Saizo/Meterlesscombo.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Saizo/Meterlesscombo.mp4" type="video/mp4">
+      <video poster="characters/saizo/videos/Meterlesscombo.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/saizo/videos/Meterlesscombo.mp4" type="video/mp4">
       </video>
       <ul class="combos">
         <li>2B, 2B, 5A > 623C</li>
@@ -561,8 +423,8 @@
 
 
       <h2 id="metered_combos">Metered combos</h2>
-      <video poster="videos/Saizo/Metercombo.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Saizo/Metercombo.mp4" type="video/mp4">
+      <video poster="characters/saizo/videos/Metercombo.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/saizo/videos/Metercombo.mp4" type="video/mp4">
       </video>
       <ul class="combos">
         <li>2B, 2B, 5C > 623C > 214214P</li>
@@ -572,8 +434,8 @@
 
 
       <h2 id="antiair">Anti-air</h2>
-      <video poster="videos/Saizo/antiairjuggle.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Saizo/antiairjuggle.mp4" type="video/mp4">
+      <video poster="characters/saizo/videos/antiairjuggle.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/saizo/videos/antiairjuggle.mp4" type="video/mp4">
       </video>
       <ul class="combos">
         <li>623C > 214214P</li>
@@ -581,8 +443,8 @@
       </ul>
 
       <h2 id="air-to-air">Air-to-air</h2>
-      <video poster="videos/Saizo/airtoair.jpg" controls loop muted playsinline preload="none">
-        <source src="videos/Saizo/airtoair.mp4" type="video/mp4">
+      <video poster="characters/saizo/videos/airtoair.jpg" controls loop muted playsinline preload="none">
+        <source src="characters/saizo/videos/airtoair.mp4" type="video/mp4">
       </video>
       <ul class="combos">
         <li>jD > 214214P</li>
@@ -627,8 +489,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_saizo_RasenKyaku.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_saizo_RasenKyaku.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_saizo_RasenKyaku.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_saizo_RasenKyaku.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -653,8 +515,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_saizo_RyuueiKyaku.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_saizo_RyuueiKyaku.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_saizo_RyuueiKyaku.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_saizo_RyuueiKyaku.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -678,8 +540,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_saizo_Yashagami.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_saizo_Yashagami.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_saizo_Yashagami.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_saizo_Yashagami.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -725,8 +587,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_saizo_engetsuzan.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_saizo_engetsuzan.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_saizo_engetsuzan.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_saizo_engetsuzan.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -759,8 +621,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_pielle_SaberBash.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_pielle_SaberBash.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_pielle_SaberBash.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_pielle_SaberBash.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -787,8 +649,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_pielle_FlyingPeachBomber.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_pielle_FlyingPeachBomber.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_pielle_FlyingPeachBomber.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_pielle_FlyingPeachBomber.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -815,8 +677,8 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_pielle_fireball.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_pielle_fireball.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_pielle_fireball.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_pielle_fireball.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -843,7 +705,7 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <img src="videos/Pielle/pielle_RobinLiner.png">
+                <img src="/characters/pielle/videos/pielle_RobinLiner.png">
               </td>
             </tr>
           </tbody>
@@ -869,8 +731,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_pielle_MonsieurCrash.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_pielle_MonsieurCrash.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_pielle_MonsieurCrash.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_pielle_MonsieurCrash.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -897,8 +759,8 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_pielle_Merci123.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_pielle_Merci123.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_pielle_Merci123.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_pielle_Merci123.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -924,8 +786,8 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_pielle_SuperRose.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_pielle_SuperRose.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_pielle_SuperRose.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_pielle_SuperRose.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -950,8 +812,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_pielle_ThunderCroiser.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_pielle_ThunderCroiser.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_pielle_ThunderCroiser.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_pielle_ThunderCroiser.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -983,8 +845,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_rila_DynamiteKick.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_rila_DynamiteKick.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_rila_DynamiteKick.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_rila_DynamiteKick.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1006,7 +868,7 @@
                   anti-air.</p>
               </td>
               <td style="width: 50%;">
-                <img src="videos/Rila/rila_crouch_C.png">
+                <img src="/characters/rila/videos/rila_crouch_C.png">
               </td>
             </tr>
           </tbody>
@@ -1045,8 +907,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_rila_killer_snake.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_rila_killer_snake.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_rila_killer_snake.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_rila_killer_snake.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1069,8 +931,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_rila_SpinningClaw.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_rila_SpinningClaw.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_rila_SpinningClaw.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_rila_SpinningClaw.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1097,8 +959,8 @@
                     </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_rila_quick_scratch_lp.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_rila_quick_scratch_lp.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_rila_quick_scratch_lp.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_rila_quick_scratch_lp.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1119,8 +981,8 @@
                     </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_rila_QuickScratch_C.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_rila_QuickScratch_C.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_rila_QuickScratch_C.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_rila_QuickScratch_C.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1145,8 +1007,8 @@
                   if you're close enough, you'll have time to punish her with a neutral jump
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_rila_WildSaver.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_rila_WildSaver.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_rila_WildSaver.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_rila_WildSaver.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1171,8 +1033,8 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_rila_ShineBeast.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_rila_ShineBeast.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_rila_ShineBeast.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_rila_ShineBeast.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1198,8 +1060,8 @@
                     </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_rila_BloodyFang.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_rila_BloodyFang.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_rila_BloodyFang.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_rila_BloodyFang.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1233,8 +1095,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_dao_KouryuuGa.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_dao_KouryuuGa.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_dao_KouryuuGa.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_dao_KouryuuGa.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1258,8 +1120,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_dao_SenkyuuTai.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_dao_SenkyuuTai.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_dao_SenkyuuTai.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_dao_SenkyuuTai.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1283,8 +1145,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_dao-long_palm.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_dao-long_palm.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_dao-long_palm.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_dao-long_palm.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1307,8 +1169,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_dao_SenpuureKyaku.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_dao_SenpuureKyaku.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_dao_SenpuureKyaku.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_dao_SenpuureKyaku.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1333,8 +1195,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_dao_Shoutenchuu.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_dao_Shoutenchuu.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_dao_Shoutenchuu.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_dao_Shoutenchuu.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1358,8 +1220,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_dao_HousinRenpa.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_dao_HousinRenpa.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_dao_HousinRenpa.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_dao_HousinRenpa.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1383,8 +1245,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_dao_ShinKyokuRanbu.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_dao_ShinKyokuRanbu.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_dao_ShinKyokuRanbu.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_dao_ShinKyokuRanbu.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1419,8 +1281,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_condor_TomahawkJack.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_condor_TomahawkJack.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_condor_TomahawkJack.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_condor_TomahawkJack.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1447,8 +1309,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_condor_GranBuffaloHorn.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_condor_GranBuffaloHorn.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_condor_GranBuffaloHorn.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_condor_GranBuffaloHorn.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1473,8 +1335,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_condor_SkyBridge.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_condor_SkyBridge.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_condor_SkyBridge.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_condor_SkyBridge.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1502,8 +1364,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_condor_AtlasRockBuster.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_condor_AtlasRockBuster.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_condor_AtlasRockBuster.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_condor_AtlasRockBuster.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1529,8 +1391,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_condor_2D.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_condor_2D.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_condor_2D.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_condor_2D.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1566,8 +1428,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_sho_Onigawara.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_sho_Onigawara.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_sho_Onigawara.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_sho_Onigawara.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1595,8 +1457,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_sho_tobihizageri.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_sho_tobihizageri.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_sho_tobihizageri.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_sho_tobihizageri.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1622,8 +1484,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_sho_SashikomiKick.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_sho_SashikomiKick.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_sho_SashikomiKick.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_sho_SashikomiKick.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1649,8 +1511,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_sho_RekkouHa.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_sho_RekkouHa.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_sho_RekkouHa.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_sho_RekkouHa.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1675,8 +1537,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_sho_RankiRyuuGeri.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_sho_RankiRyuuGeri.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_sho_RankiRyuuGeri.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_sho_RankiRyuuGeri.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1704,8 +1566,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_sho_GekiRekkouHa.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_sho_GekiRekkouHa.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_sho_GekiRekkouHa.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_sho_GekiRekkouHa.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1736,8 +1598,8 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_maherl_AbdomenStep.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_maherl_AbdomenStep.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_maherl_AbdomenStep.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_maherl_AbdomenStep.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1764,8 +1626,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_maherl_SlashSword.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_maherl_SlashSword.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_maherl_SlashSword.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_maherl_SlashSword.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1786,8 +1648,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_maherl_PunishSword.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_maherl_PunishSword.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_maherl_PunishSword.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_maherl_PunishSword.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1813,8 +1675,8 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_maherl_FireBreath.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_maherl_FireBreath.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_maherl_FireBreath.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_maherl_FireBreath.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1838,8 +1700,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_maherl_BalloonBomb.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_maherl_BalloonBomb.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_maherl_BalloonBomb.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_maherl_BalloonBomb.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1863,8 +1725,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_maherl_ShivaDance.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_maherl_ShivaDance.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_maherl_ShivaDance.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_maherl_ShivaDance.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1898,8 +1760,8 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_tia_SoulSpike.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_tia_SoulSpike.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_tia_SoulSpike.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_tia_SoulSpike.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1923,8 +1785,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_tia_MirageSpearKick.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_tia_MirageSpearKick.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_tia_MirageSpearKick.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_tia_MirageSpearKick.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -1951,7 +1813,7 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <img src="videos/Tia/tia_RisingUpper.png">
+                <img src="/characters/tia/videos/tia_623A.png">
               </td>
             </tr>
           </tbody>
@@ -1976,8 +1838,8 @@
                       </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_tia_RapidGale.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_tia_RapidGale.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_tia_RapidGale.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_tia_RapidGale.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -2002,8 +1864,8 @@
                     </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_tia_HeelBreak.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_tia_HeelBreak.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_tia_HeelBreak.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_tia_HeelBreak.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -2027,8 +1889,8 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_tia_RapidCharge.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_tia_RapidCharge.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_tia_RapidCharge.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_tia_RapidCharge.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -2054,8 +1916,8 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_tia_BurningRevolver.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_tia_BurningRevolver.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_tia_BurningRevolver.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_tia_BurningRevolver.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -2077,8 +1939,8 @@
                   </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_tia_CutlassFlasher.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_tia_CutlassFlasher.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_tia_CutlassFlasher.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_tia_CutlassFlasher.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -2110,8 +1972,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_alsion_HorusShade.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_alsion_HorusShade.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_alsion_HorusShade.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_alsion_HorusShade.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -2134,8 +1996,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_alsion_DeathShred.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_alsion_DeathShred.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_alsion_DeathShred.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_alsion_DeathShred.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -2160,7 +2022,7 @@
                   Punish with your reversal super (236236K) </p>
               </td>
               <td style="width: 50%;">
-                <img src="videos/Alsion/alsion_PoisonFog.png">
+                <img src="/characters/alsion/videos/alsion_poison_fog.jpg">
               </td>
             </tr>
           </tbody>
@@ -2187,8 +2049,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_alsion_DeadlyClaw.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_alsion_DeadlyClaw.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_alsion_DeadlyClaw.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_alsion_DeadlyClaw.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
@@ -2214,8 +2076,8 @@
                 </p>
               </td>
               <td style="width: 50%;">
-                <video poster="videos/Saizo/matchups/saizo_vs_alsion_DashKnee.jpg" controls loop muted playsinline preload="none">
-                  <source src="videos/Saizo/matchups/saizo_vs_alsion_DashKnee.mp4" type="video/mp4">
+                <video poster="characters/saizo/videos/matchups/saizo_vs_alsion_DashKnee.jpg" controls loop muted playsinline preload="none">
+                  <source src="characters/saizo/videos/matchups/saizo_vs_alsion_DashKnee.mp4" type="video/mp4">
                 </video>
               </td>
             </tr>
