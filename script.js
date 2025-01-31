@@ -5,27 +5,6 @@ if (window.location.pathname.endsWith('/')) {
 }
 
 
-// top menu - Function to add "current" class to the clicked link
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', function() {
-      // Remove "current" class from all links
-      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('current'));
-      // Add "current" class to the clicked link
-      this.classList.add('current');
-  });
-});
-// On page load, highlight the current link based on the URL
-window.addEventListener('load', function() {
-  const path = window.location.pathname;
-  const links = document.querySelectorAll('.nav-links a');
-  links.forEach(link => {
-      if (path.includes(link.getAttribute('href'))) {
-          link.classList.add('current');
-      }
-  });
-});
-
-
 // Header - Footer
 function loadContent(file, containerId, callback) {
   fetch(file)
@@ -94,49 +73,6 @@ function setImageSrc() {
 document.addEventListener("DOMContentLoaded", setImageSrc);
 
 
-// Gameplay - Carousel arrow navigation
-document.addEventListener("DOMContentLoaded", () => {
-  const prev = document.querySelector('.prev');
-  const next = document.querySelector('.next');
-  const items = [...document.querySelectorAll('.carousel-item')];
-  
-  // Only initialize the carousel if the necessary elements exist
-  if (prev && next && items.length > 0) {
-    let currentIndex = 0;
-
-    const updateCarousel = (index) => {
-      items.forEach(item => item.classList.toggle('highlighted', item === items[index]));
-      items[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-    };
-
-    const changeIndex = (step) => {
-      currentIndex = (currentIndex + step + items.length) % items.length;
-      updateCarousel(currentIndex);
-    };
-
-    prev.addEventListener('click', () => changeIndex(-1));
-    next.addEventListener('click', () => changeIndex(1));
-    updateCarousel(currentIndex);
-  }
-});
-
-// Wiki - Toggle the visibility of text and set the active year
-function toggleText(index) {
-  const texts = document.querySelectorAll('.text');
-  const years = document.querySelectorAll('.year');
-
-  if (texts.length && years.length) {
-    texts.forEach(text => text.classList.remove('visible'));
-    years.forEach(year => year.classList.remove('active'));
-
-    texts[index]?.classList.add('visible');
-    years[index]?.classList.add('active');
-  }
-}
-
-// Initialize the default state on page load
-document.addEventListener('DOMContentLoaded', () => toggleText(0));
-
 
 // Toggle content menu visibility on character pages.
 function showContent(contentId) {
@@ -190,35 +126,3 @@ document.addEventListener("DOMContentLoaded", () => {
     toggleContent('sho', shoLink);
   }
 });
-
-
-
-// Light/Dark Mode Theme Switch
-document.addEventListener('DOMContentLoaded', () => {
-  const themeColor = document.querySelector('meta[name="theme-color"]') || document.createElement('meta');
-  // Ensure meta tag is in the head
-  if (!themeColor.parentElement) document.head.appendChild(themeColor);
-  function setThemeColor(theme) {
-    themeColor.setAttribute("content", theme === 'dark' ? "#111111" : "#ffffff");
-  }
-  // Load saved theme from localStorage
-  const currentTheme = localStorage.getItem('theme') || 'light';
-  document.documentElement.setAttribute('data-theme', currentTheme);
-  document.body.classList.toggle('dark-mode', currentTheme === 'dark');
-  setThemeColor(currentTheme);
-  // If the page has a theme switcher, set up its functionality
-  const toggleSwitch = document.querySelector('#modeSwitch');
-  if (toggleSwitch) {
-    toggleSwitch.checked = currentTheme === 'dark';
-    // Switch theme and save to localStorage
-    toggleSwitch.addEventListener('change', (e) => {
-      const theme = e.target.checked ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', theme);
-      document.body.classList.toggle('dark-mode', theme === 'dark');
-      localStorage.setItem('theme', theme);
-      setThemeColor(theme);
-    });
-  }
-});
-
-

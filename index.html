@@ -26,7 +26,7 @@
   <section class="main-content">
 
   <div class="top-div">  
-    <div class="container" style="gap: 0px; margin-bottom: 30px;">
+    <div class="container" style="gap: 0px;">
 
       <div class="main" style="display: grid; align-items: center; align-content: center;">
         <div class="title">Welcome to Breakers wiki !</div>
@@ -35,15 +35,12 @@
           Discover the game’s story, learn how to play, and get tips on characters and matchups.
         </p>
 
-        <p style="font-size: small; margin: 0;">
+        <p style="font-size: medium; margin: 0;">
           This site uses common fighting game terms, check <a href="https://glossary.infil.net/">The Fighting Game
             Glossary</a> for anything you're not sure about.
         </p>
 
-        <p style="font-size: small; margin-top: 20px;">dark mode:
-          <input class="tgl tgl-skewed" id="modeSwitch" type="checkbox" />
-          <label class="tgl-btn" data-tg-off="OFF" data-tg-on="ON" for="modeSwitch"></label>
-        </p>
+        <p></p>
 
       </div>
 
@@ -57,14 +54,21 @@
           </video>
         </div>
 
-
+        
       </div>
     </div>
 
   </div>
 
 
-  </div>
+  <div class="arrow"></div>
+
+
+
+
+
+
+
 
   
   
@@ -74,18 +78,12 @@
       <p style="margin-top: 0;">Breakers series history</p>
       </center>
       <div class="wiki">
-        <div class="years">
-          <div class="year" onclick="toggleText(0)">1982</div>
-          <div class="year" onclick="toggleText(1)">1996</div>
-          <div class="year" onclick="toggleText(2)">1998</div>
-          <div class="year" onclick="toggleText(3)">2023</div>
-          <div class="year" onclick="toggleText(4)">2024</div>
-
-        </div>
 
         <div class="text-container">
           <div class="text" id="text-0">
-            <h3>VISCO Corporation</h3>
+            <h3>1982 - VISCO Corporation</h3>
+            <img src="img/assets/boxart_Visco_Collection.webp" class="boxart" alt="Visco Collection">
+
             <p>
               Founded in 1982, <a href="https://en.wikipedia.org/wiki/Visco_Corporation">VISCO Corporation</a>, is a
               Japanese video game company known for its arcade and console titles (Andro Dunos, Bang Bead, Puzzle de
@@ -105,7 +103,8 @@
             </p>
           </div>
           <div class="text" id="text-1">
-            <h3>Breakers</h3>
+            <h3>1996 - Breakers</h3>
+            <img src="img/assets/boxart_Breakers.webp" class="boxart" alt="Breakers">
             <p>
               Originally introduced as a concept in 1993 under the title <i>Tenrin no Syo Chicago</i> and referred to as
               <a href="https://archive.org/details/rgz5f4">Crystal Legacy</a> outside Japan, Breakers eventually
@@ -118,15 +117,17 @@
               known for its fluid combat and distinct characters, earning a
               dedicated cult following over time.
 
-            <div class="gallery">
+            <!-- <div class="gallery">
               <img src="img/assets/breakers_1.webp" alt="Breakers 1">
               <img src="img/assets/breakers_2.webp" alt="Breakers 2">
-            </div>
+            </div> -->
             </p>
 
           </div>
           <div class="text" id="text-2">
-            <h3>Breakers Revenge</h3>
+            <h3>1998 - Breakers Revenge</h3>
+            <img src="img/assets/boxart_Breakers_Revenge.webp" class="boxart" alt="Breakers Revenge">
+
             <p>
               Released on July 2, 1998, for the Neo Geo MVS and AES by the same companies, Breakers Revenge updates the
               previous
@@ -135,14 +136,16 @@
 
 
 
-            <div class="gallery">
+            <!-- <div class="gallery">
               <img src="img/assets/BreakersRevenge_1.webp" alt="Breakers Chicago 1">
               <img src="img/assets/BreakersRevenge_2.webp" alt="Breakers Chicago 2">
-            </div>
+            </div> -->
 
           </div>
           <div class="text" id="text-3">
-            <h3>Breakers Collection</h3>
+            <h3>2023 - Breakers Collection</h3>
+            <img src="img/assets/boxart_Breakers_Collection.webp" class="boxart" alt="Breakers Collection">
+
             <p>
               On January 12, 2023, Breakers Collection, a re-release for consoles and PC by
               <a href="https://www.qubyteinteractive.com/">QUByte Interactive</a> was launched, including Breakers and
@@ -152,15 +155,17 @@
             </p>
 
 
-            <div class="gallery">
+            <!-- <div class="gallery">
               <img src="img/assets/breakers_collection_1.webp" alt="Breakers Chicago 1">
               <img src="img/assets/breakers_collection_2.webp" alt="Breakers Chicago 2">
-            </div>
+            </div> -->
 
 
           </div>
           <div class="text" id="text-4">
-            <h3>Breakers Revenge Chicago</h3>
+            <h3>2024 - Breakers Revenge Chicago</h3>
+            <img src="img/assets/boxart_Breakers_Chicaco.webp" class="boxart" alt="Breakers Chicago">
+
 
             <p>
               Breakers Revenge Chicago, released on August 22, 2024, is an arcade update for the <a
@@ -175,10 +180,10 @@
               Chicago (rebalanced with short hop).
 
             </p>
-            <div class="gallery">
+            <!-- <div class="gallery">
               <img src="img/assets/breakers_chicago_2.webp" alt="Breakers Chicago 2">
               <img src="img/assets/breakers_chicago_3.webp" alt="Breakers Chicago 3">
-            </div>
+            </div> -->
 
 
 
