@@ -29,6 +29,25 @@ document.addEventListener("DOMContentLoaded", () => {
   loadContent('footer.html', 'footer-container', updateFooterYear);
 });
 
+// add underline decoration to the current page link in the nav bar
+document.addEventListener("DOMContentLoaded", () => {
+  loadContent('header.html', 'header-container', highlightCurrentLink);
+});
+
+function highlightCurrentLink() {
+  const currentPath = window.location.pathname;
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  navLinks.forEach(link => {
+    const linkPath = link.getAttribute("href");
+
+    if (linkPath === currentPath || 
+        (linkPath.startsWith("/characters") && currentPath.startsWith("/characters"))) {
+      link.classList.add("current");
+    }
+  });
+}
+
 
 
 // Set <img> sources for stick/button inputs using html classes

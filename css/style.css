@@ -106,31 +106,20 @@ a {
 }
 
 .nav-links a.current {
-    border-bottom: 2px solid gray;
-    font-weight: 500;
+    font-weight: 700;
     padding-bottom: 4px
 }
+
 
 .logo > a.current {
     border: none;
 }
-.nav-links a.active {
-    font-weight: 700;
-    text-decoration: underline
-}
 
 .nav-links a:hover {
-    text-underline-offset: 5px;
-    text-shadow: none;
-    top: 2px;
-    position: relative
+    text-underline-offset: 10px;
+    text-decoration: underline;
 }
 
-.nav-links a:active {
-    animation: none;
-    top: 3px;
-    position: relative
-}
 
 img.logo {
     transition: transform .3s;
@@ -995,7 +984,7 @@ ol {
 
 @media (min-width:60em) {
     .main-content {
-        max-width: 75rem;
+        max-width: 70rem;
         padding: 1rem 6rem;
         font-size: 1.1rem
     }
@@ -1130,13 +1119,15 @@ main {
 
 .card {
     padding: 1rem;
+    text-align: center;
     background-color: transparent
 }
 
 li.carousel-item {
     display: inline-block;
     /* box-shadow: 3px 3px 5px #0000004d; */
-    background: #f2f3f5
+    background: #f3f3f5;
+    border-radius: 15px;
 }
 
 
@@ -1226,6 +1217,7 @@ img.boxart {
     border: 2px solid black;
 }
 
+
 .text {
     flex: 1;
     font-size: 18px;
@@ -1233,6 +1225,7 @@ img.boxart {
     margin-bottom: 60px;
     min-height: 300px;
 }
+
 
 .text h3 {
     font-size: 20px;
@@ -1353,9 +1346,6 @@ label.properties:hover {
     color: #fff
 }
 
-
-
-
 .arrow {
     width: 30px;
     height: 30px;
@@ -1373,4 +1363,13 @@ label.properties:hover {
     50% {
         transform: translateY(10px) rotate(-45deg);
     }
+}
+
+#alsion img,
+#tia img,
+#pielle img,
+#dao-long img,
+#rila img,
+#saizo img {
+    width: 100%;
 }
