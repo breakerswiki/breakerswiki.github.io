@@ -525,16 +525,19 @@ a.back:hover {
 }
 
 #charselect a img {
-    opacity: .3;
+    filter: opacity(30%);
     transition: opacity 0.3s ease
 }
 
 #charselect a img.clicked {
-    opacity: 1 !important
+    opacity: 1 !important;
+    filter: none;
+
 }
 
 #charselect a:hover img {
-    opacity: 1
+    opacity: 1;
+    filter: none;
 }
 
 #charselect {
