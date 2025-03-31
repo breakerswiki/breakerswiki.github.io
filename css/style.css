@@ -180,10 +180,6 @@ img.logo:active {
 }
 
 @media screen and (min-width:40em) {
-    /* html {
-        zoom: .9
-    } */
-
     img.logo {
         width: 120px;
         max-width: 100%;
@@ -996,7 +992,7 @@ ol {
 
 @media (min-width:1000px) {
     .content, .main {
-        width: 50%
+        max-width: 50%;
     }
 
     .content, .content-gameplay {
