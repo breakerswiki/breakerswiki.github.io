@@ -180,9 +180,9 @@ img.logo:active {
 }
 
 @media screen and (min-width:40em) {
-    html {
+    /* html {
         zoom: .9
-    }
+    } */
 
     img.logo {
         width: 120px;
@@ -215,6 +215,7 @@ img.logo:active {
     flex: 1;
     word-wrap: break-word;
     opacity: 1;
+    max-width: 500px;
     background-color: #fff
 }
 
@@ -977,21 +978,21 @@ ol {
     padding: 2rem 1rem
 }
 
-@media (min-width:52em) and (max-width:60em) {
+/* @media (min-width:52em) and (max-width:60em) {
     .main-content {
         width: 42rem;
         padding: 2rem 5rem;
         font-size: 1.1rem
     }
-}
+} */
 
-@media (min-width:60em) {
+/* @media (min-width:60em) {
     .main-content {
         max-width: 70rem;
         padding: 1rem 6rem;
         font-size: 1.1rem
     }
-}
+} */
 
 @media (min-width:1000px) {
     .content, .main {
@@ -1121,7 +1122,7 @@ main {
 }
 
 .card {
-    padding: 1rem;
+    padding: 0.7rem;
     text-align: center;
     background-color: transparent
 }
@@ -1129,7 +1130,9 @@ main {
 li.carousel-item {
     display: inline-block;
     /* box-shadow: 3px 3px 5px #0000004d; */
-    background: #f3f3f5;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    /* background: #f3f3f5; */
+    background: #f1f1f1;
     border-radius: 15px;
 }
 
@@ -1151,7 +1154,7 @@ li.carousel-item {
     flex: 1 0 280px;
     margin-left: 1rem;
     scroll-snap-align: start;
-    border: 2px solid lightgray;
+    /* border: 2px solid lightgray; */
     /* border-radius: 8px; */
     background-color: transparent
 }
@@ -1166,11 +1169,8 @@ li.carousel-item {
 }
 
 
-@media screen and (min-width:576px) {
-    .carousel-item {
-        flex-basis: 300px
-    }
-}
+
+
 
 @media screen and (min-width:992px) {
     input, select, optgroup, textarea {
@@ -1178,13 +1178,13 @@ li.carousel-item {
     }
 
     .carousel-item {
-        flex-basis: 325px
+        flex-basis: 270px
     }
 }
 
 @media screen and (min-width:1280px) {
     .carousel-item {
-        flex-basis: 350px
+        flex-basis: 270px
     }
 }
 
@@ -1376,3 +1376,5 @@ label.properties:hover {
 #saizo img {
     width: 100%;
 }
+
+
