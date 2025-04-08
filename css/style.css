@@ -990,7 +990,23 @@ ol {
     }
 } */
 
-@media (min-width:1000px) {
+@media (min-width: 500px) and (max-width: 800px)  {
+    .content, .main {
+        width: fit-content;
+    }
+    .container {
+        display: flex;
+        gap: 30px;
+        flex-direction: row
+    }
+    .title {
+        font-size: 45px;
+        line-height: 4rem
+    }
+} 
+
+
+@media (min-width:800px) {
     .content, .main {
         max-width: 50%;
     }
