@@ -1143,7 +1143,8 @@ li.carousel-item {
     display: inline-block;
     border: 1px solid lightgray;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    background: #f0f0f1;
+    /* background: #f0f0f1; */
+    background: linear-gradient(to bottom, #ffffff, #f8f8fb, #eff1f7, #e5ebf3, #dae5ef);
     border-radius: 15px;
 }
 
