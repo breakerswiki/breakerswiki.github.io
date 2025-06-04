@@ -485,17 +485,18 @@ a.back:hover {
 .nav-guide {
     display: flex;
     gap: 5px;
-    margin-bottom: 20px
+    margin-bottom: 20px;
 }
 
 .nav-guide button {
-    background: #f8f8f8;
+    background: #eeeeee;
     color: #919191;
     appearance: none;
     -webkit-appearance: none;
     cursor: pointer;
     padding: 5px;
-    border: 1px solid #919191;
+    /* border: 1px solid #919191; */
+    border: none;
     -webkit-transition: background-color .1s linear;
     -ms-transition: background-color .1s linear;
     flex: 1;
@@ -893,13 +894,15 @@ ol {
 .color-button {
     padding: 10px 20px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
+    border: none;
     cursor: pointer;
     transition: background-color .3s
 }
 
 .color-button.active {
     background-color: #155b99;
+    font-weight: 600;
     color: #fff
 }
 
@@ -1354,9 +1357,9 @@ label.properties {
     margin: 0 auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    background: #f8f8f8;
+    background: #eeeeee;
     color: #919191;
-    border: 1px solid #919191;
+    border: none;
     padding: 7px;
     cursor: pointer;
     border-radius: 5px;
@@ -1366,7 +1369,8 @@ label.properties {
 
 label.properties:hover {
     background-color: #155b99;
-    color: #fff
+    color: #fff;
+    font-weight: 600;
 }
 
 .arrow {
