@@ -43,7 +43,7 @@
         <h1 id="title"><span class="flag-icon flag-icon-eg"></span> Alsion III</h1>
 
         <div class="nav-guide">
-          <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
+          <button class="color-button" id="button1" onclick="showContent('infos')">About</button>
           <button class="color-button" id="button2" onclick="showContent('movelist')">Moves</button>
           <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
           <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
@@ -58,7 +58,7 @@
             who can use "Pharaoh Taijutsu" techniques.
           </p>
 
-          <!-- <h2>Colors</h2> -->
+          <h2>Colors</h2>
           <table class="colors" style="text-align: center;">
             <tbody>
               <tr>
@@ -76,6 +76,12 @@
             </tbody>
           </table>
 
+          <h2>Gallery</h2>
+          <div class="thumbnail-row">
+            <img src="/characters/alsion/img/alsion_artwork_1.webp" class="thumbnail-char" alt="1">
+            <img src="/characters/alsion/img/alsion_artwork_2.webp" class="thumbnail-char" alt="2">
+            <img src="/characters/alsion/img/alsion_artwork_3.webp" class="thumbnail-char" alt="3">
+          </div>
 
         </div>
 
@@ -467,7 +473,36 @@
 
   <!-- footer  -->
   <div id="footer-container"></div>
+<!-- Thumbnail Fullscreen image container -->
+<div id="fullscreen-container" style="display:none;">
+  <img id="fullscreen-image" src="" alt="Fullsize">
+</div>
+<!--  Fullscreen image settings -->
+<script>
+  const thumbnails = document.querySelectorAll('.thumbnail-char');
+  const fullscreenContainer = document.getElementById('fullscreen-container');
+  const fullscreenImage = document.getElementById('fullscreen-image');
 
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', (e) => {
+      fullscreenImage.src = thumb.src;
+      fullscreenContainer.style.display = 'flex';
+
+      // Lock scroll
+      document.body.style.overflow = 'hidden';
+
+      const scrollPosition = window.scrollY;
+      fullscreenContainer.style.top = scrollPosition + 'px';
+    });
+  });
+
+  fullscreenContainer.addEventListener('click', () => {
+    fullscreenContainer.style.display = 'none';
+
+    // Unlock scroll
+    document.body.style.overflow = '';
+  });
+</script>
 
 </body>
 

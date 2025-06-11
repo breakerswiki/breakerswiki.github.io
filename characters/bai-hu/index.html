@@ -45,7 +45,7 @@
 
 
         <div class="nav-guide">
-          <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
+          <button class="color-button" id="button1" onclick="showContent('infos')">About</button>
           <button class="color-button" id="button2" onclick="showContent('movelist')">Moves</button>
           <button class="color-button" id="button3"onclick="showContent('combos')">Combos</button>
         </div>
@@ -59,11 +59,18 @@
             He started the tournament to find the strongest fighters.
           </p>
           <p>
-            To unlock Bai-Hu, at the select screen, rotate the P1 joystick counterclockwise and the P2 joystick clockwise.
+            <u>Unlock Bai-Hu:</u> At the character select screen, rotate P1’s joystick counterclockwise and P2’s joystick clockwise.
           </p>
           <p>
             ⚠️ Bai-Hu's overpowered moves give him an unfair advantage, resulting in his ban from tournaments.
           </p>
+
+        <h2>Gallery</h2>
+        <div class="thumbnail-row">
+            <img src="/characters/bai-hu/img/bai-hu_artwork_1.webp" class="thumbnail-char" alt="1">
+            <img src="/characters/bai-hu/img/bai-hu_artwork_2.webp" class="thumbnail-char" alt="2">
+        </div>
+
 
         </div>
 
@@ -178,7 +185,36 @@
 
   <!-- footer  -->
   <div id="footer-container"></div>
+<!-- Thumbnail Fullscreen image container -->
+<div id="fullscreen-container" style="display:none;">
+  <img id="fullscreen-image" src="" alt="Fullsize">
+</div>
+<!--  Fullscreen image settings -->
+<script>
+  const thumbnails = document.querySelectorAll('.thumbnail-char');
+  const fullscreenContainer = document.getElementById('fullscreen-container');
+  const fullscreenImage = document.getElementById('fullscreen-image');
 
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', (e) => {
+      fullscreenImage.src = thumb.src;
+      fullscreenContainer.style.display = 'flex';
+
+      // Lock scroll
+      document.body.style.overflow = 'hidden';
+
+      const scrollPosition = window.scrollY;
+      fullscreenContainer.style.top = scrollPosition + 'px';
+    });
+  });
+
+  fullscreenContainer.addEventListener('click', () => {
+    fullscreenContainer.style.display = 'none';
+
+    // Unlock scroll
+    document.body.style.overflow = '';
+  });
+</script>
 
 </body>
 

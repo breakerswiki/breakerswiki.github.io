@@ -43,7 +43,7 @@
         <h1 id="title"><span class="flag-icon flag-icon-jp"></span> Sho Kamui</h1>
 
         <div class="nav-guide">
-          <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
+          <button class="color-button" id="button1" onclick="showContent('infos')">About</button>
           <button class="color-button" id="button2" onclick="showContent('movelist')">Moves</button>
           <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
           <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
@@ -58,6 +58,7 @@
             cheek.
           </p>
 
+          <h2>Colors</h2>
           <table class="colors" style="text-align: center;">
             <tbody>
               <tr>
@@ -74,6 +75,13 @@
               </tr>
             </tbody>
           </table>
+
+          <h2>Gallery</h2>
+            <div class="thumbnail-row">
+              <img src="/characters/sho/img/sho_artwork_1.webp" class="thumbnail-char" alt="1">
+              <img src="/characters/sho/img/sho_artwork_2.webp" class="thumbnail-char" alt="2">
+              <img src="/characters/sho/img/sho_artwork_3.webp" class="thumbnail-char" alt="3">
+            </div>
 
         </div>
 
@@ -330,10 +338,10 @@
 
           <h1>Overview</h1>
           <p>
-            Sho has strong offense, high damage, and excellent air control. 
-            His fast dashes and divekick from any jump angle let him stay aggressive and keep up the pressure. 
-            Many of his moves are safe and cancelable, making him a constant threat.
-          </p>
+            Sho is one of the most powerful characters, with strong attacks, high damage, and excellent air control.
+            He has quick dashes and a divekick that can be used from any jump angle allow him to stay aggressive and apply constant pressure. 
+            Plus, many of his moves are safe and cancelable, making him a relentless threat in any situation.
+           </p>
 
 
 
@@ -345,8 +353,8 @@
 
         <p>
           <u>Rekkou Ha (236P)</u>: 
-          Throw a projectile, then dash in and choose to stop or cancel at any point. 
-          Use it as okizeme to pressure opponents on their wakeup.
+          Throw a projectile, then dash in with the option to stop or cancel at any point. 
+          This can be used as okizeme to apply pressure on the opponent's wakeup
         </p>
 
           <p>
@@ -366,9 +374,10 @@
             <source src="/characters/sho/videos/sho_jumps.mp4" type="video/mp4">
           </video>
 
-          <p><u>Super cancels</u>: All of his air moves are super cancelable. 
-            Some, like jA, jB, and divekick can also be canceled on whiff, letting you follow up with air Super (236236P) to counter anti-airs attempts. 
-            Low-to-the-ground air-to-air hits can lead into 2C and 214K juggles, or a jA re-jump.
+          <p><u>Super cancels</u>: All of Sho's air moves are super cancelable.
+            jA, jB, and divekick, can be canceled on whiff. 
+            This lets him use air Super (236236P) to punish anti-airs. 
+            Low air-to-air hits can lead into 2C, 214K juggles, or a jA re-jump.
           </p>
 
           <p>
@@ -376,8 +385,9 @@
           </p>
 
           <p>
-          <u>Divekick pressure</u>: Low divekicks are effective for close-range pressure. If the opponent blocks high, you can mix in a low (2B) or a fuzzy jump. 
-          On hit, divekicks are still vulnerable to breaks like throws, reversals, or backdashes.
+          <u>Divekick pressure</u>: Low divekicks are strong for close-range pressure. 
+          If the opponent blocks high, you can follow up with a low 2B or a fuzzy jump. 
+          On hit, divekicks are still vulnerable to throws, reversals, or backdashes.
           </p>
 
 
@@ -393,7 +403,7 @@
            </p>
 
           <p>
-            <u>Kurenai (214K)</u>: The light version 214B is fast and allows for juggle combos, 
+            <u>Kurenai (214K)</u>: 214B is fast and allows for juggle combos, 
             while 214D is slower but hits higher. Both have startup invincibility.
           </p>
 
@@ -408,8 +418,9 @@
           <source src="/characters/sho/videos/matchups/sho_vs_tia_HeelBreak.mp4" type="video/mp4">
         </video>
           <p>
-            His best options to break combos are throw, backdash, and 214B, which work well against close-range jump-ins. 
-            In some combos, 214K and backdash are effective thanks to their startup invincibility.
+            His best options to use the break mechanic are throw, backdash, and 214B, 
+            which are effective against close-range jump-ins. 
+            In certain combos, 214K and backdash work well due to their startup invincibility.
           </p>
 
 
@@ -517,9 +528,10 @@
             <source src="/characters/sho/videos/sho_fuzzy_super.mp4" type="video/mp4">
           </video>
           <p>
-            To open an opponent’s defense, use a jump attack or divekick to make them block high (divekick can also be blocked low).
-            Then, while they're recovering, mixup with high or low. 
-            Fuzzy is a strong option for Sho, since his jD into air Super (236236P) is safe and deals significant damage.
+            To break an opponent’s defense, 
+            use a jump attack or divekick to make them block high (divekicks can also be blocked low). 
+            Then, while they recover, mix up with high or low attacks. 
+            Fuzzy is especially strong for Sho, since his jD into air Super (236236P) is safe.
           </p>
 
           <h3>Corner reset</h3>
@@ -529,8 +541,9 @@
           <p>
           Use 2C > B+C or close 5C.C > B+C then : <br>
           - walk under (condor)<br>
-          - dash empty or low (sho, rila, tia, saizo, bai-hu)<br>
-          - dash low (pielle, alsion, maherl, dao-long)
+          - dash low (pielle, alsion, maherl, dao-long)<br>
+          - dash empty or dash low (sho, rila, tia, saizo, bai-hu)
+
           </p>
 
           <h3>Throw Option Select</h3>
@@ -1281,6 +1294,36 @@
   <!-- footer  -->
   <div id="footer-container"></div>
 
+<!-- Thumbnail Fullscreen image container -->
+<div id="fullscreen-container" style="display:none;">
+  <img id="fullscreen-image" src="" alt="Fullsize">
+</div>
+<!--  Fullscreen image settings -->
+<script>
+  const thumbnails = document.querySelectorAll('.thumbnail-char');
+  const fullscreenContainer = document.getElementById('fullscreen-container');
+  const fullscreenImage = document.getElementById('fullscreen-image');
+
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', (e) => {
+      fullscreenImage.src = thumb.src;
+      fullscreenContainer.style.display = 'flex';
+
+      // Lock scroll
+      document.body.style.overflow = 'hidden';
+
+      const scrollPosition = window.scrollY;
+      fullscreenContainer.style.top = scrollPosition + 'px';
+    });
+  });
+
+  fullscreenContainer.addEventListener('click', () => {
+    fullscreenContainer.style.display = 'none';
+
+    // Unlock scroll
+    document.body.style.overflow = '';
+  });
+</script>
 
 </body>
 

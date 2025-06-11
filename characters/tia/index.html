@@ -43,7 +43,7 @@
         <h1 id="title"><span class="flag-icon flag-icon-th"></span> Tia Langray</h1>
 
         <div class="nav-guide">
-          <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
+          <button class="color-button" id="button1" onclick="showContent('infos')">About</button>
           <button class="color-button" id="button2" onclick="showContent('movelist')">Moves</button>
           <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
           <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
@@ -58,8 +58,7 @@
             She acknowledges that Sho, a game character, reminds her of him.
           </p>
 
-          <!-- <h2>Colors</h2> -->
-
+          <h2>Colors</h2>
           <table class="colors" style="text-align: center;">
             <tbody>
               <tr>
@@ -76,6 +75,14 @@
               </tr>
             </tbody>
           </table>
+
+          <h2>Gallery</h2>
+            <div class="thumbnail-row">
+              <img src="/characters/tia/img/tia_artwork_1.webp" class="thumbnail-char" alt="1">
+              <img src="/characters/tia/img/tia_artwork_2.webp" class="thumbnail-char" alt="2">
+              <img src="/characters/tia/img/tia_artwork_4.webp" class="thumbnail-char" alt="4">
+            </div>
+
         </div>
 
         <div id="movelist">
@@ -136,7 +143,7 @@
 
 
           <input type="checkbox" id="toggle"><br>
-          <label class="properties" for="toggle">More infos</label>
+          <label class="properties" for="toggle">More Info</label>
     
           <div class="moveproperties">  
           <div class="command-list">
@@ -558,7 +565,6 @@
               </p>
 
             <h2>Robin Liner</h2>
-            <img src="/characters/pielle/videos/pielle_RobinLiner.png">
               <p>
                 An anti-air special with slow recovery and no reversal properties...
                 On hit, 623A keeps you standing for a punish, while 623C knocks you down.
@@ -608,12 +614,11 @@
           <div id="rila">
 
           <h2>Dynamite Kick</h2>
-          <img src="/characters/rila/videos/rila_DynamiteKick.png?raw=true">
           <p>It makes her hop forward. She usually uses it to close distance mid-range and on your wake-up from afar.</p>
 
 
-          <h2>Crouching C</h2>
-          <img src="/characters/rila/videos/rila_crouch_C.png?raw=true">
+          <h2>2C</h2>
+
           <p>Her main poke that is annoying to deal with; it's safe on block, has good range, and can also
             anti-air.
           </p>
@@ -922,7 +927,6 @@
             <p>punish with 236236P</p>
 
             <h2>Rising upper</h2>
-            <img src="characters/tia/videos/tia_RisingUpper.png?raw=true">
             <p>
               Rising Upper A has quick recovery, making it difficult to punish on whiff.
               It's invulnerability on startup allows her to pass through projectiles.
@@ -991,7 +995,6 @@
 
 
             <h2>Poison Fog</h2>
-            <img src="/characters/alsion/videos/alsion_PoisonFog.png?raw=true">
             <span class="safe-on-block"></span>
             <p>
               A slow close-range projectile for chip damage or pressure on your wakeup.
@@ -1039,6 +1042,36 @@
   <!-- footer  -->
   <div id="footer-container"></div>
 
+  <!-- Thumbnail Fullscreen image container -->
+<div id="fullscreen-container" style="display:none;">
+  <img id="fullscreen-image" src="" alt="Fullsize">
+</div>
+<!--  Fullscreen image settings -->
+<script>
+  const thumbnails = document.querySelectorAll('.thumbnail-char');
+  const fullscreenContainer = document.getElementById('fullscreen-container');
+  const fullscreenImage = document.getElementById('fullscreen-image');
+
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', (e) => {
+      fullscreenImage.src = thumb.src;
+      fullscreenContainer.style.display = 'flex';
+
+      // Lock scroll
+      document.body.style.overflow = 'hidden';
+
+      const scrollPosition = window.scrollY;
+      fullscreenContainer.style.top = scrollPosition + 'px';
+    });
+  });
+
+  fullscreenContainer.addEventListener('click', () => {
+    fullscreenContainer.style.display = 'none';
+
+    // Unlock scroll
+    document.body.style.overflow = '';
+  });
+</script>
 
 </body>
 

@@ -44,7 +44,7 @@
 
 
     <div class="nav-guide">
-      <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
+      <button class="color-button" id="button1" onclick="showContent('infos')">About</button>
       <button class="color-button" id="button2" onclick="showContent('movelist')">Moves</button>
       <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
       <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
@@ -59,7 +59,7 @@
       </p>
 
 
-      <!-- <h2>Colors</h2> -->
+      <h2>Colors</h2>
       <table class="colors" style="text-align: center;">
         <tbody>
           <tr>
@@ -76,6 +76,12 @@
           </tr>
         </tbody>
       </table>
+
+      <h2>Gallery</h2>
+        <div class="thumbnail-row">
+            <img src="/characters/saizo/img/saizo_artwork_1.webp" class="thumbnail-char" alt="1">
+            <img src="/characters/saizo/img/saizo_artwork_2.webp" class="thumbnail-char" alt="2">
+        </div>
 
     </div>
 
@@ -244,11 +250,10 @@
       <h1>Overview</h1>
 
       <p>
-        Saizo has strengths in all areas, 
-        allowing for different playstyles. 
-        His sword specials excel at zoning, hitting from a distance, 
-        while his kunai can break through projectiles. 
-        At close range, he has a fast anti-air with long invincibility frames and a Super that punishes most unsafe moves. 
+        Saizo is a dominant force in all areas, 
+        offering diverse playstyles. He's strong at zoning, can pierce projectiles with his kunai, 
+        and boasts a fast, invincible anti-air special for close encounters. 
+        He also has one Super that's likely the fastest in the game, letting him punish most unsafe moves.
       </p>
 
       
@@ -518,7 +523,6 @@
           </p>
       
           </h2>Robin Liner</h2>
-          <img src="/characters/pielle/videos/pielle_RobinLiner.png">
             <p>
               An anti-air special with slow recovery and no reversal properties.
               On hit, 623A keeps you standing for a punish, while 623C knocks you down.
@@ -579,8 +583,7 @@
           afar. Unsafe on block, punish with 236236K.
         </p>
       
-        <h2>Crouching C</h2>
-        <img src="/characters/rila/videos/rila_crouch_C.png">
+        <h2>2C</h2>
         <p>Her main poke that is annoying to deal with; it's safe on block, has good range, and can also
           anti-air.
         </p>
@@ -841,7 +844,7 @@
           preload="none">
           <source src="characters/saizo/videos/matchups/saizo_vs_sho_RankiRyuuGeri.mp4" type="video/mp4">
         </video>
-$        <p>
+        <p>
           Ranki Ryuu Geri is tricky to punish as it can be followed by air super (Geki Rekkou Ha).
           Keep an eye on his super meter, if it's full, avoid taking risks.
         </p>
@@ -935,7 +938,6 @@ $        <p>
           </p>
       
           <h2>Rising upper</h2>
-          <img src="/characters/tia/videos/tia_623A.png">
           <p>
             Rising Upper A is an anti-air reversal with quick recovery, making it difficult to punish on whiff.
             It's invulnerability on startup allows her to pass through projectiles.
@@ -1019,7 +1021,6 @@ $        <p>
         </p>
       
         <h2>Poison Fog</h2>
-        <img src="/characters/alsion/videos/alsion_PoisonFog.png">
         <p>
           Close-range projectile for chip damage or pressure on your wakeup.
           Punish with your reversal super (236236K)
@@ -1065,7 +1066,36 @@ $        <p>
 
   <!-- footer  -->
   <div id="footer-container"></div>
+<!-- Thumbnail Fullscreen image container -->
+<div id="fullscreen-container" style="display:none;">
+  <img id="fullscreen-image" src="" alt="Fullsize">
+</div>
+<!--  Fullscreen image settings -->
+<script>
+  const thumbnails = document.querySelectorAll('.thumbnail-char');
+  const fullscreenContainer = document.getElementById('fullscreen-container');
+  const fullscreenImage = document.getElementById('fullscreen-image');
 
+  thumbnails.forEach(thumb => {
+    thumb.addEventListener('click', (e) => {
+      fullscreenImage.src = thumb.src;
+      fullscreenContainer.style.display = 'flex';
+
+      // Lock scroll
+      document.body.style.overflow = 'hidden';
+
+      const scrollPosition = window.scrollY;
+      fullscreenContainer.style.top = scrollPosition + 'px';
+    });
+  });
+
+  fullscreenContainer.addEventListener('click', () => {
+    fullscreenContainer.style.display = 'none';
+
+    // Unlock scroll
+    document.body.style.overflow = '';
+  });
+</script>
 
 
 
