@@ -340,7 +340,7 @@
       <p>There are several shortcuts to perform the Bloody Fang super: you can use [1]37K or [1]32147K</p>
 
       <h1>Resources</h1>
-      <iframe width="100%" height="300px" src="https://www.youtube.com/embed/NzeskKbDFt8?si=-Tl8YE12rFdoNazM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="100%" height="300px" src="https://www.youtube.com/embed/NzeskKbDFt8?si=-Tl8YE12rFdoNazM" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
       <h1>Replays</h1>
       <ul class="combos">
@@ -904,32 +904,7 @@
 <div id="fullscreen-container" style="display:none;">
   <img id="fullscreen-image" src="" alt="Fullsize">
 </div>
-<!--  Fullscreen image settings -->
-<script>
-  const thumbnails = document.querySelectorAll('.thumbnail-char');
-  const fullscreenContainer = document.getElementById('fullscreen-container');
-  const fullscreenImage = document.getElementById('fullscreen-image');
 
-  thumbnails.forEach(thumb => {
-    thumb.addEventListener('click', (e) => {
-      fullscreenImage.src = thumb.src;
-      fullscreenContainer.style.display = 'flex';
-
-      // Lock scroll
-      document.body.style.overflow = 'hidden';
-
-      const scrollPosition = window.scrollY;
-      fullscreenContainer.style.top = scrollPosition + 'px';
-    });
-  });
-
-  fullscreenContainer.addEventListener('click', () => {
-    fullscreenContainer.style.display = 'none';
-
-    // Unlock scroll
-    document.body.style.overflow = '';
-  });
-</script>
 
 </body>
 
