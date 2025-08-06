@@ -498,8 +498,8 @@ a.back:hover {
     -webkit-appearance: none;
     cursor: pointer;
     padding: 5px;
-    /* border: 1px solid #919191; */
-    border: none;
+    border: 1px solid lightgray;
+    /* border: none; */
     -webkit-transition: background-color .1s linear;
     -ms-transition: background-color .1s linear;
     flex: 1;
@@ -1176,9 +1176,17 @@ h2.card-title {
 
 li.carousel-item {
     display: inline-block;
-    background: linear-gradient(to bottom, #ffffff, #f8f8fb, #eff1f7, #e5ebf3, #dae5ef);
+    background: #f7f7f7;
+    border: 1px solid lightgray;
+    border-bottom: 5px solid lightgray;
+    /* background: linear-gradient(to bottom, #ffffff, #f8f8fb, #eff1f7, #e5ebf3, #dae5ef); */
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+li.carousel-item p {
+    font-size: 0.95rem;
+    margin: 10px;
 }
 
 .card > video {
