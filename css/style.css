@@ -1278,7 +1278,7 @@ section.carousel {
 /* Optional: style the individual elements */
 .year {
   display: inline;
-  font-size: 5em; /* or whatever size you want */
+  font-size: 4em; /* or whatever size you want */
   color: lightgray;
   font-weight: bold;
 }
