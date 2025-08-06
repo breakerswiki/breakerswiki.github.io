@@ -1259,18 +1259,37 @@ section.carousel {
 
 .wiki {
     display: flex;
-    max-width: 760px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 5px;
     padding-top: 20px;
     border-radius: 8px;
+    justify-content: center;
     width: 100%
+}
+
+.year-container {
+  /* display: inline-block; */
+  align-items: center; /* Vertically aligns the text */
+  text-align: center;
+}
+
+/* Optional: style the individual elements */
+.year {
+  display: inline;
+  font-size: 2.5em; /* or whatever size you want */
+  color: rgb(171, 170, 170);
+  font-weight: bold;
+}
+
+.name {
+  font-size: 1em; /* or whatever size you want */
 }
 
 img.boxart {
     float: left;
     width: 150px;
-    margin: 10px;
+    /* margin: 10px; */
     margin-right: 10px;
     border: 2px solid black;
 }
@@ -1280,7 +1299,7 @@ img.boxart {
     flex: 1;
     font-size: 18px;
     color: #555;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
     min-height: 300px;
 }
 
