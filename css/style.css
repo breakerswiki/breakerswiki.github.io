@@ -908,21 +908,7 @@ ol {
     /* background-color: #155b99; */
     font-weight: 600;
     color: #fff;
-  background: linear-gradient(135deg, #b7ccff, #2082c0, #0070e0);
-background-size: 400% 400%;
-  animation: blueBreathing 2s ease-in-out infinite;
-}
-
-@keyframes blueBreathing {
-  0% {
-    background-position: 50% 50%;
-  }
-  50% {
-    background-position: 0% 100%;
-  }
-  100% {
-    background-position: 50% 50%;
-  }
+  background: #2082c0;
 }
 
 .toggle-link {
@@ -1186,8 +1172,9 @@ li.carousel-item {
 }
 
 li.carousel-item p {
-    font-size: 0.95rem;
+    /* font-size: 0.95rem; */
     margin: 10px;
+    margin-bottom: 50px;
 }
 
 .card > video {

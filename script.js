@@ -146,35 +146,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// Thumbnail to Fullscreen images
-document.addEventListener('DOMContentLoaded', () => {
-  const thumbnails = document.querySelectorAll('.thumbnail, .thumbnail-char');
-  const fullscreenContainer = document.getElementById('fullscreen-container');
-  const fullscreenImage = document.getElementById('fullscreen-image');
-
-  // Only proceed if all required elements are present
-  if (thumbnails.length && fullscreenContainer && fullscreenImage) {
-    thumbnails.forEach(thumb => {
-      thumb.addEventListener('click', () => {
-        fullscreenImage.src = thumb.src;
-        fullscreenContainer.style.display = 'flex';
-
-        // Lock scroll
-        document.body.style.overflow = 'hidden';
-
-        const scrollPosition = window.scrollY;
-        fullscreenContainer.style.top = scrollPosition + 'px';
-      });
-    });
-
-    fullscreenContainer.addEventListener('click', () => {
-      fullscreenContainer.style.display = 'none';
-      document.body.style.overflow = '';
-    });
-  }
-});
-
-
 // Lazy-loads <video> elements when they enter the viewport
 document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries, obs) => {

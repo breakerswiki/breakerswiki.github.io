@@ -77,11 +77,15 @@
           </table>
 
           <h2>Gallery</h2>
-          <div class="thumbnail-row">
+          <a href="/characters/alsion/img/alsion_artwork_1.webp" target="_blank">
             <img src="/characters/alsion/img/alsion_artwork_1.webp" class="thumbnail-char" alt="1">
+          </a>
+          <a href="/characters/alsion/img/alsion_artwork_2.webp" target="_blank">
             <img src="/characters/alsion/img/alsion_artwork_2.webp" class="thumbnail-char" alt="2">
+          </a>
+          <a href="/characters/alsion/img/alsion_artwork_3.webp" target="_blank">
             <img src="/characters/alsion/img/alsion_artwork_3.webp" class="thumbnail-char" alt="3">
-          </div>
+          </a>
 
         </div>
 
@@ -477,32 +481,6 @@
 <div id="fullscreen-container" style="display:none;">
   <img id="fullscreen-image" src="" alt="Fullsize">
 </div>
-<!--  Fullscreen image settings -->
-<script>
-  const thumbnails = document.querySelectorAll('.thumbnail-char');
-  const fullscreenContainer = document.getElementById('fullscreen-container');
-  const fullscreenImage = document.getElementById('fullscreen-image');
-
-  thumbnails.forEach(thumb => {
-    thumb.addEventListener('click', (e) => {
-      fullscreenImage.src = thumb.src;
-      fullscreenContainer.style.display = 'flex';
-
-      // Lock scroll
-      document.body.style.overflow = 'hidden';
-
-      const scrollPosition = window.scrollY;
-      fullscreenContainer.style.top = scrollPosition + 'px';
-    });
-  });
-
-  fullscreenContainer.addEventListener('click', () => {
-    fullscreenContainer.style.display = 'none';
-
-    // Unlock scroll
-    document.body.style.overflow = '';
-  });
-</script>
 
 </body>
 
