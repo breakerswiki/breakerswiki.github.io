@@ -92,6 +92,40 @@ function setImageSrc() {
 document.addEventListener("DOMContentLoaded", setImageSrc);
 
 
+// Lazy-loads <img> elements with the class "lazy-image" when they enter the viewport
+document.addEventListener("DOMContentLoaded", () => {
+  const lazyImages = document.querySelectorAll('img.lazy-image');
+  const lazyVideos = document.querySelectorAll('video[data-poster]');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+
+      const el = entry.target;
+
+      // Handle <img>
+      if (el.tagName === 'IMG' && el.dataset.src) {
+        el.src = el.dataset.src;
+        el.classList.remove('lazy-image');
+      }
+
+      // Handle <video>
+      if (el.tagName === 'VIDEO' && el.dataset.poster) {
+        el.poster = el.dataset.poster;
+        el.removeAttribute('data-poster');
+      }
+
+      observer.unobserve(el);
+    });
+  }, {
+    rootMargin: '0px 0px 200px 0px',
+    threshold: 0.01
+  });
+
+  lazyImages.forEach(img => observer.observe(img));
+  lazyVideos.forEach(video => observer.observe(video));
+});
+
 
 // Toggle content menu visibility on character pages.
 function showContent(contentId) {

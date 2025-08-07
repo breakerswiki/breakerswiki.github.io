@@ -2,7 +2,7 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css);
 
 * {
-     scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -16,14 +16,25 @@ body {
 
 @keyframes fade-in-right {
     from {
-      opacity: 0;
-      transform: translateX(-15px);
+        opacity: 0;
+        transform: translateX(-15px);
     }
+
     to {
-      opacity: 1;
-      transform: translateX(0);
+        opacity: 1;
+        transform: translateX(0);
     }
-  }
+}
+
+
+img.lazy-image {
+    filter: blur(10px);
+    transition: filter 0.3s ease;
+}
+
+img:not(.lazy-image) {
+    filter: blur(0);
+}
 
 .nav-links li {
     margin: 0
@@ -111,7 +122,7 @@ a {
 }
 
 
-.logo > a.current {
+.logo>a.current {
     border: none;
 }
 
@@ -204,6 +215,7 @@ img.logo:active {
     img.logo {
         width: 95px
     }
+
     p {
         font-size: 17px
     }
@@ -908,7 +920,7 @@ ol {
     /* background-color: #155b99; */
     font-weight: 600;
     color: #fff;
-  background: #2082c0;
+    background: #2082c0;
 }
 
 .toggle-link {
@@ -997,20 +1009,22 @@ ol {
     }
 } */
 
-@media (min-width: 500px) and (max-width: 800px)  {
+@media (min-width: 500px) and (max-width: 800px) {
     .content, .main {
         width: fit-content;
     }
+
     .container {
         display: flex;
         gap: 30px;
         flex-direction: row
     }
+
     .title {
         font-size: 45px;
         line-height: 4rem
     }
-} 
+}
 
 
 @media (min-width:800px) {
@@ -1147,7 +1161,7 @@ main {
 .card {
     /* padding: 0.3rem; */
     text-align: center;
-    
+
     background-color: transparent
 }
 
@@ -1177,12 +1191,13 @@ li.carousel-item p {
     margin-bottom: 50px;
 }
 
-.card > video {
-     border-radius: 10px 10px 0 0;
+.card>video {
+    border-radius: 10px 10px 0 0;
 }
 
 .carousel-items {
     display: flex;
+    gap: 0.5rem;
     padding-top: 0;
     scroll-snap-type: x mandatory;
     overflow: scroll;
@@ -1195,6 +1210,7 @@ li.carousel-item p {
 
 .carousel-item {
     flex: 1 0 280px;
+    /* flex: 0 0 auto; */
     margin-left: 1rem;
     scroll-snap-align: start;
     /* border: 2px solid lightgray; */
@@ -1211,9 +1227,35 @@ li.carousel-item p {
     border: 1px solid lightgrey
 }
 
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 
+}
 
-
+.carousel-button {
+    font-size: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    text-align: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.carousel-button:hover {
+    background-color: transparent;
+    color: #000;
+}
+.prev, .next {
+    width: 50px;
+    color: lightgray;
+}
+.carousel-button:focus {
+    outline: none;
+    color: gray;
+    background-color: transparent;
+}
 
 @media screen and (min-width:992px) {
     input, select, optgroup, textarea {
@@ -1240,6 +1282,8 @@ li.carousel-item p {
 section.carousel {
     height: 100vh;
     padding: 20px;
+    overflow-x: auto;
+    /* cursor: grab; */
     scroll-snap-align: start
 }
 
@@ -1257,21 +1301,24 @@ section.carousel {
 }
 
 .year-container {
-  /* display: inline-block; */
-  align-items: center; /* Vertically aligns the text */
-  text-align: center;
+    /* display: inline-block; */
+    align-items: center;
+    /* Vertically aligns the text */
+    text-align: center;
 }
 
 /* Optional: style the individual elements */
 .year {
-  display: inline;
-  font-size: 4em; /* or whatever size you want */
-  color: lightgray;
-  font-weight: bold;
+    display: inline;
+    font-size: 4em;
+    /* or whatever size you want */
+    color: lightgray;
+    font-weight: bold;
 }
 
 .name {
-  font-size: 1em; /* or whatever size you want */
+    font-size: 1em;
+    /* or whatever size you want */
 }
 
 img.boxart {
@@ -1426,6 +1473,7 @@ label.properties:hover {
     0%, 100% {
         transform: translateY(0) rotate(-45deg);
     }
+
     50% {
         transform: translateY(10px) rotate(-45deg);
     }
@@ -1446,9 +1494,9 @@ label.properties:hover {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
-  }
-  
-  .thumbnail {
+}
+
+.thumbnail {
     width: 60px;
     height: 60px;
     object-fit: cover;
@@ -1456,9 +1504,9 @@ label.properties:hover {
     transition: transform 0.3s ease;
     border-radius: 6px;
     opacity: .3;
-  }
+}
 
-    .thumbnail-char {
+.thumbnail-char {
     width: 100px;
     height: 100px;
     border: 1px solid gray;
@@ -1466,15 +1514,15 @@ label.properties:hover {
     cursor: pointer;
     transition: transform 0.3s ease;
     border-radius: 6px;
-  }
-  
-  .thumbnail:hover,.thumbnail-char:hover {
+}
+
+.thumbnail:hover, .thumbnail-char:hover {
     transform: scale(1.2);
     opacity: 1;
     z-index: 2;
-  }
-  
-  #fullscreen-container {
+}
+
+#fullscreen-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -1482,18 +1530,19 @@ label.properties:hover {
     height: 100vh;
     background: rgba(0, 0, 0, 0.9);
     display: flex;
-    align-items: center;  /* Center image vertically */
-    justify-content: center;  /* Center image horizontally */
+    align-items: center;
+    /* Center image vertically */
+    justify-content: center;
+    /* Center image horizontally */
     z-index: 9999;
-  }
-  
-  #fullscreen-container img {
+}
+
+#fullscreen-container img {
     width: 80%;
     height: 80%;
-    object-fit: contain;  /* Maintain aspect ratio */
+    object-fit: contain;
+    /* Maintain aspect ratio */
     border-radius: 4px;
     /* box-shadow: 0 0 20px rgba(0,0,0,0.5); */
     cursor: zoom-out;
-  }
-  
-
+}

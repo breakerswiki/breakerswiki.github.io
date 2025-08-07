@@ -23,15 +23,12 @@
 
    <section class="main-content" style="padding: 0; max-width: 700px;">
 
-      <!-- <h1 class="title">game mechanics</h1> -->
-
       <main>
          <section class="carousel">
-
             <ul class="carousel-items">
                 <li class="carousel-item">
                     <div class="card">
-                        <video poster="/gameplay/videos/controls.jpg" controls loop muted playsinline preload="none">
+                        <video data-poster="/gameplay/videos/controls.jpg" controls loop muted playsinline preload="none" width="268" height="209">
                             <source src="/gameplay/videos/controls.mp4" type="video/mp4">
                         </video>
                         <h2 class="card-title">Controls</h2>
@@ -57,7 +54,7 @@
                 </li>
                 <li class="carousel-item">
                     <div class="card">
-                        <video poster="/gameplay/videos/throw.jpg" controls loop muted playsinline preload="none">
+                        <video data-poster="/gameplay/videos/throw.jpg" controls loop muted playsinline preload="none" width="268" height="209">
                             <source src="/gameplay/videos/throw.mp4" type="video/mp4">
                         </video>
                         <h2 class="card-title">Throw</h2>
@@ -70,7 +67,7 @@
                 </li>
                 <li class="carousel-item">
                     <div class="card">
-                        <video poster="/gameplay/videos/supers.jpg" controls loop muted playsinline preload="none">
+                        <video data-poster="/gameplay/videos/supers.jpg" controls loop muted playsinline preload="none" width="268" height="209">
                             <source src="/gameplay/videos/supers.mp4" type="video/mp4">
                         </video>
                         <h2 class="card-title">Supers</h2>
@@ -83,7 +80,7 @@
                 </li>
                 <li class="carousel-item">
                     <div class="card">
-                        <video poster="/gameplay/videos/juggles.jpg" controls loop muted playsinline preload="none">
+                        <video data-poster="/gameplay/videos/juggles.jpg" controls loop muted playsinline preload="none" width="268" height="209">
                             <source src="/gameplay/videos/juggles.mp4" type="video/mp4">
                         </video>
                         <h2 class="card-title">Juggles</h2>
@@ -97,7 +94,7 @@
                 </li>
                 <li class="carousel-item">
                     <div class="card">
-                        <video poster="/gameplay/videos/roll.jpg" controls loop muted playsinline preload="none">
+                        <video data-poster="/gameplay/videos/roll.jpg" controls loop muted playsinline preload="none" width="268" height="209">
                             <source src="/gameplay/videos/roll.mp4" type="video/mp4">
                         </video>
                         <h2 class="card-title">Back roll</h2>
@@ -109,7 +106,7 @@
                 </li>
                 <li class="carousel-item">
                     <div class="card">
-                        <video poster="/gameplay/videos/dash.jpg" controls loop muted playsinline preload="none">
+                        <video data-poster="/gameplay/videos/dash.jpg" controls loop muted playsinline preload="none" width="268" height="209">
                             <source src="/gameplay/videos/dash.mp4" type="video/mp4">
                         </video>
                         <h2 class="card-title">Dashes</h2>
@@ -124,7 +121,7 @@
                 </li>
                 <li class="carousel-item">
                     <div class="card">
-                        <video poster="/gameplay/videos/dizzy.jpg" controls loop muted playsinline preload="none">
+                        <video data-poster="/gameplay/videos/dizzy.jpg" controls loop muted playsinline preload="none" width="268" height="209">
                             <source src="/gameplay/videos/dizzy.mp4" type="video/mp4">
                         </video>
                         <h2 class="card-title">Dizzy</h2>
@@ -137,7 +134,7 @@
                 </li>
                 <li class="carousel-item">
                     <div class="card">
-                        <video poster="/gameplay/videos/chip.jpg" controls loop muted playsinline preload="none">
+                        <video data-poster="/gameplay/videos/chip.jpg" controls loop muted playsinline preload="none" width="268" height="209">
                             <source src="/gameplay/videos/chip.mp4" type="video/mp4">
                         </video>
                         <h2 class="card-title">Chip damage</h2>
@@ -150,7 +147,7 @@
                 </li>
                 <li class="carousel-item">
                     <div class="card">
-                        <video poster="/gameplay/videos/breakers.jpg" controls loop muted playsinline preload="none">
+                        <video data-poster="/gameplay/videos/breakers.jpg" controls loop muted playsinline preload="none" width="268" height="209">
                             <source src="/gameplay/videos/breakers.mp4" type="video/mp4">
                         </video>
                         <h2 class="card-title">Break</h2>
@@ -164,7 +161,7 @@
                 </li>
                 <li class="carousel-item">
                     <div class="card">
-                        <video poster="/gameplay/videos/risk.jpg" controls loop muted playsinline preload="none">
+                        <video data-poster="/gameplay/videos/risk.jpg" controls loop muted playsinline preload="none" width="268" height="209">
                             <source src="/gameplay/videos/risk.mp4" type="video/mp4">
                         </video>
                         <h2 class="card-title">Risk system</h2>
@@ -178,7 +175,10 @@
                     </div>
                 </li>
             </ul>
-
+            <div class="navigation">
+            <button class="carousel-button prev">◄</button>
+            <button class="carousel-button next">►</button>
+            </div>
         </section>
       </main>
 
@@ -187,7 +187,24 @@
    <!-- footer  -->
    <div id="footer-container"></div>
 
+<script>
+  const carousel = document.querySelector('.carousel-items');
+  const prev = document.querySelector('.carousel-button.prev');
+  const next = document.querySelector('.carousel-button.next');
+
+  const scrollAmount = 200; // Pixels to scroll per click
+
+  prev.addEventListener('click', () => {
+    carousel.scrollLeft -= scrollAmount;
+  });
+
+  next.addEventListener('click', () => {
+    carousel.scrollLeft += scrollAmount;
+  });
+</script>
 
 </body>
+
+
 
 </html>
