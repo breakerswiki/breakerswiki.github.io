@@ -177,10 +177,7 @@
                     </div>
                 </li>
             </ul>
-            <div class="navigation">
-            <button class="carousel-button prev">◄</button>
-            <button class="carousel-button next">►</button>
-            </div>
+
         </section>
       </main>
 
@@ -188,22 +185,6 @@
    </section>
    <!-- footer  -->
    <div id="footer-container"></div>
-
-<script>
-  const carousel = document.querySelector('.carousel-items');
-  const prev = document.querySelector('.carousel-button.prev');
-  const next = document.querySelector('.carousel-button.next');
-
-  const scrollAmount = 200; // Pixels to scroll per click
-
-  prev.addEventListener('click', () => {
-    carousel.scrollLeft -= scrollAmount;
-  });
-
-  next.addEventListener('click', () => {
-    carousel.scrollLeft += scrollAmount;
-  });
-</script>
 
 </body>
 

@@ -169,8 +169,8 @@ img.logo:active {
     }
 
     .title {
-        font-size: 49px;
-        line-height: 4rem
+        font-size: 45px;
+        line-height: 3rem
     }
 
     .nav-links {
@@ -218,6 +218,9 @@ img.logo:active {
 
     p {
         font-size: 17px
+    }
+    p.description {
+        font-size: 24px;
     }
 }
 
@@ -657,7 +660,7 @@ div.infos img {
 }
 
 div.infos img:hover {
-    transform: scale(105%)
+    transform: scale(120%)
 }
 
 .characters-guide-main img {
@@ -846,12 +849,14 @@ th {
 
 .main-content video {
     width: 100%;
+    height: 100%;
     border-radius: 5px
 }
 
 a:focus {
     outline: 0
 }
+
 
 .gallery {
     grid-template-columns: repeat(var(--items), 1fr);
@@ -1514,35 +1519,12 @@ label.properties:hover {
     cursor: pointer;
     transition: transform 0.3s ease;
     border-radius: 6px;
+    position: relative; /* Add this line */
+    z-index: 1;
 }
 
 .thumbnail:hover, .thumbnail-char:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
     opacity: 1;
-    z-index: 2;
-}
-
-#fullscreen-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.9);
-    display: flex;
-    align-items: center;
-    /* Center image vertically */
-    justify-content: center;
-    /* Center image horizontally */
-    z-index: 9999;
-}
-
-#fullscreen-container img {
-    width: 80%;
-    height: 80%;
-    object-fit: contain;
-    /* Maintain aspect ratio */
-    border-radius: 4px;
-    /* box-shadow: 0 0 20px rgba(0,0,0,0.5); */
-    cursor: zoom-out;
+    z-index: 10;
 }
