@@ -1125,10 +1125,10 @@ ol {
 
 .cabinet-container video {
     position: absolute;
-    top: 16%;
+    top: 24%;
 left: 21%;
 width: 57%;
-height: 47%;
+height: 29%;
     border-radius: 20px;
     z-index: 0;
     transform: perspective(200px) rotateX(5deg)
