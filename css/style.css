@@ -89,6 +89,12 @@ a {
     width: 100%
 }
 
+.arcadecab {
+    z-index: 1;
+}
+
+
+
 .image-container {
     display: flex;
     justify-content: center;
@@ -1112,16 +1118,19 @@ ol {
 
 .cabinet-container img {
     display: block;
-    width: 100%
+    width: 100%;
+    position: relative;
+    z-index: 10;
 }
 
 .cabinet-container video {
     position: absolute;
     top: 16%;
-    left: 24.5%;
-    width: 50%;
-    height: 47%;
+left: 21%;
+width: 57%;
+height: 47%;
     border-radius: 20px;
+    z-index: 0;
     transform: perspective(200px) rotateX(5deg)
 }
 
