@@ -179,6 +179,10 @@ img.logo:active {
         line-height: 3rem
     }
 
+    .arrow {
+        display: none !important;
+    }
+
     .nav-links {
         flex-direction: row;
         align-items: center;
@@ -519,8 +523,8 @@ a.back:hover {
     -webkit-appearance: none;
     cursor: pointer;
     padding: 5px;
-    border: 1px solid lightgray;
-    /* border: none; */
+    border: 1px solid gray;
+    border-bottom: 3px solid gray;
     -webkit-transition: background-color .1s linear;
     -ms-transition: background-color .1s linear;
     flex: 1;
@@ -530,15 +534,29 @@ a.back:hover {
 }
 
 .nav-guide button:hover {
-    background: #3d85c5;
+    background: #2082c0;
     color: #fff
 }
 
 .nav-guide button:active {
-    background: #416b9a;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, .4);
     color: #fff;
-    border: none
+}
+
+.color-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    /* border: 1px solid #ccc; */
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s
+}
+
+.color-button.active {
+    /* background-color: #155b99; */
+    font-weight: 600;
+    color: #fff;
+    background: #2082c0;
+    border-bottom: 3px solid #0d3e68;
 }
 
 #charselect a {
@@ -918,21 +936,7 @@ ol {
     counter-reset: item
 }
 
-.color-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    /* border: 1px solid #ccc; */
-    border: none;
-    cursor: pointer;
-    transition: background-color .3s
-}
 
-.color-button.active {
-    /* background-color: #155b99; */
-    font-weight: 600;
-    color: #fff;
-    background: #2082c0;
-}
 
 .toggle-link {
     color: #416b9a;
@@ -1086,7 +1090,7 @@ ol {
 
 
 .discord-button {
-    display: inline-block;
+    display: block;
     background-color: #5864f2;
     text-align: center;
     font-weight: 700;
@@ -1175,7 +1179,6 @@ main {
 .card {
     /* padding: 0.3rem; */
     text-align: center;
-
     background-color: transparent
 }
 
@@ -1192,8 +1195,8 @@ h2.card-title {
 li.carousel-item {
     display: inline-block;
     background: #f7f7f7;
-    border: 1px solid lightgray;
-    border-bottom: 5px solid lightgray;
+    border: 1px solid gray;
+    border-bottom: 5px solid gray;
     /* background: linear-gradient(to bottom, #ffffff, #f8f8fb, #eff1f7, #e5ebf3, #dae5ef); */
     border-radius: 10px;
     /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
@@ -1211,7 +1214,7 @@ li.carousel-item p {
 
 .carousel-items {
     display: flex;
-    gap: 0.5rem;
+    gap: 0.2rem;
     padding-top: 0;
     scroll-snap-type: x mandatory;
     overflow: scroll;
@@ -1225,7 +1228,7 @@ li.carousel-item p {
 .carousel-item {
     flex: 1 0 280px;
     /* flex: 0 0 auto; */
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     scroll-snap-align: start;
     /* border: 2px solid lightgray; */
     /* border-radius: 8px; */
@@ -1241,35 +1244,6 @@ li.carousel-item p {
     border: 1px solid lightgrey
 }
 
-.navigation {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-
-}
-
-.carousel-button {
-    font-size: 2rem;
-    text-align: center;
-    border-radius: 50%;
-    text-align: center;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-.carousel-button:hover {
-    background-color: transparent;
-    color: #000;
-}
-.prev, .next {
-    width: 50px;
-    color: lightgray;
-}
-.carousel-button:focus {
-    outline: none;
-    color: gray;
-    background-color: transparent;
-}
 
 @media screen and (min-width:992px) {
     input, select, optgroup, textarea {
@@ -1297,6 +1271,7 @@ section.carousel {
     height: 100vh;
     padding: 20px;
     overflow-x: auto;
+    
     /* cursor: grab; */
     scroll-snap-align: start
 }
@@ -1483,6 +1458,16 @@ label.properties:hover {
     animation: bounce 1.5s infinite;
 }
 
+.right-arrow {
+    width: 20px;
+    height: 20px;
+    border-left: 5px solid lightgray;
+    border-bottom: 5px solid lightgray;
+    transform: rotate(-135deg); /* Rotates the arrow to point right */
+    margin: 0 auto;
+    animation: bounce-right 1.5s infinite; /* Uses the new keyframe animation */
+}
+
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0) rotate(-45deg);
@@ -1490,6 +1475,16 @@ label.properties:hover {
 
     50% {
         transform: translateY(10px) rotate(-45deg);
+    }
+}
+
+@keyframes bounce-right {
+    0%, 100% {
+        transform: translateX(0) rotate(-135deg); /* Moves the arrow back to its original position */
+    }
+
+    50% {
+        transform: translateX(10px) rotate(-135deg); /* Moves the arrow 10px to the right */
     }
 }
 
