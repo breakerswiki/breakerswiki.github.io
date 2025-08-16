@@ -27,8 +27,7 @@
                 <div class="main-carousel-wrapper">
                     <div class="carousel-container">
                         <div class="card" data-index="0">
-                            <video data-poster="/gameplay/videos/controls.jpg" loop muted playsinline
-                                preload="none" width="268" height="209">
+                            <video data-poster="/gameplay/videos/controls.jpg" autoplay loop muted playsinline preload="none" width="268" height="209">
                                 <source src="/gameplay/videos/controls.mp4" type="video/mp4">
                             </video>
                             <div class="card-content">
@@ -236,11 +235,11 @@
             if (!video) return;
 
             if (index === currentIndex) {
-                video.currentTime = 0;   // restart from beginning (optional)
+                video.currentTime = 0;
                 video.play().catch(err => console.log("Autoplay blocked:", err));
             } else {
                 video.pause();
-                video.currentTime = 0; // reset (optional)
+                video.currentTime = 0;
             }
         });
 
@@ -262,8 +261,15 @@
 
     document.addEventListener('DOMContentLoaded', () => {
         updateCardStack();
+        // Force play the very first video on page load
+        const firstVideo = cards[0].querySelector('video');
+        if (firstVideo) {
+            firstVideo.currentTime = 0;
+            firstVideo.play().catch(err => console.log("Autoplay blocked on first video:", err));
+        }
     });
 </script>
+
 
 
 
