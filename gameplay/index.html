@@ -14,7 +14,12 @@
     <script src="script.js"></script>
 </head>
 
+<style>
+    body {
 
+  touch-action: manipulation !important;
+    }
+</style>
 <body>
 
 
@@ -268,6 +273,10 @@
             firstVideo.play().catch(err => console.log("Autoplay blocked on first video:", err));
         }
     });
+    // Prevent default double-click behavior
+    document.addEventListener('dblclick', function (event) {
+        event.preventDefault();
+    }, { passive: false });
 </script>
 
 
