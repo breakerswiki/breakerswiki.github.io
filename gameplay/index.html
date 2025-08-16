@@ -7,8 +7,7 @@
     <title>Breakers Wiki - Gameplay</title>
     <meta name="description" content="Breakers revenge, core mechanics, character playstyles, and matchup tips" />
     <meta name="theme-color">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" href="img/assets/apple-touch-icon.png">
     <link rel="manifest" href="img/manifest.json">
@@ -28,7 +27,7 @@
                 <div class="main-carousel-wrapper">
                     <div class="carousel-container">
                         <div class="card" data-index="0">
-                            <video data-poster="/gameplay/videos/controls.jpg" controls loop muted playsinline
+                            <video data-poster="/gameplay/videos/controls.jpg" loop muted playsinline
                                 preload="none" width="268" height="209">
                                 <source src="/gameplay/videos/controls.mp4" type="video/mp4">
                             </video>
@@ -55,7 +54,7 @@
                             </div>
                         </div>
                         <div class="card" data-index="1">
-                            <video data-poster="/gameplay/videos/throw.jpg" controls loop muted playsinline
+                            <video data-poster="/gameplay/videos/throw.jpg" loop muted playsinline
                                 preload="none" width="268" height="209">
                                 <source src="/gameplay/videos/throw.mp4" type="video/mp4">
                             </video>
@@ -69,7 +68,7 @@
                             </div>
                         </div>
                         <div class="card" data-index="2">
-                            <video data-poster="/gameplay/videos/supers.jpg" controls loop muted playsinline
+                            <video data-poster="/gameplay/videos/supers.jpg" loop muted playsinline
                                 preload="none" width="268" height="209">
                                 <source src="/gameplay/videos/supers.mp4" type="video/mp4">
                             </video>
@@ -83,7 +82,7 @@
                             </div>
                         </div>
                         <div class="card" data-index="3">
-                            <video data-poster="/gameplay/videos/juggles.jpg" controls loop muted playsinline
+                            <video data-poster="/gameplay/videos/juggles.jpg" loop muted playsinline
                                 preload="none" width="268" height="209">
                                 <source src="/gameplay/videos/juggles.mp4" type="video/mp4">
                             </video>
@@ -96,7 +95,7 @@
                             </div>
                         </div>
                         <div class="card" data-index="4">
-                            <video data-poster="/gameplay/videos/roll.jpg" controls loop muted playsinline
+                            <video data-poster="/gameplay/videos/roll.jpg" loop muted playsinline
                                 preload="none" width="268" height="209">
                                 <source src="/gameplay/videos/roll.mp4" type="video/mp4">
                             </video>
@@ -110,7 +109,7 @@
                             </div>
                         </div>
                         <div class="card" data-index="5">
-                            <video data-poster="/gameplay/videos/dash.jpg" controls loop muted playsinline
+                            <video data-poster="/gameplay/videos/dash.jpg" loop muted playsinline
                                 preload="none" width="268" height="209">
                                 <source src="/gameplay/videos/dash.mp4" type="video/mp4">
                             </video>
@@ -124,7 +123,7 @@
                             </div>
                         </div>
                         <div class="card" data-index="6">
-                            <video data-poster="/gameplay/videos/dizzy.jpg" controls loop muted playsinline
+                            <video data-poster="/gameplay/videos/dizzy.jpg" loop muted playsinline
                                 preload="none" width="268" height="209">
                                 <source src="/gameplay/videos/dizzy.mp4" type="video/mp4">
                             </video>
@@ -137,7 +136,7 @@
                             </div>
                         </div>
                         <div class="card" data-index="7">
-                            <video data-poster="/gameplay/videos/chip.jpg" controls loop muted playsinline
+                            <video data-poster="/gameplay/videos/chip.jpg" loop muted playsinline
                                 preload="none" width="268" height="209">
                                 <source src="/gameplay/videos/chip.mp4" type="video/mp4">
                             </video>
@@ -150,7 +149,7 @@
                             </div>
                         </div>
                         <div class="card" data-index="8">
-                            <video data-poster="/gameplay/videos/breakers.jpg" controls loop muted playsinline
+                            <video data-poster="/gameplay/videos/breakers.jpg" loop muted playsinline
                                 preload="none" width="268" height="209">
                                 <source src="/gameplay/videos/breakers.mp4" type="video/mp4">
                             </video>
@@ -163,7 +162,7 @@
                             </div>
                         </div>
                         <div class="card" data-index="9">
-                            <video data-poster="/gameplay/videos/risk.jpg" controls loop muted playsinline
+                            <video data-poster="/gameplay/videos/risk.jpg" loop muted playsinline
                                 preload="none" width="268" height="209">
                                 <source src="/gameplay/videos/risk.mp4" type="video/mp4">
                             </video>
@@ -190,72 +189,84 @@
     <!-- footer  -->
     <div id="footer-container"></div>
 
-    <script>
 
-        const cards = Array.from(document.querySelectorAll('.card'));
-        const prevButton = document.querySelector('.prev-button');
-        const nextButton = document.querySelector('.next-button');
-        const carouselContainer = document.querySelector('.carousel-container');
-        const cardCounter = document.getElementById('card-counter'); // Get the new counter element
+<script>
+    const cards = Array.from(document.querySelectorAll('.card'));
+    const prevButton = document.querySelector('.prev-button');
+    const nextButton = document.querySelector('.next-button');
+    const carouselContainer = document.querySelector('.carousel-container');
+    const cardCounter = document.getElementById('card-counter');
 
-        let currentIndex = 0;
+    let currentIndex = 0;
 
-        // Function to update the appearance of cards based on their position in the stack
-        function updateCardStack() {
-            cards.forEach((card, index) => {
-                const distance = index - currentIndex;
-                const absDistance = Math.abs(distance);
+    function updateCardStack() {
+        cards.forEach((card, index) => {
+            const distance = index - currentIndex;
+            const absDistance = Math.abs(distance);
 
-                let transformStyle = '';
-                let opacity = 1;
-                let zIndex = cards.length - absDistance;
+            let transformStyle = '';
+            let opacity = 1;
+            let zIndex = cards.length - absDistance;
 
-                if (distance === 0) { // Active card
-                    transformStyle = 'translateX(0) translateY(0) rotate(0deg) scale(1)';
-                    opacity = 1;
-                } else if (distance > 0) { // Cards after the active one (stacked behind)
-                    transformStyle = `translateX(${50 * absDistance}px) translateY(${10 * absDistance}px) rotate(${5 * absDistance}deg) scale(${1 - absDistance * 0.05})`;
-                    opacity = 1 - absDistance * 0.4;
-                } else { // Cards before the active one (stacked behind)
-                    transformStyle = `translateX(${-50 * absDistance}px) translateY(${10 * absDistance}px) rotate(${-5 * absDistance}deg) scale(${1 - absDistance * 0.05})`;
-                    opacity = 1 - absDistance * 0.4;
-                }
+            if (distance === 0) { // Active card
+                transformStyle = 'translateX(0) translateY(0) rotate(0deg) scale(1)';
+                opacity = 1;
+            } else if (distance > 0) { // After active
+                transformStyle = `translateX(${50 * absDistance}px) translateY(${10 * absDistance}px) rotate(${5 * absDistance}deg) scale(${1 - absDistance * 0.05})`;
+                opacity = 1 - absDistance * 0.4;
+            } else { // Before active
+                transformStyle = `translateX(${-50 * absDistance}px) translateY(${10 * absDistance}px) rotate(${-5 * absDistance}deg) scale(${1 - absDistance * 0.05})`;
+                opacity = 1 - absDistance * 0.4;
+            }
 
-                // Hide cards that are too far away
-                if (absDistance >= cards.length / 1) {
-                    opacity = 0;
-                    zIndex = 0;
-                }
+            if (absDistance >= cards.length / 1) {
+                opacity = 0;
+                zIndex = 0;
+            }
 
-                card.style.transform = transformStyle;
-                card.style.opacity = opacity;
-                card.style.zIndex = zIndex;
-                card.style.pointerEvents = (index === currentIndex) ? 'auto' : 'none';
-            });
-            // Update the card counter text
-            cardCounter.textContent = `${currentIndex + 1}/${cards.length}`;
-        }
+            card.style.transform = transformStyle;
+            card.style.opacity = opacity;
+            card.style.zIndex = zIndex;
+            card.style.pointerEvents = (index === currentIndex) ? 'auto' : 'none';
+        });
 
-        // Handle navigation to the next card
-        function showNextCard() {
-            currentIndex = (currentIndex + 1) % cards.length;
-            updateCardStack();
-        }
+        // --- Handle video playback ---
+        cards.forEach((card, index) => {
+            const video = card.querySelector('video');
+            if (!video) return;
 
-        // Handle navigation to the previous card
-        function showPrevCard() {
-            currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-            updateCardStack();
-        }
+            if (index === currentIndex) {
+                video.currentTime = 0;   // restart from beginning (optional)
+                video.play().catch(err => console.log("Autoplay blocked:", err));
+            } else {
+                video.pause();
+                video.currentTime = 0; // reset (optional)
+            }
+        });
 
-        // Add event listeners to navigation buttons
-        nextButton.addEventListener('click', showNextCard);
-        prevButton.addEventListener('click', showPrevCard);
+        cardCounter.textContent = `${currentIndex + 1}/${cards.length}`;
+    }
+
+    function showNextCard() {
+        currentIndex = (currentIndex + 1) % cards.length;
+        updateCardStack();
+    }
+
+    function showPrevCard() {
+        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+        updateCardStack();
+    }
+
+    nextButton.addEventListener('click', showNextCard);
+    prevButton.addEventListener('click', showPrevCard);
+
+    document.addEventListener('DOMContentLoaded', () => {
+        updateCardStack();
+    });
+</script>
 
 
-        // Initial update when the page loads
-        document.addEventListener('DOMContentLoaded', updateCardStack);
-    </script>
+
 </body>
 
 
