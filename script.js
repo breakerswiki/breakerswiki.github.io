@@ -5,17 +5,18 @@ if (window.location.pathname.endsWith('/')) {
 }
 
 
-// Header - Footer
+// Header - Footer loader
 function loadContent(file, containerId, callback) {
   fetch(file)
     .then(response => response.text())
     .then(data => {
       document.getElementById(containerId).innerHTML = data;
-      if (callback) callback(); // Optional callback for additional operations
+      if (callback) callback(); // Run callback after content is loaded
     })
     .catch(error => console.error(`Error loading ${file}:`, error));
 }
-// updating the year
+
+// Update footer year
 function updateFooterYear() {
   const currentYear = new Date().getFullYear();
   const footerYearElement = document.getElementById("footer-year");
@@ -23,30 +24,32 @@ function updateFooterYear() {
     footerYearElement.textContent = currentYear;
   }
 }
-// Load header and footer dynamically when DOM is loaded
-document.addEventListener("DOMContentLoaded", () => {
-  loadContent('header.html', 'header-container');
-  loadContent('footer.html', 'footer-container', updateFooterYear);
-});
 
-// add underline decoration to the current page link in the nav bar
-document.addEventListener("DOMContentLoaded", () => {
-  loadContent('header.html', 'header-container', highlightCurrentLink);
-});
-
-function highlightCurrentLink() {
+// Highlight the current page link in the navigation bar
+function highlightCurrentNav() {
   const currentPath = window.location.pathname;
-  const navLinks = document.querySelectorAll(".nav-links a");
 
-  navLinks.forEach(link => {
-    const linkPath = link.getAttribute("href");
+  document.querySelectorAll(".nav-links li a").forEach(link => {
+    const href = link.getAttribute("href");
 
-    if (linkPath === currentPath || 
-        (linkPath.startsWith("/characters") && currentPath.startsWith("/characters"))) {
-      link.classList.add("current");
+    // Exact match (Gameplay, About, etc.)
+    if (currentPath === href) {
+      link.style.fontWeight = "bold";
+    }
+
+    // Parent Characters link stays bold for any /characters/... subpage
+    if (href.startsWith("/characters") && currentPath.startsWith("/characters")) {
+      link.style.fontWeight = "bold";
     }
   });
 }
+
+// Load header + footer once DOM is ready
+document.addEventListener("DOMContentLoaded", () => {
+  loadContent("header.html", "header-container", highlightCurrentNav);
+  loadContent("footer.html", "footer-container", updateFooterYear);
+});
+
 
 
 
