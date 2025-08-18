@@ -1023,6 +1023,24 @@ main {
 .card-content p {
     font-size: 16px;
 }
+@keyframes bounce-left {
+  0%   { transform: translateX(0); }
+  30%  { transform: translateX(-30px); }
+  60%  { transform: translateX(15px); }
+  100% { transform: translateX(0); }
+}
+@keyframes bounce-right {
+  0%   { transform: translateX(0); }
+  30%  { transform: translateX(30px); }
+  60%  { transform: translateX(-15px); }
+  100% { transform: translateX(0); }
+}
+.bounce-left {
+  animation: bounce-left 0.4s ease;
+}
+.bounce-right {
+  animation: bounce-right 0.4s ease;
+}
 .button-container {
     display: flex;
     gap: 20px;
