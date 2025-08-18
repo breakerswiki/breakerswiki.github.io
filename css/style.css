@@ -986,7 +986,7 @@ main {
     align-items: center;
     padding-top: 25px;
     padding: 40px;
-    padding-top: 50px;
+    /* padding-top: 50px; */
 }
 .carousel-container {
     position: relative;
@@ -996,13 +996,12 @@ main {
     justify-content: center;
     align-items: center;
     perspective: 1000px;
-    margin-bottom: 80px;
-    padding-top: 20px;
+    margin-bottom: 50px;
 }
 .card {
     position: absolute;
     width: 268px;
-    height: 470px;
+    height: 445px;
     background-color: #eaeaea;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -1064,7 +1063,7 @@ main {
 .card>video {
     border-radius: 10px 10px 0 0;
     position: relative;
-    bottom: 32px;
+    bottom: 21px;
     width: 268px;
     height: auto;
 }
