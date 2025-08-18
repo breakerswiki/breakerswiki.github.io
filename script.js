@@ -107,13 +107,14 @@ function showContent(contentId) {
 
 // Display "Infos" by default and maintain active button color when clicked.
 document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(".color-button");
-  const defaultButton = document.getElementById('button1');
-  if (defaultButton) {
-    defaultButton.classList.add('active');
-    showContent('infos');
-  }
+  const buttons = document.querySelectorAll("button.color-button"); // only target .color-button
+  const defaultButton = document.getElementById("button1");
   
+  if (defaultButton) {
+    defaultButton.classList.add("active");
+    showContent("infos");
+  }
+
   buttons.forEach(button => {
     button.addEventListener("click", () => {
       document.querySelector(".color-button.active")?.classList.remove("active");
@@ -121,6 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
 

@@ -18,6 +18,28 @@
     body {
         touch-action: manipulation !important;
     }
+    /* Add bounce animations */
+@keyframes bounce-left {
+  0%   { transform: translateX(0); }
+  30%  { transform: translateX(-30px); }
+  60%  { transform: translateX(15px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes bounce-right {
+  0%   { transform: translateX(0); }
+  30%  { transform: translateX(30px); }
+  60%  { transform: translateX(-15px); }
+  100% { transform: translateX(0); }
+}
+
+.bounce-left {
+  animation: bounce-left 0.4s ease;
+}
+
+.bounce-right {
+  animation: bounce-right 0.4s ease;
+}
 </style>
 
 <body>
@@ -263,13 +285,25 @@
     }
 
     function showNextCard() {
-        currentIndex = (currentIndex + 1) % cards.length;
-        updateCardStack();
+        if (currentIndex < cards.length - 1) {
+            currentIndex++;
+            updateCardStack();
+        } else {
+            // Bounce at the end
+            carouselContainer.classList.add("bounce-right");
+            setTimeout(() => carouselContainer.classList.remove("bounce-right"), 400);
+        }
     }
 
     function showPrevCard() {
-        currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-        updateCardStack();
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCardStack();
+        } else {
+            // Bounce at the start
+            carouselContainer.classList.add("bounce-left");
+            setTimeout(() => carouselContainer.classList.remove("bounce-left"), 400);
+        }
     }
 
     nextButton.addEventListener('click', showNextCard);
@@ -284,6 +318,7 @@
             firstVideo.play().catch(err => console.log("Autoplay blocked on first video:", err));
         }
     });
+
     // Prevent default double-click behavior
     document.addEventListener('dblclick', function (event) {
         event.preventDefault();
