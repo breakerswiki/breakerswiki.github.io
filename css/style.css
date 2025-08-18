@@ -1254,6 +1254,7 @@ section.carousel {
         float: left;
         padding-right: 20px
     }
+
 }
 @media (max-width:768px) {
     .navbar {
@@ -1343,4 +1344,10 @@ section.carousel {
     .nav-guide button {
         font-size: 19px !important
     }
+}
+@media (min-width: 500px) {
+    .title, p.description {
+    text-align: right;
+    }
+
 }
