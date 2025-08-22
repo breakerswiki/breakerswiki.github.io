@@ -199,7 +199,7 @@ img.logo:active {
 .bottom-div {
     position: relative;
     transition: opacity 0.5s ease;
-    padding-top: 130px
+    padding-top: 100px
 }
 .top-div {
     position: relative;
@@ -236,15 +236,16 @@ img.logo:active {
     justify-content: center;
     width: 100%
 }
-.year-container {
+/* .year-container {
     align-items: center;
     text-align: center;
-}
+} */
 .year {
-    display: inline;
-    font-size: 4em;
+    /* display: inline; */
+    font-size: 2.9em;
     color: lightgray;
     font-weight: bold;
+    display: none;
 }
 .name {
     font-size: 1em;
@@ -259,8 +260,8 @@ img.boxart {
     flex: 1;
     font-size: 18px;
     color: #555;
-    margin-bottom: 100px;
-    min-height: 300px;
+    margin-bottom: 90px;
+    /* min-height: 300px; */
 }
 .text h3 {
     font-size: 20px;
@@ -268,6 +269,12 @@ img.boxart {
     color: #000
 }
 
+
+.gampelay {
+    text-align: center;
+    font-size: large;
+    margin-bottom: 50px;
+}
 
 
 /* move list  */
@@ -1251,6 +1258,9 @@ section.carousel {
         float: left;
         padding-right: 20px
     }
+    .title, p.description {
+    text-align: right;
+    }
 
 }
 @media (max-width:768px) {
@@ -1270,6 +1280,7 @@ section.carousel {
 
     .title {
         font-size: 45px;
+        text-align: center;
         line-height: 3rem
     }
 
@@ -1341,10 +1352,4 @@ section.carousel {
     .nav-guide button {
         font-size: 19px !important
     }
-}
-@media (min-width: 800px) {
-    .title, p.description {
-    text-align: right;
-    }
-
 }
