@@ -127,8 +127,8 @@
                                     <h2>Dashes</h2>
                                     <p>
                                         →→ / ←← <br>
-                                        All except Condor can dash. Some gain invincibility on backdash,
-                                        others can cancel dashes for movement tricks or longer jumps.
+                                        Except for Condor, all characters can dash.
+                                        Some gain invincibility on backdash, while others cancel dashes for quick movements or longer jumps.
                                     </p>
                                 </div>
                             </div>
@@ -320,8 +320,8 @@
         nextButton.addEventListener('click', showNextCard);
         prevButton.addEventListener('click', showPrevCard);
 
+        updateCardStack();
         document.addEventListener('DOMContentLoaded', () => {
-            updateCardStack();
             // Force play the very first video on page load
             const firstVideo = cards[0].querySelector('video');
             if (firstVideo) {
