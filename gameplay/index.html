@@ -50,28 +50,35 @@
                     <button class="card-nav-button next-button" aria-label="Next card">&#10095;</button>
                 </div>
             </main>
-            <!-- Tips -->
-             <div class="tipscontainer">
-            <div class="tips">
-                <h2>More knowledge</h2>
-                <p>
-                <h4>Beat-By Count</h4> A higher Beat-By count significantly impacts both player's attack and defense. In
-                offline
-                tournaments (Arcade cabinets), the game is often reset to ensure fair play.
-                </p>
-                <p>
-                <h4>Mash during Supers</h4>
-                In multi-hit super grabs (like <a href="/characters/rila/">Bloody Fang</a> or <a
-                    href="/characters/alsion/">Anubis Hug</a>), both players should mash buttons and directions. The
-                attacker deals more hits, but the defender still escapes quickly.
-                </p>
+            <a class="moreinfos" href="#" onclick="toggleDiv(); return false;">More infos</a><br>
 
-                <p>
-                <h4>Breaking with throw</h4> Some combos that start with jump-ins can be broken. If
-                you’re close, break using throw, but watch out... your opponent can counter your throw attempt with an invincible move or super.
-                </p>
+            <!-- Tips -->
+            <div id="toggleDiv" style="display: none;">
+                <div class="tipscontainer">
+                    <div class="tips">
+                        <h4>Beat-By Count</h4>
+                        <p>
+                            A higher Beat-By count significantly impacts both player's attack and
+                            defense. In offline tournaments (Arcade cabinets), the game is often reset to ensure fair
+                            play.
+                        </p>
+
+                        <h4>Mash during Supers</h4>
+                        <p>
+                            In multi-hit super grabs (like <a href="/characters/rila/">Bloody Fang</a> or <a
+                                href="/characters/alsion/">Anubis Hug</a>), both players should mash buttons and
+                            directions.
+                            The attacker deals more hits, but the defender still escapes quickly.
+                        </p>
+
+                        <h4>Throw break</h4>
+                        <p>
+                            Breaking with a throw is a useful option for dealing with some jump-in combos, but be aware that it can be countered.
+                            Your opponent can anticipate with an invincible move or super.
+                        </p>
+                    </div>
+                </div>
             </div>
-             </div>
         </section>
     </div>
     <!-- footer  -->
@@ -80,6 +87,14 @@
 
 
     <script>
+        function toggleDiv() {
+            var div = document.getElementById("toggleDiv");
+            if (div.style.display === "none") {
+                div.style.display = "block";
+            } else {
+                div.style.display = "none";
+            }
+        }
         document.addEventListener("DOMContentLoaded", () => {
             const video = document.getElementById("gameplay-video");
             const text = document.getElementById("video-text");
@@ -194,8 +209,8 @@
                     text: `
                     <h1>Risk system</h1>
                     <p>
-                        Idle boosts damage over time.
-                        Round winner receive more damage, losers gain defense.
+                        Staying idle boosts your damage over time.
+                        Winner receive more damage, losers gain defense.
                         Damage boosts only affect the player with more life until both players are even.
                     </p>
                     `

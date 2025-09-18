@@ -1093,7 +1093,6 @@ main {
 
 .tipscontainer {
     margin: 15px;
-    margin-top: 50px;
 }
 
 .tips {
@@ -1104,6 +1103,19 @@ main {
     max-width: 600px;
 }
 
+.tips h4  {
+    margin-top: 0;
+}
+.tips p {
+    margin-bottom: 20px;
+}
+a.moreinfos {
+    font-size: 1.1rem;
+    color: gray;
+    cursor: pointer;
+    margin: 0 auto;
+    display: table;
+}
 
 /* Thumbnails */
 
