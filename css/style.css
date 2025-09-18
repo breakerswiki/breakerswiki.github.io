@@ -32,6 +32,7 @@ img.lazy-image {
     filter: blur(10px);
     transition: filter 0.3s ease;
 }
+
 img:not(.lazy-image) {
     filter: blur(0);
 }
@@ -40,15 +41,18 @@ img:not(.lazy-image) {
 .inputs, td img {
     font-size: 14px
 }
+
 .inputs img, td img {
     margin-left: 3px;
     vertical-align: middle;
     margin-right: 3px
 }
+
 .inputs img {
     text-align: center;
     display: inline
 }
+
 .inputs {
     vertical-align: middle
 }
@@ -60,40 +64,50 @@ img:not(.lazy-image) {
 .nav-links li {
     margin: 0
 }
+
 .navbar, ol {
     padding: 10px
 }
+
 .nav-guide button, .nav-links, body {
     font-family: "Jost", sans-serif
 }
+
 .nav-links, .navbar {
     align-items: center;
     display: flex
 }
+
 .nav-links {
     list-style: none;
     padding: 0;
     gap: 15px
 }
+
 .nav-links a {
     color: #000;
     font-size: 1.2rem
 }
+
 .nav-links a, button.hide_content, ol li::before {
     text-decoration: none
 }
+
 .toggle-link, a:hover {
     text-decoration: underline
 }
+
 .nav-links a:hover {
     text-underline-offset: 10px;
     text-decoration: underline;
 }
+
 .nav-guide {
     display: flex;
     gap: 5px;
     margin-bottom: 20px;
 }
+
 .nav-guide button {
     background: #eeeeee;
     color: #919191;
@@ -110,13 +124,16 @@ img:not(.lazy-image) {
     text-align: center;
     transition: background-color .1s linear
 }
+
 .nav-guide button:hover {
     background: #2082c0;
     color: #fff
 }
+
 .nav-guide button:active {
     color: #fff;
 }
+
 .color-button {
     padding: 10px 20px;
     font-size: 16px;
@@ -124,20 +141,24 @@ img:not(.lazy-image) {
     cursor: pointer;
     transition: background-color .3s
 }
+
 .color-button:active {
     transform: scale(0.95);
 }
+
 .color-button.active {
     font-weight: 600;
     color: #fff;
     background: #2082c0;
     border-bottom: 3px solid #0d3e68;
 }
+
 .characters-guide-main a {
     position: relative;
     text-decoration: none;
     color: #000
 }
+
 .characters-guide-main a::before {
     content: "";
     position: absolute;
@@ -153,15 +174,18 @@ img:not(.lazy-image) {
     z-index: 10;
     transform-origin: center
 }
+
 .characters-guide-main a.active-link::before {
     opacity: 1;
     animation: 1s linear infinite rotate3DTriangle
 }
+
 .characters-guide-main a:hover::before {
     opacity: 1;
     animation: 1s linear infinite rotate3DTriangle;
     border-top: 10px solid #0597eb64
 }
+
 @keyframes rotate3DTriangle {
     from {
         transform: translateX(-50%) rotateY(0)
@@ -179,28 +203,34 @@ img:not(.lazy-image) {
 .arcadecab {
     z-index: 1;
 }
+
 img.logo {
     transition: transform .3s;
     margin-right: 5px
 }
+
 img.logo:hover {
     transform: scale(1.1)
 }
+
 img.logo:active {
     top: 5px;
     position: relative
 }
+
 .title {
     font-size: 60px;
     margin: 0;
     line-height: 4.5rem;
     font-weight: 700
 }
+
 .bottom-div {
     position: relative;
     transition: opacity 0.5s ease;
     padding-top: 100px
 }
+
 .top-div {
     position: relative;
     justify-content: center;
@@ -208,6 +238,7 @@ img.logo:active {
     font-size: 24px;
     transition: opacity 0.5s ease
 }
+
 .arrow {
     width: 30px;
     height: 30px;
@@ -217,6 +248,7 @@ img.logo:active {
     margin: 0 auto;
     animation: bounce 1.5s infinite;
 }
+
 @keyframes bounce {
     0%, 100% {
         transform: translateY(0) rotate(-45deg);
@@ -226,6 +258,7 @@ img.logo:active {
         transform: translateY(10px) rotate(-45deg);
     }
 }
+
 .wiki {
     display: flex;
     max-width: 600px;
@@ -236,10 +269,8 @@ img.logo:active {
     justify-content: center;
     width: 100%
 }
-/* .year-container {
-    align-items: center;
-    text-align: center;
-} */
+
+
 .year {
     /* display: inline; */
     font-size: 2.9em;
@@ -247,15 +278,18 @@ img.logo:active {
     font-weight: bold;
     display: none;
 }
+
 .name {
     font-size: 1em;
 }
+
 img.boxart {
     float: left;
     width: 150px;
     margin-right: 10px;
     border: 2px solid black;
 }
+
 .text {
     flex: 1;
     font-size: 18px;
@@ -263,38 +297,11 @@ img.boxart {
     margin-bottom: 90px;
     /* min-height: 300px; */
 }
+
 .text h3 {
     font-size: 20px;
     line-height: 2.8rem;
     color: #000
-}
-
-
-.gameplay {
-    text-align: center;
-    font-size: large;
-    margin-bottom: 50px;
-}
-
-.gameplay-tips {
-    font-size: 18px;
-}
-.gameplay-tips h1 {
-    text-align: center;
-}
-.gameplay-tips p {
-    float: right;
-    vertical-align: middle;
-    text-align: left;
-
-}
-.gameplay-tips img {
-    width: 150px;
-    float: left;
-    vertical-align: middle;
-    border-radius: 5px;
-    margin-right: 10px;
-    margin-left: 10px;
 }
 
 
@@ -305,6 +312,7 @@ img.boxart {
     border-collapse: collapse;
     width: 100%
 }
+
 .move {
     display: flex;
     justify-content: space-between;
@@ -312,6 +320,7 @@ img.boxart {
     align-items: center;
     border-top: 1px solid #ccc
 }
+
 .command-list h2 {
     color: #fff;
     font-weight: 500;
@@ -319,49 +328,63 @@ img.boxart {
     font-size: 1.1rem;
     margin: 0
 }
+
 h2.normals {
     background: #608e76
 }
+
 h2.commands {
     background: #6198d5
 }
+
 h2.specials {
     background: #8a7fbe
 }
+
 h2.supers {
     background: #cd7aac
 }
+
 h2.throws {
     background: #d07953
 }
+
 .move span {
     flex: 1;
     display: table-cell;
     vertical-align: middle
 }
+
 .move img {
     vertical-align: middle;
     margin-right: 2px;
     margin-left: 2px
 }
+
 .move span:first-child {
     text-align: left
 }
+
 .move span:last-child {
     text-align: right
 }
+
 .move:nth-child(odd) {
     background-color: #f9f9f9
 }
+
 input[type="checkbox"] {
     display: none
 }
+
 input[type="checkbox"]:checked~.moveproperties {
     display: block
 }
+
 .moveproperties {
     display: none
 }
+
 label.properties {
     display: table;
     margin: 0 auto;
@@ -377,50 +400,12 @@ label.properties {
     border-bottom: 3px solid gray;
     text-align: center
 }
+
 label.properties:hover {
     background-color: #155b99;
     color: #fff;
     font-weight: 600;
 }
-
-
-/* footer */
-
-.site-footer {
-    width: 100%;
-    color: #dce6f0;
-    text-align: center;
-    margin-top: 10rem;
-    padding-top: 20px;
-    padding-bottom: 200px
-}
-.footer-background, .slide {
-    background-position: center
-}
-.site-footer-owner {
-    display: block;
-    font-weight: 700
-}
-.site-footer-credits {
-    color: #819198
-}
-.site-footer p.footer {
-    max-width: 44rem;
-    margin: 0 auto
-}
-.site-footer img {
-    height: 60px;
-    margin-left: 5px;
-    padding: 0
-}
-.site-footer {
-    background-color: #000;
-    background-size: cover;
-    border: 2px solid black !important
-}
-
-
-
 
 
 
@@ -480,42 +465,52 @@ a {
     max-width: 500px;
     background-color: #fff
 }
+
 .main-content :first-child, .main-content ol, .main-content ul {
     margin-top: 0
 }
+
 .main-content img {
     max-width: 100%
 }
+
 .command-list h2 {
     margin-top: 0rem !important;
     margin-bottom: 0rem !important;
 }
+
 .main-content h1, .main-content h2, .main-content h3, .main-content h5, .main-content h6 {
     margin-top: 2rem;
     margin-bottom: 1rem
 }
+
 .main-content h1 {
     font-weight: 700;
     font-size: 32px
 }
+
 .main-content h4 {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: 700
 }
+
 .main-content p {
     margin-bottom: 1em;
 }
+
 .main-content table {
     display: inline-table;
     width: 100%;
     word-break: normal;
     word-break: keep-all
 }
+
 .main-content table td, .main-content table th {
     padding: 5px;
     border: 1px solid #c5c5c5
 }
+
 .main-content hr {
     height: 1px;
     padding: 0;
@@ -523,6 +518,7 @@ a {
     background-color: #e1e1e1;
     border: 0
 }
+
 .main-content table.combos, .main-content table.matchups {
     display: inline-table;
     text-align: left;
@@ -530,15 +526,18 @@ a {
     margin: 0;
     padding: 0
 }
+
 .main-content table.matchups td:first-child {
     width: 130px
 }
+
 .main-content table.charselect {
     display: inline-table;
     text-align: left;
     margin: 0;
     padding: 0
 }
+
 .main-content table.charselect td {
     margin: 0;
     padding: 0;
@@ -547,15 +546,10 @@ a {
     border: 0
 }
 
-
-
-
 .img-description {
     font-size: 12px;
     margin-bottom: 20px
 }
-
-
 
 img.charbg {
     width: 100%;
@@ -611,43 +605,53 @@ table.properties td:not(:first-child):not(:last-child), table.properties th:not(
 #charselect a {
     cursor: pointer
 }
+
 #charselect a img {
     filter: opacity(30%);
     transition: opacity 0.3s ease
 }
+
 #charselect a img.clicked {
     opacity: 1 !important;
     filter: none;
 
 }
+
 #charselect a:hover img {
     opacity: 1;
     filter: none;
 }
+
 #charselect a:active {
     transform: scale(0.95);
 }
+
 #charselect {
     min-width: 350px;
     margin-bottom: 20px;
     display: flex
 }
+
 #matchups li {
     margin-left: 20px;
     margin-bottom: 5px
 }
+
 #matchups p {
     margin-top: 5px;
     font-size: 1.1rem
 }
+
 #matchups th {
     font-size: medium;
     font-weight: 700;
     vertical-align: middle
 }
+
 #matchups img {
     vertical-align: middle
 }
+
 #matchups h1 {
     text-align: center;
     font-size: 24px
@@ -661,15 +665,18 @@ p.notes, table.properties td, table.properties th {
 .characters-guide img:hover {
     filter: brightness(70%)
 }
+
 .characters-guide img {
     object-fit: cover;
     position: relative;
     width: 100px;
     height: 140px
 }
+
 .characters-guide img:active {
     top: 5px
 }
+
 .characters-guide-main img {
     object-fit: cover;
     position: relative;
@@ -678,22 +685,23 @@ p.notes, table.properties td, table.properties th {
     border: 1px solid #000;
     background-color: #000
 }
+
 .characters-guide-main img.active, .characters-guide-main img:hover {
     filter: none;
     opacity: initial
 }
+
 .characters-guide-main img:active {
     filter: none;
     opacity: initial;
     top: 3px;
     position: relative
 }
+
 .characters-guide-main {
     display: flex;
     justify-content: center
 }
-
-
 
 div.infos {
     display: inline-block;
@@ -712,9 +720,6 @@ div.infos img {
 div.infos img:hover {
     transform: scale(120%)
 }
-
-
-
 
 table.movelist th:nth-child(n+3):nth-child(-n+7), td img, th.data {
     text-align: center
@@ -911,8 +916,6 @@ ol {
     cursor: pointer
 }
 
-
-
 .container {
     display: flex;
     flex-direction: column;
@@ -928,8 +931,6 @@ ol {
     margin: 0 auto;
     padding: 2rem 1rem
 }
-
-
 
 .cabinet-container {
     position: relative
@@ -994,89 +995,25 @@ main {
 
 
 /* Gameplay page */
- 
+
 
 .card-content {
     padding: 0.7rem;
 }
+
 .wrapper {
     overflow-x: hidden;
 }
-.main-carousel-wrapper {
-    display: flex;
-    max-width: 100%;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 25px;
-    padding: 40px;
-    /* padding-top: 50px; */
-}
-.carousel-container {
-    position: relative;
-    width: 320px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    perspective: 1000px;
-    margin-bottom: 50px;
-}
-.card {
-    position: absolute;
-    width: 268px;
-    height: 445px;
-    background-color: #f5f5f5;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2rem;
-    color: #333;
-    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.5s ease-in-out;
-    will-change: transform, opacity;
-    padding: 20px;
-    border: 1px solid gray;
-    border-bottom: 3px solid gray;
-    box-sizing: border-box;
-    user-select: none;
-}
-.card-content {
-    text-align: center;
-    font-size: 1rem;
-    padding: 5px;
-    padding-top: 0;
-}
-.card-content p {
-    font-size: 16px;
-}
-@keyframes bounce-left {
-  0%   { transform: translateX(0); }
-  30%  { transform: translateX(-30px); }
-  60%  { transform: translateX(15px); }
-  100% { transform: translateX(0); }
-}
-@keyframes bounce-right {
-  0%   { transform: translateX(0); }
-  30%  { transform: translateX(30px); }
-  60%  { transform: translateX(-15px); }
-  100% { transform: translateX(0); }
-}
-.bounce-left {
-  animation: bounce-left 0.4s ease;
-}
-.bounce-right {
-  animation: bounce-right 0.4s ease;
-}
+
+
 .button-container {
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 320px;
 }
+
 .card-nav-button {
     background-color: lightgray;
     color: white;
@@ -1093,21 +1030,17 @@ main {
     transition: background-color 0.3s ease, transform 0.3s ease;
     z-index: 10;
 }
+
 .card-nav-button:hover {
     background-color: gray;
     transform: scale(1.05);
 }
+
 .card-nav-button:active {
     background-color: #737373;
     transform: scale(0.95);
 }
-.card>video {
-    border-radius: 10px 10px 0 0;
-    position: relative;
-    bottom: 21px;
-    width: 268px;
-    height: auto;
-}
+
 .card-counter {
     font-size: 1.1rem;
     font-weight: 600;
@@ -1115,71 +1048,67 @@ main {
     min-width: 50px;
     text-align: center;
 }
-h2.card-title {
-    margin-top: 1rem;
-    margin-bottom: 0;
-    font-size: 1.6rem;
+
+
+
+.gameplay {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
-li.carousel-item {
-    display: inline-block;
-    background: #f7f7f7;
+
+.tv-container {
+   position: relative;
+  max-width: 400px; 
+  flex-shrink: 0; 
+}
+
+.tv-container img.tv {
+    display: block;
+    z-index: 1;
+}
+
+.tv-container video {
+    position: absolute;
+    top: 17%;
+    left: 14%;
+    width: 71.5%;
+    height: 52%;
+    object-fit: cover;
+    z-index: 0;
+    transform: perspective(200px) rotateX(0deg)
+}
+
+.video-text {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    padding: 10px;
+}
+
+.tipscontainer {
+    margin: 15px;
+    margin-top: 50px;
+}
+
+.tips {
+    margin: 0 auto;
     border: 1px solid gray;
-    border-bottom: 5px solid gray;
     border-radius: 10px;
-}
-li.carousel-item p {
-    margin: 10px;
-    margin-bottom: 20px;
-}
-.card>video {
-    border-radius: 10px 10px 0 0;
-}
-.carousel-items {
-    display: flex;
-    gap: 0.2rem;
-    padding-top: 0;
-    scroll-snap-type: x mandatory;
-    overflow: scroll;
-    overflow-y: hidden;
-    scroll-behavior: initial;
-    padding-bottom: 20px;
-    scrollbar-width: thin;
-}
-.carousel-item {
-    flex: 1 0 280px;
-    margin-left: 0.5rem;
-    scroll-snap-align: start;
-    background-color: transparent
-}
-.carousel-items::-webkit-scrollbar {
-    display: none
-}
-.carousel-item.highlighted {
-    border: 1px solid lightgrey
-}
-
-section.carousel {
-    height: 100vh;
-    padding: 20px;
-    overflow-x: auto;
-    scroll-snap-align: start
+    padding: 25px;
+    max-width: 600px;
 }
 
 
-#alsion img,
-#tia img,
-#pielle img,
-#dao-long img,
-#rila img,
-#saizo img {
-    width: 100%;
-}
+/* Thumbnails */
 
 .thumbnail-row {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
+
 .thumbnail {
     width: 60px;
     height: 60px;
@@ -1189,6 +1118,7 @@ section.carousel {
     border-radius: 6px;
     opacity: .3;
 }
+
 .thumbnail-char {
     width: 100px;
     height: 100px;
@@ -1200,6 +1130,7 @@ section.carousel {
     position: relative;
     z-index: 1;
 }
+
 .thumbnail:hover, .thumbnail-char:hover {
     transform: scale(1.4);
     opacity: 1;
@@ -1221,18 +1152,61 @@ section.carousel {
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease
 }
+
 .discord-button a {
     font-size: 18px
 }
+
 .discord-button:hover {
     background-color: #5e6a89;
     transform: scale(1.03);
     text-decoration: none
 }
+
 .discord-button:active {
     background-color: #4a55a2
 }
 
+/* footer */
+
+.site-footer {
+    width: 100%;
+    color: #dce6f0;
+    text-align: center;
+    margin-top: 10rem;
+    padding-top: 20px;
+    padding-bottom: 200px
+}
+
+.footer-background, .slide {
+    background-position: center
+}
+
+.site-footer-owner {
+    display: block;
+    font-weight: 700
+}
+
+.site-footer-credits {
+    color: #819198
+}
+
+.site-footer p.footer {
+    max-width: 44rem;
+    margin: 0 auto
+}
+
+.site-footer img {
+    height: 60px;
+    margin-left: 5px;
+    padding: 0
+}
+
+.site-footer {
+    background-color: #000;
+    background-size: cover;
+    border: 2px solid black !important
+}
 
 /* Responsive Desktop */
 @media screen and (min-width:768px) {
@@ -1279,9 +1253,11 @@ section.carousel {
         float: left;
         padding-right: 20px
     }
+
     .title, p.description {
-    text-align: right;
+        text-align: right;
     }
+
     img.logo {
         width: 120px;
         max-width: 100%;
@@ -1301,10 +1277,12 @@ section.carousel {
         display: flex;
         list-style: none
     }
+
     .characters-guide-main img {
         height: 92px
     }
-        .main-content table.charselect {
+
+    .main-content table.charselect {
         text-align: left;
         margin: 0;
         padding: 0
@@ -1320,14 +1298,31 @@ section.carousel {
         font-size: 19px !important
     }
 
-    .cabinet-container img {		
-	width: 90%;
+    .cabinet-container img {
+        width: 90%;
     }
+
     .cabinet-container video {
-	left:15%;
+        left: 15%;
+    }
+
+    .gameplay {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .video-text {
+        text-align: left;
+        margin-left: 1rem;
+        max-width: 250px;
+    }
+
+    .button-container {
+        margin-top: 1rem;
     }
 
 }
+
 /* Responsive Mobile */
 @media (max-width:768px) {
     .navbar {
@@ -1368,6 +1363,7 @@ section.carousel {
     #matchups p {
         margin-top: 5px;
     }
+
     img.logo {
         width: 95px;
     }
