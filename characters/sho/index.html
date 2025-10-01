@@ -25,25 +25,23 @@
     <div class="container">
       <div class="main-char-content">
 
-        <div class="characters-guide-main">
-          <div class="infos">
-            <a href="/characters/sho" class="active-link"><img class="active" src="img/assets/sho_bg.webp"></a>
-            <a href="/characters/pielle"><img src="img/assets/pielle_bg.webp"></a>
-            <a href="/characters/condor"><img src="img/assets/condor_bg.webp"></a>
-            <a href="/characters/rila"><img src="img/assets/rila_bg.webp"></a>
-            <a href="/characters/tia"><img src="img/assets/tia_bg.webp"></a>
-            <a href="/characters/alsion"><img src="img/assets/alsion_bg.webp"></a>
-            <a href="/characters/maherl"><img src="img/assets/maherl_bg.webp"></a>
-            <a href="/characters/dao-long"><img src="img/assets/dao-long_bg.webp"></a>
-            <a href="/characters/saizo"><img src="img/assets/saizo_bg.webp"></a>
-            <a href="/characters/bai-hu"><img src="img/assets/bai-hu_bg.webp"></a>
-          </div>
+        <div class="infos">
+          <a href="/characters/sho" class="active-link"><img class="active" src="/img/assets/sho.png"></a>
+          <a href="/characters/pielle"><img src="/img/assets/pielle.png"></a>
+          <a href="/characters/condor"><img src="/img/assets/condor.png"></a>
+          <a href="/characters/rila"><img src="/img/assets/rila.png"></a>
+          <a href="/characters/tia"><img src="/img/assets/tia.png"></a>
+          <a href="/characters/alsion"><img src="/img/assets/alsion.png"></a>
+          <a href="/characters/maherl"><img src="/img/assets/maherl.png"></a>
+          <a href="/characters/dao-long"><img src="/img/assets/daolong.png"></a>
+          <a href="/characters/saizo"><img src="/img/assets/saizo.png"></a>
+          <a href="/characters/bai-hu"><img src="img/assets/bai-hu.png"></a>
         </div>
 
         <h1 id="title"><span class="flag-icon flag-icon-jp"></span> Sho Kamui</h1>
 
         <div class="nav-guide">
-          <button class="color-button" id="button1" onclick="showContent('infos')">About</button>
+          <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
           <button class="color-button" id="button2" onclick="showContent('movelist')">Moves</button>
           <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
           <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
@@ -59,33 +57,36 @@
           </p>
 
           <h2>Colors</h2>
-          <table class="colors" style="text-align: center;">
-            <tbody>
-              <tr>
-                <td><img class="A"></td>
-                <td><img class="B"></td>
-                <td><img class="C"></td>
-                <td><img class="D"></td>
-              </tr>
-              <tr>
-                <td><img data-src="/characters/sho/img/sho_A.png" class="lazy-image"></td>
-                <td><img data-src="/characters/sho/img/sho_B.png" class="lazy-image"></td>
-                <td><img data-src="/characters/sho/img/sho_C.png" class="lazy-image"></td>
-                <td><img data-src="/characters/sho/img/sho_D.png" class="lazy-image"></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="character-colors">
+            <div class="column">
+              <span class="arcadebutton A"></span>
+              <img data-src="/characters/sho/img/sho_A.png" class="lazy-image" alt="Sho A">
+            </div>
+            <div class="column">
+              <span class="arcadebutton B"></span>
+              <img data-src="/characters/sho/img/sho_B.png" class="lazy-image" alt="Sho B">
+            </div>
+            <div class="column">
+              <span class="arcadebutton C"></span>
+              <img data-src="/characters/sho/img/sho_C.png" class="lazy-image" alt="Sho C">
+            </div>
+            <div class="column">
+              <span class="arcadebutton D"></span>
+              <img data-src="/characters/sho/img/sho_D.png" class="lazy-image" alt="Sho D">
+            </div>
+          </div>
 
           <h2>Gallery</h2>
-            <a href="/characters/sho/img/sho_artwork_1.webp" target="_blank">
-              <img data-src="/characters/sho/img/sho_artwork_1.webp" class="lazy-image thumbnail-char" alt="1">
-            </a>
-            <a href="/characters/sho/img/sho_artwork_2.webp" target="_blank">
-              <img data-src="/characters/sho/img/sho_artwork_2.webp" class="lazy-image thumbnail-char" alt="2">
-            </a>
-            <a href="/characters/sho/img/sho_artwork_3.webp" target="_blank">
-              <img data-src="/characters/sho/img/sho_artwork_3.webp" class="lazy-image thumbnail-char" alt="3">
-            </a>
+          <a href="/characters/sho/img/sho_artwork_1.webp" target="_blank">
+            <img data-src="/characters/sho/img/sho_artwork_1.webp" class="lazy-image thumbnail-char" alt="1">
+          </a>
+          <a href="/characters/sho/img/sho_artwork_2.webp" target="_blank">
+            <img data-src="/characters/sho/img/sho_artwork_2.webp" class="lazy-image thumbnail-char" alt="2">
+          </a>
+          <a href="/characters/sho/img/sho_artwork_3.webp" target="_blank">
+            <img data-src="/characters/sho/img/sho_artwork_3.webp" class="lazy-image thumbnail-char" alt="3">
+          </a>
+
         </div>
 
 
@@ -96,63 +97,65 @@
             <h2 class="commands">Commands</h2>
             <div class="move">
               <span>Onigawara</span>
-              <span><img class="A">+<img class="C"></span>
+              <span><span class="arcadebutton A"></span>+<span class="arcadebutton C"></span>
             </div>
             <div class="move">
               <span>Sunegoroshi</span>
-              <span><img class="B">+<img class="D"></span>
+              <span><span class="arcadebutton B"></span>+<span class="arcadebutton D"></span>
             </div>
             <div class="move">
               <span>Tobihizageri</span>
-              <span><img class="B">+<img class="C"></span>
+              <span><span class="arcadebutton B"></span>+<span class="arcadebutton C"></span>
             </div>
             <div class="move">
               <span>Sashikomi Kick</span>
-              <span><img class="Air"><img class="Down">+<img class="D"></span>
+              <span><img class="Air"><img class="Down">+<span class="arcadebutton D"></span>
             </div>
             <div class="move">
               <span>Upper</span>
-              <span><img class="Air"><img class="Up">+<img class="C"></span>
+              <span><img class="Air"><img class="Up">+<span class="arcadebutton C"></span>
             </div>
             <div class="move">
               <span>Hiji 3 Dan Kougeki</span>
-              <span><img class="C">.<img class="C">.<img class="C"></span>
+              <span><span class="arcadebutton C"></span>.<span class="arcadebutton C"></span>.<span
+                  class="arcadebutton C"></span>
             </div>
             <div class="move">
               <span>Fumitsuke</span>
-              <span><img class="Air"><img class="Down">+<img class="B"></span>
+              <span><img class="Air"><img class="Down">+<span class="arcadebutton B"></span>
             </div>
 
             <h2 class="specials">Specials</h2>
             <div class="move">
               <span>Rekkou Ha</span>
-              <span><img class="QCF">+<img class="Punch"></span>
+              <span><img class="QCF">+<span class="arcadebutton P"></span>
             </div>
             <div class="move">
               <span>Kurenai Sandan Geri</span>
-              <span><img class="QCB">+<img class="Kick">.<img class="Kick">.<img class="Kick"></span>
+              <span><img class="QCB">+<span class="arcadebutton K"></span>.<span class="arcadebutton K"></span>.<span
+                  class="arcadebutton K"></span>
             </div>
             <div class="move">
               <span>Ranki Ryuu Geri</span>
-              <span><img class="QCF">+<img class="Kick"></span>
+              <span><img class="QCF">+<span class="arcadebutton K"></span>
             </div>
             <div class="move">
               <span>Shippu Seiken Tsuki</span>
-              <span><img class="Right"><img class="Left"><img class="Right">+<img class="Punch"></span>
+              <span><img class="Right"><img class="Left"><img class="Right">+<span class="arcadebutton P"></span>
             </div>
 
             <h2 class="supers">Supers</h2>
             <div class="move">
               <span>Seiken Shou Ha</span>
-              <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+              <span><img class="QCF"><img class="QCF">+<span class="arcadebutton P"></span>
             </div>
             <div class="move">
               <span>Geki Rekkou Ha</span>
-              <span><img class="Air"><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+              <span><img class="Air"><img class="QCF"><img class="QCF">+<span class="arcadebutton P"></span>
             </div>
             <div class="move">
               <span>Kurenai Gansai Shuu</span>
-              <span>(<img class="Air">)<img class="QCB"><img class="QCB">+<img class="Kick"></span>
+              <span>(<img class="Air">)<img class="QCB"><img class="QCB">+<span class="arcadebutton K"></span>
             </div>
           </div>
 
@@ -161,175 +164,344 @@
           <label class="properties" for="toggle">More infos</label>
 
           <div class="moveproperties">
-            <div class="command-list">
-              <h2 class="normals">Normals</h2>
-              <div class="move">
-                <span>far/close <img class="A"></span>
-                <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>down <img class="A"></span>
-                <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>up <img class="A"></span>
-                <span><inline class="high"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>ub/uf <img class="A"></span>
-                <span><inline class="high"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>far <img class="B"></span>
-                <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>close <img class="B"></span>
-                <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>down <img class="B"></span>
-                <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>up <img class="B"></span>
-                <span><inline class="high"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>ub/uf <img class="B"></span>
-                <span><inline class="high"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>far <img class="C"></span>
-                <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>close <img class="C"></span>
-                <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>down <img class="C"></span>
-                <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"><inline class="launcher"></span>
-              </div>
-              <div class="move">
-                <span>up <img class="C"></span>
-                <span><inline class="high"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>ub/uf <img class="C"></span>
-                <span><inline class="high"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>far <img class="D"></span>
-                <span><inline class="mid"></span>
-              </div>
-              <div class="move">
-                <span>close <img class="D"></span>
-                <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>down <img class="D"></span>
-                <span><inline class="low"><inline class="knockdown"><inline class="special-cancel"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>up <img class="D"></span>
-                <span><inline class="high"><inline class="knockdown"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span>ub/uf <img class="D"></span>
-                <span><inline class="high"><inline class="super-cancel"></span>
-              </div>
-              <h2 class="commands">Commands</h2>
-              <div class="move">
-                <span><img class="A">+<img class="C"></span>
-                <span><inline class="high"><inline class="overhead"></inline><inline class="special-cancel"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span><img class="B">+<img class="D"></span>
-                <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span><img class="B">+<img class="C"></span>
-                <span><inline class="mid"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span><img class="Air"><img class="Down">+<img class="D"></span>
-                <span><inline class="mid"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span><img class="Air"><img class="up">+<img class="C"></span>
-                <span><inline class="mid"><inline class="super-cancel"></span>
-              </div>
-              <div class="move">
-                <span><img class="Air"><img class="up">+<img class="C"></span>
-                <span>
-                  <inline class="mid">
-                    <inline class="special">
-                      <inline class="super-cancel">
-                </span>
-              </div>
-              <div class="move">
-                <span><img class="Air"><img class="Down">+<img class="B"></span>
-                <span>
-                  <inline class="high">
-                    <inline class="super-cancel">
-                </span>
-              </div>
-              <h2 class="specials">Specials</h2>
-              <div class="move">
-                <span><img class="QCF">+<img class="Punch"></span>
-                <span>
-                  <inline class="mid">
-                </span>
-              </div>
-              <div class="move">
-                <span><img class="QCB">+<img class="Kick">.<img class="Kick">.<img class="Kick"></span>
-                <span>
-                  <inline class="mid">
-                    <inline class="knockdown">
-                      <inline class="inv-startup">
-                </span>
-              </div>
-              <div class="move">
-                <span><img class="QCF">+<img class="Kick"></span>
-                <span>
-                  <inline class="mid">
-                </span>
-              </div>
-              <div class="move">
-                <span><img class="Right"><img class="Left"><img class="Right">+<img class="Punch"></span>
-                <span>
-                  <inline class="mid">
-                    <inline class="knockdown">
-                </span>
-              </div>
-              <h2 class="supers">Supers</h2>
-              <div class="move">
-                <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
-                <span>
-                  <inline class="mid">
-                    <inline class="hard-knockdown">
-                      <inline class="inv-startup">
-                </span>
-              </div>
-              <div class="move">
-                <span><img class="Air"><img class="QCF"><img class="QCF">+<img class="Punch"></span>
-                <span>
-                  <inline class="mid">
-                    <inline class="hard-knockdown">
-                </span>
-              </div>
-              <div class="move">
-                <span>(<img class="Air">)<img class="QCB"><img class="QCB">+<img class="Kick"></span>
-                <span>
-                  <inline class="mid">
-                    <inline class="hard-knockdown">
-                      <inline class="inv-startup">
-                </span>
-              </div>
 
+            <h2 class="normals">Normals</h2>
+            <div class="properties">
+              <span>far/close <span class="arcadebutton A"></span>
+              </span>
+              <span class="right-buttons">
+                <span class="mid"></span>
+                <span class="special-cancel"></span>
+                <span class="super-cancel"></span>
+              </span>
+            </div>
+            <div class="properties">
+              <span>down <span class="arcadebutton A"></span>
+              </span>
+              <span class="right-buttons">
+                <span class="mid">
+                  <span class="special-cancel">
+                    <span class="super-cancel"></span>
+            </div>
+            <div class="properties">
+              <span>up <span class="arcadebutton A"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="high">
+                    <span class="super-cancel"></span>
+                  </span>
+            </div>
+            <div class="properties">
+              <span>ub/uf <span class="arcadebutton A"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="high">
+                    <span class="super-cancel"></span>
+                  </span>
+            </div>
+            <div class="properties">
+              <span>far <span class="arcadebutton B"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid">
+                    <span class="special-cancel">
+                      <span class="super-cancel"></span>
+                    </span>
+            </div>
+            <div class="properties">
+              <span>close <span class="arcadebutton B"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid">
+                    <span class="special-cancel">
+                      <span class="super-cancel"></span>
+                    </span>
+            </div>
+            <div class="properties">
+              <span>down <span class="arcadebutton B"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="low">
+                    <span class="special-cancel">
+                      <span class="super-cancel"></span>
+                    </span>
+            </div>
+            <div class="properties">
+              <span>up <span class="arcadebutton B"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="high">
+                    <span class="super-cancel"></span>
+                  </span>
+            </div>
+            <div class="properties">
+              <span>ub/uf <span class="arcadebutton B"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="high">
+                    <span class="super-cancel"></span>
+                  </span>
+            </div>
+            <div class="properties">
+              <span>far <span class="arcadebutton C"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid">
+                    <span class="special-cancel">
+                      <span class="super-cancel"></span>
+                    </span>
+            </div>
+            <div class="properties">
+              <span>close <span class="arcadebutton C"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="low">
+                    <span class="special-cancel">
+                      <span class="super-cancel"></span>
+                    </span>
+            </div>
+            <div class="properties">
+              <span>down <span class="arcadebutton C"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="low">
+                    <span class="special-cancel">
+                      <span class="super-cancel">
+                        <span class="launcher"></span>
+                      </span>
+            </div>
+            <div class="properties">
+              <span>up <span class="arcadebutton C"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="high">
+                    <span class="super-cancel"></span>
+                  </span>
+            </div>
+            <div class="properties">
+              <span>ub/uf <span class="arcadebutton C"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="high">
+                    <span class="super-cancel"></span>
+                  </span>
+            </div>
+            <div class="properties">
+              <span>far <span class="arcadebutton D"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid"></span>
+                </span>
+            </div>
+            <div class="properties">
+              <span>close <span class="arcadebutton D"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid">
+                    <span class="special-cancel">
+                      <span class="super-cancel"></span>
+                    </span>
+            </div>
+            <div class="properties">
+              <span>down <span class="arcadebutton D"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="low">
+                    <span class="special-cancel">
+                      <span class="super-cancel"></span>
+                    </span>
+            </div>
+            <div class="properties">
+              <span>up <span class="arcadebutton D"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="high">
+                    <span class="super-cancel"></span>
+                  </span>
+            </div>
+            <div class="properties">
+              <span>ub/uf <span class="arcadebutton D"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="high">
+                    <span class="super-cancel"></span>
+                  </span>
+            </div>
+            <h2 class="commands">Commands</h2>
+            <div class="properties">
+              <span>
+                <span class="arcadebutton A"></span>+ <span class="arcadebutton C"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="high">
+                    </inline>
+                    <span class="special-cancel">
+                      <span class="super-cancel"></span>
+                    </span>
+            </div>
+            <div class="properties">
+              <span>
+                <span class="arcadebutton B"></span>+ <span class="arcadebutton D"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="low">
+                    <span class="special-cancel">
+                      <span class="super-cancel"></span>
+                    </span>
+            </div>
+            <div class="properties">
+              <span>
+                <span class="arcadebutton B"></span>+ <span class="arcadebutton C"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid">
+                    <span class="super-cancel"></span>
+                  </span>
+            </div>
+            <div class="properties">
+              <span>
+                <img class="Air">
+                <img class="Down">+ <span class="arcadebutton D"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid">
+                    <span class="super-cancel"></span>
+                  </span>
+            </div>
+            <div class="properties">
+              <span>
+                <img class="Air">
+                <img class="up">+ <span class="arcadebutton C"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid">
+                    <span class="super-cancel"></span>
+                  </span>
+            </div>
+            <div class="properties">
+              <span>
+                <img class="Air">
+                <img class="up">+ <span class="arcadebutton C"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid">
+                    <span class="special">
+                      <span class="super-cancel"></span>
+                    </span>
+            </div>
+            <div class="properties">
+              <span>
+                <img class="Air">
+                <img class="Down">+ <span class="arcadebutton B"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="high">
+                    <span class="super-cancel"></span>
+                  </span>
+            </div>
+            <h2 class="specials">Specials</h2>
+            <div class="properties">
+              <span>
+                <img class="QCF">+ <span class="arcadebutton P"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid"></span>
+                </span>
+            </div>
+            <div class="properties">
+              <span>
+                <img class="QCB">+ <span class="arcadebutton K"></span>. <span class="arcadebutton K"></span>. <span
+                  class="arcadebutton K"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid">
+                    <span class="inv-startup"></span>
+                  </span>
+            </div>
+            <div class="properties">
+              <span>
+                <img class="QCF">+ <span class="arcadebutton K"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid"></span>
+                </span>
+            </div>
+            <div class="properties">
+              <span>
+                <img class="Right">
+                <img class="Left">
+                <img class="Right">+ <span class="arcadebutton P"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid"></span>
+                </span>
+            </div>
+            <h2 class="supers">Supers</h2>
+            <div class="properties">
+              <span>
+                <img class="QCF">
+                <img class="QCF">+ <span class="arcadebutton P"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid">
+                    <span class="hard-knockdown">
+                      <span class="inv-startup"></span>
+                    </span>
+            </div>
+            <div class="properties">
+              <span>
+                <img class="Air">
+                <img class="QCF">
+                <img class="QCF">+ <span class="arcadebutton P"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid">
+                    <span class="hard-knockdown"></span>
+                  </span>
+            </div>
+            <div class="properties">
+              <span>( <img class="Air">) <img class="QCB">
+                <img class="QCB">+ <span class="arcadebutton K"></span>
+              </span>
+              <span class="right-buttons">
+                <span>
+                  <span class="mid">
+                    <span class="hard-knockdown">
+                      <span class="inv-startup"></span>
+                    </span>
             </div>
           </div>
+
 
 
 
@@ -338,114 +510,117 @@
 
         <div id="guide">
 
+          <h1>Ressources</h1>
+          <ul>
+            <li><a href="https://youtu.be/T0SNi-k13Ic" target="_blank">Sas Izm -  Sho Kamui Combo Guide</a></li>
+            <li><a href="https://wiki.supercombo.gg/w/Breakers_Revenge/Sho" target="_blank">SuperCombo Wiki - Breakers Revenge/Sho</a></li>
+          </ul>
+
 
           <h1>Overview</h1>
           <p>
-            Sho is one of the most powerful characters, with strong attacks, high damage, and excellent air control.
-            He has quick dashes and a divekick that can be used from any jump angle allow him to stay aggressive and apply constant pressure. 
-            Plus, many of his moves are safe and cancelable, making him a relentless threat in any situation.
-           </p>
+            Sho is a top-tier character, with quick movement, high damage output and excellent air control.
+            He can use his divekick from any jump angle to apply constant pressure.
+            Most of his moves are safe and cancelable, making him a relentless threat in any situation.
+          </p>
 
 
 
-          <h1>Pressure</h1>
+          <h1>Neutral</h1>
           <video data-poster="/characters/sho/videos/sho_pressure.jpg" controls loop muted playsinline preload="none">
-          <source src="/characters/sho/videos/sho_pressure.mp4" type="video/mp4">
-        </video>
-
-        <p>
-          <u>Rekkou Ha (236P)</u>: 
-          Throw a projectile, then dash in with the option to stop or cancel at any point. 
-          This can be used as okizeme to apply pressure on the opponent's wakeup
-        </p>
+            <source src="/characters/sho/videos/sho_pressure.mp4" type="video/mp4">
+          </video>
 
           <p>
-            <u>Using dashes</u>: 
-            Quickly cancel Sho's dashes with 2B or 5C to close the distance (5C has more range). 
-            Both are safe and recover fast, but can be beaten by preemptive light attacks.
+            <u>Rekkou Ha (236P)</u>:
+            Throw a projectile, then dash in and stop or cancel at any time. Use this as okizeme to pressure opponents
+            on wakeup.
+          </p>
+
+          <p>
+            <u>Dashes</u>:
+            Cancel dashes with 2B or 5C to close in (5C reaches farther). Both are safe and quick but can be beaten by
+            preemptive normals.
+            Backdash has startup invincibility.
           </p>
           <p>
-            <u>Tobihizageri (B+C)</u>: Use it to extend combos or cancel unsafe normals to keep up the pressure. 
-            It's safe on block but leaves you in throw range. If used from too far, the startup gap can be punished.
+            <u>Tobihizageri (B+C)</u>:
+            Use this knee attack to cancel unsafe moves or combo into a super. It's safe on block but leaves you in
+            throw range and can be punished from far away.
           </p>
 
           <h1>Jumps</h1>
 
-          <video data-poster="/characters/sho/videos/sho_jumps.jpg" controls loop muted playsinline
-            preload="none">
+          <video data-poster="/characters/sho/videos/sho_jumps.jpg" controls loop muted playsinline preload="none">
             <source src="/characters/sho/videos/sho_jumps.mp4" type="video/mp4">
           </video>
 
-          <p><u>Super cancels</u>: All of Sho's air moves are super cancelable.
-            jA, jB, and divekick, can be canceled on whiff. 
-            This lets him use air Super (236236P) to punish anti-airs. 
-            Low air-to-air hits can lead into 2C, 214K juggles, or a jA re-jump.
+          <p><u>Super cancels</u>:
+            Most of his air moves can be super canceled.
+            jA, jB, and divekick are also cancelable on whiff,
+            so you can use air Super (236236P) to bait anti-airs.
           </p>
 
           <p>
-            <u>Jump B</u>: His strongest air normal due to its high priority and lack of recovery.
+            <u>Jump B</u>: His most reliable air attack due to its high priority and lack of recovery.
           </p>
 
           <p>
-          <u>Divekick pressure</u>: Low divekicks are strong for close-range pressure. 
-          If the opponent blocks high, you can follow up with a low 2B or a fuzzy jump. 
-          On hit, divekicks are still vulnerable to throws, reversals, or backdashes.
+            <u>Divekick</u>:
+            Divekicks are strong up close. If blocked high, mix with low (2B) or a fuzzy jump.
+            Be aware that on hit, you can still be punished by throws, reversals, or backdashes.
           </p>
 
 
           <h1>Anti-air</h1>
 
-          <video data-poster="/characters/sho/videos/sho_anti-airs.jpg" controls loop muted playsinline
-          preload="none">
-          <source src="/characters/sho/videos/sho_anti-airs.mp4" type="video/mp4">
-        </video>
+          <video data-poster="/characters/sho/videos/sho_anti-airs.jpg" controls loop muted playsinline preload="none">
+            <source src="/characters/sho/videos/sho_anti-airs.mp4" type="video/mp4">
+          </video>
           <p>
-            <u>2C and 5C</u>: Sho's easiest anti-airs are both special and super cancelable. 
-            If they lose to certain jump-ins, switch to 214K for its startup invincibility.
-           </p>
+            <u>2C and 5C</u>: Both are special and super cancelable.
+            If they struggle against certain air attacks, use 214K for its startup invincibility.
+          </p>
 
           <p>
-            <u>Kurenai (214K)</u>: 214B is fast and allows for juggle combos, 
+            <u>Kurenai (214K)</u>: 214B is fast and allows for juggle combos,
             while 214D is slower but hits higher. Both have startup invincibility.
           </p>
 
           <p>
-            <u>Jump B</u>: Super cancelable on hit or whiff. It’s fast, stays active, has no recovery, 
+            <u>Jump B</u>: Super cancelable on hit or whiff. It’s fast, stays active, has no recovery,
             and beats many air normals. Also great for catching jump-ins on your wake-up.
           </p>
 
           <h1>Break</h1>
           <video data-poster="/characters/sho/videos/matchups/sho_vs_tia_HeelBreak.jpg" controls loop muted playsinline
-          preload="none">
-          <source src="/characters/sho/videos/matchups/sho_vs_tia_HeelBreak.mp4" type="video/mp4">
-        </video>
+            preload="none">
+            <source src="/characters/sho/videos/matchups/sho_vs_tia_HeelBreak.mp4" type="video/mp4">
+          </video>
           <p>
-            His best options to use the break mechanic are throw, backdash, and 214B, 
-            which are effective against close-range jump-ins. 
-            In certain combos, 214K and backdash work well due to their startup invincibility.
+            His best uses of the break mechanic are throw, backdash, and 214B, effective against close-range attacks and
+            jump-ins.
           </p>
 
 
           <h1>Supers</h1>
-          <video data-poster="/characters/sho/videos/sho_supers.jpg" controls loop muted playsinline
-          preload="none">
-          <source src="/characters/sho/videos/sho_supers.mp4" type="video/mp4">
-        </video>
-        <p>Super cancel from any command or normal, except for far D.</p>
+          <video data-poster="/characters/sho/videos/sho_supers.jpg" controls loop muted playsinline preload="none">
+            <source src="/characters/sho/videos/sho_supers.mp4" type="video/mp4">
+          </video>
+          <p>Sho can super cancel from any move or normal, except far D, and neutral jD</p>
 
-        <p>
-        <u>Seiken Shou Ha (236236P)</u>: Use it for punishing unsafe moves or in combos, usually after 2D or A+C.
+          <p>
+            <u>Seiken Shou Ha (236236P)</u>: Punish unsafe moves or use it in combos, usually after 2D or A+C.
           </p>
 
           <p>
-            <u>Geki Rekkou Ha (Air 236236P)</u>: Safe on block, 
-            effective for baiting anti-air and can be performed after a whiffed air attack like 2C > B+C, divekick, jA or jB.
+            <u>Geki Rekkou Ha (Air 236236P)</u>: Safe on block and effective for baiting anti-air.
+            Can be used after a whiffed air attack like divekick, jA, or jB.
           </p>
 
           <p>
-            <u>Kurenai Gansai Shuu (214214K)</u>: This super hits from full screen and has a fast, 
-            invincible startup, making it perfect for punishing projectiles. 
-            It can also be used in the air.
+            <u>Kurenai Gansai Shuu (214214K)</u>: Has startup invincibility, long reach, and punish projectiles up close
+            with proper spacing.
           </p>
 
           <h1>Tips</h1>
@@ -456,95 +631,47 @@
             <source src="/characters/sho/videos/sho_breakable_combos.mp4" type="video/mp4">
           </video>
           <p>
-            Using Far 5C in combos often gives your opponent a chance to break. 
-            Instead, use 2C or 2D : 
-            <ul class="combos">
-              <li>2B, 2B, 2C > 214K,K,K or 464P</li>
-              <li>2B, 2B, 2C > B+C > 236236P</li>
-              <li>2B, 2B, 2D > 236236P</li>
-            </ul>
+            Using Far 5C in combos often gives your opponent a chance to break.
+            Instead, use 2C or 2D :
+          <ul class="combos">
+            <li>2B, 2B, 2C > 214K,K,K or 464P</li>
+            <li>2B, 2B, 2C > B+C > 236236P</li>
+            <li>2B, 2B, 2D > 236236P</li>
+          </ul>
           </p>
 
-
-          <!-- <table class="movelist">
-            <tbody>
-              <tr>
-                <th style="visibility: hidden; border: none;">Header Content</th>
-                <th style="text-align: center; background: black;">Midscreen</th>
-                <th style="text-align: center; background: black;">Corner</th>
-              </tr>
-              <tr>
-                <td>2D</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>236236P</td>
-                <td>236A</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>(Air) 236236P </td>
-                <td>5A &gt; 236A</td>
-                <td>5A &gt; 236A</td>
-              </tr>
-              <tr>
-                <td>214214K</td>
-                <td>backdash &gt; 236C</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>646P</td>
-                <td>5A &gt; 236A</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>Throw</td>
-                <td>2C &gt; 236LP</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>236D</td>
-                <td>5A &gt; 236A</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>214D.D.D</td>
-                <td>5A &gt; 236A</td>
-                <td>5A &gt; 236A</td>
-              </tr>
-            </tbody>
-          </table> -->
-
           <h3>Chip damage</h3>
-          <video data-poster="/characters/sho/videos/sho_chip_damage.jpg" controls loop muted playsinline preload="none">
+          <video data-poster="/characters/sho/videos/sho_chip_damage.jpg" controls loop muted playsinline
+            preload="none">
             <source src="/characters/sho/videos/sho_chip_damage.mp4" type="video/mp4">
           </video>
           <p>
-            To finish off a low-health opponent, use either 464P or 236D. 
+            To finish off a low-health opponent, use either 464P or 236D.
             464P will deal the most chip damage.
           </p>
 
           <h3>Fuzzy</h3>
-          <video data-poster="/characters/sho/videos/sho_fuzzy_super.jpg" controls loop muted playsinline preload="none">
+          <video data-poster="/characters/sho/videos/sho_fuzzy_super.jpg" controls loop muted playsinline
+            preload="none">
             <source src="/characters/sho/videos/sho_fuzzy_super.mp4" type="video/mp4">
           </video>
           <p>
-            To break an opponent’s defense, 
-            use a jump attack or divekick to make them block high (divekicks can also be blocked low). 
-            Then, while they recover, mix up with high or low attacks. 
-            Fuzzy is especially strong for Sho, since his jD into air Super (236236P) is safe.
+            To break defense, jump-In or Divekick* to try to force high blocks.
+            Then mixup with a low (2B) or Fuzzy (jD > Super 236236P).<br>
+            <small>*Divekick can be blocked low, but most players block high up close. Be aware that you can't use fuzzy
+              when they low block.</small>
           </p>
 
           <h3>Corner reset</h3>
-          <video data-poster="/characters/sho/videos/sho_corner_reset.jpg" controls loop muted playsinline preload="none">
+          <video data-poster="/characters/sho/videos/sho_corner_reset.jpg" controls loop muted playsinline
+            preload="none">
             <source src="/characters/sho/videos/sho_corner_reset.mp4" type="video/mp4">
           </video>
           <p>
-          Use 2C > B+C or close 5C.C > B+C then : <br>
-          - walk under (condor)<br>
-          - dash low (pielle, alsion, maherl, dao-long)<br>
-          - dash empty or dash low (sho, rila, tia, saizo, bai-hu)
+            Use 2C > B+C or close 5C.C > B+C then : <br>
+            - walk under (condor)<br>
+            - dash low (pielle, alsion, maherl, dao-long)<br>
+            - dash empty or dash low (sho, rila, tia, saizo, bai-hu)
 
           </p>
 
@@ -552,38 +679,45 @@
           <video data-poster="/characters/sho/videos/sho_throw_OS.jpg" controls loop muted playsinline preload="none">
             <source src="/characters/sho/videos/sho_throw_OS.mp4" type="video/mp4">
           </video>
+
           <p>
-            <ul class="combos">
-          <li>Forward throw: 214[6]C~B or 214[6]C~D</li>
-          <li>Back throw: 21[4]C~B or 21[4]C~D</li>
-            </ul>
+            <u>Throw/214K Option Select</u>: At close range, you input a throw, but if the opponent jumps, backdashes,
+            or presses a button, the input instead gives you an invincible anti-air (214K)
+          <ul class="combos">
+            <li>Forward throw: 214[6]C~B or 214[6]C~D</li>
+            <li>Back throw: 21[4]C~B or 21[4]C~D</li>
+          </ul>
           </p>
 
 
-          <h1>Ressources</h1>
-          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/T0SNi-k13Ic?si=ShFCRVNDiDSmNK-I"
-          loading="lazy" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
 
-        <h1>Replays</h1>
+          <h1>Replays</h1>
 
-        <p>
+          <p>
           <ul class="combos">
-        <li><a target="_blank" href="https://www.youtube.com/embed/XOWdAN0oCl8?si=Lw9d7FulmnbFU2KO"><span class="flag-icon flag-icon-br"></span> LAURENTINO (Sho) vs  <span class="flag-icon flag-icon-ar"></span> BrunoFerreir@ (Sho) </a></li>
-        <li><a target="_blank" href="https://youtu.be/sb5e_DK1pBI?si=BAhUr9J809iZVIJe"><span class="flag-icon flag-icon-br"></span> lucasrocha2013 (Saizo) vs <span class="flag-icon flag-icon-br"></span> DSKalashnikov (Sho) </a></li>
-        <li><a target="_blank" href="https://www.youtube.com/watch?v=cX2r59Mm9Ws"><span class="flag-icon flag-icon-fr"></span> Keikun (Sho) vs <span class="flag-icon flag-icon-it"></span> SpinalBlood (Saizo) </a></li>
-        <li><a target="_blank" href="https://www.youtube.com/watch?v=QrWSaWhVrGc"><span class="flag-icon flag-icon-es"></span> NM Akuma (Sho) vs <span class="flag-icon flag-icon-fr"></span> Balier (Sho) </a></li>
-        <li><a target="_blank" href="https://www.youtube.com/watch?v=bWsdj0Gu5e8"><span class="flag-icon flag-icon-us"></span> Justin Wong (Sho) vs <span class="flag-icon flag-icon-fr"></span> Abdess (Sho) </a></li>
-        <li><a target="_blank" href="https://www.youtube.com/watch?v=uTD9rqctDvo"><span class="flag-icon flag-icon-fr"></span> Balier (Sho) vs <span class="flag-icon flag-icon-fr"></span> Bad Mojo (Sho) </a></li>
-        <li><a target="_blank" href="https://www.youtube.com/watch?v=tsHHZdofdlg"><span class="flag-icon flag-icon-bg"></span> Oliva Biscuit (Sho) vs <span class="flag-icon flag-icon-fr"></span> Zoukken (Sho) </a></li>
-
-      </ul>
-        </p>
-
-        
-
+            <li><a target="_blank" href="https://www.youtube.com/embed/XOWdAN0oCl8?si=Lw9d7FulmnbFU2KO"><span
+                  class="flag-icon flag-icon-br"></span> LAURENTINO (Sho) vs <span
+                  class="flag-icon flag-icon-ar"></span> BrunoFerreir@ (Sho) </a></li>
+            <li><a target="_blank" href="https://youtu.be/sb5e_DK1pBI?si=BAhUr9J809iZVIJe"><span
+                  class="flag-icon flag-icon-br"></span> lucasrocha2013 (Saizo) vs <span
+                  class="flag-icon flag-icon-br"></span> DSKalashnikov (Sho) </a></li>
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=cX2r59Mm9Ws"><span
+                  class="flag-icon flag-icon-fr"></span> Keikun (Sho) vs <span class="flag-icon flag-icon-it"></span>
+                SpinalBlood (Saizo) </a></li>
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=QrWSaWhVrGc"><span
+                  class="flag-icon flag-icon-es"></span> NM Akuma (Sho) vs <span class="flag-icon flag-icon-fr"></span>
+                Balier (Sho) </a></li>
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=bWsdj0Gu5e8"><span
+                  class="flag-icon flag-icon-us"></span> Justin Wong (Sho) vs <span
+                  class="flag-icon flag-icon-fr"></span> Abdess (Sho) </a></li>
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=uTD9rqctDvo"><span
+                  class="flag-icon flag-icon-fr"></span> Balier (Sho) vs <span class="flag-icon flag-icon-fr"></span>
+                Bad Mojo (Sho) </a></li>
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=tsHHZdofdlg"><span
+                  class="flag-icon flag-icon-bg"></span> Oliva Biscuit (Sho) vs <span
+                  class="flag-icon flag-icon-fr"></span> Zoukken (Sho) </a></li>
+          </ul>
+          </p>
 
         </div>
 
@@ -591,7 +725,7 @@
         <div id="combos">
 
 
-          <h2 id="meterless_combos">Meterless combos</h2>
+          <h2>Meterless combos</h2>
           <video data-poster="/characters/sho/videos/basic_combos.jpg" controls loop muted playsinline preload="none">
             <source src="/characters/sho/videos/basic_combos.mp4" type="video/mp4">
           </video>
@@ -606,7 +740,7 @@
           </ul>
 
 
-          <h2 id="metered_combos">Metered combos</h2>
+          <h2>Metered combos</h2>
           <video data-poster="/characters/sho/videos/meter_combo.jpg" controls loop muted playsinline preload="none">
             <source src="/characters/sho/videos/meter_combo.mp4" type="video/mp4">
           </video>
@@ -623,8 +757,9 @@
 
 
 
-          <h2 id="anti-air">Anti-air</h2>
-          <video data-poster="/characters/sho/videos/sho_anti_air_combo.jpg" controls loop muted playsinline preload="none">
+          <h2>Anti-air</h2>
+          <video data-poster="/characters/sho/videos/sho_anti_air_combo.jpg" controls loop muted playsinline
+            preload="none">
             <source src="/characters/sho/videos/sho_anti_air_combo.mp4" type="video/mp4">
           </video>
 
@@ -637,7 +772,7 @@
           </ul>
 
 
-          <h2 id="air-to-air">Air-to-air</h2>
+          <h2>Air-to-air</h2>
           <video data-poster="/characters/sho/videos/sho_air_to_air_combo.jpg" controls loop muted playsinline
             preload="none">
             <source src="/characters/sho/videos/sho_air_to_air_combo.mp4" type="video/mp4">
@@ -650,7 +785,7 @@
             <li>Divekick > jA,A,A > 236236P</li>
           </ul>
 
-          <h2 id="kurenai">Kurenai juggles</h2>
+          <h2>Kurenai juggles</h2>
           <video data-poster="/characters/sho/videos/sho_214LK_delay_combo.jpg" controls loop muted playsinline
             preload="none">
             <source src="/characters/sho/videos/sho_214LK_delay_combo.mp4" type="video/mp4">
@@ -664,7 +799,7 @@
             <li>5C.C > 214B > B (delay) > 5C > 236236P or 214214K</li>
           </ul>
 
-          <h2 id="breakable_combos">Breakable combos</h2>
+          <h2>Breakable combos</h2>
           <video data-poster="/characters/sho/videos/sho_breakable_combos.jpg" controls loop muted playsinline
             preload="none">
             <source src="/characters/sho/videos/sho_breakable_combos.mp4" type="video/mp4">
@@ -696,10 +831,10 @@
           </div>
 
           <div id="saizo">
-          
+
             <h2>5C</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_saizo_stand_C.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_saizo_stand_C.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_saizo_stand_C.mp4" type="video/mp4">
             </video>
             <p>
@@ -707,582 +842,508 @@
               punishable
               even on hit.<br>
             </p>
-          
+
             <h2>Rasen Kyaku</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_saizo_rasen_kyaku.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_saizo_rasen_kyaku.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_saizo_rasen_kyaku.mp4" type="video/mp4">
             </video>
             <p>
               Overhead, unsafe on hit and block.
               Saizo rarely uses this move except to finish off his opponent.
             </p>
-          
-          
+
+
             <h2>Ryuuei Kyaku</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_saizo_ryuuei_kyaku.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_saizo_ryuuei_kyaku.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_saizo_ryuuei_kyaku.mp4" type="video/mp4">
             </video>
             <p>
-              A slide that needs to be canceled to be safe.
-              At the right distance, Slide > bomb is safe midscreen against Sho.
-              If close in the corner, punish Slide > bomb with 5C or 2A.
+              On midscreen, Saizo's slide must be canceled and spaced correctly to be safe.
+              Unsafe in corner, you can punish slide > bomb with 5C or 2A.
             </p>
-          
+
             <h2>Yashagami</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_saizo_Yashagami.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_saizo_Yashagami.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_saizo_Yashagami.mp4" type="video/mp4">
             </video>
             <p>
-              Unsafe on hit and block unless canceled, but can be followed by a super to bait your punish attempt. 
-              In that case, punish with 214214K.
+              Light version has invincible startup—used as a strong anti-air or reversal. 
+              Unsafe on block or hit unless canceled into super. 
+              On block, players often delay super to bait your punish, but you can still punish with Super (214214K).
             </p>
-          
-          
-          
+
+
+
             <h2>Engetsuzan</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_saizo_Engetsuzan.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_saizo_Engetsuzan.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_saizo_Engetsuzan.mp4" type="video/mp4">
             </video>
             <p>
               Punish with dash > 5C
             </p>
-          
+
           </div>
-          
+
           <div id="pielle">
             <h2>Saber Bash</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_SaberBash.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_SaberBash.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_pielle_SaberBash.mp4" type="video/mp4">
             </video>
             <p>
-              Not an overhead. Punish with 2B or Super (236236P). On whiff, use 214K.
+              Doesn’t hit overhead, unsafe at close range.
+              Leaves a gap in blockstrings, use 214K to whiff punish
             </p>
-          
-          
+
+
             <h2>Flying Peach Bomber</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_FlyingPeachBomber.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_FlyingPeachBomber.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_pielle_FlyingPeachBomber.mp4" type="video/mp4">
             </video>
             <p>
-              Overhead but whiffs up close. Always leaves a gap if used in blockstrings. Whiff punish with 214K.
+              Flying Peach Bomber (B+D) hits overhead, but it always leaves a gap in blockstrings, so you can whiff
+              punish with 214K.
             </p>
-          
-          
+
+
             <h2>Bonjour Shot</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_BonjourShot.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_BonjourShot.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_pielle_BonjourShot.mp4" type="video/mp4">
             </video>
             <p>
-              Slow-recovery projectile. Whiff punish with Super (214214K). Unsafe up close, even on hit.
+              Unsafe up close, even on hit since it has slow recovery.
             </p>
-          
-          
-            <h2>Robin Liner</h2>
-            <p>
-              Slow recovery, no invincible startup. Light version hit leaves you standing; Heavy causes knockdown.
-            </p>
-          
-          
+
+
             <h2>Monsieur Crash</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_MonsieurCrash.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_MonsieurCrash.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_pielle_MonsieurCrash.mp4" type="video/mp4">
             </video>
             <p>
-              A move with up to 3 follow-up hits (rekka), each is unsafe. However, Pielle can delay them to bait your punish attempts.
+              Can chain up to 2 follow-ups, all unsafe. Pielle can delay each one as frametrap to bait your punish
+              attempts.
             </p>
-          
-          
-          
+
+
             <h2>Merci Un Deux Trois</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_Merci123.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_Merci123.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_pielle_Merci123.mp4" type="video/mp4">
             </video>
-              <p>
-                Aerial dive that can mess up your anti-air timing. Unsafe on block, Pielle goes behind.
-              </p>
-          
-          
-              <h2>Super Rose</h2>
-              <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_SuperRose.jpg" controls loop muted playsinline
-                preload="none">
-                <source src="/characters/sho/videos/matchups/sho_vs_pielle_SuperRose.mp4" type="video/mp4">
-              </video>
-                <p>
-                  Safe full-screen super with a wide hitbox. Whiff punish at the super flash with 2D.
-                </p>
-          
-          
-                <h2>Thunder Croiser</h2>
-                <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_ThunderCroiser.jpg" controls loop muted playsinline
-                  preload="none">
-                  <source src="/characters/sho/videos/matchups/sho_vs_pielle_ThunderCroiser.mp4" type="video/mp4">
-                </video>
-                <p>
-                  Anti-air super that works as a reversal. Punish with dash > 2B.
-                </p>
-          
-          </div>
-          
-          <div id="rila">
-          
-            <h2>Dynamite Kick</h2>
             <p>
-              It makes her hop forward. She usually uses it to close distance mid-range and on your wake-up from
-              afar.
+              This can be used to mess up your anti-air timing.
+              On block, Pielle crosses behind, leaving him open to a juggle punish.
             </p>
-          
-            <h2>Crouching C</h2>
-            <p>Her main poke that is annoying to deal with. Safe on block, has good range, and can also
-              anti-air.
+
+
+            <h2>Super Rose</h2>
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_SuperRose.jpg" controls loop muted
+              playsinline preload="none">
+              <source src="/characters/sho/videos/matchups/sho_vs_pielle_SuperRose.mp4" type="video/mp4">
+            </video>
+            <p>
+              Safe on block and with a wide range, it can be used from full screen.
+              Whiff punish at the super flash with 2D.
             </p>
-          
+
+
+            <h2>Thunder Croiser</h2>
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_pielle_ThunderCroiser.jpg" controls loop muted
+              playsinline preload="none">
+              <source src="/characters/sho/videos/matchups/sho_vs_pielle_ThunderCroiser.mp4" type="video/mp4">
+            </video>
+            <p>
+              Anti-air super that works as a reversal. Punish with dash > 2B.
+            </p>
+
+          </div>
+
+          <div id="rila">
             <h2>Killer Snake</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_rila_KillerSnake.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_rila_KillerSnake.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_rila_KillerSnake.mp4" type="video/mp4">
             </video>
             <p>
-              Light version is unsafe on hit and block. 
-              Heavy lets her instantly follow with an invulnerable super. 
-              Punish with 2A : it hits if she does nothing, and you can still block in case there's a super.
-              214D also punishes or avoids her supers.
+              Light version is unsafe even on hit. Heavy version is unsafe but can be followed by any super to bait
+              punishes.
+              Use 2A, which hits if she doesn’t do anything and blocks if she goes into super. 214D also punishes or
+              evades her supers.
             </p>
-          
-          
+
             <h2>Spinning Claw</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_rila_SpinningClaw.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_rila_SpinningClaw.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_rila_SpinningClaw.mp4" type="video/mp4">
             </video>
             <p>
-              Hard to punish due to pushback. Stays active for a while and can win against certains normals, specials and supers.
+              Hard to punish due to pushback. Stays active for a while and can win against certains normals, specials
+              and supers.
             </p>
-          
+
             <h2>Quick Scratch A</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_rila_QuickScratch_A.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_rila_QuickScratch_A.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_rila_QuickScratch_A.mp4" type="video/mp4">
             </video>
-                <p>
-                  Can catch you off guard at mid or close range. Only punishable on whiff with any normal.
-                </p>
-          
-                <h2>Quick Scratch C</h2>
-                <video data-poster="/characters/sho/videos/matchups/sho_vs_rila_QuickScratch_C.jpg" controls loop muted playsinline
-                  preload="none">
-                  <source src="/characters/sho/videos/matchups/sho_vs_rila_QuickScratch_C.mp4" type="video/mp4">
-                </video>
-                    <p>
-                      Unsafe, but works as a fast anti-air and catches backdashes. Can juggle into Bloody Fang super.
-                    </p>
-          
-          
-                    <h2>Wild Saver</h2>
-                    <video data-poster="/characters/sho/videos/matchups/sho_vs_rila_WildSaver.jpg" controls loop muted playsinline
-                      preload="none">
-                      <source src="/characters/sho/videos/matchups/sho_vs_rila_WildSaver.mp4" type="video/mp4">
-                    </video>
-                    <p>
-                      Fast anti-air. Heavy version has longer recovery. Unsafe.
-                    </p>
-          
-          
-                    <h2>Shine Beast</h2>
-                    <video data-poster="/characters/sho/videos/matchups/sho_vs_rila_ShineBeast.jpg" controls loop muted playsinline
-                      preload="none">
-                      <source src="/characters/sho/videos/matchups/sho_vs_rila_ShineBeast.mp4" type="video/mp4">
-                    </video>
-                      <p>
-                        On block, she switches sides at mid and close range. With practice, you can time a jump to punish her.
-                      </p>
-          
-          
-                      <h2>Bloody Fang</h2>
-                      <video data-poster="/characters/sho/videos/matchups/sho_vs_rila_BloodyFang.jpg" controls loop muted playsinline
-                        preload="none">
-                        <source src="/characters/sho/videos/matchups/sho_vs_rila_BloodyFang.mp4" type="video/mp4">
-                      </video>
-                          <p>
-                            This super isn’t an overhead despite the jump animation. 
-                            Punish with dash > 5C. If you get hit, mash buttons and directions to reduce damage.
-                          </p>
-          
+            <p>
+              Can catch you off guard at mid or close range. Safe on block, whiff punish with any normal.
+            </p>
+
+            <h2>Quick Scratch C</h2>
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_rila_QuickScratch_C.jpg" controls loop muted
+              playsinline preload="none">
+              <source src="/characters/sho/videos/matchups/sho_vs_rila_QuickScratch_C.mp4" type="video/mp4">
+            </video>
+            <p>
+              Comes out fast and functions as an anti-air, also catches backdashes and back jumps.
+              Can be followed up with a super. Unsafe on block.
+            </p>
+
+            <h2>Shine Beast</h2>
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_rila_ShineBeast.jpg" controls loop muted
+              playsinline preload="none">
+              <source src="/characters/sho/videos/matchups/sho_vs_rila_ShineBeast.mp4" type="video/mp4">
+            </video>
+            <p>
+              On block, she switches sides. With practice, you can jump to punish
+            </p>
+
+
+            <h2>Bloody Fang</h2>
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_rila_BloodyFang.jpg" controls loop muted
+              playsinline preload="none">
+              <source src="/characters/sho/videos/matchups/sho_vs_rila_BloodyFang.mp4" type="video/mp4">
+            </video>
+            <p>
+              Doesn't hit overhead, despite the jump animation.
+              Punish with dash > 5C. If you get hit, mash buttons and directions to reduce the damage.
+            </p>
+
           </div>
-          
+
           <div id="dao-long">
-          
+
             <h2>Kouryuu Ga</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_dao_kouryuuGa.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_dao_kouryuuGa.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_dao_kouryuuGa.mp4" type="video/mp4">
             </video>
             <p>
-              Punish at point blank with 2B or 236236P.
-              Whiff punish with 214214K or 236D at backdash range.
+              Punish in corner (close range) with 2B or 236236P.
+              Whiff punish with 214214K or 236D (requires spacing).
             </p>
-          
-          
-            <h2>Senkyuu Tai</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_dao_SenKyuuTai.jpg" controls loop muted playsinline
-              preload="none">
-              <source src="/characters/sho/videos/matchups/sho_vs_dao_SenKyuuTai.mp4" type="video/mp4">
-            </video>
-            <p>
-              Punish the heavy version with 5C or a forward jump thanks to the pushback. If it whiffs, run in and use 5C.
-            </p>
-          
-          
-          
-            <h2>Riyuu Seishou</h2>
-            <p>
-             Safe on block.
-             A combo ender and pressure tool he often follows with a Super or projectile to chip damage and build meter safely.
-            </p>
-          
-          
+
+
             <h2>Senpuure Kyaku</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_dao_SenpureKyaku.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_dao_SenpureKyaku.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_dao_SenpureKyaku.mp4" type="video/mp4">
             </video>
             <p>
-              Slow anti-air command. If you’re close, punish on block with 2B.
+              Slow anti-air command. If you’re close, punish with 2B.
             </p>
-          
-          
+
+
             <h2>Shoutenchuu</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_dao_Shoutenchuu.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_dao_Shoutenchuu.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_dao_Shoutenchuu.mp4" type="video/mp4">
             </video>
             <p>
-              A safe short jump that hits high. Whiff punish with 214K.
+              A safe short jump (hits high). Whiff punish with 214K.
             </p>
-          
-          
+
+
             <h2>Houshin Renpa</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_dao_HoushinRenpa.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_dao_HoushinRenpa.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_dao_HoushinRenpa.mp4" type="video/mp4">
             </video>
             <p>
-              Used at mid-range to punish your own projectiles. It gives pushback on block and is only punishable with 2B in the corner.
+              Used at mid-range to punish your projectiles. Gives pushback on block—only punishable with 2B in the corner.
             </p>
-          
-          
-          
+
             <h2>Shin Kyoku Ranbu</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_dao_ShinKyokuRanbu.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_dao_ShinKyokuRanbu.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_dao_ShinKyokuRanbu.mp4" type="video/mp4">
             </video>
             <p>
               Despite the jump animation, it’s not an overhead. Punish on block with dash > 5C.
             </p>
-          
-          
+
+
           </div>
-          
+
           <div id="condor">
-          
+
             <h2>Tomahawk Jack</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_condor_Tomahawk.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_condor_Tomahawk.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_condor_Tomahawk.mp4" type="video/mp4">
             </video>
             <p>
-              Unsafe. Up close, punish with 5C. From any range, punish with super (214214K), which also hits on whiff.
+              Unsafe on block. Punish with 5C or Super 214214K. This super also works as a whiff punish from any range.
             </p>
-          
-          
+
+
             <h2>Gran Buffalo Horn</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_condor_GranBuffaloHorn.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_condor_GranBuffaloHorn.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_condor_GranBuffaloHorn.mp4" type="video/mp4">
             </video>
             <p>
-              Safe at max range. 
-              Passes through projectiles and helps close distance from afar or during your knockdown. 
-              Use 2D to punish or whiff punish.
+              Passes through projectiles and closes distance. Safe at max range. Otherwise, punish or whiff-punish with
+              2D.
             </p>
-          
-          
-            <h2>Sky Bridge</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_condor_SkyBridge.jpg" controls loop muted playsinline
-              preload="none">
-              <source src="/characters/sho/videos/matchups/sho_vs_condor_SkyBridge.mp4" type="video/mp4">
-            </video>
-            <p>
-              Punish with 2C at close range.
-            </p>
-          
-          
+
+
             <h2>Atlas Rock Buster</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_condor_AtlasRockBuster.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_condor_AtlasRockBuster.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_condor_AtlasRockBuster.mp4" type="video/mp4">
             </video>
             <p>
-              Has brief invincibility on startup. 
-              Hard to punish due to pushback. After blocking the first hit, punish with throw or backdash > dash > 5C.
+              Brief invincibility on startup. Pushback makes it not easy to punish, but after blocking the first hit,
+              use throw or backdash > dash > 5C.
             </p>
-          
+
           </div>
-          
+
           <div id="sho">
-          
-            <h2>Ranki Ryuu Geri</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_sho_RankiRyuuGeri.jpg" controls loop muted playsinline
-              preload="none">
-              <source src="/characters/sho/videos/matchups/sho_vs_sho_RankiRyuuGeri.mp4" type="video/mp4">
-            </video>
-            <p>
-              Unsafe on block, but can be followed by air fireball super to bait punish attempts. 
-              If you have meter, forward jD > air 236236P guarantees a punish.
-            </p>
-          
-            <h2>Onigawara</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_sho_onigawara.jpg" controls loop muted playsinline
-              preload="none">
-              <source src="/characters/sho/videos/matchups/sho_vs_sho_onigawara.mp4" type="video/mp4">
-            </video>
-            <p>
-              Safe on block. On hit, if the opponent cancels with 236K, you can interrupt it (break) by using 214K.
-            </p>
-          
-            <h2>Tobihizageri</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_sho_tobihizageri.jpg" controls loop muted playsinline
-              preload="none">
-              <source src="/characters/sho/videos/matchups/sho_vs_sho_tobihizageri.mp4" type="video/mp4">
-            </video>
-            <p>
-              Safe on block but leaves him in throw range. If used from too far, the startup gap can be punished.
-            </p>
-          
-            <h2>Sashikomi Kick</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_sho_SashikomiKick.jpg" controls loop muted playsinline
-              preload="none">
-              <source src="/characters/sho/videos/matchups/sho_vs_sho_SashikomiKick.mp4" type="video/mp4">
-            </video>
-            <p>
-              Safe ob block, often used to bait anti-airs or set up a fuzzy mixup. 
-              On hit, try to Break with 214K or throw (divekick combos into 214K, which beats throws).
-            </p>
-          
-          
+
             <h2>Rekkou Ha</h2>
             <video data-poster="/characters/sho/videos/matchups/sho_vs_sho_RekkouHa.jpg" controls loop muted playsinline
               preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_sho_RekkouHa.mp4" type="video/mp4">
             </video>
             <p>
-              At backdash range, whiff punish with 214214K or 236K. 
-              It's also breakable if used from afar in combos like 2B, 2B, 2B, 5C > 236P.
+              Whiff punish with 214214K or 236K (requires spacing).
+              If used in long-range combos (2B, 2B, 2B, 5C x 236P) it becomes breakable.
             </p>
-          
-          
-          
+
+            <h2>Ranki Ryuu Geri</h2>
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_sho_RankiRyuuGeri.jpg" controls loop muted
+              playsinline preload="none">
+              <source src="/characters/sho/videos/matchups/sho_vs_sho_RankiRyuuGeri.mp4" type="video/mp4">
+            </video>
+            <p>
+              Unsafe on its own, but Sho can follow with air super to stay safe and bait punishes.
+              If you have meter, use jD > 236236P for a guaranteed punish.
+            </p>
+
+            <h2>Onigawara</h2>
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_sho_onigawara.jpg" controls loop muted
+              playsinline preload="none">
+              <source src="/characters/sho/videos/matchups/sho_vs_sho_onigawara.mp4" type="video/mp4">
+            </video>
+            <p>
+              Overhead, cancelable and safe on block.
+              If canceled into 236K, you can punish/break with 214K.
+            </p>
+
+            <h2>Tobihizageri</h2>
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_sho_tobihizageri.jpg" controls loop muted
+              playsinline preload="none">
+              <source src="/characters/sho/videos/matchups/sho_vs_sho_tobihizageri.mp4" type="video/mp4">
+            </video>
+            <p>
+              Safe on block, but he ends close enough to be thrown.
+              From long range, there's a punishable gap before the move connects.
+            </p>
+
+            <h2>Sashikomi Kick</h2>
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_sho_SashikomiKick.jpg" controls loop muted
+              playsinline preload="none">
+              <source src="/characters/sho/videos/matchups/sho_vs_sho_SashikomiKick.mp4" type="video/mp4">
+            </video>
+            <p>
+              Safe on block, can bait anti-airs and enable fuzzy mixups. Block low to avoid the fuzzy.
+              On hit, break with 214K or throw, but beware: divekick combos into 214K, which beats throws.
+            </p>
+
           </div>
-          
+
           <div id="maherl">
-          
-            <h2>Shiva Dance</h2>
+
+            <h2>Cadabra Bomber</h2>
             <video data-poster="/characters/sho/videos/matchups/sho_vs_maherl_super.jpg" controls loop muted playsinline
               preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_maherl_super.mp4" type="video/mp4">
             </video>
             <p>
-              A safe super with invincible startup. If you're close, you can backdash to avoid the second hit, then punish.
+              Safe super with invincible startup. If you're close, backdash to avoid the last part, then punish.
             </p>
-          
-          
+
+
             <h2>Abdomen Step</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_maherl_AbdomenStep.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_maherl_AbdomenStep.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_maherl_AbdomenStep.mp4" type="video/mp4">
             </video>
             <p>
-              Safe when canceled from any normal because of pushback, except in the corner where you can use 2B. 
+              Safe when canceled from normals due to pushback, except in the corner, where 2B punishes.
               Whiff punish with 214K.
             </p>
-          
-          
+
+
             <h2>Slash Sword</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_maherl_SlashSword.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_maherl_SlashSword.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_maherl_SlashSword.mp4" type="video/mp4">
             </video>
             <p>
               Safe at max range. if you're close enough, punish with 5C.
             </p>
-          
+
             <h2>Punish Sword</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_maherl_PunishSword.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_maherl_PunishSword.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_maherl_PunishSword.mp4" type="video/mp4">
             </video>
             <p>
               Travels a shorter distance than Slash Words. Also safe at max range.
-              if you're close enough, punish with 5C.
+              if you're close enough, punish with 2D.
             </p>
-          
+
             <h2>Balloon Bomb</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_maherl_BalloonBomb.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_maherl_BalloonBomb.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_maherl_BalloonBomb.mp4" type="video/mp4">
             </video>
             <p>
               Hits overhead and can cross up, but has long recovery. Whiff punish with 5C, 2C, or 214K.
               If blocked, punish with dash > 5C.
             </p>
-          
-          
-            <h2>Cadabra Bomber</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_maherl_CadabraBomber.jpg" controls loop muted playsinline
-              preload="none">
+
+
+            <h2>Shiva Dance</h2>
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_maherl_CadabraBomber.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_maherl_CadabraBomber.mp4" type="video/mp4">
             </video>
             <p>
               Can go through projectiles up close. Punish with dash > 5C.
             </p>
-          
+
           </div>
-          
+
           <div id="tia">
-          
+
             <h2>Soul Spike</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_tia_SoulSpike.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_tia_SoulSpike.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_tia_SoulSpike.mp4" type="video/mp4">
             </video>
             <p>
-              Not an overhead. Light version is safe, but Heavy isn’t. 
-              Be careful, she can super right away to bait your punish. Against Heavy, use throw to punish and avoid it.
+              Not an overhead. Light version is safe; Heavy isn’t. She can super instantly to bait your punish. Use throw to avoid it.
             </p>
-          
-          
-            <h2>Mirage Spear Kick</h2>
-            <p>
-              Safe on block. Common in blockstrings to build meter and corner the opponent.
-            </p>
-          
-          
-            <h2>Rising Upper</h2>
-            <p>
-              Her projectiles have slightly slow recovery, 
-              mainly used for okizeme or setting up offense from afar. Whiff punish with 214214K or 236D at backdash range.
-            </p>
-          
+
             <h2>Rapid Gale</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_tia_RapidGale.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_tia_RapidGale.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_tia_RapidGale.mp4" type="video/mp4">
             </video>
             <p>
-              has a slightly slow recovery, used for okizeme or pressure. Whiff punish with
-              214214K or 236D at backdash range.
+              Mainly used on okizeme and pressure. Whiff punish with
+              214214K or 236D (requires spacing).
             </p>
-          
+
             <h2>Heel Break</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_tia_HeelBreak.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_tia_HeelBreak.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_tia_HeelBreak.mp4" type="video/mp4">
             </video>
             <p>
-              2-hit sequence; the second is an overhead. After the first, interrupt with throw, 214K or super.
+              Two-hit sequence, the second is overhead. Interrupt after the first with throw, 214K, or super.
             </p>
-          
-          
+
+
             <h2>Rapid Charge</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_tia_RapidCharge.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_tia_RapidCharge.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_tia_RapidCharge.mp4" type="video/mp4">
             </video>
             <p>
-              She switches sides mid-air on block, quickly turn your character and punish.
+              On block, she switches sides and ends mid-air, turn around quickly to punish.
             </p>
-          
-          
+
+
             <h2>Burning Revolver</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_tia_BurningRevolver.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_tia_BurningRevolver.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_tia_BurningRevolver.mp4" type="video/mp4">
             </video>
             <p>
-              Punish with dash > 5C
+              Hits both sides, great for catching crossups and ambiguous jumps. On block, punish with dash > 5C
             </p>
-          
-          
+
+
             <h2>Cutlass Flasher</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_tia_CutlassFlasher.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_tia_CutlassFlasher.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_tia_CutlassFlasher.mp4" type="video/mp4">
             </video>
             <p>
-              Overhead super, switches sides on block.
+              Hits overhead and switches sides on block. Punish with 5C.
             </p>
-          
-          
-          
+
+
+
           </div>
-          
+
           <div id="alsion">
-          
+
             <h2>Horus Shade</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_alsion_HorusShade.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_alsion_HorusShade.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_alsion_HorusShade.mp4" type="video/mp4">
             </video>
             <p>
               A safe overhead with slow startup, making it easy to react to. Punishable on whiff with 214K, 2C or 5C.
             </p>
-          
-          
+
+
             <h2>Death Shred</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_alsion_DeathShred.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_alsion_DeathShred.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_alsion_DeathShred.mp4" type="video/mp4">
             </video>
             <p>
-              Hits twice on standing — second hit is an overhead.
-              whiff punish or interrupt the second hit with 2B.
-        </p>
-          
-          
-            <h2>Poison Fog</h2>
-            <p>
-              A slow, close-range projectile used for chip damage or wake-up pressure.
+              Hits twice on standing, second hit is overhead.
+              whiff punish or interrupt the second hit with any normal.
             </p>
-          
+
+
             <h2>Deadly Claw</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_alsion_DeadlyClaw.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_alsion_DeadlyClaw.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_alsion_DeadlyClaw.mp4" type="video/mp4">
             </video>
             <p>
-              At close range, 214B lands in front, while 214D lands behind. Punish with 236236P or anti-air
-              with 2C.
+              At close range, 214B stays in front, while 214D crosses up and lands behind. Punish with super (236236P) or
+              anti-air with 2C.
             </p>
-          
+
             <h2>Dash Knee</h2>
-            <video data-poster="/characters/sho/videos/matchups/sho_vs_alsion_DashKnee.jpg" controls loop muted playsinline
-              preload="none">
+            <video data-poster="/characters/sho/videos/matchups/sho_vs_alsion_DashKnee.jpg" controls loop muted
+              playsinline preload="none">
               <source src="/characters/sho/videos/matchups/sho_vs_alsion_DashKnee.mp4" type="video/mp4">
             </video>
             <p>
-              A long range special that’s only safe at the right distance. On block or hit, punish with 2B.
+              Long-range special, only safe with proper spacing. On block or hit, punish with 2B.
+              You can also whiff punish with 214K.
             </p>
-          
-          
+
+
           </div>
 
         </div>
@@ -1296,10 +1357,10 @@
   <!-- footer  -->
   <div id="footer-container"></div>
 
-<!-- Thumbnail Fullscreen image container -->
-<div id="fullscreen-container" style="display:none;">
-  <img id="fullscreen-image" src="" alt="Fullsize">
-</div>
+  <!-- Thumbnail Fullscreen image container -->
+  <div id="fullscreen-container" style="display:none;">
+    <img id="fullscreen-image" src="" alt="Fullsize">
+  </div>
 
 
 </body>

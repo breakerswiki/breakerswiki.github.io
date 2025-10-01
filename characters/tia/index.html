@@ -23,27 +23,25 @@
 
   <section class="main-content">
     <div class="container">
-      <div class="main-char-content">
-        
-        <div class="characters-guide-main">
+     <div class="main-char-content">
+
           <div class="infos">
-            <a href="/characters/sho"><img src="img/assets/sho_bg.webp"></a>
-            <a href="/characters/pielle"><img src="img/assets/pielle_bg.webp"></a>
-            <a href="/characters/condor"><img src="img/assets/condor_bg.webp"></a>
-            <a href="/characters/rila"><img src="img/assets/rila_bg.webp"></a>
-            <a href="/characters/tia" class="active-link"><img class="active" src="img/assets/tia_bg.webp"></a>
-            <a href="/characters/alsion"><img src="img/assets/alsion_bg.webp"></a>
-            <a href="/characters/maherl"><img src="img/assets/maherl_bg.webp"></a>
-            <a href="/characters/dao-long"><img src="img/assets/dao-long_bg.webp"></a>
-            <a href="/characters/saizo"><img src="img/assets/saizo_bg.webp"></a>
-            <a href="/characters/bai-hu"><img src="img/assets/bai-hu_bg.webp"></a>
+            <a href="/characters/sho"><img src="/img/assets/sho.png"></a>
+            <a href="/characters/pielle"><img src="/img/assets/pielle.png"></a>
+            <a href="/characters/condor"><img src="/img/assets/condor.png"></a>
+            <a href="/characters/rila"><img img src="/img/assets/rila.png"></a>
+            <a href="/characters/tia" class="active-link"><img class="active" src="/img/assets/tia.png"></a>
+            <a href="/characters/alsion"><img src="/img/assets/alsion.png"></a>
+            <a href="/characters/maherl"><img src="/img/assets/maherl.png"></a>
+            <a href="/characters/dao-long"><img src="/img/assets/daolong.png"></a>
+            <a href="/characters/saizo"><img src="/img/assets/saizo.png"></a>
+            <a href="/characters/bai-hu"><img src="img/assets/bai-hu.png"></a>
           </div>
-        </div>
 
         <h1 id="title"><span class="flag-icon flag-icon-th"></span> Tia Langray</h1>
 
         <div class="nav-guide">
-          <button class="color-button" id="button1" onclick="showContent('infos')">About</button>
+          <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
           <button class="color-button" id="button2" onclick="showContent('movelist')">Moves</button>
           <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
           <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
@@ -59,22 +57,24 @@
           </p>
 
           <h2>Colors</h2>
-          <table class="colors" style="text-align: center;">
-            <tbody>
-              <tr>
-                <td><img class="A"></td>
-                <td><img class="B"></td>
-                <td><img class="C"></td>
-                <td><img class="D"></td>
-              </tr>
-              <tr>
-                <td><img src="/characters/tia/img/Tia_A.png"></td>
-                <td><img src="/characters/tia/img/Tia_B.png"></td>
-                <td><img src="/characters/tia/img/Tia_C.png"></td>
-                <td><img src="/characters/tia/img/Tia_D.png"></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="character-colors">
+            <div class="column">
+              <span class="arcadebutton A"></span>
+              <img data-src="/characters/tia/img/tia_A.png" class="lazy-image" alt="tia A">
+            </div>
+            <div class="column">
+              <span class="arcadebutton B"></span>
+              <img data-src="/characters/tia/img/tia_B.png" class="lazy-image" alt="tia B">
+            </div>
+            <div class="column">
+              <span class="arcadebutton C"></span>
+              <img data-src="/characters/tia/img/tia_C.png" class="lazy-image" alt="tia C">
+            </div>
+            <div class="column">
+              <span class="arcadebutton D"></span>
+              <img data-src="/characters/tia/img/tia_D.png" class="lazy-image" alt="tia D">
+            </div>
+          </div>
 
           <h2>Gallery</h2>
             <a href="/characters/tia/img/tia_artwork_1.webp" target="_blank">
@@ -89,185 +89,179 @@
         </div>
 
         <div id="movelist">
-          <div class="container">
-
-          </div>
-
-
 
           <div class="command-list">
             <h2 class="commands">Commands</h2>
             <div class="move">
               <span>Rush Blow</span>
-              <span><img class="A">+<img class="C"></span>
+              <span><span class="arcadebutton A"></span>+<span class="arcadebutton C"></span></span>
             </div>
             <div class="move">
               <span>Heel Break</span>
-              <span><img class="B">+<img class="D"></span>
+              <span><span class="arcadebutton B"></span>+<span class="arcadebutton D"></span></span>
             </div>
             <div class="move">
               <span>Upper</span>
-              <span><img class="Air"><img class="Up">+<img class="C"></span>
+              <span><img class="Air"><img class="Up">+<span class="arcadebutton C"></span></span>
             </div>
     
             <h2 class="specials">Specials</h2>
             <div class="move">
               <span>Soul Spike</span>
-              <span>(<img class="Air">)<img class="QCB">+<img class="Kick"></span>
+              <span>(<img class="Air">)<img class="QCB">+<span class="arcadebutton K"></span></span>
             </div>
             <div class="move">
               <span>Mirage Spear Kick</span>
-              <span><img class="Tap"><img class="Kick"></span>
+              <span><img class="Tap"><span class="arcadebutton K"></span></span>
             </div>
             <div class="move">
               <span>Rising Upper</span>
-              <span><img class="DP">+<img class="Punch"></span>
+              <span><img class="DP">+<span class="arcadebutton P"></span></span>
             </div>
             <div class="move">
               <span>Rapid Gale</span>
-              <span><img class="QCF">+<img class="Punch"></span>
+              <span><img class="QCF">+<span class="arcadebutton P"></span></span>
             </div>
     
             <h2 class="supers">Supers</h2>
             <div class="move">
               <span>Rapid Charge</span>
-              <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+              <span><img class="QCF"><img class="QCF">+<span class="arcadebutton P"></span></span>
             </div>
             <div class="move">
               <span>Burning Revolver</span>
-              <span>(<img class="Air">)<img class="QCB"><img class="QCB">+<img class="Punch"></span>
+              <span>(<img class="Air">)<img class="QCB"><img class="QCB">+<span class="arcadebutton P"></span></span>
               </div>
             <div class="move">
               <span>Cutlass Flasher</span>
-              <span><img class="QCF"><img class="QCF">+<img class="Kick"></span>
+              <span><img class="QCF"><img class="QCF">+<span class="arcadebutton K"></span></span>
             </div>
+
           </div>
 
-
-
           <input type="checkbox" id="toggle"><br>
-          <label class="properties" for="toggle">More Info</label>
+          <label class="properties" for="toggle">More infos</label>
     
           <div class="moveproperties">  
           <div class="command-list">
             <h2 class="normals">Normals</h2>
             <div class="move">
-              <span>far/close <img class="A"></span>
+              <span>far/close <span class="arcadebutton A"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>down <img class="A"></span>
+              <span>down <span class="arcadebutton A"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>up <img class="A"></span>
+              <span>up <span class="arcadebutton A"></span></span>
               <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>ub/uf <img class="A"></span>
+              <span>ub/uf <span class="arcadebutton A"></span></span>
               <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>far <img class="B"></span>
+              <span>far <span class="arcadebutton B"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>close <img class="B"></span>
+              <span>close <span class="arcadebutton B"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>down <img class="B"></span>
+              <span>down <span class="arcadebutton B"></span></span>
               <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>up <img class="B"></span>
+              <span>up <span class="arcadebutton B"></span></span>
               <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>ub/uf <img class="B"></span>
+              <span>ub/uf <span class="arcadebutton B"></span></span>
               <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>far <img class="C"></span>
+              <span>far <span class="arcadebutton C"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>close <img class="C"></span>
+              <span>close <span class="arcadebutton C"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>down <img class="C"></span>
+              <span>down <span class="arcadebutton C"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>up <img class="C"></span>
+              <span>up <span class="arcadebutton C"></span></span>
               <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>ub/uf <img class="C"></span>
+              <span>ub/uf <span class="arcadebutton C"></span></span>
               <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>far <img class="D"></span>
+              <span>far <span class="arcadebutton D"></span></span>
               <span><inline class="mid"></span>
             </div>
             <div class="move">
-              <span>close <img class="D"></span>
+              <span>close <span class="arcadebutton D"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>down <img class="D"></span>
+              <span>down <span class="arcadebutton D"></span></span>
               <span><inline class="low"><inline class="knockdown"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>up <img class="D"></span>
+              <span>up <span class="arcadebutton D"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span>ub/uf <img class="D"></span>
+              <span>ub/uf <span class="arcadebutton D"></span></span>
               <span><inline class="high"></span>
             </div>
             <h2 class="commands">Commands</h2>
             <div class="move">
-              <span><img class="A">+<img class="C"></span>
-              <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"><br>1st hit cancelable</span>
+              <span><span class="arcadebutton A"></span>+<span class="arcadebutton C"></span></span>
+              <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span><img class="B">+<img class="D"></span>
-              <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"><br><inline class="overhead"><br>1st hit cancelable, 2nd overhead</span>
+              <span><span class="arcadebutton B"></span>+<span class="arcadebutton D"></span></span>
+              <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span><img class="Air"><img class="Up">+<img class="C"></span>
+              <span><img class="Air"><img class="Up">+<span class="arcadebutton C"></span></span>
               <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <h2 class="specials">Specials</h2>
             <div class="move">
-              <span>(<img class="Air">)+<img class="QCB">+<img class="Kick"></span>
-              <span><inline class="mid"><inline class="knockdown"><br><inline class="launcher">(<img class="D"> only)</span>
+              <span>(<img class="Air">)+<img class="QCB">+<span class="arcadebutton K"></span></span>
+              <span><inline class="mid"><inline class="knockdown"><inline class="launcher">(<span class="arcadebutton D"></span> only)</span>
             </div>
             <div class="move">
-              <span><img class="Tap"><img class="Kick"></span>
+              <span><img class="Tap"><span class="arcadebutton K"></span></span>
               <span><inline class="mid"></span>
             </div>
             <div class="move">
-              <span><img class="DP">+<img class="Punch"></span>
+              <span><img class="DP">+<span class="arcadebutton P"></span></span>
               <span><inline class="mid"><inline class="inv-startup"></span>
             </div>
             <div class="move">
-              <span><img class="QCF">+<img class="Punch"></span>
+              <span><img class="QCF">+<span class="arcadebutton P"></span></span>
               <span><inline class="mid"></span>
             </div>
             <h2 class="supers">Supers</h2>
             <div class="move">
-              <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+              <span><img class="QCF"><img class="QCF">+<span class="arcadebutton P"></span></span>
               <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
             </div>
             <div class="move">
-              <span>(<img class="Air">)<img class="QCB"><img class="QCB">+<img class="Punch"></span>
+              <span>(<img class="Air">)<img class="QCB"><img class="QCB">+<span class="arcadebutton P"></span></span>
               <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
             </div>
             <div class="move">
-              <span><img class="QCF"><img class="QCF">+<img class="Kick"></span>
+              <span><img class="QCF"><img class="QCF">+<span class="arcadebutton K"></span></span>
               <span><inline class="mid"><inline class="hard-knockdown"></span>
             </div>
 
@@ -276,23 +270,20 @@
           </div>
           </div>
 
-
-
-
         </div>
 
-
-
         <div id="guide">
+          <h1>Ressources</h1>
 
+          <ul>
+            <li><a href="https://youtu.be/KzufkMx_XRs" target="_blank">Sas Izm - Tia Langray Combo Guide </a></li>
+            <li><a href="https://wiki.supercombo.gg/w/Breakers_Revenge/Tia" target="_blank">SuperCombo Wiki - Breakers Revenge/Tia</a></li>
+          </ul>
 
           <h1>Overview</h1>
 
           <p>
-            Tia has excellent mobility, 
-            strong offense, and great space control. Her quick dash jab pressure, 
-            meter build, and punish options make her dangerous in most matchups. 
-            With precise execution, she excels in zoning, setplay, and creating openings. 
+            Tia is a top-tier character with quick mobility and space control. Her fast dash pressure, efficient meter building, and reliable punish options make her a threat in most matchups. With proper execution, she can effectively apply zoning, setplay, and create consistent openings against opponents.
           </p>
 
 
@@ -304,7 +295,7 @@
           <p>
             <u>Short dash A loop</u>: Though not easy to execute, 
             when done correctly, this pressure loop keeps the opponent blocking, builds meter, and pushes them toward the corner.
-            On hit confirm A with A+C > 623C or Super.
+            On hit confirm with A+C > 623C or Super.
           </p>
 
           <p>
@@ -313,39 +304,32 @@
           </p>
 
           <p>
-            <u>Rapid gale (236P) Setplay</u>: In the corner, after a knockdown, 
-            backdash and use her projectile (236P) to trap them in a blockstring with a dash attack. 
-            You'll have time to react and punish if they try to avoid the projectile.
+            <u>Rapid gale (236P) Setplay</u>: After scoring a corner knockdown, Tia can backdash and throw a projectile. If they attempt to avoid the projectile, she has enough time to react and punish.
+          </p>
+
+
+          <p>
+            <u>Soul Spike (214K)</u>: 623C is unsafe on block but jumps over projectiles. If canceled into Burning Revolver (214214P), it can frame trap.
           </p>
 
 
 
-
-
-
-          <h1>Defense</h1>
+          <h1>Anti-airs</h1>
           <video data-poster="characters/tia/videos/antiair_combos.jpg" controls loop muted playsinline preload="none">
             <source src="characters/tia/videos/antiair_combos.mp4" type="video/mp4">
           </video>
           
           <p>
-            <u>Rising Upper (623P)</u>: 623A is fast, passing through projectiles, and can be followed by Super if it hits as an anti-air. 
-            623C hits higher but has more recovery; both have invincibility on startup
+            <u>Rising Upper (623P)</u>: 623A is quick, goes through projectiles, and can combo into Super if it catches airborne opponents. 623C reaches higher but takes longer to recover. Both moves are invincible at the start.
           </p>
 
           <p>
-            <u>Soul Spike (214K)</u>:The heavy version is unsafe on block but goes over projectiles and can frame trap if followed by her Burning Revolver Super (214214P). 
-            Players must punish with a throw to avoid this.
+            <u>far 5C and 5D</u>: Dash 5D and 5C are safe on block and work as anti-airs and super confrims.
           </p>
 
           <p>
-            <u>far 5C and 5D</u>: Dash far 5D and 5C are safe on block and serve as anti-air.
-            Confirm 5D with super 236236P and 5C with 214K > Super.
-          </p>
-
-          <p>
-            <u>5A</u>:Super and special cancelable. Use it to counter ambiguous jump-Ins and cross-ups. 
-            5A anti-air can also lead to this juggle combo: 5A > neutral jump B > 214K > Super.
+            <u>5A</u>: Super and special cancelable. Use it to counter ambiguous jump-Ins and cross-ups. 
+            5A anti-air can also lead to this juggle combo: 5A > neutral jB > 214K > Super.
           </p>
 
           <p>
@@ -359,14 +343,11 @@
           </video>
           
           <p>
-            <u>Rapid charge (236236P)</u>: Her fastest super, it comes out quickly and punishes projectiles and most unsafe moves.
-            Easily connects after anti-air normals.
-            Rapid charge super is used as a combo ender and to punish opponent's unsafe moves and projectiles
-            effectively
+            <u>Rapid charge (236236P)</u>: This Super is fast and punishes projectiles or unsafe moves. It links easily after anti-air normals and works well as a combo finisher.
           </p>
 
           <p>
-            <u>Cutlass Flasher (236236K)</u>: Hits high (Overhead). Also used for converting air juggles combos from 214K.
+            <u>Cutlass Flasher (236236K)</u>: Overhead Super. Also used for converting air juggles combos from 214K.
           </p>
 
           <p>
@@ -381,15 +362,9 @@
           <video data-poster="characters/tia/videos/fuzzy.jpg" controls loop muted playsinline preload="none">
             <source src="characters/tia/videos/fuzzy.mp4" type="video/mp4">
           </video>
-          <ul class="combos">
-            <li>jB > 8C > 214214P</li>
-          </ul>
-
-          <h1>Ressources</h1>
-          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/KzufkMx_XRs?si=Dk8QsImw4djdGsfm"
-          loading="lazy" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p>
+            To break defense, jump-In with C to try to force high blocks. Then mixup with a low (2B) or Fuzzy (j8C > Super 214214P).
+          </p>
 
           <h1>Replays</h1>
           <p>
@@ -813,7 +788,7 @@
             <source src="characters/tia/videos/matchups/tia_vs_sho_ranki_ryuu_geri.mp4" type="video/mp4">
           </video>
           <p>
-            Ranki Ryuu Geri is tricky to punish as it can be followed by air super.
+            Ranki Ryuu Geri (236K) is unsafe if used alone, but Sho can cancel into super to stay safe and bait punish attempts. 
             However, it is minus on block. If you have meter, a forward jC > air super 214214P guarantees a
             punish.
           </p>
@@ -863,7 +838,7 @@
           <div id="maherl">
 
 
-          <h2>Shiva Dance</h2>
+          <h2>Cadabra Bomber</h2>
           <video data-poster="characters/tia/videos/matchups/tia_vs_maherl_super.jpg" controls loop muted playsinline preload="none">
             <source src="characters/tia/videos/matchups/tia_vs_maherl_super.mp4" type="video/mp4">
           </video>
@@ -901,7 +876,7 @@
             Overhead, whiff punish with 5C/2C. on block, punish with run > 5C
           </p>
 
-          <h2>Cadabra Bomber</h2>
+          <h2>Shiva Dance</h2>
           <video data-poster="characters/tia/videos/matchups/tia_vs_maherl_CadabraBomber.jpg" controls loop muted playsinline preload="none">
             <source src="characters/tia/videos/matchups/tia_vs_maherl_CadabraBomber.mp4" type="video/mp4">
           </video>
@@ -997,13 +972,6 @@
 
 
 
-            <h2>Poison Fog</h2>
-            <span class="safe-on-block"></span>
-            <p>
-              A slow close-range projectile for chip damage or pressure on your wakeup.
-            </p>
-
-
             <h2>Deadly Claw</h2>
             <video data-poster="characters/tia/videos/matchups/tia_vs_alsion_DeadlyClaw.jpg" controls loop muted playsinline preload="none">
               <source src="characters/tia/videos/matchups/tia_vs_alsion_DeadlyClaw.mp4" type="video/mp4">
@@ -1037,6 +1005,7 @@
 
 
       </div>
+
     </div>
 
 

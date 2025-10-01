@@ -25,27 +25,24 @@
   <section class="main-content">
     <div class="container">
       <div class="main-char-content">
-
-        <div class="characters-guide-main">
           <div class="infos">
-            <a href="/characters/sho"><img src="img/assets/sho_bg.webp"></a>
-            <a href="/characters/pielle" class="active-link"><img class="active" src="img/assets/pielle_bg.webp"></a>
-            <a href="/characters/condor"><img src="img/assets/condor_bg.webp"></a>
-            <a href="/characters/rila"><img src="img/assets/rila_bg.webp"></a>
-            <a href="/characters/tia"><img src="img/assets/tia_bg.webp"></a>
-            <a href="/characters/alsion"><img src="img/assets/alsion_bg.webp"></a>
-            <a href="/characters/maherl"><img src="img/assets/maherl_bg.webp"></a>
-            <a href="/characters/dao-long"><img src="img/assets/dao-long_bg.webp"></a>
-            <a href="/characters/saizo"><img src="img/assets/saizo_bg.webp"></a>
-            <a href="/characters/bai-hu"><img src="img/assets/bai-hu_bg.webp"></a>
+            <a href="/characters/sho"><img src="/img/assets/sho.png"></a>
+            <a href="/characters/pielle" class="active-link"><img class="active" img src="/img/assets/pielle.png"></a>
+            <a href="/characters/condor"><img src="/img/assets/condor.png"></a>
+            <a href="/characters/rila"><img src="/img/assets/rila.png"></a>
+            <a href="/characters/tia"><img src="/img/assets/tia.png"></a>
+            <a href="/characters/alsion"><img src="/img/assets/alsion.png"></a>
+            <a href="/characters/maherl"><img src="/img/assets/maherl.png"></a>
+            <a href="/characters/dao-long"><img src="/img/assets/daolong.png"></a>
+            <a href="/characters/saizo"><img src="/img/assets/saizo.png"></a>
+            <a href="/characters/bai-hu"><img src="img/assets/bai-hu.png"></a>
           </div>
-        </div>
 
     <h1 id="title"><span class="flag-icon flag-icon-it"></span> Pielle Montario</h1>
 
 
     <div class="nav-guide">
-      <button class="color-button" id="button1" onclick="showContent('infos')">About</button>
+      <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
       <button class="color-button" id="button2" onclick="showContent('movelist')">Moves</button>
       <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
       <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
@@ -55,30 +52,32 @@
 
     <div id="infos">
       <p>
-        Pielle is an Italian nobleman and expert fencer who can summon lightning with his sword. His alternate version, 
-        George (used when both players choose him), is a Frenchman who was robbed in Italy, fueling his hatred for Italians.
+        Pielle is an Italian nobleman and skilled fencer who can summon lightning with his sword.
+        Georges, his French alternate, despises Italians after being robbed.
       </p>
       <p>
-        The flag on his stage changed from Italian to French since the last game, which may confuse players.
+        <small>The flag on his stage was changed from French to Italian compared to the previous game, which might confuse players...</small>
       </p>
 
       <h2>Colors</h2>
-      <table class="colors" style="text-align: center;">
-        <tbody>
-          <tr>
-            <td><img class="A"></td>
-            <td><img class="B"></td>
-            <td><img class="C"></td>
-            <td><img class="D"></td>
-          </tr>
-          <tr>
-            <td><img data-src="/characters/pielle/img/Pielle_A.png" class="lazy-image"></td>
-            <td><img data-src="/characters/pielle/img/Pielle_B.png" class="lazy-image"></td>
-            <td><img data-src="/characters/pielle/img/Pielle_C.png" class="lazy-image"></td>
-            <td><img data-src="/characters/pielle/img/Pielle_D.png" class="lazy-image"></td>
-          </tr>
-        </tbody>
-      </table>
+          <div class="character-colors">
+            <div class="column">
+              <span class="arcadebutton A"></span>
+              <img data-src="/characters/pielle/img/pielle_A.png" class="lazy-image" alt="pielle A">
+            </div>
+            <div class="column">
+              <span class="arcadebutton B"></span>
+              <img data-src="/characters/pielle/img/pielle_B.png" class="lazy-image" alt="pielle B">
+            </div>
+            <div class="column">
+              <span class="arcadebutton C"></span>
+              <img data-src="/characters/pielle/img/pielle_C.png" class="lazy-image" alt="pielle C">
+            </div>
+            <div class="column">
+              <span class="arcadebutton D"></span>
+              <img data-src="/characters/pielle/img/pielle_D.png" class="lazy-image" alt="pielle D">
+            </div>
+          </div>
 
       <h2>Gallery</h2>
         <a href="/characters/pielle/img/pielle_artwork_1.webp" target="_blank">
@@ -100,58 +99,58 @@
         <h2 class="commands">Commands</h2>
         <div class="move">
           <span>Saber Bash</span>
-          <span><img class="A">+<img class="C"></span>
+          <span><span class="arcadebutton A"></span>+<span class="arcadebutton C"></span></span>
         </div>
         <div class="move">
           <span>Flying Peach Bomber</span>
-          <span><img class="B">+<img class="D"></span>
+          <span><span class="arcadebutton B"></span>+<span class="arcadebutton D"></span></span>
         </div>
         <div class="move">
           <span>Hopping Saber</span>
-          <span><img class="Air"><img class="Down">+<img class="A"></span>
+          <span><img class="Air"><img class="Down">+<span class="arcadebutton A"></span></span>
         </div>
         <div class="move">
           <span>Opened Arc Liner</span>
-          <span><img class="Air"><img class="Up">+<img class="C"></span>
+          <span><img class="Air"><img class="Up">+<span class="arcadebutton C"></span></span>
         </div>
 
         <h2 class="specials">Specials</h2>
         <div class="move">
           <span>Bonjour Shot</span>
-          <span><img class="QCF">+<img class="Punch"></span>
+          <span><img class="QCF">+<span class="arcadebutton P"></span></span>
         </div>
         <div class="move">
           <span>Robin Liner</span>
-          <span><img class="DP">+<img class="Punch"></span>
+          <span><img class="DP">+<span class="arcadebutton P"></span></span>
         </div>
         <div class="move">
           <span>Monsieur Crash</span>
-          <span><img class="QCB">+<img class="Punch">.<img class="Punch">.<img class="Punch"></span>
+          <span><img class="QCB">+<span class="arcadebutton P"></span>.<span class="arcadebutton P"></span>.<span class="arcadebutton P"></span></span>
         </div>
         <div class="move">
           <span>Rose Train</span>
-          <span><img class="QCB">+<img class="Kick"></span>
+          <span><img class="QCB">+<span class="arcadebutton K"></span></span>
         </div>
         <div class="move">
           <span>Merci Un Deux Trois</span>
           <span>
-            <img class="Air"><img class="Down">+<img class="A">+<img class="B">+<img class="C"><br>
-            <img class="Air"><img class="Down">+<img class="B">+<img class="C">+<img class="D">
+            <img class="Air"><img class="Down">+<span class="arcadebutton A"></span>+<span class="arcadebutton B"></span>+<span class="arcadebutton C"></span><br>
+            <img class="Air"><img class="Down">+<span class="arcadebutton B"></span>+<span class="arcadebutton C"></span>+<span class="arcadebutton D"></span>
           </span>
         </div>
 
         <h2 class="supers">Supers</h2>
         <div class="move">
           <span>Un Deux Robin</span>
-          <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+          <span><img class="QCF"><img class="QCF">+<span class="arcadebutton P"></span></span>
         </div>
         <div class="move">
           <span>Thunder Croiser</span>
-          <span><img class="QCB"><img class="QCB">+<img class="Punch"></span>
+          <span><img class="QCB"><img class="QCB">+<span class="arcadebutton P"></span></span>
         </div>
         <div class="move">
           <span>Super Rose</span>
-          <span><img class="QCB"><img class="QCB">+<img class="Kick"></span>
+          <span><img class="QCB"><img class="QCB">+<span class="arcadebutton K"></span></span>
         </div>
       </div>
 
@@ -162,137 +161,137 @@
       <div class="command-list">
         <h2 class="normals">Normals</h2>
         <div class="move">
-          <span>far <img class="A"></span>
+          <span>far <span class="arcadebutton A"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>close <img class="A"></span>
+          <span>close <span class="arcadebutton A"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>down <img class="A"></span>
+          <span>down <span class="arcadebutton A"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>up <img class="A"></span>
+          <span>up <span class="arcadebutton A"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>ub/uf <img class="A"></span>
+          <span>ub/uf <span class="arcadebutton A"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>far <img class="B"></span>
+          <span>far <span class="arcadebutton B"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>close <img class="B"></span>
+          <span>close <span class="arcadebutton B"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>down <img class="B"></span>
+          <span>down <span class="arcadebutton B"></span></span>
           <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>up <img class="B"></span>
+          <span>up <span class="arcadebutton B"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>ub/uf <img class="B"></span>
+          <span>ub/uf <span class="arcadebutton B"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>far <img class="C"></span>
+          <span>far <span class="arcadebutton C"></span></span>
           <span><inline class="mid"></span>
         </div>
         <div class="move">
-          <span>close <img class="C"></span>
+          <span>close <span class="arcadebutton C"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>down <img class="C"></span>
+          <span>down <span class="arcadebutton C"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"><inline class="launcher"></span>
         </div>
         <div class="move">
-          <span>up <img class="C"></span>
+          <span>up <span class="arcadebutton C"></span></span>
           <span><inline class="high"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>ub/uf <img class="C"></span>
+          <span>ub/uf <span class="arcadebutton C"></span></span>
           <span><inline class="high"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>far <img class="D"></span>
+          <span>far <span class="arcadebutton D"></span></span>
           <span><inline class="mid"></span>
         </div>
         <div class="move">
-          <span>close <img class="D"></span>
+          <span>close <span class="arcadebutton D"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>down <img class="D"></span>
+          <span>down <span class="arcadebutton D"></span></span>
           <span><inline class="low"><inline class="knockdown"></span>
         </div>
         <div class="move">
-          <span>up <img class="D"></span>
+          <span>up <span class="arcadebutton D"></span></span>
           <span><inline class="high"><inline class="special-cancel"></span>
         </div>
         <div class="move">
-          <span>ub/uf <img class="D"></span>
+          <span>ub/uf <span class="arcadebutton D"></span></span>
           <span><inline class="high"><inline class="special-cancel"></span>
         </div>
         <h2 class="commands">Commands</h2>
         <div class="move">
-          <span><img class="A">+<img class="C"></span>
+          <span><span class="arcadebutton A"></span>+<span class="arcadebutton C"></span></span>
           <span><inline class="mid"></span>
         </div>
         <div class="move">
-          <span><img class="B">+<img class="D"></span>
+          <span><span class="arcadebutton B"></span>+<span class="arcadebutton D"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span><img class="Air"><img class="Down">+<img class="A"></span>
+          <span><img class="Air"><img class="Down">+<span class="arcadebutton A"></span></span>
           <span><inline class="mid"><inline class="special-cancel"></span>
         </div>
         <div class="move">
-          <span><img class="Air"><img class="Up">+<img class="C"></span>
+          <span><img class="Air"><img class="Up">+<span class="arcadebutton C"></span></span>
           <span><inline class="high"></span>
         </div>
         <h2 class="specials">Specials</h2>
         <div class="move">
-          <span><img class="QCF">+<img class="Punch"></span>
+          <span><img class="QCF">+<span class="arcadebutton P"></span></span>
           <span><inline class="mid"></span>
         </div>
         <div class="move">
-          <span><img class="DP">+<img class="Punch"></span>
-          <span><inline class="mid"><inline class="knockdown">(<img class="C"> only)</span>
+          <span><img class="DP">+<span class="arcadebutton P"></span></span>
+          <span><inline class="mid"><inline class="knockdown">(<span class="arcadebutton C"></span> only)</span>
         </div>
         <div class="move">
-          <span><img class="QCB">+<img class="Punch">.<img class="Punch">.<img class="Punch"></span>
+          <span><img class="QCB">+<span class="arcadebutton P"></span>.<span class="arcadebutton P"></span>.<span class="arcadebutton P"></span></span>
           <span><inline class="mid"><inline class="knockdown">(3rd hit)</span>
         </div>
         <div class="move">
-          <span><img class="QCB">+<img class="Kick"></span>
+          <span><img class="QCB">+<span class="arcadebutton K"></span></span>
           <span><inline class="mid"><inline class="knockdown"></span>
         </div>
         <div class="move">
           <span>
-            <img class="Air"><img class="Down">+<img class="A">+<img class="B">+<img class="C"><br>
-            <img class="Air"><img class="Down">+<img class="B">+<img class="C">+<img class="D">
+            <img class="Air"><img class="Down">+<span class="arcadebutton A"></span>+<span class="arcadebutton B"></span>+<span class="arcadebutton C"></span><br>
+            <img class="Air"><img class="Down">+<span class="arcadebutton B"></span>+<span class="arcadebutton C"></span>+<span class="arcadebutton D"></span>
           </span>
           <span><inline class="high"><inline class="knockdown"></span>
         </div>
         <h2 class="supers">Supers</h2>
         <div class="move">
-          <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+          <span><img class="QCF"><img class="QCF">+<span class="arcadebutton P"></span></span>
           <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
         </div>
         <div class="move">
-          <span><img class="QCB"><img class="QCB">+<img class="Punch"></span>
+          <span><img class="QCB"><img class="QCB">+<span class="arcadebutton P"></span></span>
           <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
         </div>
         <div class="move">
-          <span><img class="QCB"><img class="QCB">+<img class="Kick"></span>
+          <span><img class="QCB"><img class="QCB">+<span class="arcadebutton K"></span></span>
           <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
         </div>
         
@@ -304,13 +303,15 @@
 
     <div id="guide">
 
+      <h1>Ressources</h1>
+          <ul>
+            <li><a href="https://wiki.supercombo.gg/w/Breakers_Revenge/Pielle" target="_blank">SuperCombo Wiki - Breakers Revenge/Pielle</a></li>
+          </ul>
+
       <h1>Overview</h1>
 
       <p>
-        Pielle works well at close range with a fast, 
-        easy-to-confirm overhead but can be challenging to play. 
-        Most of his special moves have slow recovery, and without invincible reversals outside of supers, 
-        he’s often exposed and vulnerable in many matchups.
+        Pielle main strength is at close range with a quick, easy-to-confirm overhead, but most of his special moves have slow recovery, leaving him vulnerable in many matchups. He also lacks of invincible reversals outside of supers.
       </p>
 
 
@@ -320,8 +321,9 @@
       </video>
 
       <p>
-        His anti-air special and projectiles have high recovery and can be unsafe.
-        His main pokes are 5A and 2A, which can be converted into 214P, B+D (overhead), or his super (236236P).
+        His main pokes are 5A and 2A, which can be converted into 214P, also with B+D (overhead), or his super (236236P).
+        Be aware that his specials and projectiles have high recovery and are often unsafe.
+
       </p>
 
       <h1>Anti-air</h1>
@@ -338,8 +340,7 @@
     </p>
 
       <p><u>Robin Liner (623P)</u>: 
-      623A is quick and effective as an anti-air, 
-      but it's not suitable for combos due to its high recovery and lack of knockdown. Use 623C for grounded combos instead.
+        623A is a fast and reliable anti-air, but it doesn’t cause knockdown on the ground, so it’s not good for combos. For grounded combos, use 623C instead.      
       </p>
 
       <h1>Supers</h1>
@@ -349,7 +350,7 @@
       </video>
 
       <p>
-        <u>Robin Super (236236P)</u>: Can go through projectiles.
+        <u>Robin Super (236236P)</u>: Can pass through projectiles and OTG after an anti-air slide.
        </p>
 
       <p>
@@ -389,8 +390,8 @@
         <source src="characters/pielle/videos/fuzzyguard.mp4" type="video/mp4">
       </video>
       <p>
-        You can perform a fuzzy using jC > jB, jC, or jD. 
-        jD is cancelable into down+A+B+C but won't combo.
+        You can perform a fuzzy using jC into jB, jC or jD.<br> 
+        jD is cancelable with "Merci Un Deux Trois" (down+A+B+C) but won't combo.
       </p>
 
       <h1>Replays</h1>
@@ -417,7 +418,7 @@
       </video>
       <ul class="combos">
         <li>2B > 214C.C.C</li>
-        <li>2Ax3 > 214C.C.C</li>
+        <li>2A, 2A, 2A > 214C.C.C</li>
         <li>jD > 2C > 214D</li>
         <li>jD > 2C > 214C.C.C</li>
       </ul>
@@ -428,7 +429,7 @@
         <source src="characters/pielle/videos/metercombo.mp4" type="video/mp4">
       </video>
       <ul class="combos">
-        <li>2A x 2 > Super Swords (strict timing)</li>
+        <li>2A, 2A > Super Swords (strict timing)</li>
         <li>jD > close 5D > Super Swords</li>
         <li>jD > 2C > Super Swords</li>
         <li>corner: jD > 2C > A+C > Super Swords / Thunder</li>

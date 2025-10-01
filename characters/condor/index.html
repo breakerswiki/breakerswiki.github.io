@@ -25,25 +25,24 @@
   <section class="main-content">
     <div class="container">
       <div class="main-char-content">
-        <div class="characters-guide-main">
           <div class="infos">
-            <a href="/characters/sho"><img src="img/assets/sho_bg.webp"></a>
-            <a href="/characters/pielle"><img src="img/assets/pielle_bg.webp"></a>
-            <a href="/characters/condor" class="active-link"><img class="active" src="img/assets/condor_bg.webp"></a>
-            <a href="/characters/rila"><img src="img/assets/rila_bg.webp"></a>
-            <a href="/characters/tia"><img src="img/assets/tia_bg.webp"></a>
-            <a href="/characters/alsion"><img src="img/assets/alsion_bg.webp"></a>
-            <a href="/characters/maherl"><img src="img/assets/maherl_bg.webp"></a>
-            <a href="/characters/dao-long"><img src="img/assets/dao-long_bg.webp"></a>
-            <a href="/characters/saizo"><img src="img/assets/saizo_bg.webp"></a>
-            <a href="/characters/bai-hu"><img src="img/assets/bai-hu_bg.webp"></a>
+            <a href="/characters/sho"><img src="/img/assets/sho.png"></a>
+            <a href="/characters/pielle"><img src="/img/assets/pielle.png"></a>
+            <a href="/characters/condor" class="active-link"><img class="active"  src="/img/assets/condor.png"></a>
+            <a href="/characters/rila"><img src="/img/assets/rila.png"></a>
+            <a href="/characters/tia"><img src="/img/assets/tia.png"></a>
+            <a href="/characters/alsion"><img src="/img/assets/alsion.png"></a>
+            <a href="/characters/maherl"><img src="/img/assets/maherl.png"></a>
+            <a href="/characters/dao-long"><img src="/img/assets/daolong.png"></a>
+            <a href="/characters/saizo"><img src="/img/assets/saizo.png"></a>
+            <a href="/characters/bai-hu"><img src="img/assets/bai-hu.png"></a>
           </div>
-        </div>
+
     <h1 id="title"><span class="flag-icon flag-icon-us"></span> Condor Heads</h1>
 
 
     <div class="nav-guide">
-      <button class="color-button" id="button1" onclick="showContent('infos')">About</button>
+      <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
       <button class="color-button" id="button2" onclick="showContent('movelist')">Moves</button>
       <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
       <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
@@ -60,22 +59,24 @@
 
 
       <h2>Colors</h2>
-      <table class="colors" style="text-align: center;">
-        <tbody>
-          <tr>
-            <td><img class="A"></td>
-            <td><img class="B"></td>
-            <td><img class="C"></td>
-            <td><img class="D"></td>
-          </tr>
-          <tr>
-            <td><img data-src="/characters/condor/img/Condor_A.png" class="lazy-image"></td>
-            <td><img data-src="/characters/condor/img/Condor_B.png" class="lazy-image"></td>
-            <td><img data-src="/characters/condor/img/Condor_C.png" class="lazy-image"></td>
-            <td><img data-src="/characters/condor/img/Condor_D.png" class="lazy-image"></td>
-          </tr>
-        </tbody>
-      </table>
+          <div class="character-colors">
+            <div class="column">
+              <span class="arcadebutton A"></span>
+              <img data-src="/characters/condor/img/condor_A.png" class="lazy-image" alt="condor A">
+            </div>
+            <div class="column">
+              <span class="arcadebutton B"></span>
+              <img data-src="/characters/condor/img/condor_B.png" class="lazy-image" alt="condor B">
+            </div>
+            <div class="column">
+              <span class="arcadebutton C"></span>
+              <img data-src="/characters/condor/img/condor_C.png" class="lazy-image" alt="condor C">
+            </div>
+            <div class="column">
+              <span class="arcadebutton D"></span>
+              <img data-src="/characters/condor/img/condor_D.png" class="lazy-image" alt="condor D">
+            </div>
+          </div>
 
       <h2>Gallery</h2>
           <a href="/characters/condor/img/condor_artwork_1.webp" target="_blank">
@@ -97,71 +98,71 @@
         <h2 class="throws">Throws</h2>
         <div class="move">
           <span>Body Slam</span>
-          <span><img class="Left">/<img class="Right">+<img class="A">or<img class="B"></span>
+          <span><img class="Left">/<img class="Right">+<span class="arcadebutton A"></span>or<span class="arcadebutton B"></span></span>
         </div>
         <div class="move">
           <span>Piledriver</span>
-          <span><img class="Left">/<img class="Right">+<img class="C"></span>
+          <span><img class="Left">/<img class="Right">+<span class="arcadebutton C"></span></span>
         </div>
         <div class="move">
           <span>Back Drop</span>
-          <span><img class="Left">/<img class="Right">+<img class="D"></span>
+          <span><img class="Left">/<img class="Right">+<span class="arcadebutton D"></span></span>
         </div>
         <div class="move">
           <span>Neck Hanging Tree</span>
-          <span><img class="DownRight">+<img class="A">or<img class="B"></span>
+          <span><img class="DownRight">+<span class="arcadebutton A"></span>or<span class="arcadebutton B"></span></span>
         </div>
         <div class="move">
           <span>Head Crash</span>
-          <span><img class="DownRight">+<img class="C"></span>
+          <span><img class="DownRight">+<span class="arcadebutton C"></span></span>
         </div>
         <div class="move">
           <span>Bear Hug</span>
-          <span><img class="DownRight">+<img class="D"></span>
+          <span><img class="DownRight">+<span class="arcadebutton D"></span></span>
         </div>
         <h2 class="commands">Commands</h2>
         <div class="move">
           <span>Fumikomi Straight</span>
-          <span><img class="Right">+<img class="C"></span>
+          <span><img class="Right">+<span class="arcadebutton C"></span></span>
         </div>
         <div class="move">
           <span>Body Press</span>
-          <span><img class="Air"><img class="Down">+<img class="C"></span>
+          <span><img class="Air"><img class="Down">+<span class="arcadebutton C"></span></span>
         </div>
         <div class="move">
           <span>Heel Stomp</span>
-          <span><img class="Air"><img class="Down">+<img class="D"></span>
+          <span><img class="Air"><img class="Down">+<span class="arcadebutton D"></span></span>
         </div>
 
         <h2 class="specials">Specials</h2>
         <div class="move">
           <span>Tomahawk Jack</span>
           <span>
-            <img class="A">+<img class="B">+<img class="C"><br>
-            <img class="B">+<img class="C">+<img class="D">
+            <span class="arcadebutton A"></span>+<span class="arcadebutton B"></span>+<span class="arcadebutton C"></span><br>
+            <span class="arcadebutton B"></span>+<span class="arcadebutton C"></span>+<span class="arcadebutton D"></span>
           </span>
         </div>
         <div class="move">
           <span>Grand Buffalo Horn</span>
-          <span><img class="Right"><img class="Right">+<img class="Kick"></span>
+          <span><img class="Right"><img class="Right">+<span class="arcadebutton K"></span></span>
         </div>
         <div class="move">
           <span>Sky Bridge</span>
-          <span><img class="QCF">+<img class="Kick"></span>
+          <span><img class="QCF">+<span class="arcadebutton K"></span></span>
         </div>
         <div class="move">
           <span>Moonlight Slam</span>
-          <span><img class="360">+<img class="Punch"></span>
+          <span><img class="360">+<span class="arcadebutton P"></span></span>
         </div>
 
         <h2 class="supers">Supers</h2>
         <div class="move">
           <span>Atlas Rock Buster</span>
-          <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+          <span><img class="QCF"><img class="QCF">+<span class="arcadebutton P"></span></span>
         </div>
         <div class="move">
           <span>Moonlight Shake</span>
-          <span><img class="360"><img class="360">+<img class="Punch"> or <img class="Kick"></span>
+          <span><img class="360"><img class="360">+<span class="arcadebutton P"></span> or <span class="arcadebutton K"></span></span>
         </div>
        
 
@@ -175,122 +176,122 @@
       <div class="command-list">
         <h2 class="normals">Normals</h2>
         <div class="move">
-          <span>far <img class="A"></span>
+          <span>far <span class="arcadebutton A"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>close <img class="A"></span>
+          <span>close <span class="arcadebutton A"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>down <img class="A"></span>
+          <span>down <span class="arcadebutton A"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>up <img class="A"></span>
+          <span>up <span class="arcadebutton A"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>ub/uf <img class="A"></span>
+          <span>ub/uf <span class="arcadebutton A"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>far <img class="B"></span>
+          <span>far <span class="arcadebutton B"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>close <img class="B"></span>
+          <span>close <span class="arcadebutton B"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>down <img class="B"></span>
+          <span>down <span class="arcadebutton B"></span></span>
           <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>up <img class="B"></span>
+          <span>up <span class="arcadebutton B"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>ub/uf <img class="B"></span>
+          <span>ub/uf <span class="arcadebutton B"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>far <img class="C"></span>
+          <span>far <span class="arcadebutton C"></span></span>
           <span><inline class="mid"></span>
         </div>
         <div class="move">
-          <span>close <img class="C"></span>
+          <span>close <span class="arcadebutton C"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>down <img class="C"></span>
+          <span>down <span class="arcadebutton C"></span></span>
           <span><inline class="mid"></span>
         </div>
         <div class="move">
-          <span>up <img class="C"></span>
+          <span>up <span class="arcadebutton C"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>ub/uf <img class="C"></span>
+          <span>ub/uf <span class="arcadebutton C"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>far <img class="D"></span>
+          <span>far <span class="arcadebutton D"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>close <img class="D"></span>
+          <span>close <span class="arcadebutton D"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>down <img class="D"></span>
+          <span>down <span class="arcadebutton D"></span></span>
           <span><inline class="low"><inline class="knockdown"></span>
         </div>
         <div class="move">
-          <span>up <img class="D"></span>
+          <span>up <span class="arcadebutton D"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>ub/uf <img class="D"></span>
+          <span>ub/uf <span class="arcadebutton D"></span></span>
           <span><inline class="high"></span>
         </div>
         <h2 class="commands">Commands</h2>
         <div class="move">
-          <span><img class="Right">+<img class="C"></span>
+          <span><img class="Right">+<span class="arcadebutton C"></span></span>
           <span><inline class="mid"></span>
         </div>
         <div class="move">
-          <span><img class="Air"><img class="Down">+<img class="C"></span>
+          <span><img class="Air"><img class="Down">+<span class="arcadebutton C"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span><img class="Air"><img class="Down">+<img class="D"></span>
+          <span><img class="Air"><img class="Down">+<span class="arcadebutton D"></span></span>
           <span><inline class="high"></span>
         </div>
         <h2 class="specials">Specials</h2>
         <div class="move">
-          <span><img class="A">+<img class="B">+<img class="C"></span>
+          <span><span class="arcadebutton A"></span>+<span class="arcadebutton B"></span>+<span class="arcadebutton C"></span></span>
           <span><inline class="mid"></span>
         </div>
         <div class="move">
-          <span><img class="Right"><img class="Right">+<img class="Kick"></span>
+          <span><img class="Right"><img class="Right">+<span class="arcadebutton K"></span></span>
           <span><inline class="low"><inline class="knockdown"></span>
         </div>
         <div class="move">
-          <span><img class="QCF">+<img class="Kick"></span>
+          <span><img class="QCF">+<span class="arcadebutton K"></span></span>
           <span><inline class="mid"><inline class="knockdown"></span>
         </div>
         <div class="move">
-          <span><img class="360">+<img class="Punch"></span>
+          <span><img class="360">+<span class="arcadebutton P"></span></span>
           <span><inline class="knockdown"></span>
         </div>
         <h2 class="supers">Supers</h2>
         <div class="move">
-          <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+          <span><img class="QCF"><img class="QCF">+<span class="arcadebutton P"></span></span>
           <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
         </div>
         <div class="move">
-          <span><img class="360"><img class="360">+<img class="Punch"> or <img class="Kick"></span>
+          <span><img class="360"><img class="360">+<span class="arcadebutton P"></span> or <span class="arcadebutton K"></span></span>
           <span><inline class="hard-knockdown"><inline class="inv-startup"></span>
         </div>
 
@@ -304,12 +305,17 @@
 
     <div id="guide">
 
+
+        <h1>Ressources</h1>
+          <ul>
+            <li><a href="https://youtu.be/lRrYtfuUnnU" target="_blank">Fighting Game Move Lists - Condor Move List </a></li>
+            <li><a href="https://wiki.supercombo.gg/w/Breakers_Revenge/Condor" target="_blank">SuperCombo Wiki - Breakers Revenge/Condor</a></li>
+          </ul>
+
       <h1>Overview</h1>
 
       <p>
-        Condor is a slow grappler with powerful attacks and throws that make him a threat once he closes the distance. 
-        However, his limited mobility and lack of defensive options 
-        leave him vulnerable to characters who can zone him out.
+        Condor is a grappler with powerful throws, but his limited mobility and lack of defensive options make him vulnerable to zoning characters.
       </p>
 
 
@@ -332,7 +338,7 @@
 
       <p>
         <u>Jumps</u>: Use Heel Stomp (Air ↓+D) as your main jump-in.
-        it's fast and stays active. Body Press (Air ↓+C) is great for crossups; mix with jB to stay in front.
+        it's fast and stays active. Body Press (Air ↓+C) is also great for crossups; mix with jB to stay in front.
       </p>
 
       <h1>Defense</h1>
@@ -341,16 +347,16 @@
       </video>
       
       <p><u>Tomahawk (A+B+C) </u>:
-        Works as an anti-air and stops most projectiles (except Saizo's kunai). 
-        Cancelable from most normals, and allows a super juggle. 
-        Use with caution in neutral, some characters can easily punish it on whiff or block (Saizo, Dao-Long, Tia, Rila, Sho).
+        Acts as an anti-air and stops most projectiles (except Saizo’s kunai).
+        Can be canceled from certain normals for a super juggle. 
+        Use it carefully in neutral, as some characters (Saizo, Dao-Long, Tia, Rila, Sho) can punish on whiff or is block.
       </p>
 
 
       <p><u>5A and close 5C</u>: 
         Super and special cancelable. 
-        Great for countering close jump-ins. 
-        Cancel anti-air close 5C or 5A into Tomahawk, then follow with a super juggle
+        Great for countering close jump-Ins. 
+        Cancel with Tomahawk, then follow with a super juggle
       </p>
 
 
@@ -359,8 +365,7 @@
           <source src="/characters/condor/videos/matchups/condor_vs_tia_Rapidgale.mp4" type="video/mp4">
         </video>
       <p><u>Atlas Rock Buster (236236P)</u>: 
-        Has invincibility, 
-        making it useful as a wakeup reversal or to counter close projectiles. Can also be confirmed from light attacks.
+        It has invincibility, making it useful as a wakeup reversal or to counter close projectiles. It can also be confirmed from light attacks.
       </p>
 
       <p>
@@ -375,7 +380,7 @@
           <source src="/characters/condor/videos/standing_720.mp4" type="video/mp4">
         </video>
         <p>
-        This super can be used while standing by inputting (412369)x2 + P or K.
+        (412369)x2 + P or K.
         </p>
   
       <h3>Kara cancels</h2>
@@ -385,7 +390,10 @@
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
         </iframe>
       <p>
-        Perform a kara Tomahawk by pressing A+B+C during 2A, 2B, 6C, or 5D, and a kara 360 by inputting 8P during 41236+C or 426+C.
+        <u>Kara Tomahawk</u>: Press A+B+C during 2A, 2B, 6C, or 5D.
+      </p>
+      <p>
+        <u>Kara 360</u>: Using Condor's 6C, input 41236+8C or 426+8C.
       </p>
 
 
@@ -399,9 +407,6 @@
         <li><a target="_blank" href="https://youtu.be/WkmFc0j5t0s?si=vmARDhnK9mnyIyU0"><span class="flag-icon flag-icon-fr"></span> Zoukken (Sho) vs <span class="flag-icon flag-icon-fr"></span> NerdMasqué (Condor)</a></li>
         <li><a target="_blank" href="https://www.youtube.com/watch?v=lfNSjlv1DQU"><span class="flag-icon flag-icon-us"></span> VickiViper (Sho) vs <span class="flag-icon flag-icon-us"></span> Moomaster (Condor)</a></li>
       </ul>
-
-
-      
 
     </div>
 
@@ -470,7 +475,7 @@
           <source src="/characters/condor/videos/airtoair.mp4" type="video/mp4">
         </video>
         <ul class="combos">
-          <li>all air normals into Super</li>
+          <li>Any air normals into Super</li>
         </ul>
 
         <h2 id="super720">Standing 720 Super</h2>
@@ -478,7 +483,7 @@
           <source src="/characters/condor/videos/standing_720.mp4" type="video/mp4">
         </video>
         <ul class="combos">
-          <li>412369 x2 + P</li>
+          <li>(412369)x2 + P</li>
         </ul>
 
     </div>
@@ -500,15 +505,12 @@
 
       <div id="saizo">
 
-        <h2>Rasen Kyaku</h2>
-        <p>
-            Overhead, unsafe on hit with long recovery. Punish with 360 grab.
-        </p>
-
         <h2>Ryuuei Kyaku</h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_saizo_ryueikyaku.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_saizo_ryueikyaku.mp4" type="video/mp4">
+        </video>
         <p>
-          A slide that must be canceled to be safe.
-          At close range in the corner, punish with Super (236236P)
+          A slide that must be canceled for safety (usually with a bomb). At close range, 2A can punish slide > bomb, but it requires precise timing.
         </p>
 
         <h2>Yashagami</h2>
@@ -516,12 +518,7 @@
           <source src="/characters/condor/videos/matchups/condor_vs_saizo_yashagami.mp4" type="video/mp4">
         </video>
         <p>
-          Be careful, your normal punish attempts might fail cause of saizo's super. If you have meter, use 236236P for a guaranteed punish.
-        </p>
-
-        <h2>5C</h2>
-        <p>
-          Close 5C hits low, while the far version has significant recovery, making it punishable even on hit.<br>
+          Be cautious, Saizo’s super may prevent your punishes. If you have meter, use Super (236236P) for a guaranteed punish.
         </p>
 
         <h2>Engetsuzan</h2>
@@ -529,7 +526,7 @@
           <source src="/characters/condor/videos/matchups/condor_vs_saizo_engetsuzan.mp4" type="video/mp4">
         </video>
         <p>
-          punish wih super (236236P)
+          Punish with super (236236P)
         </p>
 
 
@@ -539,37 +536,36 @@
       <div id="pielle">
 
         <h2>Saber Bash</h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_pielle_SaberBash.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_pielle_SaberBash.mp4" type="video/mp4">
+        </video>
         <p>
           Despite its animation, this move isn't an overhead.
-          Punish with 2B or Super (236236P)
+          Punish with 2B.
         </p>
 
         <h2>Flying Peach Bomber</h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_pielle_FlyingPeachBomber.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_pielle_FlyingPeachBomber.mp4" type="video/mp4">
+        </video>
         <p>
-          Overhead, but if done too close, it will whiff and he’ll pass behind you. 
-          When used in a blockstring, there’s always a gap, regardless of the canceled normal.
-        </p>
-
-        <h2>Bonjour Shot</h2>
-        <p>
-            A projectile with a very slow recovery.
-            Unsafe on block or hit, use 2B or 236236P.
-        </p>
-
-        <h2>Robin Liner</h2>
-        <p>
-            Unsafe, has slow recovery and no reversal properties. 
-            On hit, the light version leaves you standing, while the heavy version causes knockdown.
+          Overhead, but if too close, it’ll whiff and he’ll pass behind you. In a blockstring, there’s always a gap, react with a normal.
         </p>
 
         <h2>Monsieur Crash </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_pielle_MonsieurCrash.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_pielle_MonsieurCrash.mp4" type="video/mp4">
+        </video>
         <p>
           A move with up to 3 follow-up hits (rekka), each punishable. However, Pielle can delay each hit to bait your punish attempts.
         </p>
 
         <h2>Thunder Croiser</h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_pielle_ThunderCroiser.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_pielle_ThunderCroiser.mp4" type="video/mp4">
+        </video>
         <p>
-          On block, punish with super (236236P)
+          On block (cloase range) punish with super (236236P)
         </p>
 
 
@@ -578,33 +574,12 @@
 
       <div id="rila">
 
-
-
         <h2>Killer Snake </h2>
         <video data-poster="/characters/condor/videos/matchups/condor_vs_rila_killersnake.jpg" controls loop muted playsinline preload="none">
           <source src="/characters/condor/videos/matchups/condor_vs_rila_killersnake.mp4" type="video/mp4">
         </video>
         <p>
-         Be careful, she can instantly follow with an invulnerable super.<br> 
-         Always use 2A as a punish :<br>
-         - She’ll get hit if does nothing.<br> 
-         - Shine Beast: you'll have time to block.<br> 
-         - Bloody Fang: punish with Tomahawk.
-        </p>
-
-
-        <h2>Dynamite Kick & 2C</h2>
-        <p>
-          Both are safe on block and hard to whiff punish.
-          2C is strong to counter most of your approaches and can function as an anti-air.
-          Dynamite Kick (6D) moves her forward and can lead to corner juggles.
-        </p>
-
-
-        <h2>Spinning Claw</h2>
-        <p>
-          hard to punish due to pushback. It remains active for a while and has priority over normals
-          and some supers
+         Be cautious, she can instantly follow with an invincible super. Use 2A; it hits if she doesn’t move, and you’ll still block if she enters super. Tomahawk punishes Bloody Fang’s startup.
         </p>
 
 
@@ -618,13 +593,19 @@
           Heavy version is unsafe.
         </p>
 
-        <h2>Wild Saver </h2>
+        <h2>Wild Saver</h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_rila_WildSaver.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_rila_WildSaver.mp4" type="video/mp4">
+        </video>
         <p>
-          Her reversal and break special. Punish LK ver. with 5C. HK ver. has more recovery,
-          if you're close enough, you'll have time to punish her with a neutral jump
+          Her reversal and break special.
+          if you're close enough, punish with 5C > Tomahawk > Super
         </p>
 
         <h2>Shine Beast </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_rila_ShineBeast.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_rila_ShineBeast.mp4" type="video/mp4">
+        </video>
         <p>
               On block, she ends up on the other side (at mid and close range).
               With practice, you can time your jump correctly to punish her
@@ -652,9 +633,8 @@
           <source src="/characters/condor/videos/matchups/condor_vs_dao-long_kouryuuga.mp4" type="video/mp4">
         </video>
         <p>
-        dao-long's fireball, punsish at point blank with 2B.
-        On corner punish with super (236236P)
-        break with super: 2A x 2 > 2B x Kouryuu Ga
+        On corner punish with super (236236P)<br>
+        on hit, break with super, breakable combo: 2A, 2A, 2B x Kouryuu Ga
         </p>
 
 
@@ -668,30 +648,36 @@
         </p>
 
 
-        <h2>Riyuu Seishou </h2>
-        <p>
-          A combo ender and pressing tool that he usually follow with Super or projectile,
-          the move allows him to chip and build meter in a safest way.
-        </p>
-
         <h2>Senpuure Kyaku </h2>
+                <video data-poster="/characters/condor/videos/matchups/condor_vs_dao-long_senpurekyakuu.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_dao-long_senpurekyakuu.mp4" type="video/mp4">
+        </video>
         <p>
-          slow anti-air command. If you're close enough, you can punish him on block with crouching Light Kick.
+          slow anti-air command, sometimes used for pressure. If you're close enough, you can punish him on block with crouching Light Kick.
         </p>
 
         <h2>Shoutenchuu </h2>
+                        <video data-poster="/characters/condor/videos/matchups/condor_vs_dao-long_Shoutenchu.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_dao-long_Shoutenchu.mp4" type="video/mp4">
+        </video>
         <p>
-            Safe short jump Overhead, whiff punish with 214K
+            Overhead, Safe on block. Whiff punish with 5C
         </p>
 
         <h2>Houshin Renpa</h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_dao-long_houshinrendpa.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_dao-long_houshinrendpa.mp4" type="video/mp4">
+        </video>
         <p>
-          Fireball super, can be used at mid range to punish your own projectiles
+          Fireball super, punish at distance with Grand Buffalo Horn (66K) 
         </p>
 
         <h2>Shin Kyoku Ranbu </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_dao-long_shinkyokuranbu.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_dao-long_shinkyokuranbu.mp4" type="video/mp4">
+        </video>
         <p>
-          not overhead despide to jump animation. punish on block with dash > 5C
+          not overhead despide to jump animation. punish on block with a jump attack into a Super juggle.
         </p>
 
 
@@ -708,8 +694,11 @@
         </p>
 
         <h2>Gran Buffalo Horn </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_condor_BuffaloHorn.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_condor_BuffaloHorn.mp4" type="video/mp4">
+        </video>
         <p>
-          Helps close distance from afar or during your knockdown. Use 2D to punish or whiff punish.
+          Only safe to block from maximum range. If closer, punish with 2D.
         </p>
 
         <h2>Atlas Rock Buster</h2>
@@ -721,16 +710,12 @@
           If close enough, react to the first blocked hit with a throw.
         </p>
 
-
-
         <h2>2D</h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_condor_2D.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_condor_2D.mp4" type="video/mp4">
+        </video>
         <p>
           Unsafe up close, punish with 2B
-        </p>
-
-        <h2>2C</h2>
-        <p>
-          Safe on block
         </p>
 
 
@@ -742,41 +727,44 @@
           <source src="/characters/condor/videos/matchups/condor_vs_sho_rankiryuugeri.mp4" type="video/mp4">
         </video>
        <p>
-        Unsafe on block, but can be followed by air fireball super to bait punish attempts.
-        If you have meter, use Atlas Rock Buster (236236P) on super flash.
+        Ranki Ryuu Geri (236K) is unsafe on its own, but Sho can super cancel to stay safe and bait punishes. If you have meter, use Atlas Rock Buster (236236P) on super flash.
         </p>
 
         <h2>Onigawara</h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_sho_onigawara.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_sho_onigawara.mp4" type="video/mp4">
+        </video>
         <p>
           Safe on block. On hit, if canceled into 236K, you can break it with super (236236P).
         </p>
 
 
         <h2>Tobihizageri</h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_sho_tobihizageri.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_sho_tobihizageri.mp4" type="video/mp4">
+        </video>
         <p>
           Safe on block, but leaves him throwable up close. From afar, the startup gap can be punished with Tomahawk.
         </p>
 
 
         <h2>Sashikomi Kick</h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_sho_divekick.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_sho_divekick.mp4" type="video/mp4">
+        </video>
         <p>
-          Whiff punish with 5A > Tomahawk.
+          Whiff punish with 5A > Super.
           On hit, break with throw.
           Be careful, a whiffed divekick can lead into his air fireball super. 
           If it does, counter on super flash with Atlas Rock Buster (236236P).
         </p>
 
         <h2>Rekkou Ha</h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_sho_Rekkouha.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_sho_Rekkouha.mp4" type="video/mp4">
+        </video>
         <p>
-        Unsafe at point-blank range.
-        whiff punish up close with Grand Buffalo Horn (66K) or Super (236236P).
-        </p>
-
-
-
-        <h2>Geki Rekkou Ha</h2>
-        <p>
-          Safe on block. On whiff, you can counter it with your own super 236236P
+        Use Grand Buffalo Horn (66K) to punish at mid range, or Super (236236P) at close range.
         </p>
 
       </div>
@@ -785,40 +773,43 @@
 
 
         <h2>Abdomen Step </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_maherl_AbdomenStep.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_maherl_AbdomenStep.mp4" type="video/mp4">
+        </video>
         <p>
-          Safe if used from afar but the startup gap can be punished. Up close, punish with 2B
+          Safe on block, whiff if used from afar with Tomahawk
         </p>
 
-        <h2>Slash Sword </h2>
+        <h2>Slash & Punish Sword </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_maherl_SlashSword.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_maherl_SlashSword.mp4" type="video/mp4">
+        </video>
         <p>
-          Safe at max range. At mid and close range, punish with 2D.
-        </p>
-
-        <h2>Punish Sword </h2>
-        <p>
-          Travels a shorter distance than Slash Words. It is also Safe at maximum range.
-          At close range, punish with 2D.
+          Safe at max distance. At mid and close range, punish with any normal.
         </p>
 
         <h2>Fire Breath </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_maherl_FireBreath.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_maherl_FireBreath.mp4" type="video/mp4">
+        </video>
         <p>
-          Punish LP version on block with jD and on whiff with super (236236P).
-          For HP version, you can interrupt with any normals immediately after blocking the first or second hit.
+          Punish the light version with a jump-in. The heavy version can be interrupted with any normal or Super (236236P).
         </p>
 
         <h2>Balloon Bomb </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_maherl_BalloonBomb.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_maherl_BalloonBomb.mp4" type="video/mp4">
+        </video>
         <p>
-          Overhead, whiff punish with 5C or Tomahawk. on block, punish with Super (236236P)
+          Overhead, whiff punish with 5C or Tomahawk. on block, punish with slide or Super (236236P)
         </p>
 
         <h2>Cadabra Bomber</h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_maherl_ShivaDance.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_maherl_ShivaDance.mp4" type="video/mp4">
+        </video>
         <p>
-          A Super that can go through projectiles up close. Punish with Super (236236P)
-        </p>
-
-        <h2>Shiva Dance </h2>
-        <p>
-          A Super with invincible startup that is safe on block.
+          A safe super with invincible startup. If you're close, you can use Super (236236P) to avoid the second part and punish.
         </p>
 
       </div>
@@ -830,20 +821,16 @@
           <source src="/characters/condor/videos/matchups/condor_vs_tia_Soul_spike.mp4" type="video/mp4">
         </video>
         <p>
-          Ground Soul Spike isn't overhead, block low.
-          Punish light version with 2B > 236236P.
-          For heavy version, check her meter, she can use super right away. 
-          Punish with throw to avoid it.
+          Ground Soul Spike isn’t overhead, block low. Punish light version with 2B > 236236P. For heavy, check her meter; she can use super right away. Punish with a throw to avoid it.
         </p>
 
-        <h2>Mirage Spear Kick </h2>
-        <p>Safe on block</p>
-      
 
         <h2>Rising upper </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_tia_RisingUpper.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_tia_RisingUpper.mp4" type="video/mp4">
+        </video>
         <p>
-          Reversal with fast recovery, hard to punish on whiff.
-          At close range on block, punish with 5C.
+          Has a short recovery and is hard to punish on whiff. At close range use 5C.
         </p>
 
         <h2>Rapid Gale </h2>
@@ -851,8 +838,7 @@
           <source src="/characters/condor/videos/matchups/condor_vs_tia_Rapidgale.mp4" type="video/mp4">
         </video>
         <p>
-        She mostly uses it for okizeme.
-        whiff Punish with Super (236236P) at mid range.
+        She mainly uses it for okizeme. At mid range, whiff Punish with Super (236236P).
         </p>
 
 
@@ -865,12 +851,13 @@
         </p>
 
 
-
-
         <h2>Rapid Charge </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_tia_Rapidcharge.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_tia_Rapidcharge.mp4" type="video/mp4">
+        </video>
         <p>
-            Her strong super that punishes projectiles and most whiffed specials.
-            When she switches sides mid-air on block, quickly turn your character to punish.
+            She can use it to whiff punish your slower moves.
+            On block, she switches sides mid-air, turn quickly to punish.
         </p>
 
         <h2>Burning Revolver </h2>
@@ -878,7 +865,7 @@
           <source src="/characters/condor/videos/matchups/condor_vs_tia_Burningrevolver.mp4" type="video/mp4">
         </video>
         <p>
-            slide to punish on block.
+            Punish with Grand Buffalo Horn (66K)
         </p>
 
 
@@ -897,38 +884,44 @@
 
 
         <h2>Horus Shade </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_alsion_horus_shade.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_alsion_horus_shade.mp4" type="video/mp4">
+        </video>
         <p>
           Overhead, safe but has a slow startup, making it easily reactable.
-          Whiff punish with Tomahawk or Super (236236P)
+          Whiff punish with 5A.
         </p>
 
         <h2>Death Shred </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_alsion_DeathShred.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_alsion_DeathShred.mp4" type="video/mp4">
+        </video>
         <p>
-              Hits twice on standing — second hit is an overhead.
-              whiff punish or interrupt the second hit with 2B.
+          Hits twice; second hit is a safe overhead but with slow startup. Can be whiff punished with any throw or normal.
         </p>
 
 
         <h2>Deadly Claw </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_alsion_DeadlyClaw.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_alsion_DeadlyClaw.mp4" type="video/mp4">
+        </video>
         <p>
-          When executed close to you, the light version lands in the same spot, while the heavy version lands behind you.
-          Punish at close range with Super (236236P)
+          Light version lands in the same spot, heavy version lands behind. whiff punish with 5C, on block use Super (236236P)
         </p>
 
         <h2>Dash Knee </h2>
+        <video data-poster="/characters/condor/videos/matchups/condor_vs_alsion_DashKnee.jpg" controls loop muted playsinline preload="none">
+          <source src="/characters/condor/videos/matchups/condor_vs_alsion_DashKnee.mp4" type="video/mp4">
+        </video>
         <p>
           Special dash attack, only safe at max range.
-          Punishable on block or hit with 2B.
+          Punishable with 2B.
         </p>
 
       </div>
 
 
-
-
     </div>
-
-
 
       </div>
     </div>

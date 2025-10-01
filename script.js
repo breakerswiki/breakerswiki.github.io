@@ -35,11 +35,15 @@ function highlightCurrentNav() {
     // Exact match (Gameplay, About, etc.)
     if (currentPath === href) {
       link.style.fontWeight = "bold";
+      link.style.textDecoration = "underline";
+      link.style.textUnderlineOffset = "10px";
     }
 
     // Parent Characters link stays bold for any /characters/... subpage
     if (href.startsWith("/characters") && currentPath.startsWith("/characters")) {
       link.style.fontWeight = "bold";
+      link.style.textDecoration = "underline";
+      link.style.textUnderlineOffset = "10px";
     }
   });
 }
@@ -51,16 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
-
-// Set <img> sources for stick/button inputs using html classes
+// Set <img> sources for stick inputs using html classes
 const inputImages = {
-  "A": "/img/inputs/Arcade-Button-APunch.png",
-  "B": "/img/inputs/Arcade-Button-BKick.png",
-  "C": "/img/inputs/Arcade-Button-CPunch.png",
-  "D": "/img/inputs/Arcade-Button-DKick.png",
-  "Kick": "/img/inputs/Arcade-Button-Kick.png",
-  "Punch": "/img/inputs/Arcade-Button-Punch.png",
   "360": "/img/inputs/Arcade-Stick-360.png",
   "ChargeBack": "/img/inputs/Arcade-Stick-CB.png",
   "ChargeBack_Forward": "/img/inputs/Arcade-Stick-CBF.png",
@@ -93,9 +89,6 @@ function setImageSrc() {
   }
 }
 document.addEventListener("DOMContentLoaded", setImageSrc);
-
-
-
 
 
 // Toggle content menu visibility on character pages.
@@ -132,19 +125,25 @@ function toggleContent(contentId, clickedLink) {
   document.querySelectorAll("#saizo, #pielle, #rila, #dao-long, #condor, #sho, #maherl, #tia, #alsion").forEach(content => {
     content.style.display = "none";
   });
+
   // Show the specified content if it exists
   const contentElement = document.getElementById(contentId);
   if (contentElement) {
     contentElement.style.display = "block";
   }
-  // Update the clicked link's image to show it is selected
-  document.querySelectorAll('#charselect img').forEach(img => {
-    img.classList.remove('clicked');
+
+  // Remove .clicked from all links
+  document.querySelectorAll('#charselect a').forEach(a => {
+    a.classList.remove('clicked');
   });
-  if (clickedLink && clickedLink.querySelector('img')) {
-    clickedLink.querySelector('img').classList.add('clicked');
+
+  // Add .clicked to the selected link
+  if (clickedLink) {
+    clickedLink.classList.add('clicked');
   }
 }
+
+
 // Simulate click on #sho matchup when the page loads, if it exists
 document.addEventListener("DOMContentLoaded", () => {
   const shoLink = document.querySelector("a[onclick*='sho']");
@@ -207,3 +206,6 @@ document.addEventListener("DOMContentLoaded", () => {
   lazyImages.forEach(img => observer.observe(img));
   lazyVideos.forEach(video => observer.observe(video));
 });
+
+
+

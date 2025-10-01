@@ -23,27 +23,26 @@
 
   <section class="main-content">
     <div class="container">
-      <div class="main-char-content">
-        <div class="characters-guide-main">
+     <div class="main-char-content">
+
           <div class="infos">
-            <a href="/characters/sho"><img src="img/assets/sho_bg.webp"></a>
-            <a href="/characters/pielle"><img src="img/assets/pielle_bg.webp"></a>
-            <a href="/characters/condor"><img src="img/assets/condor_bg.webp"></a>
-            <a href="/characters/rila"><img src="img/assets/rila_bg.webp"></a>
-            <a href="/characters/tia"><img src="img/assets/tia_bg.webp"></a>
-            <a href="/characters/alsion"><img src="img/assets/alsion_bg.webp"></a>
-            <a href="/characters/maherl" class="active-link"><img class="active" src="img/assets/maherl_bg.webp"></a>
-            <a href="/characters/dao-long"><img src="img/assets/dao-long_bg.webp"></a>
-            <a href="/characters/saizo"><img src="img/assets/saizo_bg.webp"></a>
-            <a href="/characters/bai-hu"><img src="img/assets/bai-hu_bg.webp"></a>
+            <a href="/characters/sho"><img src="/img/assets/sho.png"></a>
+            <a href="/characters/pielle"><img src="/img/assets/pielle.png"></a>
+            <a href="/characters/condor"><img src="/img/assets/condor.png"></a>
+            <a href="/characters/rila"><img img src="/img/assets/rila.png"></a>
+            <a href="/characters/tia"><img src="/img/assets/tia.png"></a>
+            <a href="/characters/alsion"><img src="/img/assets/alsion.png"></a>
+            <a href="/characters/maherl"class="active-link"><img class="active" src="/img/assets/maherl.png"></a>
+            <a href="/characters/dao-long"><img src="/img/assets/daolong.png"></a>
+            <a href="/characters/saizo"><img src="/img/assets/saizo.png"></a>
+            <a href="/characters/bai-hu"><img src="img/assets/bai-hu.png"></a>
           </div>
-        </div>
 
         <h1 id="title"><span class="flag-icon flag-icon-sa"></span> Sheik Maherl</h1>
 
 
         <div class="nav-guide">
-          <button class="color-button" id="button1" onclick="showContent('infos')">About</button>
+          <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
           <button class="color-button" id="button2" onclick="showContent('movelist')">Moves</button>
           <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
           <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
@@ -58,22 +57,24 @@
           </p>
 
           <h2>Colors</h2>
-          <table class="colors" style="text-align: center;">
-            <tbody>
-              <tr>
-                <td><img class="A"></td>
-                <td><img class="B"></td>
-                <td><img class="C"></td>
-                <td><img class="D"></td>
-              </tr>
-              <tr>
-                <td><img src="/characters/maherl/img/Maherl_A.png"></td>
-                <td><img src="/characters/maherl/img/Maherl_B.png"></td>
-                <td><img src="/characters/maherl/img/Maherl_C.png"></td>
-                <td><img src="/characters/maherl/img/Maherl_D.png"></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="character-colors">
+            <div class="column">
+              <span class="arcadebutton A"></span>
+              <img data-src="/characters/maherl/img/maherl_A.png" class="lazy-image" alt="maherl A">
+            </div>
+            <div class="column">
+              <span class="arcadebutton B"></span>
+              <img data-src="/characters/maherl/img/maherl_B.png" class="lazy-image" alt="maherl B">
+            </div>
+            <div class="column">
+              <span class="arcadebutton C"></span>
+              <img data-src="/characters/maherl/img/maherl_C.png" class="lazy-image" alt="maherl C">
+            </div>
+            <div class="column">
+              <span class="arcadebutton D"></span>
+              <img data-src="/characters/maherl/img/maherl_D.png" class="lazy-image" alt="maherl D">
+            </div>
+          </div>
 
           <h2>Gallery</h2>
           <a href="/characters/maherl/img/maherl_artwork_1.webp" target="_blank">
@@ -96,59 +97,55 @@
             <h2 class="throws">Throws</h2>
             <div class="move">
               <span>Rush Palm</span>
-              <span><img class="Left">/<img class="Right">+<img class="D"></span>
+              <span><img class="Left">/<img class="Right">+<span class="arcadebutton D"></span></span>
             </div>
             <h2 class="commands">Commands</h2>
             <div class="move">
               <span>Abdomen Step</span>
-              <span><img class="A">+<img class="C"></span>
+              <span><span class="arcadebutton A"></span>+<span class="arcadebutton C"></span></span>
             </div>
             <div class="move">
               <span>Abdomen Press</span>
-              <span><img class="Air"><img class="Down">+<img class="C"></span>
+              <span><img class="Air"><img class="Down">+<span class="arcadebutton C"></span></span>
             </div>
             <div class="move">
               <span>Hip Attack</span>
-              <span><img class="Air"><img class="Down">+<img class="B"></span>
+              <span><img class="Air"><img class="Down">+<span class="arcadebutton B"></span></span>
             </div>
     
             <h2 class="specials">Specials</h2>
             <div class="move">
               <span>Slash Sword</span>
-              <span><img class="QCB">+<img class="Punch"></span>
+              <span><img class="QCB">+<span class="arcadebutton P"></span></span>
             </div>
             <div class="move">
               <span>Punish Sword</span>
-              <span><img class="QCB">+<img class="Kick"></span>
-            </div>
-            <div class="move">
-              <span>Sky Bridge</span>
-              <span><img class="QCF">+<img class="Kick"></span>
+              <span><img class="QCB">+<span class="arcadebutton K"></span></span>
             </div>
             <div class="move">
               <span>Fire Breath</span>
-              <span><img class="HCF">+<img class="Punch"></span>
+              <span><img class="HCF">+<span class="arcadebutton P"></span></span>
             </div>
             <div class="move">
               <span>Balloon Bomb</span>
               <span>
-                <img class="A">+<img class="B">+<img class="C"><br>
-                <img class="B">+<img class="C">+<img class="D">
+                <span class="arcadebutton A"></span>+<span class="arcadebutton B"></span>+<span class="arcadebutton C"></span><br>
+                <span class="arcadebutton B"></span>+<span class="arcadebutton C"></span>+<span class="arcadebutton D"></span>
               </span>
             </div>
     
             <h2 class="supers">Supers</h2>
             <div class="move">
               <span>Cadabra Bomber</span>
-              <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+              <span><img class="QCF"><img class="QCF">+<span class="arcadebutton P"></span></span>
             </div>
             <div class="move">
               <span>Shiva Dance</span>
-              <span><img class="QCB"><img class="QCB">+<img class="Punch"></span>
+              <span><img class="QCB"><img class="QCB">+<span class="arcadebutton P"></span></span>
             </div>
             <div class="move">
               <span>Rolling Press</span>
-              <span><img class="360">+<img class="Punch"> or <img class="Kick"></span>
+              <span><img class="360">+<span class="arcadebutton P"></span> or <span class="arcadebutton K"></span></span>
             </div>
 
            
@@ -162,124 +159,133 @@
           <div class="command-list">
             <h2 class="normals">Normals</h2>
             <div class="move">
-              <span>far <img class="A"></span>
+              <span>far <span class="arcadebutton A"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>close <img class="A"></span>
+              <span>close <span class="arcadebutton A"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>down <img class="A"></span>
+              <span>down <span class="arcadebutton A"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>up <img class="A"></span>
+              <span>up <span class="arcadebutton A"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span>ub/uf <img class="A"></span>
+              <span>ub/uf <span class="arcadebutton A"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span>far <img class="B"></span>
+              <span>far <span class="arcadebutton B"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>close <img class="B"></span>
+              <span>close <span class="arcadebutton B"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>down <img class="B"></span>
+              <span>down <span class="arcadebutton B"></span></span>
               <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>up <img class="B"></span>
+              <span>up <span class="arcadebutton B"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span>ub/uf <img class="B"></span>
+              <span>ub/uf <span class="arcadebutton B"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span>far <img class="C"></span>
+              <span>far <span class="arcadebutton C"></span></span>
               <span><inline class="mid"></span>
             </div>
             <div class="move">
-              <span>close <img class="C"></span>
+              <span>close <span class="arcadebutton C"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>down <img class="C"></span>
+              <span>down <span class="arcadebutton C"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>up <img class="C"></span>
+              <span>up <span class="arcadebutton C"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span>ub/uf <img class="C"></span>
+              <span>ub/uf <span class="arcadebutton C"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span>far <img class="D"></span>
+              <span>far <span class="arcadebutton D"></span></span>
               <span><inline class="mid"></span>
             </div>
             <div class="move">
-              <span>close <img class="D"></span>
+              <span>close <span class="arcadebutton D"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>down <img class="D"></span>
+              <span>down <span class="arcadebutton D"></span></span>
               <span><inline class="low"><inline class="knockdown"></span>
             </div>
             <div class="move">
-              <span>up <img class="D"></span>
+              <span>up <span class="arcadebutton D"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span>ub/uf <img class="D"></span>
+              <span>ub/uf <span class="arcadebutton D"></span></span>
               <span><inline class="high"></span>
             </div>
             <h2 class="commands">Commands</h2>
             <div class="move">
-              <span><img class="A">+<img class="C"></span>
+              <span><span class="arcadebutton A"></span>+<span class="arcadebutton C"></span></span>
               <span><inline class="mid"></span>
             </div>
             <div class="move">
-              <span><img class="Air"><img class="Down">+<img class="C"></span>
+              <span><img class="Air"><img class="Down">+<span class="arcadebutton C"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span><img class="Air"><img class="Down">+<img class="B"></span>
+              <span><img class="Air"><img class="Down">+<span class="arcadebutton B"></span></span>
               <span><inline class="high"></span>
             </div>
             <h2 class="specials">Specials</h2>
             <div class="move">
-              <span><img class="QCB">+<img class="Punch"></span>
+              <span><img class="QCB">+<span class="arcadebutton P"></span></span>
               <span><inline class="mid"><inline class="knockdown"></span>
             </div>
             <div class="move">
-              <span><img class="QCB">+<img class="Kick"></span>
+              <span><img class="QCB">+<span class="arcadebutton K"></span></span>
               <span><inline class="mid"><inline class="knockdown"></span>
             </div>
             <div class="move">
-              <span><img class="HCF">+<img class="Punch">(<img class="C"> only)</span>
+              <span><img class="HCF">+<span class="arcadebutton P"></span></span>
               <span><inline class="mid"><inline class="knockdown"></span>
+            </div>
+            <div class="move">
+              <span>
+                <span class="arcadebutton A"></span>+<span class="arcadebutton B"></span>+<span class="arcadebutton C"></span><br>
+                <span class="arcadebutton B"></span>+<span class="arcadebutton C"></span>+<span class="arcadebutton D"></span>
+              </span>
+              <span><inline class="high"><inline class="knockdown"></span>
             </div>
             <h2 class="supers">Supers</h2>
             <div class="move">
-              <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+              <span><img class="QCF"><img class="QCF">+<span class="arcadebutton P"></span></span>
               <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
             </div>
             <div class="move">
-              <span><img class="QCB"><img class="QCB">+<img class="Punch"></span>
+              <span><img class="QCB"><img class="QCB">+<span class="arcadebutton P"></span></span>
               <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
             </div>
             <div class="move">
-              <span><img class="360"><img class="Punch">or<img class="Kick"></span>
+              <span><img class="360"><span class="arcadebutton P"></span>or<span class="arcadebutton K"></span></span>
               <span><inline class="hard-knockdown"><inline class="inv-startup"></span>
             </div>
+
+
     
             
           </div>
@@ -293,9 +299,7 @@
           <h1>Overview</h1>
 
           <p>
-            Maherl is a poke-focused character with long-range specials. 
-            Lacking cancels from low attacks, he relies on gimmicks making him challenging to play. His long-range specials can catch opponents off guard when timed correctly.
-            You can surprise your opponent by mastering his glitch, making him fly off-screen and land quickly.
+            Maherl is a poke-heavy character with long-range specials. He can’t cancel from low attacks, so he relies on gimmicks, making him tricky to use. His long-range moves can surprise opponents with good timing. Mastering his glitch lets him fly off-screen and land fast, catching foes off guard.
           </p>
 
 
@@ -374,7 +378,7 @@
           </video>
 
           <p>
-            To perform the glitch, press A+C then kara cancel on the 3rd frame with either 214P or 214K : 
+            To perform the glitch, kara cancel A+C on the 3rd frame with either 214P or 214K : 
           </p>  
           <ul class="combos">
             <li>❌ Frame 2 or sooner = sword</li>

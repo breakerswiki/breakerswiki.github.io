@@ -23,27 +23,25 @@
 
   <section class="main-content">
     <div class="container">
-      <div class="main-char-content">
+     <div class="main-char-content">
 
-        <div class="characters-guide-main">
           <div class="infos">
-            <a href="/characters/sho"><img src="img/assets/sho_bg.webp"></a>
-            <a href="/characters/pielle"><img src="img/assets/pielle_bg.webp"></a>
-            <a href="/characters/condor"><img src="img/assets/condor_bg.webp"></a>
-            <a href="/characters/rila"><img src="img/assets/rila_bg.webp"></a>
-            <a href="/characters/tia"><img src="img/assets/tia_bg.webp"></a>
-            <a href="/characters/alsion" class="active-link"><img class="active" src="img/assets/alsion_bg.webp"></a>
-            <a href="/characters/maherl"><img src="img/assets/maherl_bg.webp"></a>
-            <a href="/characters/dao-long"><img src="img/assets/dao-long_bg.webp"></a>
-            <a href="/characters/saizo"><img src="img/assets/saizo_bg.webp"></a>
-            <a href="/characters/bai-hu"><img src="img/assets/bai-hu_bg.webp"></a>
+            <a href="/characters/sho"><img src="/img/assets/sho.png"></a>
+            <a href="/characters/pielle"><img src="/img/assets/pielle.png"></a>
+            <a href="/characters/condor"><img src="/img/assets/condor.png"></a>
+            <a href="/characters/rila"><img img src="/img/assets/rila.png"></a>
+            <a href="/characters/tia"><img src="/img/assets/tia.png"></a>
+            <a href="/characters/alsion" class="active-link"><img class="active" src="/img/assets/alsion.png"></a>
+            <a href="/characters/maherl"><img src="/img/assets/maherl.png"></a>
+            <a href="/characters/dao-long"><img src="/img/assets/daolong.png"></a>
+            <a href="/characters/saizo"><img src="/img/assets/saizo.png"></a>
+            <a href="/characters/bai-hu"><img src="img/assets/bai-hu.png"></a>
           </div>
-        </div>
 
         <h1 id="title"><span class="flag-icon flag-icon-eg"></span> Alsion III</h1>
 
         <div class="nav-guide">
-          <button class="color-button" id="button1" onclick="showContent('infos')">About</button>
+          <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
           <button class="color-button" id="button2" onclick="showContent('movelist')">Moves</button>
           <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
           <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
@@ -51,7 +49,6 @@
 
 
         <div id="infos">
-          <!-- <h2>History</h2> -->
           <p>
             Alsion III is an undead ancient Egyptian. 
             His alter-ego, Atoum, is a mummy-dressed fan of ancient civilizations and a descendant of Alsion III 
@@ -59,22 +56,24 @@
           </p>
 
           <h2>Colors</h2>
-          <table class="colors" style="text-align: center;">
-            <tbody>
-              <tr>
-                <td><img class="A"></td>
-                <td><img class="B"></td>
-                <td><img class="C"></td>
-                <td><img class="D"></td>
-              </tr>
-              <tr>
-                <td><img src="/characters/alsion/img/Alsion_A.png"></td>
-                <td><img src="/characters/alsion/img/Alsion_B.png"></td>
-                <td><img src="/characters/alsion/img/Alsion_C.png"></td>
-                <td><img src="/characters/alsion/img/Alsion_D.png"></td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="character-colors">
+            <div class="column">
+              <span class="arcadebutton A"></span>
+              <img data-src="/characters/alsion/img/alsion_A.png" class="lazy-image" alt="alsion A">
+            </div>
+            <div class="column">
+              <span class="arcadebutton B"></span>
+              <img data-src="/characters/alsion/img/alsion_B.png" class="lazy-image" alt="alsion B">
+            </div>
+            <div class="column">
+              <span class="arcadebutton C"></span>
+              <img data-src="/characters/alsion/img/alsion_C.png" class="lazy-image" alt="alsion C">
+            </div>
+            <div class="column">
+              <span class="arcadebutton D"></span>
+              <img data-src="/characters/alsion/img/alsion_D.png" class="lazy-image" alt="alsion D">
+            </div>
+          </div>
 
           <h2>Gallery</h2>
           <a href="/characters/alsion/img/alsion_artwork_1.webp" target="_blank">
@@ -97,65 +96,65 @@
           <h2 class="commands">Commands</h2>
           <div class="move">
             <span>Horus Shade</span>
-            <span><img class="A">+<img class="C"></span>
+            <span><span class="arcadebutton A"></span>+<span class="arcadebutton C"></span></span>
           </div>
           <div class="move">
             <span>Death Shred</span>
-            <span><img class="B">+<img class="D"></span>
+            <span><span class="arcadebutton B"></span>+<span class="arcadebutton D"></span></span>
           </div>
           <div class="move">
             <span>Down Palm</span>
-            <span><img class="Air"><img class="Down">+<img class="A"></span>
+            <span><img class="Air"><img class="Down">+<span class="arcadebutton A"></span></span>
           </div>
           <div class="move">
             <span>Quick Kick</span>
-            <span><img class="Air"><img class="Down">+<img class="B"></span>
+            <span><img class="Air"><img class="Down">+<span class="arcadebutton B"></span></span>
           </div>
           <div class="move">
             <span>Stretch Strike</span>
-            <span><img class="Air"><img class="Down">+<img class="C"></span>
+            <span><img class="Air"><img class="Down">+<span class="arcadebutton C"></span></span>
           </div>
           <div class="move">
             <span>Knee</span>
-            <span><img class="Air"><img class="Down">+<img class="D"></span>
+            <span><img class="Air"><img class="Down">+<span class="arcadebutton D"></span></span>
           </div>
           <div class="move">
             <span>Claw</span>
-            <span><img class="Left">+<img class="A"></span>
+            <span><img class="Left">+<span class="arcadebutton A"></span></span>
           </div>
           <div class="move">
             <span>Shin Kick</span>
-            <span><img class="Left">+<img class="B"></span>
+            <span><img class="Left">+<span class="arcadebutton B"></span></span>
           </div>
           <div class="move">
             <span>Low Palm Strike</span>
-            <span><img class="Left">+<img class="C"></span>
+            <span><img class="Left">+<span class="arcadebutton C"></span></span>
           </div>
           <div class="move">
             <span>Retreating Double Kick</span>
-            <span><img class="Left">+<img class="D"></span>
+            <span><img class="Left">+<span class="arcadebutton D"></span></span>
           </div>
           <h2 class="specials">Specials</h2>
           <div class="move">
             <span>Poison Fog</span>
-            <span><img class="HCF">+<img class="Punch"></span>
+            <span><img class="HCF">+<span class="arcadebutton P"></span></span>
           </div>
           <div class="move">
             <span>Deadly Claw</span>
-            <span>(<img class="Air">)<img class="QCB">+<img class="Kick"></span>
+            <span>(<img class="Air">)<img class="QCB">+<span class="arcadebutton K"></span></span>
           </div>
           <div class="move">
             <span>Dash Knee</span>
-            <span>(<img class="Air">)<img class="QCF">+<img class="Kick"></span>
+            <span>(<img class="Air">)<img class="QCF">+<span class="arcadebutton K"></span></span>
           </div>
           <h2 class="supers">Supers</h2>
           <div class="move">
             <span>Anubis Hug</span>
-            <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+            <span><img class="QCF"><img class="QCF">+<span class="arcadebutton P"></span></span>
           </div>
           <div class="move">
             <span>Pharaoh Dance</span>
-            <span><img class="QCB"><img class="QCB">+<img class="Punch"></span>
+            <span><img class="QCB"><img class="QCB">+<span class="arcadebutton P"></span></span>
           </div>
         </div>
 
@@ -167,130 +166,130 @@
           <div class="command-list">
             <h2 class="normals">Normals</h2>
             <div class="move">
-              <span>far/close <img class="A"></span>
+              <span>far/close <span class="arcadebutton A"></span></span>
               <span><inline class="mid"><inline class="special-cancel"></span>
             </div>
             <div class="move">
-              <span>down <img class="A"></span>
+              <span>down <span class="arcadebutton A"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span>up <img class="A"></span>
+              <span>up <span class="arcadebutton A"></span></span>
               <span><inline class="high"><inline class="special-cancel"></span>
             </div>
             <div class="move">
-              <span>ub/uf <img class="A"></span>
+              <span>ub/uf <span class="arcadebutton A"></span></span>
               <span><inline class="high"><inline class="special-cancel"></span>
             </div>
             <div class="move">
-              <span>far/close <img class="B"></span>
+              <span>far/close <span class="arcadebutton B"></span></span>
               <span><inline class="mid"></span>
             </div>
             <div class="move">
-              <span>down <img class="B"></span>
+              <span>down <span class="arcadebutton B"></span></span>
               <span><inline class="mid"></span>
             </div>
             <div class="move">
-              <span>up <img class="B"></span>
+              <span>up <span class="arcadebutton B"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span>ub/uf <img class="B"></span>
+              <span>ub/uf <span class="arcadebutton B"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span>far <img class="C"></span>
+              <span>far <span class="arcadebutton C"></span></span>
               <span><inline class="mid"></span>
             </div>
             <div class="move">
-              <span>far/close <img class="C"></span>
+              <span>far/close <span class="arcadebutton C"></span></span>
               <span><inline class="mid"></span>
             </div>
             <div class="move">
-              <span>up <img class="C"></span>
+              <span>up <span class="arcadebutton C"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span>ub/uf <img class="C"></span>
+              <span>ub/uf <span class="arcadebutton C"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span>far/close <img class="D"></span>
+              <span>far/close <span class="arcadebutton D"></span></span>
               <span><inline class="mid"></span>
             </div>
             <div class="move">
-              <span>down <img class="D"></span>
+              <span>down <span class="arcadebutton D"></span></span>
               <span><inline class="mid"></span>
             </div>
             <div class="move">
-              <span>up <img class="D"></span>
+              <span>up <span class="arcadebutton D"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span>ub/uf <img class="D"></span>
+              <span>ub/uf <span class="arcadebutton D"></span></span>
               <span><inline class="high"></span>
             </div>
             <h2 class="commands">Commands</h2>
             <div class="move">
-              <span><img class="A">+<img class="C"></span>
-              <span><inline class="high"><inline class="overhead"></span>
-            </div>
-            <div class="move">
-              <span><img class="B">+<img class="D"></span>
-              <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"><br><inline class="overhead"><br>1st hit cancelable, 2nd overhead</span>
-            </div>
-            <div class="move">
-              <span><img class="Air"><img class="Down">+<img class="A"></span>
-              <span><inline class="high"><inline class="special-cancel"></span>
-            </div>
-            <div class="move">
-              <span><img class="Air"><img class="Down">+<img class="B"></span>
-              <span><inline class="high"><inline class="special-cancel"><inline class="launcher"></span>
-            </div>
-            <div class="move">
-              <span><img class="Air"><img class="Down">+<img class="C"></span>
+              <span><span class="arcadebutton A"></span>+<span class="arcadebutton C"></span></span>
               <span><inline class="high"></span>
             </div>
             <div class="move">
-              <span><img class="Air"><img class="Down">+<img class="D"></span>
+              <span><span class="arcadebutton B"></span>+<span class="arcadebutton D"></span></span>
+              <span><inline class="high"><inline class="special-cancel"><inline class="super-cancel"></span>
+            </div>
+            <div class="move">
+              <span><img class="Air"><img class="Down">+<span class="arcadebutton A"></span></span>
               <span><inline class="high"><inline class="special-cancel"></span>
             </div>
             <div class="move">
-              <span><img class="Left">+<img class="A"></span>
+              <span><img class="Air"><img class="Down">+<span class="arcadebutton B"></span></span>
+              <span><inline class="high"><inline class="special-cancel"><inline class="launcher"></span>
+            </div>
+            <div class="move">
+              <span><img class="Air"><img class="Down">+<span class="arcadebutton C"></span></span>
+              <span><inline class="high"></span>
+            </div>
+            <div class="move">
+              <span><img class="Air"><img class="Down">+<span class="arcadebutton D"></span></span>
+              <span><inline class="high"><inline class="special-cancel"></span>
+            </div>
+            <div class="move">
+              <span><img class="Left">+<span class="arcadebutton A"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span><img class="Left">+<img class="B"></span>
+              <span><img class="Left">+<span class="arcadebutton B"></span></span>
               <span><inline class="low"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span><img class="Left">+<img class="C"></span>
+              <span><img class="Left">+<span class="arcadebutton C"></span></span>
               <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
             </div>
             <div class="move">
-              <span><img class="Left">+<img class="D"></span>
+              <span><img class="Left">+<span class="arcadebutton D"></span></span>
               <span><inline class="mid"><inline class="knockdown"></span>
             </div>
             <h2 class="specials">Specials</h2>
             <div class="move">
-              <span><img class="HCF">+<img class="Punch"></span>
+              <span><img class="HCF">+<span class="arcadebutton P"></span></span>
               <span><inline class="mid"><inline class="knockdown"></span>
             </div>
             <div class="move">
-              <span>(<img class="Air">)<img class="QCB">+<img class="Kick"></span>
+              <span>(<img class="Air">)<img class="QCB">+<span class="arcadebutton K"></span></span>
               <span><inline class="high"><inline class="knockdown"></span>
             </div>
             <div class="move">
-              <span>(<img class="Air">)<img class="QCF">+<img class="Kick"></span>
-              <span><inline class="mid"><inline class="knockdown">(<img class="D"> only)</span>
+              <span>(<img class="Air">)<img class="QCF">+<span class="arcadebutton K"></span></span>
+              <span><inline class="mid"><inline class="knockdown">(<span class="arcadebutton D"></span> only)</span>
             </div>
             <h2 class="supers">Supers</h2>
             <div class="move">
-              <span><img class="QCF"><img class="QCF">+<img class="Punch"></span>
+              <span><img class="QCF"><img class="QCF">+<span class="arcadebutton P"></span></span>
               <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
             </div>
             <div class="move">
-              <span><img class="QCB"><img class="QCB">+<img class="Punch"></span>
+              <span><img class="QCB"><img class="QCB">+<span class="arcadebutton P"></span></span>
               <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
             </div>
 
@@ -306,6 +305,11 @@
 
         <div id="guide">    
     
+          <h1>Ressources</h1>
+          <ul>
+          <li><a target="_blank" href="https://youtu.be/KrDX0Hmqh9E">Sas Izm - Alsion III Corner Pressure Concepts</a></li>
+          </ul>
+
           
           <h1>Overview</h1>
 
@@ -390,8 +394,6 @@
             fast hits, and juggle potential. Deadly Claw (214K) can also break, but use it sparingly as it’s highly punishable.
           </p>
 
-          <h1>Ressources</h1>
-          <iframe width="100%" height="300px" src="https://www.youtube.com/embed/KrDX0Hmqh9E?si=AfXhQdmfjztvHo1o" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
           <h1>Replays</h1>
           <p>

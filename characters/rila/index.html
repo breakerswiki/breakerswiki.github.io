@@ -20,27 +20,26 @@
   
   <section class="main-content">
     <div class="container">
-      <div class="main-char-content">
-        <div class="characters-guide-main">
+     <div class="main-char-content">
+
           <div class="infos">
-            <a href="/characters/sho"><img src="img/assets/sho_bg.webp"></a>
-            <a href="/characters/pielle"><img src="img/assets/pielle_bg.webp"></a>
-            <a href="/characters/condor"><img src="img/assets/condor_bg.webp"></a>
-            <a href="/characters/rila" class="active-link"><img class="active" src="img/assets/rila_bg.webp"></a>
-            <a href="/characters/tia"><img src="img/assets/tia_bg.webp"></a>
-            <a href="/characters/alsion"><img src="img/assets/alsion_bg.webp"></a>
-            <a href="/characters/maherl"><img src="img/assets/maherl_bg.webp"></a>
-            <a href="/characters/dao-long"><img src="img/assets/dao-long_bg.webp"></a>
-            <a href="/characters/saizo"><img src="img/assets/saizo_bg.webp"></a>
-            <a href="/characters/bai-hu"><img src="img/assets/bai-hu_bg.webp"></a>
+            <a href="/characters/sho"><img src="/img/assets/sho.png"></a>
+            <a href="/characters/pielle"><img src="/img/assets/pielle.png"></a>
+            <a href="/characters/condor"><img src="/img/assets/condor.png"></a>
+            <a href="/characters/rila" class="active-link"><img class="active" img src="/img/assets/rila.png"></a>
+            <a href="/characters/tia"><img src="/img/assets/tia.png"></a>
+            <a href="/characters/alsion"><img src="/img/assets/alsion.png"></a>
+            <a href="/characters/maherl"><img src="/img/assets/maherl.png"></a>
+            <a href="/characters/dao-long"><img src="/img/assets/daolong.png"></a>
+            <a href="/characters/saizo"><img src="/img/assets/saizo.png"></a>
+            <a href="/characters/bai-hu"><img src="img/assets/bai-hu.png"></a>
           </div>
-        </div>
 
     <h1 id="title"><span class="flag-icon flag-icon-br"></span> Rila Estansia</h1>
 
 
     <div class="nav-guide">
-      <button class="color-button" id="button1" onclick="showContent('infos')">About</button>
+      <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
       <button class="color-button" id="button2" onclick="showContent('movelist')">Moves</button>
       <button class="color-button" id="button3" onclick="showContent('guide')">Guide</button>
       <button class="color-button" id="button4" onclick="showContent('combos')">Combos</button>
@@ -56,22 +55,24 @@
 
 
       <h2>Colors</h2>
-      <table class="colors" style="text-align: center;">
-        <tbody>
-          <tr>
-            <td><img src="img/inputs/Arcade-Button-APunch.png"></td>
-            <td><img src="img/inputs/Arcade-Button-BKick.png"></td>
-            <td><img src="img/inputs/Arcade-Button-CPunch.png"></td>
-            <td><img src="img/inputs/Arcade-Button-DKick.png"></td>
-          </tr>
-          <tr>
-            <td><img src="/characters/rila/img/Rila_A.png"></td>
-            <td><img src="/characters/rila/img/Rila_B.png"></td>
-            <td><img src="/characters/rila/img/Rila_C.png"></td>
-            <td><img src="/characters/rila/img/Rila_D.png"></td>
-          </tr>
-        </tbody>
-      </table>
+          <div class="character-colors">
+            <div class="column">
+              <span class="arcadebutton A"></span>
+              <img data-src="/characters/rila/img/rila_A.png" class="lazy-image" alt="rila A">
+            </div>
+            <div class="column">
+              <span class="arcadebutton B"></span>
+              <img data-src="/characters/rila/img/rila_B.png" class="lazy-image" alt="rila B">
+            </div>
+            <div class="column">
+              <span class="arcadebutton C"></span>
+              <img data-src="/characters/rila/img/rila_C.png" class="lazy-image" alt="rila C">
+            </div>
+            <div class="column">
+              <span class="arcadebutton D"></span>
+              <img data-src="/characters/rila/img/rila_D.png" class="lazy-image" alt="rila D">
+            </div>
+          </div>
 
 
         <h2>Gallery</h2>
@@ -93,34 +94,34 @@
         <h2 class="commands">Commands</h2>
         <div class="move">
           <span>Dynamite Kick</span>
-          <span><img class="Right">+<img class="D"></span>
+          <span><img class="Right">+<span class="arcadebutton D"></span></span>
         </div>
         <h2 class="specials">Specials</h2>
         <div class="move">
           <span>Killer Snake</span>
-          <span><img class="ChargeBack"><img class="DownRight">+<img class="Kick"></span>
+          <span><img class="ChargeBack"><img class="DownRight">+<span class="arcadebutton K"></span></span>
         </div>
         <div class="move">
           <span>Spinning Claw</span>
-          <span><img class="Tap"><img class="Punch"></span>
+          <span><img class="Tap"><span class="arcadebutton P"></span></span>
         </div>
         <div class="move">
           <span>Quick Scratch</span>
-          <span><img class="ChargeBack_Forward">+<img class="Punch"></span>
+          <span><img class="ChargeBack_Forward">+<span class="arcadebutton P"></span></span>
         </div>
         <div class="move">
           <span>Wild Saver</span>
-          <span><img class="ChargeDown_Up">+<img class="Kick"></span>
+          <span><img class="ChargeDown_Up">+<span class="arcadebutton K"></span></span>
         </div>
 
         <h2 class="supers">Supers</h2>
         <div class="move">
           <span>Shine Beast</span>
-          <span><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Punch"></span>
+          <span><img class="ChargeBack_Forward"><img class="Left_Right">+<span class="arcadebutton P"></span></span>
         </div>
         <div class="move">
           <span>Bloody Fang</span>
-          <span><img class="ChargeDownBack"><img class="Delta">+<img class="Kick"></span>
+          <span><img class="ChargeDownBack"><img class="Delta">+<span class="arcadebutton K"></span></span>
         </div>
 
       </div>
@@ -132,114 +133,114 @@
       <div class="command-list">
         <h2 class="normals">Normals</h2>
         <div class="move">
-          <span>far <img class="A"></span>
+          <span>far <span class="arcadebutton A"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>close <img class="A"></span>
+          <span>close <span class="arcadebutton A"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>down <img class="A"></span>
+          <span>down <span class="arcadebutton A"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>up <img class="A"></span>
+          <span>up <span class="arcadebutton A"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>ub/uf <img class="A"></span>
+          <span>ub/uf <span class="arcadebutton A"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>far <img class="B"></span>
+          <span>far <span class="arcadebutton B"></span></span>
           <span><inline class="mid"><inline class="special-cancel"></span>
         </div>
         <div class="move">
-          <span>close <img class="B"></span>
+          <span>close <span class="arcadebutton B"></span></span>
           <span><inline class="mid"><inline class="special-cancel"></span>
         </div>
         <div class="move">
-          <span>down <img class="B"></span>
+          <span>down <span class="arcadebutton B"></span></span>
           <span><inline class="low"><inline class="special-cancel"></span>
         </div>
         <div class="move">
-          <span>up <img class="B"></span>
+          <span>up <span class="arcadebutton B"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>ub/uf <img class="B"></span>
+          <span>ub/uf <span class="arcadebutton B"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>far <img class="C"></span>
+          <span>far <span class="arcadebutton C"></span></span>
           <span><inline class="mid"></span>
         </div>
         <div class="move">
-          <span>close <img class="C"></span>
+          <span>close <span class="arcadebutton C"></span></span>
           <span><inline class="mid"><inline class="special-cancel"><inline class="super-cancel"></span>
         </div>
         <div class="move">
-          <span>down <img class="C"></span>
+          <span>down <span class="arcadebutton C"></span></span>
           <span><inline class="mid"></span>
         </div>
         <div class="move">
-          <span>up <img class="C"></span>
+          <span>up <span class="arcadebutton C"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>ub/uf <img class="C"></span>
+          <span>ub/uf <span class="arcadebutton C"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>far <img class="D"></span>
+          <span>far <span class="arcadebutton D"></span></span>
           <span><inline class="mid"></span>
         </div>
         <div class="move">
-          <span>close <img class="D"></span>
+          <span>close <span class="arcadebutton D"></span></span>
           <span><inline class="mid"></span>
         </div>
         <div class="move">
-          <span>down <img class="D"></span>
+          <span>down <span class="arcadebutton D"></span></span>
           <span><inline class="low"><inline class="knockdown"></span>
         </div>
         <div class="move">
-          <span>up <img class="D"></span>
+          <span>up <span class="arcadebutton D"></span></span>
           <span><inline class="high"></span>
         </div>
         <div class="move">
-          <span>ub/uf <img class="D"></span>
+          <span>ub/uf <span class="arcadebutton D"></span></span>
           <span><inline class="high"></span>
         </div>
         <h2 class="commands">Commands</h2>
         <div class="move">
-          <span><img class="Right">+<img class="D"></span>
+          <span><img class="Right">+<span class="arcadebutton D"></span></span>
           <span><inline class="mid"></span>
         </div>
         <h2 class="specials">Specials</h2>
         <div class="move">
-          <span><img class="ChargeBack"><img class="DownRight">+<img class="Kick"></span>
-          <span><inline class="mid"><inline class="launcher"><small>(<img class="D"> only)</small></span>
+          <span><img class="ChargeBack"><img class="DownRight">+<span class="arcadebutton K"></span></span>
+          <span><inline class="mid"><inline class="launcher"><small>(<span class="arcadebutton D"></span> only)</small></span>
         </div>
         <div class="move">
-          <span><img class="Tap"><img class="Punch"></span>
+          <span><img class="Tap"><span class="arcadebutton P"></span></span>
           <span><inline class="mid"><inline class="knockdown"></span>
         </div>
         <div class="move">
-          <span><img class="ChargeBack_Forward">+<img class="Punch"></span>
-          <span><inline class="mid"><inline class="knockdown"><small>(<img class="C"> only)</small></span>
+          <span><img class="ChargeBack_Forward">+<span class="arcadebutton P"></span></span>
+          <span><inline class="mid"><inline class="knockdown"></span>
         </div>
         <div class="move">
-          <span><img class="ChargeDown_Up">+<img class="Kick"></span>
+          <span><img class="ChargeDown_Up">+<span class="arcadebutton K"></span></span>
           <span><inline class="mid"><inline class="knockdown"></span>
         </div>
         <h2 class="supers">Supers</h2>
         <div class="move">
-          <span><img class="ChargeBack_Forward"><img class="Left_Right">+<img class="Punch"></span>
+          <span><img class="ChargeBack_Forward"><img class="Left_Right">+<span class="arcadebutton P"></span></span>
           <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
         </div>
         <div class="move">
-          <span><img class="ChargeDownBack"><img class="Delta">+<img class="Kick"></span>
+          <span><img class="ChargeDownBack"><img class="Delta">+<span class="arcadebutton K"></span></span>
           <span><inline class="mid"><inline class="hard-knockdown"><inline class="inv-startup"></span>
         </div>
 
@@ -252,15 +253,17 @@
     <div id="guide">
 
 
+      <h1>Ressources</h1>
+          <ul>
+            <li><a href="https://youtu.be/NzeskKbDFt8" target="_blank">Sas Izm - Rila Estansia Combo Guide </a></li>
+            <li><a href="https://wiki.supercombo.gg/w/Breakers_Revenge/Rila" target="_blank">SuperCombo Wiki - Breakers Revenge/Rila</a></li>
+          </ul>
+
       <h1>Overview</h1>
 
       <p>
-        Rila is a charge character with high damage output. Although she lacks zoning tools, 
-        her powerful anti-airs and strong damage make her very effective in close and mid-range combat.
+        Rila is a charge character with high damage output. Her only zoning tool is down heavy punch, but her fast anti-air and anti-projectile moves help her control space and shut down opponents from anywhere on the screen.
       </p>
-
-      
-
 
 
       <h1>Offense</h1>
@@ -268,8 +271,7 @@
         <source src="characters/rila/videos/rila_attack.mp4" type="video/mp4">
       </video>
       <p>
-        <u>2C</u>: This move troubles opponents, safe on block and hard to punish. 
-        Great for stopping approaches and effective as an anti-air.
+        <u>2C</u>: Difficult for opponents to deal with, also safe on block. Good for stopping approaches and works well as an anti-air.
       </p>
 
       <p>
@@ -285,29 +287,27 @@
  
 
 
-      <h2>Defense</h2>
+      <h1>Defense</h1>
       <video data-poster="characters/rila/videos/rila_defense.jpg" controls loop muted playsinline preload="none">
         <source src="characters/rila/videos/rila_defense.mp4" type="video/mp4">
       </video>
       <p>
-        <u>Wild Saver ([2]8K)</u>: It launches diagonally upward but can miss if used too early at close range, 
+        <u>Wild Saver ([2]8K)</u>: This anti-air launches diagonally upward but can miss if used too early at close range, 
         especially against cross-up jumps. In that case, use 5D.
       </p>
 
-      <p><u>Quick Scratch ([4]6C)</u>: It can be used as an anti-air and combo into super Bloody Fang, 
-        dealing much more damage than the LP version but
-        is unsafe.
+      <p><u>Quick Scratch ([4]6C)</u>:The heavy version works as an anti-air and combos into Bloody Fang super. It hits harder than the light version but leaves you open if blocked.
       </p>
 
       <p>
-        <u>Killer Snake ([1]3D)</u>: Heavy version punishes mid-close projectiles and confirms into Super. 
-        On block, a quick Super can catch bad punishes attempts, risky but works on unfamiliar opponents. 
+        <u>Killer Snake ([1]3D)</u>: The heavy version punishes projectiles and combos into Super. If blocked, you can still
+        cancel into Super to catch sloppy punish attempts. It's risky, but can surprise opponents who don’t know the matchup.
       </p>
-
+      
       <p>
         <u>5A, 5C and 5D</u>: 5C is a close-range anti-air, 
-        while 5D covers more space and counters ambiguous jump-ins. 
-        Cancel 5A into Quick Scratch C, and follow with Bloody Fang Super if meter is available.
+        while 5D covers more space and counters ambiguous jump-ins.
+        You can also anti-air with 5A, then combo into heavy Quick Scratch. If you have meter, finish with Bloody Fang Super for extra damage.
       </p>
 
 
@@ -318,14 +318,12 @@
         <source src="characters/rila/videos/anti-air.mp4" type="video/mp4">
       </video>
       <p>
-        <u>Bloody Fang ([1]319K)</u>: Use it to punish projectiles and as a follow-up to Killer Snake D or after an anti-air Quick Scratch C
+        <u>Bloody Fang ([1]319K)</u>: This super punishes projectiles and can also extend combos from heavy Killer Snake or anti-air heavy Quick Scratch.
       </p>
 
-      
       <p>
         <u>Shine beast ([4]646P)</u>: 
-        It has limited practical applications but can still serve as a reversal due to its invincible startup. 
-        Hold the button to freeze the super startup and release it anytime. If held too long, Rila will return to neutral.
+        Not very practical cause it's slow, but it works as a reversal thanks to its invincible startup. You can hold the button to delay the super and release it whenever you want. If you hold it too long, Rila cancels the move and goes back to neutral.
       </p>
 
       <h1>Tips</h1>
@@ -342,8 +340,6 @@
       <h3>Super shortcut</h3>
       <p>There are several shortcuts to perform the Bloody Fang super: you can use [1]37K or [1]32147K</p>
 
-      <h1>Resources</h1>
-      <iframe width="100%" height="300px" src="https://www.youtube.com/embed/NzeskKbDFt8?si=-Tl8YE12rFdoNazM" loading="lazy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
       <h1>Replays</h1>
       <ul class="combos">
@@ -426,8 +422,8 @@
         <source src="/characters/rila/videos/matchups/rila_vs_sho_hopkick.mp4" type="video/mp4">
         </video>
         <p>
-          This hopkick can be followed by his air super (Geki Rekkou Ha), which can counter your usual punish attempt.
-          Watch his meter, wait and react to the super flash with Wild Saver instead of taking risks.
+          Ranki Ryuu Geri (236K) is unsafe if used alone, but Sho can cancel into super to stay safe and bait punish attempts. 
+          Don’t take risks, just wait and react to the super flash with Wild Saver.
         </p>
     
         <h2>Rekkou Ha</h2>
@@ -435,8 +431,7 @@
           <source src="/characters/rila/videos/matchups/rila_vs_sho_rekkou_ha.mp4" type="video/mp4">
         </video>
         <p>
-          This projectile can be punished depending on the range with Killer Snake D or Super Bloody Fang.
-          You can also counter unsafe fireball pressure with Killer Snake D.
+          This projectile is punishable at certain ranges with Heavy Killer Snake, or from any range with Super Bloody Fang. You can also use Heavy Killer Snake to counter unsafe pressure.
         </p>
     
         <h2>Seiken Shou Ha</h2>
@@ -444,7 +439,7 @@
           <source src="/characters/rila/videos/matchups/rila_vs_sho_Seiken_Shou_Ha.mp4" type="video/mp4">
         </video>
         <p>
-        If Blocked from afar, punish with Bloody Fang Super. at close range, use normals or quick Scratch C.
+          If blocked from long range, punish with Super Bloody Fang. Up close, use normals or Heavy Quick Scratch.
         </p>
     
         <h2>Onigawara</h2>
@@ -453,7 +448,7 @@
         </video>
         <p>
         Punish with 5A (tight timing). Safe if canceled into his projectile.
-        On hit, if canceled into 236K, you can break it with Wild Saver B.
+        On hit, if canceled into 236K, you can break it with Wild Saver.
         </p>
     
         <h2>Tobihizageri</h2>
@@ -461,7 +456,7 @@
           <source src="/characters/rila/videos/matchups/rila_vs_sho_Tobihizageri.mp4" type="video/mp4">
         </video>
         <p> 
-          Safe on block, but leaves him throwable up close. From afar, the startup gap can be punished with Wild Saver B.
+          Safe on block, but leaves him throwable up close. From afar, the startup gap can be punished with Wild Saver.
         </p>
     
         <h2>Sashikomi Kick</h2>
@@ -469,11 +464,10 @@
           <source src="/characters/rila/videos/matchups/rila_vs_sho_Sashikomi Kick.mp4" type="video/mp4">
         </video>
         <p>
-          Whiff punish with 5A or Wild Saver.
-          On hit, break with throw.
-          Be careful, a whiffed divekick can lead into his air fireball super. 
-          if you block high, he can setup a high/low mixup with his jump D > Super or 2B. 
-          Block low to avoid the mixup.
+          You can whiff punish his divekick with 5A or Wild Saver.
+          On hit, break using throw.
+          Be cautious, a whiffed divekick can lead to his air fireball super. 
+          Block low to avoid his fuzzy setup.
         </p>
     
     </div>
@@ -503,12 +497,6 @@
         <p>
         Punish his projectile depending on the range with Killer Snake D or your Super Bloody Fang.
         It's unsafe if done too close.
-        </p>
-    
-        <h2>Robin Liner</h2>
-        <p>
-        The light version doesn’t knock down and is unsafe on both block and hit. 
-        For the heavy version, punish like other anti-airs with 5A > Quick Scratch C
         </p>
     
     
@@ -602,8 +590,7 @@
           <source src="/characters/rila/videos/matchups/rila_vs_rila_2C.mp4" type="video/mp4">
         </video>
         <p>
-          Hard to deal with since it’s safe. 
-          With some practice and good spacing, you can whiff punish it with 2C or Quick Scratch C, but it’s tricky and risky.
+          It’s tough to deal with since it’s safe, but with good spacing and timing, you can whiff punish it using 2C or Quick Scratch C.
         </p>
     
         <h2>2D</h2>
@@ -611,7 +598,7 @@
           <source src="/characters/rila/videos/matchups/rila_vs_rila_2D.mp4" type="video/mp4">
         </video>
         <p>
-          Punish only at close range with 2A > quick scratch C.
+          Only punish at close range with 2A > Quick Scratch C.
         </p>
     
         <h2>Killer Snake</h2>
@@ -619,9 +606,7 @@
           <source src="/characters/rila/videos/matchups/rila_vs_rila_Killer_Snake.mp4" type="video/mp4">
         </video>
         <p>
-          Light version is unsafe on hit and block. 
-          Heavy lets her instantly follow with an invulnerable super. 
-          On block, use 2A and be ready to use Wild Saver B if a super comes.
+          Light version is unsafe even on hit. Heavy version lets her cancel straight into super. If blocked, punish with 2A and be ready to react with Wild Saver B if she goes for the super.
         </p>
     
         <h2>Quick scratch</h2>
@@ -648,7 +633,7 @@
         </video>
         <p>
         On block, she ends up on the other side (at mid and close range). 
-        With practice, block the first hit, then quickly switch your guard to charge and punish with quick scratch or Bloody Fang.
+        block the first hit, then quickly switch sides to charge and punish with Quick Scratch or Super.
         </p>
     
         <h2>Bloody Fang</h2>
@@ -657,7 +642,7 @@
         </video>
         <p>
         Punish with 5A > quick scratch C > Bloody Fang Super.
-        If you get hit, mash buttons and directions to reduce damage.
+        On hit, mash buttons and directions to reduce damage.
         </p>
     
     </div>
@@ -747,11 +732,6 @@
         </video>
         <p>
           Overhead (second hit) and also function as anti-air. Interrupt the second hit, if blocked crouching.
-        </p>
-    
-        <h2>Poison Fog</h2>
-        <p>
-          A slow, close-range projectile for chip damage or wakeup pressure.
         </p>
     
         <h2>Deadly Claw</h2>
@@ -878,8 +858,7 @@
           <source src="/characters/rila/videos/matchups/rila_vs_saizo_yashagami.mp4" type="video/mp4">
         </video>
         <p>
-        Unless canceled, it's unsafe on hit and block but can be followed by a super, interrupting your punish. 
-        In this case, punish with Wild Saver B.
+        It’s unsafe on hit and block unless canceled. However, it can be followed by a super that interrupts your punish. In this case, punish with Wild Saver B.
         </p>
     
         <h2>Engetsuzan</h2>
