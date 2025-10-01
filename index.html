@@ -62,19 +62,16 @@
                 const text = link.getAttribute('data-text');
                 document.getElementById('popup-text').innerHTML = text; // use innerHTML
                 popup.classList.add('show');
-                document.body.style.overflow = 'hidden';
               });
             });
 
             document.querySelector('.close').addEventListener('click', () => {
               popup.classList.remove('show');
-              document.body.style.overflow = 'auto'; // unlock scroll
             });
 
             popup.addEventListener('click', (e) => {
               if (e.target.id === 'popup') {
                 popup.classList.remove('show');
-                document.body.style.overflow = 'auto'; // unlock scroll
               }
             });
 
