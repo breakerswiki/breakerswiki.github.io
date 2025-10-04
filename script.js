@@ -34,16 +34,12 @@ function highlightCurrentNav() {
 
     // Exact match (Gameplay, About, etc.)
     if (currentPath === href) {
-      link.style.fontWeight = "bold";
-      link.style.textDecoration = "underline";
-      link.style.textUnderlineOffset = "10px";
+      link.style.backgroundColor = "#dce8f2ff";
     }
 
     // Parent Characters link stays bold for any /characters/... subpage
     if (href.startsWith("/characters") && currentPath.startsWith("/characters")) {
-      link.style.fontWeight = "bold";
-      link.style.textDecoration = "underline";
-      link.style.textUnderlineOffset = "10px";
+      link.style.backgroundColor = "#dce8f2ff";
     }
   });
 }
