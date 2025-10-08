@@ -25,50 +25,36 @@
 
     <div id="header-container"></div>
 
-    <div class="wrapper">
-        <section class="main-content howtoplay">
-            <main>
-                <div class="gameplay">
-                    <div class="tv-container">
-                        <!-- Cabinet Image -->
-                        <img src="/img/assets/TV.webp" class="tv" loading="lazy">
-                        <div class="tv-noise"></div>
-                        <!-- Video -->
-                        <video id="gameplay-video" loop muted autoplay playsinline preload="auto">
-                            <source src="/gameplay/videos/br-how-to-play.mp4" type="video/mp4">
-                        </video>
-                    </div>
+    <div class="main-content ">
+        <br>
+        <div class="gameplay">
 
-                    <!-- Text container -->
-                    <div id="video-text" class="video-text"></div>
+            <div class="tv-container">
+                <img src="/img/assets/TV.webp" class="tv" loading="lazy" alt="Decorative TV frame">
+                <!-- <div class="tv-noise"></div> -->
 
 
+                <div>
+                    <video id="gameplay-video" playsinline loop controls preload="metadata">
+                        <source src="/gameplay/videos/br-how-to-play.mp4" type="video/mp4">
+                        Your browser does support HTML5 video.
+                    </video>
                 </div>
-                <!-- Navigation -->
-                <div class="button-container">
-                    <button class="card-nav-button prev-button" aria-label="Previous card">ᐊ</button>
-                    <span id="card-counter" class="card-counter"></span>
-                    <button class="card-nav-button next-button" aria-label="Next card">ᐅ</button>
-                </div>
+            </div>
+            <div class="button-container">
+                <button class="card-nav-button prev-button" aria-label="Previous">❮</button>
+                <span id="card-counter" class="card-counter"></span>
+                <button class="card-nav-button next-button" aria-label="Next">❯</button>
+            </div>
+            <div id="video-text" class="video-text"></div>
+        </div>
+    </div>
 
-            </main>
 
-        </section>
     </div>
     <!-- footer  -->
     <div id="footer-container"></div>
-
-
-
     <script>
-        function toggleDiv() {
-            var div = document.getElementById("toggleDiv");
-            if (div.style.display === "none") {
-                div.style.display = "block";
-            } else {
-                div.style.display = "none";
-            }
-        }
         document.addEventListener("DOMContentLoaded", () => {
             const video = document.getElementById("gameplay-video");
             const text = document.getElementById("video-text");
@@ -76,15 +62,11 @@
             const prev = document.querySelector(".prev-button");
             const next = document.querySelector(".next-button");
 
-
-
-            // List of videos and their texts
             const videos = [
                 {
                     src: "/gameplay/videos/br-how-to-play.mp4",
                     text: `
-                    <h1>Button layout</h1>
-                    <p>
+                    <h1>Button layout</h1><p>
                         Breakers Revenge is commonly played in a square arcade layout
                         <span style="display: inline-block; padding: 2px; border: 1px solid gray;text-align: center; font-size: small; font-weight: bold; line-height: 1; margin-bottom: 1.5em;">
                             <span style="display: block;">
@@ -97,118 +79,101 @@
                                 </span>
                             </span><br>
                             <span class="arcadebutton A"></span>,<span class="arcadebutton C"></span>= Punch <br> <span class="arcadebutton B"></span>,<span class="arcadebutton D"></span>= Kick
-                    </p>                    
-                    `
-                },
-                {
-                    src: "/gameplay/videos/throw.mp4",
-                    text: `
+                    </p>
+                    `},
+                { src: "/gameplay/videos/throw.mp4", text: `
                     <h1>Throws</h1>
                     <p>
                         → / ← + <span class="arcadebutton C"></span><br>
                         Throws can be used to interrupt (break) some jump-ins and combos. Certain characters also have extra throw moves.
                     </p>
-                    `
-                },
-                {
-                    src: "/gameplay/videos/supers.mp4",
-                    text: `
+                    ` },
+                { src: "/gameplay/videos/supers.mp4", text: `
                     <h1>Supers</h1>
                     <p>
                         Super meter holds 3 stocks, fills by attacking, dashing, taunting, or taking/blocking hits.
                     </p>
-                    `
-                },
-                {
-                    src: "/gameplay/videos/juggles.mp4",
-                    text: `
+                    ` },
+                { src: "/gameplay/videos/juggles.mp4", text: `
                     <h1>Combos</h1>
                     <p>
                         The game features an accessible combo system with plenty of cancelable moves and super juggles.                    </p>
-                    `
-                },
-                {
-                    src: "/gameplay/videos/roll.mp4",
-                    text: `
+                    ` },
+                { src: "/gameplay/videos/roll.mp4", text: `
                     <h1>Back roll</h1>
                     <p>
                         After a non-super hit, press 3 buttons when knocked down to escape pressure and avoid follow-ups.
                     </p>
-                    `
-                },
-                {
-                    src: "/gameplay/videos/dash.mp4",
-                    text: `
+                    ` },
+                { src: "/gameplay/videos/dash.mp4", text: `
                     <h1>Dashes</h1>
                     <p>
                         →→ / ←← <br>
                         All characters except Condor can dash. Some have invincible backdashes, while others can cancel dashes for faster movement or longer jumps.
                     </p>
-                    `
-                },
-                {
-                    src: "/gameplay/videos/dizzy.mp4",
-                    text: `
+                    ` },
+                { src: "/gameplay/videos/dizzy.mp4", text: `
                     <h1>Dizzy</h1>
                     <p> Repeated hits can cause dizziness. Mash directions and buttons to recover instantly with brief invincibility.</p>
-                    `
-                },
-                {
-                    src: "/gameplay/videos/chip.mp4",
-                    text: `
+                    ` },
+                { src: "/gameplay/videos/chip.mp4", text: `
                     <h1>Chip damage</h1>
                     <p>
                         Chip damage is the health lost while blocking, preventing endless defense and can cause a KO. Supers deal little chip, so use specials to finish opponents.
                     </p>
-                    `
-                },
-                {
-                    src: "/gameplay/videos/breakers.mp4",
-                    text: `
+                    ` },
+                { src: "/gameplay/videos/breakers.mp4", text: `
                     <h1>Break</h1>
                     <p>
                         Interrupt certain combos with a reversal attack.
                         Master unbreakable combos, spot breakable ones, and use them to bait reversals strategically.
                     </p>
-                    `
-                },
-                {
-                    src: "/gameplay/videos/risk.mp4",
-                    text: `
+                    ` },
+                { src: "/gameplay/videos/risk.mp4", text: `
                     <h1>Risk system</h1>
                     <p>
                         Staying idle boosts your damage over time.
                         Winner receive more damage, losers gain defense.
                         Damage boosts only affect the player with more life until both players are even.
                     </p>
-                    `
-                },
+                    ` }
             ];
-
 
             let index = 0;
 
-            function update() {
-                video.src = videos[index].src;
-                video.play();
-                text.innerHTML = videos[index].text;
+            function showVideo() {
+                const current = videos[index];
+
+                // Stop any currently playing video
+                video.pause();
+
+                // Set the new source
+                video.src = current.src;
+                text.innerHTML = current.text;
                 counter.textContent = `${index + 1}/${videos.length}`;
                 prev.disabled = index === 0;
                 next.disabled = index === videos.length - 1;
+
+                // Load the new video content to show the first frame
+                video.load();
+
+                // The video.play() call is removed, disabling autoplay
             }
 
-            function changeVideo(step) {
-                index = Math.min(Math.max(index + step, 0), videos.length - 1);
-                update();
-            }
+            prev.addEventListener("click", () => {
+                if (index > 0) index--;
+                showVideo();
+            });
 
-            prev.addEventListener("click", () => changeVideo(-1));
-            next.addEventListener("click", () => changeVideo(1));
+            next.addEventListener("click", () => {
+                if (index < videos.length - 1) index++;
+                showVideo();
+            });
 
-            update();
+            // Initial call to set the first video
+            showVideo();
         });
     </script>
-
 
 </body>
 
