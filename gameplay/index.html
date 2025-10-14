@@ -27,6 +27,7 @@
 
     <div class="main-content ">
         <br>
+
         <div class="gameplay">
 
             <div class="tv-container">
@@ -35,32 +36,40 @@
 
 
                 <div>
+                    
                     <video id="gameplay-video" playsinline loop controls preload="metadata">
                         <source src="/gameplay/videos/br-how-to-play.mp4" type="video/mp4">
                         Your browser does support HTML5 video.
                     </video>
+                    
                 </div>
+                
             </div>
-            <div class="button-container">
-                <button class="card-nav-button prev-button" aria-label="Previous">❮</button>
-                <span id="card-counter" class="card-counter"></span>
-                <button class="card-nav-button next-button" aria-label="Next">❯</button>
+
+
+            <div id="video-text" class="video-text">
+
             </div>
-            <div id="video-text" class="video-text"></div>
+
         </div>
+<div class="button-container">
+    <button class="card-nav-button prev-button" aria-label="Previous">❮</button>
+    <div id="card-dots" class="card-dots"></div>
+    <button class="card-nav-button next-button" aria-label="Next">❯</button>
+</div>
     </div>
 
 
     </div>
     <!-- footer  -->
     <div id="footer-container"></div>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const video = document.getElementById("gameplay-video");
-            const text = document.getElementById("video-text");
-            const counter = document.getElementById("card-counter");
-            const prev = document.querySelector(".prev-button");
-            const next = document.querySelector(".next-button");
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const video = document.getElementById("gameplay-video");
+    const text = document.getElementById("video-text");
+    const dotsContainer = document.getElementById("card-dots");
+    const prev = document.querySelector(".prev-button");
+    const next = document.querySelector(".next-button");
 
             const videos = [
                 {
@@ -125,55 +134,65 @@
                 { src: "/gameplay/videos/breakers.mp4", text: `
                     <h1>Break</h1>
                     <p>
-                        Interrupt certain combos with a reversal attack.
-                        Master unbreakable combos, spot breakable ones, and use them to bait reversals strategically.
+                        Some combos can be interrupted (broken) with a backdash, throw, or attack. 
+                        Master unbreakable combos, identify breakable ones, and use them strategically to bait your opponent.
                     </p>
                     ` },
                 { src: "/gameplay/videos/risk.mp4", text: `
                     <h1>Risk system</h1>
                     <p>
-                        Staying idle boosts your damage over time.
-                        Winner receive more damage, losers gain defense.
-                        Damage boosts only affect the player with more life until both players are even.
+                        The longer you remain inactive, the more your damage output increases. 
+                        The round winner takes increased damage, while the loser gains defense. 
+                        Only the player with higher health receives increased damage until both health bars are equal.
                     </p>
                     ` }
             ];
 
             let index = 0;
 
-            function showVideo() {
-                const current = videos[index];
-
-                // Stop any currently playing video
-                video.pause();
-
-                // Set the new source
-                video.src = current.src;
-                text.innerHTML = current.text;
-                counter.textContent = `${index + 1}/${videos.length}`;
-                prev.disabled = index === 0;
-                next.disabled = index === videos.length - 1;
-
-                // Load the new video content to show the first frame
-                video.load();
-
-                // The video.play() call is removed, disabling autoplay
-            }
-
-            prev.addEventListener("click", () => {
-                if (index > 0) index--;
-                showVideo();
-            });
-
-            next.addEventListener("click", () => {
-                if (index < videos.length - 1) index++;
-                showVideo();
-            });
-
-            // Initial call to set the first video
+    // Create dots dynamically
+    videos.forEach((_, i) => {
+        const dot = document.createElement("span");
+        dot.classList.add("dot");
+        dot.addEventListener("click", () => {
+            index = i;
             showVideo();
         });
-    </script>
+        dotsContainer.appendChild(dot);
+    });
+
+    const dots = dotsContainer.querySelectorAll(".dot");
+
+    function updateDots() {
+        dots.forEach((dot, i) => {
+            dot.classList.toggle("active", i === index);
+        });
+    }
+
+    function showVideo() {
+        const current = videos[index];
+        video.pause();
+        video.src = current.src;
+        text.innerHTML = current.text;
+        prev.disabled = index === 0;
+        next.disabled = index === videos.length - 1;
+        updateDots();
+        video.load();
+    }
+
+    prev.addEventListener("click", () => {
+        if (index > 0) index--;
+        showVideo();
+    });
+
+    next.addEventListener("click", () => {
+        if (index < videos.length - 1) index++;
+        showVideo();
+    });
+
+    showVideo();
+});
+</script>
 
 </body>
 
