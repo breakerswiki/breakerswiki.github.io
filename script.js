@@ -16,40 +16,72 @@ function loadContent(file, containerId, callback) {
     .catch(error => console.error(`Error loading ${file}:`, error));
 }
 
-// Update footer year
-function updateFooterYear() {
-  const currentYear = new Date().getFullYear();
-  const footerYearElement = document.getElementById("footer-year");
-  if (footerYearElement) {
-    footerYearElement.textContent = currentYear;
-  }
-}
+
 
 // Highlight the current page link in the navigation bar
 function highlightCurrentNav() {
   const currentPath = window.location.pathname;
 
-  document.querySelectorAll(".nav-links li a").forEach(link => {
+  // 1. Highlight current nav <a> items
+  document.querySelectorAll(".nav-links li a, .nav-links li.dropdown a").forEach(link => {
     const href = link.getAttribute("href");
 
     // Exact match (Gameplay, About, etc.)
     if (currentPath === href) {
-      link.style.backgroundColor = "#dce8f2ff";
+      link.style.backgroundColor = "black";
+      link.style.color = "white";
     }
 
     // Parent Characters link stays bold for any /characters/... subpage
-    if (href.startsWith("/characters") && currentPath.startsWith("/characters")) {
-      link.style.backgroundColor = "#dce8f2ff";
+    if (href && href.startsWith("/characters") && currentPath.startsWith("/characters")) {
+      link.style.backgroundColor = "black";
+      link.style.color = "white";
     }
+  });
+
+  // 2. Highlight Characters dropdown button if on a /characters/... page
+  const charactersButton = document.querySelector(".dropdown-toggle");
+  if (charactersButton && currentPath.startsWith("/characters")) {
+    charactersButton.style.backgroundColor = "black";
+    charactersButton.style.color = "white";
+  }
+
+  // 3. Set background-color: transparent for dropdown menu links
+  document.querySelectorAll(".dropdown-menu li a").forEach(dropdownLink => {
+    dropdownLink.style.backgroundColor = "transparent";
   });
 }
 
+
 // Load header + footer once DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
-  loadContent("header.html", "header-container", highlightCurrentNav);
-  loadContent("footer.html", "footer-container", updateFooterYear);
+  loadContent("header.html", "header-container", () => {
+  highlightCurrentNav();  
+  initDropdown();       
+});
 });
 
+
+// Dropdown menu functionality
+function initDropdown() {
+  const dropdown = document.querySelector(".dropdown");
+  const toggle = document.querySelector(".dropdown-toggle");
+
+  // Safety check (prevents null errors if something changes)
+  if (!dropdown || !toggle) return;
+
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropdown.classList.toggle("open");
+  });
+
+  // Close when clicking anywhere else
+  document.addEventListener("click", (e) => {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove("open");
+    }
+  });
+}
 
 // Set <img> sources for stick inputs using html classes
 const inputImages = {
@@ -202,6 +234,3 @@ document.addEventListener("DOMContentLoaded", () => {
   lazyImages.forEach(img => observer.observe(img));
   lazyVideos.forEach(video => observer.observe(video));
 });
-
-
-

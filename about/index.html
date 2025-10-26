@@ -19,8 +19,6 @@
 <body>
 
 
-
-
   <div id="header-container"></div>
 
 
@@ -29,10 +27,10 @@
 
     <div class="container">
       <div class="main-about">
-        <!-- <h2>Breakers wiki</h2> -->
+        <h2>About</h2>
         <p>
-          This wiki aims to help all players quickly learn the core mechanics of Breakers Revenge, from gameplay basics
-          to characters guide and matchup tips. 
+          This wiki aims to help you quickly learn the core mechanics of Breakers Revenge, from gameplay basics
+          to characters guide and matchup tips.
           Got suggestions ?
           <a href="https://discord.com/users/110457069500391424" target="_blank">Contact</a> or
           <a target="_blank" href="https://github.com/breakerswiki/breakerswiki.github.io">make a request</a>.
@@ -69,7 +67,22 @@
         <a target="_blank" href="https://k-ili-stration.artstation.com/projects/GaaL5a">Egret
           II Vector Design</a>
 
+        <h2>Breakers Wiki</h2>
+
+        <p>
+          Fan-made, non-commercial project.<br>
+          All rights to images belong to their respective owners.
+        </p>
+        <p>
+          2023 - <span id="about-year"></span> - Zoukken
+        </p>
       </div>
+
+      <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById("about-year").textContent = currentYear;
+      </script>
+    </div>
 
 
 
