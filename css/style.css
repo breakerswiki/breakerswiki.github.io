@@ -202,7 +202,7 @@ a.moreinfos{font-size:1.1rem;color:gray;cursor:pointer;margin:0 auto;display:tab
 .dot.active{background:#000}
 .dropdown li{width:auto}
 .dropdown{position:relative}
-.dropdown-toggle{background:0 0;border:none;font-size:19px;font-family:inherit;cursor:pointer;padding:10px;display:flex;align-items:center;gap:4px}
+.dropdown-toggle{background:0 0;border:none;font-size:19px;font-family:inherit;cursor:pointer;padding:10px;display:flex;align-items:center;gap:4px;color: black;}
 .dropdown-toggle:focus,.dropdown-toggle:hover{background-color:#d3d3d3}
 .dropdown-menu{position:absolute;top:140%;right:-12%;background:#fff;width:130px;max-width:200px;padding:8px 0;border:4px solid #000;opacity:0;transform:translateY(-6px);pointer-events:none;transition:opacity .25s ease,transform .25s ease;z-index:9999}
 .dropdown.open .dropdown-menu{opacity:1;transform:translateY(0);pointer-events:auto;width:130px}
