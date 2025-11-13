@@ -36,7 +36,8 @@
 
 
                 <div>
-                    
+                                        <div class="tv-noise"></div>
+
                     <video id="gameplay-video" playsinline loop controls preload="metadata">
                         <source src="/gameplay/videos/br-how-to-play.mp4" type="video/mp4">
                         Your browser does support HTML5 video.
@@ -70,6 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const dotsContainer = document.getElementById("card-dots");
     const prev = document.querySelector(".prev-button");
     const next = document.querySelector(".next-button");
+    const tvNoise = document.querySelector(".tv-noise");
 
             const videos = [
                 {
@@ -166,7 +168,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+        function showTVNoise() {
+        if (!tvNoise) return;
+        tvNoise.classList.add("show");
+        setTimeout(() => {
+            tvNoise.classList.remove("show");
+        }, 700);
+    }
+
     function showVideo() {
+        showTVNoise();
         const current = videos[index];
         video.pause();
         video.src = current.src;
