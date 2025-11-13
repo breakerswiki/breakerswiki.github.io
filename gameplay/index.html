@@ -32,20 +32,19 @@
 
             <div class="tv-container">
                 <img src="/img/assets/TV.webp" class="tv" loading="lazy" alt="Decorative TV frame">
-                <!-- <div class="tv-noise"></div> -->
-
 
                 <div>
-                                        <div class="tv-noise"></div>
-
-                    <video id="gameplay-video" playsinline loop controls preload="metadata">
+                    <div class="tv-noise"></div>
+                
+                    <video id="gameplay-video" playsinline loop preload="metadata">
                         <source src="/gameplay/videos/br-how-to-play.mp4" type="video/mp4">
                         Your browser does support HTML5 video.
                     </video>
-                    
+                    <button class="play-button" id="playBtn">▶</button>
+                
                 </div>
                 
-            </div>
+                </div>
 
 
             <div id="video-text" class="video-text">
@@ -72,6 +71,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const prev = document.querySelector(".prev-button");
     const next = document.querySelector(".next-button");
     const tvNoise = document.querySelector(".tv-noise");
+    const playBtn = document.getElementById("playBtn");
+
+    
 
             const videos = [
                 {
@@ -180,6 +182,7 @@ document.addEventListener("DOMContentLoaded", () => {
         showTVNoise();
         const current = videos[index];
         video.pause();
+        playBtn.style.display = "flex"; // show play button again
         video.src = current.src;
         text.innerHTML = current.text;
         prev.disabled = index === 0;
@@ -196,6 +199,20 @@ document.addEventListener("DOMContentLoaded", () => {
     next.addEventListener("click", () => {
         if (index < videos.length - 1) index++;
         showVideo();
+    });
+
+        // Play button logic
+    playBtn.addEventListener("click", () => {
+        video.play();
+        playBtn.style.display = "none";
+    });
+
+    video.addEventListener("pause", () => {
+        playBtn.style.display = "flex";
+    });
+
+    video.addEventListener("play", () => {
+        playBtn.style.display = "none";
     });
 
     showVideo();
