@@ -165,7 +165,7 @@ main{padding:1rem 1rem;margin:auto}
 }
 .video-text{text-align:left;font-size:1.2rem;padding:0 10px;width:320px}
 .video-text p{margin-top:0}
-.play-button{position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.6);border:none;border-radius:50%;width:70px;height:70px;cursor:pointer;color:#fff;font-size:2rem;display:flex;align-items:center;justify-content:center;z-index:2}
+.play-button{padding-right: 0px;position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);background:rgba(0,0,0,.6);border:none;border-radius:50%;width:70px;height:70px;cursor:pointer;color:#fff;font-size:2rem;display:flex;align-items:center;justify-content:center;z-index:2}
 .play-button:hover{background:rgba(0,0,0,.8)}
 :root{--accent:#dce8f2ff;--accent-hover:#cad3e3;--text:#bebebe;--muted:#5f6368;--radius:8px;--gap:12px;--size-button:40px;--font-sans:'Roboto',system-ui,sans-serif}
 .button-container{width:100%;display:inline-flex;align-items:center;justify-content:center;gap:var(--gap);padding:6px 10px;font-family:var(--font-sans);margin-bottom:20px;user-select:none}
