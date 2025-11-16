@@ -35,16 +35,16 @@
 
                 <div>
                     <div class="tv-noise"></div>
-                
+
                     <video id="gameplay-video" playsinline loop preload="metadata">
                         <source src="/gameplay/videos/br-how-to-play.mp4" type="video/mp4">
                         Your browser does support HTML5 video.
                     </video>
                     <button class="play-button" id="playBtn">▶</button>
-                
+
                 </div>
-                
-                </div>
+
+            </div>
 
 
             <div id="video-text" class="video-text">
@@ -52,28 +52,28 @@
             </div>
 
         </div>
-<div class="button-container">
-    <button class="card-nav-button prev-button" aria-label="Previous">❮</button>
-    <div id="card-dots" class="card-dots"></div>
-    <button class="card-nav-button next-button" aria-label="Next">❯</button>
-</div>
+        <div class="button-container">
+            <button class="card-nav-button prev-button" aria-label="Previous">❮</button>
+            <div id="card-dots" class="card-dots"></div>
+            <button class="card-nav-button next-button" aria-label="Next">❯</button>
+        </div>
     </div>
 
 
     </div>
     <!-- footer  -->
     <div id="footer-container"></div>
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-    const video = document.getElementById("gameplay-video");
-    const text = document.getElementById("video-text");
-    const dotsContainer = document.getElementById("card-dots");
-    const prev = document.querySelector(".prev-button");
-    const next = document.querySelector(".next-button");
-    const tvNoise = document.querySelector(".tv-noise");
-    const playBtn = document.getElementById("playBtn");
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const video = document.getElementById("gameplay-video");
+            const text = document.getElementById("video-text");
+            const dotsContainer = document.getElementById("card-dots");
+            const prev = document.querySelector(".prev-button");
+            const next = document.querySelector(".next-button");
+            const tvNoise = document.querySelector(".tv-noise");
+            const playBtn = document.getElementById("playBtn");
 
-    
+
 
             const videos = [
                 {
@@ -94,55 +94,64 @@ document.addEventListener("DOMContentLoaded", () => {
                             <span class="arcadebutton A"></span>,<span class="arcadebutton C"></span>= Punch <br> <span class="arcadebutton B"></span>,<span class="arcadebutton D"></span>= Kick
                     </p>
                     `},
-                { src: "/gameplay/videos/throw.mp4", text: `
+                {
+                    src: "/gameplay/videos/throw.mp4", text: `
                     <h1>Throws</h1>
                     <p>
                         → / ← + <span class="arcadebutton C"></span><br>
                         Throws can be used to interrupt (break) some jump-ins and combos. Certain characters also have extra throw moves.
                     </p>
                     ` },
-                { src: "/gameplay/videos/supers.mp4", text: `
+                {
+                    src: "/gameplay/videos/supers.mp4", text: `
                     <h1>Supers</h1>
                     <p>
                         Super meter holds 3 stocks, fills by attacking, dashing, taunting, or taking/blocking hits.
                     </p>
                     ` },
-                { src: "/gameplay/videos/juggles.mp4", text: `
+                {
+                    src: "/gameplay/videos/juggles.mp4", text: `
                     <h1>Combos</h1>
                     <p>
                         The game features an accessible combo system with plenty of cancelable moves and super juggles.                    </p>
                     ` },
-                { src: "/gameplay/videos/roll.mp4", text: `
+                {
+                    src: "/gameplay/videos/roll.mp4", text: `
                     <h1>Back roll</h1>
                     <p>
                         After a non-super hit, press 3 buttons when knocked down to escape pressure and avoid follow-ups.
                     </p>
                     ` },
-                { src: "/gameplay/videos/dash.mp4", text: `
+                {
+                    src: "/gameplay/videos/dash.mp4", text: `
                     <h1>Dashes</h1>
                     <p>
                         →→ / ←← <br>
                         All characters except Condor can dash. Some have invincible backdashes, while others can cancel dashes for faster movement or longer jumps.
                     </p>
                     ` },
-                { src: "/gameplay/videos/dizzy.mp4", text: `
+                {
+                    src: "/gameplay/videos/dizzy.mp4", text: `
                     <h1>Dizzy</h1>
                     <p> Repeated hits can cause dizziness. Mash directions and buttons to recover instantly with brief invincibility.</p>
                     ` },
-                { src: "/gameplay/videos/chip.mp4", text: `
+                {
+                    src: "/gameplay/videos/chip.mp4", text: `
                     <h1>Chip damage</h1>
                     <p>
                         Chip damage is the health lost while blocking, preventing endless defense and can cause a KO. Supers deal little chip, so use specials to finish opponents.
                     </p>
                     ` },
-                { src: "/gameplay/videos/breakers.mp4", text: `
+                {
+                    src: "/gameplay/videos/breakers.mp4", text: `
                     <h1>Break</h1>
                     <p>
                         Some combos can be interrupted (broken) with a backdash, throw, or attack. 
                         Master unbreakable combos, identify breakable ones, and use them strategically to bait your opponent.
                     </p>
                     ` },
-                { src: "/gameplay/videos/risk.mp4", text: `
+                {
+                    src: "/gameplay/videos/risk.mp4", text: `
                     <h1>Risk system</h1>
                         <b>Damage Scaling</b>: Increases with dealt damage and inactivity. The player with the life lead takes more damage until both bars are equal.<br><br>
                         <b>Winner-loser effect</b>: Round winner takes extra damage, and the loser gains defense. This effect increases with the beat-by count (players usually reset the game for fairness).
@@ -151,73 +160,97 @@ document.addEventListener("DOMContentLoaded", () => {
 
             let index = 0;
 
-    // Create dots dynamically
-    videos.forEach((_, i) => {
-        const dot = document.createElement("span");
-        dot.classList.add("dot");
-        dot.addEventListener("click", () => {
-            index = i;
+            // Create dots dynamically
+            videos.forEach((_, i) => {
+                const dot = document.createElement("span");
+                dot.classList.add("dot");
+                dot.addEventListener("click", () => {
+                    index = i;
+                    showVideo();
+                });
+                dotsContainer.appendChild(dot);
+            });
+
+            const dots = dotsContainer.querySelectorAll(".dot");
+
+            function updateDots() {
+                dots.forEach((dot, i) => {
+                    dot.classList.toggle("active", i === index);
+                });
+            }
+
+            function showTVNoise() {
+                if (!tvNoise) return;
+                tvNoise.classList.add("show");
+                setTimeout(() => {
+                    tvNoise.classList.remove("show");
+                }, 700);
+            }
+
+            function showVideo() {
+                showTVNoise();
+                const current = videos[index];
+                video.pause();
+                playBtn.style.display = "flex"; // show play button again
+                video.src = current.src;
+                text.innerHTML = current.text;
+                prev.disabled = index === 0;
+                next.disabled = index === videos.length - 1;
+                updateDots();
+                video.load();
+            }
+
+            prev.addEventListener("click", () => {
+                if (index > 0) index--;
+                showVideo();
+            });
+
+            next.addEventListener("click", () => {
+                if (index < videos.length - 1) index++;
+                showVideo();
+            });
+
+            // Play button logic
+            playBtn.addEventListener("click", () => {
+                video.play();
+                playBtn.style.display = "none";
+            });
+
+            video.addEventListener("pause", () => {
+                playBtn.style.display = "flex";
+            });
+
+            video.addEventListener("play", () => {
+                playBtn.style.display = "none";
+            });
+
             showVideo();
         });
-        dotsContainer.appendChild(dot);
-    });
 
-    const dots = dotsContainer.querySelectorAll(".dot");
+        // Responsive button positioning
+        document.addEventListener("DOMContentLoaded", () => {
+            const videoText = document.querySelector('#video-text');
+            const buttonContainer = document.querySelector('.button-container');
 
-    function updateDots() {
-        dots.forEach((dot, i) => {
-            dot.classList.toggle("active", i === index);
+            // Save original desktop position (after video-text)
+            const originalParent = buttonContainer.parentNode;
+            const originalNextSibling = buttonContainer.nextSibling;
+
+            function handlePosition() {
+                if (window.innerWidth <= 991) {
+                    // MOBILE: move before #video-text
+                    videoText.parentNode.insertBefore(buttonContainer, videoText);
+                } else {
+                    // DESKTOP: restore original placement
+                    if (buttonContainer.parentNode !== originalParent) {
+                        originalParent.insertBefore(buttonContainer, originalNextSibling);
+                    }
+                }
+            }
+            handlePosition();
+            window.addEventListener('resize', handlePosition);
         });
-    }
-
-        function showTVNoise() {
-        if (!tvNoise) return;
-        tvNoise.classList.add("show");
-        setTimeout(() => {
-            tvNoise.classList.remove("show");
-        }, 700);
-    }
-
-    function showVideo() {
-        showTVNoise();
-        const current = videos[index];
-        video.pause();
-        playBtn.style.display = "flex"; // show play button again
-        video.src = current.src;
-        text.innerHTML = current.text;
-        prev.disabled = index === 0;
-        next.disabled = index === videos.length - 1;
-        updateDots();
-        video.load();
-    }
-
-    prev.addEventListener("click", () => {
-        if (index > 0) index--;
-        showVideo();
-    });
-
-    next.addEventListener("click", () => {
-        if (index < videos.length - 1) index++;
-        showVideo();
-    });
-
-        // Play button logic
-    playBtn.addEventListener("click", () => {
-        video.play();
-        playBtn.style.display = "none";
-    });
-
-    video.addEventListener("pause", () => {
-        playBtn.style.display = "flex";
-    });
-
-    video.addEventListener("play", () => {
-        playBtn.style.display = "none";
-    });
-
-    showVideo();
-});
-</script>
+    </script>
 
 </body>
 
