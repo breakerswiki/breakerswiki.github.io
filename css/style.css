@@ -6,7 +6,7 @@ body{margin:0;padding:0;font-size:16px;line-height:1.5;color:#232a31;animation:b
 from{opacity:0;transform:translateY(10px)}
 to{opacity:1;transform:translateY(0)}
 }
-body{background-color:#fff;background-image:linear-gradient(to right,#f0f0f0 2px,transparent 2px),linear-gradient(to bottom,#f0f0f0 2px,transparent 2px);background-size:40px 40px}
+body{background-color:#fff;background-image:linear-gradient(to right,#f5f5f5 2px,transparent 2px),linear-gradient(to bottom,#f5f5f5 2px,transparent 2px);background-size:40px 40px}
 img.lazy-image{filter:blur(10px);transition:filter .3s ease}
 img:not(.lazy-image){filter:blur(0)}
 .arcadecab{z-index:1}
@@ -70,8 +70,8 @@ h2.throws{background:#d07953}
 .move span:first-child{text-align:left}
 .move span:last-child{text-align:right}
 .move:nth-child(odd){background-color:#f9f9f9}
-.move{background-color:#fff; transition: .3s;}
-.move:hover {cursor: pointer; background: #d0d0d0;}
+.move{background-color:#fff;transition:.3s}
+.move:hover{cursor:pointer;background:#d0d0d0}
 .move{display:flex;justify-content:space-between;padding:5px;align-items:center;border-top:1px solid #ccc}
 .moveproperties{display:none;border-bottom:2px solid #d3d3d3}
 input[type=checkbox]{display:none}
@@ -101,6 +101,7 @@ a:focus{outline:0}
 ol,ul.combos li{list-style-type:none}
 ul.combos{margin-top:10px;font-size:large;border:1px solid #d3d3d3;padding-left:0}
 ul.combos li:nth-child(odd){background-color:#f9f9f9}
+ul.combos li:nth-child(even){background-color:#fff}
 ul.combos li{padding:5px;border:1px solid #d3d3d3;margin-bottom:0}
 #charselect a{cursor:pointer}
 #charselect a img{transition:transform .3s;background-size:cover}
@@ -284,80 +285,14 @@ img.logo{width:130px}
 @media (min-width:1500px){
 body{zoom:1.2;transform:scale(1.1);transform-origin:top center}
 }
-
-
-/* Wrapper */
-.video-js.vjs-arcade {
-  aspect-ratio: 4 / 3;
-  border: 4px solid #000;
-  background: #000;
-  font-family: "Pixelify Sans", monospace;
-}
-
-/* Control bar */
-.vjs-arcade .vjs-control-bar {
-  background: linear-gradient(#111, #000);
-  border-top: 2px solid #333;
-}
-
-/* Buttons */
-.vjs-arcade .vjs-button > .vjs-icon-placeholder:before {
-  color: #fff;
-  text-shadow: 1px 1px 0 #000;
-}
-
-/* Target the big play button */
-.video-js .vjs-big-play-button {
-    /* 1. Force a perfect square */
-    width: 80px !important;
-    height: 80px !important;
-    
-    /* 2. Turn the square into a circle */
-    border-radius: 50% !important;
-    border-color: transparent !important;
-    
-    /* 3. Center the icon vertically and horizontally */
-    line-height: 80px !important;
-    padding: 0 !important;
-    
-    /* 4. Keep it in the middle of the player */
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-    margin: 0 !important;
-}
-.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
-  font-size: 1.5em;
-}
-
-/* Progress bar */
-.vjs-arcade .vjs-play-progress {
-  background: #ff2a2a;
-}
-
-.vjs-arcade .vjs-slider {
-  background: #222;
-}
-
-/* Volume bar */
-.vjs-arcade .vjs-volume-level {
-  background: #ff2a2a;
-}
-
-/* Force 4:3 ratio */
-.video-js {
-  aspect-ratio: 4 / 3;
-  width: 100%;
-  background: #000;
-}
-
-/* Ensure video fills the box */
-.video-js video {
-  width: 100%;
-  object-fit: contain;
-}
-
-.vjs-poster img {
-    width: 100%;
-}
-
+.video-js.vjs-arcade{aspect-ratio:4/3;border:4px solid #000;background:#000;font-family:"Pixelify Sans",monospace}
+.vjs-arcade .vjs-control-bar{background:linear-gradient(#111,#000);border-top:2px solid #333}
+.vjs-arcade .vjs-button>.vjs-icon-placeholder:before{color:#fff;text-shadow:1px 1px 0 #000}
+.video-js .vjs-big-play-button{width:80px!important;height:80px!important;border-radius:50%!important;border-color:transparent!important;line-height:80px!important;padding:0!important;top:50%!important;left:50%!important;transform:translate(-50%,-50%)!important;margin:0!important}
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before{font-size:1.5em}
+.vjs-arcade .vjs-play-progress{background:#ff2a2a}
+.vjs-arcade .vjs-slider{background:#222}
+.vjs-arcade .vjs-volume-level{background:#ff2a2a}
+.video-js{aspect-ratio:4/3;width:100%;background:#000}
+.video-js video{width:100%;object-fit:contain}
+.vjs-poster img{width:100%}
