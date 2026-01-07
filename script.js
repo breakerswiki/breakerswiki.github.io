@@ -1,3 +1,92 @@
+// Main script for loading header/footer, initializing videos, and other UI features
+document.addEventListener("DOMContentLoaded", () => {
+  // 1. UI Elements (Fast)
+  loadContent("header.html", "header-container", () => {
+    highlightCurrentNav();
+    initDropdown();
+  });
+
+  loadContent("footer.html", "footer-container", () => {
+    const yearSpan = document.getElementById("about-year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  });
+
+  // 2. Check exclusion paths
+  const path = window.location.pathname.replace(/\/$/, "");
+  const DISABLED_PATHS = ["", "/", "/gameplay"];
+  if (DISABLED_PATHS.includes(path) || path.endsWith("/gameplay")) return;
+
+  // 3. Setup Intersection Observer for Videos
+  const videos = document.querySelectorAll(".main-content video");
+  if (videos.length > 0) {
+    setupLazyVideoInit(videos);
+  }
+});
+
+function setupLazyVideoInit(videos) {
+  // Configuration for when to trigger (20% of video visible)
+  const options = {
+    root: null, 
+    threshold: 0.2
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const videoElement = entry.target;
+        
+        // Load assets first, then initialize this specific video
+        ensureVideoAssets(() => {
+          initSingleVideoJS(videoElement);
+        });
+
+        // Stop watching this video once it's initialized
+        observer.unobserve(videoElement);
+      }
+    });
+  }, options);
+
+  videos.forEach(v => observer.observe(v));
+}
+
+function ensureVideoAssets(callback) {
+  if (window.videojs) {
+    callback();
+    return;
+  }
+  
+  // Create CSS
+  const css = document.createElement("link");
+  css.rel = "stylesheet";
+  css.href = "https://vjs.zencdn.net/8.10.0/video-js.css";
+  document.head.appendChild(css);
+
+  // Create Script
+  const script = document.createElement("script");
+  script.src = "https://vjs.zencdn.net/8.10.0/video.min.js";
+  script.onload = callback;
+  document.body.appendChild(script);
+}
+
+function initSingleVideoJS(video) {
+  if (video.classList.contains("video-js")) return;
+
+  const id = video.id || "vjs-lazy-" + Math.random().toString(36).substr(2, 9);
+  video.id = id;
+
+  if (video.dataset.poster) video.poster = video.dataset.poster;
+
+  video.classList.add("video-js", "vjs-default-skin", "vjs-big-play-centered", "vjs-arcade");
+
+  videojs(id, {
+    fluid: true,
+    aspectRatio: "4:3",
+    controls: true,
+    preload: video.getAttribute("preload") || "none"
+  });
+}
+
+
 // Remove trailing slash from the current URL if it exists
 if (window.location.pathname.endsWith('/')) {
   const newUrl = window.location.pathname.slice(0, -1);
@@ -15,6 +104,7 @@ function loadContent(file, containerId, callback) {
     })
     .catch(error => console.error(`Error loading ${file}:`, error));
 }
+
 
 
 
@@ -53,13 +143,7 @@ function highlightCurrentNav() {
 }
 
 
-// Load header + footer once DOM is ready
-document.addEventListener("DOMContentLoaded", () => {
-  loadContent("header.html", "header-container", () => {
-  highlightCurrentNav();  
-  initDropdown();       
-});
-});
+
 
 
 // Dropdown menu functionality
@@ -234,3 +318,68 @@ document.addEventListener("DOMContentLoaded", () => {
   lazyImages.forEach(img => observer.observe(img));
   lazyVideos.forEach(video => observer.observe(video));
 });
+
+
+// Popup logic for moves and Breakers Series links
+document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('popup');
+    const popupContent = document.querySelector('.popup-content');
+    const popupText = document.getElementById('popup-text');
+
+    function closePopup() {
+        popup.classList.remove('show', 'fixed-center');
+        // Reset styles so they don't interfere with the next click
+        popup.style.top = '';
+        popup.style.left = '';
+        popup.style.transform = '';
+        popupText.innerHTML = ''; 
+    }
+
+    // --- LOGIC FOR MOVES (Positioned where clicked) ---
+    document.querySelectorAll('.move').forEach(item => {
+        item.addEventListener('click', (e) => {
+            popupText.innerHTML = item.getAttribute('data-text');
+            
+            const rect = item.getBoundingClientRect();
+            const centerX = rect.left + (rect.width / 2) + window.pageXOffset;
+            const centerY = rect.top + (rect.height / 2) + window.pageYOffset;
+
+            popup.style.position = 'absolute';
+            popup.style.left = `${centerX}px`;
+            popup.style.top = `${centerY}px`;
+            popup.style.transform = 'translate(-50%, -50%)';
+
+            popup.classList.add('show');
+            
+            const video = popupText.querySelector('video');
+            if (video) video.play();
+        });
+    });
+
+    // --- LOGIC FOR BREAKERS SERIES (Always center of screen) ---
+    document.querySelectorAll('.breakers-series a').forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            popupText.innerHTML = link.getAttribute('data-text');
+
+            // Force fixed positioning to the middle of the viewport
+            popup.style.position = 'fixed';
+            popup.style.top = '0';
+            popup.style.left = '0';
+            popup.style.width = '100%';
+            popup.style.height = '100vh';
+            popup.style.transform = 'none'; 
+            
+            popup.classList.add('show', 'fixed-center');
+        });
+    });
+
+    document.querySelector('.close')?.addEventListener('click', closePopup);
+    
+    window.addEventListener('click', (e) => {
+        if (e.target === popup) closePopup();
+    });
+});
+
+
+

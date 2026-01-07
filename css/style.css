@@ -1,19 +1,22 @@
 @import url(https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap);
 @import url(https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css);
 *{scroll-behavior:smooth}
-body{margin:0;padding:0;font-size:16px;line-height:1.5;color:#232a31;animation:fade-in-right ease .7s forwards}
-@keyframes fade-in-right{
-from{opacity:0;transform:translateX(-15px)}
-to{opacity:1;transform:translateX(0)}
+body{margin:0;padding:0;font-size:16px;line-height:1.5;color:#232a31;animation:bodyReveal .8s ease-out forwards}
+@keyframes bodyReveal{
+from{opacity:0;transform:translateY(10px)}
+to{opacity:1;transform:translateY(0)}
 }
+body{background-color:#fff;background-image:linear-gradient(to right,#f0f0f0 2px,transparent 2px),linear-gradient(to bottom,#f0f0f0 2px,transparent 2px);background-size:40px 40px}
 img.lazy-image{filter:blur(10px);transition:filter .3s ease}
 img:not(.lazy-image){filter:blur(0)}
 .arcadecab{z-index:1}
-img.logo{transition:transform .3s;margin-right:5px}
+img.logo{transition:transform .3s;margin-right:5px;filter:drop-shadow(1px 0 0 #000) drop-shadow(-1px 0 0 #000) drop-shadow(0 1px 0 #000) drop-shadow(0 -1px 0 #000)}
 img.logo:hover{transform:scale(1.1)}
 img.logo:active{top:5px;position:relative}
 .logo a:hover{background-color:transparent!important}
 .logo{margin:0!important}
+.footer-logo{max-width:600px;width:90%;display:block;margin:0 auto;margin-top:10px;border:2px solid #000;border-radius:10px}
+#footer-container{padding-bottom:300px;text-align:center;background:#fff}
 .title{font-size:60px;margin:0;line-height:4.5rem;font-weight:700}
 .breakers-series{display:flex;justify-content:flex-end;position:relative;gap:8px;margin-bottom:20px}
 .breakers-series img{border:2px solid #000;width:auto;height:120px;cursor:pointer;transition:transform .3s}
@@ -32,9 +35,10 @@ img.logo:active{top:5px;position:relative}
 .navbar,ol{padding:10px}
 .navbar{position:relative}
 .toggle-link,a:hover{text-decoration:underline}
-.nav-links,.navbar{align-items:center;background:#fff;display:flex}
+.nav-links,.navbar{align-items:center;display:flex;background:0 0}
 .nav-links{list-style:none;padding:0;gap:10px;margin:0 auto;padding:10px}
 .nav-links li{margin:0}
+.nav-links a.logo:hover{text-underline-offset:10px;background-color:transparent!important}
 .nav-links a:hover{text-underline-offset:10px;background-color:#d3d3d3}
 .nav-links a{color:#000;font-size:1.2rem;padding:10px;transition:background-color .7s ease}
 .nav-links a,button.hide_content,ol li::before{text-decoration:none}
@@ -60,11 +64,14 @@ h2.commands{background:#6198d5}
 h2.specials{background:#8a7fbe}
 h2.supers{background:#cd7aac}
 h2.throws{background:#d07953}
+.normal-properties{display:flex;justify-content:space-between;margin-bottom:5px}
 .move span{flex:1;vertical-align:middle}
 .move img{vertical-align:middle;margin-right:2px;margin-left:2px}
 .move span:first-child{text-align:left}
 .move span:last-child{text-align:right}
 .move:nth-child(odd){background-color:#f9f9f9}
+.move{background-color:#fff; transition: .3s;}
+.move:hover {cursor: pointer; background: #d0d0d0;}
 .move{display:flex;justify-content:space-between;padding:5px;align-items:center;border-top:1px solid #ccc}
 .moveproperties{display:none;border-bottom:2px solid #d3d3d3}
 input[type=checkbox]{display:none}
@@ -79,7 +86,7 @@ a:focus{outline:0}
 .main-content{border-collapse:collapse}
 .main-content{margin:0 auto;padding:2rem 1rem;padding-top:0;margin-bottom:200px}
 .main-content header{width:100%}
-.main-content{flex:1;word-wrap:break-word;opacity:1;max-width:530px;background-color:#fff}
+.main-content{flex:1;word-wrap:break-word;opacity:1;max-width:530px}
 .main-content :first-child,.main-content ol,.main-content ul{margin-top:0}
 .main-content img{max-width:100%}
 .main-content h1,.main-content h2,.main-content h3,.main-content h5,.main-content h6{margin-top:2rem;margin-bottom:1rem}
@@ -196,9 +203,10 @@ a.moreinfos{font-size:1.1rem;color:gray;cursor:pointer;margin:0 auto;display:tab
 .properties span{white-space:nowrap}
 .properties img{vertical-align:middle;margin-right:4px}
 .properties:nth-child(odd){background-color:#f9f9f9}
+.properties:nth-child(even){background-color:#ffff}
 .properties:last-of-type{border-bottom:none}
 .column{display:flex;flex-direction:column;align-items:center;gap:10px}
-.main-about{font-size:larger;margin-top:20px!important}
+.main-about{font-size:larger;margin-top:20px!important;padding-left:5%;padding-right:5%;width:100%;max-width:800px;margin:0 auto}
 .main-char-content{width:100%}
 .card-dots{display:flex;gap:.4em}
 .dot{width:10px;height:10px;background:#e8e8e8;border-radius:50%;cursor:pointer;transition:background .3s}
@@ -229,11 +237,15 @@ a.moreinfos{font-size:1.1rem;color:gray;cursor:pointer;margin:0 auto;display:tab
 .breakers-series{justify-content:center!important}
 #matchups p{margin-top:5px}
 #video-text p{height:130px}
-img.logo{width:80px}
 p{font-size:17px}
 p.description{font-size:21px;text-align:center}
 .gameplay{display:flex;gap:0;justify-content:center;flex-direction:column}
 .video-text{text-align:center}
+.video-text p{font-size:1.4rem}
+img.logo{width:90px!important}
+}
+@media (prefers-reduced-motion:reduce){
+.animate-text span{animation:none}
 }
 @media screen and (min-width:991px){
 .container{display:flex;gap:30px;flex-direction:row}
@@ -246,7 +258,6 @@ img.logo{width:130px}
 .characters-guide-main img{height:120px}
 .main-content{max-width:1500px!important}
 .howtoplay{max-width:970px!important}
-.about{max-width:500px!important}
 .cabinet-container img{width:100%}
 .cabinet-container video{width:61%;height:30%}
 .main-char-content p{font-size:larger}
@@ -263,9 +274,90 @@ img.logo{width:130px}
 .characters-guide-main img{height:120px}
 .main-content{max-width:1500px!important}
 .howtoplay{max-width:970px!important}
-.about{max-width:500px!important}
 .cabinet-container img{width:100%}
 .cabinet-container video{width:58%;height:30%}
 .main-char-content p{font-size:larger}
 .gameplay{display:flex;justify-content:center}
+.video-text p{font-size:1.8rem}
+.video-text{width:370px}
 }
+@media (min-width:1500px){
+body{zoom:1.2;transform:scale(1.1);transform-origin:top center}
+}
+
+
+/* Wrapper */
+.video-js.vjs-arcade {
+  aspect-ratio: 4 / 3;
+  border: 4px solid #000;
+  background: #000;
+  font-family: "Pixelify Sans", monospace;
+}
+
+/* Control bar */
+.vjs-arcade .vjs-control-bar {
+  background: linear-gradient(#111, #000);
+  border-top: 2px solid #333;
+}
+
+/* Buttons */
+.vjs-arcade .vjs-button > .vjs-icon-placeholder:before {
+  color: #fff;
+  text-shadow: 1px 1px 0 #000;
+}
+
+/* Target the big play button */
+.video-js .vjs-big-play-button {
+    /* 1. Force a perfect square */
+    width: 80px !important;
+    height: 80px !important;
+    
+    /* 2. Turn the square into a circle */
+    border-radius: 50% !important;
+    border-color: transparent !important;
+    
+    /* 3. Center the icon vertically and horizontally */
+    line-height: 80px !important;
+    padding: 0 !important;
+    
+    /* 4. Keep it in the middle of the player */
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0 !important;
+}
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  font-size: 1.5em;
+}
+
+/* Progress bar */
+.vjs-arcade .vjs-play-progress {
+  background: #ff2a2a;
+}
+
+.vjs-arcade .vjs-slider {
+  background: #222;
+}
+
+/* Volume bar */
+.vjs-arcade .vjs-volume-level {
+  background: #ff2a2a;
+}
+
+/* Force 4:3 ratio */
+.video-js {
+  aspect-ratio: 4 / 3;
+  width: 100%;
+  background: #000;
+}
+
+/* Ensure video fills the box */
+.video-js video {
+  width: 100%;
+  object-fit: contain;
+}
+
+.vjs-poster img {
+    width: 100%;
+}
+

@@ -29,7 +29,7 @@
           <div class="breakers-series">
             <a
               data-text='
-              <iframe width="100%" height="248px" src="https://www.youtube.com/embed/P1bNzNpGASw?si=hCWPdY6h-c8VYzfA" 
+              <iframe width="100%" height="248px" src="https://www.youtube.com/embed/8SF_IVrEaBY?si=T_KkYWrkdSluZjNR" 
                 loading="lazy" title="YouTube video player" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
@@ -79,38 +79,6 @@
           </div>
 
 
-          <script>
-            const popup = document.getElementById('popup');
-            const popupText = document.getElementById('popup-text');
-            const videoContainer = document.getElementById('popup-text');
-
-            document.querySelectorAll('.breakers-series a').forEach(link => {
-              link.addEventListener('click', (e) => {
-                e.preventDefault();
-                const text = link.getAttribute('data-text');
-                videoContainer.innerHTML = text;
-                popup.classList.add('show');
-              });
-            });
-
-            function closePopup() {
-              popup.classList.remove('show');
-              const iframe = videoContainer.querySelector('iframe');
-              if (iframe) {
-                const currentSrc = iframe.src;
-                iframe.src = '';
-              }
-            }
-
-            document.querySelector('.close').addEventListener('click', () => {
-              closePopup();
-            });
-            popup.addEventListener('click', (e) => {
-              if (e.target.id === 'popup') {
-                closePopup();
-              }
-            });
-          </script>
 
         </div>
 
