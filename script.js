@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function setupLazyVideoInit(videos) {
   // Configuration for when to trigger (20% of video visible)
   const options = {
-    root: null, 
+    root: null,
     threshold: 0.2
   };
 
@@ -34,7 +34,7 @@ function setupLazyVideoInit(videos) {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         const videoElement = entry.target;
-        
+
         // Load assets first, then initialize this specific video
         ensureVideoAssets(() => {
           initSingleVideoJS(videoElement);
@@ -54,7 +54,7 @@ function ensureVideoAssets(callback) {
     callback();
     return;
   }
-  
+
   // Create CSS
   const css = document.createElement("link");
   css.rel = "stylesheet";
@@ -214,7 +214,7 @@ function showContent(contentId) {
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll("button.color-button"); // only target .color-button
   const defaultButton = document.getElementById("button1");
-  
+
   if (defaultButton) {
     defaultButton.classList.add("active");
     showContent("infos");
@@ -320,58 +320,37 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Popup logic for moves and Breakers Series links
+// Popup logic for movelist and Breakers Series description
 document.addEventListener('DOMContentLoaded', () => {
     const popup = document.getElementById('popup');
     const popupContent = document.querySelector('.popup-content');
     const popupText = document.getElementById('popup-text');
 
     function closePopup() {
-        popup.classList.remove('show', 'fixed-center');
-        // Reset styles so they don't interfere with the next click
-        popup.style.top = '';
-        popup.style.left = '';
-        popup.style.transform = '';
-        popupText.innerHTML = ''; 
+        popup.classList.remove('show');
+        popupText.innerHTML = '';
     }
 
-    // --- LOGIC FOR MOVES (Positioned where clicked) ---
-    document.querySelectorAll('.move').forEach(item => {
-        item.addEventListener('click', (e) => {
-            popupText.innerHTML = item.getAttribute('data-text');
-            
-            const rect = item.getBoundingClientRect();
-            const centerX = rect.left + (rect.width / 2) + window.pageXOffset;
-            const centerY = rect.top + (rect.height / 2) + window.pageYOffset;
+    function showPopup(e, text) {
+        e.preventDefault();
+        popupText.innerHTML = text;
 
-            popup.style.position = 'absolute';
-            popup.style.left = `${centerX}px`;
-            popup.style.top = `${centerY}px`;
-            popup.style.transform = 'translate(-50%, -50%)';
+        // Handle the scale factor for large screens (1.1 scale + 1.2 zoom)
+        const isLargeScreen = window.innerWidth >= 1500;
+        const scaleFactor = isLargeScreen ? 1.32 : 1; 
 
-            popup.classList.add('show');
-            
-            const video = popupText.querySelector('video');
-            if (video) video.play();
-        });
-    });
+        // Apply coordinates
+        popupContent.style.left = `${e.pageX / scaleFactor}px`;
+        popupContent.style.top = `${e.pageY / scaleFactor}px`;
 
-    // --- LOGIC FOR BREAKERS SERIES (Always center of screen) ---
-    document.querySelectorAll('.breakers-series a').forEach(link => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-            popupText.innerHTML = link.getAttribute('data-text');
+        popup.classList.add('show');
 
-            // Force fixed positioning to the middle of the viewport
-            popup.style.position = 'fixed';
-            popup.style.top = '0';
-            popup.style.left = '0';
-            popup.style.width = '100%';
-            popup.style.height = '100vh';
-            popup.style.transform = 'none'; 
-            
-            popup.classList.add('show', 'fixed-center');
-        });
+        const video = popupText.querySelector('video');
+        if (video) video.play();
+    }
+
+    document.querySelectorAll('.move, .breakers-series a').forEach(item => {
+        item.addEventListener('click', (e) => showPopup(e, item.getAttribute('data-text')));
     });
 
     document.querySelector('.close')?.addEventListener('click', closePopup);
@@ -380,6 +359,5 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target === popup) closePopup();
     });
 });
-
 
 
