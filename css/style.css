@@ -16,7 +16,7 @@ img.logo:active{top:5px;position:relative}
 .logo a:hover{background-color:transparent!important}
 .logo{margin:0!important}
 .footer-logo{max-width:600px;width:90%;display:block;margin:0 auto;margin-top:10px;border:2px solid #000;border-radius:10px}
-#footer-container{padding-bottom:300px;text-align:center;background:#fff}
+#footer-container{padding-bottom:300px;text-align:center;background:#fff;margin: 40px;}
 .title{font-size:60px;margin:0;line-height:4.5rem;font-weight:700}
 .breakers-series{display:flex;justify-content:flex-end;position:relative;gap:8px;margin-bottom:20px}
 .breakers-series img{border:2px solid #000;width:auto;height:120px;cursor:pointer;transition:transform .3s}
