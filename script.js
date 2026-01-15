@@ -1,6 +1,24 @@
-// Main script for loading header/footer, initializing videos, and other UI features
+// --- CONFIGURATION ---
+const DISABLED_PATHS = ["", "/", "/gameplay"];
+const INPUT_IMAGES = {
+  "360": "/img/inputs/Arcade-Stick-360.png", "ChargeBack": "/img/inputs/Arcade-Stick-CB.png",
+  "ChargeBack_Forward": "/img/inputs/Arcade-Stick-CBF.png", "ChargeDown_Up": "/img/inputs/Arcade-Stick-CDU.png",
+  "ChargeDownBack": "/img/inputs/Arcade-Stick-CDb.png", "Delta": "/img/inputs/Arcade-Stick-Delta.png",
+  "Down": "/img/inputs/Arcade-Stick-Down.png", "DP": "/img/inputs/Arcade-Stick-Dp.png",
+  "HCB": "/img/inputs/Arcade-Stick-Hcb.png", "HCF": "/img/inputs/Arcade-Stick-Hcf.png",
+  "Left_Right": "/img/inputs/Arcade-Stick-LR.png", "Left": "/img/inputs/Arcade-Stick-Left.png",
+  "QCB": "/img/inputs/Arcade-Stick-Qcb.png", "QCF": "/img/inputs/Arcade-Stick-Qcf.png",
+  "Right": "/img/inputs/Arcade-Stick-Right.png", "UpLeft": "/img/inputs/Arcade-Stick-UL.png",
+  "UpRight": "/img/inputs/Arcade-Stick-UR.png", "Up": "/img/inputs/Arcade-Stick-Up.png",
+  "Air": "/img/inputs/Control-Modifier-Air.png", "Tap": "/img/inputs/Control-Modifier-Tap.png",
+  "DownLeft": "/img/inputs/Arcade-Stick-DL.png", "DownRight": "/img/inputs/Arcade-Stick-DR.png"
+};
+
+// --- MAIN INITIALIZATION ---
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. UI Elements (Fast)
+  cleanURL();
+  
+  // 1. UI & Navigation
   loadContent("header.html", "header-container", () => {
     highlightCurrentNav();
     initDropdown();
@@ -11,57 +29,145 @@ document.addEventListener("DOMContentLoaded", () => {
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
   });
 
-  // 2. Check exclusion paths
+// 2. Management of excluded paths
   const path = window.location.pathname.replace(/\/$/, "");
-  const DISABLED_PATHS = ["", "/", "/gameplay"];
   if (DISABLED_PATHS.includes(path) || path.endsWith("/gameplay")) return;
 
-  // 3. Setup Intersection Observer for Videos
-  const videos = document.querySelectorAll(".main-content video");
-  if (videos.length > 0) {
-    setupLazyVideoInit(videos);
-  }
+// 3. Specific initializations
+  setImageSrc();
+  initGlobalLazyLoading();
+  initPopups();
+  initTabs();
 });
 
-function setupLazyVideoInit(videos) {
-  // Configuration for when to trigger (20% of video visible)
-  const options = {
-    root: null,
-    threshold: 0.2
-  };
+// --- FUNCTIONS ---
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const videoElement = entry.target;
-
-        // Load assets first, then initialize this specific video
-        ensureVideoAssets(() => {
-          initSingleVideoJS(videoElement);
-        });
-
-        // Stop watching this video once it's initialized
-        observer.unobserve(videoElement);
-      }
-    });
-  }, options);
-
-  videos.forEach(v => observer.observe(v));
+// Cleaning the URL (Trailing slash)
+function cleanURL() {
+  if (window.location.pathname.length > 1 && window.location.pathname.endsWith('/')) {
+    const newUrl = window.location.pathname.slice(0, -1);
+    window.history.replaceState(null, null, newUrl);
+  }
 }
 
-function ensureVideoAssets(callback) {
-  if (window.videojs) {
-    callback();
-    return;
+// Generic Header/Footer loader
+function loadContent(file, containerId, callback) {
+  fetch(file)
+    .then(res => res.text())
+    .then(data => {
+      const container = document.getElementById(containerId);
+      if (container) {
+        container.innerHTML = data;
+        if (callback) callback();
+      }
+    })
+    .catch(err => console.error(`Error loading ${file}:`, err));
+}
+
+// Navigation & Dropdown menu
+function highlightCurrentNav() {
+  const currentPath = window.location.pathname;
+  const isCharPage = currentPath.startsWith("/characters");
+
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    const href = link.getAttribute("href");
+    if (!link.classList.contains("logo") && (currentPath === href || (href?.startsWith("/characters") && isCharPage))) {
+      Object.assign(link.style, { backgroundColor: "black", color: "white" });
+    }
+  });
+
+  const charBtn = document.querySelector(".dropdown-toggle");
+  if (charBtn && isCharPage) Object.assign(charBtn.style, { backgroundColor: "black", color: "white" });
+
+  document.querySelectorAll(".dropdown-menu li a").forEach(l => l.style.backgroundColor = "transparent");
+}
+
+function initDropdown() {
+  const dropdown = document.querySelector(".dropdown");
+  const toggle = document.querySelector(".dropdown-toggle");
+  if (!dropdown || !toggle) return;
+
+  toggle.addEventListener("click", (e) => (e.stopPropagation(), dropdown.classList.toggle("open")));
+  document.addEventListener("click", () => dropdown.classList.remove("open"));
+}
+
+// Tab management (Info, Movelist, Guide, Combos, Matchups)
+function switchTab(targetId, groupSelector, activeElement, activeClass = 'active') {
+  document.querySelectorAll(groupSelector).forEach(sec => sec.style.display = sec.id === targetId ? "block" : "none");
+  if (activeElement) {
+    const parent = activeElement.parentElement.tagName === 'LI' ? activeElement.closest('ul') : activeElement.parentElement;
+    parent.querySelectorAll('.' + activeClass + ', .clicked').forEach(el => el.classList.remove(activeClass, 'clicked'));
+    activeElement.classList.add(activeElement.tagName === 'A' ? 'clicked' : activeClass);
   }
+}
 
-  // Create CSS
+function initTabs() {
+  // Character tabs
+  const charButtons = document.querySelectorAll("button.color-button");
+  if (document.getElementById("button1")) switchTab("infos", "#infos, #movelist, #guide, #combos, #matchups", document.getElementById("button1"));
+  
+  charButtons.forEach(btn => btn.addEventListener("click", () => {
+    const target = btn.textContent.toLowerCase().trim(); 
+    const sectionMap = {"infos":"infos", "movelist":"movelist", "guide":"guide", "combos":"combos", "matchups":"matchups"};
+  }));
+
+  // Matchups
+  const shoLink = document.querySelector("a[onclick*='sho']");
+  if (document.getElementById('sho') && shoLink) switchTab('sho', '#saizo, #pielle, #rila, #dao-long, #condor, #sho, #maherl, #tia, #alsion', shoLink);
+}
+
+// Lazy Loading (Images, Posters, VideoJS)
+function initGlobalLazyLoading() {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      
+      const el = entry.target;
+
+      // Case 1 : VideoJS (Lazy initialization)
+      if (el.tagName === 'VIDEO' && el.closest('.main-content')) {
+        ensureVideoAssets(() => initSingleVideoJS(el));
+      } 
+
+      // Case 2 : Lazy-image
+      else if (el.dataset.src) {
+        if (el.tagName === 'IMG') {
+          el.src = el.dataset.src;
+          el.classList.remove('lazy-image');
+        }
+        if (el.tagName === 'VIDEO') { 
+          const source = el.querySelector('source');
+          if (source) {
+            source.src = el.dataset.src;
+            el.load();
+          }
+        }
+      }
+
+      // Case 3 : Videos posters
+      if (el.dataset.poster) {
+        el.poster = el.dataset.poster;
+        el.removeAttribute('data-poster');
+      }
+
+      // Stop observing once the element is loaded
+      obs.unobserve(el);
+    });
+  }, { 
+    rootMargin: '0px 0px 200px 0px', 
+    threshold: 0.01 
+  });
+
+  const targets = document.querySelectorAll('.main-content video, img.lazy-image, video[data-src], video[data-poster]');
+  targets.forEach(el => observer.observe(el));
+}
+
+// VideoJS Core
+function ensureVideoAssets(callback) {
+  if (window.videojs) return callback();
   const css = document.createElement("link");
-  css.rel = "stylesheet";
-  css.href = "https://vjs.zencdn.net/8.10.0/video-js.css";
+  css.rel = "stylesheet"; css.href = "https://vjs.zencdn.net/8.10.0/video-js.css";
   document.head.appendChild(css);
-
-  // Create Script
   const script = document.createElement("script");
   script.src = "https://vjs.zencdn.net/8.10.0/video.min.js";
   script.onload = callback;
@@ -70,294 +176,40 @@ function ensureVideoAssets(callback) {
 
 function initSingleVideoJS(video) {
   if (video.classList.contains("video-js")) return;
-
-  const id = video.id || "vjs-lazy-" + Math.random().toString(36).substr(2, 9);
-  video.id = id;
-
-  if (video.dataset.poster) video.poster = video.dataset.poster;
-
+  video.id = video.id || "vjs-lazy-" + Math.random().toString(36).substr(2, 9);
   video.classList.add("video-js", "vjs-default-skin", "vjs-big-play-centered", "vjs-arcade");
-
-  videojs(id, {
-    fluid: true,
-    aspectRatio: "4:3",
-    controls: true,
-    preload: video.getAttribute("preload") || "none"
-  });
+  videojs(video.id, { fluid: true, aspectRatio: "4:3", controls: true, preload: video.getAttribute("preload") || "none" });
 }
 
+// Popups & Inputs
+function initPopups() {
+  const popup = document.getElementById('popup');
+  const popupText = document.getElementById('popup-text');
+  if (!popup) return;
 
-// Remove trailing slash from the current URL if it exists
-if (window.location.pathname.endsWith('/')) {
-  const newUrl = window.location.pathname.slice(0, -1);
-  window.history.replaceState(null, null, newUrl); // Update the URL without reloading the page
-}
-
-
-// Header - Footer loader
-function loadContent(file, containerId, callback) {
-  fetch(file)
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById(containerId).innerHTML = data;
-      if (callback) callback(); // Run callback after content is loaded
-    })
-    .catch(error => console.error(`Error loading ${file}:`, error));
-}
-
-
-
-
-// Highlight the current page link in the navigation bar
-function highlightCurrentNav() {
-  const currentPath = window.location.pathname;
-
-  // 1. Highlight current nav <a> items
-  document.querySelectorAll(".nav-links li a, .nav-links li.dropdown a").forEach(link => {
-    const href = link.getAttribute("href");
-
-    // Exact match (Gameplay, About, etc.)
-    if (currentPath === href) {
-      link.style.backgroundColor = "black";
-      link.style.color = "white";
-    }
-
-    // Parent Characters link stays bold for any /characters/... subpage
-    if (href && href.startsWith("/characters") && currentPath.startsWith("/characters")) {
-      link.style.backgroundColor = "black";
-      link.style.color = "white";
-    }
+  const close = () => { popup.classList.remove('show'); popupText.innerHTML = ''; };
+  
+  document.querySelectorAll('.move').forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault();
+      popupText.innerHTML = item.getAttribute('data-text');
+      const scale = window.innerWidth >= 1500 ? 1.32 : 1;
+      Object.assign(popup.querySelector('.popup-content').style, { left: `${e.pageX / scale}px`, top: `${e.pageY / scale}px` });
+      popup.classList.add('show');
+      popupText.querySelector('video')?.play();
+    });
   });
 
-  // 2. Highlight Characters dropdown button if on a /characters/... page
-  const charactersButton = document.querySelector(".dropdown-toggle");
-  if (charactersButton && currentPath.startsWith("/characters")) {
-    charactersButton.style.backgroundColor = "black";
-    charactersButton.style.color = "white";
-  }
-
-  // 3. Set background-color: transparent for dropdown menu links
-  document.querySelectorAll(".dropdown-menu li a").forEach(dropdownLink => {
-    dropdownLink.style.backgroundColor = "transparent";
-  });
+  document.querySelector('.close')?.addEventListener('click', close);
+  window.addEventListener('click', (e) => e.target === popup && close());
 }
 
-
-
-
-
-// Dropdown menu functionality
-function initDropdown() {
-  const dropdown = document.querySelector(".dropdown");
-  const toggle = document.querySelector(".dropdown-toggle");
-
-  // Safety check (prevents null errors if something changes)
-  if (!dropdown || !toggle) return;
-
-  toggle.addEventListener("click", (e) => {
-    e.stopPropagation();
-    dropdown.classList.toggle("open");
-  });
-
-  // Close when clicking anywhere else
-  document.addEventListener("click", (e) => {
-    if (!dropdown.contains(e.target)) {
-      dropdown.classList.remove("open");
-    }
-  });
-}
-
-// Set <img> sources for stick inputs using html classes
-const inputImages = {
-  "360": "/img/inputs/Arcade-Stick-360.png",
-  "ChargeBack": "/img/inputs/Arcade-Stick-CB.png",
-  "ChargeBack_Forward": "/img/inputs/Arcade-Stick-CBF.png",
-  "ChargeDown_Up": "/img/inputs/Arcade-Stick-CDU.png",
-  "ChargeDownBack": "/img/inputs/Arcade-Stick-CDb.png",
-  "Delta": "/img/inputs/Arcade-Stick-Delta.png",
-  "Down": "/img/inputs/Arcade-Stick-Down.png",
-  "DP": "/img/inputs/Arcade-Stick-Dp.png",
-  "HCB": "/img/inputs/Arcade-Stick-Hcb.png",
-  "HCF": "/img/inputs/Arcade-Stick-Hcf.png",
-  "Left_Right": "/img/inputs/Arcade-Stick-LR.png",
-  "Left": "/img/inputs/Arcade-Stick-Left.png",
-  "QCB": "/img/inputs/Arcade-Stick-Qcb.png",
-  "QCF": "/img/inputs/Arcade-Stick-Qcf.png",
-  "Right": "/img/inputs/Arcade-Stick-Right.png",
-  "UpLeft": "/img/inputs/Arcade-Stick-UL.png",
-  "UpRight": "/img/inputs/Arcade-Stick-UR.png",
-  "Up": "/img/inputs/Arcade-Stick-Up.png",
-  "Air": "/img/inputs/Control-Modifier-Air.png",
-  "Tap": "/img/inputs/Control-Modifier-Tap.png",
-  "DownLeft": "/img/inputs/Arcade-Stick-DL.png",
-  "DownRight": "/img/inputs/Arcade-Stick-DR.png"
-};
 function setImageSrc() {
-  for (let className in inputImages) {
-    const imgElements = document.getElementsByClassName(className);
-    for (let img of imgElements) {
-      img.src = inputImages[className];
-    }
-  }
-}
-document.addEventListener("DOMContentLoaded", setImageSrc);
-
-
-// Toggle content menu visibility on character pages.
-function showContent(contentId) {
-  document.querySelectorAll("#infos, #movelist, #guide, #combos, #matchups").forEach(section => {
-    section.style.display = section.id === contentId ? "block" : "none";
-  });
-}
-
-// Display "Infos" by default and maintain active button color when clicked.
-document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll("button.color-button"); // only target .color-button
-  const defaultButton = document.getElementById("button1");
-
-  if (defaultButton) {
-    defaultButton.classList.add("active");
-    showContent("infos");
-  }
-
-  buttons.forEach(button => {
-    button.addEventListener("click", () => {
-      document.querySelector(".color-button.active")?.classList.remove("active");
-      button.classList.add("active");
-    });
-  });
-});
-
-
-
-
-// Toggle Content on matchup section
-function toggleContent(contentId, clickedLink) {
-  // Hide content of all sections
-  document.querySelectorAll("#saizo, #pielle, #rila, #dao-long, #condor, #sho, #maherl, #tia, #alsion").forEach(content => {
-    content.style.display = "none";
-  });
-
-  // Show the specified content if it exists
-  const contentElement = document.getElementById(contentId);
-  if (contentElement) {
-    contentElement.style.display = "block";
-  }
-
-  // Remove .clicked from all links
-  document.querySelectorAll('#charselect a').forEach(a => {
-    a.classList.remove('clicked');
-  });
-
-  // Add .clicked to the selected link
-  if (clickedLink) {
-    clickedLink.classList.add('clicked');
+  for (let className in INPUT_IMAGES) {
+    Array.from(document.getElementsByClassName(className)).forEach(img => img.src = INPUT_IMAGES[className]);
   }
 }
 
-
-// Simulate click on #sho matchup when the page loads, if it exists
-document.addEventListener("DOMContentLoaded", () => {
-  const shoLink = document.querySelector("a[onclick*='sho']");
-  if (document.getElementById('sho') && shoLink) {
-    toggleContent('sho', shoLink);
-  }
-});
-
-
-
-
-// Lazy-loads <video> elements when they enter the viewport
-document.addEventListener('DOMContentLoaded', () => {
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(({ isIntersecting, target }) => {
-      if (isIntersecting) {
-        const src = target.dataset.src;
-        if (src) {
-          target.querySelector('source').src = src;
-          target.load();
-          obs.unobserve(target);
-        }
-      }
-    });
-  });
-
-  document.querySelectorAll('video[data-src]').forEach(v => observer.observe(v));
-});
-
-// Lazy-loads <img> elements with the class "lazy-image" when they enter the viewport
-document.addEventListener("DOMContentLoaded", () => {
-  const lazyImages = document.querySelectorAll('img.lazy-image');
-  const lazyVideos = document.querySelectorAll('video[data-poster]');
-
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) return;
-
-      const el = entry.target;
-
-      // Handle <img>
-      if (el.tagName === 'IMG' && el.dataset.src) {
-        el.src = el.dataset.src;
-        el.classList.remove('lazy-image');
-      }
-
-      // Handle <video>
-      if (el.tagName === 'VIDEO' && el.dataset.poster) {
-        el.poster = el.dataset.poster;
-        el.removeAttribute('data-poster');
-      }
-
-      observer.unobserve(el);
-    });
-  }, {
-    rootMargin: '0px 0px 200px 0px',
-    threshold: 0.01
-  });
-
-  lazyImages.forEach(img => observer.observe(img));
-  lazyVideos.forEach(video => observer.observe(video));
-});
-
-
-// Popup logic for movelist and Breakers Series description
-document.addEventListener('DOMContentLoaded', () => {
-    const popup = document.getElementById('popup');
-    const popupContent = document.querySelector('.popup-content');
-    const popupText = document.getElementById('popup-text');
-
-    function closePopup() {
-        popup.classList.remove('show');
-        popupText.innerHTML = '';
-    }
-
-    function showPopup(e, text) {
-        e.preventDefault();
-        popupText.innerHTML = text;
-
-        // Handle the scale factor for large screens (1.1 scale + 1.2 zoom)
-        const isLargeScreen = window.innerWidth >= 1500;
-        const scaleFactor = isLargeScreen ? 1.32 : 1; 
-
-        // Apply coordinates
-        popupContent.style.left = `${e.pageX / scaleFactor}px`;
-        popupContent.style.top = `${e.pageY / scaleFactor}px`;
-
-        popup.classList.add('show');
-
-        const video = popupText.querySelector('video');
-        if (video) video.play();
-    }
-
-    document.querySelectorAll('.move, .breakers-series a').forEach(item => {
-        item.addEventListener('click', (e) => showPopup(e, item.getAttribute('data-text')));
-    });
-
-    document.querySelector('.close')?.addEventListener('click', closePopup);
-    
-    window.addEventListener('click', (e) => {
-        if (e.target === popup) closePopup();
-    });
-});
-
-
+// Bridge for legacy HTML onclick events
+window.showContent = (id) => switchTab(id, "#infos, #movelist, #guide, #combos, #matchups", document.querySelector(`button[onclick*="${id}"]`));
+window.toggleContent = (id, link) => switchTab(id, "#saizo, #pielle, #rila, #dao-long, #condor, #sho, #maherl, #tia, #alsion", link);

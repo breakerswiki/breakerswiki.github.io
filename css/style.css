@@ -16,7 +16,7 @@ img.logo:active{top:5px;position:relative}
 .logo a:hover{background-color:transparent!important}
 .logo{margin:0!important}
 .footer-logo{max-width:600px;width:90%;display:block;margin:0 auto;margin-top:10px;border:2px solid #000;border-radius:10px}
-#footer-container{padding-bottom:300px;text-align:center;background:#fff;margin: 40px;}
+#footer-container{text-align:center;background:#fff;padding: 40px 40px 300px 40px;}
 .title{font-size:60px;margin:0;line-height:4.5rem;font-weight:700}
 .breakers-series{display:flex;justify-content:flex-end;position:relative;gap:8px;margin-bottom:20px}
 .breakers-series img{border:2px solid #000;width:auto;height:120px;cursor:pointer;transition:transform .3s}
@@ -24,7 +24,6 @@ img.logo:active{top:5px;position:relative}
 .popup{display:none;position:fixed;top:0;left:0;width:100%;height:100%;opacity:0;pointer-events:none;transition:opacity .3s ease;z-index:9999}
 .popup.show{display:block;opacity:1;pointer-events:all}
 .popup-content{position:absolute;padding:20px;width:90%;max-width:500px!important;transform:translate(-50%,-50%) scale(.9);transition:transform .3s ease;z-index:100}
-.popup-content.breakers-popup{max-width:380px!important; top:30%!important;left:50%!important;transform:translate(-50%,-50%) scale(1);width:95%;}
 .popup.show .popup-content{transform:translate(-50%,-50%) scale(1);background:#fff;border:4px solid #000}
 .float-img{float:left;width:115px;height:auto;margin:0 12px 4px 0;border:2px solid #000}
 .close{position:absolute;top:0;right:15px;font-size:24px;color:gray;font-weight:700;cursor:pointer}
