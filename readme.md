@@ -9,9 +9,8 @@ Explore the full wiki at [Breakers Wiki](https://breakerswiki.github.io), where 
 
 ## Project Structure
 
-- **`index.html`**: Main page
+- **`index.html`**: Main page and tips for gameplay mechanics.
 - **`/characters`**: Characters guide and info.
-- **`/gameplay`**: Guide and tips for gameplay mechanics.
 - **`/img`**: Images and media assets.
 
 ## Contributing

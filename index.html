@@ -38,7 +38,6 @@
 
         <div class="content">
 
-          
           <div class="cabinet-container">
             <!-- Cabinet Image -->
             <img src="img/assets/TaitoEgret.webp" class="arcadecab" alt="Arcade Cabinet" loading="lazy">
@@ -59,7 +58,7 @@
     </div>
 
 
-    <div class="title" style="margin: 0 auto; text-align: center; margin-top: 120px; margin-bottom: 50px;">How to play</div>
+    <div class="subtitle" style="margin: 0 auto; text-align: center; margin-top: 120px; margin-bottom: 50px;">How to play</div>
 
         <div class="gameplay">
 
@@ -70,7 +69,7 @@
                     <div class="tv-noise"></div>
 
                     <video id="gameplay-video" playsinline loop preload="metadata">
-                        <source src="/gameplay/videos/br-how-to-play.mp4" type="video/mp4">
+                        <source src="/img/assets/gameplay/videos/br-how-to-play.mp4" type="video/mp4">
                         Your browser does support HTML5 video.
                     </video>
                     <button class="play-button" id="playBtn">▶</button>
@@ -92,7 +91,7 @@
             <button class="card-nav-button next-button" aria-label="Next">❯</button>
         </div>
 
-    <div class="title" style="margin: 0 auto; text-align: center; padding-top: 120px; margin-bottom: 50px;">Character Select</div>
+    <div class="subtitle" style="margin: 0 auto; text-align: center; padding-top: 120px; margin-bottom: 50px;">Character Select</div>
 
     <div class="character-select">
       <a href="/characters/sho" class="character sho"><div><span>Sho</span></div></a>
@@ -130,7 +129,7 @@
 
             const videos = [
                 {
-                    src: "/gameplay/videos/br-how-to-play.mp4",
+                    src: "/img/assets/gameplay/videos/br-how-to-play.mp4",
                     text: `
                     <h1>Button layout</h1>
                     <p>
@@ -140,7 +139,7 @@
                     </p>
                     `},
                 {
-                    src: "/gameplay/videos/throw.mp4", text: `
+                    src: "/img/assets/gameplay/videos/throw.mp4", text: `
                     <h1>Throws</h1>
                     <p>
                         → / ← + <span style="margin-bottom:20px" class="arcadebutton C"></span><br>
@@ -148,21 +147,21 @@
                     </p>
                     ` },
                 {
-                    src: "/gameplay/videos/supers.mp4", text: `
+                    src: "/img/assets/gameplay/videos/supers.mp4", text: `
                     <h1>Supers</h1>
                     <p>
                         Almost any action fills the Super meter: attacking, taunting, dashing, blocking or taking hits. All characters have multiple Supers, and each consumes 1 meter.
                     </p>
                     ` },
                 {
-                    src: "/gameplay/videos/juggles.mp4", text: `
+                    src: "/img/assets/gameplay/videos/juggles.mp4", text: `
                     <h1>Combos</h1>
                     <p>
                       Breakers Revenge makes combos quite easy because it uses a generous input buffer, most characters have plenty of move cancels, and there are frequent super juggle opportunities.
                     </p>
                     ` },
                 {
-                    src: "/gameplay/videos/roll.mp4", text: `
+                    src: "/img/assets/gameplay/videos/roll.mp4", text: `
                     <h1>Back roll</h1>
                     <p>
                         <span class="arcadebutton A"></span>+<span class="arcadebutton B"></span>+<span style="margin-bottom:20px" class="arcadebutton C"></span><br>
@@ -170,7 +169,7 @@
                     </p>
                     ` },
                 {
-                    src: "/gameplay/videos/dash.mp4", text: `
+                    src: "/img/assets/gameplay/videos/dash.mp4", text: `
                     <h1>Dashes</h1>
                     <p>
                         →→ / ←← <br><br>
@@ -178,26 +177,26 @@
                     </p>
                     ` },
                 {
-                    src: "/gameplay/videos/dizzy.mp4", text: `
+                    src: "/img/assets/gameplay/videos/dizzy.mp4", text: `
                     <h1>Dizzy</h1>
                     <p> Repeated hits can cause dizziness. While dizzy, mash the directional inputs and buttons to recover more quickly. The recovery animation provides a brief window of invincibility.</p>
                     ` },
                 {
-                    src: "/gameplay/videos/chip.mp4", text: `
+                    src: "/img/assets/gameplay/videos/chip.mp4", text: `
                     <h1>Chip damage</h1>
                     <p>
                         Chip damage, sustained while blocking, can lead to a KO. Use specials to finish opponents, as supers deal minimal chip damage.
                     </p>
                     ` },
                 {
-                    src: "/gameplay/videos/breakers.mp4", text: `
+                    src: "/img/assets/gameplay/videos/breakers.mp4", text: `
                     <h1>Break</h1>
                     <p>
                         Some combos can be interrupted with backdashes, throws, or certain attacks. Use breakable combos to maximize damage against unaware opponents, but opt for unbreakable ones when you need reliable safety.
                         </p>
                     ` },
                 {
-                    src: "/gameplay/videos/risk.mp4", text: `
+                    src: "/img/assets/gameplay/videos/risk.mp4", text: `
 
                     <h1>Risk System</h1>
                     Refers to the comeback mechanics <hr style="margin-bottom: 0px;">
@@ -229,6 +228,10 @@
                 dots.forEach((dot, i) => {
                     dot.classList.toggle("active", i === index);
                 });
+                prev.style.color = (index === 0) ? "transparent" : "inherit";
+                next.style.color = (index === dots.length - 1) ? "transparent" : "inherit";
+                prev.style.pointerEvents = (index === 0) ? "none" : "auto";
+                next.style.pointerEvents = (index === dots.length - 1) ? "none" : "auto";
             }
 
             function showTVNoise() {

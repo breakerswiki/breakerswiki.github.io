@@ -1,5 +1,5 @@
 // --- CONFIGURATION ---
-const DISABLED_PATHS = ["", "/", "/gameplay"];
+const DISABLED_PATHS = ["", "/", "/index.html"];
 const INPUT_IMAGES = {
   "360": "/img/inputs/Arcade-Stick-360.png", "ChargeBack": "/img/inputs/Arcade-Stick-CB.png",
   "ChargeBack_Forward": "/img/inputs/Arcade-Stick-CBF.png", "ChargeDown_Up": "/img/inputs/Arcade-Stick-CDU.png",
@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // 2. Management of excluded paths
   const path = window.location.pathname.replace(/\/$/, "");
-  if (DISABLED_PATHS.includes(path) || path.endsWith("/gameplay")) return;
+  if (DISABLED_PATHS.includes(path)) return;
 
 // 3. Specific initializations
   setImageSrc();
