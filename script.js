@@ -64,6 +64,8 @@ function loadContent(file, containerId, callback) {
     .catch(err => console.error(`Error loading ${file}:`, err));
 }
 
+
+
 // Navigation & Dropdown menu
 function highlightCurrentNav() {
   const currentPath = window.location.pathname;
