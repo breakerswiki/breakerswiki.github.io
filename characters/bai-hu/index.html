@@ -16,13 +16,13 @@
 
 <body>
 
-  
+
   <div id="header-container"></div>
 
 
   <section class="main-content">
     <div class="container">
-     <div class="main-char-content">
+      <div class="main-char-content">
 
         <img src="/characters/bai-hu/img/bai-hu_background.webp" alt="Bai-hu Banner">
 
@@ -30,23 +30,30 @@
         <div class="nav-guide">
           <button class="color-button" id="button1" onclick="showContent('infos')">Infos</button>
           <button class="color-button" id="button2" onclick="showContent('movelist')">Moves</button>
-          <button class="color-button" id="button3"onclick="showContent('combos')">Combos</button>
+          <button class="color-button" id="button3" onclick="showContent('combos')">Combos</button>
         </div>
 
 
-        <div id="infos">          
+        <div id="infos">
+
+          <div class="warning-box">
+            <div class="custom-icon">!</div>
+            <div class="warning-content">
+              Forbidden from competitive play.<br>
+              His moveset is unfairly overpowered.
+            </div>
+          </div>
+
           <p>
-            Bai-Hu, the final boss of Breakers Revenge, initiated the tournament to discover the strongest fighters.
-          </p>
-          <p>
-            <u>How to unlock Bai-Hu:</u> 
-            At the character select screen, rotate P1’s joystick to the left <b>↻</b> and P2’s joystick to the right <b>↺</b>.
-          </p>
-          <p>
-            ⚠️ <b>Bai-Hu’s overpowered moves give him an unfair advantage, leading to his ban in competitive play.</b>
+            Bai-Hu (hidden character) is the final boss, he initiated the tournament to discover the strongest fighters.
           </p>
 
-        <h2>Gallery</h2>
+          <p>
+            To unlock Bai-Hu, at the character select screen, rotate P1’s joystick to the left ↻ and P2’s joystick to
+            the right ↺.
+          </p>
+
+          <h2>Gallery</h2>
           <a href="/characters/bai-hu/img/bai-hu_artwork_1.webp" target="_blank">
             <img src="/characters/bai-hu/img/bai-hu_artwork_1.webp" class="thumbnail-char" alt="1">
           </a>
@@ -63,8 +70,8 @@
 
           <div class="command-list">
 
-             <h2 class="normals">Normals</h2>
-          <div class="move" data-text="<h3>Normals properties</h3>               
+            <h2 class="normals">Normals</h2>
+            <div class="move" data-text="<h3>Normals properties</h3>               
                         <div class='normal-properties'>
                           <div><span class='arcadebutton A'></span> far/close</div>
                           <div><span class='mid'><span class='special-cancel'><span class='super-cancel'></div>
@@ -114,8 +121,8 @@
                           <div><span class='high'></div>
                         </div>
                         ">
-                          <span>All normals</span><span></span>
-          </div>
+              <span>All normals</span><span></span>
+            </div>
 
 
 
@@ -128,7 +135,7 @@
               <span>Iai Nage</span>
               <span><img class="Left">or<img class="Right">+<span class="arcadebutton C"></span></span>
             </div>
-            
+
             <div class="move" data-text="<h3>Dust Throw</h3>
             <span class='throw'><br><br>
               ...
@@ -136,9 +143,9 @@
               <span>Dust Throw</span>
               <span><img class="Air"><img class="Left">or<img class="Right">+<span class="arcadebutton C"></span></span>
             </div>
-            
+
             <h2 class="commands">Commands</h2>
-            
+
             <div class="move" data-text="<h3>Lunge Kick</h3>
             <span class='mid'><br><br>
               ...
@@ -146,7 +153,7 @@
               <span>Lunge Kick</span>
               <span><span class="arcadebutton B"></span>+<span class="arcadebutton C"></span></span>
             </div>
-            
+
             <div class="move" data-text="<h3>Head press</h3>
             <span class='high'><br><br>
               ...
@@ -154,9 +161,9 @@
               <span>Head Press</span>
               <span><span class="arcadebutton A"></span>+<span class="arcadebutton D"></span></span>
             </div>
-            
+
             <h2 class="specials">Specials</h2>
-            
+
             <div class="move" data-text="<h3>Goushaken</h3>
             <span class='mid'><br><br>
               ...
@@ -164,7 +171,7 @@
               <span>Goushaken</span>
               <span><span class="arcadebutton A"></span>+<span class="arcadebutton B"></span></span>
             </div>
-            
+
             <div class="move" data-text="<h3>Kouke Bakurai Shou</h3>
             <span class='mid'><br><br>
               ...
@@ -172,7 +179,7 @@
               <span>Kouke Bakurai Shou</span>
               <span><span class="arcadebutton A"></span>+<span class="arcadebutton C"></span></span>
             </div>
-            
+
             <div class="move" data-text="<h3>Genshiken</h3>
             <span class='mid'><br><br>
               ...
@@ -180,44 +187,47 @@
               <span>Genshiken</span>
               <span><span class="arcadebutton B"></span>+<span class="arcadebutton D"></span></span>
             </div>
-    
+
             <h2 class="supers">Supers</h2>
-            
+
             <div class="move" data-text="<h3>Shin Bakurai Shou</h3>
             <span class='mid'><span class='inv-startup'><span class='hard-knockdown'</span><br><br>
               ...
             ">
               <span>Shin Bakurai Shou</span>
-              <span><span class="arcadebutton A"></span>+<span class="arcadebutton B"></span>+<span class="arcadebutton C"></span></span>
+              <span><span class="arcadebutton A"></span>+<span class="arcadebutton B"></span>+<span
+                  class="arcadebutton C"></span></span>
             </div>
-            
+
             <div class="move" data-text="<h3>Nisetsu Ranbu</h3>
             <span class='mid'><span class='inv-startup'><span class='hard-knockdown'</span><br><br>
               ...
             ">
-            <span>Nisetsu Ranbu</span>
-            <span><span class="arcadebutton B"></span>+<span class="arcadebutton C"></span>+<span class="arcadebutton D"></span></span>
-          
-          </div>
+              <span>Nisetsu Ranbu</span>
+              <span><span class="arcadebutton B"></span>+<span class="arcadebutton C"></span>+<span
+                  class="arcadebutton D"></span></span>
 
-                    <div id="popup" class="popup">
-            <div class="popup-content">
-              <span class="close">&times;</span>
-              <div id="popup-text"></div>
             </div>
-          </div>
+
+            <div id="popup" class="popup">
+              <div class="popup-content">
+                <span class="close">&times;</span>
+                <div id="popup-text"></div>
+              </div>
+            </div>
 
           </div>
         </div>
 
 
         <div id="combos">
-     
 
-       
+
+
 
           <h2 id="meterless_combos">Meterless combos</h2>
-          <video data-poster="characters/bai-hu/videos/bai-hu_meterless_combo.jpg" controls loop muted  playsinline preload="none">
+          <video data-poster="characters/bai-hu/videos/bai-hu_meterless_combo.jpg" controls loop muted playsinline
+            preload="none">
             <source src="characters/bai-hu/videos/bai-hu_meterless_combo.mp4" type="video/mp4">
           </video>
           <ul class="combos">
@@ -231,17 +241,19 @@
 
 
           <h2 id="metered_combos">Metered combos</h2>
-          <video data-poster="characters/bai-hu/videos/bai-hu_metered_combo.jpg" controls loop muted  playsinline preload="none">
+          <video data-poster="characters/bai-hu/videos/bai-hu_metered_combo.jpg" controls loop muted playsinline
+            preload="none">
             <source src="characters/bai-hu/videos/bai-hu_metered_combo.mp4" type="video/mp4">
           </video>
           <ul class="combos">
             <li>2B, 2B, 5C > A+B > Super </li>
             <li>2B, 2B, 2C (1hit) > B+D > Super</li>
           </ul>
-          
+
 
           <h2 id="anti-air">Anti-air</h3>
-            <video data-poster="characters/bai-hu/videos/bai-hu_anti-air_combo.jpg" controls loop muted  playsinline preload="none">
+            <video data-poster="characters/bai-hu/videos/bai-hu_anti-air_combo.jpg" controls loop muted playsinline
+              preload="none">
               <source src="characters/bai-hu/videos/bai-hu_anti-air_combo.mp4" type="video/mp4">
             </video>
             <ul class="combos">
@@ -249,20 +261,21 @@
               <li>6D > 5D > Super</li>
               <li>5C > A+B (fireball loop)</li>
             </ul>
-          
-  
-  
+
+
+
             <h2 id="air-to-air">Air-to-air</h2>
-            <video data-poster="characters/bai-hu/videos/bai-hu_air-to-air_combo.jpg" controls loop muted  playsinline preload="none">
+            <video data-poster="characters/bai-hu/videos/bai-hu_air-to-air_combo.jpg" controls loop muted playsinline
+              preload="none">
               <source src="characters/bai-hu/videos/bai-hu_air-to-air_combo.mp4" type="video/mp4">
             </video>
             <ul class="combos">
               <li>jD > jC > A+B > Super </li>
-              <li>jC >  A+B (fireball loop)</li>
+              <li>jC > A+B (fireball loop)</li>
             </ul>
 
         </div>
-        
+
       </div>
     </div>
 
@@ -271,10 +284,10 @@
 
   <!-- footer  -->
   <div id="footer-container"></div>
-<!-- Thumbnail Fullscreen image container -->
-<div id="fullscreen-container" style="display:none;">
-  <img id="fullscreen-image" src="" alt="Fullsize">
-</div>
+  <!-- Thumbnail Fullscreen image container -->
+  <div id="fullscreen-container" style="display:none;">
+    <img id="fullscreen-image" src="" alt="Fullsize">
+  </div>
 
 
 </body>
