@@ -196,7 +196,7 @@ ol{counter-reset:item}
 .content,.main{padding:0 20px 20px}
 .cabinet-container{position:relative;max-width:750px}
 .cabinet-container img{display:block;width:100%;position:relative;z-index:10}
-.cabinet-container video{position:absolute;top:24%;left:20%;width:59%;height:29%;border-radius:20px;z-index:0;transform:perspective(200px) rotateX(5deg);border:none!important}
+.videointro {position:absolute;top:24%;left:20%;width:59%;height:29%;border-radius:20px;z-index:0;transform:perspective(200px) rotateX(5deg);border:none!important}
 input,optgroup,select,textarea{color:#3d4852;font-family:Muli,sans-serif;font-size:1rem;line-height:1.6}
 a.button{align-items:center;background-color:#3d4852;border:1px solid #3d4852;border-radius:4px;color:#fff;cursor:pointer;display:inline-flex;padding:.25rem .75rem;text-decoration:none;transition:all .25s ease-in-out}
 a.button:focus,a.button:hover{background-color:#58636f;box-shadow:0 0 2px 2px #bac6d3}
