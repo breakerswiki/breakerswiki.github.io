@@ -109,7 +109,7 @@ img.logo:active{top:5px;position:relative}
 }
 @media (max-width:600px){
 .character-select{grid-template-columns:repeat(3,1fr);margin:50px;margin-top: 5px;}
-.character.baihu{left:100%}
+.character.baihu{left:115%}
 .character span{font-size:.6rem}
 }
 .command-list{border:1px solid #ccc;border-collapse:collapse;width:100%}
