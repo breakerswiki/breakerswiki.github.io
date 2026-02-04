@@ -363,6 +363,8 @@ img.logo{width:130px}
 .video-text p{font-size:1.8rem}
 .risk-system{font-size:1.8rem}
 .video-text{width:370px}
+body{zoom:1.1;transform:scale(1.1);transform-origin:top center}
+
 }
 @media (min-width:1500px){
 body{zoom:1.2;transform:scale(1.1);transform-origin:top center}
