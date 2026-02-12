@@ -151,6 +151,9 @@ a:focus{outline:0}
 .gameplay h1{font-size:25px;color:#fff;width:fit-content;padding:12px;background:#000;margin-bottom:30px}
 ol,ul.combos li{list-style-type:none}
 ul.combos{margin-top:10px;font-size:large;border:1px solid #d3d3d3;padding-left:0}
+ul.guide{font-size:larger; padding: 20px; margin-left: 10px;}
+ul.guide li{padding:5px; margin-bottom:0}
+
 ul.combos li:nth-child(odd){background-color:#f9f9f9}
 ul.combos li:nth-child(even){background-color:#fff}
 ul.combos li{padding:5px;border:1px solid #d3d3d3;margin-bottom:0}
