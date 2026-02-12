@@ -315,7 +315,7 @@ a.moreinfos{font-size:1.1rem;color:gray;cursor:pointer;margin:0 auto;display:tab
 .breakers-series{justify-content:center!important}
 #matchups p{margin-top:5px}
 #video-text p{height:130px}
-p{font-size:17px}
+p{font-size:larger}
 p.description{font-size:21px;text-align:center}
 .gameplay{display:flex;gap:0;justify-content:center;flex-direction:column}
 .gameplay h1{margin:0 auto;margin-bottom:20px}
