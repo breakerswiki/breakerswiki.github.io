@@ -195,9 +195,19 @@ function initPopups() {
     item.addEventListener('click', (e) => {
       e.preventDefault();
       popupText.innerHTML = item.getAttribute('data-text');
+      
       const scale = window.innerWidth >= 1500 ? 1.32 : 1;
-      Object.assign(popup.querySelector('.popup-content').style, { left: `${e.pageX / scale}px`, top: `${e.pageY / scale}px` });
+      const content = popup.querySelector('.popup-content');
+
+      Object.assign(content.style, { 
+        left: `${e.pageX / scale}px`, 
+        top: `${e.pageY / scale}px` 
+      });
+
       popup.classList.add('show');
+
+      content.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
       popupText.querySelector('video')?.play();
     });
   });
@@ -205,7 +215,6 @@ function initPopups() {
   document.querySelector('.close')?.addEventListener('click', close);
   window.addEventListener('click', (e) => e.target === popup && close());
 }
-
 function setImageSrc() {
   for (let className in INPUT_IMAGES) {
     Array.from(document.getElementsByClassName(className)).forEach(img => img.src = INPUT_IMAGES[className]);
