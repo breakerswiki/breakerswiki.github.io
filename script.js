@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
   // 1. UI & Navigation
   loadContent("header.html", "header-container", () => {
     highlightCurrentNav();
-    initDropdown();
   });
 
   loadContent("footer.html", "footer-container", () => {
@@ -66,7 +65,7 @@ function loadContent(file, containerId, callback) {
 
 
 
-// Navigation & Dropdown menu
+// Navigation
 function highlightCurrentNav() {
   const currentPath = window.location.pathname;
   const isCharPage = currentPath.startsWith("/characters");
@@ -84,14 +83,6 @@ function highlightCurrentNav() {
   document.querySelectorAll(".dropdown-menu li a").forEach(l => l.style.backgroundColor = "transparent");
 }
 
-function initDropdown() {
-  const dropdown = document.querySelector(".dropdown");
-  const toggle = document.querySelector(".dropdown-toggle");
-  if (!dropdown || !toggle) return;
-
-  toggle.addEventListener("click", (e) => (e.stopPropagation(), dropdown.classList.toggle("open")));
-  document.addEventListener("click", () => dropdown.classList.remove("open"));
-}
 
 // Tab management (Info, Movelist, Guide, Combos, Matchups)
 function switchTab(targetId, groupSelector, activeElement, activeClass = 'active') {
@@ -224,3 +215,29 @@ function setImageSrc() {
 // Bridge for legacy HTML onclick events
 window.showContent = (id) => switchTab(id, "#infos, #movelist, #guide, #combos, #matchups", document.querySelector(`button[onclick*="${id}"]`));
 window.toggleContent = (id, link) => switchTab(id, "#saizo, #pielle, #rila, #dao-long, #condor, #sho, #maherl, #tia, #alsion", link);
+
+// Character Button function
+function goToCharacters() {
+    sessionStorage.setItem("scrollToCharacters", "true");
+    window.location.href = "/";
+}
+
+// Scroll with offset (for sticky header)
+function scrollToCharacterSection() {
+    const section = document.getElementById("character-section");
+    if (!section) return;
+
+    const offset = 80; // Adjust for your header height
+    const top = section.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({ top, behavior: "smooth" });
+}
+
+// Homepage scroll after navigation
+window.addEventListener("load", function () {
+    if (sessionStorage.getItem("scrollToCharacters") === "true") {
+        sessionStorage.removeItem("scrollToCharacters");
+        // Slight delay to ensure mobile layout is fully rendered
+        setTimeout(scrollToCharacterSection, 50);
+    }
+});
