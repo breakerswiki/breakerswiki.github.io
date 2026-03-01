@@ -319,7 +319,7 @@ p.description{font-size:21px;text-align:center}
 .risk-system li{font-size:1.4rem!important}
 img.logo{width:90px!important}
 .scroll-container{margin-top:0}
-.subtitle{font-size:38px;margin-bottom:20px!important}
+.subtitle{font-size:40px;line-height: 46px; margin-bottom:30px!important}
 }
 @media (prefers-reduced-motion:reduce){
 .animate-text span{animation:none}
