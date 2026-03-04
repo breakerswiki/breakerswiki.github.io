@@ -34,7 +34,7 @@ img.logo:active{top:5px;position:relative}
 .item{display:flex;flex-direction:column;align-items:center;background:#000;transition:transform .3s ease}
 .item:hover{transform:translateY(-10px)}
 .breakers-series img{border:2px solid #000;width:auto;height:120px;display:block}
-.year{margin:2px;font-size:13px;font-weight:700;color:#fff;background:#000}
+.year{margin:2px;font-size:13px;color:#fff;background:#000}
 p.description{max-width:500px}
 .popup{display:none;background:rgba(0,0,0,.7);position:fixed;top:0;left:0;width:100%;height:100%;opacity:0;pointer-events:none;transition:opacity .3s ease;z-index:9999}
 .popup.show{display:block;opacity:1;pointer-events:all}
