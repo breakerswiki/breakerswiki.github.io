@@ -182,7 +182,7 @@ function initPopups() {
 
   const close = () => { popup.classList.remove('show'); popupText.innerHTML = ''; };
   
-  document.querySelectorAll('.move').forEach(item => {
+  document.querySelectorAll('.move, .item').forEach(item => {
     item.addEventListener('click', (e) => {
       e.preventDefault();
       popupText.innerHTML = item.getAttribute('data-text');

@@ -27,35 +27,89 @@
             Learn about <b>Breakers Revenge</b>, one hidden gem of the Neo-Geo era: easy to pick up, fast-paced, and fun to play !
         </p>
         
-            <div class="breakers-series">
-              <div class="item">
-                <a target="_blank" href="https://www.youtube.com/watch?v=8SF_IVrEaBY">
-                  <img src="img/assets/boxart_Breakers.webp">
-                </a>
-                <div class="year">1996</div>
-              </div>
-          
-              <div class="item">
-                <a target="_blank" href="https://www.youtube.com/watch?v=yUf1b-d2WM4">
-                  <img src="img/assets/boxart_Breakers_Revenge.webp">
-                </a>
-                <div class="year">1998</div>
-              </div>
-          
-              <div class="item">
-                <a target="_blank" href="https://www.youtube.com/watch?v=hhbLiZiJU-8">
-                  <img src="img/assets/boxart_Breakers_Collection.webp">
-                </a>
-                <div class="year">2023</div>
-              </div>
-          
-              <div class="item">
-                <a target="_blank" href="https://www.youtube.com/watch?v=TQ0KpEspuho">
-                  <img src="img/assets/boxart_Breakers_Chicaco.webp">
-                </a>
-                <div class="year">2024</div>
-              </div>
-            </div>
+<div class="breakers-series">
+  
+  <div class="item" data-text='
+    <h4>Breakers (1996)</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8SF_IVrEaBY?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p class="popup-description">
+        Originally conceived in 1993 as <em>Tenrin no Syo Chicago</em> (later referred to <a href="https://archive.org/details/rgz5f4"><em>Crystal Legacy</em></a>), 
+        <strong>Breakers</strong> was released years later by <a href="https://en.wikipedia.org/wiki/Visco_Corporation">Visco</a> for <strong>Neo Geo MVS</strong>.
+        A 2D fighting game inspired by classics of the genre, known for its responsive gameplay
+        and distinctive characters.
+        Home versions were later released for <strong>Neo Geo AES</strong> and <strong>Neo Geo CD</strong>. The Neo Geo CD
+        version introduced additional features, including a Versus Mode, Survival, Extra Mode, an arranged soundtrack, and
+        the ability to play as the final boss, Bai-Hu.
+    </p>
+    '>
+    <a href="#">
+      <img src="img/assets/boxart_Breakers.webp" alt="Breakers 1996">
+    </a>
+    <div class="year">1996</div>
+  </div>
+
+  <div class="item" data-text='
+    <h4>Breakers Revenge (1998)</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/yUf1b-d2WM4?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p class="popup-description">
+        <strong>Breakers Revenge</strong> is the enhanced sequel to Breakers.
+        This game features <strong>updated character artwork and color palettes</strong>, <strong>redesigned stages</strong>
+        with additional visual details. It also introduces a new playable character, <strong>Saizo</strong>, a powerful
+        ninja fighter who adds more diversity to the roster.
+        Breakers Revenge is widely considered the definitive version of Breakers and the most popular title in the series
+        among fighting game fans.
+    </p>
+
+    '>
+    <a href="#">
+      <img src="img/assets/boxart_Breakers_Revenge.webp" alt="Breakers Revenge">
+    </a>
+    <div class="year">1998</div>
+  </div>
+
+  <div class="item" data-text='
+    <h4>Breakers Collection (2023)</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/hhbLiZiJU-8?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p class="popup-description">
+        <strong>Breakers Collection</strong> is a compilation developed and published by 
+        <strong><a href="https://www.qubyteinteractive.com/">QUByte Interactive</a></strong>.
+        It includes both <strong>Breakers</strong> and <strong>Breakers Revenge</strong>.
+        The collection introduces modern features such as rollback netcode with cross-platform online play, ranked matches
+        and global leaderboards, an enhanced training mode with detailed gameplay data, an art gallery, and an all-new Team
+        Battle mode.
+    </p>
+    '>
+  <a href="#">
+      <img src="img/assets/boxart_Breakers_Collection.webp" alt="Breakers Collection">
+    </a>
+    <div class="year">2023</div>
+  </div>
+
+  <div class="item" data-text='
+    <h4>Breakers Chicago (2024)</h4>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TQ0KpEspuho?" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p class="popup-description">
+    <strong>Breakers Revenge Chicago</strong> pays tribute to the original prototype. This enhanced <strong><a href="https://exa.ac/">EXA-Arcadia</a></strong> release features new <strong>character artwork and color palettes</strong>, <strong>Bai-Hu</strong> as a playable character, and a dedicated training mode.
+    It also includes the <strong>Neo Geo CD</strong> soundtrack, a new announcer, and orginal stages from <em>Breakers</em>. Players can choose between three distinct gameplay styles: <strong>Revenge</strong>, <strong>Extra</strong>, and <strong>Chicago</strong>.
+    </p>
+    '>
+    <a href="#">
+      <img src="img/assets/boxart_Breakers_Chicaco.webp" alt="Breakers Chicago">
+    </a>
+    <div class="year">2024</div>
+  </div>
+
+</div>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <div id="popup-text"></div>
+  </div>
+</div>
+
+
+            
 
         </div>
 
@@ -343,6 +397,11 @@
             handlePosition();
             window.addEventListener('resize', handlePosition);
         });
+
+        document.addEventListener('DOMContentLoaded', () => {
+    initPopups();
+});
+
     </script>
 
 
