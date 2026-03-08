@@ -375,5 +375,5 @@ body{zoom:1.2;transform:scale(1.1);transform-origin:top center}
 .warning-box{display:flex;align-items:center;background-color:#f3dbdb;border:2px solid #faa4a4;padding:15px 20px}
 .custom-icon{width:30px;height:30px;background-color:#fd2f2f;border:2px solid #000;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px;margin-right:20px;flex-shrink:0}
 .warning-content{line-height:1.4;font-size:large}
-#popup-text iframe{max-width:100%;aspect-ratio:16/9;height:auto}
+#popup-text iframe{max-width:100%;aspect-ratio:16/9;height:auto; margin-top: 18px;}
 p.popup-description{font-size:16px;margin-top:10px}
