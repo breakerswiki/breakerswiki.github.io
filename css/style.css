@@ -38,17 +38,17 @@ img.logo:active{top:5px;position:relative}
 p.description{max-width:500px}
 .popup{display:none;background:rgba(0,0,0,.7);position:fixed;top:0;left:0;width:100%;height:100%;opacity:0;pointer-events:none;transition:opacity .3s ease;z-index:9999}
 .popup.show{display:block;opacity:1;pointer-events:all}
+.popup-content{left:50%!important;transform:translate(-50%,-50%) scale(1);animation:popup-reveal .4s cubic-bezier(.16,1,.3,1) forwards}
 .popup-content{position:absolute;padding:20px;max-width:400px!important;transform:translate(-50%,-50%);transition:transform .3s ease;z-index:100}
-.popup-content{left:50%!important;transform:translate(-50%,-50%) scale(1);animation:reveal .5s ease-out forwards}
-@keyframes reveal{
-from{opacity:0;transform:translate(-50%,-45%) scale(.95)}
+@keyframes popup-reveal{
+from{opacity:0;transform:translate(-50%,-48%) scale(.96)}
 to{opacity:1;transform:translate(-50%,-50%) scale(1)}
 }
 .popup-content ul{padding-left:10px}
 .popup-content img{display:block;margin:0 auto;padding-bottom:20px}
 .popup.show .popup-content{transform:translate(-50%,-50%) scale(1);background:#fff;border:4px solid #000}
 .float-img{float:left;width:115px;height:auto;margin:0 12px 4px 0;border:2px solid #000}
-.close{display: none; position:absolute;top:0;right:15px;font-size:24px;color:gray;font-weight:700;cursor:pointer}
+.close{display:none;position:absolute;top:0;right:15px;font-size:24px;color:gray;font-weight:700;cursor:pointer}
 .inputs,td img{font-size:14px}
 .inputs img,td img{margin-left:3px;vertical-align:middle;margin-right:3px}
 .inputs img{text-align:center;display:inline}
@@ -322,7 +322,9 @@ p.description{font-size:21px;text-align:center}
 .risk-system li{font-size:1.4rem!important}
 img.logo{width:90px!important}
 .scroll-container{margin-top:0}
-.subtitle{font-size:40px;line-height:46px;margin-bottom:30px!important}
+.main-about{font-size:16px}
+.main-about a{font-size:20px}
+.subtitle{font-size:32px;line-height:46px;margin-bottom:30px!important}
 }
 @media (prefers-reduced-motion:reduce){
 .animate-text span{animation:none}
@@ -375,5 +377,5 @@ body{zoom:1.2;transform:scale(1.1);transform-origin:top center}
 .warning-box{display:flex;align-items:center;background-color:#f3dbdb;border:2px solid #faa4a4;padding:15px 20px}
 .custom-icon{width:30px;height:30px;background-color:#fd2f2f;border:2px solid #000;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px;margin-right:20px;flex-shrink:0}
 .warning-content{line-height:1.4;font-size:large}
-#popup-text iframe{max-width:100%;aspect-ratio:16/9;height:auto;}
+#popup-text iframe{max-width:100%;aspect-ratio:16/9;height:auto}
 p.popup-description{font-size:16px;margin-top:10px}
