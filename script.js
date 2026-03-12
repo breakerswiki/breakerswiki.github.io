@@ -180,7 +180,13 @@ function initPopups() {
   const popupText = document.getElementById('popup-text');
   if (!popup) return;
 
-  const close = () => { popup.classList.remove('show'); popupText.innerHTML = ''; };
+  // Force Safari iOS à reconnaître l'élément comme cliquable
+  popup.style.cursor = 'pointer';
+
+  const close = () => { 
+    popup.classList.remove('show'); 
+    popupText.innerHTML = ''; 
+  };
   
   document.querySelectorAll('.move, .item').forEach(item => {
     item.addEventListener('click', (e) => {
@@ -196,16 +202,22 @@ function initPopups() {
       });
 
       popup.classList.add('show');
-
       content.scrollIntoView({ behavior: 'smooth', block: 'center' });
-
       popupText.querySelector('video')?.play();
     });
   });
 
   document.querySelector('.close')?.addEventListener('click', close);
-  window.addEventListener('click', (e) => e.target === popup && close());
+
+  // Gestion du clic extérieur (Compatible iOS/Android/Desktop)
+  const handleOutside = (e) => {
+    if (e.target === popup) close();
+  };
+
+  window.addEventListener('click', handleOutside);
+  window.addEventListener('touchstart', handleOutside);
 }
+
 function setImageSrc() {
   for (let className in INPUT_IMAGES) {
     Array.from(document.getElementsByClassName(className)).forEach(img => img.src = INPUT_IMAGES[className]);
