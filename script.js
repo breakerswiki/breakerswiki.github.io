@@ -180,7 +180,7 @@ function initPopups() {
   const popupText = document.getElementById('popup-text');
   if (!popup) return;
 
-  // Force Safari iOS à reconnaître l'élément comme cliquable
+// Force Safari iOS to recognize the element as clickable
   popup.style.cursor = 'pointer';
 
   const close = () => { 
@@ -209,7 +209,7 @@ function initPopups() {
 
   document.querySelector('.close')?.addEventListener('click', close);
 
-  // Gestion du clic extérieur (Compatible iOS/Android/Desktop)
+// External click management (iOS/Android/Desktop compatible)
   const handleOutside = (e) => {
     if (e.target === popup) close();
   };
