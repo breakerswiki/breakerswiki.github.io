@@ -65,7 +65,7 @@ to{opacity:1;transform:translate(-50%,-50%) scale(1)}
 .nav-links a,button.hide_content,ol li::before{text-decoration:none}
 .nav-guide button,.nav-links,body{font-family:Jost,sans-serif}
 .nav-guide button{font-size:18px}
-.nav-guide{display:flex;gap:5px;margin-bottom:20px;margin-top:20px}
+.nav-guide{display:flex;gap:5px;margin-bottom:20px;}
 .nav-guide button{background:0 0;color:#919191;appearance:none;-webkit-appearance:none;cursor:pointer;padding:5px;-webkit-transition:background-color .1s linear;-ms-transition:background-color .1s linear;flex:1;text-align:center;transition:background-color .1s linear;border:2px solid gray}
 .nav-guide button:hover{background:#000;color:#fff}
 .nav-guide button:active{color:#fff}
