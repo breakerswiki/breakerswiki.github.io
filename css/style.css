@@ -288,7 +288,7 @@ a.moreinfos{font-size:1.1rem;color:gray;cursor:pointer;margin:0 auto;display:tab
 .thumbnail-char:hover,.thumbnail:hover{transform:scale(1.2);opacity:1;z-index:10}
 .site-footer img{height:60px;margin-left:5px;padding:0}
 .site-footer{border-top:1px solid gray;background-size:cover;color:gray;font-size:small;text-align:center;padding:20px 30px 150px;margin-top:15rem;max-width:400px;margin:700px auto 0 auto}
-.arcadebutton{display:inline-flex;justify-content:center;align-items:center;font-size:1em;width:1.6em;height:1.6em;border-radius:50%;margin:0 .2em;margin-bottom:4px;color:#fff;font-weight:700;cursor:default;border:2px solid #000;user-select:none}
+.arcadebutton{display:inline-flex;justify-content:center;align-items:center;font-size:1em;width:1.6em;height:1.6em;border-radius:50%;margin:0 .2em;margin-bottom:4px;color:#fff;font-weight:700;cursor:default;border:3px solid #000;user-select:none}
 .arcadebutton.A::before{content:"A"}
 .arcadebutton.B::before{content:"B"}
 .arcadebutton.C::before{content:"C"}
@@ -311,7 +311,7 @@ a.moreinfos{font-size:1.1rem;color:gray;cursor:pointer;margin:0 auto;display:tab
 .main-about{font-size:larger;margin-top:20px!important;padding-left:5%;padding-right:5%;width:100%;max-width:800px;margin:0 auto}
 .main-char-content{width:100%}
 .card-dots{display:flex;gap:.4em}
-.dot{width:20px;height:20px;background:transparent 0;border:1px solid gray;border-radius:50%;cursor:pointer;transition:background .3s}
+.dot{width:20px;height:20px;background:transparent 0;border:2px solid gray;border-radius:50%;cursor:pointer;transition:background .3s}
 .dot:hover{background:gray}
 .dot.active{background:#000}
 .dropdown-toggle{background:0 0;border:none;font-size:19px;font-family:inherit;cursor:pointer;padding:10px;display:flex;align-items:center;gap:4px;color:#000}
@@ -341,7 +341,7 @@ p.description{font-size:24px;text-align:center}
 .risk-system{max-height:none;overflow-y:visible;padding:0;box-shadow:inset -10px 0 0 transparent}
 .risk-system ul{list-style:none;padding-left:0;margin-left:0}
 .risk-system li{font-size:1.4rem!important}
-img.logo{width:90px!important}
+img.logo{width:130px!important}
 .scroll-container{margin-top:0}
 .main-about{font-size:16px}
 .main-about a{font-size:20px}
