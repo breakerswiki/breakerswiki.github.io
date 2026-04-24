@@ -64,12 +64,16 @@ function loadContent(file, containerId, callback) {
 }
 
 
-
+  function goToAbout() {
+    window.location.href = "/about";
+}
 // Navigation
 function highlightCurrentNav() {
   const currentPath = window.location.pathname;
   const isCharPage = currentPath.startsWith("/characters");
+  const isAboutPage = currentPath === "/about";
 
+  // 1. Highlight standard links
   document.querySelectorAll(".nav-links a").forEach(link => {
     const href = link.getAttribute("href");
     if (!link.classList.contains("logo") && (currentPath === href || (href?.startsWith("/characters") && isCharPage))) {
@@ -77,8 +81,20 @@ function highlightCurrentNav() {
     }
   });
 
-  const charBtn = document.querySelector(".dropdown-toggle");
-  if (charBtn && isCharPage) Object.assign(charBtn.style, { backgroundColor: "black", color: "white" });
+  // 2. Highlight correct dropdown button
+  document.querySelectorAll(".dropdown-toggle").forEach(btn => {
+    const text = btn.textContent.trim();
+    
+    const shouldHighlight = 
+      (isCharPage && text === "Characters") || 
+      (isAboutPage && text === "About");
+
+    if (shouldHighlight) {
+      Object.assign(btn.style, { backgroundColor: "black", color: "white" });
+    } else {
+      Object.assign(btn.style, { backgroundColor: "transparent", color: "" });
+    }
+  });
 
   document.querySelectorAll(".dropdown-menu li a").forEach(l => l.style.backgroundColor = "transparent");
 }
@@ -228,28 +244,38 @@ function setImageSrc() {
 window.showContent = (id) => switchTab(id, "#infos, #movelist, #guide, #combos, #matchups", document.querySelector(`button[onclick*="${id}"]`));
 window.toggleContent = (id, link) => switchTab(id, "#saizo, #pielle, #rila, #dao-long, #condor, #sho, #maherl, #tia, #alsion", link);
 
-// Character Button function
+
+// Navigation Functions
 function goToCharacters() {
     sessionStorage.setItem("scrollToCharacters", "true");
     window.location.href = "/";
 }
 
-// Scroll with offset (for sticky header)
-function scrollToCharacterSection() {
-    const section = document.getElementById("character-section");
+function goToGameplay() {
+    sessionStorage.setItem("scrollToGameplay", "true");
+    window.location.href = "/";
+}
+
+// Scroll Logic
+function scrollToSection(id) {
+    const section = document.getElementById(id);
     if (!section) return;
 
-    const offset = 80; // Adjust for your header height
+    const offset = 80; 
     const top = section.getBoundingClientRect().top + window.scrollY - offset;
 
     window.scrollTo({ top, behavior: "smooth" });
 }
 
-// Homepage scroll after navigation
+// Trigger scroll on load
 window.addEventListener("load", function () {
     if (sessionStorage.getItem("scrollToCharacters") === "true") {
         sessionStorage.removeItem("scrollToCharacters");
-        // Slight delay to ensure mobile layout is fully rendered
-        setTimeout(scrollToCharacterSection, 50);
+        setTimeout(() => scrollToSection("character-section"), 50);
+    } 
+    
+    if (sessionStorage.getItem("scrollToGameplay") === "true") {
+        sessionStorage.removeItem("scrollToGameplay");
+        setTimeout(() => scrollToSection("gameplay-section"), 50);
     }
 });
