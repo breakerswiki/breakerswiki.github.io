@@ -293,7 +293,7 @@ a.moreinfos{font-size:1.1rem;color:gray;cursor:pointer;margin:0 auto;display:tab
 .nav-guide button{font-size:16px}
 .dropdown-toggle{font-size:16px}
 .container{max-width:500px;margin:0 auto}
-.navbar{flex-direction:row;justify-content:space-between;padding:10px 10px 0}
+.navbar{flex-direction:row;justify-content:space-between;padding:10px 10px 0; margin: 0;}
 .content,.main{padding:0!important}
 .logo{margin:0}
 .title{font-size:38px;text-align:center;line-height:3rem}
@@ -334,6 +334,7 @@ img.logo{width:100px}
 .characters-guide-main img{height:120px}
 .main-content{max-width:1500px!important}
 .howtoplay{max-width:970px!important}
+.navbar{padding:15px 30px; margin: 30px;}
 .cabinet-container img{width:100%}
 .main-char-content p{font-size:larger}
 .main-char-content{max-width:500px;margin:0 auto}
@@ -345,7 +346,7 @@ img.logo{width:100px}
 .title,p.description{text-align:right}
 p.description{font-size:26px}
 img.logo{width:100px}
-.navbar{padding:15px 30px}
+.navbar{padding:15px 30px; margin: 30px;}
 .characters-guide-main img{height:120px}
 .main-content{max-width:1500px!important}
 .howtoplay{max-width:970px!important}
