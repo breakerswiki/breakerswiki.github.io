@@ -330,11 +330,11 @@ img.logo{width:100px!important}
 .title{font-size:50px!important}
 .title,p.description{text-align:right}
 p.description{font-size:26px}
-img.logo{width:100px}
+img.logo{width:140px}
 .characters-guide-main img{height:120px}
 .main-content{max-width:1500px!important}
 .howtoplay{max-width:970px!important}
-.navbar{padding:15px 30px; margin: 30px;}
+.navbar{padding:0px 30px; margin: 10px;}
 .cabinet-container img{width:100%}
 .main-char-content p{font-size:larger}
 .main-char-content{max-width:500px;margin:0 auto}
@@ -345,8 +345,8 @@ img.logo{width:100px}
 .title{font-size:54px}
 .title,p.description{text-align:right}
 p.description{font-size:26px}
-img.logo{width:100px}
-.navbar{padding:15px 30px; margin: 30px;}
+img.logo{width:140px}
+.navbar{padding:0px 30px; margin: 10px;}
 .characters-guide-main img{height:120px}
 .main-content{max-width:1500px!important}
 .howtoplay{max-width:970px!important}
