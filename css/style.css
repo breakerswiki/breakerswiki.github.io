@@ -54,6 +54,8 @@ to{opacity:1;transform:translate(-50%,-50%) scale(1)}
 .navbar{position:relative}
 .toggle-link,a:hover{text-decoration:underline}
 .nav-links,.navbar{align-items:center;display:flex;background:0 0}
+.nav-links li{padding-top: 20px;transition: transform 0.3s ease-in-out;}
+.nav-links li:hover{transform: scale(1.15);}
 .nav-links{list-style:none;padding:0;gap:10px;margin:0 auto}
 .nav-links li{margin-bottom:10px}
 .nav-links a.logo:hover{text-underline-offset:10px;background-color:transparent!important}
