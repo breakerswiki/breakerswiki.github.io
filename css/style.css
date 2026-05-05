@@ -239,7 +239,7 @@ main{padding:1rem 1rem;margin:auto}
 .card-nav-button:active{transform:scale(.95)}
 .card-nav-button:focus-visible{outline:0}
 .card-nav-button{touch-action:manipulation}
-.card-nav-button{transition:all .4s ease;display:inline-block;margin-bottom:5px}
+.card-nav-button{transition:all .4s ease;display:inline-block;}
 @keyframes slide-attention{
 0%,100%{transform:translateX(0)}
 50%{transform:translateX(5px)}
@@ -250,8 +250,8 @@ main{padding:1rem 1rem;margin:auto}
 }
 .next-button{animation:slide-attention 1.5s infinite ease-in-out}
 .prev-button{animation:slide-attention-left 1.5s infinite ease-in-out}
-.risk-system{max-height:320px;position:relative;font-size:1rem;scrollbar-width:12px;scrollbar-color:#888 #f1f1f1}
-.risk-system li{margin-bottom:20px;font-size:1.3rem}
+.risk-system{max-height:320px;font-size:1rem;}
+.risk-system li{margin-bottom:10px;font-size:1.4rem}
 .risk-system ul{padding:0}
 a.moreinfos{font-size:1.1rem;color:gray;cursor:pointer;margin:0 auto;display:table}
 .thumbnail-row{display:flex;gap:10px;flex-wrap:wrap}
