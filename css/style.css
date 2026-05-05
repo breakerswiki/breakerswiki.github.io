@@ -287,6 +287,8 @@ a.moreinfos{font-size:1.1rem;color:gray;cursor:pointer;margin:0 auto;display:tab
 .dot{width:20px;height:20px;background:transparent 0;border:2px solid #000;border-radius:50%;cursor:pointer;transition:background .3s}
 .dot:hover{background:gray}
 .dot.active{background:#000}
+#gameplay-section, #about-section{display:none}
+
 @media (max-width:991px){
 .top-div{max-width:560px;margin:0 auto}
 .nav-guide button{font-size:16px}
@@ -316,7 +318,7 @@ p.description{font-size:24px;text-align:center}
 img.logo{width:100px!important}
 .scroll-container{margin-top:0}
 .main-about a,.main-about p{font-size:18px!important}
-/* #about-section{display:block} */
+#gameplay-section, #about-section{display:block}
 .subtitle{font-size:32px;line-height:46px;margin-bottom:30px!important;margin-top:110px}
 .scroll-container{display:none}
 }
@@ -324,7 +326,6 @@ img.logo{width:100px!important}
 .animate-text span{animation:none}
 }
 @media screen and (min-width:991px){
-/* #gameplay-section{display:none!important} */
 .container{display:flex;gap:30px;flex-direction:row}
 .top-div{max-width:960px;margin:0 auto}
 .title{font-size:50px!important}
