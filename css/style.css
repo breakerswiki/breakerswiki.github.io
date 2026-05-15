@@ -22,6 +22,7 @@ img.logo:active{top:5px;position:relative}
 #gameplay-section img{width:100%;max-width:300px;margin-bottom:10px}
 #about-section img{width:100%;max-width:200px}
 img.main-logo{width:100%;max-width:590px!important}
+.game-info p{margin:2px}
 .scroll-container{display:flex;justify-content:center;align-items:center;margin-top:-20px}
 .arrow{width:40px;height:40px;background-color:#000;border-radius:50%;display:flex;justify-content:center;align-items:center;animation:scroll-down 1.5s infinite}
 .arrow::after{content:'';width:10px;height:10px;border-right:3px solid #fff;border-bottom:3px solid #fff;transform:rotate(45deg);margin-top:-5px}
@@ -72,7 +73,7 @@ to{opacity:1;transform:translate(-50%,-50%) scale(1)}
 .nav-guide button,.nav-links,body{font-family:Jost,sans-serif}
 .nav-guide button{font-size:18px}
 .nav-guide{display:flex;gap:5px;margin-bottom:20px}
-.nav-guide button{background:#fff;color:#919191;appearance:none;-webkit-appearance:none;cursor:pointer;padding:5px;-webkit-transition:background-color .1s linear;-ms-transition:background-color .1s linear;flex:1;text-align:center;transition:background-color .1s linear;border:1px solid gray;border-radius:8px}
+.nav-guide button{background:0 0;color:#919191;appearance:none;-webkit-appearance:none;cursor:pointer;padding:5px;-webkit-transition:background-color .1s linear;-ms-transition:background-color .1s linear;flex:1;text-align:center;transition:background-color .1s linear;border:1px solid gray;border-radius:8px;border-bottom:2px solid gray}
 .nav-guide button:hover{background:#000;color:#fff}
 .nav-guide button:active{color:#fff}
 .color-button{padding:10px 20px;font-size:16px;border:none;cursor:pointer;transition:background-color .3s}
@@ -295,6 +296,15 @@ a.discord-join:hover{background-color:#5b6eae;box-shadow:0 0 2px 2px 2px #bac6d3
 a.discord-join:focus{outline:1px solid #7289da}
 a.discord-join:visited{color:#fff}
 #about-section,#gameplay-section{display:none}
+.warning-box{display:flex;align-items:center;background-color:#f3dbdb;border:2px solid #faa4a4;padding:15px 20px}
+.custom-icon{width:30px;height:30px;background-color:#fd2f2f;border:2px solid #000;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px;margin-right:20px;flex-shrink:0}
+.warning-content{line-height:1.4;font-size:large}
+#popup-text iframe{max-width:100%;aspect-ratio:16/9;height:auto}
+p.popup-description{font-size:16px;margin-top:10px}
+.carousel-wrapper{margin:0 auto;position:relative}
+.carousel{overflow:hidden}
+.carousel-track{display:flex;transition:transform .4s ease}
+.item-carousel{min-width:100%;box-sizing:border-box;text-align:center;border-radius:12px;margin:0 auto}
 @media (max-width:991px){
 .top-div{max-width:560px;margin:0 auto}
 .nav-guide button{font-size:16px}
@@ -327,6 +337,10 @@ img.logo{width:100px!important}
 #about-section,#gameplay-section{display:block}
 .subtitle{font-size:32px;line-height:46px;margin-bottom:30px!important;margin-top:110px}
 .scroll-container{display:none}
+.popup-content{left:50%!important;transform:translate(-50%,-50%) scale(1);width:95%;max-width:none}
+.carousel-track{display:block;transform:none!important}
+.item-carousel{min-width:auto;margin:100px 0}
+.subtitle,.title{font-size:50px;line-height:4rem}
 }
 @media (prefers-reduced-motion:reduce){
 .animate-text span{animation:none}
@@ -362,22 +376,6 @@ img.logo{width:140px}
 .risk-system{font-size:1.8rem}
 .video-text{width:370px}
 }
-@media (max-width:991px){
-.popup-content{left:50%!important;transform:translate(-50%,-50%) scale(1);width:95%;max-width:none}
-}
-@media screen and (min-width:700px) and (max-width:990px){
-.subtitle,.title{font-size:50px;line-height:4rem}
-}
-.warning-box{display:flex;align-items:center;background-color:#f3dbdb;border:2px solid #faa4a4;padding:15px 20px}
-.custom-icon{width:30px;height:30px;background-color:#fd2f2f;border:2px solid #000;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px;margin-right:20px;flex-shrink:0}
-.warning-content{line-height:1.4;font-size:large}
-#popup-text iframe{max-width:100%;aspect-ratio:16/9;height:auto}
-p.popup-description{font-size:16px;margin-top:10px}
-.carousel-wrapper{margin:0 auto;position:relative}
-.carousel{overflow:hidden}
-.carousel-track{display:flex;transition:transform .4s ease}
-.item-carousel{min-width:100%;box-sizing:border-box;text-align:center;border-radius:12px;margin:0 auto}
-@media (max-width:991px){
-.carousel-track{display:block;transform:none!important}
-.item-carousel{min-width:auto;margin:100px 0}
+@media (min-width:769px){
+body{zoom:.9}
 }
