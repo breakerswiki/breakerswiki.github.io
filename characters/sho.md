@@ -223,7 +223,7 @@ At close range, use this OS to throw or auto-trigger 214K (anti-air) if the thro
 
 ## Combos
 
-### Meterless
+### Meterless combos
 <video><source data-src="media/characters/sho/videos/basic_combos.mp4"></video>
 
 * 2B, 2B, 2B, 2D
@@ -234,7 +234,7 @@ At close range, use this OS to throw or auto-trigger 214K (anti-air) if the thro
 * close 5C.C > 646P or 214D
 * close 5C > B+D > 646P
 
-### Metered
+### Metered combos
 <video><source data-src="media/characters/sho/videos/meter_combo.mp4"></video>
 
 * 2B, 2B, 2B, 2D > 236236P or 214214K

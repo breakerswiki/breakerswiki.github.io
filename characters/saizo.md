@@ -153,7 +153,7 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 
 ## Combos
 
-### Meterless
+### Meterless combos
 <video><source data-src="media/characters/saizo/videos/Meterlesscombo.mp4"></video>
 
 * 2B, 2B, 5A > 623C
@@ -163,7 +163,7 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 * 2B, 2A, 5B > 2+B+D
 * jC > 5C > 623C
 
-### Metered
+### Metered combos
 <video><source data-src="media/characters/saizo/videos/Metercombo.mp4"></video>
 
 * 2B, 2B, 5C > 623C > 214214P

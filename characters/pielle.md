@@ -193,7 +193,9 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
 ## Combos
 
 ### Meterless combos
-</video><source data-src="media/characters/pielle/videos/meterless_combo.mp4" type="video/mp4">
+
+<video>
+<source data-src="media/characters/pielle/videos/meterless_combo.mp4">
 </video>
 
 * 2B > 214C.C.C
@@ -203,7 +205,8 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
 
 
 ### Metered combos
-</video><source data-src="media/characters/pielle/videos/metercombo.mp4" type="video/mp4">
+<video>
+<source data-src="media/characters/pielle/videos/metercombo.mp4">
 </video>
 
 * 2A, 2A > Super Swords (strict timing)
@@ -213,7 +216,8 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
 
 
 ### Anti-air
-</video><source data-src="media/characters/pielle/videos/antiair_combo.mp4" type="video/mp4">
+<video>
+<source data-src="media/characters/pielle/videos/antiair_combo.mp4">
 </video>
 
 * close 5D > Super Swords / Thunder
@@ -228,7 +232,8 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
 
 
 ### Air-to-air
-</video><source data-src="media/characters/pielle/videos/airtoair.mp4" type="video/mp4">
+<video>
+<source data-src="media/characters/pielle/videos/airtoair.mp4">
 </video>
 
 * jB/HK/HP/A > Super
@@ -236,7 +241,8 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
 
 
 ### Rose train
-</video><source data-src="media/characters/pielle/videos/rose_train.mp4" type="video/mp4">
+<video>
+<source data-src="media/characters/pielle/videos/rose_train.mp4">
 </video>
 
 Only on standing opponents:
@@ -261,7 +267,7 @@ Close range :
 ### Sho
 
 #### Ranki Ryuu Geri
-</video>
+<video>
 <source data-src="media/characters/pielle/videos/matchups/pielle_vs_sho_ranki_ryuu_geri.mp4">
 </video>
 
