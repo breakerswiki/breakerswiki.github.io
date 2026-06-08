@@ -15,6 +15,12 @@
 
 Bai-Hu (hidden character) is the final boss, he initiated the tournament to discover the strongest fighters.
 
+### Colors
+
+| |
+|:----------:|
+| ![img](media/characters/bai-hu/img/bai-hu.png)  | 
+
 ### How to unlock bai-hu
 
 * At the character select screen:  
