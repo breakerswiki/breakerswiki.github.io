@@ -225,7 +225,7 @@ Rila is a charge character with high damage output. She has no zoning tool excep
   <source data-src="media/characters/rila/videos/matchups/rila_vs_sho_Tobihizageri.mp4">
 </video>
  
-* Safe on block, but leaves him throwable up close. 
+* Safe on block, but leaves him in throw range up close. 
 * From afar, the startup gap can be punished with Wild Saver.
 
 #### Sashikomi Kick
@@ -570,7 +570,7 @@ Rila is a charge character with high damage output. She has no zoning tool excep
 </video>
 
 * Unsafe on hit and block unless canceled. 
-* However, it can be followed by a super that interrupts your punish. In this case, punishwith Wild Saver B.
+* However, it can be followed by a super that interrupts your punish. In this case, punish with Wild Saver B.
 
 #### Engetsuzan#### 
 <video>

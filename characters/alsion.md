@@ -53,7 +53,7 @@ Down Palm | [AIR],[DOWN]+[A]
 > - short range air attack, confirm with 236D
 Quick Kick | [AIR],[DOWN]+[B]
 > [HIGH] [SPECIAL]
-> - Launches the opponnent
+> - Launches the opponent
 > - Great for crossups
 > - Allows a super juggle in the corner.
 > - Allows a re-jump with jA > 236D.
@@ -65,11 +65,11 @@ Knee | [AIR],[DOWN]+[D]
 > - Short range air attack, great for crossups
 Claw | [LEFT]+[A]
 > - [MID]
-> - Can acts as an anti-air, but has short range
+> - Can act as an anti-air, but has short range
 > - Cancelable with other commands normals and Specials/Supers
 Shin Kick | [LEFT]+[B]
 > - [LOW]
-> - Mid ange poke, confirm with 236D
+> - Mid range poke, confirm with 236D
 Low Palm Strike | [LEFT]+[C]
 > - [MID]
 > - Does a great amount of hitstun
@@ -115,7 +115,7 @@ Pharaoh Dance | [QCB],[QCB]+[P]
 ## Guide
 
 ### Overview
-Alsion III is a zoning character that suffers from slow movement and limited defensive options. He relies on taking risks and gimmicks to create openings. Without a Super meter, he’s vulnerable to offensive playstyles due to his lack of reliable reversals.
+Alsion III is a zoning character that suffers from slow movement and limited defensive options. He relies on taking risks and gimmicks to create openings. Without a Super meter, he’s vulnerable to offensive characters due to his lack of reliable reversals.
 
 
 ### Offense
@@ -149,7 +149,7 @@ Alsion III is a zoning character that suffers from slow movement and limited def
 </video>
 
 * **Anubis Hug (236236P)**: Follow-up for Deadly Claw; transforms into a grab on hit (up to 12 hits). Opponents can mash to reduce damage.
-* **Pharaoh Dance (214214P)**: Safe on block (depedning on the matchup); hit confirm from back+B or Overhead (A+C).
+* **Pharaoh Dance (214214P)**: Safe on block (depending on the matchup); hit confirm from back+B or Overhead (A+C).
 
 
 
@@ -269,8 +269,8 @@ Alsion III is a zoning character that suffers from slow movement and limited def
 </video>
 
 - Unsafe. Heavy version can be followed by any super to bait punishes.
-- Punish with 2B, it hits if she does nothing and you still have time to block her super.
-- in case she does Super (Bloody Fang), react with B+D
+- Punish with 2B, it hits if she does nothing, and you still have time to block her super.
+- In case she does Super (Bloody Fang), react with B+D
 
 ### Maherl
 
@@ -279,5 +279,5 @@ Alsion III is a zoning character that suffers from slow movement and limited def
   <source data-src="media/characters/alsion/videos/matchups/alsion_vs_maherl_super_cadabra_bomber.mp4">
 </video>
 
-- invincible startup and Safe on block
+- Invincible startup and Safe on block
 - If close, use 214D to avoid the last part and punish.

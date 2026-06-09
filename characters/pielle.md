@@ -125,7 +125,7 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
     <source data-src="media/characters/pielle/videos/pielle_neutral.mp4">
 </video>
 
-* Use multiples 5A or 2A as pokes. hit confirm with 214P or 236236P Super. 
+* Use multiples 5A or 2A as pokes. Hit confirm with 214P or 236236P Super. 
 * You can also follow with B+D (overhead) to find openings.
 * His Special has high recovery; use them with caution to avoid punishes.
 * 623A doesn’t knock down grounded opponents. Use 623C for combo extensions.
@@ -307,7 +307,7 @@ Close range :
 
 - Unsafe. Heavy version can be followed by any super to bait punishes.
 - Punish with 2A, it hits if she does nothing
-- in case she does a Super couter with Thunder Croiser (214214P)
+- In case she does a Super, counter it with Thunder Croiser (214214P)
 
 #### Shine Beast
 <video>
@@ -326,7 +326,7 @@ Close range :
 </video>
 
 - Not overhead
-- Punish light verion with super (236236P)
+- Punish light version with super (236236P)
 - Heavy version can be followed with super to bait your punish attempt. Use throw to avoid it.
 
 ### Alsion

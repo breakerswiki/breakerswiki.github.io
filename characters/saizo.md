@@ -203,7 +203,7 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 </video>
 
 * Unsafe alone, but Sho can use an air super to stay safe or bait punishes. 
-* You can slide under it, but it's risky if delay the super.
+* You can slide under it, but it’s risky if he delays the super
  
 
 #### Onigawara

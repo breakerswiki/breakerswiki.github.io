@@ -56,6 +56,8 @@ const Wiki = (() => {
     // LOAD CHARACTER
     // =============================
     async function loadCharacter(charFileName, triggerBtn = null) {
+        const isBaiHu = charFileName === 'bai-hu';
+
         document.querySelectorAll('.char-btn').forEach(btn => btn.classList.remove('active'));
 
         if (triggerBtn) {
@@ -102,9 +104,9 @@ const Wiki = (() => {
                 <div class="sub-nav">
                     <button class="sub-link active" data-subsection="infos" onclick="Wiki.switchSubSection('infos', this)">Infos</button>
                     <button class="sub-link" data-subsection="moves" onclick="Wiki.switchSubSection('moves', this)">Moves</button>
-                    <button class="sub-link" data-subsection="guide" onclick="Wiki.switchSubSection('guide', this)">Guide</button>
+                    ${!isBaiHu ? `<button class="sub-link" data-subsection="guide" onclick="Wiki.switchSubSection('guide', this)">Guide</button>` : ''}
                     <button class="sub-link" data-subsection="combos" onclick="Wiki.switchSubSection('combos', this)">Combos</button>
-                    <button class="sub-link" data-subsection="matchups" onclick="Wiki.switchSubSection('matchups', this)">Matchups</button>
+                    ${!isBaiHu ? `<button class="sub-link" data-subsection="matchups" onclick="Wiki.switchSubSection('matchups', this)">Matchups</button>` : ''}
                 </div>
 
                 <div id="sub-content" class="sub-content">

@@ -98,7 +98,7 @@ Cutlass Flasher | [QCF],[QCF]+[K]
 ## Guide
 
 ### Overview
-Tia excels in mobility and space control. Her dash pressure, meter gain, and punish options make her dangerous in every matchup. With solid execution, she can seamlessly combine zoning and setplay to create consistent openings.
+Tia excels in mobility and space control. Her dash pressure, meter gain, and punish options make her dangerous in every matchup. With solid execution, she can seamlessly combine zoning and set-play to create consistent openings.
 
 ### Attack
 <video>
@@ -214,9 +214,9 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   <source data-src="media/characters/tia/videos/matchups/tia_vs_sho_ranki_ryuu_geri.mp4">
 </video>
 
-* unsafe if used alone
+* Unsafe if used alone
 * Can be followed with super to stay safe and bait punish attempts. 
-* with meter, a forward jC > air super 214214P guarantees a punish.
+* With meter, a forward jC > air super 214214P guarantees a punish.
 
 #### Onigawara
 <video>
@@ -251,7 +251,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   <source data-src="media/characters/tia/videos/matchups/tia_vs_sho_fireball.mp4">
 </video>
 
-* whiff punish with Super (236236P) (needs spacing).
+* Whiff punish with Super (236236P) (needs spacing).
 
 
 ### Pielle
@@ -269,14 +269,14 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   </video>
   
 * Overhead. Always has a gap in blockstrings. 
-* whiff punish with 623LP.
+* Whiff punish with 623LP.
   
 #### Bonjour Shot
   <video>
     <source data-src="media/characters/tia/videos/matchups/tia_vs_pielle_BonjourShot.mp4">
   </video>
     
-* whiff punish with 236236P.
+* Whiff punish with 236236P.
 * At close range, punish on block or hit with 2B or 5C.
     
 #### Super Rose
@@ -358,7 +358,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 </video>
 
 * Unsafe. Heavy version can be followed by any super to bait punishes.
-* Punish with 2A, it hits if she does nothing and you still have time to block her super.
+* Punish with 2A, it hits if she does nothing, and you still have time to block her super.
 * After 2A, react with Burning Revolver (214214P) to counter her super attempts. 
 
 #### Spinning Claw
@@ -367,7 +367,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 </video>
 
 * Hard to punish due to pushback. 
-* stays active for a while and has priority over normals and some Supers.
+* Stays active for a while and has priority over normals and some Supers.
 
 #### Quick Scratch A
 <video>
@@ -375,7 +375,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 </video>
   
 * Can catch you off guard at mid and close range. 
-* whiff punish with any normal.
+* Whiff punish with any normal.
 * On block punish with super (236236P).
   
 #### Quick Scratch C
@@ -407,7 +407,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 </video>
 
 * This super is not overhead despite the jump animation. 
-* punish with dash > 5C.
+* Punish with dash > 5C.
 * If you get hit, mash buttons and directions to take less damage.
 
 
@@ -417,8 +417,8 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   <source data-src="media/characters/tia/videos/matchups/tia_vs_tia_SoulSpike.mp4">
 </video>
 
-* Can passes through projectiles. 
-* punish light version with Super (236236P)
+* Can pass through projectiles. 
+* Punish light version with Super (236236P)
 * Heavy version is unsafe, but can be followed with Super, punish with throw to avoid it.
   
 #### Mirage Spear Kick
@@ -466,8 +466,8 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 <source data-src="media/characters/tia/videos/matchups/tia_vs_alsion_HorusShade.mp4">
 </video>
 
-* An overhead that is safe but has a slow startup, making it easily reactable.
-* whiff punish with 5A or 623LP
+* An overhead that is safe but has a slow startup, making it easily punishable.
+* Whiff punish with 5A or 623LP
 
 #### Death Shred
 <video>
@@ -475,7 +475,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 </video>
 
 * Hits twice on standing, second hit is overhead. 
-* whiff punish or interrupt the second hit with any normal.
+* Whiff punish or interrupt the second hit with any normal.
 
 #### Deadly Claw
 <video>
@@ -534,7 +534,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 </video>
 
 * Hits High, whiff punish with 5A/5C/2C. 
-* on block, punish with run > 5C
+* On block, punish with run > 5C
 
 #### Shiva Dance
 <video>
@@ -550,7 +550,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   <source data-src="media/characters/tia/videos/matchups/tia_vs_dao_KouryuuGa.mp4">
 </video>
 
-* Punish at point blank with 2A. 
+* Punish at point-blank with 2A. 
 * Heavy Soul Spike or Super 236236P also goes through it
 
 #### Senkyuu Tai
@@ -574,7 +574,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   <source data-src="media/characters/tia/videos/matchups/tia_vs_dao_SenpuureKyaku.mp4">
 </video>
 
-* slow anti-air command. If you're close enough, punish with 2B
+* Slow anti-air command. If you're close enough, punish with 2B
 
 #### Shoutenchuu
 <video>
@@ -588,7 +588,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   <source data-src="media/characters/tia/videos/matchups/tia_vs_dao_HoushinRenpa.mp4">
 </video>
 
-* Fireball super, can be used at mid range to punish your own projectiles
+* Fireball super, can be used at mid-range to punish your own projectiles
 
 #### Shin Kyoku Ranbu
 <video>
@@ -605,7 +605,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   <source data-src="media/characters/tia/videos/matchups/tia_vs_saizo_StandC.mp4">
 </video>
 
-* close version is safe and hits low
+* Close version is safe and hits low
 * far version is unsafe on hit and block.
 
 #### Rasen Kyaku

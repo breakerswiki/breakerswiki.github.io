@@ -260,7 +260,7 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
   </video>
 
 * Unsafe on its own, but can be followed with super to stay safe and bait punishes. 
-* If you have meter, use Atlas Rock  Buster (236236P) on super flash.
+* If you have meter, use Atlas Rock Buster (236236P) on super flash.
 
 #### Onigawara
   <video>
@@ -275,7 +275,7 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/matchups/condor_vs_sho_tobihizageri.mp4">
   </video>
  
-* Safe on block, but leaves him throwable up close. 
+* Safe on block, but leaves him in throw range up close. 
 * From afar, the startup gap can be punished with Super 236236P.
 
 #### Sashikomi Kick
@@ -293,7 +293,7 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/matchups/condor_vs_sho_Rekkouha.mp4">
   </video>
  
-* Use Grand Buffalo Horn (66K) to punish at mid range, or Super (236236P) at close range.
+* Use Grand Buffalo Horn (66K) to punish at mid-range, or Super (236236P) at close range.
 
 
 ### Pielle
@@ -310,7 +310,7 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/matchups/condor_vs_pielle_FlyingPeachBomber.mp4">
   </video>
  
-* Overhead, but if too close, it’ll whiff and he’ll pass behind you. 
+* Overhead, but if too close, it’ll whiff, and he’ll pass behind you. 
 * In a blockstring, there’s always a gap, punish with 2A.
 
 #### Merci un-deux-trois 
@@ -325,7 +325,7 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/matchups/condor_vs_pielle_ThunderCroiser.mp4">
   </video>
  
-* On block (cloase range) punish with super (236236P)
+* On block (close range) punish with super (236236P)
 
 ### Condor
 #### Tomahawk Jack
@@ -422,7 +422,7 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/matchups/condor_vs_tia_Rapidgale.mp4">
   </video>
  
-* At mid range, whiff Punish with Super (236236P).
+* At mid-range, whiff Punish with Super (236236P).
 
 #### Heel Break 
   <video>
@@ -460,7 +460,7 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/matchups/condor_vs_alsion_horus_shade.mp4">
   </video>
  
-* Overhead with a slow startup, making it easily reactable.
+* Overhead with a slow startup, making it easily punishable.
 * Whiff punish with 5A. Safe on block.
 
 #### Death Shred 
@@ -515,7 +515,8 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/matchups/condor_vs_maherl_BalloonBomb.mp4">
   </video>
     
-* Overhead, whiff punish with 5C or Tomahawk. on block, punish with slide or Super (236236P)
+* Overhead, whiff punish with 5C or Tomahawk. 
+* On block, punish with slide or Super (236236P)
 
 #### Cadabra Bomber
   <video>

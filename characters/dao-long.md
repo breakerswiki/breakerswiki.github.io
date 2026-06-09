@@ -101,7 +101,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
    <source data-src="media/characters/dao-long/videos/dao-long_defense.mp4"">
  </video>
 
-* Senkyuu Tai ([2]8K): Qucik close-range anti-air; The light verion, enables a Super juggle for if it connects at the peak of the opponent's jump.
+* Senkyuu Tai ([2]8K): Quick close-range anti-air; The light version, enables a Super juggle for if it connects at the peak of the opponent's jump.
 * Close Normals: close 5C/5D are super-cancelable on hit for high-damage conversions.
 * Back + C: Holding back and close 5C is as a powerful option select. It triggers an anti-air or a throw if the opponent is grounded.
 
@@ -264,7 +264,8 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_pielle_RobinLiner.mp4">
 </video>
 
-* light version is unsafe on block or hit and lacks knockdown; punish the heavy version with B+C > Super.
+* Light version is unsafe on block or hit and lacks knockdown
+* Punish the heavy version with B+C > Super.
 
 
 
@@ -282,7 +283,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_pielle_Merci_un_deux_trois.mp4">
 </video>
 
-* if you block all three hits, Pielle lands behind you. 
+* If you block all three hits, Pielle lands behind you. 
 * Punish quickly with 5C > Super.
 
 
@@ -308,7 +309,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_condor_tomahawkjack.mp4">
 </video>
 
-* Punish with 5B. Whiff punish with with Super.
+* Punish with 5B. Whiff punish with Super.
 
 
 #### Gran Buffalo Horn
@@ -350,7 +351,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 </video>
 
 * Safe on block. Hard to deal with. 
-* With practice and good spacing, whiff punish with 2D or with preemtive 2A.
+* With practice and good spacing, whiff punish with 2D or with preemptive 2A.
 
 
 
@@ -360,7 +361,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 </video>
 
 * Unsafe. 
-* heavy version can be followed by any super to bait punishes. 
+* Heavy version can be followed by any super to bait punishes. 
 * Use 2A, which hits if she does nothing and if she goes for super you'll have time to block.
 
 
@@ -369,7 +370,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_rila_quickScratch.mp4">
 </video>
 
-* Punish the heavy version with preemtive 2A or with 5LK.
+* Punish the heavy version with preemptive 2A or with 5LK.
 * Light version is safe on block.
 
 
@@ -388,7 +389,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 </video>
 
 * On block, she ends up on the other side (at mid and close range). 
-* With practice, jump at the right timing with jump D .
+* With practice, jump at the right timing with jump D.
 
 
 #### Bloody Fang
@@ -425,7 +426,8 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_tia_RapidCharge.mp4">
 </video>
 
-* She switches sides mid-air on block. punish with 5C or adjust your guard quickly to maintain your charge.
+* She switches sides mid-air on block. 
+* Punish with 5C or adjust your guard quickly to maintain your charge.
 
 
 #### Burning Revolver
@@ -460,7 +462,8 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_alsion_DeathShred.mp4">
 </video>
 
-* Hits twice on standing, second hit is overhead. whiff punish or interrupt the second hit with any normal.
+* Hits twice on standing, second hit is overhead. 
+* Whiff punish or interrupt the second hit with any normal.
 
 
 #### Poison Fog
@@ -468,7 +471,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_alsion_poison_fog.mp4">
 </video>
 
-* A slow, close-range projectile that deals chip damage and is often used on your wakeup for pressure.
+* A slow, close-range projectile that deals chip damage and is often used on your wake-up for pressure.
 
 
 #### Deadly Claw
@@ -595,7 +598,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 
 * Unsafe unless canceled.
 * Can be followed with super to counter your punish attempt.
-* if you're close use [2]8K. for a guaranteed punish 
+* If close, use [2]8K for a guaranteed punish 
 
 
 #### Engetsuzan

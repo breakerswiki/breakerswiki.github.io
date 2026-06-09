@@ -409,7 +409,7 @@ Corner:
 
 - Has brief startup invincibility.
 - Last hit’s pushback makes it hard to punish
-- but there’s a gap after the 1st hit, punish with throw or backdash > dash > 5C.
+- There’s a gap after the 1st hit, punish with throw or backdash > dash > 5C.
 
 
 ### Rila
@@ -420,7 +420,7 @@ Corner:
 </video>
 
 - Unsafe. Heavy version can be followed by any super to bait punishes.
-- Punish with 2A, it hits if she does nothing and you still have time to block her super.
+- Punish with 2A, it hits if she does nothing, and you still have time to block her super.
 - 214D can also punish or evade her supers.
 
 
@@ -485,7 +485,7 @@ Corner:
   <source data-src="media/characters/sho/videos/matchups/sho_vs_tia_RapidGale.mp4">
 </video>
 
-- Unsafe at point blank
+- Unsafe at point-blank
 - Whiff punished with 214214K or 236D (need proper spacing).
 
 #### Heel Break
@@ -565,7 +565,7 @@ Corner:
   <source data-src="media/characters/sho/videos/matchups/sho_vs_maherl_super.mp4">
 </video>
 
-- invincible startup and Safe on block
+- Invincible startup and Safe on block
 - If close, backdash to avoid the last part, then punish.
 
 #### Abdomen Step
@@ -582,7 +582,7 @@ Corner:
     <source data-src="media/characters/sho/videos/matchups/sho_vs_maherl_SlashSword.mp4">
 </video>
 
-- Safe at max range. if you're close enough, punish with 5C.
+- Safe at max range. If you're close enough, punish with 5C.
 
 #### Punish Sword
 <video>

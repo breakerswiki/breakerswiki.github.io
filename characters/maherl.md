@@ -157,7 +157,7 @@ Use forward or back jB for an instant overhead. Use jD then jB for a fuzzy setup
   <source data-src="media/characters/maherl/videos/sword%20glitch.mp4">
 </video>
 
-To perform the glitch, kara cancel A+C on the 3rd frame with either 214P or 214K : 
+To perform the glitch, Kara cancel A+C on the 3rd frame with either 214P or 214K : 
 * ❌ Frame 2 or sooner = sword
 * ✅ Frame 3 = sword glitch
 * ❌ Frame 4 or later = A+C
