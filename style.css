@@ -203,7 +203,7 @@ h2.throws{background:#d07953}
 @media (max-width:768px){
 .hero-content{margin-bottom:2rem;margin:0rem auto;padding:.5rem;padding-bottom:0}
 header{position:relative}
-.container{margin:1rem auto;padding:0 .7rem;max-width:100vw;overflow-x:hidden}
+.container{margin:1rem auto;padding:1rem;max-width:100vw;overflow-x:hidden}
 .nav-container{padding:1rem;gap:.75rem}
 nav button {padding: .5rem !important;}
 nav {gap: 0 !important;}
@@ -212,7 +212,7 @@ nav {gap: 0 !important;}
 .char-sidebar{display:grid;padding:.5rem 0;grid-template-rows:repeat(2,auto);grid-auto-flow:column;grid-auto-columns:max-content;margin:0 auto;gap:.3rem;border-right:none;border-bottom:1px solid var(--border)}
 .char-btn{white-space:nowrap;font-size:.85rem;width:100%}
 .sub-nav{white-space:nowrap;display:flex;-webkit-overflow-scrolling:touch}
-.sub-link{padding:.42rem .42rem;font-size:1rem}
+.sub-link{padding:.4rem .4rem;font-size:1rem}
 .char-content{min-height:auto;word-wrap:break-word;overflow-x:hidden}
 .hero-section{padding:3rem 1rem}
 .hero-content h1{font-size:3rem}
