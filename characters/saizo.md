@@ -358,7 +358,7 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 
 
 
-<div id="rila">
+### Rila
 
 #### Dynamite Kick
 

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
@@ -19,9 +19,9 @@
         <div class="nav-container">
             <a href="/" class="logo" onclick="Wiki.showSection('home')"><img class="logo" src="/media/assets/bkwiki_color.webp" alt="BREAKERS WIKI"></a>
             <nav>
-                <button class="nav-link" data-section="gameplay" onclick="Wiki.showSection('gameplay', this)">Gameplay</button>
-                <button class="nav-link" data-section="characters" onclick="Wiki.showSection('characters', this)">Characters</button>
-                <button class="nav-link" data-section="about" onclick="Wiki.showSection('about', this)">About</button>
+                <button class="nav-link" data-section="gameplay" onclick="Wiki.showSection('gameplay', this)"><i class="bi bi-joystick"></i></button>
+                <button class="nav-link" data-section="characters" onclick="Wiki.showSection('characters', this)"><i class="bi bi-book"></i></button>
+                <button class="nav-link" data-section="about" onclick="Wiki.showSection('about', this)"><i class="bi bi-info-circle"></i></button>
             </nav>
         </div>
 
@@ -35,7 +35,7 @@
 
     <div class="hero-content">
         <h1>Welcome to<br>Breakers Wiki</h1>
-        <p>Learn the basics of Breakers through <a onclick="Wiki.showSection('gameplay', this)">Gameplay</a> and <a onclick="Wiki.showSection('characters', this)">Character guides</a></p>
+        <p>Learn the basics of Breakers through <a class="sub-link" data-subsection="gameplay" onclick="Wiki.showSection('gameplay')">Gameplay</a> and <a class="sub-link" data-subsection="characters" onclick="Wiki.showSection('characters')">Character guides</a></p>
     </div>
 
 
@@ -115,10 +115,7 @@
                             Your browser does support HTML5 video.
                     </video>
                     <h3>Throw</h3>
-                    <div class="inputs-grid">
-                        <span><img src="/media/inputs/Arcade-Stick-Left.png" alt=""> or <img src="/media/inputs/Arcade-Stick-Right.png" alt=""> + <img src="/media/inputs/Arcade-Stick-C.png" alt=""></span>
-                    </div><br>
-                        <p>Throw is a powerful option since there's no throw tech. It's also effective for breaking jump-in combos. Certain characters have additional throw inputs and air throws.</p>
+                        <p>Use Forward/Back + C to Throw.<br> It's a powerful option since there's no throw tech. It's also effective for breaking jump-in combos. Certain characters have additional throw inputs and air throws.</p>
                 </div>
                 <div class="card">
                     <video class="card-video" preload="none" data-videojs >

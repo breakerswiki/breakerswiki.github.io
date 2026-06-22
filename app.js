@@ -126,19 +126,17 @@ const Wiki = (() => {
     // =============================
     // SWITCH SUB SECTION
     // =============================
-    function switchSubSection(category, triggerBtn = null) {
+    function switchSubSection(category, triggerElement = null) {
         document.querySelectorAll('.sub-link').forEach(btn => btn.classList.remove('active'));
-
-        if (triggerBtn) {
-            triggerBtn.classList.add('active');
-        } else {
-            const fallbackBtn = document.querySelector(`.sub-link[data-subsection="${category}"]`);
-            if (fallbackBtn) fallbackBtn.classList.add('active');
+    
+        const targetBtn = document.querySelector(`.sub-link[data-subsection="${category}"]`);
+        if (targetBtn) {
+            targetBtn.classList.add('active');
         }
-
+    
         const contentArea = document.getElementById('sub-content');
         if (!contentArea) return;
-
+    
         if (category === 'matchups') {
             setupMatchupsSection(contentArea);
         } else {
