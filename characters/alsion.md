@@ -21,6 +21,7 @@ Alsion III is an undead ancient Egyptian. His alter-ego, Atoum, is a mummy-dress
 ## Moves
 
 ### Normals
+
 All normals
 > [A] far/close : [MID] [SPECIAL]
 > [A] down : [MID] [SPECIAL] [SUPER]
@@ -194,9 +195,10 @@ Alsion III is a zoning character that suffers from slow movement and limited def
   <source data-src="media/characters/alsion/videos/alsion_metered_combos.mp4">
 </video>
 
+* A+C > Super (214214P)
 * 214K > Super
-* 41236C > Super (214214P)
 * corner: jB > 4C > 236D > Super (236236P)
+* corner: 4C > 41236C > Super (214214P)
 
 
 ### Breakable combos

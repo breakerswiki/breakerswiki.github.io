@@ -31,12 +31,11 @@ All normals
 > [B] jump : [HIGH]
 > [C] far : [MID]
 > [C] close : [LOW] [SPECIAL] [SUPER]
-> [C] jump : [LOW]
-> [D] far : [HIGH]
+> [C] jump : [HIGH]
+> [D] far : [MID]
 > [D] close : [MID]
-> [D] down : [MID] [SPECIAL] [SUPER]
-> [D] jump : [LOW]
-> [D] neutral jump : [HIGH]
+> [D] down : [LOW]
+> [D] jump : [HIGH]
 
 ### Commands
 Rasen Kyaku | [B]+[D]
@@ -558,7 +557,7 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 
 #### Slash Sword
 
-
+<video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_maherl_SlashSword.mp4">
 </video>
 
@@ -566,7 +565,7 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 
 #### Fire Breath
 
-
+<video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_maherl_FireBreath.mp4">
 </video>
 
