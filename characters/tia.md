@@ -48,14 +48,14 @@ Heel Break | [B]+[D]
 > - Only the 1st hit is cancelable into specials or supers
 > - Second hit is an overhead
 Upper | [AIR],[UP]+[C]
-> <img src="/media/characters/tia/img/moves/Upper.giff">
+> <img src="/media/characters/tia/img/moves/Upper.gif">
 > [HIGH] [SPECIAL] [SUPER]
 > - Deals high damage and hit-stun
 > - Cancelable into specials and supers
 
 ### Specials
 Soul Spike | ([AIR])[QCB]+[K]
-> <img src="/media/characters/sho/img/moves/RekkouHa.gif">
+> <img src="/media/characters/tia/img/moves/SoulSpike.gif">
 > [MID] (ground) [HIGH] (air)
 > - Light version is fast heavy version is slower but passes through projectiles
 > - Heavy version also allows for a super juggle on hit

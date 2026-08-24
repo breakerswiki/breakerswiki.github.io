@@ -1,10 +1,10 @@
 // =============================
-// WIKI MODULE
+// BREAKERS WIKI APP
 // =============================
 const Wiki = (() => {
 
     // =============================
-    // ÉTAT INTERNE
+    // STATE
     // =============================
     let currentCharacterSections = {};
     let currentMatchupOpponents = {};
@@ -39,7 +39,6 @@ const Wiki = (() => {
         if (triggerBtn) {
             triggerBtn.classList.add('active');
         } else {
-            // Fallback : recherche par data-section
             const fallbackBtn = document.querySelector(`.nav-link[data-section="${sectionId}"]`);
             if (fallbackBtn) fallbackBtn.classList.add('active');
         }
@@ -70,6 +69,7 @@ const Wiki = (() => {
         const renderArea = document.getElementById('markdown-render');
         if (!renderArea) return;
 
+
         renderArea.innerHTML = '<p class="text-muted">Loading...</p>';
 
         try {
@@ -97,6 +97,12 @@ const Wiki = (() => {
                     currentCharacterSections[title] = body;
                 }
             });
+
+            renderArea.classList.remove('reveal-anim');
+            void renderArea.offsetWidth;
+            renderArea.classList.add('reveal-anim');
+
+            
 
             renderArea.innerHTML = `
                 <div class="char-header">${headerContent}</div>
@@ -171,6 +177,7 @@ const Wiki = (() => {
 
             const imgHtml = btn.querySelector('img')?.outerHTML ?? charFile;
 
+
             matchupSidebarHtml += `
                 <button
                     class="char-btn matchup-opp-btn"
@@ -183,10 +190,14 @@ const Wiki = (() => {
         });
 
         contentArea.innerHTML = `
+                        <h3 style="margin:0;">Matchup Data</h3>
+
             <div class="char-layout matchup-layout">
+                
                 <aside class="char-sidebar matchup-sidebar">
                     ${matchupSidebarHtml}
                 </aside>
+                
                 <div id="matchup-data-display" class="matchup-data-display">
                     <p class="text-muted">Select an opponent to view matchup strategies.</p>
                 </div>
@@ -210,6 +221,10 @@ const Wiki = (() => {
         const displayArea = document.getElementById('matchup-data-display');
         if (!displayArea) return;
 
+    displayArea.classList.remove('reveal-anim');
+    void displayArea.offsetWidth; 
+    displayArea.classList.add('reveal-anim');
+
         const content = currentMatchupOpponents[opponentId.toLowerCase()];
 
         if (!content) {
@@ -223,7 +238,7 @@ const Wiki = (() => {
 
 
     // =============================
-    // MOVES TABLE RENDERER
+    // MOVELIST TABLE RENDERER
     // =============================
     function renderMovesSection(md) {
         return md.replace(/### (Normals|Commands|Specials|Supers|Throws)([\s\S]*?)(?=\n### |\n## |$)/gi, (match, category, body) => {
@@ -234,14 +249,12 @@ const Wiki = (() => {
             for (let i = 0; i < lines.length; i++) {
                 const line = lines[i].trim();
 
-                // If it is an isolated description line, we pass it (already processed)
                 if (line.startsWith('>')) continue;
 
                 const parts = line.split('|');
                 const name = parts[0].trim();
                 const input = parts[1] ? parts[1].trim() : '';
 
-                // Gather ALL consecutive description lines
                 let detailsArray = [];
                 while (lines[i + 1] && lines[i + 1].trim().startsWith('>')) {
                     // Extract the text after the ">" and move on to the next line
@@ -335,7 +348,6 @@ const Wiki = (() => {
         "DELTA": '<img class="input-icon" src="/media/inputs/Arcade-Stick-Delta.png" alt="DELTA">',
         "CDU": '<img class="input-icon" src="/media/inputs/Arcade-Stick-CDU.png" alt="CDU">',
         "LR": '<img class="input-icon" src="/media/inputs/Arcade-Stick-LR.png" alt="LR">',
-
         "LOW": '<span class="move-tag" style="background-color:#d75a56">Low</span>',
         "MID": '<span class="move-tag" style="background-color:#f4a261">Mid</span>',
         "HIGH": '<span class="move-tag" style="background-color:#d75a56">High</span>',
