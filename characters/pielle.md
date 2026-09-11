@@ -2,17 +2,12 @@
 
 ## Infos
 
-### Data
-* **Origin:** Italy
-* **Defense:** 118
-* **Stun:** 2896
-
-### Wrong origin ?
-The flag displayed on his stage was changed from France to Italy between Breakers and Breakers Revenge. In Breakers Chicago, his name has changed to Pierre, seemingly correcting Pielle, which appears to have been a phonetic misspelling of the French name.
-
 ### Story
 
 Pielle is an Italian nobleman and skilled fencer who can summon lightning with his sword. Georges, his French alternate, despises Italians after being robbed.
+<br><br>
+<b>Identity changes across the series</b><br>
+The flag displayed on his stage was changed from France to Italy between Breakers and Breakers Revenge. The Breakers game manual describes him as Italian, while in Breakers Revenge Chicago, his name was changed to Pierre, seemingly correcting “Pielle,” which appears to have been a phonetic misspelling of the French name.
 
 ### Colors
 
@@ -22,6 +17,8 @@ Pielle is an Italian nobleman and skilled fencer who can summon lightning with h
 
 
 ## Moves
+
+### MOVE LIST
 
 ### Normals
 All normals
@@ -59,7 +56,7 @@ Hopping Saber | [AIR],[DOWN]+[A]
 > [HIGH]
 > - Stomp attack
 > - Can be repeated based on range and height.
-> - Follow with down+A+B+C while in the air.
+> - Follow with "Merci un deux trois" while in the air.
 Opened Arc Liner | [AIR],[UP]+[C]
 > <img src="/media/characters/pielle/img/moves/OpenedArcLiner.gif">
 > [HIGH]
@@ -80,7 +77,7 @@ Robin Liner | [DP]+[P]
 Monsieur Crash | [QCB]+[P].[P].[P]
 > <img src="/media/characters/pielle/img/moves/MonsieurCrash.gif">
 > [MID]
-> - Chains up to 3 times with repeated punch presses.
+> - Chains up to three times with repeated punch presses.
 > - All hits are unsafe on block.
 > - Can be delayed to counter punish attempts.
 Rose Train | [QCB]+[K]
@@ -125,10 +122,12 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
     <source data-src="media/characters/pielle/videos/pielle_neutral.mp4">
 </video>
 
-* Use multiples 5A or 2A as pokes. Hit confirm with 214P or 236236P Super. 
-* You can also follow with B+D (overhead) to find openings.
+* Use multiples 5A or 2A as pokes. 
+  * Hit confirm with 214P or 236236P. 
+  * You can also follow with B+D (overhead) to find openings.
 * His Special has high recovery; use them with caution to avoid punishes.
-* 623A doesn’t knock down grounded opponents. Use 623C for combo extensions.
+* 623A doesn’t knock down grounded opponents. 
+  * Use 623C for combo extensions.
 
 
 ### Anti-air
@@ -148,17 +147,17 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
   <source data-src="media/characters/pielle/videos/matchups/pielle_vs_dao-long_kouryuu_ga.mp4">
 </video>
 
-* Robin Super (236236P): Pass-through projectile; hits OTG after an anti-air slide.
-* Thunder Croiser (214214P): Use it as a reversal or anti-air.
-* Super Rose (214214K): Safe on block with full-screen reach; also functions as an anti-air.
+* 236236P: Pass-through projectile; hits OTG after an anti-air slide.
+* 214214P: Use it as a reversal or anti-air.
+* 214214K: Safe, has full-screen reach; also functions as an anti-air.
 
 ### Tips
-#### Anti-air slide (2D)
+#### Anti-air slide
 <video>
     <source data-src="media/characters/pielle/videos/pielle_slide_otg.mp4">
 </video>
 
-* His slide can be used as an anti-air, leading to an OTG with Super 236236P or 214214P (corner).
+* His slide can be used as an anti-air leading to an OTG confirm with 236236P or 214214P (corner).
 
 
 #### Flying Peach Bomber (overhead)
@@ -200,8 +199,8 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
 
 * 2B > 214C.C.C
 * 2A, 2A, 2A > 214C.C.C
-* jD > 2C > 214D
-* jD > 2C > 214C.C.C
+* jump D > 2C > 214D
+* jump D > 2C > 214C.C.C
 
 
 ### Metered combos
@@ -210,9 +209,9 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
 </video>
 
 * 2A, 2A > Super Swords (strict timing)
-* jD > close 5D > Super Swords
-* jD > 2C > Super Swords
-* corner: jD > 2C > A+C > Super Swords / Thunder
+* jump D > close 5D > Super Swords
+* jump D > 2C > Super Swords
+* corner: jump D > 2C > A+C > Super Swords / Thunder
 
 
 ### Anti-air
@@ -236,8 +235,8 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
 <source data-src="media/characters/pielle/videos/airtoair.mp4">
 </video>
 
-* jB/HK/HP/A > Super
-* jB/HK/HP/A > 623A (1st hit must be close to the ground)
+* jump P/K > Super
+* jump P/K > 623A (must be close to the ground)
 
 
 ### Rose train
@@ -245,13 +244,13 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
 <source data-src="media/characters/pielle/videos/rose_train.mp4">
 </video>
 
-Only on standing opponents:
+#### Only on standing opponents
 * B+D ❌ 5A x2 > 214B
 * 2A > close 5A > 214B
 * 5B > 214B
 * 2B > 214B
 
-Close range :
+#### Close range
 * 2C > 214B or 214D
 
 
@@ -281,7 +280,7 @@ Close range :
     <source data-src="media/characters/pielle/videos/matchups/pielle_vs_condor_atlas_rock_buster.mp4">
 </video>
 
-- There’s a gap after the 1st hit, punish with throw or Thunder Croiser (214214P)
+- There’s a gap after the first hit, punish with throw or Thunder Croiser (214214P)
 
 #### Gran Buffalo Horn
 <video>

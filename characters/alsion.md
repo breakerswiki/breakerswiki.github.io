@@ -2,12 +2,6 @@
 
 ## Infos
 
-### Data
-
-* **Origin:** Egypt
-* **Defense:** 118
-* **Stun:** 2976
-
 ### Story
 
 Alsion III is an undead ancient Egyptian. His alter-ego, Atoum, is a mummy-dressed fan of ancient civilizations and a descendant of Alsion III who can use "Pharaoh Taijutsu" techniques.
@@ -19,6 +13,8 @@ Alsion III is an undead ancient Egyptian. His alter-ego, Atoum, is a mummy-dress
 | ![img](media/characters/alsion/img/alsion_A.png)  | ![img](media/characters/alsion/img/alsion_B.png)  | ![img](media/characters/alsion/img/alsion_C.png)  | ![img](media/characters/alsion/img/alsion_D.png)  |
 
 ## Moves
+
+### MOVE LIST
 
 ### Normals
 
@@ -48,7 +44,7 @@ Death Shred | [B]+[D]
 > [HIGH]
 > - Close Range Anti-air
 > - Hits twice airbone opponents
-> - on grounded, the 1st hit whiff and the 2nd is overhead
+> - on grounded, the first hit whiff and the second is overhead
 Down Palm | [AIR],[DOWN]+[A]
 > [HIGH] [SPECIAL]
 > - short range air attack, confirm with 236D
@@ -57,7 +53,7 @@ Quick Kick | [AIR],[DOWN]+[B]
 > - Launches the opponent
 > - Great for crossups
 > - Allows a super juggle in the corner.
-> - Allows a re-jump with jA > 236D.
+> - Allows a re-jump with Jump A > 236D.
 Stretch Strike | [AIR],[DOWN]+[C]
 > [HIGH]
 > - Long range air attack, confirm with 4C
@@ -124,9 +120,14 @@ Alsion III is a zoning character that suffers from slow movement and limited def
   <source data-src="media/characters/alsion/videos/alsion_offense.mp4">
 </video>
 
-* **Overhead**: Confirms into normals or 214214P Super.
-* **Dash Knee (236K)**: Hit confirm from 2B or 4A; safe at max range (except against Saizo’s Super) and usable in the air after jA.
-* **Deadly Claw (214K)**: Ground/air teleport attack; 214B stays in front while 214D crosses up. Confirms into any Super. Unsafe on block.
+* **Overhead**: Confirms into normals or 214214P.
+* **Dash Knee (236K)** 
+  * Hit confirm from 2B or 4A
+  * Safe at max range (except against Saizos) and usable in the air after Jump A.
+* **Deadly Claw (214K)** 
+  * Ground/air teleport attack, Unsafe on block.
+  * 214B stays in front while 214D crosses up. 
+  * Confirms into any Super.
 
 
 
@@ -136,10 +137,10 @@ Alsion III is a zoning character that suffers from slow movement and limited def
 </video>
 
 
-* **5D**: Causes a ground bounce on airborne opponents, enabling corner Super juggles.
+* **Standing D**<br> Causes a ground bounce on airborne opponents, enabling corner Super juggles.
 * **Back Jump C**: Long range air-to-air.
-* **2C**: Mid-range low attack with a low-profile hurtbox that allows Alsion to slip under projectiles.
-* **Poison Fog (41236P)**: Short-range special that stays active a bit and absorbs most projectiles (excluding Saizo’s kunai).
+* **2C**<br> Mid-range low attack with a low-profile hurtbox that allows Alsion to slip under projectiles.
+* **Poison Fog (41236P)**<br> Short-range special that stays active a bit and absorbs most projectiles (excluding Saizo’s kunai).
 
 
 
@@ -149,8 +150,12 @@ Alsion III is a zoning character that suffers from slow movement and limited def
   <source data-src="media/characters/alsion/videos/alsion_supers.mp4">
 </video>
 
-* **Anubis Hug (236236P)**: Follow-up for Deadly Claw; transforms into a grab on hit (up to 12 hits). Opponents can mash to reduce damage.
-* **Pharaoh Dance (214214P)**: Safe on block (depending on the matchup); hit confirm from back+B or Overhead (A+C).
+* **Anubis Hug (236236P)**
+  * Follow-up for Deadly Claw
+  * up to 12 hits, Opponents can mash to reduce damage.
+* **Pharaoh Dance (214214P)**
+  * Safe on block (depending on the matchup)
+  * hit confirm from 4B or Overhead (A+C).
 
 
 
@@ -187,7 +192,7 @@ Alsion III is a zoning character that suffers from slow movement and limited def
 * 5A > 236D
 * A+C > 4D
 * 4C > 41236C
-* jB > 4C > 236D
+* Jump B > 4C > 236D
 
 
 ### Metered combos
@@ -197,7 +202,7 @@ Alsion III is a zoning character that suffers from slow movement and limited def
 
 * A+C > Super (214214P)
 * 214K > Super
-* corner: jB > 4C > 236D > Super (236236P)
+* corner: Jump B > 4C > 236D > Super (236236P)
 * corner: 4C > 41236C > Super (214214P)
 
 
@@ -225,10 +230,10 @@ Alsion III is a zoning character that suffers from slow movement and limited def
   <source data-src="media/characters/alsion/videos/alsion_air_to_air.mp4">
 </video>
 
-* jA > 236D
+* Jump A > 236D
 * j2A > 236D
 * 214K > Super
-* jA > 236D > Super
+* Jump A > 236D > Super
 
 
 ## Matchups
@@ -252,7 +257,7 @@ Alsion III is a zoning character that suffers from slow movement and limited def
 
 - Has brief startup invincibility.
 - Last hit’s pushback makes it hard to punish
-- There’s a gap after the 1st hit, punish with throw Super (214214P) or 214B.
+- There’s a gap after the first hit, punish with throw Super (214214P) or 214B.
 
 #### Tomahawk Jack
 <video>

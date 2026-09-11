@@ -1,345 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000000">
-    <title>Breakers Wiki</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💥</text></svg>">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#000000">
+        <title>Breakers Wiki</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💥</text></svg>">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=Archivo+Expanded:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
+        <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    </head>
+    <body>
 
-    <header>
-        <div class="nav-container">
-            <a href="/" class="logo" onclick="Wiki.showSection('home')"><img class="logo" src="/media/assets/bkwiki_color.webp" alt="BREAKERS WIKI"></a>
-            <nav>
-                <button class="nav-link" data-section="gameplay" onclick="Wiki.showSection('gameplay', this)">
-                    <i class="bi bi-joystick"></i> <span>Gameplay</span>
-                </button>
-                <button class="nav-link" data-section="characters" onclick="Wiki.showSection('characters', this)">
-                    <i class="bi bi-person-badge"></i> <span>Characters</span>
-                </button>
-                <button class="nav-link" data-section="about" onclick="Wiki.showSection('about', this)">
-                    <i class="bi bi-info-circle"></i> <span>About</span>
-                </button>
-            </nav>
-        </div>
-
-    </header>
-
-    <section id="hero-welcome" class="hero-section">
-
-        <video autoplay loop muted playsinline class="hero-video-bg">
-            <source src="/media/assets/background.mp4" type="video/mp4">
-        </video>
-
-    <div class="hero-content">
-        <h1>Breakers Wiki</h1>
-        <div class="highlight">A quick introduction to the Breakers series</div>
-        <div class="main-actions">
-            <a class="main-btn" data-subsection="gameplay" onclick="Wiki.showSection('gameplay')">Gameplay</a>
-            <a class="main-btn secondary" data-subsection="characters" onclick="Wiki.showSection('characters')">Character guides</a>
-        </div>
-
-    </div>
-
-
-    <div class="timeline-container">
-    <div class="timeline">
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <img class="timeline-image" src="/media/assets/boxart_Breakers.webp" alt="Breakers arcade screenshot">
-                <div class="timeline-text-block">
-                    <h3>Breakers</h3>
-                    <p>VISCO began development in 1993 on Tenrin no Syo Chicago (Crystal Legacy), which later evolved into Breakers, a fighting game released in 1996 on Neo Geo MVS. Console versions followed on Neo Geo AES, Neo Geo CD, and eventually Dreamcast.</p>
-                </div>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <img class="timeline-image" src="/media/assets/boxart_Breakers_Revenge.webp" alt="Breakers arcade screenshot">
-                <div class="timeline-text-block">
-                    <h3>Breakers Revenge</h3>
-                    <p>The most popular entry in the series, released in 1998. This enhanced sequel updates the original with new character artwork, balance adjustments, additional color variations, and redesigned stages. It also introduces a new character, Saizo.</p>
-                </div>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <img class="timeline-image" src="/media/assets/boxart_Breakers_Collection.webp" alt="Breakers arcade screenshot">
-                <div class="timeline-text-block">
-                    <h3>Breakers Collection</h3>
-                    <p>In 2023, QUByte Interactive released a compilation of both Breakers games, featuring modern additions such as rollback netcode with cross‑platform play, ranked matches, global leaderboards, an expanded training mode, an art gallery, and a new Team Battle mode.</p>
-                </div>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <img class="timeline-image" src="/media/assets/boxart_Breakers_Chicaco.webp" alt="Breakers arcade screenshot">
-                <div class="timeline-text-block">
-                    <h3>Breakers Revenge Chicago</h3>
-                    <p>A 2024 upgraded EXA‑Arcadia release featuring new artwork, colors, training mode, new soundtrack, and all stage versions. Bai‑Hu is playable, and the game includes three modes: Classic (Revenge), Extra (Neo Geo CD), and Chicago (short hop and balance changes).</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-</section>
-
-<div class="wrapper">
-    <main class="container">
-        <!-- GAMEPLAY -->
-        <section id="gameplay" class="wiki-section">
-            <div class="section-header">
-                <span style="background: #d98fa3;" class="badge">System</span>
-                <h2>How to play</h2>
-            </div>
-            <div class="grid">
-                <div class="card">
-                    <video class="card-video" preload="none" data-videojs >
-                        <source data-src="/media/gameplay/br-how-to-play.mp4" type="video/mp4">
-                            Your browser does support HTML5 video.
-                    </video>
-                    <h3>Controls</h3>
-                    <p>Breakers is mostly played on a square button layout:</p>
-                    <img src="media/assets/arcade-layout.webp">
-                </div>
-                <div class="card">
-                    <video class="card-video" preload="none" data-videojs >
-                        <source data-src="/media/gameplay/throw.mp4" type="video/mp4">
-                            Your browser does support HTML5 video.
-                    </video>
-                    <h3>Throw</h3>
-                        <p>Throws are performed with Forward or Back + C. They’re strong due to the absence of throw‑teching and can also break close jump‑in combos. Certain characters have additional throw inputs, including air throws.</p>
-                </div>
-                <div class="card">
-                    <video class="card-video" preload="none" data-videojs >
-                        <source data-src="/media/gameplay/juggles.mp4" type="video/mp4">
-                            Your browser does support HTML5 video.
-                    </video>
-                    <h3>Combos</h3>
-                    <p>Breakers features numerous cancel options supported by a generous input buffer, along with several ways to use Supers. Every action builds a three‑bar meter, and each Super costs one bar.</p>
-                </div>
-                <div class="card">
-                    <video class="card-video" preload="none" data-videojs >
-                        <source data-src="/media/gameplay/roll.mp4" type="video/mp4">
-                            Your browser does support HTML5 video.
-                    </video>
-                    <h3>Back roll</h3>
-                    <p>After a non-super hit, press 3 buttons while knocked down to do a back-roll. This can help you defend against strong okizeme setups.</p>
-                </div>
-                <div class="card">
-                    <video class="card-video" preload="none" data-videojs >
-                        <source data-src="/media/gameplay/dash.mp4" type="video/mp4">
-                            Your browser does support HTML5 video.
-                    </video>
-                    <h3>Dashes</h3>
-                    <p>All characters (except for Condor) can dash by tapping forward or back twice. Some characters have backdash invincibility and dash‑cancels, giving them enhanced mobility options.</p>
-                </div>
-                <div class="card">
-                    <video class="card-video" preload="none" data-videojs >
-                        <source data-src="/media/gameplay/dizzy.mp4" type="video/mp4">
-                            Your browser does support HTML5 video.
-                    </video>
-                    <h3>Dizzy</h3>
-                    <p>Taking repeated hits will leave you dizzy. While stunned, mash directions and buttons to recover faster. The recovery animation grants a brief window of invincibility.</p>
-                </div>
-                <div class="card">
-                    <video class="card-video" preload="none" data-videojs >
-                        <source data-src="/media/gameplay/chip.mp4" type="video/mp4">
-                            Your browser does support HTML5 video.
-                    </video>
-                    <h3>Chip damage</h3>
-                    <p>Blocking inflicts chip damage, which can lead to a KO. Use special moves to secure chip finishes, as Supers deal very little chip damage.</p>
-                </div>
-                <div class="card">
-                    <video class="card-video" preload="none" data-videojs >
-                        <source data-src="/media/gameplay/break.mp4" type="video/mp4">
-                            Your browser does support HTML5 video.
-                    </video>
-                    <h3>Break</h3>
-                    <p>Interrupt combos with a throw or an invincible move. It works best against jump‑ins combos. Use breakable combos for more damage when the opponent isn’t ready, and unbreakable combos when you want a safer, guaranteed option.</p>
-                </div>
-                <div class="card">
-                    <h3>Risk system</h3>
-                    <p>Refers to comebacks mechanics : </p>
-                    <p>🔺 <b>ATK+DEF boost under 2/3 life</b>. The healthier player takes more damage until both life bars are equal.</p>
-                    <p>🔺 <b>DMG boost by waiting</b>, up to double damage on your next hit.</p>
-                    <p>🔺 <b>Winner takes extra DMG, loser gains DEF boost.</b> These effects stack with each win.</p>
-                </div>
-            </div>
-            <br><br>
-            <div class="section-header">
-                <span style="background: #d0d98f;" class="badge">Practice</span>
-                <h2>Training mode</h2>
+        <header>
+            <div class="nav-container">
+                <a href="/" class="logo" onclick="Wiki.showSection('home')"><img class="logo" src="/media/assets/bkwiki_color.webp" alt="BREAKERS WIKI"></a>
+                <nav>
+                    <button class="nav-link" data-section="gameplay" onclick="Wiki.showSection('gameplay', this)">
+                        <i class="bi bi-joystick"></i> <span>Gameplay</span>
+                    </button>
+                    <button class="nav-link" data-section="characters" onclick="Wiki.showSection('characters', this)">
+                        <i class="bi bi-book"></i> <span>Characters</span>
+                    </button>
+                    <button class="nav-link" data-section="about" onclick="Wiki.showSection('about', this)">
+                        <i class="bi bi-info-circle"></i> <span>About</span>
+                    </button>
+                </nav>
             </div>
 
+        </header>
 
-            <div class="training-mode">
+        <section id="hero-welcome" class="hero-section">
 
-            <div class="grid">
-                <div class="card">
-                <h3>How to start training mode</h3>
-                <p>You need a <a href="https://www.fightcade.com/" target="_blank">Fightcade</a> setup, install the client, create a Fightcade account, and have the Breakers Revenge ROM placed in your ROMs folder.</p>
-                <br>
+            <video autoplay loop muted playsinline class="hero-video-bg">
+                <source src="/media/assets/background.mp4" type="video/mp4">
+            </video>
 
-                <p>2 ways to enter training mode:</p>
-                <ol type="A">
-                    <li>Enter training mode by joining the Breakers Revenge room on Fightcade and selecting TRAINING.</li>
-                    <li>Launch the game with fcadefbneo.exe then open: <i>Game > Lua Scripting > Fightcade Training Mode</i>.</li>
-                </ol>
+            <div class="hero-content">
+                <!-- <h1>Breakers Wiki</h1> -->
+                <img class="main-logo" src="/media/assets/bkwiki_color.webp" alt="BREAKERS WIKI">
+
+                <div class="highlight">Learn the essentials and start playing</div>
+                <div class="main-actions">
+                    <a class="main-btn" data-subsection="gameplay" onclick="Wiki.showSection('gameplay')">Gameplay</a>
+                    <a class="main-btn" data-subsection="characters" onclick="Wiki.showSection('characters')">Character guides</a>
                 </div>
-
-
-                
-            <div class="card">
-              <dl class="settings-list">
-                <div class="setting-item">
-                  <dt>Controller settings</dt>
-                  <dd>
-                    <i>Input</i> &rsaquo; <i>Map Game Inputs</i>
-                  </dd>
-                </div>
-            
-                <div class="setting-item">
-                  <dt>Show the Training Menu</dt>
-                  <dd>Hold the <i>Coin</i> button</dd>
-                </div>
-            
-                <div class="setting-item">
-                  <dt>Show/Hide Hitboxes</dt>
-                  <dd>Go to the training menu at the character select screen and set hitboxes to ON/OFF</dd>
-                </div>
-            
-                <div class="setting-item">
-                  <dt>Dummy's position</dt>
-                  <dd>Adjust the dummy's directional holding via the training menu.</dd>
-                </div>
-            
-                <div class="setting-item">
-                  <dt>Recording</dt>
-                  <dd>
-                    <i>Training Menu</i> &rsaquo; <i>Recording Menu</i>
-                  </dd>
-                </div>
-              </dl>
-            </div>
-
-
-
-            <div class="card">
-                    <video class="card-video" preload="none" data-videojs >
-                            <source data-src="/media/gameplay/training.mp4" type="video/mp4">
-                                Your browser does support HTML5 video.
-                        </video>
-                <h3>Record / Playback</h3>
-                <ol>
-                    <li>Press Coin 3 times (you'll see a red indicator at the top left of the screen).</li>
-                    <li>Perform the inputs you want to record (Player 2 by default) then Press Coin to stop.</li>
-                    <li>Finally, Press Coin to play your recorded inputs.</li>
-                </ol>
-            </div>
-
-                
-
-            
 
             </div>
 
 
-        </section>
-
-        <!-- CHARACTERS -->
-        <section id="characters" class="wiki-section">
-            <div class="section-header">
-                <span style="background: #7fbf9f;" class="badge">Guide</span>
-
-
-                <h2>Characters</h2>
-                    <aside class="char-sidebar">
-                        <button class="char-btn active" data-char="sho" onclick="Wiki.loadCharacter('sho', this)"><img src="media/assets/Portrait_BR_Sho.png" alt="Character 1"></button>
-                        <button class="char-btn" data-char="pielle" onclick="Wiki.loadCharacter('pielle', this)"><img src="media/assets/Portrait_BR_Pielle.png" alt="Character 2"></button>
-                        <button class="char-btn" data-char="condor" onclick="Wiki.loadCharacter('condor', this)"><img src="media/assets/Portrait_BR_Condor.png" alt="Character 3"></button>
-                        <button class="char-btn" data-char="rila" onclick="Wiki.loadCharacter('rila', this)"><img src="media/assets/Portrait_BR_Rila.png" alt="Character 4"></button>
-                        <button class="char-btn" data-char="tia" onclick="Wiki.loadCharacter('tia', this)"><img src="media/assets/Portrait_BR_Tia.png" alt="Character 5"></button>
-                        <button class="char-btn" data-char="alsion" onclick="Wiki.loadCharacter('alsion', this)"><img src="media/assets/Portrait_BR_Alsion_III.png" alt="Character 6"></button>
-                        <button class="char-btn" data-char="maherl" onclick="Wiki.loadCharacter('maherl', this)"><img src="media/assets/Portrait_BR_Maherl.png" alt="Character 7"></button>
-                        <button class="char-btn" data-char="dao-long" onclick="Wiki.loadCharacter('dao-long', this)"><img src="media/assets/Portrait_BR_Dao-Long.png" alt="Character 8"></button>
-                        <button class="char-btn" data-char="saizo" onclick="Wiki.loadCharacter('saizo', this)"><img src="media/assets/Portrait_BR_Saizo.png" alt="Character 9"></button>
-                        <button class="char-btn" data-char="bai-hu" onclick="Wiki.loadCharacter('bai-hu', this)"><img src="media/assets/Portrait_BR_Bai-Hu.png" alt="Character 10"></button>
-                    </aside>
-                
+            <div class="timeline-container">
+                <h2>EXPLORE THE SERIES</h2>
+                <div class="play-highlight">Discover the Breakers games</div>
             </div>
-            <div class="char-layout">
-                <article class="char-content" id="markdown-render">
-                    <div class="empty-state">Select a character from the roster list.</div>
+
+            <!-- Breakers -->
+            <div class="roster">
+       
+                <article class="card-roster">
+                    <div class="poster">
+                        <img src="media/assets/boxart_Breakers.webp" class="poster-img" alt="Breakers">
+                    </div>
+                    <div class="roster-desc">
+                        <div class="title-row"><h3>Breakers</h3></div>
+                        <div class="meta">
+                            <div><i class="bi bi-calendar3"></i> 1996</div>
+                            <div><i class="bi bi-controller"></i> Neo Geo MVS/AES/CD, Dreamcast</div>
+                            <div><i class="bi bi-building"></i> Visco Corporation</div>
+                        </div>
+                        <hr class="divider">
+                        <p class="desc">
+                            VISCO began in 1993 with the prototype <a href="https://archive.org/details/rgz5f4" target="_blank">Crystal Legacy</a>, which later evolved into Breakers, a fast, accessible fighting game built around simple inputs and quick movement. Console versions followed later on Neo Geo AES, Neo Geo CD, and eventually Dreamcast.
+                        </p>
+                    </div>
                 </article>
+
+                <!-- Breakers Revenge -->
+                <article class="card-roster">
+                    <div class="poster">
+                        <img src="media/assets/boxart_Breakers_Revenge.webp" class="poster-img" alt="Breakers Revenge">
+                    </div>
+                    <div class="roster-desc">
+                        <div class="title-row"><h3>Breakers Revenge</h3></div>
+                        <div class="meta">
+                            <div><i class="bi bi-calendar3"></i> 1998</div>
+                            <div><i class="bi bi-controller"></i> Neo Geo MVS</div>
+                            <div><i class="bi bi-building"></i> Visco Corporation</div>
+                        </div>
+                        <hr class="divider">
+                        <p class="desc">
+                            The most popular entry in the series. This enhanced sequel updates the original with new character artwork, balance adjustments, additional color variations, and redesigned stages. It also introduces a new character, the ninja Saizo.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Breakers Collection -->
+                <article class="card-roster">
+                    <div class="poster">
+                        <img src="media/assets/boxart_Breakers_Collection.webp" class="poster-img" alt="Breakers Collection">
+                    </div>
+                    <div class="roster-desc">
+                        <div class="title-row"><h3>Breakers Collection</h3></div>
+                        <div class="meta">
+                            <div><i class="bi bi-calendar3"></i> 2023</div>
+                            <div><i class="bi bi-controller"></i> Xbox Series, PC, PS4/5, Switch</div>
+                            <div><i class="bi bi-building"></i> QUByte Interactive</div>
+                        </div>
+                        <hr class="divider">
+                        <p class="desc">
+                            A compilation of both Breakers games, featuring modern additions such as rollback netcode with cross‑platform play, ranked matches, global leaderboards, an expanded training mode, an art gallery, and a new Team Battle mode.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Breakers Revenge Chicago -->
+                <article class="card-roster">
+                    <div class="poster">
+                        <img src="media/assets/boxart_Breakers_Chicaco.webp" class="poster-img" alt="Breakers Revenge Chicago">
+                    </div>
+                    <div class="roster-desc">
+                        <div class="title-row"><h3>Breakers Revenge Chicago</h3></div>
+                        <div class="meta">
+                            <div><i class="bi bi-calendar3"></i> 2024</div>
+                            <div><i class="bi bi-controller"></i> exA System</div>
+                            <div><i class="bi bi-building"></i> exA-Arcadia</div>
+                        </div>
+                        <hr class="divider">
+                        <p class="desc">
+                            This upgraded EXA‑Arcadia release features new artwork, colors, training mode, new soundtrack, and all stage versions. 
+                            Bai‑Hu is playable, and the game offers 3 modes: Revenge (Classic), Extra (Neo‑Geo CD), and Chicago (short hops and balance changes).
+                        </p>
+                    </div>
+                </article>
+
             </div>
+
+
+
+            <div class="breakers-cards">
+    
+                <h2>GET STARTED</h2>
+                <div class="play-highlight">
+                    Play and join the community
+                </div>
+    
+                <div class="cards-wrapper">
+        
+                    <div class="play-card">
+                        <div class="card-image play"></div>
+                        <h3>Official releases</h3>
+                        <p>
+                            Originally released on Neo Geo MVS, Breakers and its sequel are also available on modern platforms through Breakers Collection (2023), which adds rollback netcode, cross-platform play support, training, and a team battle mode.
+                        </p>
+                    </div>
+        
+                    <div class="play-card">
+                        <div class="card-image emulation"></div>
+                        <h3>Play online</h3>
+                        <p>
+                            Arcade versions remain accessible through emulation, with <a href="https://www.fightcade.com/" target="_blank" rel="noopener noreferrer">Fightcade</a> being the most popular way to play Breakers today. It adds features such as fast online matchmaking, match replays, spectator modes, and dedicated training tools for competitive play.
+                        </p>
+                    </div>
+        
+                    <div class="play-card">
+                        <div class="card-image community"></div>
+                        <h3>Breakers community</h3>
+                        <p>
+                            The <a href="https://discord.gg/Qnvkcumfsd" target="_blank" rel="noopener noreferrer">Breakers Discord</a> serves as the main hub for finding players, exploring advanced techniques, and staying updated on community events, including offline tournaments where the game is often played on original arcade cabinets.
+                        </p>
+                    </div>
+        
+                </div>
+    
+            </div>
+
+
+            <div class="learning-section">
+                <img class="learning-section__img-left" src="media/assets/dao-bg.webp" alt="">
+                <img class="learning-section__img-right" src="media/assets/sho-bg.webp" alt="">
+
+
+
+
+                <h2>learn the basics</h2>
+                <div class="play-highlight">Your guide to the fundamentals</div>
+
+                <div class="learning-grid">
+
+                    <a href="#" data-subsection="gameplay" onclick="Wiki.showSection('gameplay')" class="learning-card" role="button">
+                        <div class="learning-card__content">
+                            <h3><i class="bi bi-joystick"></i> HOW TO PLAY</h3>
+                            <p>Learn the basics, including core mechanics, movements, combos and more.</p>
+                        </div>
+                    </a>
+                    <a href="#" data-subsection="characters" onclick="Wiki.showSection('characters')" class="learning-card" role="button">
+                        <div class="learning-card__content">
+                            <h3><i class="bi bi-book"></i>Character guides</h3>
+                            <p>Find your character and learn through their combos, essential guide and matchups.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
         </section>
 
-        <!-- ABOUT -->
-        <section id="about" class="wiki-section">
-            <div class="section-header">
-                <span style="background: #7da7d9;" class="badge">Info</span>
-                <h2>Breakers wiki</h2>
-            </div>
-            <div class="grid">
-                <div class="card">
-                    <h3>About</h3>
-                        <p>Breakerswiki helps you learn the basics with gameplay, characters guide and matchup tips.</p>
-                </div>
-                <div class="card">
-                    <h3>Get Involved</h3>
-                    <p>Want to contribute to the wiki ? Feel free to 
-                        <a href="https://discord.com/users/110457069500391424" target="_blank">Get in touch</a> or
-                        <a target="_blank" href="https://github.com/breakerswiki/breakerswiki.github.io">Submit a request</a>
-                    </p>
-                </div>
-                <div class="card">
-                    <h3>Discord</h3>
-                    <p> <a class="discord-join" href="https://discord.gg/Qnvkcumfsd" target="_blank">Join our community on Discord</a> to discuss strategies, share content, and connect with other fans!</p>
-                </div>
-                <div class="card">
-                    <h3>Resources</h3>
-                    <ul class="resources-list">
-                        <li><a target="_blank" href="https://discord.gg/Qnvkcumfsd">Breakers Revenge Discord <span>→</span></a></li>
-                        <li><a target="_blank" href="https://www.youtube.com/@sasizm7079">Sas Izm <span>→</span></a></li>
-                        <li><a target="_blank" href="https://wiki.supercombo.gg/w/Breakers_Revenge">SuperCombo Wiki <span>→</span></a></li>
-                        <li><a target="_blank" href="https://strategywiki.org/wiki/Breakers_Revenge">Strategy Wiki <span>→</span></a></li>
-                        <li><a target="_blank" href="https://breakersdojo.fr/">Breakersdojo <span>→</span></a></li>
-                        <li><a target="_blank" href="https://www.fightersgeneration.com/games/breakers-revenge.html">The Fighters Generation <span>→</span></a></li>
-                        <li><a target="_blank" href="https://www.youtube.com/@fgmovelists">Fighting Game Move Lists <span>→</span></a></li>
-                        <li><a target="_blank" href="https://www.arcadequartermaster.com/brr_config.html">Arcade Quarter Master <span>→</span></a></li>
-                        <li><a target="_blank" href="https://www.neogeospirit.com/tests/breakersrevenge_test.htm">NeoGeo Spirit <span>→</span></a></li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>Special Thanks</h3>
-                    <p>Special thanks to the Breakers community who made all collected information in this wiki possible.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-</div>
 
-    <footer>
-        <div class="footer-container">
-            <div class="footer-info">
-                <p class="footer-credits">2023/<span id="about-year"></span> - Zoukken</p>
-                <p class="footer-credits">This site uses numpad notation and standard fighting game terms.<br>For explanations, visit <a target="_blank" href="https://glossary.infil.net/">The Fighting Game Glossary</a>.</p>
-                <p class="footer-credits">Fan-made, non-commercial project.<br>All rights to images belong to their respective owners.</p>
-            </div>
+
+        <div class="wrapper">
+            <main class="container">
+                <!-- GAMEPLAY -->
+                <section id="gameplay" class="wiki-section">
+                    <div class="section-header">
+                        <span style="background: #d98fa3;" class="badge">System</span>
+                        <h2>How to play</h2>
+                        <h1 class="char-subtitle">Everything you need to know</h1>
+
+                    </div>
+
+                    <div class="grid">
+                        <div class="card">
+                            <video class="card-video" preload="none" data-videojs>
+                                <source data-src="/media/gameplay/br-how-to-play.mp4" type="video/mp4">
+                                Your browser does support HTML5 video.
+                            </video>
+
+                            <h3>Controls</h3>
+                            <p>Breakers is generally played on a square 4 button layout.</p>
+
+                            <div class="controls">
+                                <div class="buttons">
+                                    <div class="button button-a">A</div>
+                                    <div class="button button-b">B</div>
+                                    <div class="button button-c">C</div>
+                                    <div class="button button-d">D</div>
+                                </div>
+                    
+                                <div class="labels">
+                                    <div class="label label-c">Heavy punch</div>
+                                    <div class="label label-d">Heavy kick</div>
+                                    <div class="label label-b">Light kick</div>
+                                    <div class="label label-a">Light punch</div>
+                                </div>   
+                            </div>
+
+
+                        </div>
+                        <div class="card">
+                            <video class="card-video" preload="none" data-videojs>
+                                <source data-src="/media/gameplay/dash.mp4" type="video/mp4">
+                                Your browser does support HTML5 video.
+                            </video>
+                            <h3>Dashes</h3>
+                            <p> <img class="input-icon" src="/media/inputs/Arcade-Stick-Left.png" alt="LEFT"><img class="input-icon" src="/media/inputs/Arcade-Stick-Left.png" alt="LEFT"> or <img class="input-icon" src="/media/inputs/Arcade-Stick-Right.png" alt="RIGHT"><img class="input-icon" src="/media/inputs/Arcade-Stick-Right.png" alt="RIGHT"><br>
+                            All characters (except for Condor) can dash by tapping forward or back twice. Some characters have backdash invincibility and dash‑cancels, giving them enhanced mobility options.</p>
+                        </div>
+                        <div class="card">
+                            <video class="card-video" preload="none" data-videojs>
+                                <source data-src="/media/gameplay/throw.mp4" type="video/mp4">
+                                Your browser does support HTML5 video.
+                            </video>
+                            <h3>Throw</h3>
+                            <p> (<img class="input-icon" src="/media/inputs/Arcade-Stick-Left.png" alt="LEFT"> or <img class="input-icon" src="/media/inputs/Arcade-Stick-Right.png" alt="RIGHT">) + <span class="btn-punch C">C</span><br>Throw is a strong option in Breakers due to the absence of throw‑teching. Throws can also break close jump‑in combos. Certain characters have additional throw inputs or air throws.</p>
+                        </div>
+                        <div class="card">
+                            <video class="card-video" preload="none" data-videojs>
+                                <source data-src="/media/gameplay/juggles.mp4" type="video/mp4">
+                                Your browser does support HTML5 video.
+                            </video>
+                            <h3>Combos</h3>
+                            <p>Breakers offers numerous cancel options, a generous input buffer, and multiple ways to use Super, including anti‑air and air‑to‑air juggles. Every action builds meter, with each Super consuming a single meter.</p>               
+                        </div>
+                        <div class="card">
+                            <video class="card-video" preload="none" data-videojs>
+                                <source data-src="/media/gameplay/roll.mp4" type="video/mp4">
+                                Your browser does support HTML5 video.
+                            </video>
+                            <h3>Back roll</h3>
+                            <p><span class="btn-punch A">A</span>+<span class="btn-kick B">B</span>+<span class="btn-punch C">C</span><br>
+                                After a non-super hit, press 3 buttons while knocked down to do a back-roll. This can help you defend against strong okizeme setups.</p>
+                        </div>
+                        <div class="card">
+                            <video class="card-video" preload="none" data-videojs>
+                                <source data-src="/media/gameplay/dizzy.mp4" type="video/mp4">
+                                Your browser does support HTML5 video.
+                            </video>
+                            <h3>Dizzy</h3>
+                            <p>Taking repeated hits will leave you dizzy. While stunned, mash directions and buttons to recover faster. The recovery animation grants a brief window of invincibility.</p>
+                        </div>
+                        <div class="card">
+                            <video class="card-video" preload="none" data-videojs>
+                                <source data-src="/media/gameplay/chip.mp4" type="video/mp4">
+                                Your browser does support HTML5 video.
+                            </video>
+                            <h3>Chip damage</h3>
+                            <p>Blocking inflicts chip damage, which can lead to a KO. Use special moves to secure chip finishes, as Supers deal very little chip damage.</p>
+                        </div>
+                        <div class="card">
+                            <video class="card-video" preload="none" data-videojs>
+                                <source data-src="/media/gameplay/break.mp4" type="video/mp4">
+                                Your browser does support HTML5 video.
+                            </video>
+                            <h3>Break</h3>
+                            <p>Break lets you interrupt certain combos with a throw or the appropriate move. Use breakable combos for extra damage when the opponent isn’t ready, and unbreakable combos when you want a safer option.</p>
+                        </div>
+                        <div class="card risk-system">
+                            <h3>Risk system</h3>
+                            <span>Comeback Mechanics</span><br><br>
+                            <p><b>Damage + Defense boost on low life</b><br> The healthier player takes more damage until both life bars are equal.</p>
+                            <p><b>Damage boost by waiting</b><br> Up to double damage on your next hit.</p>
+                            <p><b>Match winner takes more damage, loser gains defense</b><br> These effects stack with each win. In competitive play the game is often reset to keep things fair.</p>
+                        </div>
+                    </div>
+            
+                    <br><br>
+
+                    <div class="section-header">
+                        <span style="background: #bb8fd9;" class="badge">Bonus</span>
+                        <h2>Additional modes</h2>
+                        <h1 class="char-subtitle">Chicago and Extra modes</h1>
+                    </div>
+
+                    <div class="grid">
+                        <div class="card details">
+                            <h3>Chicago Mode</h3>
+                            <p>
+                                Available in Breakers Revenge Chicago, this mode adds balance changes, short hops, and allows characters to choose close or far normals independently of spacing through a new move list.
+                            </p>
+                        </div>
+
+                        <div class="card details">
+                            <h3>Extra Mode</h3>
+                            <p>
+                                Extra Mode makes Breakers considerably more explosive by giving players many more ways to cancel, extend combos, escape pressure, and survive situations that would normally lead to a KO.
+                                This mode is available in the Neo‑Geo CD release of Breakers and in Breakers Revenge Chicago. <br>
+                                <br>More infos on <a href="https://wiki.supercombo.gg/w/Breakers_Revenge/EXTRA" target="_blank">supercombo.gg</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <br><br>
+
+                    <div class="section-header">
+                        <span style="background: #d0d98f;" class="badge">Practice</span>
+                        <h2>Training mode</h2>
+                        <h1 class="char-subtitle">How to access and use training mode</h1>
+                    </div>
+
+                    <div class="training-mode">
+            
+                        <div class="grid">
+                            <div class="card details">
+                                <h3>Getting Started</h3>
+                                <p>
+                                    You need a <a href="https://www.fightcade.com/" target="_blank" rel="noopener">Fightcade</a> setup.
+                                    Install the client, create an account, and place the
+                                    Breakers Revenge ROM in your ROMs folder.
+                                </p>
+
+
+                                <ol class="steps" style="list-style-type:upper-alpha;">
+                                    <li>
+                                        <strong>Fightcade</strong>:
+                                        Join the Breakers Revenge room and select
+                                        <code>TRAINING</code>.
+                                    </li>
+                                    <li>
+                                        <strong>Standalone</strong>:
+                                        Launch <code>fcadefbneo.exe</code>, then open
+                                        <em>Game &rsaquo; Lua Scripting &rsaquo; Fightcade Training Mode</em>.
+                                    </li>
+                                </ol>
+                            </div>
+            
+            
+                            <div class="card details">
+                                <h3>Record &amp; Playback options</h3>
+
+                                <ol class="steps">
+                                    <li>
+                                        Press <kbd>Coin</kbd> 3 times.
+                                        A red indicator will appear in the top-left corner.
+                                    </li>
+                                    <li>
+                                        Perform the inputs you want to record
+                                        (Player 2 by default), then press <kbd>Coin</kbd> to stop.
+                                    </li>
+                                    <li>
+                                        Press <kbd>Coin</kbd> again to play back the recording.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+
+                </section>
+
+                <!-- CHARACTERS -->
+                <section id="characters" class="wiki-section">
+                    <div class="section-header">
+                        <div class="character-bg"></div>
+
+                        <span style="background: #7fbf9f;" class="badge">Guide</span>
+
+
+                        <h2>Characters</h2>
+                        <h1 class="char-subtitle">Select a character to view their detailed guide</h1>
+                        <aside class="char-sidebar">
+                            <button class="char-btn active" data-char="sho" onclick="Wiki.loadCharacter('sho', this)"><img src="media/assets/Portrait_BR_Sho.png" alt="Character 1"></button>
+                            <button class="char-btn" data-char="pielle" onclick="Wiki.loadCharacter('pielle', this)"><img src="media/assets/Portrait_BR_Pielle.png" alt="Character 2"></button>
+                            <button class="char-btn" data-char="condor" onclick="Wiki.loadCharacter('condor', this)"><img src="media/assets/Portrait_BR_Condor.png" alt="Character 3"></button>
+                            <button class="char-btn" data-char="rila" onclick="Wiki.loadCharacter('rila', this)"><img src="media/assets/Portrait_BR_Rila.png" alt="Character 4"></button>
+                            <button class="char-btn" data-char="tia" onclick="Wiki.loadCharacter('tia', this)"><img src="media/assets/Portrait_BR_Tia.png" alt="Character 5"></button>
+                            <button class="char-btn" data-char="alsion" onclick="Wiki.loadCharacter('alsion', this)"><img src="media/assets/Portrait_BR_Alsion_III.png" alt="Character 6"></button>
+                            <button class="char-btn" data-char="maherl" onclick="Wiki.loadCharacter('maherl', this)"><img src="media/assets/Portrait_BR_Maherl.png" alt="Character 7"></button>
+                            <button class="char-btn" data-char="dao-long" onclick="Wiki.loadCharacter('dao-long', this)"><img src="media/assets/Portrait_BR_Dao-Long.png" alt="Character 8"></button>
+                            <button class="char-btn" data-char="saizo" onclick="Wiki.loadCharacter('saizo', this)"><img src="media/assets/Portrait_BR_Saizo.png" alt="Character 9"></button>
+                            <button class="char-btn" data-char="bai-hu" onclick="Wiki.loadCharacter('bai-hu', this)"><img src="media/assets/Portrait_BR_Bai-Hu.png" alt="Character 10"></button>
+                        </aside>
+                
+                    </div>
+                    <div class="char-layout">
+                        <article class="char-content" id="markdown-render">
+                            <div class="empty-state">Select a character from the roster list.</div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- ABOUT -->
+                <section id="about" class="wiki-section">
+                    <div class="section-header">
+                        <span style="background: #7da7d9;" class="badge">Info</span>
+                        <h2>About</h2>
+                        <h1 class="char-subtitle">General informations</h1>
+                    </div>
+                    <div class="grid">
+                        <div class="card details">
+                            <h3>Breakerswiki</h3>
+                            <p>Breakerswiki helps you learn the basics with gameplay, characters guide and matchup tips.</p>
+                            <p>This site uses standard fighting game terms. For explanations, visit <a target="_blank" href="https://glossary.infil.net/">The Fighting Game Glossary</a></p>
+                            <br>
+                            <h3>Get Involved</h3>
+                            <p>Want to contribute to the wiki ? Feel free to 
+                                <a href="https://discord.com/users/110457069500391424" target="_blank">Get in touch</a> or
+                                <a target="_blank" href="https://github.com/breakerswiki/breakerswiki.github.io">Submit a request</a>
+                            </p>
+
+
+                        </div>
+                        <div class="card details">
+                            <h3>Discord</h3>
+                            <p> <a href="https://discord.gg/Qnvkcumfsd" target="_blank">Join our community on Discord</a> to discuss strategies, share content, and connect with other fans!</p>
+                            <br>
+                            <h3>Special Thanks</h3>
+                            <p>Special thanks to the Breakers community who made all collected information in this wiki possible.</p>
+                        </div>
+                        <div class="card details">
+                            <h3>Resources</h3>
+                            <ul class="resources-list">
+                                <li><a target="_blank" href="https://discord.gg/Qnvkcumfsd">Breakers Revenge Discord <span>→</span></a></li>
+                                <li><a target="_blank" href="https://www.youtube.com/@sasizm7079">Sas Izm <span>→</span></a></li>
+                                <li><a target="_blank" href="https://wiki.supercombo.gg/w/Breakers_Revenge">SuperCombo Wiki <span>→</span></a></li>
+                                <li><a target="_blank" href="https://strategywiki.org/wiki/Breakers_Revenge">Strategy Wiki <span>→</span></a></li>
+                                <li><a target="_blank" href="https://breakersdojo.fr/">Breakersdojo <span>→</span></a></li>
+                                <li><a target="_blank" href="https://www.fightersgeneration.com/games/breakers-revenge.html">The Fighters Generation <span>→</span></a></li>
+                                <li><a target="_blank" href="https://www.youtube.com/@fgmovelists">Fighting Game Move Lists <span>→</span></a></li>
+                                <li><a target="_blank" href="https://www.arcadequartermaster.com/brr_config.html">Arcade Quarter Master <span>→</span></a></li>
+                                <li><a target="_blank" href="https://www.neogeospirit.com/tests/breakersrevenge_test.htm">NeoGeo Spirit <span>→</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
         </div>
-    </footer>
-    <script src="app.js"></script>
-</body>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-info">
+                    <p class="footer-credits">2023/<span id="about-year"></span></p>
+                    <p class="footer-credits">
+                        Fan-made, non-commercial project.<br>All rights to images belong to their respective owners.
+                    </p>
+                    <span class="footer-credits">Zoukken</span>
+                </div>
+            </div>
+        </footer>
+
+        <script src="app.js"></script>
+    </body>
 </html>

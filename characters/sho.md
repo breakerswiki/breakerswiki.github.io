@@ -2,12 +2,6 @@
 
 ## Infos
 
-### Data
-
-* **Origin:** Japan
-* **Defense:** 126
-* **Stun:** 2976
-
 ### Story
 
 Sho Kamui, the Karate master and protagonist of Breakers Revenge, enters the FIST Tournament to prove the strength of his martial arts and face his old rival, Lee Dao-Long, the one who gave him the scar on his cheek.
@@ -19,6 +13,8 @@ Sho Kamui, the Karate master and protagonist of Breakers Revenge, enters the FIS
 | ![img](media/characters/sho/img/sho_A.png)  | ![img](media/characters/sho/img/sho_B.png)  | ![img](media/characters/sho/img/sho_C.png)  | ![img](media/characters/sho/img/sho_D.png)  |
 
 ## Moves
+
+### MOVE LIST
 
 ### Normals
 All normals
@@ -63,15 +59,15 @@ Upper | [AIR],[DOWN]+[C]
 > <img src="/media/characters/sho/img/moves/Upper.gif">
 > [HIGH] [SUPER]
 > - Deals high damage and hit-stun
-Hiji 3 Dan Kougeki | [C].[C].[C]
+Hiji San Dan Kougeki | [C].[C].[C]
 > <img src="/media/characters/sho/img/moves/Hiji3DanKougeki.gif">
 > [MID] [SPECIAL] [SUPER]
-> - Close heavy that can chain up to 3 times
-> - 2nd hit launches opponent and is cancelable
-> - 3rd hit ends is only Super cancelable
+> - Close heavy that can chain up to three times
+> - Second hit launches opponent and is cancelable
+> - Third hit ends is only Super cancelable
 Fumitsuke | [AIR],[DOWN]+[B]
 > <img src="/media/characters/sho/img/moves/Fumitsuke.gif">
-> - [HIGH] [SUPER]
+> [HIGH] [SUPER]
 > - Can be repeated multiple times based on range and height.
 > - Super-cancelable on hit or whiff
 
@@ -85,7 +81,7 @@ Kurenai Sandan Geri | [QCB]+[K].[K].[K]
 > <img src="/media/characters/sho/img/moves/KurenaiSandanGeri.gif">
 > [MID] [REVERSAL] 
 > - Anti-air reversal
-> - Press Kick to extend (x2)
+> - Press Kick again for up to two additional kicks
 > - Has startup invincibility
 > - Light version has less reach
 Ranki Ryuu Geri | [QCF]+[K]
@@ -111,7 +107,7 @@ Geki Rekkou Ha | [AIR],[QCF],[QCF]+[P]
 > [MID] [HKD] 
 > - Safe on block.
 > - Invincible startup frames.
-> - Can be used after a whiffed divekick, jA or jB
+> - Can be used after a whiffed divekick, jump A or jump B
 > - Great for baiting anti-airs.
 Kurenai Gansai Shuu | ([AIR])[QCB],[QCF]+[K]
 > <img src="/media/characters/sho/img/moves/KurenaiGansaiShuu.gif">
@@ -129,44 +125,49 @@ Sho moves fast, deals high damage, and has great air control. His divekick can b
 ### Neutral
 <video><source data-src="/media/characters/sho/videos/sho_pressure.mp4"></video>
 
-* Find openings with short dashes into 2B or 5C.
-* From a distance, use 236P then follow with a run.
-* Cancel your run at any time to bait jumps.
-* Knee (B+C) is useful to keep pressure, safe on block, but can leaves at throw range. Be careful, if used from a distance, it has a punishable gap.
+* Find openings with short dashes: 
+  * dash > 2B 
+  * dash > 5C
+* Use 236P from a distance, then follow with dash to gain screen control and pressure
+* Cancel your dash at any time to bait jumps.
+* Knee (B+C) is useful for keeping pressure and is safe on block, but it can leave you at throw range. Be careful: when used from a distance, it has a punishable gap.
+
           
         
 ### Jumps
 <video><source data-src="/media/characters/sho/videos/sho_jumps.mp4"></video>
 
-* Except neutral jump D, all jump attacks are super-cancelable
-* Use super after a whiffed jA, jB, or divekick to bait anti-airs.
+* All jump attacks are super-cancelable (Except 8D)
+* Use super after a whiffed jump A, jump B, or divekick to bait anti-airs.
 * Jump B is your most reliable air-to-air, it stays active and with high priority.
-* Divekick is safe on block and can bait anti-airs with super.
-* If your opponent blocks high any jump attack, set up a fuzzy mixup with 2B (low) or jump D > 236236P.
+* When your jump‑in gets blocked, you can follow with a fuzzy mixup : 
+  * low: 2B
+  * fuzzy: 7D > 236236P
           
         
 ### Anti-air
         
 <video><source data-src="/media/characters/sho/videos/sho_anti-airs.mp4"></video>
         
-* 2C & 5C: Sepcial and Super cancellable
-* 214K: 214B is quick and can be used for juggles, while 214D reaches higher. Both have startup invincibility
+* 2C and 5C: Sepcial and Super cancellable
+* 214B is quick and can be used for juggles, startup invincibility
+* 214D reaches higher, startup invincibility
 
 ### Break
 
 <video><source data-src="/media/characters/sho/videos/matchups/sho_vs_tia_HeelBreak.mp4"></video>
 
 * Break with throw, backdash, or 214K. 
-* Breaking works best against certain close‑range combos and jump‑ins.
+* Break works best against certain close‑range combos and jump‑ins.
         
         
 ### Super moves
 
 <video><source data-src="/media/characters/sho/videos/sho_supers.mp4"></video>
         
-* Seiken Shou Ha (236236P): Punish unsafe moves or finish combos.
-* Geki Rekkou Ha (j.236236P): Safe on block and great for baiting anti‑airs.
-* Kurenai Gansai Shuu (214214K): Invincible startup, long reach; used as a reversal or to punish projectiles.
+* 236236P: Punish unsafe moves or finish combos.
+* (Air) 236236P: Safe on block and great for baiting anti‑airs.
+* 214214K: Long reach; used as a reversal or to punish projectiles
         
 ### Tips
         
@@ -174,35 +175,39 @@ Sho moves fast, deals high damage, and has great air control. His divekick can b
 
 <video><source data-src="/media/characters/sho/videos/sho_breakable_combos.mp4"></video>
 
-Using Far 5C in combos often gives your opponent a chance to break. Instead, use 2C or 2D :
-* 2B, 2B, 2C > 214K,K,K or 464P
+Using Far 5C in combos often gives your opponent a chance to break. <br>
+Instead, use 2C or 2D :
+* 2B, 2B, 2C > 214K.K.K
+* 2B, 2B, 2C > 6,4,6P
 * 2B, 2B, 2C > B+C > 236236P
 * 2B, 2B, 2D > 236236P
         
 #### Chip damage
 <video><source data-src="/media/characters/sho/videos/sho_chip_damage.mp4"></video>
 
-Use either 464P or 236D. 464P will deal the most chip damage.
+* Use either 6,4,6P or 236D. 
+* 6,4,6P will deal the most chip damage.
         
 #### Fuzzy
 <video><source data-src="/media/characters/sho/videos/sho_fuzzy_super.mp4"></video>
 
-Jump-in or divekick to force high block, then mix with low (2B) or fuzzy (jD > 236236P). Fuzzy fails if divekick is blocked low.
+* Jump-in or divekick to force high block,<br>Then mix with low (2B) or fuzzy (jump D > 236236P). 
+  * - Fuzzy fails if divekick is blocked low.
 
 #### Corner reset
 <video><source data-src="/media/characters/sho/videos/sho_corner_reset.mp4"></video>
 
-Use 2C > B+C or close 5C.C > B+C then :
-* Walk (condor)
-* Dash (sho, rila, tia, saizo, bai-hu)
-* Short dash with 2A or 2B (all characters)
+* Use 2C > B+C or close 5C.C > B+C then :
+  * - Walk (condor)
+  * - Dash (sho, rila, tia, saizo, bai-hu)
+  * - Short dash with 2A or 2B (all characters)
         
 #### Throw Option Select
 <video><source data-src="/media/characters/sho/videos/sho_throw_OS.mp4"></video>
 
-At close range, use this OS to throw or auto-trigger 214K (anti-air) if the throw fails.      
-* Forward throw: 214[6]C'B or 214[6]C'D
-* Back throw: 21[4]C'B or 21[4]C'D
+* Throw or auto-trigger 214K (anti-air) if the throw fails.      
+  * Throw: 214(6)C.K
+  * Back throw: 2,1(4)C.K
           
         
 ### Ressources
@@ -210,13 +215,13 @@ At close range, use this OS to throw or auto-trigger 214K (anti-air) if the thro
 * [SuperCombo Wiki - Breakers Revenge/Sho](https://wiki.supercombo.gg/w/Breakers_Revenge/Sho)       
         
 ### Replays
-* [<div class="fi fi-br"></div>LAURENTINO vs  <div class="fi fi-ar"></div>BrunoFerreir@](https://www.youtube.com/watch?v=XOWdAN0oCl8)
-* [<div class="fi fi-br"></div>lucasrocha2013 vs  <div class="fi fi-br"></div>DSKalashnikov](https://youtu.be/sb5e_DK1pBI?si=BAhUr9J809iZVIJe)
-* [<div class="fi fi-fr"></div>Keikun vs  <div class="fi fi-it"></div>SpinalBlood](https://www.youtube.com/watch?v=cX2r59Mm9Ws)
-* [<div class="fi fi-es"></div>NM Akuma vs  <div class="fi fi-fr"></div>Balier](https://www.youtube.com/watch?v=QrWSaWhVrGc)
-* [<div class="fi fi-us"></div>Justin Wong vs  <div class="fi fi-fr"></div>Abdess](https://www.youtube.com/watch?v=bWsdj0Gu5e8)
-* [<div class="fi fi-fr"></div>Balier vs  <div class="fi fi-fr"></div>Bad Mojo](https://www.youtube.com/watch?v=uTD9rqctDvo)
-* [<div class="fi fi-bg"></div>Oliva Biscuit vs  <div class="fi fi-fr"></div>Zoukken](https://www.youtube.com/watch?v=tsHHZdofdlg)
+  * [<div class="fi fi-br"></div>LAURENTINO vs  <div class="fi fi-ar"></div>BrunoFerreir@](https://www.youtube.com/watch?v=XOWdAN0oCl8)
+  * [<div class="fi fi-br"></div>lucasrocha2013 vs  <div class="fi fi-br"></div>DSKalashnikov](https://youtu.be/sb5e_DK1pBI?si=BAhUr9J809iZVIJe)
+  * [<div class="fi fi-fr"></div>Keikun vs  <div class="fi fi-it"></div>SpinalBlood](https://www.youtube.com/watch?v=cX2r59Mm9Ws)
+  * [<div class="fi fi-es"></div>NM Akuma vs  <div class="fi fi-fr"></div>Balier](https://www.youtube.com/watch?v=QrWSaWhVrGc)
+  * [<div class="fi fi-us"></div>Justin Wong vs  <div class="fi fi-fr"></div>Abdess](https://www.youtube.com/watch?v=bWsdj0Gu5e8)
+  * [<div class="fi fi-fr"></div>Balier vs  <div class="fi fi-fr"></div>Bad Mojo](https://www.youtube.com/watch?v=uTD9rqctDvo)
+  * [<div class="fi fi-bg"></div>Oliva Biscuit vs  <div class="fi fi-fr"></div>Zoukken](https://www.youtube.com/watch?v=tsHHZdofdlg)
           
           
         
@@ -227,58 +232,70 @@ At close range, use this OS to throw or auto-trigger 214K (anti-air) if the thro
 <video><source data-src="media/characters/sho/videos/basic_combos.mp4"></video>
 
 * 2B, 2B, 2B, 2D
-* 2B, 2B, 2C > 236D or 214D.D.D
-* 2B, 2B, 3C > 46P
-* A+C > 646P
-* 8D > 214D.D.D or 646P
-* close 5C.C > 646P or 214D
-* close 5C > B+D > 646P
+* 2B, 2B, 2C > 236D
+* 2B, 2B, 2C > 214D.D.D
+* 2B, 2B, 3C > 4,6P
+* A+C > 6,4,6P
+* 8D > 214D.D.D
+* 8D > 6,4,6P
+* close 5C.C > 6,4,6P
+* close 5C.C > 214D
+* close 5C > B+D > 6,4,6P
 
 ### Metered combos
 <video><source data-src="media/characters/sho/videos/meter_combo.mp4"></video>
 
-* 2B, 2B, 2B, 2D > 236236P or 214214K
-* 2B, 2B, 2C > B+C > 236236P or 214214K
+* 2B, 2B, 2B, 2D > 236236P
+* 2B, 2B, 2B, 2D > 214214K
+* 2B, 2B, 2C > B+C > 236236P
+* 2B, 2B, 2C > B+C > 214214K
 * Divekick > 236236P
 
-Corner:
-* 2B, 2B, 3C > 46P > 236236P or 214214K
-* jD, 5C > B+D > 646P > 236236P or 214214K
+#### Corner
+* 2B, 2B, 3C > 4,6P > 236236P
+* 2B, 2B, 3C > 4,6P > 214214K
+* 9D, 5C > B+D > 6,4,6P > 236236P
+* 9D, 5C > B+D > 6,4,6P > 214214K
 
 ### Anti-air
 <video><source data-src="media/characters/sho/videos/sho_anti_air_combo.mp4"></video>
 
 * 2C > 236236P
 * 2C > 214B > 236236P
-* 214B > 5C > 236236P or 214214K
-* 214B > jD > 236236P
-* 5A or 5B > jA,A,A > 236236P
+* 214B > 5C > 236236P
+* 214B > 5C > 214214K
+* 214B > 9D > 236236P
+* 5A or 5B > 9A,A,A > 236236P
 
 ### Air-to-air
 <video><source data-src="media/characters/sho/videos/sho_air_to_air_combo.mp4"></video>
 
 * Divekick > 236236P
-* jB > 236236P
-* jA,A,A > 236236P
+* jump B > 236236P
+* jump A,A,A > 236236P
 * Divekick > 2C > 214D.D.D
-* Divekick > jA,A,A > 236236P
+* Divekick > 9A,A,A > 236236P
 
 ### Kurenai juggles
 <video>
   <source data-src="media/characters/sho/videos/sho_214LK_delay_combo.mp4">
 </video>
 
-* 2C > 214B > B (delay) > 5C > 236236P or 214214K
-* Corner: 5C.C > 214B > B (delay) > 5C > 236236P or 214214K
+* 2C > 214B.B (delay) > 5C > 236236P
+* 2C > 214B.B (delay) > 5C > 214214K
+#### Corner
+* 5C.C > 214B.B (delay) > 5C > 236236P
+* 5C.C > 214B.B (delay) > 5C > 214214K
 
 ### Breakable combos
 <video>
   <source data-src="media/characters/sho/videos/sho_breakable_combos.mp4">
 </video>
 
-* far 5C ❌ B+C or 236236P
+* far 5C ❌ B+C
+* far 5C ❌ 236236P
 * A+C ❌ 236D
-* jD ❌ 2B, 2B, 2C > 236D
+* Jump D ❌ 2B, 2B, 2C > 236D
 * Divekick ❌ 2B, 2B, 2C > 214D.D.D
 
 
@@ -300,7 +317,7 @@ Corner:
   </video>
 
 - Unsafe, but Sho can cancel into Air Super to stay safe and bait punish attempts. 
-- If you have meter, use j.D > 236236P for a guaranteed punish.
+- If you have meter, use 9D > 236236P for a guaranteed punish.
 
 #### Onigawara
   <video>
@@ -325,7 +342,8 @@ Corner:
 
 - Safe on block, can bait anti-airs and enable fuzzy mixups.
 - Block low to avoid the fuzzy.
-- On hit, break with 214K or throw, but beware: divekick combos into 214K, which beats throws.
+- On hit, break with 214K or throw
+- Note: divekick combos into 214K, which beats throws.
 
 --- 
 
@@ -386,12 +404,12 @@ Corner:
 
 ### Condor
 
-#### Tomahawk Jack
+#### Tomahawk jack
 <video>
     <source data-src="media/characters/sho/videos/matchups/sho_vs_condor_Tomahawk.mp4">
 </video>
 
-- Unsafe on block. Punish with 5C or Super 214214K.
+- Unsafe on block. Punish with 5C or 214214K.
 - Whiff punish with 214214K
 
 #### Gran Buffalo Horn
@@ -409,7 +427,7 @@ Corner:
 
 - Has brief startup invincibility.
 - Last hit’s pushback makes it hard to punish
-- There’s a gap after the 1st hit, punish with throw or backdash > dash > 5C.
+- There’s a gap after the first hit, punish with throw or backdash > dash > 5C.
 
 
 ### Rila
@@ -420,7 +438,7 @@ Corner:
 </video>
 
 - Unsafe. Heavy version can be followed by any super to bait punishes.
-- Punish with 2A, it hits if she does nothing, and you still have time to block her super.
+- Punish with 2A and you'll still have time to block her super.
 - 214D can also punish or evade her supers.
 
 
@@ -464,7 +482,8 @@ Corner:
 </video>
 
 - Doesn't hit overhead, despite the jump animation.
-- Punish with dash > 5C. If you get hit, mash buttons and directions to reduce the damage.
+- Punish with dash > 5C. 
+- If you get hit, mash buttons and directions to reduce the damage.
 
 
 
@@ -486,14 +505,14 @@ Corner:
 </video>
 
 - Unsafe at point-blank
-- Whiff punished with 214214K or 236D (need proper spacing).
+- Whiff punish with 214214K or 236D (need proper spacing).
 
 #### Heel Break
 <video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_tia_HeelBreak.mp4">
 </video>
 
-- The 2nd hit is overhead. 
+- The second hit is overhead. 
 - Interrupt after the first with throw, 214K or Super.
 
 #### Rapid Charge
@@ -634,7 +653,7 @@ Corner:
   <source data-src="media/characters/sho/videos/matchups/sho_vs_dao_Shoutenchuu.mp4">
 </video>
 
-- A safe short jump (hits high). Whiff punish with 214K.
+- Hits high. Whiff punish with 214K.
 
 #### Houshin Renpa
 <video>
@@ -679,8 +698,7 @@ Corner:
   <source data-src="media/characters/sho/videos/matchups/sho_vs_saizo_ryuuei_kyaku.mp4">
 </video>
 
-- Must be canceled into bomb and properly spaced to stay safe.
-- Unsafe in the corner, punish "slide > bomb" with 5C or 2A.
+- This slide must be canceled into bomb and spaced to stay safe, but becomes unsafe in the corner where “slide > bomb” can be punished with C or 2A.
 
 
 #### Yashagami

@@ -2,33 +2,18 @@
 
 ## Infos
 
-### Data
-
-* **Origin:** China
-* **Defense:** 136
-* **Stun:** 3206
-
-<div class="warning-content">⚠️ Forbidden from competitive play.</div>
-
-
 ### Story
 
-Bai-Hu (hidden character) is the final boss, he initiated the tournament to discover the strongest fighters.
+Bai-Hu (hidden character) is the final boss, he initiated the tournament to discover the strongest fighters.<br>
+<br>
+<b>How to unlock bai-hu</b><br>
+At character select, rotate P1’s stick left [360] and P2’s stick right [360R] at the same time.
 
-### Colors
-
-| |
-|:----------:|
-| ![img](media/characters/bai-hu/img/bai-hu.png)  | 
-
-### How to unlock bai-hu
-
-* At the character select screen:  
-  * [360] rotate P1’s joystick to the left 
-  * [360R] and P2’s joystick to the right
 
 
 ## Moves
+
+### MOVE LIST
 
 ### Normals
 All normals
@@ -103,12 +88,12 @@ Nisetsu Ranbu | [B]+[C]+[D]
   <source data-src="media/characters/bai-hu/videos/bai-hu_meterless_combo.mp4">
 </video>
 
-* 2B, 2B, 2C (1hit) > B+D
+* 2B, 2B, 2C (one hit) > B+D
 * 2B, 2B, 5C > A+B (fireball loop)
 * 6D > 6D > 5C > A+B (fireball loop)
-* 6D > jC > A+B (fireball loop)
+* 6D > 9C > A+B (fireball loop)
 * 2B, 2B > B+C > A+C
-* 6LK > 5B, 5B > B+C > A+C
+* 6B > 5B, 5B > B+C > A+C
 
 
 ### Metered combos
@@ -117,7 +102,7 @@ Nisetsu Ranbu | [B]+[C]+[D]
 </video>
 
 * 2B, 2B, 5C > A+B > Super
-* 2B, 2B, 2C (1hit) > B+D > Super
+* 2B, 2B, 2C (one hit) > B+D > Super
 
 
 ### Anti-air</h3>
@@ -135,6 +120,6 @@ Nisetsu Ranbu | [B]+[C]+[D]
   <source data-src="media/characters/bai-hu/videos/bai-hu_air-to-air_combo.mp4">
 </video>
   
-* jD > jC > A+B > Super
-* jC > A+B (fireball loop)
+* 9D > 9C > A+B > Super
+* 9C > A+B (fireball loop)
   

@@ -2,11 +2,6 @@
 
 ## Infos
 
-### Data
-* **Origin:** USA
-* **Defense:** 132
-* **Stun:** 3216
-
 ### Story
 
 Condor Heads is a Native American who wears chaps. Typically peaceful, he has been riled up recently and only fights to save his homeland from the evil Bai-Hu.
@@ -18,6 +13,8 @@ Condor Heads is a Native American who wears chaps. Typically peaceful, he has be
 | ![img](media/characters/condor/img/condor_A.png)  | ![img](media/characters/condor/img/condor_B.png)  | ![img](media/characters/condor/img/condor_C.png)  | ![img](media/characters/condor/img/condor_D.png)  |
 
 ## Moves
+
+### MOVE LIST
 
 ### Normals
 All normals
@@ -47,17 +44,17 @@ Back Drop | [LEFT]or[RIGHT]+[D]
 > - Gives enough advantage to close in safely
 Neck Hanging Tree | [DOWN-RIGHT]+[A]or[B]
 > [THROW]
-> - 10-hit throw that allows a Super follow-up.
+> - Allows a Super follow-up.
 > - Mashing increases the hit speed
 > - The opponent can counter-mash to reduce the number of hits.
 > - Does not knock down, leaves the opponent standing.
 Head Crash| [DOWN-RIGHT]+[C]
 > [THROW]
-> - 6-hit throw.
+> - six-hit throw.
 > - Mashing increases hit speed, while opponents can counter-mash to reduce hits.
 Bear Hug | [DOWN-RIGHT]+[D]
 > [THROW]
-> - 4-hit throw that launches the opponent.
+> - four-hit throw that launches the opponent.
 > - No possible follow-up after the launch.
 > - Mashing increases hit speed, while opponents can counter-mash to reduce hits.
 
@@ -65,7 +62,7 @@ Bear Hug | [DOWN-RIGHT]+[D]
 Fumikomi Straight | [RIGHT]+[C]
 > <img src="/media/characters/condor/img/moves/FumikomiStraight.gif">
 > [MID]
-> - Kara-cancelable into a 360 or Tomahawk.
+> - Kara-cancelable into a command grab or Tomahawk.
 > - Catches opponents jumping out of throws or surprises them from distance.
 Body Press | [AIR],[DOWN]+[C]
 > <img src="/media/characters/condor/img/moves/BodyPress.gif">
@@ -127,10 +124,10 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
   <source data-src="media/characters/condor/videos/condor_offense.mp4">
 </video>
 
-* Sky Bridge: Use it for simple and reliable combos.
-* Neck Hanging Tree: Launcher that enables direct follow-ups into Super (236236P).
-* Grand Buffalo Horn: Pass through projectiles but punishable on block or whiff.
-* Jumps: Use Heel Stomp (j2D) since it stays active or Body Press (j2C) for cross-up.
+* 236K: Use it for simple and reliable combos.
+* 3A/B: Launcher that enables direct follow-ups into Super (236236P).
+* 6,6K: Pass through projectiles but punishable on block or whiff.
+* Jumps: Use jump 2D since it stays active or jump 2C for cross-up.
 
 
 ### Defense
@@ -139,9 +136,8 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
 </video>
       
 
-* Tomahawk (A+B+C): anti-air and anti-projectile tool; enables Super juggles on airborne, but punishable by Sho, Saizo, and Tia.
-* Anti-Airs: Use 5A or close 5C to stop close-range jump-ins.
-* Super Confirm: anti‑air with 5A or close 5C into Tomahawk, then juggle into Super.”
+* (A+B+C): Anti-air and anti-projectile tool; enables Super juggles on airborne opponents. Unsafe on block against Sho, Saizo, and Tia.
+* Anti‑air with 5A or close 5C to stop close‑range jump‑ins, then confirm into Tomahawk and juggle into Super.
 
 
 
@@ -150,8 +146,8 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/matchups/condor_vs_tia_Rapidgale.mp4">
 </video>
 
-* Atlas Rock Buster (236236P): Invincible startup frames. Great for wake-up reversals or beating projectiles. Easily converts from light attacks.
-* Moonlight Shake (720P/K): High-damage command grab super.
+* 236236P: Invincible startup frames. Great for wake-up reversals or beating projectiles. Easily converts from light attacks.
+* 360,360P/K: High-damage command grab super.
 
 
 
@@ -161,7 +157,7 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/standing_720.mp4">
 </video>
 
-* (412369)x2 + P or K.
+* (4,1,2,3,6,9)x2 + P or K.
 
 
 #### Kara cancels
@@ -172,7 +168,8 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
 </iframe>
 
 * Kara Tomahawk: Press A+B+C during 2A, 2B, 6C, or 5D.
-* Kara 360: Using Condor's 6C, input 41236+8C or 426+8C.
+* Kara command grab (Using Condor's 6C) 
+  * input 4,1,2,3,6,8C or 4,2,6,8C.
 
 
 ### Replays
@@ -194,17 +191,17 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
 </video>
 
 * 2B > 236B
-* 2A x 3 > 236B
-* jB > 5D > 236D
-* jD > close 5B > 2D
+* 2A,2A,2A > 236B
+* jump B > 5D > 236D
+* jump D > close 5B > 2D
 
 ### Metered combos
 <video>
   <source data-src="media/characters/condor/videos/meter_combo.mp4">
 </video>
 
-* 2A x 2 > 2B > Super
-* 2A x 3 > 5B > Super
+* 2A, 2A > 2B > Super
+* 2A,2A,2A > 5B > Super
 
 ### Throw confirms
 <video>
@@ -219,21 +216,21 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
   <source data-src="media/characters/condor/videos/breakable_combo.mp4">
 </video>
 
-* 2A, 2A > 5B ❌ 66B
+* 2A, 2A > 5B ❌ 6,6B
 * 2B ❌ 2B
 * 2B ❌ 236D
 * 2B ❌ Super
 * 2B ❌ 2D
-* j2C > 2B ❌ 5D
+* jump 2C > 2B ❌ 5D
 
 ### Anti-air</h3>
 <video>
   <source data-src="media/characters/condor/videos/antiair_juggle.mp4">
 </video>
 
-* tomahawk > Super
-* 5A > tomahawk > Super
-* close 5C > tomahawk > Super
+* A+B+C > Super
+* 5A > A+B+C > Super
+* close 5C > A+B+C > Super
 
 ### Air-to-air
 <video>
@@ -241,13 +238,6 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
 </video>
 
 * Any air normals into Super
-
-### Standing 720 Super
-<video>
-  <source data-src="media/characters/condor/videos/standing_720.mp4">
-</video>
-
-* (412369)x2 + P
 
 
 ## Matchups
@@ -283,7 +273,7 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/matchups/condor_vs_sho_divekick.mp4">
   </video>
  
-* Whiff punish with 5A > Super.
+* Whiff punish with 5A > 236236P.
 * On hit, break with throw.
 * Be careful, a whiffed divekick can lead into his air fireball super. 
 * Counter on super flash with Atlas Rock Buster (236236P).
@@ -293,7 +283,7 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/matchups/condor_vs_sho_Rekkouha.mp4">
   </video>
  
-* Use Grand Buffalo Horn (66K) to punish at mid-range, or Super (236236P) at close range.
+* Use 6,6K to punish at mid-range, or 236236P at close range.
 
 
 ### Pielle
@@ -429,8 +419,8 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/matchups/condor_vs_tia_Heelbreak.mp4">
   </video>
  
-* The 2nd hit is overhead. 
-* Before it lands, punish or break with a throw, 214HK, or super.
+* The second hit is overhead. 
+* Before it lands, punish or break with a throw or super.
 
 #### Rapid Charge 
   <video>
@@ -444,7 +434,7 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/matchups/condor_vs_tia_Burningrevolver.mp4">
   </video>
  
-* Punish with Grand Buffalo Horn (66K)
+* Punish with Grand Buffalo Horn (6,6K)
 
 #### Cutlass Flasher 
   <video>
@@ -561,7 +551,7 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
     <source data-src="media/characters/condor/videos/matchups/condor_vs_dao-long_houshinrendpa.mp4">
   </video>
  
-* Punish at distance with Grand Buffalo Horn (66K) 
+* Punish at distance with Grand Buffalo Horn (6,6K) 
 
 #### Shin Kyoku Ranbu 
   <video>

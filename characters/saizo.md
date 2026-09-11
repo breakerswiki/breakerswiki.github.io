@@ -2,12 +2,6 @@
 
 ## Infos
 
-### Data
-
-* **Origin:** Japan
-* **Defense:** 128
-* **Stun:** 3456
-
 ### Story
 
 Saizo Tobikageno, a ninja driven by the desire for vengeance, pursues justice for the annihilation of his clan.
@@ -20,6 +14,8 @@ Saizo Tobikageno, a ninja driven by the desire for vengeance, pursues justice fo
 | ![img](media/characters/saizo/img/saizo_A.png)  | ![img](media/characters/saizo/img/saizo_B.png)  | ![img](media/characters/saizo/img/saizo_C.png)  | ![img](media/characters/saizo/img/saizo_D.png)  |
 
 ## Moves
+
+### MOVE LIST
 
 ### Normals
 All normals
@@ -95,10 +91,10 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 ### Neutral
 <video><source data-src="/media/characters/saizo/videos/saizo_offense.mp4"></video>
 
-* Pressure: Use short dashes into 2A/2B or cancel normals into Slide > Bomb for safe offense.
-* Kunai & Bomb: Kunai beats most projectiles; Bomb has fast recovery, perfect for chip damage or baiting jumps.
-* Jump A/C: High-priority air normals; Jump A has longer active frames.
-* Close Normals: Close 5C and close 5D are safe/cancelable; avoid far versions as they are unsafe. Note the gap in close 5D > 5D.
+* **Pressure**<br> Use short dashes into 2A/2B or cancel normals into Slide > Bomb for safe offense.
+* **Kunai & Bomb**<br> Kunai beats most projectiles; Bomb has fast recovery, perfect for chip damage or baiting jumps.
+* **Jump A/C**<br> High-priority air normals; Jump A has longer active frames.
+* **Close Normals**<br> Close 5C and close 5D are safe/cancelable; avoid far versions as they are unsafe. Note the gap in close 5D > 5D.
           
     
         
@@ -106,24 +102,24 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
         
 <video><source data-src="/media/characters/saizo/videos/antiairjuggle.mp4"></video>
         
-* Sword Anti-Air (623P): Light version is fast; heavy version is slower but with more range. Both enable Super juggles on airborne opponents.
-* Close 5D: Fast, cancelable anti-air with a massive hitbox; use 6D for easier sword-move conversions. Avoid far 5D (slow/unsafe).
-* Yashagami (214A): Has long invincibility frames; unsafe on block and hit, must be canceled into Hair Super to avoid being punished.
+* **Sword Anti-Air (623P)**<br> Light version is fast; heavy version is slower but with more range. Both enable Super juggles on airborne opponents.
+* **Close 5D**<br> Fast, cancelable anti-air with a massive hitbox; use 6D for easier sword-move conversions. Avoid far 5D (slow/unsafe).
+* **Yashagami (214A)**<br> Has long invincibility frames; unsafe on block and hit, must be canceled into Hair Super to avoid being punished.
 
         
 ### Super moves
 
 <video><source data-src="/media/characters/saizo/videos/Metercombo.mp4"></video>
         
-* Senku Ensatsujin (236236K): Extremely fast Super; ideal for long-range punishes or as a combo finisher.
-* Musou Tenha (214214P): Flame pillar anti-air; light version appears in front, while heavy version tracks the opponent's position.
-* Musou Shinra (236236P): Long-range anti-air Super; can be juggled after 623P or close 5D.
+* **Senku Ensatsujin (236236K)**<br> Extremely fast Super; ideal for long-range punishes or as a combo finisher.
+* **Musou Tenha (214214P)**<br> Flame pillar anti-air; light version appears in front, while heavy version tracks the opponent's position.
+* **Musou Shinra (236236P)**<br> Long-range anti-air Super; can be juggled after 623P or close 5D.
         
 ### Tips
         
 #### Chip damage
 
-<video><source data-src="/media/characters/saizo/videos/chiipkill.mp4"></video>
+<video><source data-src="/media/characters/saizo/videos/chipkill.mp4"></video>
 
 * Use 236A or 236C for easy chip. 
 * Finish an opponent with 623C it deals the most chip damage.
@@ -131,9 +127,9 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 #### Throw OS
 <video><source data-src="/media/characters/saizo/videos/throw_OS.mp4"></video>
 
-* Back+C+D functions as a close‑range option select.
-* If the opponent jumps, Back+D triggers an anti‑air response; 
-* If they remain grounded, Back+C initiates a throw.
+* 4C+D functions as a close‑range option select.
+  * If the opponent jumps, 4D triggers an anti‑air response; 
+  * If they remain grounded, 4C initiates a throw.
           
         
 ### Ressources
@@ -160,7 +156,7 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 * 2B, 2B, 5D > 623C
 * 2B, 2B, 5C > 236C
 * 2B, 2A, 5B > 2+B+D
-* jC > 5C > 623C
+* jump C > 5C > 623C
 
 ### Metered combos
 <video><source data-src="media/characters/saizo/videos/Metercombo.mp4"></video>
@@ -178,8 +174,8 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 ### Air-to-air
 <video><source data-src="media/characters/saizo/videos/airtoair.mp4"></video>
 
-* jD > 214214P
-* sjC > 214214P
+* jump D > 214214P
+* jump C > 214214P
 
 
 
@@ -437,20 +433,21 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 
 
 ### Tia
+
 #### Soul Spike
 
 <video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_tia_SoulSpike.mp4">
-  </video>
+</video>
   
 * Light version is unsafe, punish with Super (236236K). Heavy version bypasses projectiles and can be baited with an instant Super; use a throw to avoid it.
   
 
-  #### Mirage Spear Kick
+#### Mirage Spear Kick
   
-  <video>
-      <source data-src="media/characters/saizo/videos/matchups/saizo_vs_tia_MirageSpearKick.mp4">
-    </video>
+<video>
+  <source data-src="media/characters/saizo/videos/matchups/saizo_vs_tia_MirageSpearKick.mp4">
+</video>
 
 * Punish on block or hit with super (236236K)
   
@@ -472,7 +469,7 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_tia_HeelBreak.mp4">
   </video>
     
-* 2-hit sequence, safe on block, last hit is overhead. After the first hit, Punish/Break with throw or 214A.
+* Safe on block, last hit is overhead. After the first hit, Punish/Break with throw or 214A.
     
 #### Heel Break
     

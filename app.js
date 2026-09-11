@@ -4,7 +4,7 @@
 const Wiki = (() => {
 
     // =============================
-    // STATE
+    // STATE & CONVERTERS
     // =============================
     let currentCharacterSections = {};
     let currentMatchupOpponents = {};
@@ -12,6 +12,91 @@ const Wiki = (() => {
 
     // Characters excluded from the matchup list
     const EXCLUDED_FROM_MATCHUPS = ['bai-hu'];
+
+    // Symboles / HTML pour la numérotation numpad
+    const numpadToHtml = {
+        '1': `<img class="input-icon" src="/media/inputs/Arcade-Stick-DL.png" alt="DOWN-LEFT">`,
+        '2': `<img class="input-icon" src="/media/inputs/Arcade-Stick-Down.png" alt="DOWN">`,
+        '236': `<img class="input-icon" src="/media/inputs/Arcade-Stick-Qcf.png" alt="QCF">`,
+        '214': `<img class="input-icon" src="/media/inputs/Arcade-Stick-Qcb.png" alt="QCB">`,
+        '3': `<img class="input-icon" src="/media/inputs/Arcade-Stick-DR.png" alt="DOWN-RIGHT">`,
+        '319': '<img class="input-icon" src="/media/inputs/Arcade-Stick-Delta.png" alt="DELTA">',
+        '360': '<img class="input-icon" src="/media/inputs/Arcade-Stick-360.png" alt="360">',
+        '4': `<img class="input-icon" src="/media/inputs/Arcade-Stick-Left.png" alt="LEFT">`,
+        '41236': '<img class="input-icon" src="/media/inputs/Arcade-Stick-Hcf.png" alt="HCF">',
+        '5': '<span></span>',
+        '6': `<img class="input-icon" src="/media/inputs/Arcade-Stick-Right.png" alt="RIGHT">`,
+        '623': `<img class="input-icon" src="/media/inputs/Arcade-Stick-Dp.png" alt="DP">`,
+        '646': '<img class="input-icon" src="/media/inputs/Arcade-Stick-LR.png" alt="LR">',
+        '7': `<img class="input-icon" src="/media/inputs/Arcade-Stick-UL.png" alt="UP-LEFT">`,
+        '8': `<img class="input-icon" src="/media/inputs/Arcade-Stick-Up.png" alt="UP">`,
+        '9': `<img class="input-icon" src="/media/inputs/Arcade-Stick-UR.png" alt="UP-RIGHT">`,
+        '[1]': '<img class="input-icon" src="/media/inputs/Arcade-Stick-CDb.png" alt="CHARGE">',
+        '[4]': '<img class="input-icon" src="/media/inputs/Arcade-Stick-CBF.png" alt="CBF">',
+    };
+
+    const attackToSymbolsHtml = {
+        'A': '<span class="btn-punch A">A</span>',
+        'C': '<span class="btn-punch C">C</span>',
+        'P': '<span class="btn-punch P">P</span>',
+        'B': '<span class="btn-kick B">B</span>',
+        'D': '<span class="btn-kick D">D</span>',
+        'K': '<span class="btn-kick K">K</span>',
+    };
+
+function convertToArrowsAndSymbolsHtml(text) {
+    let converted = text;
+
+// 1. Replaces special notations
+    converted = converted.replace(
+        /720|360|236|319|214|41236|646|623/g,
+        match => numpadToHtml[match] || match
+    );
+
+// 2. Replaces notations in square brackets: [1]
+    converted = converted.replace(
+        /\[[1-9]\]/g,
+        match => numpadToHtml[match] || match
+    );
+
+// 3. Replaces notation digits individually
+    // only when they are not part of a longer number
+converted = converted.replace(
+    /(?<![0-9x])[1-9](?![0-9]|(?:st|nd|rd|th)\b)/gi,
+    match => numpadToHtml[match] || match
+);
+
+// 4. Replaces attack buttons
+    const attackPattern = /\b(A|C|B|D|P|K)\b/g;
+    converted = converted.replace(
+        attackPattern,
+        match => attackToSymbolsHtml[match] || match
+    );
+
+    return converted;
+}
+
+function convertTextNodesToArrows(element, isInsideList = false) {
+    const isAllowedSection = !!document.querySelector('.sub-link.active:not([data-subsection="infos"])');
+    const inList = (isInsideList || ['UL', 'LI', 'SPAN'].includes(element.tagName)) && isAllowedSection;
+
+    element.childNodes.forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE) {
+            // Only applies if we are in a <ul>, <li> or <span>
+            if (inList) {
+                const tempSpan = document.createElement('span');
+                tempSpan.innerHTML = convertToArrowsAndSymbolsHtml(node.nodeValue);
+                node.parentNode.replaceChild(tempSpan, node);
+            }
+        } else if (
+            node.nodeType === Node.ELEMENT_NODE && 
+            node.tagName !== 'A' && // Exclut les liens <a>
+            !node.classList.contains('label')
+        ) {
+            convertTextNodesToArrows(node, inList);
+        }
+    });
+}
 
 
     // =============================
@@ -34,6 +119,7 @@ const Wiki = (() => {
         if (targetSection) targetSection.classList.add('active');
 
         const hero = document.getElementById('hero-welcome');
+        
         if (hero) hero.style.display = (sectionId === 'home') ? 'block' : 'none';
 
         if (triggerBtn) {
@@ -50,6 +136,7 @@ const Wiki = (() => {
             if (activeCharBtn) activeCharBtn.click();
         }
     }
+
 
     // =============================
     // LOAD CHARACTER
@@ -68,7 +155,6 @@ const Wiki = (() => {
 
         const renderArea = document.getElementById('markdown-render');
         if (!renderArea) return;
-
 
         renderArea.innerHTML = '<p class="text-muted">Loading...</p>';
 
@@ -102,8 +188,6 @@ const Wiki = (() => {
             void renderArea.offsetWidth;
             renderArea.classList.add('reveal-anim');
 
-            
-
             renderArea.innerHTML = `
                 <div class="char-header">${headerContent}</div>
 
@@ -134,15 +218,15 @@ const Wiki = (() => {
     // =============================
     function switchSubSection(category, triggerElement = null) {
         document.querySelectorAll('.sub-link').forEach(btn => btn.classList.remove('active'));
-    
+
         const targetBtn = document.querySelector(`.sub-link[data-subsection="${category}"]`);
         if (targetBtn) {
             targetBtn.classList.add('active');
         }
-    
+
         const contentArea = document.getElementById('sub-content');
         if (!contentArea) return;
-    
+
         if (category === 'matchups') {
             setupMatchupsSection(contentArea);
         } else {
@@ -177,7 +261,6 @@ const Wiki = (() => {
 
             const imgHtml = btn.querySelector('img')?.outerHTML ?? charFile;
 
-
             matchupSidebarHtml += `
                 <button
                     class="char-btn matchup-opp-btn"
@@ -190,14 +273,13 @@ const Wiki = (() => {
         });
 
         contentArea.innerHTML = `
-                        <h3 style="margin:0;">Matchup Data</h3>
+            <h3>Matchup Data</h3>
 
             <div class="char-layout matchup-layout">
-                
                 <aside class="char-sidebar matchup-sidebar">
                     ${matchupSidebarHtml}
                 </aside>
-                
+
                 <div id="matchup-data-display" class="matchup-data-display">
                     <p class="text-muted">Select an opponent to view matchup strategies.</p>
                 </div>
@@ -221,9 +303,9 @@ const Wiki = (() => {
         const displayArea = document.getElementById('matchup-data-display');
         if (!displayArea) return;
 
-    displayArea.classList.remove('reveal-anim');
-    void displayArea.offsetWidth; 
-    displayArea.classList.add('reveal-anim');
+        displayArea.classList.remove('reveal-anim');
+        void displayArea.offsetWidth; 
+        displayArea.classList.add('reveal-anim');
 
         const content = currentMatchupOpponents[opponentId.toLowerCase()];
 
@@ -257,13 +339,11 @@ const Wiki = (() => {
 
                 let detailsArray = [];
                 while (lines[i + 1] && lines[i + 1].trim().startsWith('>')) {
-                    // Extract the text after the ">" and move on to the next line
                     detailsArray.push(lines[i + 1].trim().substring(1).trim());
                     i++;
                 }
 
                 if (detailsArray.length > 0) {
-                    // We join the lines with an HTML line break <br> or paragraphs
                     const detailsContent = detailsArray.map(line => `<span>${line}</span>`).join('<br>');
 
                     movesHtml += `
@@ -313,7 +393,12 @@ const Wiki = (() => {
         let html = marked.parse(processed);
         html = replaceInputs(html);
 
-        return html;
+        // Transformation automatique filtrée par balise et motif textuel
+        const tempContainer = document.createElement('div');
+        tempContainer.innerHTML = html;
+        convertTextNodesToArrows(tempContainer);
+
+        return tempContainer.innerHTML;
     }
 
 
@@ -370,7 +455,6 @@ const Wiki = (() => {
     // =============================
     // VIDEO.JS & LAZY-LOADING ENGINE
     // =============================
-
     function scheduleVideoInit() {
         requestAnimationFrame(() => applyLazyVideoJS());
     }
@@ -389,7 +473,6 @@ const Wiki = (() => {
             source.removeAttribute('data-src');
         });
         videoElement.load();
-
 
         const posterSrc = videoElement.getAttribute('data-poster');
         if (posterSrc) videoElement.setAttribute('poster', posterSrc);
@@ -411,7 +494,7 @@ const Wiki = (() => {
         });
 
         player.one('loadedmetadata', () => {
-            player.currentTime(2); // ← seek at 2 seconds as preview
+            player.currentTime(2);
         });
 
         player.ready(() => {
@@ -428,7 +511,6 @@ const Wiki = (() => {
 
         if (!videos.length) return;
 
-        // Disconnect the old observer to avoid memory leaks
         if (videoObserver) {
             videoObserver.disconnect();
             videoObserver = null;
@@ -449,7 +531,6 @@ const Wiki = (() => {
                 videoObserver.observe(video);
             });
         } else {
-            // Fallback browsers without IntersectionObserver
             videos.forEach(video => initVideoJS(video));
         }
     }

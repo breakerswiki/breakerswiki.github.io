@@ -2,12 +2,6 @@
 
 ## Infos
 
-### Data
-
-* **Origin:** Thailand
-* **Defense:** 118
-* **Stun:** 2976
-
 ### Story
 
 Tia Langray, a Thai kickboxer, searches for her brother, unaware he met a tragic end with Bai-Hu. She acknowledges that Sho, a game character, reminds her of him.
@@ -19,6 +13,8 @@ Tia Langray, a Thai kickboxer, searches for her brother, unaware he met a tragic
 | ![img](media/characters/tia/img/tia_A.png)  | ![img](media/characters/tia/img/tia_B.png)  | ![img](media/characters/tia/img/tia_C.png)  | ![img](media/characters/tia/img/tia_D.png)  |
 
 ## Moves
+
+### MOVE LIST
 
 ### Normals
 All normals
@@ -41,11 +37,11 @@ Rush Blow | [A]+[C]
 > <img src="/media/characters/tia/img/moves/RushBlow.gif">
 > [MID] [SPECIAL] [SUPER]
 > - Combo ender
-> - Only the 1st hit is cancelable
+> - Only the first hit is cancelable
 Heel Break | [B]+[D]
 > <img src="/media/characters/tia/img/moves/HeelBreak.gif">
 > [HIGH] [SPECIAL] [SUPER]
-> - Only the 1st hit is cancelable into specials or supers
+> - Only the first hit is cancelable into specials or supers
 > - Second hit is an overhead
 Upper | [AIR],[UP]+[C]
 > <img src="/media/characters/tia/img/moves/Upper.gif">
@@ -58,7 +54,7 @@ Soul Spike | ([AIR])[QCB]+[K]
 > <img src="/media/characters/tia/img/moves/SoulSpike.gif">
 > [MID] (ground) [HIGH] (air)
 > - Light version is fast heavy version is slower but passes through projectiles
-> - Heavy version also allows for a super juggle on hit
+> - Heavy version also allows for super juggle on hit
 > - Both versions are not overhead, but hit high when performed in the air.
 Mirage Spear Kick | [TAP]+[K]
 > <img src="/media/characters/tia/img/moves/MirageSpearKick.gif">
@@ -73,7 +69,7 @@ Rising Upper | [DP]+[K]
 Rapid Gale | [QCF]+[P]
 > <img src="/media/characters/tia/img/moves/RapidGale.gif">
 > [MID]
-> - A projectile that doesn’t reach full screen
+> - Doesn’t reach full screen
 > - Light version is slower
 > - Mostly used for okizeme and setplay
 > - Safe at long range but risky up close due to its recovery
@@ -105,10 +101,10 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
     <source data-src="/media/characters/tia/videos/tia_offense.mp4">
 </video>
 
-* **Dash 5C/5D**: Fast, safe pokes that function as anti-airs and lead into super follow-ups.
-* **Corner Okizeme**: Backdash(x2) > Rapid Gale then react to catch jump attempts.
-* **Soul Spike**: Heavy version passes through projectiles, cancels into Burning Revolver Super for frametrap, but is vulnerable to throws.
-* **5A Loop pressure**: Repeating multiples 5A into short dashes, creates a blockstring that builds meter and pushes opponents to the corner.
+* **Dash 5C/5D**<br> Fast, safe pokes that function as anti-airs and lead into super follow-ups.
+* **Corner Okizeme**<br> Backdash(x2) > Rapid Gale then react to catch jump attempts.
+* **214K**<br> Heavy version passes through projectiles, cancels into Burning Revolver Super for frametrap, but is vulnerable to throws.
+* **Jab Loop pressure**<br> Repeating multiples 5A into short dashes, creates a blockstring that builds meter and pushes opponents to the corner.
           
         
 ### Anti-airs
@@ -116,10 +112,15 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
    <source data-src="/media/characters/tia/videos/antiair_combos.mp4">
 </video>
 
-* **623A/C**: Invincible startup; 623A passes through projectiles while 623C offers higher reach but slower recovery.
-* **Dash 5D & 5C**: Safe-on-block pokes that double as reliable anti-airs.
-* **5A Anti-Air**: Counters cross-ups and ambiguous jumps; leads into the juggle: 5A > neutral jB > 214K > Super.
-* **Burning Revolver (214214P)**: High-utility super for punishing jump-ins and cross-up attempts.  
+* **623P** 
+  * Invincible startup
+  * 623A passes through projectiles
+  * 623C offers higher reach but slower recovery.
+* **Dash 5D and Dash 5C**<br>Safe pressure that double as reliable anti-airs.
+* **Anti-Air 5A**
+  * Counters cross-ups and ambiguous jumps
+  * leads into this combo juggle: 5A > neutral jump B > 214K > Super.
+* **Burning Revolver (214214P)**:<br> High-utility super for punishing jump-ins and cross-up attempts.  
         
         
 ### Super moves
@@ -128,9 +129,15 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
     <source data-src="/media/characters/tia/videos/tia_supers.mp4">
 </video>
         
-* **Rapid Charge (236236P)**: High-speed punish for projectiles or unsafe moves; links easily from anti-air normals as a combo finisher.
-* **Cutlass Flasher (236236K)**: Overhead; primarily used to convert air juggles from 214K.
-* **Burning Revolver (214214P)**: Invincible start‑up and huge hitbox — a strong anti‑air that also baits reversals and pushes to the corner.
+* **Rapid Charge (236236P)** 
+  * High-speed punish for projectiles or unsafe moves
+  * links easily from anti-air normals as a combo finisher.
+* **Cutlass Flasher (236236K)** 
+  * Overhead
+  * Mainly used to convert air juggles from 214K.
+* **Burning Revolver (214214P)**
+  * Invincible start‑up and huge hitbox
+  * Strong anti‑air that also baits reversals and pushes to the corner.
         
 ### Tips
         
@@ -139,8 +146,9 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
     <source data-src="/media/characters/tia/videos/fuzzy.mp4">
 </video>
 
-* Jump-In with C to try to force high block. 
-* Then mixup with low (2B) or Fuzzy (j8C > Super 214214P).
+* Jump C to try to force high block, then mixup: 
+  * with low: 2B
+  * or Fuzzy: 8C > Super 214214P.
 
 ### Ressources
 * [Sas Izm - Tia Langray Combo Guide](https://youtu.be/KzufkMx_XRs)
@@ -166,7 +174,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 * 2B, 2A, 2A > A+C > 623C
 * 2B, 2B > B+D > 623C
 * 2B, 2A, 2A > B+D > 623C
-* jC > air 214D > 2A > A+C > 623C
+* Jump C > air 214D > 2A > A+C > 623C
 
 ### Metered combos
 <video>
@@ -176,7 +184,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 * 5C > 214D > 214214P
 * 2B, 2A, 2A > A+C > 236236P
 * 2B, 2A, 2A > B+D > 236236P
-* jC > air 214D > 2A > A+C > 236236P
+* Jump C > air 214D > 2A > A+C > 236236P
 
 ### Anti-air
 <video>
@@ -194,8 +202,8 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   <source data-src="media/characters/tia/videos/airtoair.mp4">
 </video>
 
-* jC > air 214D > 236236P
-* jC > air 214D > 236236K
+* Jump C > air 214D > 236236P
+* Jump C > air 214D > 236236K
 
 ### Breakable combos
 <video>
@@ -203,7 +211,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 </video>
 
 * 5C ❌ 214D
-* jC ❌ 214B > 2A ❌ 2C ❌ 214D > 214214K
+* Jump C ❌ 214B > 2A ❌ 2C ❌ 214D > 214214K
 
 
 ## Matchups
@@ -214,9 +222,8 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   <source data-src="media/characters/tia/videos/matchups/tia_vs_sho_ranki_ryuu_geri.mp4">
 </video>
 
-* Unsafe if used alone
-* Can be followed with super to stay safe and bait punish attempts. 
-* With meter, a forward jC > air super 214214P guarantees a punish.
+* Unsafe on its own, but becomes safe when canceled into super, letting him bait punish attempts.
+* With meter, a forward Jump C > air super 214214P guarantees a punish.
 
 #### Onigawara
 <video>
@@ -269,7 +276,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   </video>
   
 * Overhead. Always has a gap in blockstrings. 
-* Whiff punish with 623LP.
+* Whiff punish with 623A.
   
 #### Bonjour Shot
   <video>
@@ -284,7 +291,6 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
     <source data-src="media/characters/tia/videos/matchups/tia_vs_pielle_MonsieurCrash.mp4">
   </video>
   
-* A three-hit move, easily punishable.
 * Be careful, Pielle can delay each hit to counter your punish attempt.
   
 #### Merci Un Deux Trois
@@ -292,8 +298,8 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
     <source data-src="media/characters/tia/videos/matchups/tia_vs_pielle_Merci123.mp4">
   </video>
     
-* An aerial dive that can deceive your anti-air or jump.
-* When you block all 3 hits, Pielle passes behind you. Punish with 2B
+* Can counter your anti-air timing
+* When you block all hits, Pielle passes behind you. Punish with 2B
     
 #### Super Rose
 <video>
@@ -307,7 +313,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   <source data-src="media/characters/tia/videos/matchups/tia_vs_pielle_ThunderCroiser.mp4">
 </video>
 
-* A super that crosses the entire screen with a wide hitbox, useful for countering jump attempts.
+* Crosses the entire screen with a wide hitbox, useful for countering jump attempts.
 * Punish with Dash > 5C > 236236P
     
 
@@ -340,14 +346,14 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   <source data-src="media/characters/tia/videos/matchups/tia_vs_condor_AtlasRockBuster.mp4">
 </video>
 
-* Block the first hit, then throw or backdash > run > 5C.
+* Block the first hit, then throw or backdash > dash > 5C.
 
 #### Crouching D
 <video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_condor_2D.mp4">
 </video>
 
-* punish with cr.LK
+* punish with 2B
   
 
 ### Rila
@@ -419,7 +425,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 
 * Can pass through projectiles. 
 * Punish light version with Super (236236P)
-* Heavy version is unsafe, but can be followed with Super, punish with throw to avoid it.
+* Heavy version is unsafe, but can be followed with Super, use throw to avoid it.
   
 #### Mirage Spear Kick
 <video>
@@ -442,7 +448,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   <source data-src="media/characters/tia/videos/matchups/tia_vs_tia_HeelBreak.mp4">
 </video>
   
-* 2-hit sequence, last hit is an overhead.
+* Last hit is an overhead.
 * After the first hit, Punish/Break with throw, 623P or 214214P.
   
 #### Rapid Charge
@@ -467,7 +473,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 </video>
 
 * An overhead that is safe but has a slow startup, making it easily punishable.
-* Whiff punish with 5A or 623LP
+* Whiff punish with 5A or 623A
 
 #### Death Shred
 <video>
@@ -581,7 +587,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
   <source data-src="media/characters/tia/videos/matchups/tia_vs_dao_Shoutenchuu.mp4">
 </video>
 
-* A safe short jump overhead, whiff punish with 623P.
+* Safe on block, whiff punish with 5D or 623P.
 
 #### Houshin Renpa
 <video>
@@ -628,7 +634,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 </video>
 
 * Unsafe on block or hit, unless cancelled. 
-* On block, if Saizo cancels into a Super, use 236236P for a guaranteed punish.
+* On block, if Saizo cancels into Super, use 236236P for a guaranteed punish.
 
 #### Engetsuzan
 <video>

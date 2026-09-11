@@ -2,12 +2,6 @@
 
 ## Infos
 
-### Data
-
-* **Origin:** Saudi Arabia
-* **Defense:** 130
-* **Stun:** 3136
-
 ### Story
 
 Sheik Maherl discovered a genie's lamp and made three wise wishes: to become a balloon, to spit fire, and to enslave the genie. Now, with his lamp and sword, he fights the world's strongest challengers.
@@ -19,6 +13,8 @@ Sheik Maherl discovered a genie's lamp and made three wise wishes: to become a b
 | ![img](media/characters/maherl/img/maherl_A.png)  | ![img](media/characters/maherl/img/maherl_B.png)  | ![img](media/characters/maherl/img/maherl_C.png)  | ![img](media/characters/maherl/img/maherl_D.png)  |
 
 ## Moves
+
+### MOVE LIST
 
 ### Normals
 All normals
@@ -81,7 +77,7 @@ Fire Breath | [HCF]+[P]
 Ballon Bomb | [A]+[B]+[C]<br>[B]+[C]+[D]
 > <img src="/media/characters/maherl/img/moves/BalloonBomb.gif">
 > [MID]
-> - A controllable jump attack that can be used to cross up opponents or punish projectiles.
+> - controllable jump attack that can be used to cross up opponents or punish projectiles.
 > - Unsafe on block.
 
 ### Supers
@@ -120,9 +116,9 @@ Mastering his glitch allows him to fly off-screen and land swiftly, catching foe
   <source data-src="media/characters/maherl/videos/maherl_offense.mp4">
 </video>
 
-* Slash Sword (214P): Long-range tool cancelable from 5C, 2C, 5D, and 5B; unsafe against Saizo and Tia.
-* Abdomen Step (A+C): Hops over lows; ideal for setting up Super frametraps or throw mix-ups.
-* Balloon Bomb (A+B+C): Long-range special. Can punish projectiles with controllable landing; Unsafe on block.
+* **Slash Sword (214P)**<br>Long-range tool cancelable from 5C, 2C, 5D, and 5B<br>Unsafe against Saizo and Tia.
+* **Abdomen Step (A+C)**<br> Hops over lows and sets up strong Super frametraps or throw mix‑ups.
+* **Balloon Bomb (A+B+C)**<br>Long-range special<br>Can punish projectiles with controllable landing; Unsafe on block.
 
 
 
@@ -132,16 +128,16 @@ Mastering his glitch allows him to fly off-screen and land swiftly, catching foe
 </video>
 
 
-* Close 5C: Reliable anti-air; cancel into 214K for juggle confirms.
-* Far 5B: Quick anti-air option; cancelable into 214214P Super.
-* Punish Sword (214K): Fast anti-air and primary tool for confirming juggles off 5D or close 5C.
+* **Close 5C**<br> Reliable anti-air; cancel into 214K for juggle confirms.
+* **Far 5B**<br> Quick anti-air option; cancelable into super 214214P.
+* **Punish Sword (214K)**<br> Fast anti-air and primary tool for confirming juggles off 5D or close 5C.
 
 
 ### Super moves
 
-* Cadabra Bomber (236236P): Invincible startup and safe on block; however, a gap before the final punch allows some characters to dodge or punish.
-* Shiva Dance (214214P): Passes through projectiles at close range; ideal for juggling opponents after an anti-air.
-* Rolling Press (360P/K): Command grab that switches sides; Set it up after an Abdomen Step (A+C) or the Sword Glitch.
+* **Cadabra Bomber (236236P)**<br> Invincible startup and safe on block; however, a gap before the final punch allows some characters to dodge or punish.
+* **Shiva Dance (214214P)**<br> Passes through close‑range projectiles and lets you juggle opponents after an anti‑air.
+* **Rolling Press (360P/K)**<br> Command grab that switches sides; Set it up after an Abdomen Step (A+C) or the Sword Glitch.
 
 
 
@@ -150,24 +146,23 @@ Mastering his glitch allows him to fly off-screen and land swiftly, catching foe
 <video>
   <source data-src="media/characters/maherl/videos/fuzzy-overhead.mp4">
 </video>
-Use forward or back jB for an instant overhead. Use jD then jB for a fuzzy setup.
+
+* Use forward or back Jump B for an instant overhead. Use Jump D then Jump B for a fuzzy setup.
 
 #### Step/Sword glitch
 <video>
-  <source data-src="media/characters/maherl/videos/sword%20glitch.mp4">
+  <source data-src="media/characters/maherl/videos/sword_glitch.mp4">
 </video>
 
-To perform the glitch, Kara cancel A+C on the 3rd frame with either 214P or 214K : 
-* ❌ Frame 2 or sooner = sword
-* ✅ Frame 3 = sword glitch
-* ❌ Frame 4 or later = A+C
-
-
-Glitch variations: 
-* Heavy swords = land behind your opponent
-* Light swords = land in front
-* 2C (at jump peak) remains active until landing.
-* Nothing = Maherl returns quickly to the ground
+* Kara cancel A+C on the 3rd frame with either 214P or 214K
+  * ❌ 2nd Frame or sooner = Sword
+  * ✅ 3rd Frame = Sword glitch
+  * ❌ 4th Frame or later = A+C
+* **Glitch variations** 
+  * Heavy swords = land behind your opponent
+  * Light swords = land in front
+  * 2C (at jump peak) remains active until landing.
+  * Nothing = Maherl returns quickly to the ground
   
 
 ### Replays
@@ -185,36 +180,36 @@ Glitch variations:
 * 2C > A+C > 5B > 214A
 * 2C > A+C > 5B > 214B
 * close 5D > A+C
-* 2C or close 5D > 1236A (unsafe on block/hit)
-* jC > 2C > 214D
-* jD > close 5D > 214D
+* 2C or close 5D > 41236A (unsafe on block/hit)
+* Jump C > 2C > 214D
+* Jump D > close 5D > 214D
   
 ### Metered combos
 <video>
   <source data-src="media/characters/maherl/videos/Meter_combo.mp4">
 </video>
 
-* jC > 2C > Super (214214P)
-* jC > close 5D > Super (214214P)
+* Jump C > 2C > 214214P
+* Jump C > close 5D > 214214P
   
 ### Anti-air
 <video>
   <source data-src="media/characters/maherl/videos/anti-air-juggle.mp4">
 </video>
 
-* far 5B > Sword Super
-* close 5D > Sword Super
+* far 5B > 214214P
+* close 5D > 214214P
 * close 5C > 214B or 214D
-* close 5C > Sword Super
-* close 5D > 214D (1hit) > 2B > Sword Super
-* close 5D > 214D (1hit) > 2B > Genie Super (corner)
-* 214D (1hit) > 2B > Sword Super
+* close 5C > 214214P
+* close 5D > 214D (one hit) > 2B > 214214P
+* corner: close 5D > 214D (one hit) > 2B > 236236P
+* 214D (one hit) > 2B > 214214P
   
 ### Air-to-air
 <video>
   <source data-src="media/characters/maherl/videos/air-juggle.mp4">
 </video>
 
-* jA > Sword Super
-* jC > Sword Super
-* neutral jC > Sword Super
+* Jump A > 214214P
+* Jump C > 214214P
+* neutral Jump C > 214214P

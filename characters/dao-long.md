@@ -2,12 +2,6 @@
 
 ## Infos
 
-### Data
-
-* **Origin:** South Korea
-* **Defense:** 120
-* **Stun:** 2986
-
 ### Story
 
 Lee Dao-Long is Sho's senior and rival. A Korean martial artist of the Empty Fist style, he enjoys spicy food and long camel rides in the desert.
@@ -19,6 +13,8 @@ Lee Dao-Long is Sho's senior and rival. A Korean martial artist of the Empty Fis
 | ![img](media/characters/dao-long/img/dao-long_A.png)  | ![img](media/characters/dao-long/img/dao-long_B.png)  | ![img](media/characters/dao-long/img/dao-long_C.png)  | ![img](media/characters/dao-long/img/dao-long_D.png)  |
 
 ## Moves
+
+### MOVE LIST
 
 ### Normals
 All normals
@@ -93,17 +89,17 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/dao-long_offense.mp4"">
 </video>
 
-* Projectile ([4]6P): Builds meter and applies chip damage; recovery is fast enough to bait and punish jump-in attempts at specific ranges.
-* Palm (A+C): Safe on block; Serves as a reliable hit-confirm into specials and Supers.
+* **Projectile ([1]6P)**<br> Builds meter and applies chip damage; recovery is fast enough to bait and punish jump-in attempts at specific ranges.
+* **Palm (A+C)**<br>  Safe on block; Serves as a reliable hit-confirm into specials and Supers.
 
  #### Defense
 <video>
    <source data-src="media/characters/dao-long/videos/dao-long_defense.mp4"">
  </video>
 
-* Senkyuu Tai ([2]8K): Quick close-range anti-air; The light version, enables a Super juggle for if it connects at the peak of the opponent's jump.
-* Close Normals: close 5C/5D are super-cancelable on hit for high-damage conversions.
-* Back + C: Holding back and close 5C is as a powerful option select. It triggers an anti-air or a throw if the opponent is grounded.
+* **Senkyuu Tai ([1]8K)**<br>  Quick close-range anti-air; The light version, enables a Super juggle for if it connects at the peak of the opponent's jump.
+* **Close Normals**<br>  close 5C/5D are super-cancelable on hit for high-damage conversions.
+* **Back + C**<br>  Holding back and close 5C is as a powerful option select. It triggers an anti-air or a throw if the opponent is grounded.
 
 
 #### Super moves
@@ -112,9 +108,9 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 </video>
           
 
-* Houshin Renpa ([4]646P): Projectile-invincible Super; reliable hit-confirm from A+C.
-* Shin Kyoku Ranbu ([4]646K): Primary Super for air juggles; confirms easily from normals and A+C.
-* Renkyuu Tai ([1]319K): Invincible vertical anti-air; mash kick buttons to increase the number of hits.
+* **Houshin Renpa ([4]646P)**<br> Projectile-invincible Super; reliable hit-confirm from A+C.
+* **Shin Kyoku Ranbu ([4]646K)**<br> Main Super for air juggles and easy confirms from normals or A+C.
+* **Renkyuu Tai ([1]319K)**<br> Invincible vertical anti-air; mash kick buttons to increase the number of hits.
 
 
 #### Dashes
@@ -122,8 +118,11 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
     <source data-src="media/characters/dao-long/videos/dao-long_dashes.mp4"">
   </video>
 
-* Forward Dash: Fast recovery; ideal for pressure (light blockstring &gt; dash &gt; throw) and buffering Supers with [1]66.46K.
-* Backdash: Invulnerable startup but with slow recovery.
+* **Forward Dash**
+  * Fast recovery
+  * Ideal for pressure (light blockstring &gt; dash &gt; throw)
+  * You can use dash to buffer a Super: [1]6.6.4.6K
+* **Backdash**<br> Invulnerable startup but with slow recovery.
 
 
 #### Fuzzy / Instant overhead
@@ -131,7 +130,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/fuzzy.mp4"">
 </video>
 
-* Perform a fuzzy jump with jC > neutral jB. 
+* Perform a fuzzy jump with jump C > neutral jump B. 
 * Neutral jump B is also an instant overhead (though it doesn't work on all characters).
 
 #### Throw Option select
@@ -162,8 +161,8 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 <source data-src="media/characters/dao-long/videos/meterless.mp4">
 </video>
 
-* 2B, 2A, 2A > A+C > [4]6C
-* 2A, 2A, 2A > A+C > [2]8D
+* 2B, 2A, 2A > A+C > [1]6C
+* 2A, 2A, 2A > A+C > [1]8D
 
 ### Metered combos
 <video>
@@ -171,7 +170,6 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 </video>
 
 * 2B, 2A, 2A > A+C > Super
-* 2A, 2A, 2A > A+C > Super
 * 2D > Super
 * C+D > 5B > Super
 
@@ -183,7 +181,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 * C+D > Super
 * B+D > Super
 * 5C > Super
-* [2]8B > Super ([2]8B must hit at the highest point of a jump)
+* [1]8B > Super (must hit at the highest point of a jump)
 
 ### Air-to-air
 <video>
@@ -203,7 +201,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 </video>
 
 * Unsafe on its own, but can be followed with air super to stay safe and bait punishes.
-* However, you can still punish his super with [2]8K (react at the super flash).
+* However, you can still punish his super with [1]8K (react at the super flash).
 
 
 
@@ -213,7 +211,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 </video>
 
 * Up close punish with 5A (strict timing).
-* Break: [2]8K (if your opponent use A+C > 236K).
+* Break: [1]8K (if your opponent use A+C > 236K).
 
 #### 2D
 <video>
@@ -239,7 +237,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 
 * Safe on block, can bait anti-airs and enable fuzzy mixups.
 * Block low to avoid the fuzzy.
-* Break: Use [2]8K or throw, but beware, divekick combos into 214K, which beats throws.
+* Break: Use [1]8K or throw, but beware, divekick combos into 214K, which beats throws.
 
 
 ### Pielle
@@ -256,7 +254,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_pielle_FlyingPeachBomber.mp4">
 </video>
 
-* Overhead. Safe on block. Whiff punish with [2]8K. 
+* Overhead. Safe on block. Whiff punish with [1]8K. 
 
 
 #### Robin Liner
@@ -292,7 +290,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_pielle_SuperRose.mp4">
 </video>
 
-* Whiff punish at super flash with 2D or [2]8K
+* Whiff punish at super flash with 2D or [1]8K
 
 
 #### Thunder Croiser
@@ -300,7 +298,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_pielle_ThunderCroiser.mp4">
 </video>
 
-* Punish with your Super projectile Houshin Renpa
+* Punish with your Super projectile [4]646P
 
 
 ### Condor
@@ -330,7 +328,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 
 #### Heel Stomp
 
-* The best way to counter it is by using your anti-air special [2]8K. 
+* The best way to counter it is by using your anti-air special [1]8K. 
 
 
 #### Atlas Rock Buster
@@ -370,7 +368,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_rila_quickScratch.mp4">
 </video>
 
-* Punish the heavy version with preemptive 2A or with 5LK.
+* Punish the heavy version with preemptive 2A or with 5B.
 * Light version is safe on block.
 
 
@@ -454,7 +452,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 </video>
 
 * Overhead with slow startup, making it easy to react. 
-* Whiff punish with 5C or [2]8K.
+* Whiff punish with 5C or [1]8K.
 
 
 #### Death Shred
@@ -487,7 +485,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_alsion_DashKnee.mp4">
 </video>
 
-* A special dash attack that is only safe at max range. If not, punish on block with 5A.
+* Only safe at max range. If not, punish on block with 5A.
 
 
 
@@ -498,7 +496,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_maherl_CadabraBomber.mp4">
 </video>
 
-* Safe if fully blocked, but punishable after the first sequence with [2]8B.
+* Safe if fully blocked, but punishable after the first sequence with [1]8B.
 
 
 #### Abdomen Step
@@ -506,7 +504,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   <source data-src="media/characters/dao-long/videos/matchups/daolong_vs_maherl_AbdomenStep.mp4">
 </video>
 
-* Safe on block. Whiff punish with [2]8B.
+* Safe on block. Whiff punish with [1]8B.
 
 
 #### Slash & Punish Sword
@@ -523,7 +521,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 </video>
 
 * Safe depending on range. 
-* Punish with B+D if it crosses up. Whiff punish with [2]8K.
+* Punish with B+D if it crosses up. Whiff punish with [1]8K.
 
 
 #### Shiva Dance
@@ -559,7 +557,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 </video>
 
 * Safe on block. 
-* Whiff punish with [2]8K
+* Whiff punish with [1]8K
 
 
 
@@ -598,7 +596,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 
 * Unsafe unless canceled.
 * Can be followed with super to counter your punish attempt.
-* If close, use [2]8K for a guaranteed punish 
+* If close, use [1]8K for a guaranteed punish 
 
 
 #### Engetsuzan
