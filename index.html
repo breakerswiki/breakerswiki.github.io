@@ -482,7 +482,7 @@
 
         <script src="app.js"></script>
 
-    <script>
+        <script>
         function scrollGallery(direction) {
             const scrollAmount = 330;
             const maxScrollLeft = gallery.scrollWidth - gallery.clientWidth;
@@ -490,6 +490,17 @@
             const targetScroll = Math.max(0,Math.min(maxScrollLeft, gallery.scrollLeft + direction * scrollAmount));
         
             gallery.scrollTo({ left: targetScroll, behavior: 'smooth' });
+            setTimeout(updateNavButtons, 400);
+        }
+
+        function toggleReadMore(button) {
+            const posterItem = button.closest('.poster-item');
+            posterItem.classList.toggle('expanded');
+            if (posterItem.classList.contains('expanded')) {
+                button.textContent = 'Less';
+            } else {
+                button.textContent = 'Read more';
+            }
             setTimeout(updateNavButtons, 400);
         }
     </script>
