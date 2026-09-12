@@ -61,85 +61,75 @@
             </div>
 
             <!-- Breakers -->
-            <div class="roster">
-       
-                <article class="card-roster">
-                    <div class="poster">
-                        <img src="media/assets/boxart_Breakers.webp" class="poster-img" alt="Breakers">
-                    </div>
-                    <div class="roster-desc">
-                        <div class="title-row"><h3>Breakers</h3></div>
-                        <div class="meta">
-                            <div><i class="bi bi-calendar3"></i> 1996</div>
-                            <div><i class="bi bi-controller"></i> Neo Geo MVS/AES/CD, Dreamcast</div>
-                            <div><i class="bi bi-building"></i> Visco Corporation</div>
-                        </div>
-                        <hr class="divider">
-                        <p class="desc">
-                            VISCO began in 1993 with the prototype <a href="https://archive.org/details/rgz5f4" target="_blank">Crystal Legacy</a>, which later evolved into Breakers, a fast, accessible fighting game built around simple inputs and quick movement. Console versions followed later on Neo Geo AES, Neo Geo CD, and eventually Dreamcast.
-                        </p>
-                    </div>
-                </article>
-
-                <!-- Breakers Revenge -->
-                <article class="card-roster">
-                    <div class="poster">
-                        <img src="media/assets/boxart_Breakers_Revenge.webp" class="poster-img" alt="Breakers Revenge">
-                    </div>
-                    <div class="roster-desc">
-                        <div class="title-row"><h3>Breakers Revenge</h3></div>
-                        <div class="meta">
-                            <div><i class="bi bi-calendar3"></i> 1998</div>
+    <div class="gallery-container">
+        <div class="gallery-wrapper">
+            <button class="gallery-nav-btn prev" id="prevBtn" onclick="scrollGallery(-1)">&#10094;</button>
+            <div class="poster-gallery" id="gallery">
+                <div class="poster-item">
+                    <img src="media/assets/boxart_Breakers.webp" alt="Breakers">
+                    <div class="poster-content">
+                        <span class="poster-badge">Breakers</span>
+                        <h3>1996</h3>
+                                                <div class="meta">
+                            <!-- <div><i class="bi bi-calendar3"></i> 1996</div> -->
                             <div><i class="bi bi-controller"></i> Neo Geo MVS</div>
                             <div><i class="bi bi-building"></i> Visco Corporation</div>
                         </div>
-                        <hr class="divider">
-                        <p class="desc">
-                            The most popular entry in the series. This enhanced sequel updates the original with new character artwork, balance adjustments, additional color variations, and redesigned stages. It also introduces a new character, the ninja Saizo.
-                        </p>
+                        <div class="poster-more-text">
+                            VISCO began in 1993 with the prototype <a href="https://archive.org/details/rgz5f4" target="_blank">Crystal Legacy</a>, which later evolved into Breakers, a fast, accessible fighting game built around simple inputs and quick movement. Console versions followed later on Neo Geo AES, Neo Geo CD, and eventually Dreamcast.
+                        </div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">Read more </button>
                     </div>
-                </article>
-
-                <!-- Breakers Collection -->
-                <article class="card-roster">
-                    <div class="poster">
-                        <img src="media/assets/boxart_Breakers_Collection.webp" class="poster-img" alt="Breakers Collection">
+                </div>
+                <div class="poster-item">
+                    <img src="media/assets/boxart_Breakers_Revenge.webp" alt="Breakers Revenge">
+                    <div class="poster-content">
+                        <span class="poster-badge">Breakers Revenge</span>
+                        <h3>1998</h3>
+                                                <div class="meta">
+                            <!-- <div><i class="bi bi-calendar3"></i> 1998</div> -->
+                            <div><i class="bi bi-controller"></i> Neo Geo MVS</div>
+                            <div><i class="bi bi-building"></i> Visco Corporation</div>
+                        </div>
+                        <div class="poster-more-text">The most popular entry in the series. This enhanced sequel updates the original with new character artwork, balance adjustments, additional color variations, and redesigned stages. It also introduces a new character, the ninja Saizo.</div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">Read more </button>
                     </div>
-                    <div class="roster-desc">
-                        <div class="title-row"><h3>Breakers Collection</h3></div>
+                </div>
+                <div class="poster-item">
+                    <img src="media/assets/boxart_Breakers_Collection.webp" alt="Breakers Collection">
+                    <div class="poster-content">
+                        <span class="poster-badge">Breakers Collection</span>
+                        <h3>2023</h3>
                         <div class="meta">
-                            <div><i class="bi bi-calendar3"></i> 2023</div>
+                            <!-- <div><i class="bi bi-calendar3"></i> 2023</div> -->
                             <div><i class="bi bi-controller"></i> Xbox Series, PC, PS4/5, Switch</div>
                             <div><i class="bi bi-building"></i> QUByte Interactive</div>
                         </div>
-                        <hr class="divider">
-                        <p class="desc">
-                            A compilation of both Breakers games, featuring modern additions such as rollback netcode with cross‑platform play, ranked matches, global leaderboards, an expanded training mode, an art gallery, and a new Team Battle mode.
-                        </p>
+                        <div class="poster-more-text">A compilation of both Breakers games, featuring modern additions such as rollback netcode with cross‑platform play, ranked matches, global leaderboards, an expanded training mode, an art gallery, and a new Team Battle mode.</div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">Read more </button>
                     </div>
-                </article>
-
-                <!-- Breakers Revenge Chicago -->
-                <article class="card-roster">
-                    <div class="poster">
-                        <img src="media/assets/boxart_Breakers_Chicaco.webp" class="poster-img" alt="Breakers Revenge Chicago">
-                    </div>
-                    <div class="roster-desc">
-                        <div class="title-row"><h3>Breakers Revenge Chicago</h3></div>
+                </div>
+                <div class="poster-item">
+                    <img src="media/assets/boxart_Breakers_Chicaco.webp" alt="Breakers Revenge Chicago">
+                    <div class="poster-content">
+                        <span class="poster-badge">Breakers Revenge Chicago</span>
+                        <h3>2024</h3>
                         <div class="meta">
-                            <div><i class="bi bi-calendar3"></i> 2024</div>
+                            <!-- <div><i class="bi bi-calendar3"></i> 2024</div> -->
                             <div><i class="bi bi-controller"></i> exA System</div>
                             <div><i class="bi bi-building"></i> exA-Arcadia</div>
                         </div>
-                        <hr class="divider">
-                        <p class="desc">
-                            This upgraded EXA‑Arcadia release features new artwork, colors, training mode, new soundtrack, and all stage versions. 
-                            Bai‑Hu is playable, and the game offers 3 modes: Revenge (Classic), Extra (Neo‑Geo CD), and Chicago (short hops and balance changes).
-                        </p>
+                        <div class="poster-more-text">This upgraded EXA‑Arcadia release features new artwork, colors, training mode, new soundtrack, and all stage versions. 
+                            Bai‑Hu is playable, and the game offers 3 modes: Revenge (Classic), Extra (Neo‑Geo CD), and Chicago (short hops and balance changes).</div>
+                        <button class="read-more-btn" onclick="toggleReadMore(this)">Read more </button>
                     </div>
-                </article>
-
+                </div>
             </div>
+            <button class="gallery-nav-btn next" id="nextBtn" onclick="scrollGallery(1)">&#10095;</button>
+        </div>
+    </div>
+
+
 
 
 
@@ -491,5 +481,18 @@
         </footer>
 
         <script src="app.js"></script>
+
+    <script>
+        function scrollGallery(direction) {
+            const scrollAmount = 330;
+            const maxScrollLeft = gallery.scrollWidth - gallery.clientWidth;
+
+            const targetScroll = Math.max(0,Math.min(maxScrollLeft, gallery.scrollLeft + direction * scrollAmount));
+        
+            gallery.scrollTo({ left: targetScroll, behavior: 'smooth' });
+            setTimeout(updateNavButtons, 400);
+        }
+    </script>
+
     </body>
 </html>
