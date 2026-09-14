@@ -313,7 +313,7 @@ img.input-icon{vertical-align:middle}
 .gallery-wrapper{position:relative}
 .poster-gallery{display:flex;overflow-x:auto;gap:20px;padding-bottom:15px;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;margin:2rem;margin-top:0}
 .poster-gallery::-webkit-scrollbar{display:none}
-.poster-item{flex:0 0 312px;height:480px;scroll-snap-align:start;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;box-sizing:border-box;border:1px solid #d3d3d3}
+.poster-item{flex:0 0 312px;height:480px;scroll-snap-align:center;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:24px;box-sizing:border-box;border:1px solid #d3d3d3}
 .poster-item img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:fill;z-index:1;aspect-ratio:279/395}
 .poster-item::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:70%;background:linear-gradient(to top,#000 0,rgba(0,0,0,0) 100%);z-index:2}
 .poster-content{position:relative;z-index:3;color:#fff;text-align:left}

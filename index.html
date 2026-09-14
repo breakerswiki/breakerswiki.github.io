@@ -484,13 +484,32 @@
 
         <script>
         function scrollGallery(direction) {
-            const scrollAmount = 330;
-            const maxScrollLeft = gallery.scrollWidth - gallery.clientWidth;
+            const items = Array.from(gallery.querySelectorAll('.poster-item'));
+            const galleryRect = gallery.getBoundingClientRect();
 
-            const targetScroll = Math.max(0,Math.min(maxScrollLeft, gallery.scrollLeft + direction * scrollAmount));
-        
-            gallery.scrollTo({ left: targetScroll, behavior: 'smooth' });
-            setTimeout(updateNavButtons, 400);
+            let closestIndex = 0;
+            let minDistance = Infinity;
+
+            items.forEach((item, index) => {
+                const itemRect = item.getBoundingClientRect();
+                const itemCenter = itemRect.left + itemRect.width / 2;
+                const galleryCenter = galleryRect.left + galleryRect.width / 2;
+                const distance = Math.abs(itemCenter - galleryCenter);
+
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestIndex = index;
+                }
+            });
+
+            let targetIndex = closestIndex + direction;
+            targetIndex = Math.max(0, Math.min(items.length - 1, targetIndex));
+
+            items[targetIndex].scrollIntoView({
+                behavior: 'smooth',
+                inline: 'center',
+                block: 'nearest'
+            });
         }
 
         function toggleReadMore(button) {
@@ -501,9 +520,8 @@
             } else {
                 button.textContent = 'Read more';
             }
-            setTimeout(updateNavButtons, 400);
         }
-    </script>
+        </script>
 
     </body>
 </html>
