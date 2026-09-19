@@ -11,7 +11,7 @@ img.logo:hover{scale:1.1;transition:transform .2s ease}
 .logo{font-size:1.1rem;font-weight:800;letter-spacing:-.05em}
 .hero-section{display:flex;flex-direction:column;position:relative;background:var(--surface);text-align:center;animation:reveal 1.2s cubic-bezier(.25,1,.5,1) forwards}
 .play-section{position:relative;background:var(--surface);text-align:center;animation:reveal 1.2s cubic-bezier(.25,1,.5,1) forwards;color:#fff}
-.hero-video-bg{background-color:#000;position:absolute;top:0;left:0;width:100%;height:450px;object-fit:cover;z-index:1;opacity:1;pointer-events:none; filter: brightness(60%);}
+.hero-video-bg{background-color:#000;position:absolute;top:0;left:0;width:100%;height:450px;object-fit:cover;z-index:1;opacity:1;pointer-events:none;filter:brightness(60%)}
 .hero-section::after{content:"";position:absolute;top:0;left:0;width:100%;height:452px;z-index:1;pointer-events:none;background:linear-gradient(to bottom,transparent 0,rgba(0,0,0,.15) 50%,rgba(0,0,0,.6) 80%,#000 100%);background-size:100% 100%,100% 4px}
 .hero-content{text-align:center;margin:0 auto;top:5rem;position:relative;z-index:2;height:350px;animation:fadeIn .4s ease forwards;text-align:left;opacity:0;animation:fadeIn .7s ease forwards;animation-delay:.5s}
 .badge-hero,.hero-content h1,.hero-content p{position:relative;z-index:2}
@@ -97,9 +97,10 @@ nav button.active{color:#d07953}
 h2{font-size:2.25rem;font-weight:700;letter-spacing:-.03em}
 .subtitle{color:var(--text-muted);font-size:1.1rem}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;margin-bottom:3rem}
-.card{text-align:center;background:var(--paper);border:1px solid var(--line);padding:1.5rem;overflow:hidden;opacity:0;animation:fadeIn .6s ease forwards;transition:transform .4s ease-in-out,box-shadow .4s ease-in-out}
+.card{padding-bottom:3rem;text-align:center;background:var(--paper);border:1px solid var(--line);overflow:hidden;opacity:0;animation:fadeIn .6s ease forwards;transition:transform .4s ease-in-out,box-shadow .4s ease-in-out}
 .card:hover{transform:translateY(-6px);box-shadow:0 14px 30px rgba(0,0,0,.18);transition:transform .3s ease-in-out,box-shadow .3s ease}
-.details{text-align:left!important}
+.details{text-align:left!important;padding:2rem}
+.details p{padding:0!important;margin:0!important}
 .card:nth-child(1){animation-delay:.1s}
 .card:nth-child(2){animation-delay:.2s}
 .card:nth-child(3){animation-delay:.3s}
@@ -129,7 +130,7 @@ to{opacity:1}
 .card-icon{font-size:1.5rem;margin-bottom:1rem}
 .card h3{font-size:1.4rem;font-weight:600;margin-bottom:.75rem;letter-spacing:-.02em}
 .card h4{color:gray;font-size:1rem;font-weight:600;margin-bottom:.5rem;letter-spacing:-.02em}
-.card p{color:var(--text-muted);font-size:.95rem;line-height:1.6;margin-bottom:.75rem}
+.card p{color:var(--text-muted);font-size:.95rem;line-height:1.6;margin-bottom:.75rem;padding:0 1.5rem}
 .card-video{display:block;height:auto;aspect-ratio:4/3;width:calc(100% + 4rem);margin-top:-4rem;margin-left:-2rem;margin-right:-2rem;margin-bottom:2rem}
 .settings-list{margin:0;display:flex;flex-direction:column;gap:1rem;border:1px solid #e2e2e2;border-radius:8px;overflow:hidden;background:#fff}
 .char-layout{display:grid;grid-template-columns:1fr;gap:1.2rem;align-items:start}
@@ -145,7 +146,7 @@ to{opacity:1}
 }
 .char-content{min-height:400px;width:100%;max-width:700px}
 #characters{width:100%;margin:0 auto;background:#fff}
-.char-content h1{font-size:1.7rem;margin:0rem 0 .75rem 0;letter-spacing:-.02em}
+.char-content h1{font-size:1.7rem;margin:0rem 0 .75rem 0;letter-spacing:-.02em;text-transform:uppercase;font-weight:900}
 .char-content h3{font-size:1.2rem;margin:3rem 0 .75rem 0;text-transform:uppercase;font-weight:900}
 .char-content h4{font-size:1.1rem;margin:2rem 0 .5rem 0;font-weight:900}
 .char-content p{color:var(--text-muted);margin-bottom:1rem;font-size:1.1rem;line-height:1.5;padding:1rem;background:var(--paper);border:1px solid var(--line)}
@@ -304,7 +305,7 @@ body:has(.char-btn[data-char=bai-hu].active) .character-bg{background-image:url(
 .divider{border:none;border-top:1px dashed var(--line);margin:0 0 14px}
 .desc{font-size:14.5px;line-height:1.55;text-align:left;color:rgba(23,20,15,.85);margin:0}
 .desc a{color:#000;font-weight:500}
-.risk-system p{padding:.3rem}
+.risk-system{padding-top:2rem}
 .risk-system h3{margin:0}
 .risk-system span{color:var(--text-muted);font-size:.95rem}
 .sub-content>table{width:100%;border:1px solid var(--line);padding:1rem}
