@@ -11,9 +11,24 @@ The flag displayed on his stage was changed from France to Italy between Breaker
 
 ### Colors
 
-| [A] | [B] | [C] | [D] |
-|:----------:|:----------:|:----------:|:----------:|
-| ![img](media/characters/pielle/img/pielle_A.png)  | ![img](media/characters/pielle/img/pielle_B.png)  | ![img](media/characters/pielle/img/pielle_C.png)  | ![img](media/characters/pielle/img/pielle_D.png)  |
+<div class="grid-2x2">
+  <div class="item">
+    <span>[A]</span>
+    <img src="media/characters/pielle/img/pielle_A.png" alt="A">
+  </div>
+  <div class="item">
+    <span>[C]</span>
+    <img src="media/characters/pielle/img/pielle_C.png" alt="C">
+  </div>
+  <div class="item">
+    <span>[B]</span>
+    <img src="media/characters/pielle/img/pielle_B.png" alt="B">
+  </div>
+  <div class="item">
+    <span>[D]</span>
+    <img src="media/characters/pielle/img/pielle_D.png" alt="D">
+  </div>
+</div>
 
 
 ## Moves
@@ -117,254 +132,293 @@ Super Rose | [QCB],[QCB]+[K]
 ### Overview
 Pielle is effective up close thanks to his quick overhead, but he’s weak defensively without Super. He’s not easy to use, since he lacks low confirms and invincible reversals, and his specials recover slowly, making them risky and easy to punish.
 
-### Neutral
+<br>
+
+<div class="grid">
+
+<div class="card">
 <video>
     <source data-src="media/characters/pielle/videos/pielle_neutral.mp4">
 </video>
 
+#### Neutral
+
 * Use multiples 5A or 2A as pokes. 
   * Hit confirm with 214P or 236236P. 
-  * You can also follow with B+D (overhead) to find openings.
+  * Follow with B+D to find openings.
 * His Special has high recovery; use them with caution to avoid punishes.
-* 623A doesn’t knock down grounded opponents. 
-  * Use 623C for combo extensions.
+* 623A doesn’t knock down grounded opponents. Use 623C in combos
+</div>
 
 
-### Anti-air
-
-<video>
+<div class="card"><video>
   <source data-src="media/characters/pielle/videos/pielle_anti-air.mp4">
 </video>
 
+#### Anti-air
 
 * Close 5C: Effective anti-air/anti-crossup; cancelable into specials or supers.
 * Thunder Croiser (214214P): Invincible anti-air with long (vertical) reach.
 * 623A: Reliable option for a quick anti-air.
+</div>
 
-
-### Super moves
-<video>
+<div class="card"><video>
   <source data-src="media/characters/pielle/videos/matchups/pielle_vs_dao-long_kouryuu_ga.mp4">
 </video>
+
+#### Super moves
 
 * 236236P: Pass-through projectile; hits OTG after an anti-air slide.
 * 214214P: Use it as a reversal or anti-air.
 * 214214K: Safe, has full-screen reach; also functions as an anti-air.
+</div>
+</div>
+
 
 ### Tips
-#### Anti-air slide
-<video>
+
+<div class="grid">
+
+<div class="card"><video>
     <source data-src="media/characters/pielle/videos/pielle_slide_otg.mp4">
 </video>
 
+#### Anti-air slide
+
 * His slide can be used as an anti-air leading to an OTG confirm with 236236P or 214214P (corner).
+</div>
 
-
-#### Flying Peach Bomber (overhead)
-<video>
+<div class="card"><video>
     <source data-src="media/characters/pielle/videos/rose_train.mp4">
 </video>
 
-* Most of Pielle’s normals cancel into his overhead, 
-* but there’s a gap. On hit, confirm with 5A or 5B. 
-* It whiffs on crouch and makes him pass through.
+#### Flying Peach Bomber (overhead)
+* Hit-confirm his overhead with 5A or 5B. 
+* It cancels off most normals, but has a punishable gap.   
+* It also whiffs on crouch and makes him pass through.
+</div>
 
-
-#### Fuzzy
-<video>
+<div class="card"><video>
   <source data-src="media/characters/pielle/videos/fuzzyguard.mp4">
 </video>
 
-* You can perform a fuzzy using jC into jB, jC or jD.
-* jD can be canceled with down+A+B+C, but it doesn’t combo.
+#### Fuzzy
+* You can perform a fuzzy using jump C into jump B/C/D.
+* jump D can be canceled with down+A+B+C, but it doesn’t combo.
+</div>
 
-### Replays
-* [<div class="fi fi-br"></div>lucasrocha2013 vs  <div class="fi fi-br"></div>Carecation](https://youtu.be/Vjqd19gWLO8?si=bwCqriEpvHoRBhAO)
-* [<div class="fi fi-br"></div>lucasrocha2013 vs  <div class="fi fi-br"></div>Markadv](https://www.youtube.com/watch?v=weAUQFh83x4)
-* [<div class="fi fi-us"></div>MorkmanFreeman vs  <div class="fi fi-br"></div>lucasrocha2013](https://youtu.be/Q8bSknwe7so?si=hMFp-cN9TZxtYXcW)
-* [<div class="fi fi-us"></div>SouthpawRock vs  <div class="fi fi-br"></div>lucasrocha2013](https://youtu.be/Q8bSknwe7so?si=hMFp-cN9TZxtYXcW)
-
-
-### Ressources   
-* [SuperCombo Wiki - Breakers Revenge/Pielle](https://wiki.supercombo.gg/w/Breakers_Revenge/Pielle)
+</div>
 
 
 ## Combos
 
-### Meterless combos
+### Combos
 
-<video>
+<div class="grid">
+
+<div class="card"><video>
 <source data-src="media/characters/pielle/videos/meterless_combo.mp4">
 </video>
+
+#### Meterless combos
 
 * 2B > 214C.C.C
 * 2A, 2A, 2A > 214C.C.C
 * jump D > 2C > 214D
 * jump D > 2C > 214C.C.C
+</div>
 
 
-### Metered combos
-<video>
+<div class="card"><video>
 <source data-src="media/characters/pielle/videos/metercombo.mp4">
 </video>
 
-* 2A, 2A > Super Swords (strict timing)
-* jump D > close 5D > Super Swords
-* jump D > 2C > Super Swords
-* corner: jump D > 2C > A+C > Super Swords / Thunder
+#### Metered combos
+
+* 2A, 2A > 236236P (strict timing)
+* jump D > close 5D > 236236P
+* jump D > 2C > 236236P
+* corner: jump D > 2C > A+C > 236236P / 214214P
+</div>
 
 
-### Anti-air
-<video>
+<div class="card"><video>
 <source data-src="media/characters/pielle/videos/antiair_combo.mp4">
 </video>
 
-* close 5D > Super Swords / Thunder
-* close 5C > Super Swords
-* close 5C > Super Thunder (corner)
-* 2C > 214B or 214D
-* 2C > Super Flower
-* 2C > Super thunder (close range)
-* corner: 2C > 214B > Super Swords / Thunder
-* far. 5D > Swords
-* slide > Super Swords / Thunder (OTG)
+#### Anti-air
+
+* close 5D > 236236P / 214214P <br> close 5C > 236236P <br> far. 5D > 236236P <br> 2D > 236236P (OTG)
+* 2C > 214B or 214D <br> 2C > 214214K <br> 2C > 214214P (close range)
+
+#### corner
+* 2C > 214B > 236236P / 214214P <br> close 5C > 214214P
+</div>
 
 
-### Air-to-air
-<video>
+<div class="card"><video>
 <source data-src="media/characters/pielle/videos/airtoair.mp4">
 </video>
 
-* jump P/K > Super
+#### Air-to-air
+
+
+* jump P/K > 236236P
 * jump P/K > 623A (must be close to the ground)
+</div>
 
 
-### Rose train
-<video>
+<div class="card"><video>
 <source data-src="media/characters/pielle/videos/rose_train.mp4">
 </video>
 
-#### Only on standing opponents
-* B+D ❌ 5A x2 > 214B
-* 2A > close 5A > 214B
-* 5B > 214B
-* 2B > 214B
+#### Rose train
+
+<note>Only on standing opponents</note>
+
+* 2A > close 5A > 214B <br> 5B > 214B <br> 2B > 214B
 
 #### Close range
 * 2C > 214B or 214D
+</div>
 
+<div class="card">
 
-### Breakable combos
+#### Breakable combos
 
 * B+D ❌ 5B
 * B+D ❌ 2B
 * B+D ❌ 5A
+</div>
 
+</div>
 
 ## Matchups
 
 ### Sho
 
-#### Ranki Ryuu Geri
-<video>
+<div class="grid">
+
+<div class="card"><video>
 <source data-src="media/characters/pielle/videos/matchups/pielle_vs_sho_ranki_ryuu_geri.mp4">
 </video>
 
+#### Ranki Ryuu Geri
 - Unsafe, but Sho can cancel into Air Super to stay safe and bait punish attempts. 
 - If you have meter, use Super Rose (214214K) for a guaranteed punish.
 
+</div>
+</div>
+
 ### Condor
 
-#### Atlas Rock Buster
-<video>
+<div class="grid">
+
+<div class="card"><video>
     <source data-src="media/characters/pielle/videos/matchups/pielle_vs_condor_atlas_rock_buster.mp4">
 </video>
 
+#### Atlas Rock Buster
 - There’s a gap after the first hit, punish with throw or Thunder Croiser (214214P)
+</div>
 
-#### Gran Buffalo Horn
-<video>
+<div class="card"><video>
     <source data-src="media/characters/pielle/videos/matchups/pielle_vs_condor_slide.mp4">
 </video>
 
+#### Gran Buffalo Horn
 - Unsafe on block. Punish with 2C
+</div>
 
-#### Tomahawk Jack
-<video>
+<div class="card"><video>
     <source data-src="media/characters/pielle/videos/matchups/pielle_vs_condor_tomahawk.mp4">
 </video>
 
+#### Tomahawk Jack
 - Unsafe on block. Punish with 2C
 - Whiff punish with Super Rose (214214K)
+</div>
+</div>
 
 ### Rila
 
-#### Killer Snake
-<video>
+<div class="grid">
+
+<div class="card"><video>
   <source data-src="media/characters/pielle/videos/matchups/pielle_vs_rila_killer_snake.mp4">
 </video>
 
+#### Killer Snake
 - Unsafe. Heavy version can be followed by any super to bait punishes.
 - Punish with 2A, it hits if she does nothing
 - In case she does a Super, counter it with Thunder Croiser (214214P)
+</div>
 
-#### Shine Beast
-<video>
+<div class="card"><video>
   <source data-src="media/characters/pielle/videos/matchups/pielle_vs_rila_shine_beast.mp4">
 </video>
 
+#### Shine Beast
 - On block, punish with Super Rose (214214K)
-
+</div>
+</div>
 
 
 ### Tia
 
-#### Soul Spike
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/pielle/videos/matchups/pielle_vs_tia_soul_spike.mp4">
 </video>
+
+#### Soul Spike
 
 - Not overhead
 - Punish light version with super (236236P)
 - Heavy version can be followed with super to bait your punish attempt. Use throw to avoid it.
+</div>
 
 ### Alsion
 
-#### Deadly Claw
-<video>
+<div class="card"><video>
   <source data-src="media/characters/pielle/videos/matchups/pielle_vs_alsion_deadly_claw.mp4">
 </video>
-    
+
+#### Deadly Claw
+
 - At close range, 214B stays in front, while 214D lands behind. 
 - Whiff punish with 2C.
-
+</div>
 
 ### Maherl
 
-#### Cadabra Bomber
-<video>
+<div class="card"><video>
   <source data-src="media/characters/pielle/videos/matchups/pielle_vs_maherl_cadabra_bomber.mp4">
 </video>
+
+#### Cadabra Bomber
 
 - invincible startup and Safe on block
 - If close, punish after blocking the 1st hit with super rose (214214K)
 
 ### dao-long
 
-#### Kouryuu Ga
-<video>
+<div class="card"><video>
   <source data-src="media/characters/pielle/videos/matchups/pielle_vs_dao-long_kouryuu_ga.mp4">
 </video>
+
+#### Kouryuu Ga
 
 - In corner (close range) punish with 2A
 - Whiff punish with 236236P (requires spacing).
 
 ### Saizo
 
-#### Yashagami
-<video>
+<div class="card"><video>
   <source data-src="media/characters/pielle/videos/matchups/pielle_vs_saizo_yashagami.mp4">
 </video>
+
+#### Yashagami
 
 - Unsafe on block and hit unless if canceled into super.
 - They may delay a super on block, but 236236P still guarantees a punish.

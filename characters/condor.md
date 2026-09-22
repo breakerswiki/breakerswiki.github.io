@@ -8,9 +8,24 @@ Condor Heads is a Native American who wears chaps. Typically peaceful, he has be
 
 ### Colors
 
-| [A] | [B] | [C] | [D] |
-|:----------:|:----------:|:----------:|:----------:|
-| ![img](media/characters/condor/img/condor_A.png)  | ![img](media/characters/condor/img/condor_B.png)  | ![img](media/characters/condor/img/condor_C.png)  | ![img](media/characters/condor/img/condor_D.png)  |
+<div class="grid-2x2">
+  <div class="item">
+    <span>[A]</span>
+    <img src="media/characters/condor/img/condor_A.png" alt="A">
+  </div>
+  <div class="item">
+    <span>[C]</span>
+    <img src="media/characters/condor/img/condor_C.png" alt="C">
+  </div>
+  <div class="item">
+    <span>[B]</span>
+    <img src="media/characters/condor/img/condor_B.png" alt="B">
+  </div>
+  <div class="item">
+    <span>[D]</span>
+    <img src="media/characters/condor/img/condor_D.png" alt="D">
+  </div>
+</div>
 
 ## Moves
 
@@ -118,470 +133,553 @@ Moonlight Shake | [360],[360]+[P]or[K]
 ### Overview
 Condor is a high-damage grappler. His low mobility and limited defensive options make it hard for him to get in, especially against zoning characters. He requires strong matchup knowledge and a solid understanding of the game’s mechanics.
 
+<div class="grid">
 
-### Attack
-<video>
+<div class="card"><video>
   <source data-src="media/characters/condor/videos/condor_offense.mp4">
 </video>
 
-* 236K: Use it for simple and reliable combos.
-* 3A/B: Launcher that enables direct follow-ups into Super (236236P).
+#### Attack
+
+* 236B: reliable light hit-confirm
+* 3A/B: Throw that enables direct follow-ups into Super (236236P).
 * 6,6K: Pass through projectiles but punishable on block or whiff.
-* Jumps: Use jump 2D since it stays active or jump 2C for cross-up.
+#### Jumps
+* Use jump 2D since it stays active <br> jump 2C for cross-up.
+</div>
 
-
-### Defense
-<video>
+<div class="card"><video>
   <source data-src="media/characters/condor/videos/condor_anti-air.mp4">
 </video>
       
+#### Defense
 
 * (A+B+C): Anti-air and anti-projectile tool; enables Super juggles on airborne opponents. Unsafe on block against Sho, Saizo, and Tia.
 * Anti‑air with 5A or close 5C to stop close‑range jump‑ins, then confirm into Tomahawk and juggle into Super.
+</div>
 
 
-
-### Super moves
-<video>
+<div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_tia_Rapidgale.mp4">
 </video>
 
+#### Super moves
+
 * 236236P: Invincible startup frames. Great for wake-up reversals or beating projectiles. Easily converts from light attacks.
 * 360,360P/K: High-damage command grab super.
+</div>
+</div>
 
 
 
 ### Tips
-#### Standing 720
-<video>
+
+<div class="grid">
+<div class="card"><video>
     <source data-src="media/characters/condor/videos/standing_720.mp4">
 </video>
 
+#### Standing 720
+
 * (4,1,2,3,6,9)x2 + P or K.
+</div>
 
-
-#### Kara cancels
-<iframe width="100%" height="300px" src="https://www.youtube.com/embed/YB7U2nSfiaU?si=_sm3Ea-yinwfO8zN" 
+<div class="card">
+<iframe width="100%" height="245px" src="https://www.youtube.com/embed/YB7U2nSfiaU?si=_sm3Ea-yinwfO8zN" 
   loading="lazy" title="YouTube video player" frameborder="0" 
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
   referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
 </iframe>
 
+#### Kara cancels
+
 * Kara Tomahawk: Press A+B+C during 2A, 2B, 6C, or 5D.
-* Kara command grab (Using Condor's 6C) 
-  * input 4,1,2,3,6,8C or 4,2,6,8C.
-
-
-### Replays
-* [<div class="fi fi-br"></div>lucasrocha2013 vs  <div class="fi fi-ar"></div>Crooked](https://youtu.be/nTgsvfBWe1M?si=TSk6KRQUJrkakCl9)
-* [<div class="fi fi-us"></div>JWonggg vs  <div class="fi fi-us"></div>SlamTownALPHA](https://youtu.be/DdHckzsoxyY?si=IGh-f29vmrFc8VwD)
-* [<div class="fi fi-us"></div>arcadeshock vs  <div class="fi fi-us"></div>Jessali](https://youtu.be/X-KFKl1NjD4?si=rokoONe1swIb5lmz)
-* [<div class="fi fi-us"></div>SouthpawRock vs  <div class="fi fi-br"></div>lucasrocha2013](https://youtu.be/Q8bSknwe7so?si=hMFp-cN9TZxtYXcW)
-* [<div class="fi fi-us"></div>VickiViper vs  <div class="fi fi-us"></div>Moomaster](https://www.youtube.com/watch?v=lfNSjlv1DQU)
-
-### Ressources
-* [SuperCombo Wiki - Breakers Revenge/Condor](https://wiki.supercombo.gg/w/Breakers_Revenge/Condor)
-
+* Kara command grab (Using 6C) 
+  * 4,1,2,3,6,8C
+  * 4,2,6,8C.
+</div>
 
 ## Combos
 
-### Meterless combos
-<video>
+### Combos
+
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/condor/videos/meterless combo.mp4">
 </video>
 
+#### Meterless combos
 * 2B > 236B
 * 2A,2A,2A > 236B
 * jump B > 5D > 236D
 * jump D > close 5B > 2D
+</div>
 
-### Metered combos
-<video>
+<div class="card"><video>
   <source data-src="media/characters/condor/videos/meter_combo.mp4">
 </video>
 
-* 2A, 2A > 2B > Super
-* 2A,2A,2A > 5B > Super
+#### Metered combos
+* 2A, 2A > 2B > 236236P
+* 2A,2A,2A > 5B > 236236P
+</div>
 
-### Throw confirms
-<video>
+<div class="card"><video>
   <source data-src="media/characters/condor/videos/throwconfirm.mp4">
 </video>
 
-* (close) 3A > Super
-* (close) 3B > Super
+#### Throw confirms
+* (close) 3A > 236236P
+* (close) 3B > 236236P
+</div>
 
-### Breakable combos
-<video>
-  <source data-src="media/characters/condor/videos/breakable_combo.mp4">
-</video>
-
-* 2A, 2A > 5B ❌ 6,6B
-* 2B ❌ 2B
-* 2B ❌ 236D
-* 2B ❌ Super
-* 2B ❌ 2D
-* jump 2C > 2B ❌ 5D
-
-### Anti-air</h3>
-<video>
+<div class="card"><video>
   <source data-src="media/characters/condor/videos/antiair_juggle.mp4">
 </video>
 
-* A+B+C > Super
-* 5A > A+B+C > Super
-* close 5C > A+B+C > Super
+#### Anti-air
+* A+B+C > 236236P
+* 5A > A+B+C > 236236P
+* close 5C > A+B+C > 236236P
+</div>
 
-### Air-to-air
-<video>
+<div class="card"><video>
   <source data-src="media/characters/condor/videos/airtoair.mp4">
 </video>
 
-* Any air normals into Super
+#### Air-to-air
+* Any air normals into Super 236236P
+</div>
 
+<div class="card"><video>
+  <source data-src="media/characters/condor/videos/breakable_combo.mp4">
+</video>
+
+#### Breakable combos
+* 2A, 2A > 5B ❌ 6,6B
+* 2B ❌ 2B <br> 2B ❌ 236D <br> 2B ❌ 236236P <br> 2B ❌ 2D
+* jump 2C > 2B ❌ 5D
+</div>
+
+</div>
 
 ## Matchups
 
 
 ### Sho
-#### Ranki Ryuu Geri
-  <video>
+
+<div class="grid">
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_sho_rankiryuugeri.mp4">
   </video>
 
+#### Ranki Ryuu Geri
+
 * Unsafe on its own, but can be followed with super to stay safe and bait punishes. 
 * If you have meter, use Atlas Rock Buster (236236P) on super flash.
+</div>
 
-#### Onigawara
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_sho_onigawara.mp4">
   </video>
  
+ #### Onigawara
+
 * Safe on block.
 * Break with 236236P
+</div>
 
-#### Tobihizageri
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_sho_tobihizageri.mp4">
   </video>
  
+ #### Tobihizageri
+
 * Safe on block, but leaves him in throw range up close. 
 * From afar, the startup gap can be punished with Super 236236P.
+</div>
 
-#### Sashikomi Kick
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_sho_divekick.mp4">
   </video>
  
+#### Sashikomi Kick
+
 * Whiff punish with 5A > 236236P.
 * On hit, break with throw.
 * Be careful, a whiffed divekick can lead into his air fireball super. 
 * Counter on super flash with Atlas Rock Buster (236236P).
+</div>
 
-#### Rekkou Ha
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_sho_Rekkouha.mp4">
   </video>
  
-* Use 6,6K to punish at mid-range, or 236236P at close range.
+ #### Rekkou Ha
 
+* Use 6,6K to punish at mid-range, or 236236P at close range.
+</div>
 
 ### Pielle
-#### Saber Bash
-  <video>
+
+<div class="grid">
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_pielle_SaberBash.mp4">
   </video>
  
+ #### Saber Bash
+
 * Despite its animation, this move isn't an overhead.
 * Punish with 2B.
+</div>
 
-#### Flying Peach Bomber
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_pielle_FlyingPeachBomber.mp4">
   </video>
  
+#### Flying Peach Bomber
+
 * Overhead, but if too close, it’ll whiff, and he’ll pass behind you. 
 * In a blockstring, there’s always a gap, punish with 2A.
+</div>
 
-#### Merci un-deux-trois 
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_pielle_MonsieurCrash.mp4">
   </video>
  
-* Leaves a gap after the second hit, punish with 5C.
+#### Merci un-deux-trois 
 
-#### Thunder Croiser
-  <video>
+* Leaves a gap after the second hit, punish with 5C.
+</div>
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_pielle_ThunderCroiser.mp4">
   </video>
- 
+
+#### Thunder Croiser
+
 * On block (close range) punish with super (236236P)
+</div>
 
 ### Condor
-#### Tomahawk Jack
-  <video>
+
+<div class="grid">
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_condor_tomawhak.mp4">
   </video>
- 
-* Punish on block or whiff with super (236236P).
 
-#### Gran Buffalo Horn 
-  <video>
+#### Tomahawk Jack
+* Punish on block or whiff with super (236236P).
+</div>
+ 
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_condor_BuffaloHorn.mp4">
   </video>
- 
-* Punish or whiff punish with 2D. Safe at max range. 
 
-#### Atlas Rock Buster
-  <video>
+#### Gran Buffalo Horn
+* Punish or whiff punish with 2D. Safe at max range. 
+</div>
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_condor_atlasrockbuster.mp4">
   </video>
- 
+
+#### Atlas Rock Buster
 * Hard to punish thanks to pushback and fast recovery.
 * If close enough, after the first hit, punish with throw.
+</div>
 
-#### 2D
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_condor_2D.mp4">
   </video>
- 
-* Unsafe up close, punish with 2B
 
+#### 2D
+* Unsafe up close, punish with 2B
+</div>
 
 ### Rila
-#### Killer Snake 
-  <video>
+
+<div class="grid">
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_rila_killersnake.mp4">
   </video>
- 
+
+#### Killer Snake 
 * Be careful, she can instantly cancel into an invincible Super.
 * Punish with 2A, you’ll still block if she activates Super. 
 * Note: Tomahawk can punish Bloody Fang on startup.
+</div>
 
-#### Quick Scratch
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_rila_quickscratch.mp4">
   </video>
- 
+
+#### Quick Scratch
 * Whiff punish it with any normal. 
 * Heavy version is unsafe on block.
+</div>
 
-#### Wild Saver
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_rila_WildSaver.mp4">
   </video>
- 
-* if you're close enough, punish with 5C > Tomahawk > Super
 
-#### Shine Beast 
-  <video>
+#### Wild Saver
+* if you're close enough, punish with 5C > Tomahawk > Super
+</div>
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_rila_ShineBeast.mp4">
   </video>
- 
+
+#### Shine Beast 
 * She ends up on the other side (at mid and close range).
 * With practice, you can time your jump correctly to punish her
+</div>
 
-#### Bloody Fang
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_rila_bloody%20fang.mp4">
   </video>
- 
+
+#### Bloody Fang
 * This super is not overhead despite the jump animation. 
 * Punish with jump C > Super (236236P)
-
+</div>
 
 ### Tia
-#### Soul Spike 
-  <video>
+
+<div class="grid">
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_tia_Soul_spike.mp4">
   </video>
- 
+
+#### Soul Spike 
 * Ground Soul Spike isn’t overhead, block low. 
 * Punish light version with 2B > 236236P. 
 * For the heavy version, she can use super right away, use throw to avoid it.
+</div>
 
-#### Rising upper 
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_tia_RisingUpper.mp4">
   </video>
- 
-* At close range punish with 5C or 5D.
 
-#### Rapid Gale 
-  <video>
+#### Rising upper 
+* At close range punish with 5C or 5D.
+</div>
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_tia_Rapidgale.mp4">
   </video>
- 
-* At mid-range, whiff Punish with Super (236236P).
 
-#### Heel Break 
-  <video>
+#### Rapid Gale 
+* At mid-range, whiff Punish with Super (236236P).
+</div>
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_tia_Heelbreak.mp4">
   </video>
- 
+
+#### Heel Break 
 * The second hit is overhead. 
 * Before it lands, punish or break with a throw or super.
+</div>
 
-#### Rapid Charge 
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_tia_Rapidcharge.mp4">
   </video>
- 
-* On block, she switches sides mid-air, turn quickly to punish.
 
-#### Burning Revolver 
-  <video>
+#### Rapid Charge 
+* On block, she switches sides mid-air, turn quickly to punish.
+</div>
+ 
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_tia_Burningrevolver.mp4">
   </video>
- 
-* Punish with Grand Buffalo Horn (6,6K)
 
-#### Cutlass Flasher 
-  <video>
+#### Burning Revolver
+* Punish with Grand Buffalo Horn (6,6K)
+</div>
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_tia_cutlassflasher.mp4">
   </video>
- 
-* Overhead super, switches sides on block.
 
+#### Cutlass Flasher 
+* Overhead super, switches sides on block.
+</div>
 
 ### Alsion
-#### Horus Shade 
-  <video>
+
+<div class="grid">
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_alsion_horus_shade.mp4">
   </video>
- 
+
+#### Horus Shade 
 * Overhead with a slow startup, making it easily punishable.
 * Whiff punish with 5A. Safe on block.
+</div>
 
-#### Death Shred 
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_alsion_DeathShred.mp4">
   </video>
- 
+
+#### Death Shred 
 * Hits twice. The second hit is a safe overhead with slow startup. 
 * Whiff punish with any throw or normal.
+</div>
 
-#### Deadly Claw 
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_alsion_DeadlyClaw.mp4">
   </video>
- 
+
+#### Deadly Claw 
 * Light version lands in the same spot, heavy version lands behind
 * whiff punish with 5C, on block use Super (236236P)
+</div>
 
-#### Dash Knee 
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_alsion_DashKnee.mp4">
   </video>
- 
+
+#### Dash Knee 
 * Safe at max range.
 * Punish with 2B.
+</div>
 
 ### Maherl
-#### Abdomen Step 
-  <video>
+
+<div class="grid">
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_maherl_AbdomenStep.mp4">
   </video>
- 
-* Safe on block. If used from a distance, whiff-punish with Tomahawk.
 
-#### Slash & Punish Sword 
-  <video>
+#### Abdomen Step 
+* Safe on block. If used from a distance, whiff-punish with Tomahawk.
+</div>
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_maherl_SlashSword.mp4">
   </video>
- 
-* Safe at max range. At mid and close range, punish with any normal.
 
-#### Fire Breath 
-  <video>
+#### Slash & Punish Sword 
+* Safe at max range. At mid and close range, punish with any normal.
+</div>
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_maherl_FireBreath.mp4">
   </video>
- 
+
+#### Fire Breath 
 * The light version can be punished by jumping in. 
 * Heavy version can be interrupted by any normal or by a Super (236236P).
+</div>
 
-#### Balloon Bomb 
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_maherl_BalloonBomb.mp4">
   </video>
-    
+  
+  
+#### Balloon Bomb 
 * Overhead, whiff punish with 5C or Tomahawk. 
 * On block, punish with slide or Super (236236P)
+</div>
 
-#### Cadabra Bomber
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_maherl_ShivaDance.mp4">
   </video>
- 
-* Safe on block. If you're close, use Super (236236P) to avoid the second part and punish.
 
+#### Cadabra Bomber
+* Safe on block. If you're close, use Super (236236P) to avoid the second part and punish.
+</div>
 
 ### Dao-long
-#### Kouryuu Ga 
-  <video>
+
+<div class="grid">
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_dao-long_kouryuuga.mp4">
   </video>
- 
+
+#### Kouryuu Ga 
 * In the corner, use your Super (236236P) to punish.
 * Break: 236236P (if you opponent use it in long combos).
+</div>
 
-#### Senkyuu Tai 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_dao-long_Senkyutai.mp4">
 </video>
- 
-* Unsafe on block. Punish with 5C or throw.
 
-#### Senpuure Kyaku 
-<video>
+#### Senkyuu Tai 
+* Unsafe on block. Punish with 5C, 5D or throw.
+</div>
+
+<div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_dao-long_senpurekyakuu.mp4">
 </video>
- 
-* If you're close enough, punish with 2B.
 
-#### Shoutenchuu 
-<video>
+
+#### Senpuure Kyaku 
+* If you're close enough, punish with 2B.
+</div>
+
+<div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_dao-long_Shoutenchu.mp4">
   </video>
- 
-* Overhead, Safe on block. Whiff punish with 5C
 
-#### Houshin Renpa
-  <video>
+#### Shoutenchuu 
+* Overhead, Safe on block. Whiff punish with 5C
+</div>
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_dao-long_houshinrendpa.mp4">
   </video>
- 
-* Punish at distance with Grand Buffalo Horn (6,6K) 
 
-#### Shin Kyoku Ranbu 
-  <video>
+#### Houshin Renpa
+* Punish at distance with Grand Buffalo Horn (6,6K) 
+</div>
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_dao-long_shinkyokuranbu.mp4">
   </video>
- 
-* It can be blocked while crouching, despite how the animation looks. Punish with a jump-in.
 
+#### Shin Kyoku Ranbu 
+* It can be blocked while crouching, despite how the animation looks. Punish with a jump-in.
+</div>
 
 
 ### Saizo
-#### Ryuuei Kyaku
-  <video>
+
+<div class="grid">
+
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_saizo_ryueikyaku.mp4">
   </video>
- 
+
+#### Ryuuei Kyaku
 * It must be canceled into a bomb and properly spaced to stay safe. 
 * At close range, punish slide > bomb with 2A (requires precise timing).
+</div>
 
-#### Yashagami
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_saizo_yashagami.mp4">
   </video>
- 
+
+#### Yashagami
 * Be cautious, Saizo’s super may prevent your punishes. 
 * If you have meter, use Super (236236P) for a guaranteed punish.
+</div>
 
-#### Engetsuzan
-  <video>
+  <div class="card"><video>
     <source data-src="media/characters/condor/videos/matchups/condor_vs_saizo_engetsuzan.mp4">
   </video>
- 
+
+#### Engetsuzan
 * Punish with super (236236P)
+</div>

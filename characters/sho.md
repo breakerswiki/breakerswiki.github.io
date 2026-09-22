@@ -8,9 +8,25 @@ Sho Kamui, the Karate master and protagonist of Breakers Revenge, enters the FIS
 
 ### Colors
 
-| [A] | [B] | [C] | [D] |
-|:----------:|:----------:|:----------:|:----------:|
-| ![img](media/characters/sho/img/sho_A.png)  | ![img](media/characters/sho/img/sho_B.png)  | ![img](media/characters/sho/img/sho_C.png)  | ![img](media/characters/sho/img/sho_D.png)  |
+<div class="grid-2x2">
+  <div class="item">
+    <span>[A]</span>
+    <img src="media/characters/sho/img/sho_A.png" alt="A">
+  </div>
+  <div class="item">
+    <span>[C]</span>
+    <img src="media/characters/sho/img/sho_C.png" alt="C">
+  </div>
+  <div class="item">
+    <span>[B]</span>
+    <img src="media/characters/sho/img/sho_B.png" alt="B">
+  </div>
+  <div class="item">
+    <span>[D]</span>
+    <img src="media/characters/sho/img/sho_D.png" alt="D">
+  </div>
+</div>
+
 
 ## Moves
 
@@ -121,154 +137,185 @@ Kurenai Gansai Shuu | ([AIR])[QCB],[QCF]+[K]
 ### Overview
 Sho moves fast, deals high damage, and has great air control. His divekick can be used from any jump angle to keep pressure on the opponent. Most of his moves are safe and can be canceled, making him dangerous in every situation.
 
+<br>
 
-### Neutral
+<div class="grid">
+
+<div class="card">
 <video><source data-src="/media/characters/sho/videos/sho_pressure.mp4"></video>
 
-* Find openings with short dashes: 
-  * dash > 2B 
-  * dash > 5C
-* Use 236P from a distance, then follow with dash to gain screen control and pressure
-* Cancel your dash at any time to bait jumps.
-* Knee (B+C) is useful for keeping pressure and is safe on block, but it can leave you at throw range. Be careful: when used from a distance, it has a punishable gap.
+#### Neutral
 
+* Find openings with dash > 2B or dash > stand C
+* Use 236P from a distance, then follow with dash to gain screen control
+* Cancel your dash at any time to bait jumps.
+* Knee (B+C) maintains pressure and is safe on block but risks throw range. From distance, it has a punishable gap.
+</div>
           
-        
-### Jumps
+<div class="card">
+
 <video><source data-src="/media/characters/sho/videos/sho_jumps.mp4"></video>
+
+#### Jumps
 
 * All jump attacks are super-cancelable (Except 8D)
 * Use super after a whiffed jump A, jump B, or divekick to bait anti-airs.
 * Jump B is your most reliable air-to-air, it stays active and with high priority.
-* When your jump‑in gets blocked, you can follow with a fuzzy mixup : 
-  * low: 2B
-  * fuzzy: 7D > 236236P
+* When your jump‑in gets blocked, you can follow with a fuzzy mixup, use low 2B, or fuzzy 7D > 236236P
+</div>
           
-        
-### Anti-air
+
+<div class="card">
+
         
 <video><source data-src="/media/characters/sho/videos/sho_anti-airs.mp4"></video>
-        
+
+#### Anti-air
+
 * 2C and 5C: Sepcial and Super cancellable
 * 214B is quick and can be used for juggles, startup invincibility
 * 214D reaches higher, startup invincibility
 
-### Break
+</div>
+
+<div class="card">
+
+
 
 <video><source data-src="/media/characters/sho/videos/matchups/sho_vs_tia_HeelBreak.mp4"></video>
 
+#### Break
+
 * Break with throw, backdash, or 214K. 
 * Break works best against certain close‑range combos and jump‑ins.
+</div>   
+
+<div class="card">
         
-        
-### Super moves
+
 
 <video><source data-src="/media/characters/sho/videos/sho_supers.mp4"></video>
-        
+
+#### Super moves
+
 * 236236P: Punish unsafe moves or finish combos.
 * (Air) 236236P: Safe on block and great for baiting anti‑airs.
 * 214214K: Long reach; used as a reversal or to punish projectiles
-        
+
+</div>
+</div>
+
 ### Tips
-        
-#### Avoid overusing breakable combos
+
+<div class="grid">
+
+<div class="card">
 
 <video><source data-src="/media/characters/sho/videos/sho_breakable_combos.mp4"></video>
 
-Using Far 5C in combos often gives your opponent a chance to break. <br>
-Instead, use 2C or 2D :
-* 2B, 2B, 2C > 214K.K.K
-* 2B, 2B, 2C > 6,4,6P
-* 2B, 2B, 2C > B+C > 236236P
-* 2B, 2B, 2D > 236236P
-        
-#### Chip damage
+#### Breakable combos
+
+* Far 5C in combos can often be broken. Finish your combos with 2C or 2D instead to avoid this.
+
+</div>
+
+<div class="card">       
 <video><source data-src="/media/characters/sho/videos/sho_chip_damage.mp4"></video>
+
+#### Chip damage
 
 * Use either 6,4,6P or 236D. 
 * 6,4,6P will deal the most chip damage.
-        
-#### Fuzzy
+
+</div>
+
+<div class="card">       
 <video><source data-src="/media/characters/sho/videos/sho_fuzzy_super.mp4"></video>
 
-* Jump-in or divekick to force high block,<br>Then mix with low (2B) or fuzzy (jump D > 236236P). 
-  * - Fuzzy fails if divekick is blocked low.
+#### Fuzzy
 
-#### Corner reset
+* Jump-in or divekick to force high block,<br>Then mix with low (2B) or fuzzy (jump D > 236236P). Fuzzy fails if divekick is blocked low.
+</div>
+
+
+<div class="card">       
 <video><source data-src="/media/characters/sho/videos/sho_corner_reset.mp4"></video>
 
-* Use 2C > B+C or close 5C.C > B+C then :
-  * - Walk (condor)
-  * - Dash (sho, rila, tia, saizo, bai-hu)
-  * - Short dash with 2A or 2B (all characters)
-        
-#### Throw Option Select
+#### Corner reset
+
+* Use close 5C.C > B+C <br> or 2C > B+C then :
+  * Walk (condor)
+  * Dash (sho, rila, tia, saizo, bai-hu)
+  * Short dash with 2A or 2B <br> (all characters)
+
+</div>
+
+<div class="card">       
 <video><source data-src="/media/characters/sho/videos/sho_throw_OS.mp4"></video>
 
+#### Throw Option Select
+
 * Throw or auto-trigger 214K (anti-air) if the throw fails.      
-  * Throw: 214(6)C.K
-  * Back throw: 2,1(4)C.K
-          
-        
-### Ressources
-* [Sas Izm - Sho Kamui Combo Guide](https://youtu.be/T0SNi-k13Ic)
-* [SuperCombo Wiki - Breakers Revenge/Sho](https://wiki.supercombo.gg/w/Breakers_Revenge/Sho)       
-        
-### Replays
-  * [<div class="fi fi-br"></div>LAURENTINO vs  <div class="fi fi-ar"></div>BrunoFerreir@](https://www.youtube.com/watch?v=XOWdAN0oCl8)
-  * [<div class="fi fi-br"></div>lucasrocha2013 vs  <div class="fi fi-br"></div>DSKalashnikov](https://youtu.be/sb5e_DK1pBI?si=BAhUr9J809iZVIJe)
-  * [<div class="fi fi-fr"></div>Keikun vs  <div class="fi fi-it"></div>SpinalBlood](https://www.youtube.com/watch?v=cX2r59Mm9Ws)
-  * [<div class="fi fi-es"></div>NM Akuma vs  <div class="fi fi-fr"></div>Balier](https://www.youtube.com/watch?v=QrWSaWhVrGc)
-  * [<div class="fi fi-us"></div>Justin Wong vs  <div class="fi fi-fr"></div>Abdess](https://www.youtube.com/watch?v=bWsdj0Gu5e8)
-  * [<div class="fi fi-fr"></div>Balier vs  <div class="fi fi-fr"></div>Bad Mojo](https://www.youtube.com/watch?v=uTD9rqctDvo)
-  * [<div class="fi fi-bg"></div>Oliva Biscuit vs  <div class="fi fi-fr"></div>Zoukken](https://www.youtube.com/watch?v=tsHHZdofdlg)
-          
+  * Throw: 2,3(6)C~K
+  * Back throw: 2,1(4)C~K
+</div>
+
+</div>
+
           
         
 
 ## Combos
 
-### Meterless combos
+### Combos
+
+<div class="grid">
+
+<div class="card">
 <video><source data-src="media/characters/sho/videos/basic_combos.mp4"></video>
 
-* 2B, 2B, 2B, 2D
-* 2B, 2B, 2C > 236D
-* 2B, 2B, 2C > 214D.D.D
+#### Meterless combos
+
+* 2B, 2B, 2B, 2D <br> 2B, 2B, 2C > 236D <br> 2B, 2B, 2C > 214D.D.D
 * 2B, 2B, 3C > 4,6P
 * A+C > 6,4,6P
-* 8D > 214D.D.D
-* 8D > 6,4,6P
-* close 5C.C > 6,4,6P
-* close 5C.C > 214D
-* close 5C > B+D > 6,4,6P
+* 8D > 214D.D.D <br> 8D > 6,4,6P
+* close 5C.C > 6,4,6P <br> close 5C.C > 214D <br> close 5C > B+D > 6,4,6P
+</div>
 
-### Metered combos
+<div class="card">
 <video><source data-src="media/characters/sho/videos/meter_combo.mp4"></video>
 
-* 2B, 2B, 2B, 2D > 236236P
-* 2B, 2B, 2B, 2D > 214214K
-* 2B, 2B, 2C > B+C > 236236P
-* 2B, 2B, 2C > B+C > 214214K
-* Divekick > 236236P
+#### Metered combos
+
+* 2B, 2B, 2B, 2D > 236236P <br> 2B, 2B, 2B, 2D > 214214K
+* 2B, 2B, 2C > B+C > 236236P <br> 2B, 2B, 2C > B+C > 214214K <br> Divekick > 236236P
+
 
 #### Corner
-* 2B, 2B, 3C > 4,6P > 236236P
-* 2B, 2B, 3C > 4,6P > 214214K
-* 9D, 5C > B+D > 6,4,6P > 236236P
-* 9D, 5C > B+D > 6,4,6P > 214214K
+* A+C > 6,4,6P
+* 3C > 4,6P > 236236P <br> 3C > 4,6P > 214214K
 
-### Anti-air
+</div>
+
+
+<div class="card">
+
 <video><source data-src="media/characters/sho/videos/sho_anti_air_combo.mp4"></video>
 
-* 2C > 236236P
-* 2C > 214B > 236236P
-* 214B > 5C > 236236P
-* 214B > 5C > 214214K
-* 214B > 9D > 236236P
+#### Anti-air
+
+* 2C > 236236P <br> 2C > 214B > 236236P
+* 214B > 5C > 236236P <br> 214B > 5C > 214214K <br> 214B > 9D > 236236P
 * 5A or 5B > 9A,A,A > 236236P
 
-### Air-to-air
+</div>
+
+<div class="card">
+
 <video><source data-src="media/characters/sho/videos/sho_air_to_air_combo.mp4"></video>
+
+#### Air-to-air
 
 * Divekick > 236236P
 * jump B > 236236P
@@ -276,443 +323,583 @@ Instead, use 2C or 2D :
 * Divekick > 2C > 214D.D.D
 * Divekick > 9A,A,A > 236236P
 
-### Kurenai juggles
+</div>
+
+<div class="card">
+
 <video>
   <source data-src="media/characters/sho/videos/sho_214LK_delay_combo.mp4">
 </video>
 
-* 2C > 214B.B (delay) > 5C > 236236P
-* 2C > 214B.B (delay) > 5C > 214214K
-#### Corner
-* 5C.C > 214B.B (delay) > 5C > 236236P
-* 5C.C > 214B.B (delay) > 5C > 214214K
+#### Kurenai juggles
+<note>Note: the 2nd Kurenai must be delayed</note>
 
-### Breakable combos
+#### Anti-air
+* 2C > 214B.B > dash 5C > 214214K
+#### Corner
+* 5C.C > 214B.B > 5C > 236236P <br> 5C.C > 214B.B > 5C > 214214K
+
+
+</div>
+
+<div class="card">
+
 <video>
   <source data-src="media/characters/sho/videos/sho_breakable_combos.mp4">
 </video>
 
+#### Breakable combos
+
 * far 5C ❌ B+C
 * far 5C ❌ 236236P
 * A+C ❌ 236D
-* Jump D ❌ 2B, 2B, 2C > 236D
-* Divekick ❌ 2B, 2B, 2C > 214D.D.D
+* Jump D ❌ 2B
+* Divekick ❌ 2B
 
+</div>
+</div>
 
 ## Matchups
 
 ### Sho
 
-#### Rekkou Ha
+<div class="grid">
+
+<div class="card">
+
   <video>
     <source data-src="media/characters/sho/videos/matchups/sho_vs_sho_RekkouHa.mp4">
   </video>
 
+#### Rekkou Ha
+
 - Whiff punish: 214214K or 236K (needs proper spacing).
 - Break: 214K (if your opponent use far 5C > 236P).
+</div>
 
-#### Ranki Ryuu Geri
+<div class="card">
+
   <video>
     <source data-src="media/characters/sho/videos/matchups/sho_vs_sho_RankiRyuuGeri.mp4">
   </video>
 
+#### Ranki Ryuu Geri
+
 - Unsafe, but Sho can cancel into Air Super to stay safe and bait punish attempts. 
 - If you have meter, use 9D > 236236P for a guaranteed punish.
+</div>
 
-#### Onigawara
+<div class="card">
+
   <video>
     <source data-src="media/characters/sho/videos/matchups/sho_vs_sho_onigawara.mp4">
   </video>
 
+#### Onigawara
+
 - Overhead, cancelable and safe on block.
 - Break: 214K (if your opponent use A+C > 236K).
+</div>
 
-#### Tobihizageri
+<div class="card">
+
   <video>
     <source data-src="media/characters/sho/videos/matchups/sho_vs_sho_tobihizageri.mp4">
   </video>
 
+#### Tobihizageri
+
 - Safe on block, but he ends close enough to be thrown.
 - From long range, there's a punishable gap before the move connects.
+</div>
 
-#### Sashikomi Kick
+<div class="card">
+
   <video>
     <source data-src="media/characters/sho/videos/matchups/sho_vs_sho_SashikomiKick.mp4">
   </video>
 
-- Safe on block, can bait anti-airs and enable fuzzy mixups.
-- Block low to avoid the fuzzy.
+#### Sashikomi Kick
+
+- Safe on block, can bait anti-airs and enable fuzzy mixups. Block low to avoid the fuzzy.
 - On hit, break with 214K or throw
 - Note: divekick combos into 214K, which beats throws.
+</div>
+</div>
 
 --- 
 
 ### Pielle
+<div class="grid">
 
-#### Saber Bash
+<div class="card">
 <video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_pielle_SaberBash.mp4">
 </video>
 
+#### Saber Bash
+
 - Doesn’t hit overhead, unsafe at close range.
 - Leaves a gap in blockstrings, use 214K to whiff punish
+</div>
 
-#### Flying Peach Bomber
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_pielle_FlyingPeachBomber.mp4">
 </video>
 
+#### Flying Peach Bomber
+
 - Overhead, Safe on block. 
 - Leaves a gap in blockstrings, whiff punish with 214K.
+</div>
 
-#### Bonjour Shot
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_pielle_BonjourShot.mp4">
 </video>
 
-- Unsafe on block and hit due to its slow recovery.
+#### Bonjour Shot
 
-#### Monsieur Crash
-<video>
+- Unsafe on block and hit due to its slow recovery.
+</div>
+
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_pielle_MonsieurCrash.mp4">
 </video>
 
-- All hits are unsafe, but Pielle can delay them as a frametrap to bait your punish attempt.
+#### Monsieur Crash
 
-#### Merci Un Deux Trois
-<video>
+- All hits are unsafe, but Pielle can delay them as a frametrap to bait your punish attempt.
+</div>
+
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_pielle_Merci123.mp4">
 </video>
 
-- On block, Pielle crosses behind, leaving him open to a juggle punish.
+#### Merci Un Deux Trois
 
-#### Super Rose
-<video>
+- On block, Pielle crosses behind, leaving him open to a juggle punish.
+</div>
+
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_pielle_SuperRose.mp4">
 </video>
 
+#### Super Rose
+
 - Safe on block, can be used from full screen.
 - Whiff punish at the super flash with 2D.
+</div>
 
-#### Thunder Croiser
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_pielle_ThunderCroiser.mp4">
 </video>
 
+#### Thunder Croiser
+
 - Anti-air super that works as a reversal. Punish with dash > 2B.
+</div>
+</div>
 
 
 ### Condor
+<div class="grid">
 
-#### Tomahawk jack
-<video>
+<div class="card"><video>
     <source data-src="media/characters/sho/videos/matchups/sho_vs_condor_Tomahawk.mp4">
 </video>
 
+#### Tomahawk jack
+
 - Unsafe on block. Punish with 5C or 214214K.
 - Whiff punish with 214214K
+</div>
 
-#### Gran Buffalo Horn
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_condor_GranBuffaloHorn.mp4">
 </video>
 
+#### Gran Buffalo Horn
+
 - Passes through projectiles and closes distance. 
 - Safe at max range. Otherwise, punish or whiff-punish with 2D.
+</div>
 
-#### Atlas Rock Buster
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_condor_AtlasRockBuster.mp4">
 </video>
+
+#### Atlas Rock Buster
 
 - Has brief startup invincibility.
 - Last hit’s pushback makes it hard to punish
 - There’s a gap after the first hit, punish with throw or backdash > dash > 5C.
-
+</div>
 
 ### Rila
 
-#### Killer Snake
-<video>
+<div class="grid">
+
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_rila_KillerSnake.mp4">
 </video>
+
+#### Killer Snake
 
 - Unsafe. Heavy version can be followed by any super to bait punishes.
 - Punish with 2A and you'll still have time to block her super.
 - 214D can also punish or evade her supers.
+</div>
 
 
-#### Spinning Claw
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_rila_SpinningClaw.mp4">
 </video>
 
+#### Spinning Claw
+
+
 - Hard to punish due to pushback. 
 - Stays active for a while and can win against normals, specials or supers.
+</div>
 
 
-#### Quick Scratch A
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_rila_QuickScratch_A.mp4">
 </video>
 
+#### Quick Scratch A
+
+
 - Can catch you off guard at mid or close range.
 - Safe on block, whiff punish with any normal.
+</div>
 
 
-#### Quick Scratch C
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_rila_QuickScratch_C.mp4">
 </video>
 
+#### Quick Scratch C
+
 - Comes out quickly and works as an anti-air, also hitting backdashes and back jumps. 
 - Can be followed up with a super but is unsafe on block.
+</div>
 
 
-#### Shine Beast
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_rila_ShineBeast.mp4">
 </video>
 
-- On block, she switches sides. With practice, you can punish with a jump attack.
+#### Shine Beast
 
-#### Bloody Fang
-<video>
+
+- On block, she switches sides. With practice, you can punish with a jump attack.
+</div>
+
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_rila_BloodyFang.mp4">
 </video>
+
+#### Bloody Fang
 
 - Doesn't hit overhead, despite the jump animation.
 - Punish with dash > 5C. 
 - If you get hit, mash buttons and directions to reduce the damage.
+</div>
 
 
 
 ### Tia
+<div class="grid">
 
-#### Soul Spike
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_tia_SoulSpike.mp4">
 </video>
+
+#### Soul Spike
 
 - Not overhead
 - Light version is safe; Heavy isn’t. 
 - Heavy version can be followed with super to bait your punish attempt. Use throw to avoid it.
+</div>
 
 
-#### Rapid Gale
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_tia_RapidGale.mp4">
 </video>
 
+#### Rapid Gale
+
+
 - Unsafe at point-blank
 - Whiff punish with 214214K or 236D (need proper spacing).
+</div>
 
-#### Heel Break
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_tia_HeelBreak.mp4">
 </video>
 
+#### Heel Break
+
+
 - The second hit is overhead. 
 - Interrupt after the first with throw, 214K or Super.
+</div>
 
-#### Rapid Charge
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_tia_RapidCharge.mp4">
 </video>
 
-- On block, she switches sides and ends mid-air, turn around quickly to punish.
+#### Rapid Charge
 
-#### Burning Revolver
-<video>
+- On block, she switches sides and ends mid-air, turn around quickly to punish.
+</div>
+
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_tia_BurningRevolver.mp4">
 </video>
 
+#### Burning Revolver
+
 - Hits both sides, great for catching crossups and ambiguous jumps. 
 - On block, punish with dash > 5C
+</div>
 
-#### Cutlass Flasher
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_tia_CutlassFlasher.mp4">
 </video>
 
+#### Cutlass Flasher
+
 - Hits overhead and switches sides on block. 
 - Punish with 5C.
+</div>
 
 
 
 ### Alsion
 
-#### Horus Shade
-<video>
+<div class="grid">
+
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_alsion_HorusShade.mp4">
 </video>
 
+#### Horus Shade
+
 - Slow Overhead easy to react to.
 - Unsafe on block
+</div>
 
-#### Death Shred
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_alsion_DeathShred.mp4">
 </video>
-    
+
+#### Death Shred
+
 - Hits twice on standing, second hit is overhead.
 - Interrupt the second hit with any normal.
+</div>
 
-#### Deadly Claw
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_alsion_DeadlyClaw.mp4">
 </video>
+
+#### Deadly Claw
     
 - At close range, 214B stays in front, while 214D lands behind. 
 - Punish with super (236236P)
 - Whiff punish with 2C.
+</div>
 
-#### Dash Knee
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_alsion_DashKnee.mp4">
 </video>
-    
+
+#### Dash Knee
+
 - Safe with proper spacing. 
 - Otherwise, on block or hit, punish with 2B
 - Whiff punish with 214K.
+</div>
 
 
 ### Maherl
 
-#### Cadabra Bomber
-<video>
+<div class="grid">
+
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_maherl_super.mp4">
 </video>
 
+#### Cadabra Bomber
+
 - Invincible startup and Safe on block
 - If close, backdash to avoid the last part, then punish.
+</div>
 
-#### Abdomen Step
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_maherl_AbdomenStep.mp4">
 </video>
+
+#### Abdomen Step
 
 - Safe when canceled from normals (midscreen)
 - In the corner, punish with 2B.
 - Whiff punish with 214K.
+</div>
 
-#### Slash Sword
-<video>
+<div class="card"><video>
     <source data-src="media/characters/sho/videos/matchups/sho_vs_maherl_SlashSword.mp4">
 </video>
 
-- Safe at max range. If you're close enough, punish with 5C.
+#### Slash Sword
 
-#### Punish Sword
-<video>
+- Safe at max range. If you're close enough, punish with 5C.
+</div>
+
+<div class="card"><video>
     <source data-src="media/characters/sho/videos/matchups/sho_vs_maherl_PunishSword.mp4">
 </video>
+
+#### Punish Sword
 
 - Travels a shorter distance than Slash Words.
 - Safe at max range.
 - If you're close enough, punish with 2D.
+</div>
 
-#### Balloon Bomb
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_maherl_BalloonBomb.mp4">
 </video>
+
+#### Balloon Bomb
 
 - Hits overhead and can cross up, but has long recovery. 
 - Whiff punish with 5C, 2C, or 214K.
 - On block, punish with dash > 5C.
+</div>
 
-#### Shiva Dance
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_maherl_CadabraBomber.mp4">
 </video>
 
+#### Shiva Dance
+
 - Can go through projectiles up close. 
 - Punish with dash > 5C.
+</div>
 
 
 
 ### dao-long
 
-#### Kouryuu Ga
-<video>
+<div class="grid">
+
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_dao_kouryuuGa.mp4">
 </video>
 
+#### Kouryuu Ga
+
 - In corner (close range) punish with 2B or 236236P.
 - Whiff punish with 214214K or 236D (requires spacing).
+</div>
 
-#### Senpuure Kyaku
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_dao_SenpureKyaku.mp4">
 </video>
 
-- Slow anti-air command. If you’re close, punish with 2B.
+#### Senpuure Kyaku
 
-#### Shoutenchuu
-<video>
+
+- Slow anti-air command. If you’re close, punish with 2B.
+</div>
+
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_dao_Shoutenchuu.mp4">
 </video>
 
-- Hits high. Whiff punish with 214K.
+#### Shoutenchuu
 
-#### Houshin Renpa
-<video>
+- Hits high. Whiff punish with 214K.
+</div>
+
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_dao_HoushinRenpa.mp4">
 </video>
 
+#### Houshin Renpa
+
 - Can pass through projectiles.
 - Punish with 2B in the corner.
+</div>
 
 
-#### Shin Kyoku Ranbu
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_dao_ShinKyokuRanbu.mp4">
 </video>
 
+#### Shin Kyoku Ranbu
+
 - Despite the jump animation, it’s not an overhead. 
 - Punish on block with dash > 5C.
+</div>
 
 
 
 ### Saizo
 
-#### 5C
-<video>
+<div class="grid">
+
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_saizo_stand_C.mp4">
 </video>
 
+#### Standing C
+
 - Close 5C hits low and is safe on block
 - Far version is unsafe on block and hit.
+</div>
 
 
-#### Rasen Kyaku
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_saizo_rasen_kyaku.mp4">
 </video>
 
+#### Rasen Kyaku
+
 - Overhead, unsafe on hit and block.
+</div>
 
 
-#### Ryuuei Kyaku
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_saizo_ryuuei_kyaku.mp4">
 </video>
 
+#### Ryuuei Kyaku
+
 - This slide must be canceled into bomb and spaced to stay safe, but becomes unsafe in the corner where “slide > bomb” can be punished with C or 2A.
+</div>
 
 
-#### Yashagami
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_saizo_Yashagami.mp4">
 </video>
 
+#### Yashagami
+
 - Unsafe on block and hit unless if canceled into super.
 - On block, players often delay their super to bait your punish, but you can still counter with 214214K.
+</div>
 
 
-#### Engetsuzan
-<video>
+<div class="card"><video>
   <source data-src="media/characters/sho/videos/matchups/sho_vs_saizo_Engetsuzan.mp4">
 </video>
 
+#### Engetsuzan
+
 - Punish with dash > 5C
+</div>

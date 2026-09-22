@@ -8,9 +8,24 @@ Alsion III is an undead ancient Egyptian. His alter-ego, Atoum, is a mummy-dress
 
 ### Colors
 
-| [A] | [B] | [C] | [D] |
-|:----------:|:----------:|:----------:|:----------:|
-| ![img](media/characters/alsion/img/alsion_A.png)  | ![img](media/characters/alsion/img/alsion_B.png)  | ![img](media/characters/alsion/img/alsion_C.png)  | ![img](media/characters/alsion/img/alsion_D.png)  |
+<div class="grid-2x2">
+  <div class="item">
+    <span>[A]</span>
+    <img src="media/characters/alsion/img/alsion_A.png" alt="A">
+  </div>
+  <div class="item">
+    <span>[C]</span>
+    <img src="media/characters/alsion/img/alsion_C.png" alt="C">
+  </div>
+  <div class="item">
+    <span>[B]</span>
+    <img src="media/characters/alsion/img/alsion_B.png" alt="B">
+  </div>
+  <div class="item">
+    <span>[D]</span>
+    <img src="media/characters/alsion/img/alsion_D.png" alt="D">
+  </div>
+</div>
 
 ## Moves
 
@@ -115,11 +130,12 @@ Pharaoh Dance | [QCB],[QCB]+[P]
 Alsion III is a zoning character that suffers from slow movement and limited defensive options. He relies on taking risks and gimmicks to create openings. Without a Super meter, he’s vulnerable to offensive characters due to his lack of reliable reversals.
 
 
-### Offense
-<video>
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/alsion/videos/alsion_offense.mp4">
 </video>
 
+#### Offense
 * **Overhead**: Confirms into normals or 214214P.
 * **Dash Knee (236K)** 
   * Hit confirm from 2B or 4A
@@ -128,163 +144,178 @@ Alsion III is a zoning character that suffers from slow movement and limited def
   * Ground/air teleport attack, Unsafe on block.
   * 214B stays in front while 214D crosses up. 
   * Confirms into any Super.
+</div>
 
-
-
-### Defense
-<video>
+<div class="card"><video>
   <source data-src="media/characters/alsion/videos/alsion_defense.mp4">
 </video>
 
-
+#### Defense
 * **Standing D**<br> Causes a ground bounce on airborne opponents, enabling corner Super juggles.
 * **Back Jump C**: Long range air-to-air.
 * **2C**<br> Mid-range low attack with a low-profile hurtbox that allows Alsion to slip under projectiles.
 * **Poison Fog (41236P)**<br> Short-range special that stays active a bit and absorbs most projectiles (excluding Saizo’s kunai).
+</div>
 
-
-
-
-### Super moves
-<video>
+<div class="card"><video>
   <source data-src="media/characters/alsion/videos/alsion_supers.mp4">
 </video>
 
+#### Super moves
 * **Anubis Hug (236236P)**
   * Follow-up for Deadly Claw
   * up to 12 hits, Opponents can mash to reduce damage.
 * **Pharaoh Dance (214214P)**
   * Safe on block (depending on the matchup)
   * hit confirm from 4B or Overhead (A+C).
+</div>
 
-
-
-
-### Break
-<video>
+<div class="card"><video>
   <source data-src="media/characters/alsion/videos/alsion_break.mp4">
 </video>
 
+#### Break
 * **Pharaoh Dance (214214P)**: invincible startup and juggle potential. 
 * **Deadly Claw (214K)**: can also break, but use it sparingly as it’s highly punishable.
+</div>
 
+<div class="card">
+<iframe width="100%" height="245px" src="https://www.youtube.com/embed/KrDX0Hmqh9E?si=70kk0BHHv1LrVv3s" 
+  loading="lazy" title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe>
 
-### Ressources
-* [Sas Izm - Alsion III Corner Pressure Concepts](https://youtu.be/KrDX0Hmqh9E)
-
-### Replays
-* [<div class="fi fi-us"></div>boogerboo9x0 vs  <div class="fi fi-gb"></div>WaterTemple](https://youtu.be/YY7bqn9Mo0U?si=P5dY_UMtZYDUjCz5)
-* [<div class="fi fi-us"></div>boogerboo9x0 vs  <div class="fi fi-us"></div>arcadeshock](https://youtu.be/iwOWqHHYJFE?si=BMxbY76fSKhm61Hp)
-* [<div class="fi fi-us"></div>Ink-Dood vs  <div class="fi fi-br"></div>SER SEM LUZ](https://www.youtube.com/watch?v=1XnwrPQnYSY)
-* [<div class="fi fi-fr"></div>Nikolaeye vs  <div class="fi fi-fr"></div>Joe Gillian](https://www.youtube.com/watch?v=i2oYWhwrm9Y)
-
+#### Corner pressure
+* Except against Saizo, Alsion III can safely pressure opponents in the corner well spaced 2A > 236B string while avoiding or baiting counter attempts.
+</div>
+</div>
           
 ## Combos 
+
+### Combos
     
-### Meterless combos
-<video>
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/alsion/videos/alsion_meterless_combos.mp4">
 </video>
 
+#### Meterless combos
 * 2B > 236D
-* 4A > 4B > 236D
-* 4A > 4C > 236B
+* 4A > 4B > 236D <br> 4A > 4C > 236B
 * 5A > 236D
 * A+C > 4D
 * 4C > 41236C
 * Jump B > 4C > 236D
+</div>
 
 
-### Metered combos
-<video>
+<div class="card"><video>
   <source data-src="media/characters/alsion/videos/alsion_metered_combos.mp4">
 </video>
 
-* A+C > Super (214214P)
-* 214K > Super
-* corner: Jump B > 4C > 236D > Super (236236P)
-* corner: 4C > 41236C > Super (214214P)
+#### Metered combos
+* A+C > 214214P
+* 214K > 236236P
+#### Corner
+* Jump B > 4C > 236D > 236236P
+* 4C > 41236C > 214214P
+</div>
 
 
-### Breakable combos
-<video>
+<div class="card"><video>
   <source data-src="media/characters/alsion/videos/alsion_breakable_combo.mp4">
 </video>
 
+#### Breakable combos
 * A+C ❌ 4C / 4A / 4B 
 * A+C ❌ 5A / 2B 
+</div>
 
 
-### Anti-air
-<video>
+<div class="card"><video>
   <source data-src="media/characters/alsion/videos/alsion_anti-air_combos.mp4">
 </video>
 
-* corner: 5B > Super (214214P)
-* corner: 5D > Super (214214P)
+#### Anti-air (corner)
+* 5B > 214214P
+* 5D > 214214P
+</div>
 
 
 
-### Air-to-air
-<video>
+<div class="card"><video>
   <source data-src="media/characters/alsion/videos/alsion_air_to_air.mp4">
 </video>
 
+#### Air-to-air
 * Jump A > 236D
 * j2A > 236D
 * 214K > Super
 * Jump A > 236D > Super
-
+</div>
+</div>
 
 ## Matchups
 
 ### Sho
 
-#### Ranki Ryuu Geri
-  <video>
+<div class="grid">
+  <div class="card"><video>
     <source data-src="media/characters/alsion/videos/matchups/alsion_vs_sho_RankiRyuuGeri.mp4">
   </video>
 
-- Unsafe, but Sho can cancel into Air Super to stay safe and bait punish attempts. 
-- If you have meter, 214D > Super (236236P) for a guaranteed punish.
+#### Ranki Ryuu Geri
+* Unsafe, but Sho can cancel into Air Super to stay safe and bait punish attempts. 
+* If you have meter, 214D > Super (236236P) for a guaranteed punish.
+</div>
+</div>
 
 ### Condor
 
-#### Atlas Rock Buster
-<video>
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/alsion/videos/matchups/alsion_vs_condor_atlas_rock_buster.mp4">
 </video>
 
-- Has brief startup invincibility.
-- Last hit’s pushback makes it hard to punish
-- There’s a gap after the first hit, punish with throw Super (214214P) or 214B.
+#### Atlas Rock Buster
+* Has brief startup invincibility.
+* There’s a gap after the first hit, punish with throw 214214P or 214B.
+</div>
 
-#### Tomahawk Jack
-<video>
+<div class="card"><video>
     <source data-src="media/characters/alsion/videos/matchups/alsion_vs_condor_tomahawk.mp4">
 </video>
 
-- Unsafe on block. Punish with 4B or 4C
-- Whiff punish with 236K
-
+#### Tomahawk Jack
+* Unsafe on block. Punish with 4B or 4C
+* Whiff punish with 236K
+</div>
+</div>
 
 ### Rila
 
-#### Killer Snake
-<video>
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/alsion/videos/matchups/alsion_vs_rila_killer_snake.mp4">
 </video>
 
-- Unsafe. Heavy version can be followed by any super to bait punishes.
-- Punish with 2B, it hits if she does nothing, and you still have time to block her super.
-- In case she does Super (Bloody Fang), react with B+D
+#### Killer Snake
+* Unsafe. Heavy version can be followed by any super to bait punishes.
+* Punish with 2B, it hits if she does nothing, and you still have time to block her super.
+* In case she does Super (Bloody Fang), react with B+D
+</div>
+</div>
 
 ### Maherl
 
-#### Cadabra Bomber
-<video>
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/alsion/videos/matchups/alsion_vs_maherl_super_cadabra_bomber.mp4">
 </video>
 
-- Invincible startup and Safe on block
-- If close, use 214D to avoid the last part and punish.
+#### Cadabra Bomber
+* Invincible startup and Safe on block
+* If close, use 214D to avoid the last part and punish.
+</div>
+</div>

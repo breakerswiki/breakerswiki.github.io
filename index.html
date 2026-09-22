@@ -38,14 +38,14 @@
 
         <section id="hero-welcome" class="hero-section">
 
-            <video autoplay loop muted playsinline class="hero-video-bg">
+            <video autoplay loop muted playsinline webkit-playsinline preload="auto" poster="/media/assets/breakers-bg.webp" class="hero-video-bg">
                 <source src="/media/assets/background.mp4" type="video/mp4">
             </video>
 
 
             <div class="hero-content">
-                <!-- <h1>Breakers Wiki</h1> -->
-                <img class="main-logo" src="/media/assets/bkwiki_color.webp" alt="BREAKERS WIKI">
+                <a href="/" class="logo" onclick="Wiki.showSection('home')"><img class="main-logo" src="/media/assets/bkwiki_color.webp" alt="BREAKERS WIKI"></a>
+
 
                 <div class="highlight">Learn the essentials and start playing</div>
                 <div class="main-actions">
@@ -64,7 +64,6 @@
             <!-- Breakers -->
     <div class="gallery-container">
         <div class="gallery-wrapper">
-            <button class="gallery-nav-btn prev" id="prevBtn" onclick="scrollGallery(-1)">&#10094;</button>
             <div class="poster-gallery" id="gallery">
                 <div class="poster-item">
                     <img src="media/assets/boxart_Breakers.webp" alt="Breakers">
@@ -72,7 +71,7 @@
                         <span class="poster-badge">Breakers</span>
                         <h3>1996</h3>
                                                 <div class="meta">
-                            <div><i class="bi bi-controller"></i> Neo Geo MVS/AES/CD, Dreamcast</div>
+                            <div><i class="bi bi-controller"></i> Neo Geo MVS/AES/CD</div>
                             <div><i class="bi bi-building"></i> Visco Corporation</div>
                         </div>
                         <div class="poster-more-text">
@@ -122,7 +121,6 @@
                     </div>
                 </div>
             </div>
-            <button class="gallery-nav-btn next" id="nextBtn" onclick="scrollGallery(1)">&#10095;</button>
         </div>
     </div>
 
@@ -171,6 +169,7 @@
             <div class="learning-section">
                 <img class="learning-section__img-left" src="media/assets/dao-bg.webp" alt="">
                 <img class="learning-section__img-right" src="media/assets/sho-bg.webp" alt="">
+
 
 
 
@@ -244,8 +243,8 @@
                                 Your browser does support HTML5 video.
                             </video>
                             <h3>Dashes</h3>
-                            <p> <img class="input-icon" src="/media/inputs/Arcade-Stick-Left.png" alt="LEFT"><img class="input-icon" src="/media/inputs/Arcade-Stick-Left.png" alt="LEFT"> or <img class="input-icon" src="/media/inputs/Arcade-Stick-Right.png" alt="RIGHT"><img class="input-icon" src="/media/inputs/Arcade-Stick-Right.png" alt="RIGHT"><br>
-                            All characters (except for Condor) can dash by tapping forward or back twice. Some characters have backdash invincibility and dash‑cancels, giving them enhanced mobility options.</p>
+                            <p> <img class="input-icon" src="/media/inputs/Arcade-Stick-Left.png" alt="LEFT"><img class="input-icon" src="/media/inputs/Arcade-Stick-Left.png" alt="LEFT"> or <img class="input-icon" src="/media/inputs/Arcade-Stick-Right.png" alt="RIGHT"><img class="input-icon" src="/media/inputs/Arcade-Stick-Right.png" alt="RIGHT"></p>
+                            <p>All characters (except for Condor) can dash by tapping forward or back twice. Some characters have backdash invincibility and dash‑cancels, giving them enhanced mobility options.</p>
                         </div>
                         <div class="card">
                             <video class="card-video" preload="none" data-videojs>
@@ -253,7 +252,8 @@
                                 Your browser does support HTML5 video.
                             </video>
                             <h3>Throw</h3>
-                            <p> (<img class="input-icon" src="/media/inputs/Arcade-Stick-Left.png" alt="LEFT"> or <img class="input-icon" src="/media/inputs/Arcade-Stick-Right.png" alt="RIGHT">) + <span class="btn-punch C">C</span><br>Throw is a strong option in Breakers due to the absence of throw‑teching. Throws can also break close jump‑in combos. Certain characters have additional throw inputs or air throws.</p>
+                            <p> (<img class="input-icon" src="/media/inputs/Arcade-Stick-Left.png" alt="LEFT"> or <img class="input-icon" src="/media/inputs/Arcade-Stick-Right.png" alt="RIGHT">) + <span class="btn-punch C">C</span></p>
+                            <p>Throw is a strong option in Breakers due to the absence of throw‑teching. Throws can also break close jump‑in combos. Certain characters have additional throw inputs or air throws.</p>
                         </div>
                         <div class="card">
                             <video class="card-video" preload="none" data-videojs>
@@ -269,8 +269,8 @@
                                 Your browser does support HTML5 video.
                             </video>
                             <h3>Back roll</h3>
-                            <p><span class="btn-punch A">A</span>+<span class="btn-kick B">B</span>+<span class="btn-punch C">C</span><br>
-                                After a non-super hit, press 3 buttons while knocked down to do a back-roll. This can help you defend against strong okizeme setups.</p>
+                            <p><span class="btn-punch A">A</span>+<span class="btn-kick B">B</span>+<span class="btn-punch C">C</span></p>
+                            <p>After a non-super hit, press 3 buttons while knocked down to do a back-roll. This can help you defend against strong okizeme setups.</p>
                         </div>
                         <div class="card">
                             <video class="card-video" preload="none" data-videojs>
@@ -298,7 +298,7 @@
                         </div>
                         <div class="card risk-system">
                             <h3>Risk system</h3>
-                            <span>Comeback Mechanics</span><br><br>
+                            <p>The Risk System refers to comeback mechanics: </p>
                             <p><b>Damage + Defense boost on low life</b><br> The healthier player takes more damage until both life bars are equal.</p>
                             <p><b>Damage boost by waiting</b><br> Up to double damage on your next hit.</p>
                             <p><b>Match winner takes more damage, loser gains defense</b><br> These effects stack with each win. In competitive play the game is often reset to keep things fair.</p>
@@ -322,11 +322,12 @@
                         </div>
 
                         <div class="card details">
+
                             <h3>Extra Mode</h3>
                             <p>
                                 Extra Mode makes Breakers considerably more explosive by giving players many more ways to cancel, extend combos, escape pressure, and survive situations that would normally lead to a KO.
                                 This mode is available in the Neo‑Geo CD release of Breakers and in Breakers Revenge Chicago. <br>
-                                <br>More infos on <a href="https://wiki.supercombo.gg/w/Breakers_Revenge/EXTRA" target="_blank">supercombo.gg</a>
+                                <br>More infos: <a href="https://wiki.supercombo.gg/w/Breakers_Revenge/EXTRA" target="_blank">supercombo.gg</a>
                             </p>
                         </div>
                     </div>
@@ -347,9 +348,8 @@
                                 <p>
                                     You need a <a href="https://www.fightcade.com/" target="_blank" rel="noopener">Fightcade</a> setup.
                                     Install the client, create an account, and place the
-                                    Breakers Revenge ROM in your ROMs folder.
+                                    Breakers Revenge ROM in the ROMs folder.
                                 </p>
-
 
                                 <ol class="steps" style="list-style-type:upper-alpha;">
                                     <li>
@@ -370,17 +370,10 @@
                                 <h3>Record &amp; Playback options</h3>
 
                                 <ol class="steps">
-                                    <li>
-                                        Press <kbd>Coin</kbd> 3 times.
-                                        A red indicator will appear in the top-left corner.
-                                    </li>
-                                    <li>
-                                        Perform the inputs you want to record
-                                        (Player 2 by default), then press <kbd>Coin</kbd> to stop.
-                                    </li>
-                                    <li>
-                                        Press <kbd>Coin</kbd> again to play back the recording.
-                                    </li>
+                                    <li><strong>Start Recording:</strong> Press <kbd>Coin</kbd> 3 times.<br> A red indicator will appear in the top-left corner.</li>
+                                    <li><strong>Record Inputs:</strong> Enter the desired inputs to record (controls default to Player 2).</li>
+                                    <li><strong>Stop Recording:</strong> Press <kbd>Coin</kbd> once to finish recording.</li>
+                                    <li><strong>Play Back:</strong> Press <kbd>Coin</kbd> again to play back the recorded inputs.</li>
                                 </ol>
                             </div>
                         </div>
@@ -428,7 +421,7 @@
                     <div class="grid">
                         <div class="card details">
                             <h3>Breakerswiki</h3>
-                            <p>Breakerswiki helps you learn the basics with gameplay, characters guide and matchup tips.</p>
+                            <p>Breakerswiki helps you learn the basics with gameplay, characters guide and matchup tips. This is not a complete reference. It covers the most common techs to get started with.</p>
                             <p>This site uses standard fighting game terms. For explanations, visit <a target="_blank" href="https://glossary.infil.net/">The Fighting Game Glossary</a></p>
                             <br>
                             <h3>Get Involved</h3>
@@ -441,7 +434,7 @@
                         </div>
                         <div class="card details">
                             <h3>Discord</h3>
-                            <p> <a href="https://discord.gg/Qnvkcumfsd" target="_blank">Join our community on Discord</a> to discuss strategies, share content, and connect with other fans!</p>
+                            <p> <a href="https://discord.gg/Qnvkcumfsd" target="_blank">Join our community on Discord</a> to discuss strategies, share content, discover advanced techniques and connect with other fans !</p>
                             <br>
                             <h3>Special Thanks</h3>
                             <p>Special thanks to the Breakers community who made all collected information in this wiki possible.</p>
@@ -457,7 +450,6 @@
                                 <li><a target="_blank" href="https://www.fightersgeneration.com/games/breakers-revenge.html">The Fighters Generation <span>→</span></a></li>
                                 <li><a target="_blank" href="https://www.youtube.com/@fgmovelists">Fighting Game Move Lists <span>→</span></a></li>
                                 <li><a target="_blank" href="https://www.arcadequartermaster.com/brr_config.html">Arcade Quarter Master <span>→</span></a></li>
-                                <li><a target="_blank" href="https://www.neogeospirit.com/tests/breakersrevenge_test.htm">NeoGeo Spirit <span>→</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -480,35 +472,6 @@
         <script src="app.js"></script>
 
         <script>
-        function scrollGallery(direction) {
-            const items = Array.from(gallery.querySelectorAll('.poster-item'));
-            const galleryRect = gallery.getBoundingClientRect();
-
-            let closestIndex = 0;
-            let minDistance = Infinity;
-
-            items.forEach((item, index) => {
-                const itemRect = item.getBoundingClientRect();
-                const itemCenter = itemRect.left + itemRect.width / 2;
-                const galleryCenter = galleryRect.left + galleryRect.width / 2;
-                const distance = Math.abs(itemCenter - galleryCenter);
-
-                if (distance < minDistance) {
-                    minDistance = distance;
-                    closestIndex = index;
-                }
-            });
-
-            let targetIndex = closestIndex + direction;
-            targetIndex = Math.max(0, Math.min(items.length - 1, targetIndex));
-
-            items[targetIndex].scrollIntoView({
-                behavior: 'smooth',
-                inline: 'center',
-                block: 'nearest'
-            });
-        }
-
         function toggleReadMore(button) {
             const posterItem = button.closest('.poster-item');
             posterItem.classList.toggle('expanded');

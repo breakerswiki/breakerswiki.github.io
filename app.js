@@ -13,7 +13,7 @@ const Wiki = (() => {
     // Characters excluded from the matchup list
     const EXCLUDED_FROM_MATCHUPS = ['bai-hu'];
 
-    // Symboles / HTML pour la numérotation numpad
+    // Symbols/HTML for numpad numbering
     const numpadToHtml = {
         '1': `<img class="input-icon" src="/media/inputs/Arcade-Stick-DL.png" alt="DOWN-LEFT">`,
         '2': `<img class="input-icon" src="/media/inputs/Arcade-Stick-Down.png" alt="DOWN">`,
@@ -273,7 +273,7 @@ function convertTextNodesToArrows(element, isInsideList = false) {
         });
 
         contentArea.innerHTML = `
-            <h3>Matchup Data</h3>
+            <h3>Matchups</h3>
 
             <div class="char-layout matchup-layout">
                 <aside class="char-sidebar matchup-sidebar">
@@ -393,7 +393,7 @@ function convertTextNodesToArrows(element, isInsideList = false) {
         let html = marked.parse(processed);
         html = replaceInputs(html);
 
-        // Transformation automatique filtrée par balise et motif textuel
+        // Automatic transformation filtered by tag and text pattern
         const tempContainer = document.createElement('div');
         tempContainer.innerHTML = html;
         convertTextNodesToArrows(tempContainer);
@@ -468,14 +468,35 @@ function convertTextNodesToArrows(element, isInsideList = false) {
 
         if (videoElement.classList.contains('vjs-tech') || videoElement.hasAttribute('data-vjs-player')) return;
 
-        videoElement.querySelectorAll('source[data-src]').forEach(source => {
+
+        // 1. Determine poster automatically
+        let posterSrc = videoElement.getAttribute('data-poster');
+
+        if (!posterSrc) {
+            const source = videoElement.querySelector('source');
+        
+            const videoSrc =
+                source?.getAttribute('data-src') ||
+                source?.getAttribute('src') ||
+                videoElement.getAttribute('src');
+        
+            if (videoSrc && /\.mp4(?:[?#].*)?$/i.test(videoSrc)) {
+                posterSrc = videoSrc.replace(/\.mp4(?=([?#]|$))/i, '.jpg');
+            }
+        }
+
+        if (posterSrc) {
+            videoElement.setAttribute('poster', posterSrc);
+        }
+
+        // 2. Then activate the video source
+        const source = videoElement.querySelector('source[data-src]');
+        if (source) {
             source.setAttribute('src', source.getAttribute('data-src'));
             source.removeAttribute('data-src');
-        });
-        videoElement.load();
+        }
 
-        const posterSrc = videoElement.getAttribute('data-poster');
-        if (posterSrc) videoElement.setAttribute('poster', posterSrc);
+        videoElement.load();
 
         videoElement.classList.add('video-js', 'vjs-default-skin', 'vjs-big-play-centered');
 
@@ -491,10 +512,6 @@ function convertTextNodesToArrows(element, isInsideList = false) {
             },
             playsinline: true,
             preload: 'metadata'
-        });
-
-        player.one('loadedmetadata', () => {
-            player.currentTime(2);
         });
 
         player.ready(() => {

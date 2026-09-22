@@ -8,9 +8,24 @@ Sheik Maherl discovered a genie's lamp and made three wise wishes: to become a b
 
 ### Colors
 
-| [A] | [B] | [C] | [D] |
-|:----------:|:----------:|:----------:|:----------:|
-| ![img](media/characters/maherl/img/maherl_A.png)  | ![img](media/characters/maherl/img/maherl_B.png)  | ![img](media/characters/maherl/img/maherl_C.png)  | ![img](media/characters/maherl/img/maherl_D.png)  |
+<div class="grid-2x2">
+  <div class="item">
+    <span>[A]</span>
+    <img src="media/characters/maherl/img/maherl_A.png" alt="A">
+  </div>
+  <div class="item">
+    <span>[C]</span>
+    <img src="media/characters/maherl/img/maherl_C.png" alt="C">
+  </div>
+  <div class="item">
+    <span>[B]</span>
+    <img src="media/characters/maherl/img/maherl_B.png" alt="B">
+  </div>
+  <div class="item">
+    <span>[D]</span>
+    <img src="media/characters/maherl/img/maherl_D.png" alt="D">
+  </div>
+</div>
 
 ## Moves
 
@@ -109,51 +124,57 @@ Rolling Press | [360]+[P]or[K]
 Maherl is a character with long-range specials, relying on gimmicks due to his inability to confirm from low attacks. 
 Mastering his glitch allows him to fly off-screen and land swiftly, catching foes off guard.
 
+<div class="grid">
 
-
-### Attack
-<video>
+<div class="card"><video>
   <source data-src="media/characters/maherl/videos/maherl_offense.mp4">
 </video>
 
+### Attack
 * **Slash Sword (214P)**<br>Long-range tool cancelable from 5C, 2C, 5D, and 5B<br>Unsafe against Saizo and Tia.
 * **Abdomen Step (A+C)**<br> Hops over lows and sets up strong Super frametraps or throw mix‑ups.
 * **Balloon Bomb (A+B+C)**<br>Long-range special<br>Can punish projectiles with controllable landing; Unsafe on block.
 
+</div>
 
 
-### Defense
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/maherl/videos/maherl_defense.mp4">
 </video>
 
-
+### Defense
 * **Close 5C**<br> Reliable anti-air; cancel into 214K for juggle confirms.
 * **Far 5B**<br> Quick anti-air option; cancelable into super 214214P.
 * **Punish Sword (214K)**<br> Fast anti-air and primary tool for confirming juggles off 5D or close 5C.
+</div>
 
+<div class="card">
 
 ### Super moves
-
 * **Cadabra Bomber (236236P)**<br> Invincible startup and safe on block; however, a gap before the final punch allows some characters to dodge or punish.
 * **Shiva Dance (214214P)**<br> Passes through close‑range projectiles and lets you juggle opponents after an anti‑air.
 * **Rolling Press (360P/K)**<br> Command grab that switches sides; Set it up after an Abdomen Step (A+C) or the Sword Glitch.
-
-
+</div>
+</div>
 
 ### Tips
-#### Fuzzy / Instant overhead
-<video>
+<div class="grid">
+
+<div class="card"><video>
   <source data-src="media/characters/maherl/videos/fuzzy-overhead.mp4">
 </video>
 
+#### Fuzzy / Instant overhead
 * Use forward or back Jump B for an instant overhead. Use Jump D then Jump B for a fuzzy setup.
+</div>
 
-#### Step/Sword glitch
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/maherl/videos/sword_glitch.mp4">
 </video>
 
+#### Step/Sword glitch
 * Kara cancel A+C on the 3rd frame with either 214P or 214K
   * ❌ 2nd Frame or sooner = Sword
   * ✅ 3rd Frame = Sword glitch
@@ -163,53 +184,57 @@ Mastering his glitch allows him to fly off-screen and land swiftly, catching foe
   * Light swords = land in front
   * 2C (at jump peak) remains active until landing.
   * Nothing = Maherl returns quickly to the ground
-  
+</div>
+</div>
 
-### Replays
-* [<div class="fi fi-us"></div>Justin Wong vs  <div class="fi fi-us"></div>Cory Bell](https://www.youtube.com/watch?v=uB_sJvcF14A)
 
-## Combos 
-### Meterless combos
-<video>
+## Combos
+
+### Combos
+
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/maherl/videos/Meterless_combo.mp4">
 </video>
 
-* 5B > 214B
-* 5B > 214A
-* 2C > A+C
-* 2C > A+C > 5B > 214A
-* 2C > A+C > 5B > 214B
+#### Meterless combos
+* 5B > 214B <br> 5B > 214A
+* 2C > A+C <br> 2C > A+C > 5B > 214A <br> 2C > A+C > 5B > 214B
 * close 5D > A+C
-* 2C or close 5D > 41236A (unsafe on block/hit)
-* Jump C > 2C > 214D
-* Jump D > close 5D > 214D
-  
-### Metered combos
-<video>
+* 2C > 41236A (unsafe on block/hit)
+* Jump C > 2C > 214D <br> Jump D > close 5D > 214D
+</div>
+
+<div class="card"><video>
   <source data-src="media/characters/maherl/videos/Meter_combo.mp4">
 </video>
 
+#### Metered combos
 * Jump C > 2C > 214214P
 * Jump C > close 5D > 214214P
-  
-### Anti-air
-<video>
+</div>
+
+<div class="card"><video>
   <source data-src="media/characters/maherl/videos/anti-air-juggle.mp4">
 </video>
 
+#### Anti-air
 * far 5B > 214214P
 * close 5D > 214214P
-* close 5C > 214B or 214D
-* close 5C > 214214P
-* close 5D > 214D (one hit) > 2B > 214214P
-* corner: close 5D > 214D (one hit) > 2B > 236236P
-* 214D (one hit) > 2B > 214214P
-  
-### Air-to-air
-<video>
+* close 5C > 214B or 214D <br> close 5C > 214214P <br> close 5D > 214D > 2B > 214214P
+* 214D > 2B > 214214P
+#### corner
+* close 5D > 214D > 2B > 236236P
+</div>
+
+
+<div class="card"><video>
   <source data-src="media/characters/maherl/videos/air-juggle.mp4">
 </video>
 
+### Air-to-air
 * Jump A > 214214P
 * Jump C > 214214P
 * neutral Jump C > 214214P
+</div>
+</div>

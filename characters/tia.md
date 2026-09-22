@@ -8,9 +8,24 @@ Tia Langray, a Thai kickboxer, searches for her brother, unaware he met a tragic
 
 ### Colors
 
-| [A] | [B] | [C] | [D] |
-|:----------:|:----------:|:----------:|:----------:|
-| ![img](media/characters/tia/img/tia_A.png)  | ![img](media/characters/tia/img/tia_B.png)  | ![img](media/characters/tia/img/tia_C.png)  | ![img](media/characters/tia/img/tia_D.png)  |
+<div class="grid-2x2">
+  <div class="item">
+    <span>[A]</span>
+    <img src="media/characters/tia/img/tia_A.png" alt="A">
+  </div>
+  <div class="item">
+    <span>[C]</span>
+    <img src="media/characters/tia/img/tia_C.png" alt="C">
+  </div>
+  <div class="item">
+    <span>[B]</span>
+    <img src="media/characters/tia/img/tia_B.png" alt="B">
+  </div>
+  <div class="item">
+    <span>[D]</span>
+    <img src="media/characters/tia/img/tia_D.png" alt="D">
+  </div>
+</div>
 
 ## Moves
 
@@ -96,550 +111,669 @@ Cutlass Flasher | [QCF],[QCF]+[K]
 ### Overview
 Tia excels in mobility and space control. Her dash pressure, meter gain, and punish options make her dangerous in every matchup. With solid execution, she can seamlessly combine zoning and set-play to create consistent openings.
 
-### Attack
-<video>
+<div class="grid">
+
+<div class="card"><video>
     <source data-src="/media/characters/tia/videos/tia_offense.mp4">
 </video>
 
-* **Dash 5C/5D**<br> Fast, safe pokes that function as anti-airs and lead into super follow-ups.
-* **Corner Okizeme**<br> Backdash(x2) > Rapid Gale then react to catch jump attempts.
-* **214K**<br> Heavy version passes through projectiles, cancels into Burning Revolver Super for frametrap, but is vulnerable to throws.
-* **Jab Loop pressure**<br> Repeating multiples 5A into short dashes, creates a blockstring that builds meter and pushes opponents to the corner.
-          
+#### Attack
+* **Jab pressure**: Repeated 5A into short dashes is safe, but requires timing. It builds meter and pushes to the corner.
+* **Dash 5C/5D** : Safe pressure that double as reliable anti-airs.
+* **236P** : Slow projectile, but still useful at long range, especially for setplay like this corner okizeme: Backdash x2 > 236P.
+* **214K** : Light version is safe in most matchups. Heavy can be followed with Super to bait a punish. The opponent must throw to avoid it.
+</div>         
         
-### Anti-airs
-<video>
+
+<div class="card"><video>
    <source data-src="/media/characters/tia/videos/antiair_combos.mp4">
 </video>
 
-* **623P** 
-  * Invincible startup
-  * 623A passes through projectiles
-  * 623C offers higher reach but slower recovery.
-* **Dash 5D and Dash 5C**<br>Safe pressure that double as reliable anti-airs.
-* **Anti-Air 5A**
-  * Counters cross-ups and ambiguous jumps
-  * leads into this combo juggle: 5A > neutral jump B > 214K > Super.
-* **Burning Revolver (214214P)**:<br> High-utility super for punishing jump-ins and cross-up attempts.  
+#### Anti-airs
+* **Dash 5C/5D**: Safe pressure that double as reliable anti-airs.
+* **623P** : Invincible startup, 623A passes through projectiles, 623C offers higher reach but slower recovery.
+* **Anti-Air 5A** : Counters cross-ups and ambiguous jumps and leads into this combo juggle: 5A > neutral jump B > 214K > Super.
+* **Burning Revolver (214214P)**: High-utility super for punishing jump-ins and cross-up attempts.  
+</div>        
         
-        
-### Super moves
 
-<video>
+<div class="card"><video>
     <source data-src="/media/characters/tia/videos/tia_supers.mp4">
 </video>
         
-* **Rapid Charge (236236P)** 
-  * High-speed punish for projectiles or unsafe moves
-  * links easily from anti-air normals as a combo finisher.
-* **Cutlass Flasher (236236K)** 
-  * Overhead
-  * Mainly used to convert air juggles from 214K.
-* **Burning Revolver (214214P)**
-  * Invincible start‑up and huge hitbox
-  * Strong anti‑air that also baits reversals and pushes to the corner.
-        
+#### Super moves
+* 236236P: Quick Super that punishes projectiles and unsafe moves, and cleanly links from anti‑air normals as a finisher.
+* 236236K: Overhead, Mainly used to convert air juggles from 214K.
+* 214214P : Invincible start‑up and huge hitbox, Strong anti‑air that also baits reversals and pushes to the corner.
+
+</div>
+</div>
+
+
 ### Tips
         
-#### Fuzzy
-<video>
+<div class="grid">
+<div class="card"><video>
     <source data-src="/media/characters/tia/videos/fuzzy.mp4">
 </video>
+
+#### Fuzzy
 
 * Jump C to try to force high block, then mixup: 
   * with low: 2B
   * or Fuzzy: 8C > Super 214214P.
-
-### Ressources
-* [Sas Izm - Tia Langray Combo Guide](https://youtu.be/KzufkMx_XRs)
-* [SuperCombo Wiki - Breakers Revenge/Tia](https://wiki.supercombo.gg/w/Breakers_Revenge/Tia)       
-        
-
-### Replays
-* [<div class="fi fi-br"></div>green hand vs  <div class="fi fi-br"></div>lucasrocha2013@](https://www.youtube.com/watch?v=XGC6SbWrIgA)
-* [<div class="fi fi-fr"></div>Abdel vs  <div class="fi fi-de"></div>Mxmo92](https://www.youtube.com/watch?v=-35SrsqMSMU)
-* [<div class="fi fi-fr"></div>Wonder vs  <div class="fi fi-gb"></div>WaterTemple](https://www.youtube.com/watch?v=m0QSFdj6sRU)
-* [<div class="fi fi-us"></div>TomBruise vs  <div class="fi fi-us"></div>SouthpawRock](https://www.youtube.com/watch?v=gd97qwpDoeA)
-
-
+</div>
+</div>
 
 ## Combos
 
-### Meterless combos
-<video>
+### Combos
+
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/meterlesscombo.mp4">
 </video>
+
+#### Meterless combos
 
 * 2B, 2B > A+C > 623C
 * 2B, 2A, 2A > A+C > 623C
 * 2B, 2B > B+D > 623C
 * 2B, 2A, 2A > B+D > 623C
 * Jump C > air 214D > 2A > A+C > 623C
+</div>
 
-### Metered combos
-<video>
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/metercombo.mp4">
 </video>
+
+#### Metered combos
 
 * 5C > 214D > 214214P
 * 2B, 2A, 2A > A+C > 236236P
 * 2B, 2A, 2A > B+D > 236236P
 * Jump C > air 214D > 2A > A+C > 236236P
+</div>
 
-### Anti-air
-<video>
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/antiair_combos.mp4">
 </video>
+
+#### Anti-air
 
 * 5D > 236236P
 * far 5C > 214B > 236236P
 * 623A > 214214P
 * close 5C > 214214P
 * close 5A > 8B > air 214D > 236236P
+</div>
 
-### Air-to-air
-<video>
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/airtoair.mp4">
 </video>
 
+#### Air-to-air
+
 * Jump C > air 214D > 236236P
 * Jump C > air 214D > 236236K
+* Jump C > 214214P
+</div>
 
-### Breakable combos
-<video>
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/breakable_combo.mp4">
 </video>
 
+#### Breakable combos
+
 * 5C ❌ 214D
 * Jump C ❌ 214B > 2A ❌ 2C ❌ 214D > 214214K
+</div>
+</div>
 
 
 ## Matchups
 
 ### Sho
-#### Ranki Ryuu Geri
-<video>
+
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_sho_ranki_ryuu_geri.mp4">
 </video>
 
+#### Ranki Ryuu Geri
 * Unsafe on its own, but becomes safe when canceled into super, letting him bait punish attempts.
 * With meter, a forward Jump C > air super 214214P guarantees a punish.
+</div>
 
-#### Onigawara
-<video>
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_sho_onigawara.mp4">
 </video>
 
+#### Onigawara
 * Overhead, safe on block, and cancelable. 
 * Punishable during its startup frames. 
 * Breakable if canceled into 236K.
+</div>
 
-#### Tobihizageri
-<video>
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_sho_Tobihizageri.mp4">
 </video>
 
+#### Tobihizageri
 * Safe on block. 
 * If he's close enough, he might enter throw range, but he can counter with 214K. 
 * If he's too far, react with 623A.
+</div>
 
-#### Sashikomi Kick
-<video>
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_sho_SashikomoKick.mp4">
 </video>
 
-* Whiff punish his divekick with 5A or 623A.
+#### Sashikomi Kick
+* Whiff punish with 5A or 623A.
 * On hit, break using throw or 623A
 * Be cautious, a whiffed divekick can lead to his air super. 
 * Block low to avoid his fuzzy setup.
+</div>
 
-#### Rekkou Ha
-<video>
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_sho_fireball.mp4">
 </video>
 
+#### Rekkou Ha
 * Whiff punish with Super (236236P) (needs spacing).
+</div>
+
+</div>
 
 
-### Pielle
-#### Saber Bash
-  <video>
+
+### Pielle 
+
+<div class="grid">
+  <div class="card"><video>
     <source data-src="media/characters/tia/videos/matchups/tia_vs_pielle_SaberBash.mp4">
   </video>
-  
+
+#### Saber Bash
+
 * Despite its animation, this move isn't an overhead.
 * Punish with 2B or 236236P and on whiff with 623P
-  
-#### Flying Peach Bomber
-  <video>
+</div>  
+
+  <div class="card"><video>
     <source data-src="media/characters/tia/videos/matchups/tia_vs_pielle_FlyingPeachBomber.mp4">
   </video>
-  
+
+#### Flying Peach Bomber  
 * Overhead. Always has a gap in blockstrings. 
 * Whiff punish with 623A.
-  
-#### Bonjour Shot
-  <video>
+ </div>
+ 
+
+  <div class="card"><video>
     <source data-src="media/characters/tia/videos/matchups/tia_vs_pielle_BonjourShot.mp4">
   </video>
-    
+
+#### Bonjour Shot   
 * Whiff punish with 236236P.
 * At close range, punish on block or hit with 2B or 5C.
+</div>
     
-#### Super Rose
-  <video>
+
+  <div class="card"><video>
     <source data-src="media/characters/tia/videos/matchups/tia_vs_pielle_MonsieurCrash.mp4">
   </video>
-  
+
+#### Super Rose  
 * Be careful, Pielle can delay each hit to counter your punish attempt.
+</div>
   
-#### Merci Un Deux Trois
-  <video>
+
+  <div class="card"><video>
     <source data-src="media/characters/tia/videos/matchups/tia_vs_pielle_Merci123.mp4">
   </video>
-    
+
+#### Merci Un Deux Trois    
 * Can counter your anti-air timing
 * When you block all hits, Pielle passes behind you. Punish with 2B
-    
-#### Super Rose
-<video>
+</div>
+   
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_pielle_SuperRose.mp4">
 </video>
 
+#### Super Rose
 * Whiff punish at super flash with 2D.
+</div>
 
-#### Thunder Croiser
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_pielle_ThunderCroiser.mp4">
 </video>
 
+#### Thunder Croiser
 * Crosses the entire screen with a wide hitbox, useful for countering jump attempts.
 * Punish with Dash > 5C > 236236P
+</div>
     
 
 ### Condor
-#### Tomahawk Jack
-<video>
+
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_condor_tomahawk.mp4">
 </video>
 
+#### Tomahawk Jack
 * Unsafe on block. 
 * Punish or whiff punish with Super (236236P)
+</div>
 
-#### Gran Buffalo Horn
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_condor_GrandBuffaloHorn.mp4">
 </video>
 
+#### Gran Buffalo Horn
 * Punishable on hit and whiff with 2D. 
 * Safe at max range.
+</div>
 
-#### Sky Bridge
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_condor_SkyBridge.mp4">
 </video>
 
+#### Sky Bridge
 * Punish at close range with 5C.
+</div>
 
-#### Atlas Rock Buster
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_condor_AtlasRockBuster.mp4">
 </video>
 
+#### Atlas Rock Buster
 * Block the first hit, then throw or backdash > dash > 5C.
+</div>
 
-#### Crouching D
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_condor_2D.mp4">
 </video>
 
+#### Crouching D
 * punish with 2B
-  
+</div>
+</div>
+ 
 
 ### Rila
 
-#### Killer Snake
-<video>
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_rila_killer_snake.mp4">
 </video>
 
+#### Killer Snake
 * Unsafe. Heavy version can be followed by any super to bait punishes.
 * Punish with 2A, it hits if she does nothing, and you still have time to block her super.
 * After 2A, react with Burning Revolver (214214P) to counter her super attempts. 
+</div>
 
-#### Spinning Claw
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_rila_SpinningClaw.mp4">
 </video>
 
+#### Spinning Claw
 * Hard to punish due to pushback. 
 * Stays active for a while and has priority over normals and some Supers.
+</div>
 
-#### Quick Scratch A
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_rila_QuickScratchA.mp4">
 </video>
-  
+
+#### Quick Scratch A  
 * Can catch you off guard at mid and close range. 
 * Whiff punish with any normal.
 * On block punish with super (236236P).
+</div>
   
-#### Quick Scratch C
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_rila_QuickScratchC.mp4">
 </video>
-  
+
+#### Quick Scratch C  
 * Slower than light version, punish with 5C or 2C
-  
-#### Wild Saver
-<video>
+</div>
+ 
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_rila_WildSaver.mp4">
 </video>
 
+#### Wild Saver
 * Unsafe on block.
 * The Heavy version has more recovery
+</div>
 
-#### Shine Beast
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_rila_ShineBeast.mp4">
 </video>
-  
+
+#### Shine Beast  
 * On block, she ends up on the other side (at mid and close range).
 * With practice, time your jump correctly to punish her
+</div>
   
-#### Bloody Fang
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_rila_BloodyFang.mp4">
 </video>
 
+#### Bloody Fang
 * This super is not overhead despite the jump animation. 
 * Punish with dash > 5C.
 * If you get hit, mash buttons and directions to take less damage.
+</div>
+</div>
 
 
 ### Tia
-#### Soul Spike
-<video>
+
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_tia_SoulSpike.mp4">
 </video>
 
+#### Soul Spike
 * Can pass through projectiles. 
 * Punish light version with Super (236236P)
 * Heavy version is unsafe, but can be followed with Super, use throw to avoid it.
-  
-#### Mirage Spear Kick
-<video>
+</div>
+ 
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_tia_MirageSpearKick.mp4">
 </video>
 
+#### Mirage Spear Kick
 * Punish with 236236P
+</div>
 
-#### Rapid Gale
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_tia_RapidGale.mp4">
 </video>
-  
+
+#### Rapid Gale  
 * Her fireball has a slightly slow recovery. 
 * She mostly uses it for okizeme or pressure. 
 * Whiff punish with 236236P
-  
-#### Heel Break
-<video>
+ </div>
+ 
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_tia_HeelBreak.mp4">
 </video>
-  
+
+#### Heel Break  
 * Last hit is an overhead.
 * After the first hit, Punish/Break with throw, 623P or 214214P.
-  
-#### Rapid Charge
-<video>
+</div>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_tia_RapidCharge.mp4">
 </video>
   
+#### Rapid Charge  
 * She crosses over if blocked; punish with an anti-air juggle or turn around quickly to counter.
-  
-#### Burning Revolver
-<video>
+</div>
+ 
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_tia_BurningRevolver.mp4">
 </video>
-  
+
+#### Burning Revolver  
 * Punish with dash > 5C
-  
+</div>
+</div>
+
 
 ### alsion
-#### Horus Shade
-<video>
+
+<div class="grid">
+<div class="card"><video>
 <source data-src="media/characters/tia/videos/matchups/tia_vs_alsion_HorusShade.mp4">
 </video>
 
+#### Horus Shade
 * An overhead that is safe but has a slow startup, making it easily punishable.
 * Whiff punish with 5A or 623A
+</div>
 
-#### Death Shred
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_alsion_DeathShred.mp4">
 </video>
 
+#### Death Shred
 * Hits twice on standing, second hit is overhead. 
 * Whiff punish or interrupt the second hit with any normal.
+</div>
 
-#### Deadly Claw
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_alsion_DeadlyClaw.mp4">
 </video>
 
+#### Deadly Claw
 * When executed close, 214B lands in front, while 214D lands behind. 
 * Punish with 236236P and on whiff with 5D
+</div>
 
-#### Dash Knee
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_alsion_DashKnee.mp4">
 </video>
 
+#### Dash Knee
 * Punish on block or hit with 2A depending on the range, or with super 236236P
+</div>
 
-#### Pharaoh Dance
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_alsion_PharaohDance.mp4">
 </video>
 
+#### Pharaoh Dance
 * Unsafe on block but he retreats very far. 
 * Punish with dash > 236236P.
+</div>
+</div>
 
 
 
 ### maherl
-#### Cadabra Bomber
-<video>
+
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_maherl_super.mp4">
 </video>
 
+#### Cadabra Bomber
 * Safe on block and has invincible startup. 
 * If close, 236236K to avoid the last part and punish.
+</div>
 
-#### Abdomen Step
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_maherl_AbdomenStep.mp4">
 </video>
 
+#### Abdomen Step
 * In the corner, punish with 2A. 
 * Safe if canceled into 5B
 * whiff punish it with 623P.
+</div>
 
-#### Slash Sword
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_maherl_SlashSword.mp4">
 </video>
 
+#### Slash Sword
 * Safe at max range. 
 * At mid and close range, punish with 5C or Super (236236P)
+</div>
 
-#### Balloon Bomb
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_maherl_BalloonBomb.mp4">
 </video>
 
+#### Balloon Bomb
 * Hits High, whiff punish with 5A/5C/2C. 
 * On block, punish with run > 5C
+</div>
 
-#### Shiva Dance
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_maherl_CadabraBomber.mp4">
 </video>
 
+#### Shiva Dance
 * Can go through projectiles up close. Punish with run > 5C
+</div>
+</div>
 
 
 ### dao-long
-#### Kouryuu Ga
-<video>
+
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_dao_KouryuuGa.mp4">
 </video>
 
+#### Kouryuu Ga
 * Punish at point-blank with 2A. 
 * Heavy Soul Spike or Super 236236P also goes through it
+</div>
 
-#### Senkyuu Tai
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_dao_SenkyuuTai.mp4">
 </video>
 
+#### Senkyuu Tai
 * Unsafe on block. 
 * Punish the heavy version with a normal or a jump-in.
+</div>
 
-#### Riyuu Seishou
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_dao_RiyuuSeishou.mp4">
 </video>
 
+#### Riyuu Seishou
 * Often used for pressure and combos, allowing him to chip and build meter.
 * Safe on block
+</div>
 
-#### Senpuure Kyaku
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_dao_SenpuureKyaku.mp4">
 </video>
 
+#### Senpuure Kyaku
 * Slow anti-air command. If you're close enough, punish with 2B
+</div>
 
-#### Shoutenchuu
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_dao_Shoutenchuu.mp4">
 </video>
 
+#### Shoutenchuu
 * Safe on block, whiff punish with 5D or 623P.
+</div>
 
-#### Houshin Renpa
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_dao_HoushinRenpa.mp4">
 </video>
 
+#### Houshin Renpa
 * Fireball super, can be used at mid-range to punish your own projectiles
+</div>
 
-#### Shin Kyoku Ranbu
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_dao_ShinKyokuRanbu.mp4">
 </video>
 
+#### Shin Kyoku Ranbu
 * Not overhead despite the jump animation.
 * Punish with dash > 5C.
+</div>
+</div>
 
 
 ### saizo
-#### Standing C
-<video>
+
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_saizo_StandC.mp4">
 </video>
 
+#### Standing C
 * Close version is safe and hits low
 * far version is unsafe on hit and block.
+</div>
 
-#### Rasen Kyaku
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_saizo_RasenKyaku.mp4">
 </video>
 
+#### Rasen Kyaku
 * Overhead, unsafe on hit and block.
+</div>
 
-#### Hiryuu
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_saizo_bomb.mp4">
 </video>
 
+#### Hiryuu
 * If done at close range, punish with 2A (needs precise timing).
+</div>
 
-#### Yashagami
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_saizo_Yashagami.mp4">
 </video>
 
+#### Yashagami
 * Unsafe on block or hit, unless cancelled. 
 * On block, if Saizo cancels into Super, use 236236P for a guaranteed punish.
+</div>
 
-#### Engetsuzan
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/tia/videos/matchups/tia_vs_saizo_Engetsuzan.mp4">
 </video>
 
+#### Engetsuzan
 * Punish with Super (236236P) or dash > 5C > Super (236236P)
+</div>
+</div>
 

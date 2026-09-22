@@ -7,9 +7,10 @@
 Bai-Hu (hidden character) is the final boss, he initiated the tournament to discover the strongest fighters.<br>
 <br>
 <b>How to unlock bai-hu</b><br>
-At character select, rotate P1’s stick left [360] and P2’s stick right [360R] at the same time.
+At character select, rotate P1’s stick left [360] and P2’s stick right [360R] at the same time.<br>
+Note: The character is banned in competitive play
 
-
+<img src="media/characters/bai-hu/img/bai-hu.png" alt="A">
 
 ## Moves
 
@@ -83,43 +84,53 @@ Nisetsu Ranbu | [B]+[C]+[D]
 
 ## Combos
 
-### Meterless combos
-<video>
+### Combos 
+
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/bai-hu/videos/bai-hu_meterless_combo.mp4">
 </video>
 
+#### Meterless combos
 * 2B, 2B, 2C (one hit) > B+D
-* 2B, 2B, 5C > A+B (fireball loop)
-* 6D > 6D > 5C > A+B (fireball loop)
-* 6D > 9C > A+B (fireball loop)
+* 2B, 2B, 5C > A+B (loop) <br> 6D > 6D > 5C > A+B (loop) <br> 6D > 9C > A+B (loop)
 * 2B, 2B > B+C > A+C
 * 6B > 5B, 5B > B+C > A+C
+</div>
 
 
-### Metered combos
-<video>
+<div class="card"><video>
   <source data-src="media/characters/bai-hu/videos/bai-hu_metered_combo.mp4">
 </video>
 
-* 2B, 2B, 5C > A+B > Super
-* 2B, 2B, 2C (one hit) > B+D > Super
+#### Metered combos
+
+* 2B, 2B, 5C > A+B > A+B+C
+* 2B, 2B, 2C (one hit) > B+D > A+B+C
+</div>
 
 
-### Anti-air</h3>
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/bai-hu/videos/bai-hu_anti-air_combo.mp4">
 </video>
   
-* 5D > A+C > Super
-* 6D > 5D > Super
-* 5C > A+B (fireball loop)
-  
+#### Anti-air
+* 5D > A+C > A+B+C
+* 6D > 5D > A+B+C
+* 5C > A+B (loop)
+</div>
 
-### Air-to-air
-<video>
+
+
+<div class="card"><video>
   <source data-src="media/characters/bai-hu/videos/bai-hu_air-to-air_combo.mp4">
 </video>
-  
-* 9D > 9C > A+B > Super
-* 9C > A+B (fireball loop)
-  
+
+#### Air-to-air
+* 9D > 9C > A+B > A+B+C
+* 9C > A+B (loop)
+</div>
+
+</div>
+

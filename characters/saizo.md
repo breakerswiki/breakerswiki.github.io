@@ -9,10 +9,24 @@ Saizo Tobikageno, a ninja driven by the desire for vengeance, pursues justice fo
 
 ### Colors
 
-| [A] | [B] | [C] | [D] |
-|:----------:|:----------:|:----------:|:----------:|
-| ![img](media/characters/saizo/img/saizo_A.png)  | ![img](media/characters/saizo/img/saizo_B.png)  | ![img](media/characters/saizo/img/saizo_C.png)  | ![img](media/characters/saizo/img/saizo_D.png)  |
-
+<div class="grid-2x2">
+  <div class="item">
+    <span>[A]</span>
+    <img src="media/characters/saizo/img/saizo_A.png" alt="A">
+  </div>
+  <div class="item">
+    <span>[C]</span>
+    <img src="media/characters/saizo/img/saizo_C.png" alt="C">
+  </div>
+  <div class="item">
+    <span>[B]</span>
+    <img src="media/characters/saizo/img/saizo_B.png" alt="B">
+  </div>
+  <div class="item">
+    <span>[D]</span>
+    <img src="media/characters/saizo/img/saizo_D.png" alt="D">
+  </div>
+</div>
 ## Moves
 
 ### MOVE LIST
@@ -88,575 +102,630 @@ Senku Ensatsujin | [QCF],[QCF]+[K]
 ### Overview
 Saizo is strong in every area: he’s fast, hits hard, controls space well, has good reversals and anti‑airs, and his super is the fastest in the game, letting him punish almost anything. These strengths let him switch playstyles and adapt to any matchup.
 
-### Neutral
-<video><source data-src="/media/characters/saizo/videos/saizo_offense.mp4"></video>
+<div class="grid">
+<div class="card"><video><source data-src="/media/characters/saizo/videos/saizo_offense.mp4"></video>
 
-* **Pressure**<br> Use short dashes into 2A/2B or cancel normals into Slide > Bomb for safe offense.
-* **Kunai & Bomb**<br> Kunai beats most projectiles; Bomb has fast recovery, perfect for chip damage or baiting jumps.
-* **Jump A/C**<br> High-priority air normals; Jump A has longer active frames.
-* **Close Normals**<br> Close 5C and close 5D are safe/cancelable; avoid far versions as they are unsafe. Note the gap in close 5D > 5D.
-          
-    
+#### Neutral
+* **Pressure**: Use micro-dashes into 2A or 2B. Cancel normals into Slide > Bomb for safe offense in most matchups.
+* **236A** (Kunai) passes through projectiles.<br> 623C (Bomb) has fast recovery, making it ideal for chip damage or baiting jumps
+* **Jump A/C**: High-priority air normals; Jump A has longer active frames.
+* **Close Normals**: Close 5C/5D are safe; avoid far versions as they’re unsafe. Close 5D > 5D isn’t a true string.
+</div>
         
-### Anti-air
-        
-<video><source data-src="/media/characters/saizo/videos/antiairjuggle.mp4"></video>
-        
-* **Sword Anti-Air (623P)**<br> Light version is fast; heavy version is slower but with more range. Both enable Super juggles on airborne opponents.
-* **Close 5D**<br> Fast, cancelable anti-air with a massive hitbox; use 6D for easier sword-move conversions. Avoid far 5D (slow/unsafe).
-* **Yashagami (214A)**<br> Has long invincibility frames; unsafe on block and hit, must be canceled into Hair Super to avoid being punished.
 
         
-### Super moves
+<div class="card"><video><source data-src="/media/characters/saizo/videos/antiairjuggle.mp4"></video>
 
-<video><source data-src="/media/characters/saizo/videos/Metercombo.mp4"></video>
+#### Anti-air        
+* **623P**: Light version is fast; heavy version is slower but with more range. Both enable Super juggles on airborne opponents.
+* **Close 5D**: Quick cancelable anti-air normal with a large hitbox.<br> Input 6D for easier 623P conversions. Avoid far version (slow/unsafe).
+* **214A**: Has long invincibility frames; unsafe on block and hit, must be super-canceled with 236236K to avoid being punished.
+</div>
         
-* **Senku Ensatsujin (236236K)**<br> Extremely fast Super; ideal for long-range punishes or as a combo finisher.
-* **Musou Tenha (214214P)**<br> Flame pillar anti-air; light version appears in front, while heavy version tracks the opponent's position.
-* **Musou Shinra (236236P)**<br> Long-range anti-air Super; can be juggled after 623P or close 5D.
-        
+
+
+<div class="card"><video><source data-src="/media/characters/saizo/videos/Metercombo.mp4"></video>
+
+#### Super moves        
+* **236236K**: Extremely fast Super; ideal for punishes or as a combo finisher.
+* **214214P**: Flame pillar anti-air; light version appears in front, while heavy version tracks the opponent's position.
+* **236236P**: Long-range anti-air Super; can be juggled after 623P or close 5D.
+</div>
+</div>
+
 ### Tips
         
+<div class="grid">
+<div class="card"><video><source data-src="/media/characters/saizo/videos/chipkill.mp4"></video>
+
 #### Chip damage
-
-<video><source data-src="/media/characters/saizo/videos/chipkill.mp4"></video>
-
 * Use 236A or 236C for easy chip. 
 * Finish an opponent with 623C it deals the most chip damage.
-        
-#### Throw OS
-<video><source data-src="/media/characters/saizo/videos/throw_OS.mp4"></video>
+</div>
 
+<div class="card"><video><source data-src="/media/characters/saizo/videos/throw_OS.mp4"></video>
+
+#### Throw OS
 * 4C+D functions as a close‑range option select.
   * If the opponent jumps, 4D triggers an anti‑air response; 
   * If they remain grounded, 4C initiates a throw.
-          
-        
-### Ressources
-* [Sas Izm - Saizo Tobikageno Combo Guide](https://youtu.be/YCmGDh2ksuo)
-* [SuperCombo Wiki - Breakers Revenge/Saizo](https://wiki.supercombo.gg/w/Breakers_Revenge/Saizo)
-    
+</div>
+</div>
 
-### Replays
-* [<div class="fi fi-br"></div>lucasrocha2013 vs  <div class="fi fi-ar"></div>BrunoFerreir@](https://www.youtube.com/watch?v=f6CJpwYcN70)
-* [<div class="fi fi-br"></div>CAZUOS vs  <div class="fi fi-br"></div>lucasrocha2013](https://www.youtube.com/watch?v=27jtmH_XpBs)
-* [<div class="fi fi-it"></div>SpinalBlood vs  <div class="fi fi-fr"></div>Zoukken](https://www.youtube.com/watch?v=6suNY8Z3gI4)
-* [<div class="fi fi-gb"></div>F4rhann vs  <div class="fi fi-gb"></div>WaterTemple](https://www.youtube.com/watch?v=aqIzsLtxABY)
-* [<div class="fi fi-fr"></div>Keikun vs  <div class="fi fi-gb"></div>F4rhann](https://www.youtube.com/watch?v=Y47a8Q__huo)
-* [<div class="fi fi-br"></div>GarouSP vs  <div class="fi fi-br"></div>((dudu))](https://www.youtube.com/watch?v=bDqUtO8lnM)
-          
 
 ## Combos
 
-### Meterless combos
-<video><source data-src="media/characters/saizo/videos/Meterlesscombo.mp4"></video>
+### combos
 
-* 2B, 2B, 5A > 623C
-* 2B, 2B, 5C > 623C
-* 2B, 2B, 5D > 623C
-* 2B, 2B, 5C > 236C
+<div class="grid">
+<div class="card"><video><source data-src="media/characters/saizo/videos/Meterlesscombo.mp4"></video>
+
+#### Meterless combos
+* 2B, 2B, 5A > 623C <br> 2B, 2B, 5C > 623C <br> 2B, 2B, 5D > 623C <br> 2B, 2B, 5C > 236C
 * 2B, 2A, 5B > 2+B+D
 * jump C > 5C > 623C
+</div>
 
-### Metered combos
-<video><source data-src="media/characters/saizo/videos/Metercombo.mp4"></video>
+<div class="card"><video><source data-src="media/characters/saizo/videos/Metercombo.mp4"></video>
 
+#### Metered combos
 * 2B, 2B, 5C > 623C > 214214P
 * 2B, 2B, 5D > 623C > 214214P
 * 2A, 2A, 5B > 214A > 236236K
+</div>
 
-### Anti-air
-<video><source data-src="media/characters/saizo/videos/antiairjuggle.mp4"></video>
+<div class="card"><video><source data-src="media/characters/saizo/videos/antiairjuggle.mp4"></video>
 
+#### Anti-air
 * 623C > 214214P
 * close 5D > 623C > 214214P
+</div>
 
-### Air-to-air
-<video><source data-src="media/characters/saizo/videos/airtoair.mp4"></video>
+<div class="card"><video><source data-src="media/characters/saizo/videos/airtoair.mp4"></video>
 
+#### Air-to-air
 * jump D > 214214P
 * jump C > 214214P
-
+</div>
 
 
 ## Matchups
 
 ### Sho
 
-#### Rekkou Ha
-<video>
+<div class="grid">
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_sho_RekkouHa.mp4">
 </video>
 
-* Use 236A to pass through his fireball. 
-* In a blockstring, punish with Super (236236K)
+#### Rekkou Ha
+* Use 236A to punish his projectile. 
+* if used in a blockstring, punish with Super (236236K)
+</div>
 
 
-#### Ranki Ryuu Geri
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_sho_RankiRyuuGeri.mp4">
 </video>
 
+#### Ranki Ryuu Geri
 * Unsafe alone, but Sho can use an air super to stay safe or bait punishes. 
 * You can slide under it, but it’s risky if he delays the super
- 
+</div>
 
-#### Onigawara
-<video>
+
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_sho_Onigawara.mp4">
   </video>
 
+#### Onigawara
 * Unsafe. Punish with super (236236K), but be cautious, Sho can cancel late recovery frames with a reversal
 * Break: 214A (if your opponent use A+C > 236K).
+</div>
 
-#### Tobihizageri
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_sho_tobihizageri.mp4">
   </video>
 
+#### Tobihizageri
 * Safe on block, but he ends close enough to be thrown. 
 * From long range, there's a punishable gap before the move connects.
+</div>
 
-#### Sashikomi Kick
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_sho_SashikomiKick.mp4">
   </video>
 
+#### Sashikomi Kick
 * Safe on block, can bait anti-airs and enable fuzzy mixups. (Block low to avoid the fuzzy).
 * Anti-air: If he has no meter, punish with 214A or jC.
 * Break: Use 214A, backdash, or throw (though throw can be countered by his reversal)
+</div>
 
-#### Geki Rekkou Ha
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_sho_GekiRekkouHa.mp4">
   </video>
 
+#### Geki Rekkou Ha
 * Safe on block. 
 * You can avoid it with a backdash if used at a high height (midscreen)
-
+</div>
+</div>
 
 ### Pielle
 
-#### Saber Bash
+<div class="grid">
 
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_pielle_SaberBash.mp4">
 </video>
 
+#### Saber Bash
 * Despite its animation, this move doesn't hit overhead.
 * Punish with 2B or 236236K.
+</div>
 
 
-#### Flying Peach Bomber
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_pielle_FlyingPeachBomber.mp4">
 </video>
 
+#### Flying Peach Bomber
 * Overhead and safe on block. 
 * When used in a blockstring, there's a gap where you can punish with 214A.
+</div>
 
 
-#### Bonjour Shot
 
-<video>
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_pielle_fireball.mp4">
 </video>
-  
+
+#### Bonjour Shot
 * Slow recovery projectile. 
 * Whiff punish with 236A. 
 * Punish with 2B/2C at close range and Super (236236K) at mid-range.          
-  
-#### Monsieur Crash
+</div>  
 
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_pielle_MonsieurCrash.mp4">
 </video>
 
+#### Monsieur Crash
 * All hits are unsafe. 
 * Pielle can delay each one as frametrap to bait your punish attempts.
+</div>
 
 
 
-#### Merci Un Deux Trois
 
-<video>
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_pielle_Merci123.mp4">
 </video>
-      
-* On block, Pielle passes behind you. Punish with 5D
-      
 
-#### Super Rose
+#### Merci Un Deux Trois     
+* On block, Pielle passes behind you. Punish with 5D
+</div>      
+
+
       
-<video>
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_pielle_SuperRose.mp4">
 </video>
-        
-* Whiff punish at super flash with 214A.
-        
 
-#### Thunder Croiser
+#### Super Rose        
+* Whiff punish at super flash with 214A.
+</div>        
+
+
         
-<video>
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_pielle_ThunderCroiser.mp4">
 </video>
-        
-* Punish with slide or 214C > Super (236236K).
-        
-### Condor
-#### Tomahawk Jack
 
-<video>
+#### Thunder Croiser        
+* Punish with slide or 214C > Super (236236K).
+</div>
+</div>
+
+### Condor
+
+<div class="grid">
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_condor_TomahawkJack.mp4">
 </video>
- 
+
+#### Tomahawk Jack
 * Punish or whiff punish with Super (236236K).
+</div>
 
 
 
-#### Gran Buffalo Horn
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_condor_GranBuffaloHorn.mp4">
 </video>
 
-* Punishable on hit and whiff with 2D or 2C
+#### Gran Buffalo Horn
+* Punish / whiff-punish with 2D or 2C
+</div>
 
 
 
-#### Sky Bridge
 
-<video>
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_condor_SkyBridge.mp4">
 </video>
 
+#### Sky Bridge
 * Punish with super (236236K)
+</div>
 
 
-#### Atlas Rock Buster
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_condor_AtlasRockBuster.mp4">
 </video>
 
+#### Atlas Rock Buster
 * You can interrupt it after blocking the first hit, use throw or 5D.
+</div>
 
 
-#### Crouch C
 
-<video>
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_condor_2D.mp4">
 </video>
 
+#### Crouch C
 * Punish with 2B
-
+</div>
+</div>
 
 
 ### Rila
 
-#### Dynamite Kick
 
-<video>
+<div class="grid">
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_rila_DynamiteKick.mp4">
 </video>
 
+#### Dynamite Kick
 * Unsafe on block, punish with Super (236236K).
+</div>
 
 
-#### Killer Snake
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_rila_killer_snake.mp4">
 </video>
 
+#### Killer Snake
 * Light version is unsafe even on hit. 
 * Heavy version is unsafe but can be followed by any super to bait punishes. 
 * Use 2A to punish or block in time.
+</div>
 
 
-#### Spinning Claw
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_rila_SpinningClaw.mp4">
 </video>
 
+#### Spinning Claw
 * Unsafe but adds pushback, if close enough, punish on block with Super (236236K)
+</div>
 
 
 
-#### Quick Scratch A
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_rila_quick_scratch_lp.mp4">
   </video>
-    
-* Punish with super (236236K)
-    
 
-#### Quick Scratch C
+#### Quick Scratch A    
+* Punish with super (236236K)
+</div>    
+
+
     
-<video>
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_rila_QuickScratch_C.mp4">
 </video>
-        
+
+#### Quick Scratch C        
 * Unsafe. Has more recovery than the light version.
-        
+</div>        
 
 
 
-#### Wild Saver
 
-<video>
+
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_rila_WildSaver.mp4">
   </video>
 
+#### Wild Saver
 * Unsafe. Punish with any normal.
+</div>
 
-#### Shine Beast
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_rila_ShineBeast.mp4">
   </video>
-  
+
+#### Shine Beast  
 * On block, she ends up on the other side; dash, then punish..
-  
-#### Bloody Fang
+</div>  
+
           
-<video>
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_rila_BloodyFang.mp4">
 </video>
-        
+
+#### Bloody Fang        
 * Not overhead. Punish with dash > 5D.
 * If you get hit, mash buttons and directions to take less damage.
-              
-
+</div>              
+</div>
 
 ### Tia
 
-#### Soul Spike
 
-<video>
+<div class="grid">
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_tia_SoulSpike.mp4">
 </video>
-  
-* Light version is unsafe, punish with Super (236236K). Heavy version bypasses projectiles and can be baited with an instant Super; use a throw to avoid it.
-  
 
-#### Mirage Spear Kick
+#### Soul Spike  
+* Light version is unsafe, punish with Super (236236K). Heavy version bypasses projectiles and can be baited with an instant Super; use throw to avoid it.
+</div>  
+
+
   
-<video>
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_tia_MirageSpearKick.mp4">
 </video>
 
-* Punish on block or hit with super (236236K)
-  
+#### Mirage Spear Kick
+* Unsafe on block and also on hit, punish with super (236236K)
+</div>  
 
 
-#### Rapid Gale
+
   
-<video>
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_tia_RapidGale.mp4">
 </video>
-        
+
+#### Rapid Gale        
 * Use 236A to pass through her fireball. In a blockstring, punish with Super (236236K).
-        
+</div>        
 
 
-#### Heel Break
+
         
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_tia_HeelBreak.mp4">
   </video>
-    
+
+#### Heel Break    
 * Safe on block, last hit is overhead. After the first hit, Punish/Break with throw or 214A.
+</div>   
+
     
-#### Heel Break
-    
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_tia_RapidCharge.mp4">
 </video>
-      
+
+#### Heel Break      
 * Fast super that goes through projectiles. 
 * On block, she switches sides mid-air, quickly turn and punish.
+</div>     
+
       
-#### Burning Revolver
-      
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_tia_BurningRevolver.mp4">
 </video>
-        
+
+#### Burning Revolver        
 * Punish with dash > 2B
+</div>        
+
         
-#### Cutlass Flasher
-        
-<video>
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_tia_CutlassFlasher.mp4">
 </video>
-          
+
+#### Cutlass Flasher          
 * Overhead super, switches sides on block.
-                  
+</div>
+</div>                  
 
 ### Alsion
-#### Horus Shade
 
-<video>
+<div class="grid">
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_alsion_HorusShade.mp4">
   </video>
 
+#### Horus Shade
 * An overhead with slow startup, making it easy to react to. 
 * Unsafe on block but can be followed by a teleport to bait your punish attempt.
+</div>
 
 
-#### Death Shred
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_alsion_DeathShred.mp4">
   </video>
 
+#### Death Shred
 * Hits twice on standing, second hit is overhead. 
 * If crouching, whiff punish with 2B; if standing, interrupt the second hit with 2B.
+</div>
 
 
 
-#### Deadly Claw
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_alsion_DeadlyClaw.mp4">
   </video>
 
+#### Deadly Claw
 * Light version lands in front; heavy version lands behind. 
 * At close range, punish on block with Super (236236P) or whiff punish with 5D.
+</div>
 
 
 
-#### Dash Knee
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_alsion_DashKnee.mp4">
   </video>
 
+#### Dash Knee
 * Only safe with proper spacing. Otherwise punish with Super (236236K).
-
+</div>
+</div>
 
 
 
 ### Maherl
-#### Abdomen Step
 
-<video>
+<div class="grid">
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_maherl_AbdomenStep.mp4">
   </video>
-  
-* Safe on block. If spaced out, use 214A to whiff punish.
-  
+
+#### Abdomen Step  
+* Safe on block at close range. At longer ranges, whiff punish with 214A.
+</div> 
 
 
-#### Slash Sword
 
-<video>
+
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_maherl_SlashSword.mp4">
 </video>
 
+#### Slash Sword
 * Punish with Super (236236K)
+</div>
 
-#### Fire Breath
 
-<video>
+<div class="card"><video>
   <source data-src="media/characters/saizo/videos/matchups/saizo_vs_maherl_FireBreath.mp4">
 </video>
 
+#### Fire Breath
 * Punish light version with a jump-in or Super (236236K)
-* Interrupt the heavy version with any normal attack after blocking the first or second hit.
+* Interrupt the heavy version with any normal attack after blocking either the first or second hit.
+</div>
 
-#### Balloon Bomb
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_maherl_BalloonBomb.mp4">
   </video>
 
-* Hits Overhead, whiff punish with 5D or 214A. 
+#### Balloon Bomb
+* Hits high (overhead)
 * On block, punish with dash > 2B
+* Whiff punish with 5D or 214A. 
+</div>
 
-#### Cadabra Bomber
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_maherl_CadabraBomber.mp4">
   </video>
 
-* Avoid the last sequence  with a backdash, then punish with 214C > Super (236236K).
-
+#### Cadabra Bomber
+* This Super is safe on block but you can avoid the last part with a backdash, then punish with 214C > 236236K.
+</div>
+</div>
 
 
 ### Dao-long
 
-#### Kouryuu Ga
 
-<video>
+<div class="grid">
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_dao_KouryuuGa.mp4">
   </video>
 
+#### Kouryuu Ga
 * Use 236A to pass through his fireball.
-* On block, punish with Super (236236K)
+* If used in a blockstring, punish with Super (236236K)
+</div>
 
 
-#### Senkyuu Tai
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_dao_SenkyuuTai.mp4">
   </video>
 
-* On block, punish with dash > any normal; 
+#### Senkyuu Tai
+* If blocked: light version is punishable by dash-up normal; heavy version allows a jump-in punish.
+</div>
 
 
-#### Riyuu Seishou
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_dao-long_palm.mp4">
   </video>
 
+#### Riyuu Seishou
 * Safe unless followed by a projectile; in that case, punish with Super (236236K).
+</div>
 
 
 
-#### Senpuure Kyaku
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_dao_SenpuureKyaku.mp4">
   </video>
 
+#### Senpuure Kyaku
 * If you're close enough, punish with 2B
+</div>
 
 
 
-#### Shoutenchuu
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_dao_Shoutenchuu.mp4">
   </video>
 
+#### Shoutenchuu
 * Safe on block. 
-* whiff punish with close 5D or jump back C.
+* whiff punish: close 5D or back jump C.
+</div>
 
 
 
-#### Houshin Renpa
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_dao_HousinRenpa.mp4">
   </video>
 
+#### Houshin Renpa
 * Punish at close range with 2B (corner only) or Super (236236K)
+</div>
 
 
-#### Shin Kyoku Ranbu
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_dao_ShinKyokuRanbu.mp4">
   </video>
 
+#### Shin Kyoku Ranbu
 * Not an overhead despite the jump animation. From max range, punish with dash > 214A > Super.
-
+</div>
+</div>
 
 
 
@@ -664,39 +733,45 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 
 ### Saizo
 
-#### Rasen Kyaku
 
-<video>
+<div class="grid">
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_saizo_RasenKyaku.mp4">
   </video>
 
-* Overhead, unsafe on hit and block, leaves ample time for punishment.
+#### Rasen Kyaku
+* Overhead but unsafe on hit and block, leaves ample time for punishment.
+</div>
 
 
-#### Ryuuei Kyaku
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_saizo_RyuueiKyaku.mp4">
   </video>
 
+#### Ryuuei Kyaku
 * Slide > bomb is safe unless you have meter; punish with super (236236K).
-* On corner, punish with 2B.
+* In corner, you can also punish with 2B.
+</div>
 
 
-#### Yashagami
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_saizo_Yashagami.mp4">
   </video>
 
+#### Yashagami
 * Unsafe on hit and block unless canceled. 
 * Can be followed by Super to counter your punish attempt.
+</div>
 
 
-#### Engetsuzan
 
-<video>
+<div class="card"><video>
     <source data-src="media/characters/saizo/videos/matchups/saizo_vs_saizo_engetsuzan.mp4">
   </video>
 
+#### Engetsuzan
 * Punish with dash > 2A
+</div>
+</div>
