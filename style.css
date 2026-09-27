@@ -33,7 +33,7 @@ a.logo{display:block;line-height:0;padding:.6rem 0}
 img.logo{width:88px;height:auto;transition:transform .2s ease}
 a.logo:hover img.logo,img.main-logo:hover{transform:scale(1.06)}
 nav{display:flex;align-self:stretch;gap:.25rem}
-.nav-link{display:inline-flex;align-items:center;gap:.5rem;padding:0 .9rem;background:0 0;border:0;border-bottom:3px solid transparent;color:#bdbdc2;font:600 .95rem/1 var(--font-body);cursor:pointer;transition:color .15s ease,border-color .15s ease}
+.nav-link{display:inline-flex;align-items:center;gap:.5rem;padding:0 .9rem;background:0 0;border:0;border-bottom:3px solid transparent;color:#bdbdc2;font:600 .8rem/1 var(--font-body);text-transform:uppercase;cursor:pointer;transition:color .15s ease,border-color .15s ease}
 .nav-link:hover{color:#fff}
 .nav-link.active{border-bottom-color:var(--nav-accent,var(--p1));color:var(--nav-accent,var(--p1))}
 .nav-link[data-section=gameplay]{--nav-accent:var(--cat-gameplay)}
@@ -45,11 +45,12 @@ nav{display:flex;align-self:stretch;gap:.25rem}
 .hero-section::after{content:"";position:absolute;top:0;left:0;width:100%;height:520px;z-index:1;pointer-events:none;background:linear-gradient(to bottom,transparent 0,rgba(0,0,0,.2) 45%,rgba(0,0,0,.75) 80%,#000 100%)}
 .hero-content{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;min-height:380px;padding:4.5rem 1.5rem 0;animation:hero-in .8s cubic-bezier(.25,1,.5,1) .15s backwards}
 .main-logo{display:block;width:min(320px,70vw);height:auto}
-.highlight{display:block;margin-top:0;margin-bottom:.7rem;color:#e6e6e8;font-size:1.05rem;font-weight:500;letter-spacing:.02em}
-.main-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem;margin:0}
-.main-btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.8rem;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.12);color:#fff;text-transform:uppercase;font-size:.85rem;font-weight:700;letter-spacing:.01em;text-decoration:none;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.4);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:all .25s ease}
-.main-btn:active{transform:translateY(0)}
-.main-btn:hover{background:rgba(255,255,255,.25);border-color:#fff;box-shadow:0 0 15px rgba(255,255,255,.2);transform:translateY(-2px)}
+.highlight{display:block;margin-top:0;margin-bottom:.7rem;color:#e6e6e8;font-size:1rem;font-weight:800;text-transform:uppercase;letter-spacing:.02em}
+.main-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;border:3px solid #fff;background:#1c1f22;margin-bottom:.5rem;transform:skewX(-12deg);text-decoration:none;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.4);transition:transform .25s ease,background-color .25s ease,box-shadow .25s ease}
+.main-btn span{display:block;padding:.8rem 1.5rem;min-height:48px;line-height:calc(48px - 1.6rem);color:#fff;text-transform:uppercase;font-size:.85rem;font-weight:900;letter-spacing:.01em;transform:skewX(12deg)}
+.main-btn:hover{background:#d98fa3;transform:skewX(-12deg) translateY(-2px);box-shadow:0 0 15px rgba(255,255,255,.2)}
+.secondary-btn:hover{background:#7fbf9f}
+.main-btn:active{transform:skewX(-12deg) translateY(0)}
 .breakers-cards,.learning-section,.timeline-container{text-align:center}
 .breakers-cards h2,.learning-section h2,.timeline-container h2{color:#fff;font-size:var(--step-4);margin:0}
 .play-highlight{margin:0 var(--space-4);margin-bottom:2rem;color:var(--on-dark-2);font-size:1.05rem}
@@ -314,7 +315,7 @@ footer{padding:3rem 1.5rem;background:var(--black);border-top:1px solid var(--li
 @media (max-width:768px){
 .nav-container{padding:1rem;padding-bottom:0}
 img.logo{width:72px}
-.nav-link{padding:0 .45rem;gap:.15rem;font-size:.85rem}
+.nav-link{padding:0 .45rem;gap:.15rem;font-size:.7rem}
 .hero-section::after,.hero-section::before,.hero-video-bg{height:440px}
 .hero-content{min-height:320px;padding-top:3rem}
 .container{padding:0 1rem}
@@ -328,7 +329,9 @@ img.logo{width:72px}
 .settings-list>div{grid-template-columns:1fr;gap:.35rem}
 .char-content .grid,.grid{justify-content:center;grid-template-columns:repeat(1,max-content)}
 .details{width:100%;max-width:300px!important}
-.play-highlight{font-size: .9rem;}
+.play-highlight{font-size:.9rem}
+.highlight{font-size:.9rem}
+.main-btn span{font-size:.8rem}
 }
 @media (max-width:680px){
 .learning-grid{grid-template-columns:1fr}
