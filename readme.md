@@ -10,7 +10,7 @@ Explore the full wiki at [Breakers Wiki](https://breakerswiki.github.io), where 
 ## Contributing
 
 We welcome contributions! If you have information, corrections, or new content, feel free to contribute. Here’s how you can help.
-You can Simply [reach out](https://x.com/Zoukken) or : 
+You can simply [reach out](https://x.com/Zoukken) or: 
 
 1. **Fork** this repository.
 2. **Clone** the forked repository to your local machine.
