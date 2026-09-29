@@ -37,7 +37,7 @@
 
         <section id="hero-welcome" class="hero-section">
 
-            <video autoplay loop muted playsinline webkit-playsinline preload="auto" poster="/media/assets/breakers-bg.webp" class="hero-video-bg">
+            <video autoplay loop muted playsinline webkit-playsinline preload="auto" poster="/media/assets/breakers-bg.webp" class="hero-video-bg" aria-hidden="true">
                 <source src="/media/assets/background.mp4" type="video/mp4">
             </video>
 
@@ -47,11 +47,11 @@
                 <div class="highlight">Learn the essentials and start playing</div>
 
                 <div class="main-actions">
-                    <a class="main-btn" data-subsection="gameplay" onclick="Wiki.showSection('gameplay')">
+                    <a class="main-btn" href="#" data-subsection="gameplay" onclick="event.preventDefault(); Wiki.showSection('gameplay');">
                         <span>How to play</span>
                     </a>
                 
-                    <a class="main-btn secondary-btn" data-subsection="characters" onclick="Wiki.showSection('characters')">
+                    <a class="main-btn secondary-btn" href="#" data-subsection="characters" onclick="event.preventDefault(); Wiki.showSection('characters')">
                         <span>Character guides</span>
                     </a>
                 </div>
@@ -66,9 +66,9 @@
                 <div class="cards-wrapper">
                     <div class="play-card">
                         <div class="card-image play"></div>
-                        <h3>Modern Releases</h3>
+                        <h3>Official Releases</h3>
                         <p>
-                            Breakers Collection (2023) brings the series to modern platforms with rollback netcode, cross‑play, a full training mode, and competitive online matchmaking.
+                            Play Breakers today through the Breakers Collection (2023) or experience its original releases on Neo Geo AES/MVS and Neo Geo CD, as well as various legacy ports.
                         </p>
                     </div>
         
@@ -76,7 +76,7 @@
                         <div class="card-image emulation"></div>
                         <h3>Play Online via Fightcade</h3>
                         <p>
-                            Breakers and its sequel are accessible online through <a href="https://www.fightcade.com/" target="_blank" rel="noopener noreferrer">Fightcade</a>, the primary platform for online matchmaking with rollback netcode, spectator mode, and match replays.
+                            Breakers and Breakers Revenge are playable on <a href="https://www.fightcade.com/" target="_blank" rel="noopener noreferrer">Fightcade</a>, the primary platform for online matchmaking with rollback netcode, spectator mode, and match replays.
                         </p>
                     </div>
         
@@ -84,7 +84,7 @@
                         <div class="card-image community"></div>
                         <h3>Join the Community</h3>
                         <p>
-                            The <a href="https://discord.gg/Qnvkcumfsd" target="_blank" rel="noopener noreferrer">Breakers Discord</a> is the main hub to find opponents, discuss advanced tech and keep track of offline/online tournaments.
+                            The <a href="https://discord.gg/Qnvkcumfsd" target="_blank" rel="noopener noreferrer">Breakers Discord</a> is the main hub to find opponents, get advice, discuss advanced tech, and keep track of offline and online tournaments.
                         </p>
                     </div>
                 </div>
