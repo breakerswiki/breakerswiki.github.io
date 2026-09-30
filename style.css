@@ -47,7 +47,7 @@ nav{display:flex;align-self:stretch;gap:.25rem}
 .main-logo{display:block;width:min(320px,70vw);height:auto;transition:transform .2s ease}
 .highlight{display:block;margin:.4rem 0 1.75rem;color:var(--on-dark);font-size:var(--step-0);font-weight:700;text-transform:uppercase;letter-spacing:.06em;text-wrap:balance;text-shadow:0 1px 8px rgba(0,0,0,.6)}
 .main-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem 1.5rem}
-.main-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;border:2px solid var(--on-dark);background:#1c1f22a1;transform:skewX(-12deg);text-decoration:none;cursor:pointer;box-shadow:inset 0 -4px 0 var(--accent,var(--p1)),0 4px 16px rgba(0,0,0,.4);transition:transform .25s ease,background-color .25s ease,border-color .25s ease,box-shadow .25s ease}
+.main-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;border:2px solid var(--text-2);border-bottom: 0; background:#1c1f22a1;transform:skewX(-12deg);text-decoration:none;cursor:pointer;box-shadow:inset 0 -4px 0 var(--accent,var(--p1)),0 4px 16px rgba(0,0,0,.4);transition:transform .25s ease,background-color .25s ease,border-color .25s ease,box-shadow .25s ease}
 .main-btn span{display:flex;align-items:center;min-height:48px;padding:0 1.75rem;color:var(--on-dark);text-transform:uppercase;font-size:.85rem;font-weight:700;line-height:1;letter-spacing:.04em;transform:skewX(12deg);transition:color .25s ease}
 .main-btn:focus-visible,.main-btn:hover{background:var(--accent,var(--p1));border-color:var(--accent,var(--p1));transform:skewX(-12deg) translateY(-2px);box-shadow:0 0 15px rgba(255,255,255,.2)}
 .main-btn:focus-visible span,.main-btn:hover span{color:var(--ink)}
