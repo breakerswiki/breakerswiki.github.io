@@ -63,7 +63,6 @@ nav{display:flex;align-self:stretch;gap:.25rem}
 .breakers-cards h2,.learning-section h2,.timeline-container h2{color:#fff;font-size:var(--step-4);margin:0}
 .play-highlight{max-width:36rem;margin:.6rem auto 2.5rem;color:var(--on-dark-2);font-size:var(--step-0);font-weight:500;letter-spacing:.06em;text-wrap:balance;text-transform:uppercase}
 .timeline-container{position:relative;z-index:2;width:100%}
-/* .gallery-container{position:relative;z-index:2;width:100%;padding-bottom:var(--space-section)} */
 .gallery-wrapper{position:relative}
 .poster-gallery{display:grid;grid-template-columns:repeat(2,305px);justify-content:center;gap:1.5rem;width:100%;padding:0 1rem}
 @media (min-width:1340px){
@@ -76,9 +75,9 @@ nav{display:flex;align-self:stretch;gap:.25rem}
 .poster-content{position:relative;z-index:3;display:flex;flex-direction:column;color:#fff}
 .poster-badge{order:1;padding:0;background:0 0;color:#fff;font-family:var(--font-display);font-size:1.2rem;line-height:1.1;letter-spacing:.02em;text-transform:uppercase}
 .poster-item h3{order:2;margin:.25rem 0 .75rem;color:var(--p1);font-family:var(--font-body);font-size:.9rem;font-weight:700;letter-spacing:.04em;text-transform:none}
-.meta{order:3;display:flex;flex-direction:column;margin-bottom:.9rem;font-size:.85rem;color:lightgray;}
-.meta i{flex:0 0 auto;margin-top:2px;color:lightgray}
-.meta div{display:flex;align-items:flex-start;gap:.5rem;text-align:left;}
+.meta{order:3;display:flex;flex-direction:column;margin-bottom:.9rem;font-size:.85rem;color:#d3d3d3}
+.meta i{flex:0 0 auto;margin-top:2px;color:#d3d3d3}
+.meta div{display:flex;align-items:flex-start;gap:.5rem;text-align:left}
 .poster-more-text{order:4;max-height:0;overflow:hidden;margin-bottom:.6rem;font-size:.85rem;line-height:1.5;color:var(--on-dark-2);transition:max-height .3s ease-out}
 .poster-item.expanded .poster-more-text{max-height:200px;overflow-y:auto}
 .poster-more-text a{color:#fff;text-decoration:underline;text-underline-offset:3px}
@@ -109,16 +108,14 @@ nav{display:flex;align-self:stretch;gap:.25rem}
 .learning-card{display:block;color:inherit;text-decoration:none;outline:0;transition:transform .25s ease}
 .learning-card[data-subsection=gameplay],.main-btn[data-subsection=gameplay]{--accent:var(--cat-gameplay)}
 .learning-card[data-subsection=characters],.main-btn[data-subsection=characters]{--accent:var(--cat-characters)}
-.learning-card__content{position:relative;height:100%;padding:1.75rem 1.5rem 1.5rem;overflow:hidden;background:var(--surface-dark);border:1px solid var(--line-dark);text-align:left;transition:border-color .25s ease}
-.learning-card__content::before{content:"";position:absolute;top:0;left:0;width:40px;height:3px;background:var(--accent);transition:width .35s ease}
-.learning-card__content h3{margin:0 0 .6rem;color:#fff;font-size:var(--step-2);transition:color .25s ease}
+.learning-card__content{position:relative;height:100%;padding:1.75rem 1.5rem 1.5rem;overflow:hidden;background:var(--surface-dark);border:1px solid var(--line-dark);border-top:5px solid var(--accent);text-align:left;transition:background-color .25s ease,border-color .25s ease,color .25s ease;border-color:var(--accent)}
+.learning-card__content h3{margin:0 0 .6rem;color:var(--accent);font-size:var(--step-2);transition:color .25s ease}
+.learning-card__content:hover{background:var(--accent);border-color:var(--accent)}
+.learning-card__content:hover h3{color:#000}
+.learning-card__content:hover p{color:#000}
 h3 i.bi{margin-right:.5rem;font-size:1.2rem}
 .learning-card__content p{margin:0;max-width:none;color:var(--on-dark-2);font-size:.975rem;line-height:1.65;text-align:left}
 .learning-card:focus-visible,.learning-card:hover{transform:translateY(-3px)}
-.learning-card:focus-visible .learning-card__content,.learning-card:hover .learning-card__content{border-color:var(--accent)}
-.learning-card:focus-visible .learning-card__content::before,.learning-card:hover .learning-card__content::before{width:100%}
-.learning-card:focus-visible h3,.learning-card:hover h3{color:var(--accent)}
-.learning-card:focus-visible .learning-card__content{outline:2px solid var(--p1);outline-offset:3px}
 .wrapper{position:relative;padding:3rem 0 4rem;background:var(--paper);overflow:hidden}
 .wrapper:not(:has(.wiki-section.active)){display:none}
 .container{position:relative;z-index:1;max-width:var(--content-w);margin:0 auto;padding:0 2rem}
@@ -316,11 +313,12 @@ footer{padding:3rem 1.5rem;background:var(--black);border-top:1px solid var(--li
 .learning-section__img-left,.learning-section__img-right{display:none}
 }
 .game_posters{list-style:none;text-align:left;margin:0 auto;padding:2rem;max-width:60rem;display:grid;gap:1.5rem}
-.game_poster{display:grid;gap:1rem;padding:1.5rem;background:var(--surface-dark);border:1px solid #3a3a37;}
+.game_poster{display:grid;gap:1rem;padding:1.5rem;background:var(--surface-dark);border:1px solid #3a3a37}
 .game_poster__img{display:block;width:100%;max-width:17rem;margin-inline:auto;aspect-ratio:2/3;border-radius:.25rem}
-.game_poster__titre{margin:0 0 .5rem;font-size:1.5rem;line-height:1.2;color:lightgray}
+.game_poster__titre{margin:0 0 .5rem;font-size:1.5rem;line-height:1.2;color:#d3d3d3}
 .game_poster__texte p{margin:0;margin-top:1rem;color:var(--on-dark-2);max-width:60ch}
-.game_poster__texte a{color:var(--p1);text-decoration:underline;text-underline-offset:3px}
+.game_poster__texte a{color:var(--text);text-decoration:underline;text-underline-offset:3px}
+.game_poster__texte a:hover{color:#fff}
 @media (min-width:48em){
 .game_poster{grid-template-columns:14rem 1fr;gap:2rem;padding:1.5rem;align-items:start}
 .game_poster__img{max-width:17rem;margin-inline:0}
