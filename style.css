@@ -33,7 +33,7 @@ a.logo{display:block;line-height:0;padding:.6rem 0}
 img.logo{width:88px;height:auto;transition:transform .2s ease}
 a.logo:hover img.logo,img.main-logo:hover{transform:scale(1.06)}
 nav{display:flex;align-self:stretch;gap:.25rem}
-.nav-link{display:inline-flex;align-items:center;gap:.5rem;padding:0 .9rem;background:0 0;border:0;border-bottom:3px solid transparent;color:#bdbdc2;font:600 .8rem/1 var(--font-body);text-transform:uppercase;cursor:pointer;transition:color .15s ease,border-color .15s ease}
+.nav-link{position:relative;display:inline-flex;align-items:center;gap:.5rem;padding:.5rem .9rem;background:0 0;border:none;color:#bdbdc2;font:600 .85rem/1.2 var(--font-body);text-transform:uppercase;letter-spacing:.05em;cursor:pointer;border-radius:6px;transition:color .25s cubic-bezier(.4,0,.2,1),background-color .25s cubic-bezier(.4,0,.2,1)}
 .nav-link:hover{color:#fff}
 .nav-link.active{border-bottom-color:var(--nav-accent,var(--p1));color:var(--nav-accent,var(--p1))}
 .nav-link[data-section=gameplay]{--nav-accent:var(--cat-gameplay)}
@@ -108,11 +108,11 @@ nav{display:flex;align-self:stretch;gap:.25rem}
 .learning-card{display:block;color:inherit;text-decoration:none;outline:0;transition:transform .25s ease}
 .learning-card[data-subsection=gameplay],.main-btn[data-subsection=gameplay]{--accent:var(--cat-gameplay)}
 .learning-card[data-subsection=characters],.main-btn[data-subsection=characters]{--accent:var(--cat-characters)}
-.learning-card__content{position:relative;height:100%;padding:1.75rem 1.5rem 1.5rem;overflow:hidden;background:var(--surface-dark);border:1px solid var(--line-dark);border-top:5px solid var(--accent);text-align:left;transition:background-color .25s ease,border-color .25s ease,color .25s ease;border-color:var(--accent)}
-.learning-card__content h3{margin:0 0 .6rem;color:var(--accent);font-size:var(--step-2);transition:color .25s ease}
+.learning-card__content{position:relative;height:100%;padding:1.75rem 1.5rem 1.5rem;overflow:hidden;background:var(--surface-dark);border:1px solid var(--text-2);border-bottom:5px solid var(--accent);text-align:left;transition:background-color .3s cubic-bezier(.4,0,.2,1),border-color .3s cubic-bezier(.4,0,.2,1),color .3s cubic-bezier(.4,0,.2,1);transform:translateZ(0);will-change:background-color,border-color}
+.learning-card__content h3{margin:0 0 .6rem;color:var(--accent);font-size:var(--step-2);transition:color .3s cubic-bezier(.4,0,.2,1)}
+.learning-card__content p{color:var(--on-dark-2);transition:color .3s cubic-bezier(.4,0,.2,1)}
 .learning-card__content:hover{background:var(--accent);border-color:var(--accent)}
-.learning-card__content:hover h3{color:#000}
-.learning-card__content:hover p{color:#000}
+.learning-card__content:hover h3,.learning-card__content:hover p{color:#000}
 h3 i.bi{margin-right:.5rem;font-size:1.2rem}
 .learning-card__content p{margin:0;max-width:none;color:var(--on-dark-2);font-size:.975rem;line-height:1.65;text-align:left}
 .learning-card:focus-visible,.learning-card:hover{transform:translateY(-3px)}
