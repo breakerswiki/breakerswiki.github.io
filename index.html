@@ -101,13 +101,29 @@
                     <a href="javascript:void(0);" data-subsection="gameplay" onclick="Wiki.showSection('gameplay')" class="learning-card" role="button">                        
                         <div class="learning-card__content">
                             <h3><i class="bi bi-joystick"></i> HOW TO PLAY</h3>
-                            <p>Master movement, attacks, defensive options, combo mechanics, and other core gameplay systems.</p>
+                            <p>Learn how the game works, from basic movement and attacks to combos, defense, and advanced mechanics.</p><br>
+                            <video id="autoplay-video" class="card-video" autoplay muted loop playsinline preload="auto" data-videojs>
+                                <source src="/media/gameplay/br-how-to-play.mp4" type="video/mp4">
+                                Your browser does not support HTML5 video.
+                            </video>
                         </div>
                     </a>
                     <a href="javascript:void(0);" data-subsection="characters" onclick="Wiki.showSection('characters')" class="learning-card" role="button">
                         <div class="learning-card__content">
                             <h3><i class="bi bi-book"></i> CHARACTER GUIDES</h3>
-                            <p>Explore complete move lists, practical combos, character strategies, and matchup tips.</p>
+                            <p>Explore complete move lists, combos, character strategies, and matchup tips.</p><br>
+                        <aside class="char-sidebar">
+                            <button class="char-btn" data-char="sho" onclick="Wiki.loadCharacter('sho', this)"><img src="media/assets/Portrait_BR_Sho.png" alt="Sho"></button>
+                            <button class="char-btn" data-char="pielle" onclick="Wiki.loadCharacter('pielle', this)"><img src="media/assets/Portrait_BR_Pielle.png" alt="Pielle"></button>
+                            <button class="char-btn" data-char="condor" onclick="Wiki.loadCharacter('condor', this)"><img src="media/assets/Portrait_BR_Condor.png" alt="Condor"></button>
+                            <button class="char-btn" data-char="rila" onclick="Wiki.loadCharacter('rila', this)"><img src="media/assets/Portrait_BR_Rila.png" alt="Rila"></button>
+                            <button class="char-btn" data-char="tia" onclick="Wiki.loadCharacter('tia', this)"><img src="media/assets/Portrait_BR_Tia.png" alt="Tia"></button>
+                            <button class="char-btn" data-char="alsion" onclick="Wiki.loadCharacter('alsion', this)"><img src="media/assets/Portrait_BR_Alsion_III.png" alt="Alsion III"></button>
+                            <button class="char-btn" data-char="maherl" onclick="Wiki.loadCharacter('maherl', this)"><img src="media/assets/Portrait_BR_Maherl.png" alt="Maherl"></button>
+                            <button class="char-btn" data-char="dao-long" onclick="Wiki.loadCharacter('dao-long', this)"><img src="media/assets/Portrait_BR_Dao-Long.png" alt="Dao-Long"></button>
+                            <button class="char-btn" data-char="saizo" onclick="Wiki.loadCharacter('saizo', this)"><img src="media/assets/Portrait_BR_Saizo.png" alt="Saizo"></button>
+                            <button class="char-btn" data-char="bai-hu" onclick="Wiki.loadCharacter('bai-hu', this)"><img src="media/assets/Portrait_BR_Bai-Hu.png" alt="Bai-Hu"></button>
+                        </aside>
                         </div>
                     </a>
                 </div>

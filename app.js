@@ -44,59 +44,59 @@ const Wiki = (() => {
         'K': '<span class="btn-kick K">K</span>',
     };
 
-function convertToArrowsAndSymbolsHtml(text) {
-    let converted = text;
+    function convertToArrowsAndSymbolsHtml(text) {
+        let converted = text;
 
-// 1. Replaces special notations
+    // 1. Replaces special notations
+        converted = converted.replace(
+            /720|360|236|319|214|41236|646|623/g,
+            match => numpadToHtml[match] || match
+        );
+
+    // 2. Replaces notations in square brackets: [1]
+        converted = converted.replace(
+            /\[[1-9]\]/g,
+            match => numpadToHtml[match] || match
+        );
+
+    // 3. Replaces notation digits individually
+        // only when they are not part of a longer number
     converted = converted.replace(
-        /720|360|236|319|214|41236|646|623/g,
+        /(?<![0-9x])[1-9](?![0-9]|(?:st|nd|rd|th)\b)/gi,
         match => numpadToHtml[match] || match
     );
 
-// 2. Replaces notations in square brackets: [1]
-    converted = converted.replace(
-        /\[[1-9]\]/g,
-        match => numpadToHtml[match] || match
-    );
+    // 4. Replaces attack buttons
+        const attackPattern = /\b(A|C|B|D|P|K)\b/g;
+        converted = converted.replace(
+            attackPattern,
+            match => attackToSymbolsHtml[match] || match
+        );
 
-// 3. Replaces notation digits individually
-    // only when they are not part of a longer number
-converted = converted.replace(
-    /(?<![0-9x])[1-9](?![0-9]|(?:st|nd|rd|th)\b)/gi,
-    match => numpadToHtml[match] || match
-);
+        return converted;
+    }
 
-// 4. Replaces attack buttons
-    const attackPattern = /\b(A|C|B|D|P|K)\b/g;
-    converted = converted.replace(
-        attackPattern,
-        match => attackToSymbolsHtml[match] || match
-    );
+    function convertTextNodesToArrows(element, isInsideList = false) {
+        const isAllowedSection = !!document.querySelector('.sub-link.active:not([data-subsection="infos"])');
+        const inList = (isInsideList || ['UL', 'LI', 'SPAN'].includes(element.tagName)) && isAllowedSection;
 
-    return converted;
-}
-
-function convertTextNodesToArrows(element, isInsideList = false) {
-    const isAllowedSection = !!document.querySelector('.sub-link.active:not([data-subsection="infos"])');
-    const inList = (isInsideList || ['UL', 'LI', 'SPAN'].includes(element.tagName)) && isAllowedSection;
-
-    element.childNodes.forEach(node => {
-        if (node.nodeType === Node.TEXT_NODE) {
-            // Only applies if we are in a <ul>, <li> or <span>
-            if (inList) {
-                const tempSpan = document.createElement('span');
-                tempSpan.innerHTML = convertToArrowsAndSymbolsHtml(node.nodeValue);
-                node.parentNode.replaceChild(tempSpan, node);
+        element.childNodes.forEach(node => {
+            if (node.nodeType === Node.TEXT_NODE) {
+                // Only applies if we are in a <ul>, <li> or <span>
+                if (inList) {
+                    const tempSpan = document.createElement('span');
+                    tempSpan.innerHTML = convertToArrowsAndSymbolsHtml(node.nodeValue);
+                    node.parentNode.replaceChild(tempSpan, node);
+                }
+            } else if (
+                node.nodeType === Node.ELEMENT_NODE && 
+                node.tagName !== 'A' && // Exclude <a> links
+                !node.classList.contains('label')
+            ) {
+                convertTextNodesToArrows(node, inList);
             }
-        } else if (
-            node.nodeType === Node.ELEMENT_NODE && 
-            node.tagName !== 'A' && // Exclut les liens <a>
-            !node.classList.contains('label')
-        ) {
-            convertTextNodesToArrows(node, inList);
-        }
-    });
-}
+        });
+    }
 
 
     // =============================
@@ -144,14 +144,13 @@ function convertTextNodesToArrows(element, isInsideList = false) {
     async function loadCharacter(charFileName, triggerBtn = null) {
         const isBaiHu = charFileName === 'bai-hu';
 
+        // Remove the 'active' class from all buttons in all sidebars
         document.querySelectorAll('.char-btn').forEach(btn => btn.classList.remove('active'));
 
-        if (triggerBtn) {
-            triggerBtn.classList.add('active');
-        } else {
-            const fallbackBtn = document.querySelector(`.char-btn[data-char="${charFileName}"]`);
-            if (fallbackBtn) fallbackBtn.classList.add('active');
-        }
+        // Add the 'active' class to all corresponding buttons (in both sidebars)
+        document.querySelectorAll(`.char-btn[data-char="${charFileName}"]`).forEach(btn => {
+            btn.classList.add('active');
+        });
 
         const renderArea = document.getElementById('markdown-render');
         if (!renderArea) return;
@@ -239,6 +238,7 @@ function convertTextNodesToArrows(element, isInsideList = false) {
     // =============================
     // MATCHUPS SUB-SYSTEM
     // =============================
+
     function setupMatchupsSection(contentArea) {
         const rawMatchupText = currentCharacterSections.matchups || '';
 
@@ -252,7 +252,7 @@ function convertTextNodesToArrows(element, isInsideList = false) {
             currentMatchupOpponents[opponentId] = opponentBody;
         });
 
-        const mainSidebarButtons = document.querySelectorAll('.char-sidebar .char-btn');
+        const mainSidebarButtons = document.querySelectorAll('#characters .char-sidebar .char-btn');
 
         let matchupSidebarHtml = '';
         mainSidebarButtons.forEach(btn => {
