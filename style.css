@@ -63,37 +63,15 @@ nav{display:flex;align-self:stretch;gap:.25rem}
 .breakers-cards h2,.learning-section h2,.timeline-container h2{color:#fff;font-size:var(--step-4);margin:0}
 .play-highlight{max-width:36rem;margin:.6rem auto 2.5rem;color:var(--on-dark-2);font-size:var(--step-0);font-weight:500;letter-spacing:.06em;text-wrap:balance;text-transform:uppercase}
 .timeline-container{position:relative;z-index:2;width:100%}
-.gallery-wrapper{position:relative}
-.poster-gallery{display:grid;grid-template-columns:repeat(2,305px);justify-content:center;gap:1.5rem;width:100%;padding:0 1rem}
-@media (min-width:1340px){
-.poster-gallery{grid-template-columns:repeat(4,305px)}
-}
-.poster-item{position:relative;width:305px;height:480px;display:flex;flex-direction:column;justify-content:flex-end;padding:1.5rem;overflow:hidden;border:1px solid var(--line-dark);text-align:left;box-sizing:border-box;background:#000}
-.poster-item img{position:absolute;top:0;left:0;width:100%;height:100%;object-position:center top;z-index:1}
-.poster-item::after{content:"";position:absolute;bottom:0;left:0;width:100%;height:80%;z-index:2;background:linear-gradient(to top,rgba(0,0,0,.95) 0,rgba(0,0,0,.7) 50%,rgba(0,0,0,0) 100%);transition:background .3s ease}
-.poster-item.expanded::after{background:linear-gradient(to top,rgba(0,0,0,.98) 0,rgba(0,0,0,.85) 60%,rgba(0,0,0,0) 100%)}
-.poster-content{position:relative;z-index:3;display:flex;flex-direction:column;color:#fff}
-.poster-badge{order:1;padding:0;background:0 0;color:#fff;font-family:var(--font-display);font-size:1.2rem;line-height:1.1;letter-spacing:.02em;text-transform:uppercase}
-.poster-item h3{order:2;margin:.25rem 0 .75rem;color:var(--p1);font-family:var(--font-body);font-size:.9rem;font-weight:700;letter-spacing:.04em;text-transform:none}
 .meta{order:3;display:flex;flex-direction:column;margin-bottom:.9rem;font-size:.85rem;color:#d3d3d3}
 .meta i{flex:0 0 auto;margin-top:2px;color:#d3d3d3}
 .meta div{display:flex;align-items:flex-start;gap:.5rem;text-align:left}
-.poster-more-text{order:4;max-height:0;overflow:hidden;margin-bottom:.6rem;font-size:.85rem;line-height:1.5;color:var(--on-dark-2);transition:max-height .3s ease-out}
-.poster-item.expanded .poster-more-text{max-height:200px;overflow-y:auto}
-.poster-more-text a{color:#fff;text-decoration:underline;text-underline-offset:3px}
-.read-more-btn{order:5;align-self:flex-start;padding:.35rem 0;background:0 0;border:0;color:#fff;font-size:.9rem;font-weight:700;cursor:pointer}
-.read-more-btn:hover{color:var(--p1)}
-@media (max-width:680px){
-.nav-buttons{display:flex;justify-content:center;gap:1rem;margin-top:1.25rem;position:relative;z-index:10}
-.nav-buttons button{min-height:44px;padding:0 1.5rem;background:var(--surface-dark);border:1px solid var(--line-dark);border-radius:0;color:var(--on-dark);font-family:var(--font-body);font-size:.85rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;transition:border-color .2s ease}
-.nav-buttons button:hover{border-color:var(--on-dark)}
-}
 .breakers-cards{position:relative;z-index:2;background:var(--black)}
 .cards-wrapper{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:1.5rem;max-width:1050px;margin:0 auto}
 .play-card{padding:0 0 1.5rem;background:var(--surface-dark);border:1px solid var(--line-dark);text-align:left}
 .card-image{width:100%;height:200px;background-color:#222}
 .card-image.play{background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),url(media/assets/Breakers-collection.jpg) center/cover no-repeat}
-.card-image.emulation{background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),url(media/assets/fightcade.webp) center/cover no-repeat}
+.card-image.emulation{background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),url(media/assets/fightcade.jpg) center/cover no-repeat}
 .card-image.community{background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.15)),url(media/assets/discord.jpg) center/cover no-repeat}
 .play-card h3{margin:1.5rem 1.5rem .6rem;font-size:var(--step-2)}
 .play-card p{margin:0 1.5rem;font-size:.975rem;line-height:1.65;color:var(--on-dark-2)}
@@ -126,7 +104,7 @@ h3 i.bi{margin-right:.5rem;font-size:1.2rem}
 .section-header h2{font-size:var(--step-4);margin:0 0 .25rem;color:var(--ink)}
 .badge{display:inline-block;margin-bottom:.75rem;padding:.25rem .85rem;background:var(--section,var(--line-strong));color:var(--paper);font-size:.8rem;font-weight:900;text-transform:uppercase;--cut:6px}
 .char-subtitle{margin:0 0 1.5rem;color:var(--text-2);font-family:var(--font-body);font-size:1.05rem;font-weight:500;letter-spacing:0;text-transform:none;line-height:1.5}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:1.5rem;margin-bottom:3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr));gap:1.5rem;margin-bottom:3rem}
 .card{overflow:hidden;padding-bottom:1.75rem;background:var(--paper);border:1px solid var(--ink);box-shadow:5px 5px 0 #e7e7e7;text-align:lef;width:327px}
 .card h3{margin:0 0 .6rem;padding:0 1.5rem;font-size:var(--step-2);color:var(--ink)}
 .card h4{margin:0 0 .5rem;color:var(--text-2);font-size:1rem}
@@ -148,7 +126,7 @@ h3 i.bi{margin-right:.5rem;font-size:1.2rem}
 .resources-list a span{font-size:.85rem;transition:transform .15s ease}
 .resources-list a:hover span{transform:translateX(3px)}
 .training-mode{margin-bottom:0}
-.steps{margin:1rem 0 0;list-style-position:inside}
+.steps{margin:1rem 0 0;margin-bottom:.75rem;padding:0 1.5rem;list-style-position:inside}
 .steps li{padding:.5rem 0;color:var(--text-2);font-size:.975rem;line-height:1.6}
 .steps li::marker{color:var(--ink);font-weight:700}
 .steps strong{color:var(--ink)}
@@ -277,10 +255,11 @@ body:has(.char-btn[data-char=bai-hu].active) .character-bg{background-image:url(
 .tag-throw{background:#a66816;color:#fff}
 .tag-reversal{background:#02aaaa}
 .tag-launcher{background:#51b0e7}
-.card-video{display:block;width:100%;aspect-ratio:4/3;margin:0 0 1.25rem;background:#000}
+.card-video{display:block;width:100%;;margin:0 0 1.25rem;}
 .video-js{width:100%!important;height:auto!important;margin:1rem auto!important;margin-top:0!important;overflow:hidden;aspect-ratio:4/3}
 .video-js *{object-fit:cover}
 .card .video-js{margin:0 0 1.25rem!important}
+.card-img{display:block;width:100%;height:auto;margin:0 0 1.25rem;background:#000}
 .video-js .vjs-tech{position:relative!important}
 .vjs-fluid{padding-top:0!important;height:auto!important}
 .card .vjs-control-bar{display:none!important}
@@ -292,20 +271,6 @@ footer{padding:3rem 1.5rem;background:var(--black);border-top:1px solid var(--li
 .footer-credits a{color:var(--p1);font-weight:500;text-decoration:underline;text-underline-offset:3px}
 .fi{display:inline-block;margin:.2em;margin-left:0;border:2px solid #000;background-size:cover}
 .card-icon{margin-bottom:1rem;font-size:1.5rem}
-.inputs-grid{display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1.5rem;margin-top:.5rem;font-size:1rem;font-weight:700;color:var(--ink)}
-.inputs-grid span{display:flex;align-items:center;gap:.5rem}
-.inputs-grid img{display:block}
-.settings-list{display:flex;flex-direction:column;gap:1rem;margin:0;border:1px solid var(--line);background:var(--paper)}
-.settings-list>div{display:grid;grid-template-columns:180px 1fr;gap:1.5rem;padding:.9rem 1rem;border-bottom:1px solid var(--line)}
-.settings-list>div:last-child{border-bottom:0}
-.settings-list dt{color:var(--ink);font-weight:600}
-.settings-list dd{margin:0;color:var(--text-2);line-height:1.5}
-.training-header{margin-bottom:2.5rem}
-.training-header h2{margin:0 0 .5rem;font-size:1.8rem}
-.training-header p{margin:0;color:var(--text-2);font-size:.95rem}
-.training-section{padding:1rem 0}
-.training-section h4{margin:1.5rem 0 .75rem;color:var(--text-2);font-size:.9rem}
-.training-section p{margin:0 0 1rem;color:var(--text-2);line-height:1.7}
 #autoplay-video+.video-js .vjs-control-bar,.learning-card__content .video-js .vjs-control-bar{display:none!important}
 .learning-card__content .card-video{clip-path:inset(40px 0 10px 0);margin-top:-40px!important}
 .learning-card__content .char-btn::after{position:absolute;left:2px;right:2px;bottom:2px;padding:2px 0;background:rgba(0,0,0,.82);color:#fff;font-size:.65rem;font-weight:700;line-height:1.3;letter-spacing:.02em;text-align:center;text-transform:capitalize;opacity:1;pointer-events:none;transition:opacity .15s ease}
@@ -327,9 +292,6 @@ footer{padding:3rem 1.5rem;background:var(--black);border-top:1px solid var(--li
 .game_poster__titre{font-size:1.875rem}
 .game_poster__texte p{margin-top:.5rem}
 }
-@media (hover:none){
-.gallery-nav-btn{display:none}
-}
 @media (max-width:1000px){
 .character-bg{display:none}
 }
@@ -347,7 +309,6 @@ img.logo{width:72px}
 .char-content{min-height:auto;overflow-wrap:break-word}
 .move{flex-wrap:wrap}
 .sub-content .video-js{aspect-ratio:unset!important}
-.settings-list>div{grid-template-columns:1fr;gap:.35rem}
 .char-content .grid,.grid{justify-content:center;grid-template-columns:repeat(1,max-content)}
 .details{width:100%;max-width:320px!important}
 .play-highlight{font-size:.9rem;margin-bottom:2rem}

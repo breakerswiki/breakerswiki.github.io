@@ -11,8 +11,6 @@
         <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&family=Archivo+Expanded:wght@700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&display=swap" rel="stylesheet">
         <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     </head>
@@ -319,17 +317,26 @@
                     </div>
 
                     <div class="grid">
-                        <div class="card details">
-                            <h3>Chicago Mode</h3>
+                        <div class="card">
+                            <video class="card-video" preload="none" data-videojs>
+                                <source data-src="/media/gameplay/breakers-chicago-mode.mp4" type="video/mp4">
+                                Your browser does support HTML5 video.
+                            </video>
+                            <h3>Chicago</h3>
                             <p>
-                                Featured in Breakers Revenge Chicago. Adds short hops, balance adjustments, and selectable close/far normals independent of spacing.
+                                Available exclusively in Breakers Revenge Chicago, the Chicago rebalanced mode includes gameplay tweaks like short hops, character adjustments, and selectable close or far normals regardless of spacing.
                             </p>
                         </div>
 
-                        <div class="card details">
-                            <h3>Extra Mode</h3>
+                        <div class="card">
+                            <video class="card-video" preload="none" data-videojs>
+                                <source data-src="/media/gameplay/breakers-extra-mode.mp4" type="video/mp4">
+                                Your browser does support HTML5 video.
+                            </video>
+                            <h3>Extra</h3>
                             <p>
-                                Available in Neo-Geo CD and Chicago releases. Increases combo fluidity, cancels, escape options, and defensive mechanics.<br>
+                                Extra Mode is a feature originally from the Neo-Geo CD version that is also available in Breakers Revenge Chicago. It deeply modifies the game's rules to deliver wilder, faster, and more offense-oriented gameplay.
+                                <br>
                                 <br>More info: <a href="https://wiki.supercombo.gg/w/Breakers_Revenge/EXTRA" target="_blank">supercombo.gg</a>
                             </p>
                         </div>
@@ -345,16 +352,17 @@
 
                     <div class="training-mode">
                         <div class="grid">
-                            <div class="card details">
-                                <h3>Getting Started</h3>
+                            <div class="card">
+                                <img src="/media/assets/fightcade.jpg" class="card-img" alt="Training mode">
+                                <h3>Quick Start Guide</h3>
                                 <p>
-                                    Requires a <a href="https://www.fightcade.com/" target="_blank" rel="noopener">Fightcade</a> setup with the Breakers Revenge ROM installed.
+                                    You need a <a href="https://www.fightcade.com/" target="_blank" rel="noopener">Fightcade</a> setup with the Breakers Revenge ROM installed.
                                 </p>
 
                                 <ol class="steps" style="list-style-type:upper-alpha;">
                                     <li>
                                         <strong>Fightcade</strong>:
-                                        Join the Breakers Revenge channel and select <code>TRAINING</code>.
+                                        Join the Breakers Revenge room and select <code>TRAINING</code>.
                                     </li>
                                     <li>
                                         <strong>Standalone</strong>:
@@ -363,13 +371,17 @@
                                 </ol>
                             </div>
             
-                            <div class="card details">
-                                <h3>Record &amp; Playback options</h3>
+                            <div class="card">
+                                <video class="card-video" preload="none" data-videojs>
+                                    <source data-src="/media/gameplay/training.mp4" type="video/mp4">
+                                    Your browser does support HTML5 video.
+                                </video>
+                                <h3>Recording options</h3>
                                 <ol class="steps">
-                                    <li><strong>Start Recording:</strong> Press <kbd>Coin</kbd> three times (a red indicator appears).</li>
-                                    <li><strong>Record Inputs:</strong> Perform the inputs you want to record (defaults to P2).</li>
-                                    <li><strong>Stop Recording:</strong> Press <kbd>Coin</kbd> once.</li>
-                                    <li><strong>Play Back:</strong> Press <kbd>Coin</kbd> again to trigger playback.</li>
+                                    <li><strong>Start:</strong> Press <kbd>Coin</kbd> x3 (Red indicator appears).</li>
+                                    <li><strong>Record:</strong> Perform the desired inputs (P2 by default).</li>
+                                    <li><strong>Stop:</strong> Press <kbd>Coin</kbd> once.</li>
+                                    <li><strong>Playback:</strong> Press <kbd>Coin</kbd> again.</li>
                                 </ol>
                             </div>
                         </div>
