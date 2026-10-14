@@ -273,7 +273,7 @@ const Wiki = (() => {
         });
 
         contentArea.innerHTML = `
-            <h3>Matchups</h3>
+            <h3>Matchups tips</h3>
 
             <div class="char-layout matchup-layout">
                 <aside class="char-sidebar matchup-sidebar">
