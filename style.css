@@ -202,7 +202,7 @@ body:has(.char-btn[data-char=bai-hu].active) .character-bg{background-image:url(
 .text-muted{color:var(--text-2)}
 .text-error{padding:.75rem 1rem;border-left:4px solid #b3261e;background:#fdf1f0;color:#8c1d18}
 .sub-nav{gap:.5rem}
-.sub-link{flex:1 1 0;min-width:0;text-align:center;padding:.6rem 1.2rem;background:#fff;border:2px solid #2d3748;color:#2d3748;font-size:.75rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;cursor:pointer;box-shadow:5px 5px 0 #e7e7e7;transition:transform .1s ease,box-shadow .1s ease,background-color .1s ease;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:4px}
+.sub-link{flex:1 1 0;min-width:0;text-align:center;padding:.6rem 1.2rem;background:#fff;border:1px solid #2d3748;color:#2d3748;font-size:.75rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;cursor:pointer;box-shadow:5px 5px 0 #e7e7e7;transition:transform .1s ease,box-shadow .1s ease,background-color .1s ease;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:4px}
 .sub-link:hover{background:#edf2f7;color:#2d3748;transform:translate(-1px,-1px);box-shadow:2px 2px 0 #2d3748}
 .sub-link:active{transform:translate(1px,1px)}
 .sub-link.active{background:#4a5568;color:#fff;border-color:#2d3748;text-shadow:none;box-shadow:1px 1px 0 #2d3748}
