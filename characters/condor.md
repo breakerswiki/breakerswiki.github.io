@@ -133,6 +133,8 @@ Moonlight Shake | [360],[360]+[P]or[K]
 ### Overview
 Condor is a high-damage grappler. His low mobility and limited defensive options make it hard for him to get in, especially against zoning characters. He requires strong matchup knowledge and a solid understanding of the game’s mechanics.
 
+<br>
+
 <div class="grid">
 
 <div class="card"><video>

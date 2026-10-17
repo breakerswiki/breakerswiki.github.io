@@ -124,6 +124,8 @@ Rolling Press | [360]+[P]or[K]
 Maherl is a character with long-range specials, relying on gimmicks due to his inability to confirm from low attacks. 
 Mastering his glitch allows him to fly off-screen and land swiftly, catching foes off guard.
 
+<br>
+
 <div class="grid">
 
 <div class="card"><video>

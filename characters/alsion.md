@@ -129,6 +129,7 @@ Pharaoh Dance | [QCB],[QCB]+[P]
 ### Overview
 Alsion III is a zoning character that suffers from slow movement and limited defensive options. He relies on taking risks and gimmicks to create openings. Without a Super meter, he’s vulnerable to offensive characters due to his lack of reliable reversals.
 
+<br>
 
 <div class="grid">
 <div class="card"><video>

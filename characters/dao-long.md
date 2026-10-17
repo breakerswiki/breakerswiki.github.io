@@ -99,6 +99,7 @@ Renkyuu Tai | [CHARGE],[DELTA]+[K].[TAP].[K]
 ### Overview
 Dao-Long is a well-rounded character with fast charge inputs and a quick dash, making it easy to switch between zoning and offense. His Super “Shin Kyoku Ranbu” deals high-damage and combos from most normals and air juggles.
 
+<br>
 
 <div class="grid">
 <div class="card"><video>

@@ -108,7 +108,7 @@ h3 i.bi{margin-right:.5rem;font-size:1.2rem}
 .card{overflow:hidden;padding-bottom:1.75rem;background:var(--paper);border:1px solid var(--ink);box-shadow:5px 5px 0 #e7e7e7;text-align:lef;width:327px}
 .card h3{margin:0 0 .6rem;padding:0 1.5rem;font-size:var(--step-2);color:var(--ink)}
 .card h4{margin:0 0 .5rem;color:var(--text-2);font-size:1rem}
-.card p{margin-bottom:.75rem;padding:0 1.5rem;color:var(--text-2);font-size:.975rem;line-height:1.65}
+.card p{margin-bottom:.75rem;padding:0 1.5rem;color:var(--text-2);font-size:.975rem;line-height:1.65;border:none!important}
 .card b{color:var(--ink)}
 .details{width:100%;max-width:500px!important}
 .card.details{padding:1.75rem}
@@ -190,7 +190,7 @@ body:has(.char-btn[data-char=bai-hu].active) .character-bg{background-image:url(
 #sub-content .char-sidebar{margin:0 0 1.5rem;justify-content:flex-start}
 .char-layout{grid-template-columns:1fr;gap:1.2rem;align-items:start}
 .char-content{width:100%;min-height:400px}
-.char-content p{padding:0!important}
+.char-content .grid p{padding:0}
 .char-content .grid{justify-content:start;grid-template-columns:repeat(3,max-content)}
 .char-content .card h3,.char-content .card h4{padding-left:1rem;margin-top:1rem}
 .char-content .card note{padding:1rem!important}
@@ -209,7 +209,7 @@ body:has(.char-btn[data-char=bai-hu].active) .character-bg{background-image:url(
 .char-content h1{margin:0 0 .75rem}
 .char-content h3{margin:2.5rem 0 .75rem;font-size:var(--step-2)}
 .char-content h4{margin:1.75rem 0 .5rem;font-size:1.1rem}
-.char-content p{margin-bottom:1rem;color:#3a3a41;font-size:1.05rem;line-height:1.7}
+.char-content p{margin-bottom:1rem;color:#3a3a41;font-size:1.05rem;line-height:1.7;border:1px solid #000;box-shadow:5px 5px 0 #e7e7e7;padding:1rem}
 .char-content ol,.char-content ul{margin:0 0 2rem;color:#3a3a41}
 .char-content ul{list-style:none}
 .char-content ol{padding-left:1.5rem}
@@ -297,7 +297,7 @@ footer{padding:3rem 1.5rem;background:var(--black);border-top:1px solid var(--li
 .character-bg{display:none}
 }
 @media (max-width:768px){
-.nav-container{padding:1rem;padding-bottom:0;padding-top: 0;}
+.nav-container{padding:1rem;padding-bottom:0;padding-top:0}
 img.logo{width:72px}
 .nav-link{padding:0 .45rem;gap:.15rem;font-size:.8rem}
 .hero-section{--hero-h:440px}

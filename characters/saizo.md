@@ -102,6 +102,8 @@ Senku Ensatsujin | [QCF],[QCF]+[K]
 ### Overview
 Saizo is strong in every area: he’s fast, hits hard, controls space well, has good reversals and anti‑airs, and his super is the fastest in the game, letting him punish almost anything. These strengths let him switch playstyles and adapt to any matchup.
 
+<br>
+
 <div class="grid">
 <div class="card"><video><source data-src="/media/characters/saizo/videos/saizo_offense.mp4"></video>
 

@@ -103,6 +103,8 @@ Bloody Fang | [CHARGE],[DELTA]+[K]
 ### Overview
 Rila is a charge character with high damage output. She has no zoning tool except for her down heavy punch, but her fast anti-air and anti-projectile super help her control space and shut down opponents from anywhere on the screen.
 
+<br>
+
 <div class="grid">
 
 <div class="card"><video>

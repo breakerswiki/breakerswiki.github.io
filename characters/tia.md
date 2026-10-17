@@ -111,6 +111,8 @@ Cutlass Flasher | [QCF],[QCF]+[K]
 ### Overview
 Tia excels in mobility and space control. Her dash pressure, meter gain, and punish options make her dangerous in every matchup. With solid execution, she can seamlessly combine zoning and set-play to create consistent openings.
 
+<br>
+
 <div class="grid">
 
 <div class="card"><video>
