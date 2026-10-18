@@ -24,10 +24,7 @@ from{opacity:0;transform:translateY(14px)}
 @media (prefers-reduced-motion:reduce){
 *,::after,::before{animation-duration:NaNs!important;animation-iteration-count:1!important;transition-duration:NaNs!important;scroll-behavior:auto!important}
 }
-header{background:var(--black);border-bottom:1px solid var(--line-dark);z-index:100}
-@media (min-width:769px){
-header{position:sticky;top:0}
-}
+header{background:var(--black);position:sticky;top:0;border-bottom:1px solid var(--line-dark);z-index:100}
 .nav-container{max-width:1280px;margin:0 auto;padding:0 2rem;display:flex;align-items:center;justify-content:space-between}
 a.logo{display:block;line-height:0;padding:.6rem 0}
 img.logo{width:88px;height:auto;transition:transform .2s ease}
@@ -191,7 +188,7 @@ body:has(.char-btn[data-char=bai-hu].active) .character-bg{background-image:url(
 .char-layout{grid-template-columns:1fr;gap:1.2rem;align-items:start}
 .char-content{width:100%;min-height:400px}
 .char-content .grid p{padding:0}
-.char-content .grid{justify-content:start;grid-template-columns:repeat(3,max-content)}
+.char-content .grid{justify-content:start;}
 .char-content .card h3,.char-content .card h4{padding-left:1rem;margin-top:1rem}
 .char-content .card note{padding:1rem!important}
 .char-content .card li{font-size:1rem}
@@ -297,7 +294,7 @@ footer{padding:3rem 1.5rem;background:var(--black);border-top:1px solid var(--li
 .character-bg{display:none}
 }
 @media (max-width:768px){
-.nav-container{padding:1rem;padding-bottom:0;padding-top:0}
+.nav-container{padding:1rem; padding-bottom:.5rem}
 img.logo{width:72px}
 .nav-link{padding:0 .45rem;gap:.15rem;font-size:.8rem}
 .hero-section{--hero-h:440px}
