@@ -8,24 +8,15 @@ Tia Langray, a Thai kickboxer, searches for her brother, unaware he met a tragic
 
 ### Colors
 
-<div class="grid-2x2">
-  <div class="item">
-    <span>[A]</span>
-    <img src="media/characters/tia/img/tia_A.png" alt="A">
-  </div>
-  <div class="item">
-    <span>[C]</span>
-    <img src="media/characters/tia/img/tia_C.png" alt="C">
-  </div>
-  <div class="item">
-    <span>[B]</span>
-    <img src="media/characters/tia/img/tia_B.png" alt="B">
-  </div>
-  <div class="item">
-    <span>[D]</span>
-    <img src="media/characters/tia/img/tia_D.png" alt="D">
-  </div>
-</div>
+<span>[A]</span>
+<img src="media/characters/tia/img/tia_A.png" alt="A">
+<span>[C]</span>
+<img src="media/characters/tia/img/tia_C.png" alt="C">
+<br>
+<span>[B]</span>
+<img src="media/characters/tia/img/tia_B.png" alt="B">
+<span>[D]</span>
+<img src="media/characters/tia/img/tia_D.png" alt="D">
 
 ## Moves
 

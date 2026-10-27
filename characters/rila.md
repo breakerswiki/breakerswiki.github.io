@@ -8,24 +8,16 @@ Rila is a free-spirited Brazilian from the Amazon who enters the Tournament to f
 
 ### Colors
 
-<div class="grid-2x2">
-  <div class="item">
-    <span>[A]</span>
-    <img src="media/characters/rila/img/rila_A.png" alt="A">
-  </div>
-  <div class="item">
-    <span>[C]</span>
-    <img src="media/characters/rila/img/rila_C.png" alt="C">
-  </div>
-  <div class="item">
-    <span>[B]</span>
-    <img src="media/characters/rila/img/rila_B.png" alt="B">
-  </div>
-  <div class="item">
-    <span>[D]</span>
-    <img src="media/characters/rila/img/rila_D.png" alt="D">
-  </div>
-</div>
+<span>[A]</span>
+<img src="media/characters/rila/img/rila_A.png" alt="A">
+<span>[C]</span>
+<img src="media/characters/rila/img/rila_C.png" alt="C">
+<br>
+<span>[B]</span>
+<img src="media/characters/rila/img/rila_B.png" alt="B">
+<span>[D]</span>
+<img src="media/characters/rila/img/rila_D.png" alt="D">
+
 
 
 ## Moves

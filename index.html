@@ -6,6 +6,9 @@
         <meta name="theme-color" content="#000000">
         <title>Breakers Wiki</title>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💥</text></svg>">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css">
         <link rel="stylesheet" href="style.css">
         <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet"/>
@@ -16,21 +19,25 @@
     </head>
     <body>
 
+        <noscript>
+            <div style="padding:2rem 1.5rem;background:#000;color:#fff;text-align:center;font-family:system-ui,sans-serif">
+                <h1 style="font-size:1.5rem;margin-bottom:.5rem">JavaScript required</h1>
+                <p>This wiki relies on JavaScript to load its content. Please enable it to continue.</p>
+            </div>
+        </noscript>
+
         <header>
             <div class="nav-container">
-                <a href="/" class="logo" onclick="Wiki.showSection('home')"><img class="logo" src="/media/assets/bkwiki_color.webp" alt="BREAKERS WIKI"></a>
+                <a href="/" class="logo" onclick="event.preventDefault(); Wiki.showSection('home')"><img class="logo" src="/media/assets/bkwiki_color.webp" alt="BREAKERS WIKI"></a>
                 <nav>
                     <button class="nav-link" data-section="gameplay" onclick="Wiki.showSection('gameplay', this)">
-                        <!-- <i class="bi bi-joystick"></i> -->
-                         <span>Gameplay</span>
+                        <span>Gameplay</span>
                     </button>
                     <button class="nav-link" data-section="characters" onclick="Wiki.showSection('characters', this)">
-                        <!-- <i class="bi bi-book"></i> -->
-                         <span>Characters</span>
+                        <span>Characters</span>
                     </button>
                     <button class="nav-link" data-section="about" onclick="Wiki.showSection('about', this)">
-                        <!-- <i class="bi bi-info-circle"></i> -->
-                         <span>About</span>
+                        <span>About</span>
                     </button>
                 </nav>
             </div>
@@ -38,12 +45,12 @@
 
         <section id="hero-welcome" class="hero-section">
 
-            <video autoplay loop muted playsinline webkit-playsinline preload="auto" poster="/media/assets/breakers-bg.webp" class="hero-video-bg" aria-hidden="true">
+            <video autoplay loop muted playsinline webkit-playsinline preload="metadata" poster="/media/assets/breakers-bg.webp" class="hero-video-bg" aria-hidden="true">
                 <source src="/media/assets/background.mp4" type="video/mp4">
             </video>
 
             <div class="hero-content">
-                <a href="/" class="logo" onclick="Wiki.showSection('home')"><img class="main-logo" src="/media/assets/bkwiki_color.webp" alt="BREAKERS WIKI"></a>
+                <a href="/" class="logo" onclick="event.preventDefault(); Wiki.showSection('home')"><img class="main-logo" src="/media/assets/bkwiki_color.webp" alt="BREAKERS WIKI"></a>
 
                 <div class="highlight">Learn the essentials and start playing</div>
 
@@ -99,7 +106,7 @@
                 <div class="play-highlight">BUILD YOUR FUNDAMENTALS</div>
 
                 <div class="learning-grid">
-                    <a href="javascript:void(0);" data-subsection="gameplay" onclick="Wiki.showSection('gameplay')" class="learning-card" role="button">                        
+                    <a href="javascript:void(0);" data-subsection="gameplay" onclick="Wiki.showSection('gameplay')" class="learning-card">                        
                         <div class="learning-card__content">
                             <h3><i class="bi bi-joystick"></i> HOW TO PLAY</h3>
                             <p>Learn how the game works, from basic moves to combos and advanced mechanics.</p><br>
@@ -109,7 +116,7 @@
                             </video>
                         </div>
                     </a>
-                    <a href="javascript:void(0);" data-subsection="characters" onclick="Wiki.showSection('characters')" class="learning-card" role="button">
+                    <a href="javascript:void(0);" data-subsection="characters" onclick="Wiki.showSection('characters')" class="learning-card">
                         <div class="learning-card__content">
                             <h3><i class="bi bi-book"></i> CHARACTER GUIDES</h3>
                             <p>Get detailed move lists, basic combos, strategies, and matchup tips.</p><br>
@@ -140,7 +147,7 @@
 <ul class="game_posters">
 
     <li class="game_poster">
-      <img class="game_poster__img" src="media/assets/boxart_Breakers.webp" alt="game_poster du festival de jazz">
+      <img class="game_poster__img" src="media/assets/boxart_Breakers.webp" alt="Jaquette de Breakers">
       <div class="game_poster__texte">
         <h2 class="game_poster__titre">Breakers</h2>
         <div class="meta">
@@ -158,7 +165,7 @@
     </li>
 
     <li class="game_poster">
-      <img class="game_poster__img" src="media/assets/boxart_Breakers_Revenge.webp" alt="game_poster de la pièce de théâtre">
+      <img class="game_poster__img" src="media/assets/boxart_Breakers_Revenge.webp" alt="Jaquette de Breakers Revenge">
       <div class="game_poster__texte">
         <h2 class="game_poster__titre">Breakers Revenge</h2>
         <div class="meta">
@@ -174,7 +181,7 @@
     </li>
 
     <li class="game_poster">
-      <img class="game_poster__img" src="media/assets/boxart_Breakers_Collection.webp" alt="game_poster de la pièce de théâtre">
+      <img class="game_poster__img" src="media/assets/boxart_Breakers_Collection.webp" alt="Jaquette de Breakers Collection">
       <div class="game_poster__texte">
         <h2 class="game_poster__titre">Breakers Collection</h2>
         <div class="meta">
@@ -189,7 +196,7 @@
     </li>
 
     <li class="game_poster">
-      <img class="game_poster__img" src="media/assets/boxart_Breakers_Chicaco.webp" alt="game_poster de la pièce de théâtre">
+      <img class="game_poster__img" src="media/assets/boxart_Breakers_Chicaco.webp" alt="Jaquette de Breakers Revenge Chicago">
       <div class="game_poster__texte">
         <h2 class="game_poster__titre">Breakers Revenge Chicago</h2>
         <div class="meta">
@@ -212,9 +219,9 @@
                 <!-- GAMEPLAY -->
                 <section id="gameplay" class="wiki-section">
                     <div class="section-header">
-                        <span style="background: #d98fa3;" class="badge">System</span>
+                        <span class="badge badge--gameplay">System</span>
                         <h2>How to play</h2>
-                        <h1 class="char-subtitle">Learn the mechanics</h1>
+                        <p class="char-subtitle">Learn the mechanics</p>
                     </div>
 
                     <div class="grid">
@@ -314,9 +321,9 @@
                     <br><br>
 
                     <div class="section-header">
-                        <span style="background: #bb8fd9;" class="badge">Bonus</span>
+                        <span class="badge badge--bonus">Bonus</span>
                         <h2>Additional modes</h2>
-                        <h1 class="char-subtitle">Chicago and Extra modes</h1>
+                        <p class="char-subtitle">Chicago and Extra modes</p>
                     </div>
 
                     <div class="grid">
@@ -348,9 +355,9 @@
                     <br><br>
 
                     <div class="section-header">
-                        <span style="background: #d0d98f;" class="badge">Practice</span>
+                        <span class="badge badge--practice">Practice</span>
                         <h2>Training mode</h2>
-                        <h1 class="char-subtitle">How to access and use training mode</h1>
+                        <p class="char-subtitle">How to access and use training mode</p>
                     </div>
 
                     <div class="training-mode">
@@ -396,10 +403,10 @@
                     <div class="section-header">
                         <div class="character-bg"></div>
 
-                        <span style="background: #7fbf9f;" class="badge">Guide</span>
+                        <span class="badge badge--characters">Guide</span>
 
                         <h2>Characters</h2>
-                        <h1 class="char-subtitle">Select a character to view their guide</h1>
+                        <p class="char-subtitle">Select a character to view their guide</p>
                         <aside class="char-sidebar">
                             <button class="char-btn active" data-char="sho" onclick="Wiki.loadCharacter('sho', this)"><img src="media/assets/Portrait_BR_Sho.png" alt="Sho"></button>
                             <button class="char-btn" data-char="pielle" onclick="Wiki.loadCharacter('pielle', this)"><img src="media/assets/Portrait_BR_Pielle.png" alt="Pielle"></button>
@@ -423,9 +430,9 @@
                 <!-- ABOUT -->
                 <section id="about" class="wiki-section">
                     <div class="section-header">
-                        <span style="background: #7da7d9;" class="badge">Info</span>
+                        <span class="badge badge--about">Info</span>
                         <h2>About</h2>
-                        <h1 class="char-subtitle">General information</h1>
+                        <p class="char-subtitle">General information</p>
                     </div>
                     <div class="grid">
                         <div class="card details">

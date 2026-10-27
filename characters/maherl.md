@@ -8,24 +8,16 @@ Sheik Maherl discovered a genie's lamp and made three wise wishes: to become a b
 
 ### Colors
 
-<div class="grid-2x2">
-  <div class="item">
-    <span>[A]</span>
-    <img src="media/characters/maherl/img/maherl_A.png" alt="A">
-  </div>
-  <div class="item">
-    <span>[C]</span>
-    <img src="media/characters/maherl/img/maherl_C.png" alt="C">
-  </div>
-  <div class="item">
-    <span>[B]</span>
-    <img src="media/characters/maherl/img/maherl_B.png" alt="B">
-  </div>
-  <div class="item">
-    <span>[D]</span>
-    <img src="media/characters/maherl/img/maherl_D.png" alt="D">
-  </div>
-</div>
+<span>[A]</span>
+<img src="media/characters/maherl/img/maherl_A.png" alt="A">
+<span>[C]</span>
+<img src="media/characters/maherl/img/maherl_C.png" alt="C">
+<br>
+<span>[B]</span>
+<img src="media/characters/maherl/img/maherl_B.png" alt="B">
+<span>[D]</span>
+<img src="media/characters/maherl/img/maherl_D.png" alt="D">
+
 
 ## Moves
 
@@ -224,9 +216,10 @@ Mastering his glitch allows him to fly off-screen and land swiftly, catching foe
 * far 5B > 214214P
 * close 5D > 214214P
 * close 5C > 214B or 214D <br> close 5C > 214214P <br> close 5D > 214D > 2B > 214214P
-* 214D > 2B > 214214P
+
 #### corner
 * close 5D > 214D > 2B > 236236P
+* 214D > 2B > 214214P
 </div>
 
 

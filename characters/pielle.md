@@ -11,24 +11,15 @@ The flag displayed on his stage was changed from France to Italy between Breaker
 
 ### Colors
 
-<div class="grid-2x2">
-  <div class="item">
-    <span>[A]</span>
-    <img src="media/characters/pielle/img/pielle_A.png" alt="A">
-  </div>
-  <div class="item">
-    <span>[C]</span>
-    <img src="media/characters/pielle/img/pielle_C.png" alt="C">
-  </div>
-  <div class="item">
-    <span>[B]</span>
-    <img src="media/characters/pielle/img/pielle_B.png" alt="B">
-  </div>
-  <div class="item">
-    <span>[D]</span>
-    <img src="media/characters/pielle/img/pielle_D.png" alt="D">
-  </div>
-</div>
+<span>[A]</span>
+<img src="media/characters/pielle/img/pielle_A.png" alt="A">
+<span>[C]</span>
+<img src="media/characters/pielle/img/pielle_C.png" alt="C">
+<br>
+<span>[B]</span>
+<img src="media/characters/pielle/img/pielle_B.png" alt="B">
+<span>[D]</span>
+<img src="media/characters/pielle/img/pielle_D.png" alt="D">
 
 
 ## Moves

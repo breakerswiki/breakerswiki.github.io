@@ -9,24 +9,18 @@ Saizo Tobikageno, a ninja driven by the desire for vengeance, pursues justice fo
 
 ### Colors
 
-<div class="grid-2x2">
-  <div class="item">
-    <span>[A]</span>
-    <img src="media/characters/saizo/img/saizo_A.png" alt="A">
-  </div>
-  <div class="item">
-    <span>[C]</span>
-    <img src="media/characters/saizo/img/saizo_C.png" alt="C">
-  </div>
-  <div class="item">
-    <span>[B]</span>
-    <img src="media/characters/saizo/img/saizo_B.png" alt="B">
-  </div>
-  <div class="item">
-    <span>[D]</span>
-    <img src="media/characters/saizo/img/saizo_D.png" alt="D">
-  </div>
-</div>
+
+<span>[A]</span>
+<img src="media/characters/saizo/img/saizo_A.png" alt="A">
+<span>[C]</span>
+<img src="media/characters/saizo/img/saizo_C.png" alt="C">
+<br>
+<span>[B]</span>
+<img src="media/characters/saizo/img/saizo_B.png" alt="B">
+<span>[D]</span>
+<img src="media/characters/saizo/img/saizo_D.png" alt="D">
+
+
 ## Moves
 
 ### MOVE LIST

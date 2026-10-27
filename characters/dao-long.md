@@ -8,24 +8,16 @@ Lee Dao-Long is Sho's senior and rival. A Korean martial artist of the Empty Fis
 
 ### Colors
 
-<div class="grid-2x2">
-  <div class="item">
-    <span>[A]</span>
-    <img src="media/characters/dao-long/img/dao-long_A.png" alt="A">
-  </div>
-  <div class="item">
-    <span>[C]</span>
-    <img src="media/characters/dao-long/img/dao-long_C.png" alt="C">
-  </div>
-  <div class="item">
-    <span>[B]</span>
-    <img src="media/characters/dao-long/img/dao-long_B.png" alt="B">
-  </div>
-  <div class="item">
-    <span>[D]</span>
-    <img src="media/characters/dao-long/img/dao-long_D.png" alt="D">
-  </div>
-</div>
+<span>[A]</span>
+<img src="media/characters/dao-long/img/dao-long_A.png" alt="A">
+<span>[C]</span>
+<img src="media/characters/dao-long/img/dao-long_C.png" alt="C">
+<br>
+<span>[B]</span>
+<img src="media/characters/dao-long/img/dao-long_B.png" alt="B">
+<span>[D]</span>
+<img src="media/characters/dao-long/img/dao-long_D.png" alt="D">
+
 
 
 ## Moves

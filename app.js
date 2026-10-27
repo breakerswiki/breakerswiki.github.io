@@ -13,6 +13,9 @@ const Wiki = (() => {
     // Characters excluded from the matchup list
     const EXCLUDED_FROM_MATCHUPS = ['bai-hu'];
 
+    // Simple in-memory cache of raw markdown, keyed by character filename
+    const characterCache = Object.create(null);
+
     // Symbols/HTML for numpad numbering
     const numpadToHtml = {
         '1': `<img class="input-icon" src="/media/inputs/Arcade-Stick-DL.png" alt="DOWN-LEFT">`,
@@ -47,26 +50,26 @@ const Wiki = (() => {
     function convertToArrowsAndSymbolsHtml(text) {
         let converted = text;
 
-    // 1. Replaces special notations
+        // 1. Replaces special notations
         converted = converted.replace(
             /720|360|236|319|214|41236|646|623/g,
             match => numpadToHtml[match] || match
         );
 
-    // 2. Replaces notations in square brackets: [1]
+        // 2. Replaces notations in square brackets: [1]
         converted = converted.replace(
             /\[[1-9]\]/g,
             match => numpadToHtml[match] || match
         );
 
-    // 3. Replaces notation digits individually
+        // 3. Replaces notation digits individually
         // only when they are not part of a longer number
-    converted = converted.replace(
-        /(?<![0-9x])[1-9](?![0-9]|(?:st|nd|rd|th)\b)/gi,
-        match => numpadToHtml[match] || match
-    );
+        converted = converted.replace(
+            /(?<![0-9x])[1-9](?![0-9]|(?:st|nd|rd|th)\b)/gi,
+            match => numpadToHtml[match] || match
+        );
 
-    // 4. Replaces attack buttons
+        // 4. Replaces attack buttons
         const attackPattern = /\b(A|C|B|D|P|K)\b/g;
         converted = converted.replace(
             attackPattern,
@@ -82,15 +85,14 @@ const Wiki = (() => {
 
         element.childNodes.forEach(node => {
             if (node.nodeType === Node.TEXT_NODE) {
-                // Only applies if we are in a <ul>, <li> or <span>
                 if (inList) {
                     const tempSpan = document.createElement('span');
                     tempSpan.innerHTML = convertToArrowsAndSymbolsHtml(node.nodeValue);
                     node.parentNode.replaceChild(tempSpan, node);
                 }
             } else if (
-                node.nodeType === Node.ELEMENT_NODE && 
-                node.tagName !== 'A' && // Exclude <a> links
+                node.nodeType === Node.ELEMENT_NODE &&
+                node.tagName !== 'A' &&
                 !node.classList.contains('label')
             ) {
                 convertTextNodesToArrows(node, inList);
@@ -119,7 +121,6 @@ const Wiki = (() => {
         if (targetSection) targetSection.classList.add('active');
 
         const hero = document.getElementById('hero-welcome');
-        
         if (hero) hero.style.display = (sectionId === 'home') ? 'block' : 'none';
 
         if (triggerBtn) {
@@ -132,8 +133,13 @@ const Wiki = (() => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
 
         if (sectionId === 'characters') {
+            const renderArea = document.getElementById('markdown-render');
             const activeCharBtn = document.querySelector('.char-btn.active');
-            if (activeCharBtn) activeCharBtn.click();
+            // Only auto-load if the section is still empty (avoid double-fetch when
+            // the user clicked a character button from the home hero).
+            if (activeCharBtn && renderArea && renderArea.querySelector('.empty-state')) {
+                activeCharBtn.click();
+            }
         }
     }
 
@@ -158,10 +164,14 @@ const Wiki = (() => {
         renderArea.innerHTML = '<p class="text-muted">Loading...</p>';
 
         try {
-            const response = await fetch(`characters/${charFileName}.md`);
-            if (!response.ok) throw new Error(`HTTP ${response.status}`);
+            let markdownText = characterCache[charFileName];
+            if (!markdownText) {
+                const response = await fetch(`characters/${charFileName}.md`);
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                markdownText = await response.text();
+                characterCache[charFileName] = markdownText;
+            }
 
-            const markdownText = await response.text();
             const rawSections = markdownText.split(/\n## /);
             const headerContent = renderMarkdown(rawSections[0]);
 
@@ -207,6 +217,7 @@ const Wiki = (() => {
 
         } catch (err) {
             console.error(`[Wiki] Failed to load character "${charFileName}":`, err);
+            currentCharacterSections = null;
             renderArea.innerHTML = `<p class="text-error">Error loading character. Please try again.</p>`;
         }
     }
@@ -304,7 +315,7 @@ const Wiki = (() => {
         if (!displayArea) return;
 
         displayArea.classList.remove('reveal-anim');
-        void displayArea.offsetWidth; 
+        void displayArea.offsetWidth;
         displayArea.classList.add('reveal-anim');
 
         const content = currentMatchupOpponents[opponentId.toLowerCase()];
@@ -373,14 +384,18 @@ const Wiki = (() => {
     // =============================
     // MARKDOWN LINKS CONFIGURATION
     // =============================
-    marked.use({
-        renderer: {
-            link({ href, title, text }) {
-                const titleAttr = title ? `title="${title}"` : '';
-                return `<a href="${href}" target="_blank" rel="noopener noreferrer" ${titleAttr}>${text}</a>`;
+    if (typeof marked !== 'undefined') {
+        marked.use({
+            renderer: {
+                link({ href, title, text }) {
+                    const titleAttr = title ? `title="${title}"` : '';
+                    return `<a href="${href}" target="_blank" rel="noopener noreferrer" ${titleAttr}>${text}</a>`;
+                }
             }
-        }
-    });
+        });
+    } else {
+        console.warn('[Wiki] marked.js is not loaded — markdown rendering will be unavailable.');
+    }
 
 
     // =============================
@@ -388,8 +403,11 @@ const Wiki = (() => {
     // =============================
     function renderMarkdown(md) {
         if (!md) return '<p class="text-muted">No data available.</p>';
+        if (typeof marked === 'undefined') {
+            return '<p class="text-error">Markdown parser failed to load.</p>';
+        }
 
-        let processed = renderMovesSection(md);
+        const processed = renderMovesSection(md);
         let html = marked.parse(processed);
         html = replaceInputs(html);
 
@@ -445,8 +463,9 @@ const Wiki = (() => {
     };
 
     function replaceInputs(html) {
-        return html.replace(/\[([^\]]+)\]/g, (match, key) => {
-            const replacement = INPUT_IMAGES[key.trim().toUpperCase()];
+        // Restricted to known keys to avoid clashing with image alt syntax
+        return html.replace(/\[([A-Z0-9-]+)\]/gi, (match, key) => {
+            const replacement = INPUT_IMAGES[key.toUpperCase()];
             return replacement ? replacement : match;
         });
     }
@@ -459,27 +478,31 @@ const Wiki = (() => {
         requestAnimationFrame(() => applyLazyVideoJS());
     }
 
+    let videojsRetries = 0;
     function initVideoJS(videoElement) {
         if (typeof videojs === 'undefined') {
-            console.warn('[Wiki] videojs not ready, retrying...');
-            setTimeout(() => initVideoJS(videoElement), 100);
+            if (videojsRetries++ < 50) {
+                setTimeout(() => initVideoJS(videoElement), 100);
+            } else {
+                console.warn('[Wiki] video.js failed to load after multiple retries.');
+            }
             return;
         }
+        videojsRetries = 0;
 
         if (videoElement.classList.contains('vjs-tech') || videoElement.hasAttribute('data-vjs-player')) return;
-
 
         // 1. Determine poster automatically
         let posterSrc = videoElement.getAttribute('data-poster');
 
         if (!posterSrc) {
             const source = videoElement.querySelector('source');
-        
+
             const videoSrc =
                 source?.getAttribute('data-src') ||
                 source?.getAttribute('src') ||
                 videoElement.getAttribute('src');
-        
+
             if (videoSrc && /\.mp4(?:[?#].*)?$/i.test(videoSrc)) {
                 posterSrc = videoSrc.replace(/\.mp4(?=([?#]|$))/i, '.jpg');
             }
@@ -507,8 +530,7 @@ const Wiki = (() => {
             muted: true,
             html5: {
                 nativeAudioTracks: false,
-                nativeVideoTracks: false,
-                vhs: { overrideNative: true }
+                nativeVideoTracks: false
             },
             playsinline: true,
             preload: 'metadata'
