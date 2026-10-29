@@ -4,10 +4,10 @@
 
 ### Story
 
-Pielle is an Italian nobleman and skilled fencer who can summon lightning with his sword. Georges, his French alternate, despises Italians after being robbed.
+Pierre is an Italian nobleman and skilled fencer who can summon lightning with his sword. Georges, his French counterpart (in CPU mirror matches), despises Italians after being robbed.
 <br><br>
 <b>Identity changes across the series</b><br>
-The flag displayed on his stage was changed from France to Italy between Breakers and Breakers Revenge. The Breakers game manual describes him as Italian, while in Breakers Revenge Chicago, his name was changed to Pierre, seemingly correcting “Pielle,” which appears to have been a phonetic misspelling of the French name.
+The flag displayed on his stage was changed from France to Italy between Breakers and Breakers Revenge. The Breakers game manual describes him as Italian, while in Breakers Revenge Chicago, his name was changed to Pierre, seemingly correcting “Pielle”, which appears to have been a phonetic misspelling of the French name.
 
 ### Colors
 

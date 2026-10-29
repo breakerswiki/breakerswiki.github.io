@@ -10,6 +10,8 @@ Bai-Hu (hidden character) is the final boss, he initiated the tournament to disc
 At character select, rotate P1’s stick left [360] and P2’s stick right [360R] at the same time.<br>
 Note: The character is banned in competitive play
 
+### Colors
+<span></span>
 <img src="media/characters/bai-hu/img/bai-hu.png" alt="A">
 
 ## Moves
