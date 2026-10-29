@@ -229,7 +229,8 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
 * 2A, 2A > 236236P (strict timing)
 * jump D > close 5D > 236236P
 * jump D > 2C > 236236P
-* corner: jump D > 2C > A+C > 236236P / 214214P
+##### Corner
+* jump D > 2C > A+C > 236236P / 214214P
 </div>
 
 
@@ -239,11 +240,16 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
 
 #### Anti-air
 
-* close 5D > 236236P / 214214P <br> close 5C > 236236P <br> far. 5D > 236236P <br> 2D > 236236P (OTG)
-* 2C > 214B or 214D <br> 2C > 214214K <br> 2C > 214214P (close range)
+* close 5D > 236236P / 214214P
+* close 5C > 236236P
+* far. 5D > 236236P
+* 2D > 236236P (OTG)
+* 2C > 214B or 214D
+* 2C > 214214K / 214214P
 
-#### corner
-* 2C > 214B > 236236P / 214214P <br> close 5C > 214214P
+##### corner
+* 2C > 214B > 236236P / 214214P
+* close 5C > 214214P
 </div>
 
 
@@ -265,11 +271,11 @@ Pielle is effective up close thanks to his quick overhead, but he’s weak defen
 
 #### Rose train
 
-<note>Only on standing opponents</note>
+##### Standing only
 
-* 2A > close 5A > 214B <br> 5B > 214B <br> 2B > 214B
-
-#### Close range
+* 2A > close 5A > 214B
+* 5B > 214B
+* 2B > 214B
 * 2C > 214B or 214D
 </div>
 

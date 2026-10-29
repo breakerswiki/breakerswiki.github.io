@@ -99,8 +99,8 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 </video>
 
 #### Attack
-* **Projectile ([1]6P)**: Builds meter and applies chip damage; recovery is fast enough to bait and punish jump-in attempts at specific ranges.
-* **Palm (A+C)**:  Safe on block; Serves as a reliable hit-confirm into specials and Supers.
+* [1]6P: Builds meter and applies chip damage; recovery is fast enough to bait and punish jump-in attempts at specific ranges.
+* A+C: Safe on block; Serves as a reliable hit-confirm into specials and Supers.
 </div>
 
 
@@ -109,9 +109,9 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
  </video>
 
 #### Defense
-* **Senkyuu Tai ([1]8K)**:  Quick close-range anti-air; The light version, enables a Super juggle for if it connects at the peak of the opponent's jump.
-* **Close Normals**:  close 5C/5D are super-cancelable on hit for high-damage conversions.
-* **4+C**: works in close range as a powerful OS, triggering an anti‑air or a throw.
+* [1]8K:  Quick close-range anti-air; The light version, enables a Super juggle for if it connects at the peak of the opponent's jump.
+* close 5C/5D: Special and super-cancelable on hit for high-damage conversions.
+* 4+C: works in close range as a powerful option select, triggering an anti‑air or a throw.
 </div>
 
 
@@ -121,9 +121,9 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 </video>
           
 #### Super moves
-* **Houshin Renpa ([4]646P)**: Invincible startup, projectile passthrough, reliable A+C confirm.
-* **Shin Kyoku Ranbu ([4]646K)**: Main Super for air juggles and easy confirms from normals or A+C.
-* **Renkyuu Tai ([1]319K)**: Invincible vertical anti-air; mash kick buttons to increase the number of hits.
+* [4]646P: Invincible startup, projectile passthrough, reliable A+C confirm.
+* [4]646K: Main Super for air juggles and easy confirms from normals or A+C.
+* [1]319K: Invincible vertical anti-air; mash kick buttons to increase the number of hits.
 </div>
 
 
@@ -133,8 +133,8 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
   </video>
 
 #### Dashes
-* **Forward Dash** : Fast recovery, Ideal for pressure (light blockstring &gt; dash &gt; throw) <br> You can follow with a Super: [1]6.6.4.6K
-* **Backdash** :  Invulnerable startup but with slow recovery.
+* Forward Dash: Fast recovery, Ideal for pressure, for example: light blockstring > dash > throw. Dash into Super: [1]6.6.4.6K
+* Backdash: Invulnerable startup but with slow recovery.
 </div>
 
 

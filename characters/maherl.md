@@ -125,9 +125,9 @@ Mastering his glitch allows him to fly off-screen and land swiftly, catching foe
 </video>
 
 ### Attack
-* **Slash Sword (214P)**<br>Long-range tool cancelable from 5C, 2C, 5D, and 5B<br>Unsafe against Saizo and Tia.
-* **Abdomen Step (A+C)**<br> Hops over lows and sets up strong Super frametraps or throw mix‑ups.
-* **Balloon Bomb (A+B+C)**<br>Long-range special<br>Can punish projectiles with controllable landing; Unsafe on block.
+* 214P: Long-range tool cancelable from 5C, 2C, 5D, and 5B. Unsafe against Saizo and Tia.
+* A+C: Hops over lows and sets up strong Super frametraps or throw mix‑ups.
+* A+B+C: Long-range special. Can punish projectiles with controllable landing; Unsafe on block.
 
 </div>
 
@@ -138,17 +138,17 @@ Mastering his glitch allows him to fly off-screen and land swiftly, catching foe
 </video>
 
 ### Defense
-* **Close 5C**<br> Reliable anti-air; cancel into 214K for juggle confirms.
-* **Far 5B**<br> Quick anti-air option; cancelable into super 214214P.
-* **Punish Sword (214K)**<br> Fast anti-air and primary tool for confirming juggles off 5D or close 5C.
+* Close 5C: Reliable anti-air; cancel into 214K for juggle confirms.
+* Far 5B: Quick anti-air option; cancelable into super 214214P.
+* 214K: Fast anti-air and primary tool for confirming juggles off 5D or close 5C.
 </div>
 
 <div class="card">
 
 ### Super moves
-* **Cadabra Bomber (236236P)**<br> Invincible startup and safe on block; however, a gap before the final punch allows some characters to dodge or punish.
-* **Shiva Dance (214214P)**<br> Passes through close‑range projectiles and lets you juggle opponents after an anti‑air.
-* **Rolling Press (360P/K)**<br> Command grab that switches sides; Set it up after an Abdomen Step (A+C) or the Sword Glitch.
+* 236236P: Invincible startup and safe on block; however, a gap before the final punch allows some characters to dodge or punish.
+* 214214P: Passes through close‑range projectiles and lets you juggle opponents after an anti‑air.
+* 360P/K: Command grab that switches sides; Set it up after an Abdomen Step (A+C) or the Sword Glitch.
 </div>
 </div>
 
@@ -173,12 +173,11 @@ Mastering his glitch allows him to fly off-screen and land swiftly, catching foe
   * ❌ 2nd Frame or sooner = Sword
   * ✅ 3rd Frame = Sword glitch
   * ❌ 4th Frame or later = A+C
-* **Glitch variations** 
-  * Heavy swords = land behind your opponent
-  * Light swords = land in front
-  * 2C (at jump peak) remains active until landing.
-  * Nothing = Maherl returns quickly to the ground
-</div>
+##### Variations (During the glitch)
+* 214C/D = land behind
+* 214A/B = land in front
+* 2C (at jump peak) = active until landing
+* Nothing = returns quickly to the ground
 </div>
 
 
@@ -192,11 +191,14 @@ Mastering his glitch allows him to fly off-screen and land swiftly, catching foe
 </video>
 
 #### Meterless combos
-* 5B > 214B <br> 5B > 214A
-* 2C > A+C <br> 2C > A+C > 5B > 214A <br> 2C > A+C > 5B > 214B
+* 5B > 214B / 214A
+* 2C > A+C
+* 2C > A+C > 5B > 214A
+* 2C > A+C > 5B > 214B
 * close 5D > A+C
 * 2C > 41236A (unsafe on block/hit)
-* Jump C > 2C > 214D <br> Jump D > close 5D > 214D
+* Jump C > 2C > 214D
+* Jump D > close 5D > 214D
 </div>
 
 <div class="card"><video>
@@ -215,9 +217,11 @@ Mastering his glitch allows him to fly off-screen and land swiftly, catching foe
 #### Anti-air
 * far 5B > 214214P
 * close 5D > 214214P
-* close 5C > 214B or 214D <br> close 5C > 214214P <br> close 5D > 214D > 2B > 214214P
+* close 5C > 214B or 214D
+* close 5C > 214214P
+* close 5D > 214D > 2B > 214214P
 
-#### corner
+##### corner
 * close 5D > 214D > 2B > 236236P
 * 214D > 2B > 214214P
 </div>
@@ -227,7 +231,7 @@ Mastering his glitch allows him to fly off-screen and land swiftly, catching foe
   <source data-src="media/characters/maherl/videos/air-juggle.mp4">
 </video>
 
-### Air-to-air
+#### Air-to-air
 * Jump A > 214214P
 * Jump C > 214214P
 * neutral Jump C > 214214P

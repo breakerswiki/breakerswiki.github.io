@@ -129,14 +129,9 @@ Alsion III is a zoning character that suffers from slow movement and limited def
 </video>
 
 #### Offense
-* **Overhead**: Confirms into normals or 214214P.
-* **Dash Knee (236K)** 
-  * Hit confirm from 2B or 4A
-  * Safe at max range (except against Saizos) and usable in the air after Jump A.
-* **Deadly Claw (214K)** 
-  * Ground/air teleport attack, Unsafe on block.
-  * 214B stays in front while 214D crosses up. 
-  * Confirms into any Super.
+* A+C: Overhead. Confirms into normals or into super 214214P.
+* 236K: Hit confirm from 2B or 4A. Safe at max range (except against Saizo). air-to-air confirm : Jump A > 236K
+* Deadly Claw (214K): Ground/air teleport attack, Unsafe on block. 214B stays in front while 214D crosses up. Confirms into any Super.
 </div>
 
 <div class="card"><video>
@@ -144,10 +139,10 @@ Alsion III is a zoning character that suffers from slow movement and limited def
 </video>
 
 #### Defense
-* **Standing D**<br> Causes a ground bounce on airborne opponents, enabling corner Super juggles.
-* **Back Jump C**: Long range air-to-air.
-* **2C**<br> Mid-range low attack with a low-profile hurtbox that allows Alsion to slip under projectiles.
-* **Poison Fog (41236P)**<br> Short-range special that stays active a bit and absorbs most projectiles (excluding Saizo’s kunai).
+* Standing D: Causes a ground bounce on airborne opponents, enabling corner Super juggles.
+* Back Jump C: Long range air-to-air.
+* 2C: Mid-range low attack with a low-profile hurtbox that allows Alsion to slip under projectiles.
+* Poison Fog (41236P): Short-range special that stays active a bit and absorbs most projectiles (excluding Saizo’s kunai).
 </div>
 
 <div class="card"><video>
@@ -155,12 +150,8 @@ Alsion III is a zoning character that suffers from slow movement and limited def
 </video>
 
 #### Super moves
-* **Anubis Hug (236236P)**
-  * Follow-up for Deadly Claw
-  * up to 12 hits, Opponents can mash to reduce damage.
-* **Pharaoh Dance (214214P)**
-  * Safe on block (depending on the matchup)
-  * hit confirm from 4B or Overhead (A+C).
+* 236236P: Follow-up for Deadly Claw. Up to 12 hits, Opponents can mash to reduce damage.
+* 214214P: Safe on block (depending on the matchup). Hit confirm from 4B or Overhead (A+C).
 </div>
 
 <div class="card"><video>
@@ -168,8 +159,8 @@ Alsion III is a zoning character that suffers from slow movement and limited def
 </video>
 
 #### Break
-* **Pharaoh Dance (214214P)**: invincible startup and juggle potential. 
-* **Deadly Claw (214K)**: can also break, but use it sparingly as it’s highly punishable.
+* 214214P: invincible startup and juggle potential. 
+* 214K: can also break, but use it sparingly as it’s highly punishable.
 </div>
 
 <div class="card">
@@ -195,7 +186,8 @@ Alsion III is a zoning character that suffers from slow movement and limited def
 
 #### Meterless combos
 * 2B > 236D
-* 4A > 4B > 236D <br> 4A > 4C > 236B
+* 4A > 4B > 236D
+* 4A > 4C > 236B
 * 5A > 236D
 * A+C > 4D
 * 4C > 41236C
@@ -243,7 +235,7 @@ Alsion III is a zoning character that suffers from slow movement and limited def
 
 #### Air-to-air
 * Jump A > 236D
-* j2A > 236D
+* Jump 2A > 236D
 * 214K > Super
 * Jump A > 236D > Super
 </div>

@@ -111,10 +111,10 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 </video>
 
 #### Attack
-* **Jab pressure**: Repeated 5A into short dashes is safe, but requires timing. It builds meter and pushes to the corner.
-* **Dash 5C/5D** : Safe pressure that double as reliable anti-airs.
-* **236P** : Slow projectile, but still useful at long range, especially for setplay like this corner okizeme: Backdash x2 > 236P.
-* **214K** : Light version is safe in most matchups. Heavy can be followed with Super to bait a punish. The opponent must throw to avoid it.
+* Jab pressure: Repeated 5A into short dashes is safe, but requires timing. It builds meter and pushes to the corner.
+* Dash 5C/5D: Safe pressure that double as reliable anti-airs.
+* 236P: Slow projectile, but still useful at long range, especially for setplay like this corner okizeme: Backdash x2 > 236P.
+* 214K: Light version is safe in most matchups. Heavy can be followed with Super to bait a punish. The opponent must throw to avoid it.
 </div>         
         
 
@@ -123,10 +123,10 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 </video>
 
 #### Anti-airs
-* **Dash 5C/5D**: Safe pressure that double as reliable anti-airs.
-* **623P** : Invincible startup, 623A passes through projectiles, 623C offers higher reach but slower recovery.
-* **Anti-Air 5A** : Counters cross-ups and ambiguous jumps and leads into this combo juggle: 5A > neutral jump B > 214K > Super.
-* **Burning Revolver (214214P)**: High-utility super for punishing jump-ins and cross-up attempts.  
+* Dash 5C/5D: Safe pressure that double as reliable anti-airs.
+* 623P: Invincible startup, 623A passes through projectiles, 623C offers higher reach but slower recovery.
+* Anti-Air 5A: Counters cross-ups and ambiguous jumps and leads into this combo juggle: 5A > neutral jump B > 214K > Super.
+* Burning Revolver (214214P): High-utility super for punishing jump-ins and cross-up attempts.  
 </div>        
         
 

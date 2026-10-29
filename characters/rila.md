@@ -190,10 +190,13 @@ On block: Cancel into Super to bait and catch bad punish attempts.
 </video>
 
 #### Meterless combos
-* 2B > 5A > [1].6C <br> 2B > 2A > [1].6C <br> 2A > 5A > [1].6C <br> 2A, 2A > [1].6C
-* jump D > 5C > Spinning Claw <br> jump D > 5B > 5A > [1].6C <br> jump D > 5B > 2B > [1].6C <br> jump B > 5B > 5A > [1].6C
+* 2A/2B > 5A > [1].6C
+* 2A/2B > 2A > [1].6C
+* jump D > 5C > Spinning Claw
+* jump D/B > 5B > 5A > [1].6C
+* jump D > 5B > 2B > [1].6C
 * close 5D > 2C
-#### corner
+##### corner
 * 6D > 5A > [1].6C
 </div>
 
@@ -206,7 +209,7 @@ On block: Cancel into Super to bait and catch bad punish attempts.
 * [1].3D > [1]319K
 * jump B > 2B > 5A > [1]319K
 * Anti-air 5A > [1].6C > [1]319K
-#### corner
+##### corner
 * 6D > 5A > [1].6C > [1]319K
 </div>
 

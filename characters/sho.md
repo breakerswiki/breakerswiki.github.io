@@ -267,11 +267,16 @@ Sho moves fast, deals high damage, and has great air control. His divekick can b
 
 #### Meterless combos
 
-* 2B, 2B, 2B, 2D <br> 2B, 2B, 2C > 236D <br> 2B, 2B, 2C > 214D.D.D
+* 2B, 2B, 2B, 2D
+* 2B, 2B, 2C > 236D
+* 2B, 2B, 2C > 214D.D.D
 * 2B, 2B, 3C > 4,6P
 * A+C > 6,4,6P
-* 8D > 214D.D.D <br> 8D > 6,4,6P
-* close 5C.C > 6,4,6P <br> close 5C.C > 214D <br> close 5C > B+D > 6,4,6P
+* 8D > 214D.D.D
+* 8D > 6,4,6P
+* close 5C.C > 6,4,6P
+* close 5C.C > 214D
+* close 5C > B+D > 6,4,6P
 </div>
 
 <div class="card">
@@ -279,13 +284,15 @@ Sho moves fast, deals high damage, and has great air control. His divekick can b
 
 #### Metered combos
 
-* 2B, 2B, 2B, 2D > 236236P <br> 2B, 2B, 2B, 2D > 214214K
-* 2B, 2B, 2C > B+C > 236236P <br> 2B, 2B, 2C > B+C > 214214K <br> Divekick > 236236P
-
-
-#### Corner
+* 2B, 2B, 2B, 2D > 236236P
+* 2B, 2B, 2B, 2D > 214214K
+* 2B, 2B, 2C > B+C > 236236P
+* 2B, 2B, 2C > B+C > 214214K
+* Divekick > 236236P
+##### Corner
 * A+C > 6,4,6P
-* 3C > 4,6P > 236236P <br> 3C > 4,6P > 214214K
+* 3C > 4,6P > 236236P
+* 3C > 4,6P > 214214K
 
 </div>
 
@@ -296,8 +303,11 @@ Sho moves fast, deals high damage, and has great air control. His divekick can b
 
 #### Anti-air
 
-* 2C > 236236P <br> 2C > 214B > 236236P
-* 214B > 5C > 236236P <br> 214B > 5C > 214214K <br> 214B > 9D > 236236P
+* 2C > 236236P
+* 2C > 214B > 236236P
+* 214B > 5C > 236236P
+* 214B > 5C > 214214K
+* 214B > 9D > 236236P
 * 5A or 5B > 9A,A,A > 236236P
 
 </div>
@@ -323,12 +333,11 @@ Sho moves fast, deals high damage, and has great air control. His divekick can b
 </video>
 
 #### Kurenai juggles
-<note>Note: the 2nd Kurenai must be delayed</note>
 
-#### Anti-air
-* 2C > 214B.B > dash 5C > 214214K
-#### Corner
-* 5C.C > 214B.B > 5C > 236236P <br> 5C.C > 214B.B > 5C > 214214K
+* anti-air 2C > 214B.B(delay) > dash > 5C > Super
+##### Corner
+* 5C.C > 214B.B(delay) > 5C > Super
+* 5C.C > 214B.B(delay) > 5C > Super
 
 
 </div>
@@ -341,13 +350,12 @@ Sho moves fast, deals high damage, and has great air control. His divekick can b
 
 #### Breakable combos
 
-* far 5C ❌ B+C
-* far 5C ❌ 236236P
+* far 5C ❌ B+C or 236236P
 * A+C ❌ 236D
 * Jump D ❌ 2B
 * Divekick ❌ 2B
 
-</div>
+
 </div>
 
 ## Matchups

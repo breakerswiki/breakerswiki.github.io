@@ -250,7 +250,10 @@ Condor is a high-damage grappler. His low mobility and limited defensive options
 
 #### Breakable combos
 * 2A, 2A > 5B ❌ 6,6B
-* 2B ❌ 2B <br> 2B ❌ 236D <br> 2B ❌ 236236P <br> 2B ❌ 2D
+* 2B ❌ 2B
+* 2B ❌ 236D
+* 2B ❌ 236236P
+* 2B ❌ 2D
 * jump 2C > 2B ❌ 5D
 </div>
 

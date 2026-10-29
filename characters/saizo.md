@@ -102,10 +102,11 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 <div class="card"><video><source data-src="/media/characters/saizo/videos/saizo_offense.mp4"></video>
 
 #### Neutral
-* **Pressure**: Use micro-dashes into 2A or 2B. Cancel normals into Slide > Bomb for safe offense in most matchups.
-* **236A** (Kunai) passes through projectiles.<br> 623C (Bomb) has fast recovery, making it ideal for chip damage or baiting jumps
-* **Jump A/C**: High-priority air normals; Jump A has longer active frames.
-* **Close Normals**: Close 5C/5D are safe; avoid far versions as they’re unsafe. Close 5D > 5D isn’t a true string.
+* Pressure: Use micro-dashes into 2A or 2B. Cancel normals into Slide > Bomb for safe offense in most matchups.
+* 236A: passes through projectiles.
+* 623C (Bomb) has fast recovery, making it ideal for chip damage or baiting jumps
+* Jump A/C: High-priority air normals; Jump A has longer active frames.
+* Close 5C/5D: Safe on block; avoid far versions as they’re unsafe. <br> Close 5D > 5D isn’t a true blockstring. It can be interrupted by a reversal.
 </div>
         
 
@@ -113,9 +114,9 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 <div class="card"><video><source data-src="/media/characters/saizo/videos/antiairjuggle.mp4"></video>
 
 #### Anti-air        
-* **623P**: Light version is fast; heavy version is slower but with more range. Both enable Super juggles on airborne opponents.
-* **Close 5D**: Quick cancelable anti-air normal with a large hitbox.<br> Input 6D for easier 623P conversions. Avoid far version (slow/unsafe).
-* **214A**: Has long invincibility frames; unsafe on block and hit, must be super-canceled with 236236K to avoid being punished.
+* 623P: Light version is fast; heavy version is slower but with more range. Both enable Super juggles on airborne opponents.
+* Close 5D: Quick cancelable anti-air normal with a large hitbox.<br> Input 6D for easier 623P conversions. Avoid far version (slow/unsafe).
+* 214A: Has long invincibility frames; unsafe on block and hit, must be super-canceled with 236236K to avoid being punished.
 </div>
         
 
@@ -123,9 +124,9 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 <div class="card"><video><source data-src="/media/characters/saizo/videos/Metercombo.mp4"></video>
 
 #### Super moves        
-* **236236K**: Extremely fast Super; ideal for punishes or as a combo finisher.
-* **214214P**: Flame pillar anti-air; light version appears in front, while heavy version tracks the opponent's position.
-* **236236P**: Long-range anti-air Super; can be juggled after 623P or close 5D.
+* 236236K: Extremely fast Super; ideal for punishes or as a combo finisher.
+* 214214P: Flame pillar anti-air; light version appears in front, while heavy version tracks the opponent's position.
+* 236236P: Long-range anti-air Super; can be juggled after 623P or close 5D.
 </div>
 </div>
 
@@ -142,9 +143,7 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 <div class="card"><video><source data-src="/media/characters/saizo/videos/throw_OS.mp4"></video>
 
 #### Throw OS
-* 4C+D functions as a close‑range option select.
-  * If the opponent jumps, 4D triggers an anti‑air response; 
-  * If they remain grounded, 4C initiates a throw.
+* 4C+D functions as a close‑range option select. <br> If the opponent jumps, 4D triggers an anti‑air response. <br> If they remain grounded, 4C initiates a throw.
 </div>
 </div>
 
@@ -157,7 +156,10 @@ Saizo is strong in every area: he’s fast, hits hard, controls space well, has 
 <div class="card"><video><source data-src="media/characters/saizo/videos/Meterlesscombo.mp4"></video>
 
 #### Meterless combos
-* 2B, 2B, 5A > 623C <br> 2B, 2B, 5C > 623C <br> 2B, 2B, 5D > 623C <br> 2B, 2B, 5C > 236C
+* 2B, 2B, 5A > 623C
+* 2B, 2B, 5C > 623C
+* 2B, 2B, 5D > 623C
+* 2B, 2B, 5C > 236C
 * 2B, 2A, 5B > 2+B+D
 * jump C > 5C > 623C
 </div>
