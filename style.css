@@ -49,11 +49,12 @@ nav{display:flex;align-self:stretch;gap:.25rem}
 .highlight{display:block;margin:.4rem 0 1.75rem;color:var(--on-dark);font-size:var(--step-0);font-weight:700;text-transform:uppercase;letter-spacing:.06em;text-wrap:balance;text-shadow:0 1px 8px rgba(0,0,0,.6)}
 .highlight{font-size:clamp(1.0625rem,1.4vw,1.25rem);letter-spacing:.04em}
 .main-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem 1.5rem}
-.main-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;border:2px solid var(--text-2);border-bottom:0;background:#1c1f22a1;transform:skewX(-12deg);text-decoration:none;cursor:pointer;box-shadow:inset 0 -4px 0 var(--accent,var(--p1)),0 4px 16px rgba(0,0,0,.4);transition:transform .25s ease,background-color .25s ease,border-color .25s ease,box-shadow .25s ease}
+.main-btn{position:relative;display:inline-flex;align-items:center;justify-content:center;border:2px solid var(--text-2);background:#1c1f22a1;transform:skewX(-12deg);text-decoration:none;cursor:pointer;transition:transform .25s ease,background-color .25s ease,border-color .25s ease,box-shadow .25s ease}
 .main-btn span{display:flex;align-items:center;min-height:48px;padding:0 1.75rem;color:var(--on-dark);text-transform:uppercase;font-size:.85rem;font-weight:700;line-height:1;letter-spacing:.04em;transform:skewX(12deg);transition:color .25s ease}
 .main-btn:focus-visible,.main-btn:hover{background:var(--accent,var(--p1));border-color:var(--accent,var(--p1));transform:skewX(-12deg) translateY(-2px);box-shadow:0 0 15px rgba(255,255,255,.2)}
 .main-btn:focus-visible span,.main-btn:hover span{color:var(--ink)}
 .main-btn:active{transform:skewX(-12deg)}
+.secondary-btn{background:#3a3a3a94;}
 @media (max-width:480px){
 .main-actions{flex-direction:column;align-items:stretch;width:min(16rem,100%)}
 }
@@ -88,7 +89,7 @@ nav{display:flex;align-self:stretch;gap:.25rem}
 .learning-card{display:block;color:inherit;text-decoration:none;outline:0;transition:transform .25s ease}
 .learning-card[data-subsection=gameplay],.main-btn[data-subsection=gameplay]{--accent:var(--cat-gameplay)}
 .learning-card[data-subsection=characters],.main-btn[data-subsection=characters]{--accent:var(--cat-characters)}
-.learning-card__content{position:relative;height:100%;padding:1.75rem 1.5rem 1.5rem;overflow:hidden;background:var(--surface-dark);border:1px solid #2b2b30;border-bottom:5px solid var(--accent);text-align:left;transition:background-color .3s cubic-bezier(.4,0,.2,1),border-color .3s cubic-bezier(.4,0,.2,1),color .3s cubic-bezier(.4,0,.2,1);transform:translateZ(0);will-change:background-color,border-color}
+.learning-card__content{position:relative;height:100%;padding:1.75rem 1.5rem 1.5rem;overflow:hidden;background:var(--surface-dark);border:1px solid #2b2b30;text-align:left;transition:background-color .3s cubic-bezier(.4,0,.2,1),border-color .3s cubic-bezier(.4,0,.2,1),color .3s cubic-bezier(.4,0,.2,1);transform:translateZ(0);will-change:background-color,border-color}
 .learning-card__content h3{margin:0 0 .6rem;color:var(--accent);font-size:var(--step-2);transition:color .3s cubic-bezier(.4,0,.2,1)}
 .learning-card__content p{color:var(--on-dark-2);transition:color .3s cubic-bezier(.4,0,.2,1)}
 h3 i.bi{margin-right:.5rem;font-size:1.2rem}
