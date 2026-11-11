@@ -16,5 +16,3 @@ You can simply [reach out](https://x.com/Zoukken) or:
 2. **Clone** the forked repository to your local machine.
 3. Make your changes or add new content.
 4. Submit a **pull request** for review.
-
-Thank you for visiting the Breakers Wiki !
