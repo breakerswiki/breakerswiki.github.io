@@ -54,7 +54,7 @@ nav{display:flex;align-self:stretch;gap:.25rem}
 .main-btn:focus-visible,.main-btn:hover{background:var(--accent,var(--p1));border-color:var(--accent,var(--p1));transform:skewX(-12deg) translateY(-2px);box-shadow:0 0 15px rgba(255,255,255,.2)}
 .main-btn:focus-visible span,.main-btn:hover span{color:var(--ink)}
 .main-btn:active{transform:skewX(-12deg)}
-.secondary-btn{background:#3a3a3a94;}
+.secondary-btn{background:#3a3a3a94}
 @media (max-width:480px){
 .main-actions{flex-direction:column;align-items:stretch;width:min(16rem,100%)}
 }
@@ -167,7 +167,7 @@ img.input-icon{vertical-align:middle}
 .btn-kick.B{background:#f0c506;color:#fff}
 .btn-kick.D{background:#3099db}
 .btn-kick.K,.btn-punch.P{background:#9d9d9d}
-.character-bg{position:absolute;top:-15px;right:0;z-index:0;width:min(300px,50vw);height:min(100vh,720px);background-size:contain;background-repeat:no-repeat;background-position:top right;opacity:.5;pointer-events:none;transform:scaleX(-1);-webkit-mask-image:linear-gradient(to bottom,#000 0,transparent 100%),linear-gradient(to right,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0,transparent 100%),linear-gradient(to right,#000 80%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect;z-index:-1}
+.character-bg{position:absolute;top:-17px;right:0;z-index:0;width:min(300px,50vw);height:min(100vh,720px);background-size:contain;background-repeat:no-repeat;background-position:top right;opacity:.5;pointer-events:none;transform:scaleX(-1);-webkit-mask-image:linear-gradient(to bottom,#000 0,transparent 100%),linear-gradient(to right,#000 80%,transparent 100%);mask-image:linear-gradient(to bottom,#000 0,transparent 100%),linear-gradient(to right,#000 80%,transparent 100%);-webkit-mask-composite:source-in;mask-composite:intersect;z-index:-1}
 body:has(.char-btn[data-char=sho].active) .character-bg{background-image:url(media/characters/sho/img/sho-portrait.png)}
 body:has(.char-btn[data-char=pielle].active) .character-bg{background-image:url(media/characters/pielle/img/pielle-portrait.png)}
 body:has(.char-btn[data-char=condor].active) .character-bg{background-image:url(media/characters/condor/img/condor-portrait.png)}
@@ -191,12 +191,15 @@ body:has(.char-btn[data-char=bai-hu].active) .character-bg{background-image:url(
 .char-btn::after{position:absolute;left:2px;right:2px;bottom:2px;padding:2px 0;background:rgba(0,0,0,.82);color:#fff;font-size:.65rem;font-weight:700;line-height:1.3;letter-spacing:.02em;text-align:center;text-transform:capitalize;opacity:0;pointer-events:none;transition:opacity .15s ease}
 .char-btn[data-char]::after{content:attr(data-char)}
 .char-btn[data-opp]::after{content:attr(data-opp)}
-.char-btn.active::after,.char-btn:focus-visible::after,.char-btn:hover::after{opacity:1}
+.char-btn:hover::after{opacity:1}
+.char-btn.active::after{opacity:0}
+.char-btn:focus-visible::after{opacity:0}
 .fi{border:1px solid var(--line-dark);box-shadow:5px 5px 0 #e7e7e7}
 .matchup-sidebar .char-btn{--cursor:var(--p2);width:65px}
 .matchup-sidebar .char-btn img{filter:grayscale(1)}
 .matchup-sidebar .char-btn.active img,.matchup-sidebar .char-btn:hover img{filter:none}
 #sub-content .char-sidebar{margin:0 0 4rem;justify-content:flex-start}
+#sub-content{padding-left:1rem;margin-right:1rem}
 .char-layout{grid-template-columns:1fr;gap:1.2rem;align-items:start}
 .char-content{width:100%;min-height:400px}
 .char-content .grid p{padding:0}
@@ -209,12 +212,12 @@ body:has(.char-btn[data-char=bai-hu].active) .character-bg{background-image:url(
 .empty-state{padding:4rem 0;color:var(--text-2);text-align:center}
 .text-muted{color:var(--text-2)}
 .text-error{padding:.75rem 1rem;border-left:4px solid #b3261e;background:#fdf1f0;color:#8c1d18}
-.sub-nav{gap:.5rem}
-.sub-link{flex:1 1 0;min-width:0;text-align:center;padding:.6rem 1.2rem;background:#fff;border:1px solid var(--line-dark);color:#2d3748;font-size:.75rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;cursor:pointer;box-shadow:5px 5px 0 #e7e7e7;transition:transform .1s ease,box-shadow .1s ease,background-color .1s ease;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:4px}
-.sub-link:hover{background:#edf2f7;color:#2d3748;transform:translate(-1px,-1px)}
-.sub-link:active{transform:translate(1px,1px)}
-.sub-link.active{background:#4a5568;color:#fff;border-color:#2d3748;text-shadow:none;box-shadow:1px 1px 0 #2d3748}
-.char-content h1{margin:0 0 .75rem}
+.sub-nav{gap:.3rem;margin-bottom:1.5rem;border-bottom:1px solid var(--line-dark)}
+.sub-link{flex:1 1 0;min-width:0;text-align:center;padding:.6rem 1.2rem;background:#f1f5f9;border:1px solid var(--line-dark);border-bottom:none;border-top-left-radius:6px;border-top-right-radius:6px;color:#2d3748;font-size:.75rem;font-weight:700;letter-spacing:.03em;text-transform:uppercase;cursor:pointer;transition:background-color .1s ease,color .1s ease;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:4px;position:relative;bottom:-1px}
+.sub-link:hover{background:#e2e8f0;color:#2d3748}
+.sub-link:active{transform:none}
+.sub-link.active{background:#fff;color:#2d3748;border-color:var(--line-dark);border-bottom:1px solid #fff;z-index:1}
+.char-content h1{margin:0 0 3rem}
 .char-content h3{margin:2.5rem 0 .75rem;font-size:var(--step-2)}
 .char-content h4{margin:1.75rem 0 .5rem;font-size:1.1rem}
 .char-content h5{margin:1.5rem 0 .5rem;font-size:.875rem}
@@ -288,14 +291,14 @@ footer{padding:3rem 1.5rem;background:var(--black)}
 }
 .game_posters{list-style:none;text-align:left;margin:0 auto;max-width:60rem;display:grid;padding:0 1.5rem;gap:var(--space-block)}
 .game_poster{display:grid;gap:1rem;padding:1.5rem;background:var(--surface-dark);border:1px solid #3a3a37}
-.game_poster__img{display:block;width:100%;max-width:17rem;margin-inline:auto;aspect-ratio:2/3;border-radius:.25rem}
+.game_poster__img{display:block;width:100%;max-width:15rem;margin-inline:auto;aspect-ratio:2/3;border-radius:.25rem}
 .game_poster__titre{margin:0 0 .5rem;font-size:1.5rem;line-height:1.2;color:#d3d3d3;padding-bottom:1rem}
 .game_poster__texte p{margin:0;margin-top:1rem;color:var(--on-dark-2);max-width:60ch}
 .game_poster__texte a{color:var(--on-dark);text-decoration:underline;text-underline-offset:3px}
 .game_poster__texte a:hover{color:#fff}
 @media (min-width:48em){
-.game_poster{grid-template-columns:17rem 1fr;gap:2rem;padding:1.5rem;align-items:start}
-.game_poster__img{max-width:17rem;margin-inline:0}
+.game_poster{grid-template-columns:15rem 1fr;gap:2rem;padding:1.5rem;align-items:start}
+.game_poster__img{max-width:15rem;margin-inline:0}
 .game_poster__titre{font-size:1.875rem}
 .game_poster__texte p{margin-top:.5rem}
 }
