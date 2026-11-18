@@ -107,7 +107,7 @@ Nisetsu Ranbu | [B]+[C]+[D]
 
 #### Metered combos
 
-* 2B, 2B, 5C > A+B > A+B+C
+* 2B, 5C > A+B > A+B+C
 * 2B, 2B, 2C (one hit) > B+D > A+B+C
 </div>
 
@@ -130,8 +130,8 @@ Nisetsu Ranbu | [B]+[C]+[D]
 </video>
 
 #### Air-to-air
-* 9D > 9C > A+B > A+B+C
-* 9C > A+B (loop)
+* jump D > 9C > A+B > A+B+C
+* jump C > A+B (loop)
 </div>
 
 </div>

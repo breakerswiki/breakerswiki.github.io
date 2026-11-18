@@ -170,7 +170,7 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 #### Meterless combos
 
 * 2B, 2B > A+C > 623C
-* 2B, 2A, 2A > A+C > 623C
+* 2B, 2A > A+C > 623C
 * 2B, 2B > B+D > 623C
 * 2B, 2A, 2A > B+D > 623C
 * Jump C > air 214D > 2A > A+C > 623C
@@ -183,8 +183,8 @@ Tia excels in mobility and space control. Her dash pressure, meter gain, and pun
 #### Metered combos
 
 * 5C > 214D > 214214P
-* 2B, 2A, 2A > A+C > 236236P
-* 2B, 2A, 2A > B+D > 236236P
+* 2B, 2A > A+C > 236236P
+* 2B, 2A > B+D > 236236P
 * Jump C > air 214D > 2A > A+C > 236236P
 </div>
 

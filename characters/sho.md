@@ -267,7 +267,7 @@ Sho moves fast, deals high damage, and has great air control. His divekick can b
 
 #### Meterless combos
 
-* 2B, 2B, 2B, 2D
+* 2B, 2B, 2D
 * 2B, 2B, 2C > 236D
 * 2B, 2B, 2C > 214D.D.D
 * 2B, 2B, 3C > 4,6P
@@ -284,10 +284,10 @@ Sho moves fast, deals high damage, and has great air control. His divekick can b
 
 #### Metered combos
 
-* 2B, 2B, 2B, 2D > 236236P
-* 2B, 2B, 2B, 2D > 214214K
-* 2B, 2B, 2C > B+C > 236236P
-* 2B, 2B, 2C > B+C > 214214K
+* 2B, 2B, 2D > 236236P
+* 2B, 2B, 2D > 214214K
+* 2B, 2C > B+C > 236236P
+* 2B, 2C > B+C > 214214K
 * Divekick > 236236P
 ##### Corner
 * A+C > 6,4,6P
@@ -385,7 +385,7 @@ Sho moves fast, deals high damage, and has great air control. His divekick can b
 #### Ranki Ryuu Geri
 
 - Unsafe, but Sho can cancel into Air Super to stay safe and bait punish attempts. 
-- If you have meter, use 9D > 236236P for a guaranteed punish.
+- With meter, use jump D > 236236P for a guaranteed punish.
 </div>
 
 <div class="card">
@@ -426,7 +426,6 @@ Sho moves fast, deals high damage, and has great air control. His divekick can b
 </div>
 </div>
 
---- 
 
 ### Pielle
 <div class="grid">

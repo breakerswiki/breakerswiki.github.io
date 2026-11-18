@@ -171,7 +171,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 
 #### Meterless combos
 * 2B, 2A, 2A > A+C > [1]6C
-* 2A, 2A, 2A > A+C > [1]8D
+* 2B, 2A, 2A > A+C > [1]8D
 </div>
 
 
@@ -180,7 +180,7 @@ Dao-Long is a well-rounded character with fast charge inputs and a quick dash, m
 </video>
 
 #### Metered combos
-* 2B, 2A, 2A > A+C > [4]646K
+* 2B, 2A > A+C > [4]646K
 * 2D > [4]646K
 * C+D > 5B > [4]646K
 </div>
